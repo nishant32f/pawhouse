@@ -4,6 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd -- "$SCRIPT_DIR/.." && pwd)"
 MESSAGE="${1:-Update content}"
+BRANCH="$(git -C "$PROJECT_DIR" branch --show-current)"
 
 cd "$PROJECT_DIR"
 
@@ -15,13 +16,14 @@ else
   npx quartz build
 fi
 
-if git diff --quiet -- content && git diff --cached --quiet -- content; then
-  echo "No content changes to publish."
+git add -A
+
+if git diff --cached --quiet; then
+  echo "No changes to publish."
   exit 0
 fi
 
-git add -A content
 git commit -m "$MESSAGE"
-git push
+git push origin "$BRANCH"
 
-echo "Pushed content update. GitHub Actions will deploy the site."
+echo "Pushed $BRANCH. GitHub Actions will deploy the site."
