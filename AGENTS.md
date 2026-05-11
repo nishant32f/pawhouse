@@ -20,6 +20,7 @@ The source Obsidian vault publish folder is expected at `../obsidian/public`.
 - `mise x node@22.16.0 -- npx quartz build`: build the static site into `public/`.
 - `mise x node@22.16.0 -- npx quartz build --serve --port 8080`: run a local preview server.
 - `./scripts/sync-content-from-vault.sh`: copy notes from `../obsidian/public` into `content/`.
+- `npm run publish -- "Update notes"`: sync, build, commit, and push the current branch.
 - `npm run check`: run TypeScript checking and Prettier validation.
 - `npm test`: run Quartz’s test suite via `tsx --test`.
 
@@ -54,12 +55,10 @@ PRs should include a concise summary, affected areas (`content`, `quartz`, `scri
 
 ## Publishing Notes
 
-Treat `../obsidian/public` as the source of truth for publishable notes. Sync before publishing:
+Treat `../obsidian/public` as the source of truth for publishable notes. Publish with:
 
 ```bash
-./scripts/sync-content-from-vault.sh
-mise x node@22.16.0 -- npx quartz build
-git add -A content
-git commit -m "Update content"
-git push
+npm run publish -- "Update notes"
 ```
+
+The publish script runs `rsync --delete`, builds Quartz, stages all repo changes, commits with the provided message, and pushes the current branch to `origin`. A push to `main` triggers the GitHub Pages workflow.
