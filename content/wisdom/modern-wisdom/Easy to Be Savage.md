@@ -48,15 +48,3 @@ But sometimes it's hard to find a sidekick.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Easy-to-Be-Savage.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Resilience and Adversity]] — term-derived match: score 3; terms: resilience, hardship, discomfort
-- [[Discipline and Consistency]] — term-derived match: score 2; terms: consistency, habits
-- [[Gratitude and Presence]] — term-derived match: score 2; terms: life
-- [[Mental Health and Self-Awareness]] — term-derived match: score 2; terms: mind
-<!-- term-concept-links:end -->

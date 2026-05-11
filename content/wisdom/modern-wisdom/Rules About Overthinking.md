@@ -28,14 +28,3 @@ The amount you overthink is directly inverse to how much you live life. Do not t
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Rules-About-Overthinking.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Mental Health and Self-Awareness]] — term-derived match: score 7; terms: fear, overthinking
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: life, enough
-- [[Learning and Advice]] — term-derived match: score 2; terms: wisdom, experience
-<!-- term-concept-links:end -->

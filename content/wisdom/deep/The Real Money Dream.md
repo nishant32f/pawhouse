@@ -13,14 +13,3 @@ Most people don't dream of being fancy-rich. I dream of being rich enough to say
 Rich enough to quietly help a friend before they even have to ask. To send a care package when someone's too tired to reach out. To buy all the pencils from a kid on the street so they can go home early.
 
 For me, the real money dream isn't about luxury - it's about having enough to give, enough to comfort, enough to turn ordinary moments into something extraordinary.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/The-Real-Money-Dream.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 7; terms: ordinary, enough
-- [[Wealth and Business]] — term-derived match: score 6; terms: money
-- [[Relationships and Love]] — term-derived match: score 2; terms: friend, care
-<!-- term-concept-links:end -->

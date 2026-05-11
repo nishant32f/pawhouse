@@ -40,14 +40,3 @@ Life is often simpler than we make it.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Mexican-Fisherman-Parable.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Focus and Attention]] — term-derived match: score 4; terms: time, busy
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: life, enough
-- [[Leadership and Startups]] — term-derived match: score 2; terms: product, company
-<!-- term-concept-links:end -->

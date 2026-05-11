@@ -46,14 +46,3 @@ Beware of envying successful humans. The price you would need to pay to be the p
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Beware-Envying-Success.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 2; terms: success
-- [[Gratitude and Presence]] — term-derived match: score 2; terms: life, enough
-- [[Happiness and Fulfillment]] — term-derived match: score 2; terms: happy, satisfaction
-<!-- term-concept-links:end -->

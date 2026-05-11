@@ -15,12 +15,3 @@ In practice the founders grow with the problems. But no one seems able to forese
 Ignorance can't solve everything though. Some ideas so obviously entail alarming schleps that anyone can see them. How do you see ideas like that? The trick I recommend is to take yourself out of the picture. Instead of asking "what problem should I solve?" ask "what problem do I wish someone else would solve for me?" If someone who had to process payments before Stripe had tried asking that, Stripe would have been one of the first things they wished for.
 
 It's too late now to be Stripe, but there's plenty still broken in the world, if you know how to see it.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/startups/overcoming-startup-blindness.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Leadership and Startups]] — term-derived match: score 7; terms: startup, startups, company
-<!-- term-concept-links:end -->

@@ -46,14 +46,3 @@ I have no answer here, interesting question though.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Kindness-vs-Choice.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Relationships and Love]] — term-derived match: score 9; terms: love, friend, kindness
-- [[Strategy and Decision-Making]] — term-derived match: score 4; terms: choice
-- [[Action and Agency]] — term-derived match: score 3; terms: doing, act
-<!-- term-concept-links:end -->

@@ -50,15 +50,3 @@ Or, as said best by Sturgill Simpson's mum:
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Supporting-Men.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Relationships and Love]] — term-derived match: score 17; terms: love, men, care, compassion
-- [[Ambition and Expectations]] — term-derived match: score 4; terms: desire, goals
-- [[Self-Belief and Confidence]] — term-derived match: score 3; terms: believe, belief, self belief
-- [[Boundaries and Communication]] — term-derived match: score 2; terms: conflict
-<!-- term-concept-links:end -->

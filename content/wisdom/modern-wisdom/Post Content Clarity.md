@@ -38,13 +38,3 @@ You will spend your life focused on unhealthy aims defined for you by others and
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Post-Content-Clarity.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 5; terms: life, slow
-- [[Leadership and Startups]] — term-derived match: score 2; terms: team
-<!-- term-concept-links:end -->

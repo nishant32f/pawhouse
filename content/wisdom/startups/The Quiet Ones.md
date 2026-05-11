@@ -52,15 +52,3 @@ Because the quiet ones don't leave angry. They leave when they realize you only 
 
 - [[Faith in Your Word]] - Building self-trust through consistent follow-through
 - [[Interest vs Commitment|Interest vs Commitment]] - The difference between talking about work and actually doing it
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/startups/the-quiet-ones.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Leadership and Startups]] — term-derived match: score 5; terms: startup, leadership, customer, company
-- [[Technology and Systems]] — term-derived match: score 3; terms: systems, infrastructure
-- [[Action and Agency]] — term-derived match: score 2; terms: doing
-- [[Focus and Attention]] — term-derived match: score 2; terms: time
-<!-- term-concept-links:end -->

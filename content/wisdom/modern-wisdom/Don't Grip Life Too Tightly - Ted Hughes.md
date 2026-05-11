@@ -42,15 +42,3 @@ You are doing this for you. After a certain level of material comfort, the only 
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Dont-Grip-Life-Too-Tightly.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Action and Agency]] — term-derived match: score 5; terms: doing, act
-- [[Gratitude and Presence]] — term-derived match: score 5; terms: life, enough
-- [[Happiness and Fulfillment]] — term-derived match: score 4; terms: happiness, happy, joy, satisfaction
-- [[Learning and Advice]] — term-derived match: score 3; terms: teacher, experience
-<!-- term-concept-links:end -->

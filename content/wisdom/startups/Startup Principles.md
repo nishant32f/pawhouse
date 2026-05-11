@@ -28,14 +28,3 @@ We started with the assumption that we know nothing about the customer.
 Accuracy >> Speed >> Perfection
 It is more important for products to be accurate, then be shipped fast.
 It is more important for products to be shipped fast, than be perfect when shipped.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/startups/startup-principles.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Leadership and Startups]] — term-derived match: score 12; terms: startup, startups, hiring, product
-- [[Learning and Advice]] — term-derived match: score 2; terms: question, experience
-- [[Wealth and Business]] — term-derived match: score 2; terms: money
-<!-- term-concept-links:end -->

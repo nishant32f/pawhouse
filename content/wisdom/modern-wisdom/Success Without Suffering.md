@@ -34,15 +34,3 @@ Look, You were born into a world you didn't choose, maladapted for the mind you 
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Success-Without-Suffering.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 6; terms: gratitude, grateful, life, enough
-- [[Resilience and Adversity]] — term-derived match: score 6; terms: pain, failure, suffering
-- [[Ambition and Expectations]] — term-derived match: score 5; terms: success
-- [[Learning and Advice]] — term-derived match: score 3; terms: questions, experience
-<!-- term-concept-links:end -->

@@ -46,15 +46,3 @@ So, if you're feeling unhappy, look to where you're uncertain, and where you wan
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/mental-health/Obstacles-to-Happiness.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Happiness and Fulfillment]] — term-derived match: score 8; terms: happiness
-- [[Mental Health and Self-Awareness]] — term-derived match: score 2; terms: fear, mind
-- [[Relationships and Love]] — term-derived match: score 2; terms: partner, family
-- [[Resilience and Adversity]] — term-derived match: score 2; terms: pain, difficult
-<!-- term-concept-links:end -->

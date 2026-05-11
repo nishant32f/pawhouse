@@ -128,20 +128,8 @@ Engineering teams don't consider good product managers a "marketing resource." G
 - [[Success Traits|Success Traits]] - Consistency and discipline in execution
 - [[Hard Work and Discomfort|Hard Work and Discomfort]] - Managing through difficult product decisions
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/startups/product-management-excellence.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[Consistency and Discipline]] — exact title mention
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Leadership and Startups]] — term-derived match: score 50; terms: product, management, team, company
-- [[Focus and Attention]] — term-derived match: score 10; terms: focus, time
-- [[Wealth and Business]] — term-derived match: score 8; terms: sales, market, value
-- [[Ambition and Expectations]] — term-derived match: score 5; terms: success, goals, status
-<!-- term-concept-links:end -->

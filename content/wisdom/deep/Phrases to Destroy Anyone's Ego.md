@@ -22,17 +22,8 @@ description: "Sharp phrases that expose ego-driven behavior and excessive need f
 
 • "It's funny how you think I need your approval."
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/Phrases-to-Destroy-Anyone.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[Responding to Victim Mentality]] — shared boundaries/communication graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Self-Worth and Validation]] — term-derived match: score 2; terms: validation, approval
-<!-- term-concept-links:end -->

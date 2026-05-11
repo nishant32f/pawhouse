@@ -50,13 +50,3 @@ No matter how long I'm alive, I know for a fact that I don't want to look back a
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Parkinsons-Law.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Focus and Attention]] — term-derived match: score 15; terms: time, parkinson
-- [[Gratitude and Presence]] — term-derived match: score 4; terms: presence, life, enough
-<!-- term-concept-links:end -->

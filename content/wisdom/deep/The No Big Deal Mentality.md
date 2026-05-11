@@ -14,18 +14,8 @@ Start looking at the data objectively instead of emotionally. Each rejection is 
 
 When you adopt this powerful mindset shift, you become unstoppable because nothing can shake your confidence or derail your progress. Every experience becomes fuel for your success rather than evidence of your inadequacy.
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/The-No-Big-Deal-Mentality.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[Beyond Self-Belief]] — shared mindset/personal-growth/resilience graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Resilience and Adversity]] — term-derived match: score 3; terms: failure, obstacle
-- [[Learning and Advice]] — term-derived match: score 2; terms: wisdom, experience
-<!-- term-concept-links:end -->

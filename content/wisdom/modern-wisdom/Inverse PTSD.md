@@ -45,13 +45,3 @@ Like workload exposure therapy that teaches you "Oh I've been here before and I 
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Inverse-PTSD.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Focus and Attention]] — term-derived match: score 2; terms: time
-- [[Mental Health and Self-Awareness]] — term-derived match: score 2; terms: fear, therapy
-<!-- term-concept-links:end -->

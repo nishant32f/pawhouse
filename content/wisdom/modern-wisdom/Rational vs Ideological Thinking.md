@@ -55,15 +55,3 @@ I'm sure there's other common trends I've missed but this seems to be a good sta
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/rational-vs-ideological-thinking.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Strategy and Decision-Making]] — term-derived match: score 10; terms: rational, ideological
-- [[Boundaries and Communication]] — term-derived match: score 5; terms: truth, honesty, ego, speak
-- [[Learning and Advice]] — term-derived match: score 3; terms: learning, question, questions
-- [[Mental Health and Self-Awareness]] — term-derived match: score 2; terms: mind
-<!-- term-concept-links:end -->

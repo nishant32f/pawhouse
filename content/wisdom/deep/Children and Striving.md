@@ -23,14 +23,3 @@ Show them the infinite pleasure in the touch of a hand.
 And make the ordinary come alive for them.
 
 The extraordinary will take care of itself.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/Children-and-Striving.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 5; terms: striving
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: ordinary, life
-- [[Happiness and Fulfillment]] — term-derived match: score 2; terms: pleasure, joy
-<!-- term-concept-links:end -->

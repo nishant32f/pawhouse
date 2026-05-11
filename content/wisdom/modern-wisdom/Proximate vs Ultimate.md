@@ -52,15 +52,3 @@ The answer to this discomfort is to find humour in it I think. You have to laugh
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Proximate-vs-Ultimate.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Strategy and Decision-Making]] — term-derived match: score 19; terms: proximate, ultimate
-- [[Happiness and Fulfillment]] — term-derived match: score 3; terms: happiness, pleasure
-- [[Resilience and Adversity]] — term-derived match: score 3; terms: discomfort
-- [[Learning and Advice]] — term-derived match: score 2; terms: understand
-<!-- term-concept-links:end -->

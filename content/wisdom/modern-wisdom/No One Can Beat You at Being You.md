@@ -44,14 +44,3 @@ The absolute best you can hope for if you're playing a role is to be the 2nd bes
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/no-one-can-beat-you-at-being-you.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Action and Agency]] — term-derived match: score 2; terms: doing, showing up
-- [[Relationships and Love]] — term-derived match: score 2; terms: love
-- [[Self-Belief and Confidence]] — term-derived match: score 2; terms: being you
-<!-- term-concept-links:end -->

@@ -1,3 +1,103 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+body {
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.page-title,
+.article-title {
+  letter-spacing: -0.025em;
+}
+
+.article-title {
+  font-size: 1.5rem;
+}
+
+article h1[id]::before {
+  content: "# ";
+  opacity: 0.32;
+  font-weight: 400;
+}
+
+article h2[id]::before {
+  content: "## ";
+  opacity: 0.32;
+  font-weight: 400;
+}
+
+article h3[id]::before {
+  content: "### ";
+  opacity: 0.32;
+  font-weight: 400;
+}
+
+article h4[id]::before {
+  content: "#### ";
+  opacity: 0.32;
+  font-weight: 400;
+}
+
+.content-meta,
+.meta,
+.breadcrumb-container,
+.toc,
+.graph,
+.explorer,
+footer {
+  font-family: var(--codeFont);
+}
+
+.content-meta,
+.meta {
+  color: var(--gray);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+ul.tags {
+  gap: 0.25rem;
+}
+
+a.internal.tag-link {
+  border-radius: 0;
+  background: transparent;
+  color: var(--gray);
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+  padding: 0;
+
+  &::before {
+    content: "#";
+    opacity: 0.45;
+  }
+
+  &:hover {
+    background: transparent;
+    color: var(--dark);
+    text-decoration: underline;
+  }
+}
+
+.recent-notes,
+.section-ul {
+  & li {
+    border-left: 2px solid var(--lightgray);
+    padding-left: 0.75rem;
+    transition: border-color 0.2s ease;
+  }
+
+  & li:hover {
+    border-left-color: var(--gray);
+  }
+}
+
+pre,
+code {
+  font-family: var(--codeFont);
+}

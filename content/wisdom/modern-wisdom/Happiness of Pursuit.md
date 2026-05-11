@@ -49,14 +49,3 @@ Create as many destinations to enjoy the anticipation of as possible.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Happiness-of-Pursuit.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Happiness and Fulfillment]] — term-derived match: score 5; terms: happiness
-- [[Learning and Advice]] — term-derived match: score 4; terms: learn, experience
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: present, life
-<!-- term-concept-links:end -->

@@ -57,13 +57,3 @@ Go do the thing.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Discipline-vs-Motivation.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Discipline and Consistency]] — term-derived match: score 17; terms: discipline, motivation
-- [[Action and Agency]] — term-derived match: score 3; terms: doing
-<!-- term-concept-links:end -->

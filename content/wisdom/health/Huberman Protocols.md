@@ -302,15 +302,3 @@ Electrolytes help offset dehydration and are good to take during exercise.
 ## Closing Thoughts
 
 As always, remember not to lose the forest for the trees. The point of these protocols are to improve the quality of your life, not to optimize for the sake of optimizing. Nothing is optimal in the real world, and to the extant something is ideal in one way, it is less ideal in another way. I appreciate the love and I hope everyone found this helpful. If you have suggestions for how this post could be improved, please let me know.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/health/Huberman-Protocols.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Focus and Attention]] — term-derived match: score 19; terms: focus, attention, time, priority
-- [[Discipline and Consistency]] — term-derived match: score 13; terms: consistent, consistency, routine, practice
-- [[Mental Health and Self-Awareness]] — term-derived match: score 11; terms: anxiety, stress
-- [[Learning and Advice]] — term-derived match: score 10; terms: learn, learning
-<!-- term-concept-links:end -->

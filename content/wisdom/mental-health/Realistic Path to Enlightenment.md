@@ -48,14 +48,3 @@ Aim for a few Moments Of Peace today.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/mental-health/Realistic-Path-to-Enlightenment.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 9; terms: present, enlightenment, enough
-- [[Mental Health and Self-Awareness]] — term-derived match: score 4; terms: mind
-- [[Focus and Attention]] — term-derived match: score 2; terms: focus, time
-<!-- term-concept-links:end -->

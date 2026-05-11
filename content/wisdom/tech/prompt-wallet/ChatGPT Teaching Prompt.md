@@ -29,13 +29,3 @@ Here's what I want you to do:
 5. Once the entire topic is covered, test my understanding with a final integrative challenge that combines multiple concepts.
 
 6. Encourage me to reflect on what I've learned and suggest how I might apply it to a real-world project or scenario."
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/prompt-wallet/ChatGPT-Teaching-Prompt.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[AI Prompting and Tools]] — term-derived match: score 9; terms: prompt, chatgpt
-- [[Learning and Advice]] — term-derived match: score 5; terms: learn, lesson, lessons, questions
-<!-- term-concept-links:end -->

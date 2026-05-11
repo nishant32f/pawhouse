@@ -40,13 +40,3 @@ Some Milgram Questions are intended as genuine questions. But often they only pr
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Milgram-Questions.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 11; terms: question, questions
-- [[Relationships and Love]] — term-derived match: score 4; terms: love, friends, men
-<!-- term-concept-links:end -->

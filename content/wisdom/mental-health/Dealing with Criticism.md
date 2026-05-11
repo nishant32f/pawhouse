@@ -48,15 +48,3 @@ So... go gentle with yourself when dealing with criticism. It's tough. And if yo
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/mental-health/Dealing-with-Criticism.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Boundaries and Communication]] — term-derived match: score 5; terms: criticism
-- [[Learning and Advice]] — term-derived match: score 4; terms: learn, advice, wisdom, understand
-- [[Focus and Attention]] — term-derived match: score 3; terms: focus, distraction, busy
-- [[Mental Health and Self-Awareness]] — term-derived match: score 3; terms: mental health, fear, mind
-<!-- term-concept-links:end -->

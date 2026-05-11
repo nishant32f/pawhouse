@@ -109,9 +109,6 @@ As Ryan Holiday says: "Generate evidence." Self-belief is overrated. The resilie
 - **Process vs. Outcome Orientation** - Sports psychology on focusing on the journey
 - **"Man's Search for Meaning" by Viktor Frankl** - On finding purpose through action in extreme circumstances
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/life-lessons/Self-Belief-vs-Action.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
@@ -122,12 +119,3 @@ Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/life-l
 
 - [[wisdom/modern-wisdom/Self-Belief vs Action|Self-Belief vs Action]] - Shorter modern-wisdom version of the same action-before-belief idea
 - [[Beyond Self-Belief]] - Expanded framing around confidence, doubt, and evidence generation
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Self-Belief and Confidence]] — term-derived match: score 20; terms: self-belief, confidence, believe, belief
-- [[Action and Agency]] — term-derived match: score 13; terms: action, doing, showing up, act
-- [[Learning and Advice]] — term-derived match: score 10; terms: lessons, teacher, question, wisdom
-- [[Gratitude and Presence]] — term-derived match: score 9; terms: gratitude, life, enough
-<!-- term-concept-links:end -->

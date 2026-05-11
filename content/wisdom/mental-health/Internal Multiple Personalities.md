@@ -52,14 +52,3 @@ If you're so smart, and so wise, then why aren't you happy?
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/mental-health/Internal-Multiple-Personalities.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Mental Health and Self-Awareness]] — term-derived match: score 6; terms: shame, emotional, mind
-- [[Learning and Advice]] — term-derived match: score 3; terms: question, wisdom, experience
-- [[Happiness and Fulfillment]] — term-derived match: score 2; terms: happiness, happy
-<!-- term-concept-links:end -->

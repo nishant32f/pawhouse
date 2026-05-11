@@ -94,15 +94,3 @@ I'm not saying you won't regret the obvious agony of jobs you quit, loves you lo
 We wince at mistakes that make a noise, but it's the silent mistakes that do the real damage.
 
 Errors of commission bruise the ego, errors of omission starve the soul.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/The-Asymmetry-of-Errors.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 8; terms: learn, learning, lessons, wisdom
-- [[Boundaries and Communication]] — term-derived match: score 4; terms: feedback, ego
-- [[Leadership and Startups]] — term-derived match: score 3; terms: startup, business, company
-- [[Relationships and Love]] — term-derived match: score 3; terms: relationship, love, friend
-<!-- term-concept-links:end -->

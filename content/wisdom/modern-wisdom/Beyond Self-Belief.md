@@ -124,18 +124,6 @@ As Ryan Holiday says: "Generate evidence." Self-belief is overrated. The resilie
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Beyond-Self-Belief.mdx`
-
 ## Related Notes
 
 - [[wisdom/life-lessons/Self-Belief vs Action - Life Lessons|Self-Belief vs Action - Life Lessons]] — longer life-lessons treatment of action before confidence
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Self-Belief and Confidence]] — term-derived match: score 20; terms: self-belief, confidence, believe, belief
-- [[Action and Agency]] — term-derived match: score 11; terms: action, doing, showing up, act
-- [[Learning and Advice]] — term-derived match: score 9; terms: lessons, teacher, question, wisdom
-- [[Gratitude and Presence]] — term-derived match: score 8; terms: gratitude, life, enough
-<!-- term-concept-links:end -->

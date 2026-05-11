@@ -47,15 +47,3 @@ description: "Essential principles for scaling a business, from FDE (Founder-Do-
 11. **Hire rebels, not natives.** Echo roles need domain insiders who think the current way is insufficient; deltas are rapid iteration, not long-horizon craftsspeople.
 
 12. **Land → expand → abstract.** Win with one compelling outcome, use proximity to find bigger adjacent problems, then fold the pattern back into the platform. Repeat.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/business-scaling-principles.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Wealth and Business]] — term-derived match: score 16; terms: business, scale, scaling, sales
-- [[Leadership and Startups]] — term-derived match: score 11; terms: business, product, customer, executive
-- [[Resilience and Adversity]] — term-derived match: score 2; terms: pain
-- [[Strategy and Decision-Making]] — term-derived match: score 2; terms: risk
-<!-- term-concept-links:end -->

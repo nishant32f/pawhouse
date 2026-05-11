@@ -52,15 +52,3 @@ And your best self will have to stop his coughing, and come say hello.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/What-Youre-Made-Of.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 4; terms: life, enough
-- [[Relationships and Love]] — term-derived match: score 3; terms: love, partner
-- [[Resilience and Adversity]] — term-derived match: score 3; terms: difficult, tough
-- [[Focus and Attention]] — term-derived match: score 2; terms: time
-<!-- term-concept-links:end -->

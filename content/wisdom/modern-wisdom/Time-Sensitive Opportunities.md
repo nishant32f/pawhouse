@@ -32,13 +32,3 @@ Some opportunities for extreme effort have natural expiration dates:
 ---
 
 *Source: Chris Williamson, Modern Wisdom Podcast*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/time-sensitive-opportunities.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Focus and Attention]] — term-derived match: score 4; terms: time
-- [[Gratitude and Presence]] — term-derived match: score 2; terms: life
-<!-- term-concept-links:end -->

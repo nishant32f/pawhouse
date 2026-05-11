@@ -67,15 +67,3 @@ If I were on my deathbed tomorrow, what would I regret most?
 ---
 
 *Source: Chris Williamson*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Morgan-Housels-Questions.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 7; terms: question, questions, wisdom, experience
-- [[Resilience and Adversity]] — term-derived match: score 4; terms: difficult
-- [[Self-Belief and Confidence]] — term-derived match: score 3; terms: believe, belief
-- [[Gratitude and Presence]] — term-derived match: score 2; terms: life
-<!-- term-concept-links:end -->

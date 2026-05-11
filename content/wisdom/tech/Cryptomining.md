@@ -7,12 +7,3 @@ description: "Technical guide and resources for cryptocurrency mining, including
 ---
 
 # Cryptomining
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/tech/cryptomining.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Technology and Systems]] — term-derived match: score 4; terms: cryptomining
-<!-- term-concept-links:end -->

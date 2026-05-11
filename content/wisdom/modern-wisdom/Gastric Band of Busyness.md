@@ -41,15 +41,3 @@ So what happens when this coping mechanism gets taken away? You are forced to fa
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Gastric-Band-of-Busyness.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Focus and Attention]] — term-derived match: score 9; terms: time, busy, busyness
-- [[Gratitude and Presence]] — term-derived match: score 4; terms: life
-- [[Mental Health and Self-Awareness]] — term-derived match: score 4; terms: anxiety, emotional
-- [[Strategy and Decision-Making]] — term-derived match: score 4; terms: decisions, risk
-<!-- term-concept-links:end -->

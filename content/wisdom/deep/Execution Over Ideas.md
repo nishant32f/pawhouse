@@ -41,14 +41,3 @@ You'll notice you bypass the talking stage and move straight to walking more and
 Execution eats strategising for breakfast.
 
 *Chris Williamson | @chriswillx*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/Execution-Over-Ideas.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Action and Agency]] — term-derived match: score 11; terms: action, execution, doing, take action
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: life
-- [[Resilience and Adversity]] — term-derived match: score 3; terms: failure
-<!-- term-concept-links:end -->

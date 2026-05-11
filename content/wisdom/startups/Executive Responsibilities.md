@@ -13,7 +13,7 @@ By DHH
 
 I break the essential responsibilities of the company executive into three distinct buckets. They are:
 
-**1. Chart the course**
+## 1. Chart the Course
 
 Where are we going? What are we building? Who is it for? Any executive running anything has to know the answer to these questions in order to lead anyone anywhere. If you don't have a clue where you're going, any road can take you there, and running in circles is as good as making progress. This is not viable.
 
@@ -23,7 +23,7 @@ Because if anything, being a "long-term thinker" is an invitation to smell your 
 
 And someone's has to do it! Someone has to say: This is what we're doing. Let's go.
 
-**2. Set the pace**
+## 2. Set the Pace
 
 Not only does work easily expand to fit the time allotted, but our ambitions will shrink along with our declining productivity. The slower you're moving, the less you think you can do, the slower you're moving. The only counter to this is to be ambitious, bold, and impatient.
 
@@ -35,7 +35,7 @@ The only way to tell is by knowing the work. Executives who drift high up in the
 
 So to be bold, you must have insight – or you're just delusional. Credibility is built on pushing for a reach and then actually making it. If you're constantly pushing for the impossible, and none of it happens, you're a clown. Get out of here.
 
-**3. Hold the line**
+## 3. Hold the Line
 
 Quality withers quickly when nobody sweats it. You have to take it personal, to some degree. It has to offend your sensibilities when things are not right, to some degree. Because you need that energy to halt the work and redo what isn't right when you find out. If you let it slide, if you don't sweat, eventually nobody else will.
 
@@ -43,16 +43,6 @@ And holding the line on quality isn't just about the customer experience, it's a
 
 Holding the line also means being willing to pay for it. Always look for a good bargain, when good quality is available at a great price, but never be cheap. You're holding the line so you'll be able to be proud of what you're producing tomorrow, next year, next decade. A culture of quality is built one product and process decision at the time.
 
+## The Standard
+
 Do all these three things well, do them consistently, do them when it's hard, do them when it doesn't look like it's working, and regardless of what happens, you'll have done your best with what was there. Whether that's enough for success or sustainability is usually out of your hands anyway. But great execution according to these three responsibilities have a way of finding the gold.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/startups/Executive-Responsibilities.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Leadership and Startups]] — term-derived match: score 9; terms: startups, product, customer, executive
-- [[Focus and Attention]] — term-derived match: score 5; terms: time
-- [[Action and Agency]] — term-derived match: score 3; terms: execution, doing
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: enough
-<!-- term-concept-links:end -->

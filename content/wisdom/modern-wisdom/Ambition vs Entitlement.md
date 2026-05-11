@@ -37,14 +37,3 @@ True ambition involves:
 ---
 
 *Source: Chris Williamson, Modern Wisdom Podcast*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/ambition-vs-entitlement.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 10; terms: ambition, entitlement
-- [[Action and Agency]] — term-derived match: score 2; terms: action, ownership
-- [[Self-Worth and Validation]] — term-derived match: score 2; terms: validation, external
-<!-- term-concept-links:end -->

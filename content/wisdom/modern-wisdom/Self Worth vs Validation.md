@@ -42,14 +42,3 @@ Prioritise yourself.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Self-Worth-vs-Validation.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Self-Worth and Validation]] — term-derived match: score 13; terms: self-worth, self worth, validation, worth
-- [[Focus and Attention]] — term-derived match: score 5; terms: focus, time, priority
-- [[Relationships and Love]] — term-derived match: score 2; terms: love
-<!-- term-concept-links:end -->

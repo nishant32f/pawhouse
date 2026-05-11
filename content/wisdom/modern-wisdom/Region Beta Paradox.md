@@ -38,13 +38,3 @@ Sometimes we need to create our own discomfort to force necessary change.
 ---
 
 *Source: Chris Williamson, Modern Wisdom Podcast*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/region-beta-paradox.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 8; terms: ambition, entitlement
-- [[Resilience and Adversity]] — term-derived match: score 7; terms: discomfort
-<!-- term-concept-links:end -->

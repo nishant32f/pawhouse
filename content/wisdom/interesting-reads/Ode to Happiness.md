@@ -24,12 +24,3 @@ BEAR IT LET THIS WORD PICTURE REMIND YOU 
 IT CAN ALWAYS BE WORSE
 
 By Keanu Reeves
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/interesting-reads/Poems/ode-to-happiness.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Happiness and Fulfillment]] — term-derived match: score 4; terms: happiness
-<!-- term-concept-links:end -->

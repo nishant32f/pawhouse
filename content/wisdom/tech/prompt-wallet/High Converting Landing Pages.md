@@ -228,15 +228,3 @@ After understanding the framework, ask the user the following questions to tailo
 10. **Are there any industry-specific regulations or compliance needs to consider?**
 
 Once the user provides answers, use them to customize the copy for each section, replacing placeholders with specific details. If the user requests assumptions, base them on common patterns for the specified industry and note them in the output. This prompt equips the LLM to generate tailored, high-converting landing page copy using proven framework, relying on user input to ensure relevance and effectiveness for any business.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/prompt-wallet/high-converting-landing-pages.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Leadership and Startups]] — term-derived match: score 34; terms: business, product, management, customer
-- [[Wealth and Business]] — term-derived match: score 26; terms: wealth, money, business, sales
-- [[AI Prompting and Tools]] — term-derived match: score 13; terms: prompt, tools, landing page, llm
-- [[Action and Agency]] — term-derived match: score 12; terms: action, act
-<!-- term-concept-links:end -->

@@ -28,12 +28,3 @@ description: "Practical phrases to maintain boundaries and redirect conversation
 
 - [[People Lack Accountability|People Lack Accountability]] - Understanding why some conversations are exhausting
 - [[20 Types to Avoid]] - Identifying toxic patterns in relationships
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/Responding-to-Victim-Mentality.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Boundaries and Communication]] — term-derived match: score 2; terms: boundaries, accountability
-<!-- term-concept-links:end -->

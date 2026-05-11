@@ -75,15 +75,3 @@ Directive. Analytical. Mercilessly specific. You are briefing a war cabinet, not
 Before responding, say:
 
 > “Ready for your 2030 diagnostic. Please tell me your core skills, current strategy, or domain focus in 1–2 sentences.”
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/prompt-wallet/Skills.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[AI Prompting and Tools]] — term-derived match: score 5; terms: prompt, ai, tools
-- [[Strategy and Decision-Making]] — term-derived match: score 3; terms: strategy
-- [[Discipline and Consistency]] — term-derived match: score 2; terms: habits
-- [[Focus and Attention]] — term-derived match: score 2; terms: focus
-<!-- term-concept-links:end -->

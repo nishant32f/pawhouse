@@ -50,20 +50,8 @@ If you are having trouble deciding, it's generally No-Hire. Just don't hire peop
 ## Strict No No!!
 Avoid illegal questions. Anything related to race, religion, gender, nationality, origin, age, sexual orientation, veteran status, marital status, whether someone has kids or not, or planning to, what school they go to etc. Stick to questions relevant to the job.
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/startups/hiring.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[Leadership]] — shared leadership/startups/team-building graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Leadership and Startups]] — term-derived match: score 19; terms: startup, startups, leadership, hiring
-- [[Learning and Advice]] — term-derived match: score 11; terms: learning, questions, wisdom, knowledge
-- [[Technology and Systems]] — term-derived match: score 7; terms: technology, systems, software, technical
-- [[Boundaries and Communication]] — term-derived match: score 6; terms: communication, feedback, conversation
-<!-- term-concept-links:end -->

@@ -46,15 +46,3 @@ There is no doing this wrong.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Stop-Perfectionism.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Action and Agency]] — term-derived match: score 4; terms: doing
-- [[Focus and Attention]] — term-derived match: score 3; terms: attention, time
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: life
-- [[Learning and Advice]] — term-derived match: score 2; terms: teacher, question
-<!-- term-concept-links:end -->

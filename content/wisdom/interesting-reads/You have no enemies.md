@@ -12,13 +12,3 @@ description: "Charles Mackay's powerful poem arguing that having no enemies mean
 You have no enemies, you say? Alas, my friend, the boast is poor. He who has mingled in the fray of duty that the brave endure, must have made foes. If you have none, small is the work that you have done. You’ve hit no traitor on the hip. You’ve dashed no cup from perjured lip. You’ve never turned the wrong to right. You’ve been a coward in the fight.
 
 Charles Mackay
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/interesting-reads/Poems/you-have-no-enemies.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Boundaries and Communication]] — term-derived match: score 10; terms: boundaries, communication, conflict
-- [[Resilience and Adversity]] — term-derived match: score 8; terms: resilience, adversity
-<!-- term-concept-links:end -->

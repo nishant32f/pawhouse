@@ -44,15 +44,3 @@ Things will go well. You will figure it out, just like you always have. So go se
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/mental-health/Insecure-Overachiever-Mindset.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Mental Health and Self-Awareness]] — term-derived match: score 3; terms: anxiety, fear
-- [[Ambition and Expectations]] — term-derived match: score 2; terms: expectation, status
-- [[Learning and Advice]] — term-derived match: score 2; terms: experience
-- [[Self-Belief and Confidence]] — term-derived match: score 2; terms: confidence, belief
-<!-- term-concept-links:end -->

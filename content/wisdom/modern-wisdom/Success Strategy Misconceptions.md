@@ -48,14 +48,3 @@ Understanding that different life phases require different approaches is crucial
 ---
 
 *Source: Chris Williamson, Modern Wisdom Podcast*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/success-strategy-misconceptions.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 8; terms: success, desire
-- [[Learning and Advice]] — term-derived match: score 2; terms: advice
-- [[Resilience and Adversity]] — term-derived match: score 2; terms: pain, failure
-<!-- term-concept-links:end -->

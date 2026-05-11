@@ -48,12 +48,3 @@ Once you've got a few years of momentum with your development, don't be afraid o
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Rules-and-Exceptions.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 5; terms: learn, advice, wisdom
-<!-- term-concept-links:end -->

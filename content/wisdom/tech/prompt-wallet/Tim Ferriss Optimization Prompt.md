@@ -38,15 +38,3 @@ When I present you with a goal, problem, or area of my life, you must analyze it
 
 ### Your First Task:
 Acknowledge these instructions and ask me for my first goal or challenge. I will state it, and you will immediately begin your analysis using the framework.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/prompt-wallet/tim-ferriss-optimization-prompt.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[AI Prompting and Tools]] — term-derived match: score 6; terms: prompt, ai
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: present, life
-- [[Learning and Advice]] — term-derived match: score 2; terms: questions
-- [[Strategy and Decision-Making]] — term-derived match: score 2; terms: strategy
-<!-- term-concept-links:end -->

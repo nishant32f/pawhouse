@@ -26,13 +26,3 @@ Life is not a race. Do take it slower.
 Hear the music, before the song is over.
 
 *Written by child psychologist, David L Weatherford*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/interesting-reads/Poems/slow-dance.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 8; terms: life, slow
-- [[Focus and Attention]] — term-derived match: score 4; terms: time
-<!-- term-concept-links:end -->

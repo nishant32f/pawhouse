@@ -40,15 +40,3 @@ You can't be everything you want.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/You-Cant-Be-Everything.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Focus and Attention]] — term-derived match: score 4; terms: focus, time
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: life
-- [[Ambition and Expectations]] — term-derived match: score 2; terms: success, goals
-- [[Relationships and Love]] — term-derived match: score 2; terms: relationship, partner
-<!-- term-concept-links:end -->

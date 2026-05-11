@@ -38,13 +38,3 @@ Having lots of competencies you could follow in your life is exciting, but it's 
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Curse-of-Competence.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Strategy and Decision-Making]] — term-derived match: score 8; terms: decision, choice, choices
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: life
-<!-- term-concept-links:end -->

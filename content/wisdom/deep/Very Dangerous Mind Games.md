@@ -17,13 +17,3 @@ description: "Subtle psychological manipulation tactics that can damage relation
 4. Reveal something that seems personal... but isn't. They'll open up more than you did, thinking it's mutual. You gain intel; they gain illusion.
 
 5. When someone confronts you, don't defend yourself. Just stare... and say: "Why are you so emotional about this?" Now they're explaining their own anger, and you've flipped the power.
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/Very-Dangerous-Mind-Games.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Mental Health and Self-Awareness]] — term-derived match: score 6; terms: fear, emotional, mind
-- [[Boundaries and Communication]] — term-derived match: score 2; terms: ego
-<!-- term-concept-links:end -->

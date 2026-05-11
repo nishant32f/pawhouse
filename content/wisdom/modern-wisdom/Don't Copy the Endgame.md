@@ -30,19 +30,8 @@ Successful people often give advice based on their current lifestyle, not what a
 
 *Source: Chris Williamson, Modern Wisdom Podcast*
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Don’t-Copy-the-Endgame.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[Success Strategy Misconceptions]] — shared advice/career/strategy/success graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 5; terms: advice, question, wisdom
-- [[Ambition and Expectations]] — term-derived match: score 4; terms: success, desire
-- [[Resilience and Adversity]] — term-derived match: score 2; terms: pain, failure
-<!-- term-concept-links:end -->

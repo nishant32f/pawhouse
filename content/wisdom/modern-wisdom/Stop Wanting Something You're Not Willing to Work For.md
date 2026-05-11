@@ -40,15 +40,3 @@ Feel free to choose.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Stop-Wanting-Something-Youre-Not-Willing-to-Work-For.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 9; terms: success, wanting, desire, goals
-- [[Focus and Attention]] — term-derived match: score 3; terms: focus, time
-- [[Mental Health and Self-Awareness]] — term-derived match: score 3; terms: anxiety, fear, mind
-- [[Gratitude and Presence]] — term-derived match: score 2; terms: life
-<!-- term-concept-links:end -->

@@ -47,15 +47,3 @@ And a voice in the back of your mind will say "I told you so."
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Unteachable-Lessons.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 10; terms: learn, learning, lesson, lessons
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: grateful, life
-- [[Focus and Attention]] — term-derived match: score 2; terms: time
-- [[Self-Worth and Validation]] — term-derived match: score 2; terms: self worth, worth
-<!-- term-concept-links:end -->

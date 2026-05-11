@@ -25,18 +25,8 @@ who neither know victory nor defeat.
 
 **BY THEODORE ROOSEVELT**
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/interesting-reads/Poems/man-in-the-arena.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[You have no enemies]] — shared courage/poetry graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 11; terms: learning, advice, wisdom
-- [[Action and Agency]] — term-derived match: score 10; terms: action, agency
-<!-- term-concept-links:end -->

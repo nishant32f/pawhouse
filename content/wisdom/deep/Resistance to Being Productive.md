@@ -20,19 +20,8 @@ Most people want to be comfortable, not 'successful' in a way that requires ambi
 
 There's also something I haven't figured out yet. Every time I give advice, I get a number of responses from people with self-defeating attitudes, explaining how this advice can't possibly apply to them because blah blah blah. These people build up belief structures that are obviously intended to keep them mired in their current situation, smelling of low self-esteem and defeatism. "Obviously" it's better not to be stuck in these belief structures, yet people will defend them vigorously, and in some cases fiercely. I don't yet fully understand why, except maybe that if someone believes there is a solution to their problem, then it must be their fault that they haven't solved it, and/or that there will be a clear failure that is their fault if they attempt to solve it.
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/Resistance-to-Being-Productive.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[The Last Twenty Percent]] — shared psychology/success graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 4; terms: advice, wisdom, understand
-- [[Ambition and Expectations]] — term-derived match: score 2; terms: ambition, success
-- [[Self-Belief and Confidence]] — term-derived match: score 2; terms: belief
-<!-- term-concept-links:end -->

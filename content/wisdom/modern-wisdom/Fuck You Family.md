@@ -44,15 +44,3 @@ But it definitely seems to open up a new realm where they care far less about th
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Fuck-You-Family.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Relationships and Love]] — term-derived match: score 8; terms: family, men, care
-- [[Ambition and Expectations]] — term-derived match: score 3; terms: ambition, status
-- [[Wealth and Business]] — term-derived match: score 3; terms: wealth, money
-- [[Focus and Attention]] — term-derived match: score 2; terms: time, priorities
-<!-- term-concept-links:end -->

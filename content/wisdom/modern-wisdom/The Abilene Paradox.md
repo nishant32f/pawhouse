@@ -145,15 +145,3 @@ Sometimes the most valuable contribution isn't going along to get along—it's h
 ---
 
 *Source: Chris Williamson*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/The-Abilene-Paradox.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Mental Health and Self-Awareness]] — term-derived match: score 10; terms: awareness, anxiety, fear
-- [[Strategy and Decision-Making]] — term-derived match: score 10; terms: decision, decisions, risk
-- [[Learning and Advice]] — term-derived match: score 9; terms: learn, questions, wisdom, knowledge
-- [[Action and Agency]] — term-derived match: score 6; terms: action
-<!-- term-concept-links:end -->

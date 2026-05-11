@@ -17,10 +17,3 @@ Ordinary life wisdom is the practice of noticing and valuing the simple things t
 
 ---
 Created during wisdom linkage repair to resolve imported wikilink `[[Ordinary Life Wisdom]]`.
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 8; terms: ordinary, life
-- [[Learning and Advice]] — term-derived match: score 4; terms: wisdom
-<!-- term-concept-links:end -->

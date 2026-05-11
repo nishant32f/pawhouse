@@ -40,15 +40,3 @@ Instead you should ask "what did my favourite guru actually do when they were at
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Luxury-Beliefs.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 10; terms: success, desire
-- [[Gratitude and Presence]] — term-derived match: score 5; terms: presence, present, life, enough
-- [[Learning and Advice]] — term-derived match: score 3; terms: advice, question, understand
-- [[Resilience and Adversity]] — term-derived match: score 3; terms: pain, failure
-<!-- term-concept-links:end -->

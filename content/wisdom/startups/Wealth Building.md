@@ -293,15 +293,3 @@ That's it. That's the game.
 ---
 
 *Content inspired by insights from [Alex Hormozi](https://www.acquisition.com/), entrepreneur and author who built a portfolio of companies generating $100M+ in annual revenue.*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/startups/Wealth-Building.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Wealth and Business]] — term-derived match: score 25; terms: wealth, money, business, sales
-- [[Focus and Attention]] — term-derived match: score 21; terms: focus, distraction, time, priorities
-- [[Resilience and Adversity]] — term-derived match: score 14; terms: pain, failure, fail, difficult
-- [[Learning and Advice]] — term-derived match: score 12; terms: learn, learning, knowledge, understand
-<!-- term-concept-links:end -->

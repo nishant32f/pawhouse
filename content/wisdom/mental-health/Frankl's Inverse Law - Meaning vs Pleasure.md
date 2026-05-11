@@ -38,15 +38,3 @@ In anticipation, this sounds like building up to some amazingly impressive momen
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/mental-health/Frankls-Inverse-Law.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Happiness and Fulfillment]] — term-derived match: score 20; terms: happiness, meaning, pleasure, joy
-- [[Focus and Attention]] — term-derived match: score 3; terms: time
-- [[Gratitude and Presence]] — term-derived match: score 3; terms: life
-- [[Resilience and Adversity]] — term-derived match: score 3; terms: struggle, pain
-<!-- term-concept-links:end -->

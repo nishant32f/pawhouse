@@ -22,13 +22,3 @@ Appreciate that you are constantly evolving and that this position you are in ri
 
 - [[Ordinary Life Wisdom]] - Finding wonder in everyday moments
 - [[Strength Through Struggle|Strength Through Struggle]] - Appreciating both blessings and lessons
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/appreciate-everything.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 18; terms: appreciate, life
-- [[Relationships and Love]] — term-derived match: score 2; terms: love, care
-<!-- term-concept-links:end -->

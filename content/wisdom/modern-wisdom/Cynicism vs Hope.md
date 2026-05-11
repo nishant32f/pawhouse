@@ -40,13 +40,3 @@ Believing in hope is a better way to live. You should do the same.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Cynicism-vs-Hope.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Resilience and Adversity]] — term-derived match: score 4; terms: pain, failure
-- [[Relationships and Love]] — term-derived match: score 3; terms: relationship, women
-<!-- term-concept-links:end -->

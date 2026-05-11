@@ -16,20 +16,8 @@ It might not feel great at the time, but keep your head up and be open to the fa
 
 Come out the other side of your pain stronger, better and wiser. Your greatest life can not be lived without the strength that comes from your struggles. Your best life cannot be lived without great challenges. Trust this is a part of life. Find the purpose in the pain. Be one of the few who see the message in the mess. Be one of the few who gain the strength through the struggle. Who see the blessing in the lessons.
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/strength-through-struggle.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[The No Big Deal Mentality]] — shared personal-growth/resilience graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Resilience and Adversity]] — term-derived match: score 15; terms: struggle, pain, strength
-- [[Gratitude and Presence]] — term-derived match: score 7; terms: appreciate, life
-- [[Learning and Advice]] — term-derived match: score 3; terms: lessons, wisdom, experience
-- [[Happiness and Fulfillment]] — term-derived match: score 2; terms: purpose
-<!-- term-concept-links:end -->

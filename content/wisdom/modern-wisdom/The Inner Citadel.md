@@ -30,13 +30,3 @@ The Inner Citadel can be both a refuge and a prison - protecting us from disappo
 ---
 
 *Source: Chris Williamson*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/The-Inner-Citadel.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 3; terms: teach, wisdom
-- [[Ambition and Expectations]] — term-derived match: score 2; terms: desire
-<!-- term-concept-links:end -->

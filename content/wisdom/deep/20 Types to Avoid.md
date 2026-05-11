@@ -29,18 +29,9 @@ description: "Identifying toxic personality traits that make healthy friendships
 19. Always taking, but never giving back.
 20. Makes bad choices that hold them back every time.
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/20-Types-to-Avoid.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[Be Selective in Friendship]] — shared friendship/relationships graph concepts
 - [[Responding to Victim Mentality]] — shared boundaries/relationships graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 2; terms: success
-<!-- term-concept-links:end -->

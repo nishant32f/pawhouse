@@ -46,17 +46,8 @@ And - which is more - you'll be a Man, my son!
 
 Rudyard Kipling (1865-1936)
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/interesting-reads/Poems/If.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[Ode to Happiness]] — shared poetry/resilience graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Relationships and Love]] — term-derived match: score 3; terms: friends, men
-<!-- term-concept-links:end -->

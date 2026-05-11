@@ -12,18 +12,9 @@ Everyone has their own way of giving up. Some stop dressing well, lose desires, 
 
 Giving up doesn't always look like quitting. Sometimes it looks like coping. And sometimes it looks exactly like functioning.
 
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/ways-of-giving-up.mdx`
-
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
 - [[When Everything Feels Off]] — shared mental-health/resilience graph concepts
 - [[Mental Health Characteristics]] — shared mental-health/psychology/resilience graph concepts
 <!-- wisdom-linkage-repair:end -->
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Relationships and Love]] — term-derived match: score 2; terms: relationships, love
-<!-- term-concept-links:end -->

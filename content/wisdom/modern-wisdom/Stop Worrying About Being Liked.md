@@ -6,10 +6,14 @@ author: "Nishant Khurana"
 description: "Why worrying about others' opinions is futile - most people don't like themselves and rarely think about you anyway."
 ---
 
+# Stop Worrying About Being Liked
+
 **Stop Worrying About Being Liked**  
 _Chris Williamson | @chriswillx_
 
 Here's some short reflections on dealing with self-consciousness...
+
+## The Self-Consciousness Trap
 
 > "Stop worrying so much about other people liking you. Most people don't even like themselves." — Carnivore Aurelius
 
@@ -19,6 +23,8 @@ We only see a tiny sliver of other people's motivations and thought processes in
 
 Most people, most of the time, don't have any idea what they're doing. Adulthood is like being pushed down some stairs at 18 and continually trying to catch your feet until you die.
 
+## Almost No One Is Thinking About You
+
 > "We would care far less about what other people thought of us if we realised how rarely they did."
 
 Not only do most people not have any idea what they're doing, they're so wrapped up in their own existence that they have no time to consider ours. When was the last time you saw someone trip over or say something polite but clumsy at a party?
@@ -26,6 +32,8 @@ Not only do most people not have any idea what they're doing, they're so wrapped
 I can't remember at all.
 
 This is one of the most liberating things to realise about social life. Almost no one cares about you. Almost no one will remember you after you leave the room. So there is no point in being self-conscious.
+
+## Critics Are Not Final Judges
 
 > "Your boos mean nothing, I've seen what makes you cheer." — Rick Sanchez
 
@@ -36,14 +44,3 @@ Basically, most critics are miserable idiots. You're doing fine.
 ---
 
 *Source: Chris Williamson*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Stop-Worrying-About-Being-Liked.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Action and Agency]] — term-derived match: score 3; terms: doing
-- [[Focus and Attention]] — term-derived match: score 3; terms: time
-- [[Self-Worth and Validation]] — term-derived match: score 2; terms: liked
-<!-- term-concept-links:end -->

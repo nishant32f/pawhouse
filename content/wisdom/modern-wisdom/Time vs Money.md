@@ -42,15 +42,3 @@ This is not a dress rehearsal.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Time-vs-Money.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Gratitude and Presence]] — term-derived match: score 10; terms: presence, present, life, enough
-- [[Focus and Attention]] — term-derived match: score 6; terms: distraction, time
-- [[Wealth and Business]] — term-derived match: score 6; terms: money
-- [[Happiness and Fulfillment]] — term-derived match: score 3; terms: happiness, purpose
-<!-- term-concept-links:end -->

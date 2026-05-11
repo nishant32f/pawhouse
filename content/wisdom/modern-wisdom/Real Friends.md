@@ -40,13 +40,3 @@ The more people who make it feel safe for you to truly be yourself around them, 
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Real-Friends.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Relationships and Love]] — term-derived match: score 6; terms: friend, friends
-- [[Learning and Advice]] — term-derived match: score 3; terms: question
-<!-- term-concept-links:end -->

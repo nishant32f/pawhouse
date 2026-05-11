@@ -41,13 +41,3 @@ Your relationship with yourself sets the foundation for building confidence and 
 ---
 
 *Source: Chris Williamson, Modern Wisdom Podcast*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/promise-keeping.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Action and Agency]] — term-derived match: score 3; terms: action
-- [[Relationships and Love]] — term-derived match: score 3; terms: relationship, friend
-<!-- term-concept-links:end -->

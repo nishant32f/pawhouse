@@ -54,15 +54,3 @@ We are all chasing a sense of completion but we never actually allow ourselves t
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Operator-to-Idea-Guy.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 5; terms: success
-- [[Focus and Attention]] — term-derived match: score 4; terms: time, busy
-- [[Action and Agency]] — term-derived match: score 3; terms: doing, act
-- [[Resilience and Adversity]] — term-derived match: score 3; terms: difficult
-<!-- term-concept-links:end -->

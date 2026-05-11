@@ -21,12 +21,3 @@ How to Do Great Work by Paul Graham. 
 Founder of Y Combinator, Created $600 Billion value!
 
 His [essay](https://paulgraham.com/greatwork.html)
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/startups/how-to-do-great-work.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Leadership and Startups]] — term-derived match: score 2; terms: startups, founder
-<!-- term-concept-links:end -->

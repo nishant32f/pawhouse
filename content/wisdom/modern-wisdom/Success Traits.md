@@ -35,14 +35,3 @@ description: "The most reliable traits among successful people - consistency and
 ---
 
 *Source: Chris Williamson, Modern Wisdom Podcast*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/success-traits.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Ambition and Expectations]] — term-derived match: score 4; terms: success
-- [[Discipline and Consistency]] — term-derived match: score 3; terms: consistency
-- [[Boundaries and Communication]] — term-derived match: score 2; terms: truth
-<!-- term-concept-links:end -->

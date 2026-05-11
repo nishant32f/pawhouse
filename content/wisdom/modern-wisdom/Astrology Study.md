@@ -34,13 +34,3 @@ In conclusion, despite believing they could do it, the 152 astrologers seemed to
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Astrology-Study.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Learning and Advice]] — term-derived match: score 9; terms: questions, wisdom, experience
-- [[Focus and Attention]] — term-derived match: score 2; terms: time
-<!-- term-concept-links:end -->

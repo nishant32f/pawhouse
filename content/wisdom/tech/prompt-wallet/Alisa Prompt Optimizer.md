@@ -157,15 +157,3 @@ This prompt was born from frustration - after 1,000+ failed attempts, the creato
 ---
 
 *Source: "After 1,000 Failed Prompts, I Accidentally Unlocked ChatGPT's Superpower" by TheMindShift*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/prompt-wallet/Alisa-Prompt-Optimizer.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[AI Prompting and Tools]] — term-derived match: score 52; terms: prompt, prompting, claude, chatgpt
-- [[Learning and Advice]] — term-derived match: score 6; terms: learning, questions, knowledge, understand
-- [[Technology and Systems]] — term-derived match: score 4; terms: systems, technical
-- [[Ambition and Expectations]] — term-derived match: score 2; terms: goals
-<!-- term-concept-links:end -->

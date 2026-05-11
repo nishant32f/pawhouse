@@ -42,15 +42,3 @@ Beware the people who prioritise saying good things, they might not be doing goo
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/toxic-compassion-vs-truth.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Relationships and Love]] — term-derived match: score 9; terms: marriage, family, men, care
-- [[Boundaries and Communication]] — term-derived match: score 4; terms: truth
-- [[Action and Agency]] — term-derived match: score 3; terms: doing
-- [[Mental Health and Self-Awareness]] — term-derived match: score 2; terms: emotional
-<!-- term-concept-links:end -->

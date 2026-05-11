@@ -39,15 +39,3 @@ Here are some lessons I've learned:
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/modern-wisdom/Self-Belief-vs-Action.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Self-Belief and Confidence]] — term-derived match: score 16; terms: self-belief, believe, belief
-- [[Action and Agency]] — term-derived match: score 4; terms: action
-- [[Gratitude and Presence]] — term-derived match: score 2; terms: gratitude, enough
-- [[Learning and Advice]] — term-derived match: score 2; terms: lessons, question
-<!-- term-concept-links:end -->

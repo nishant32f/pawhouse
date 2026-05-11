@@ -7,12 +7,3 @@ description: "A collection of Linux commands, tips, and resources for developers
 ---
 
 # Linux
-
----
-Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/tech/linux.mdx`
-
-<!-- term-concept-links:start -->
-## Term-derived concept links
-
-- [[Technology and Systems]] — term-derived match: score 4; terms: linux
-<!-- term-concept-links:end -->
