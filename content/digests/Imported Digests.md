@@ -8,4 +8,4 @@ type: redirect-index
 
 Historical imports have been clinically normalized. Use the canonical hub:
 
-- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/X-AI Hub|X-AI Hub]]

@@ -79,7 +79,7 @@ These are beliefs and principles collected from experience, failure, and repetit
 
 **[Wisdom](/wisdom/)** is the evergreen garden: mental models, life lessons, startup notes, technical references, health protocols, prompts, and collected writing.
 
-**[[digests/AI X Digest Hub|AI/X Digests]]** is the time-based stream: imported and daily generated snapshots from AI and X/Twitter.
+**[[digests/X-AI Hub|X-AIs]]** is the time-based stream: imported and daily generated snapshots from AI and X/Twitter.
 
 **[[bookmarks/inbox|Bookmark Inbox]]** is the raw capture layer: links and references before they are sorted into more permanent shapes.
 
