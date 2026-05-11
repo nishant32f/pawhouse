@@ -1,17 +1,27 @@
-# Quartz v4
+# Pawhouse
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+[![Deploy Quartz site to GitHub Pages](https://github.com/nishant32f/pawhouse/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/nishant32f/pawhouse/actions/workflows/deploy.yml)
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Pawhouse is a Quartz site that publishes notes from the Obsidian vault publish folder.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+- Live site: <https://nishant32f.github.io/pawhouse/>
+- Source notes: `/Users/skypawalker/Dev/obsidian/public`
+- Published content snapshot: `content/`
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## Publishing
 
-## Sponsors
+From this repository, run:
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+```bash
+npm run publish -- "Update notes"
+```
+
+That command syncs the vault notes with `rsync`, builds Quartz, commits changes, and pushes the current branch. A push to `main` triggers the GitHub Pages deployment workflow shown by the badge above.
+
+## Local Preview
+
+```bash
+npm run quartz -- build --serve
+```
+
+Quartz documentation: <https://quartz.jzhao.xyz/>
