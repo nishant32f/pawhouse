@@ -1,0 +1,29 @@
+---
+title: "Ways of Giving Up"
+date: "2025-09-28"
+tags: ["mental-health", "psychology", "life-philosophy", "coping", "resilience"]
+author: "Nishant Khurana"
+description: "A profound reflection on the many forms that giving up can take, from obvious quitting to subtle forms of self-protection"
+---
+
+# Ways of Giving Up
+
+Everyone has their own way of giving up. Some stop dressing well, lose desires, drop out of school, neglect their posture, or listen to sad music. Some stop taking photos or believing in love. Many die at 25 but are buried at 70. Some start laughing too loudly to fill the silence inside. Some stay in jobs or relationships that drain them because numbness feels safer than hope. Some stop dreaming out loud. Others never stop moving just so they don't have to sit with themselves.
+
+Giving up doesn't always look like quitting. Sometimes it looks like coping. And sometimes it looks exactly like functioning.
+
+---
+Imported from dg-gatsby: `/Users/skypawalker/Dev/dg-gatsby/content/garden/deep/ways-of-giving-up.mdx`
+
+<!-- wisdom-linkage-repair:start -->
+## Wisdom linkage repair
+
+- [[When Everything Feels Off]] — shared mental-health/resilience graph concepts
+- [[Mental Health Characteristics]] — shared mental-health/psychology/resilience graph concepts
+<!-- wisdom-linkage-repair:end -->
+
+<!-- term-concept-links:start -->
+## Term-derived concept links
+
+- [[Relationships and Love]] — term-derived match: score 2; terms: relationships, love
+<!-- term-concept-links:end -->

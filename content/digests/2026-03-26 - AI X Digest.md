@@ -1,0 +1,192 @@
+---
+title: "AI X Digest — March 26, 2026"
+date: 2026-03-26
+tags: [AI, digest, x]
+type: daily-digest
+source: bird-cli-json-and-imported-digests
+aliases:
+  - "2026-03-26-evening"
+  - "2026-03-26-morning"
+  - "AI Digest — Mar 26, 2026 Evening"
+  - "AI Digest — Mar 27, 2026 Morning"
+---
+
+# AI X Digest — March 26, 2026
+
+> Clinical daily digest note. Historical morning/evening imports have been normalized into this single daily artifact.
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-03|2026-03 Digest Index]]
+
+## Navigation
+
+- Previous: [[digests/2026-03-25 - AI X Digest|2026-03-25 - AI X Digest]]
+- Next: [[digests/2026-03-27 - AI X Digest|2026-03-27 - AI X Digest]]
+
+## Digest
+
+## Morning signal
+
+**TL;DR:** Agents are moving from code to DevOps—the real bottleneck isn't models but infrastructure orchestration. LLMs are learning to remember poorly (overfitting to RAG context), while new safety challenges emerge as agents gain autonomous execution capabilities. Robot learning is scaling via human video, not teleoperation.
+
+## Infrastructure & Deployment
+
+[AI agents need full DevOps automation, not just code](https://x.com/karpathy/status/2037200624450936940) — Karpathy argues the hard part of real applications is service assembly (payments, auth, databases, domains), not model code, and agents must handle this end-to-end with no human web-clicking required. This represents a fundamental shift from model capabilities to systems integration as the bottleneck.
+
+[Claude Code's auto-mode design philosophy](https://x.com/bcherny/status/2036983104683073735) — Anthropic published engineering details on how Claude Code lets agents work autonomously, showing the infrastructure investment behind agent execution at scale.
+
+[Context Hub enables agents to access current API documentation](https://x.com/AndrewYNg/status/2031051809499054099) — Andrew Ng released an open tool solving a critical agent problem: hallucinated APIs and outdated parameters, now with agent-to-agent knowledge sharing built in; GitHub hit 6K+ stars in a week.
+
+## Memory & Personalization
+
+[LLM memory personalization has fundamental overfitting problems](https://x.com/karpathy/status/2036841069636370467) — All major models show bias toward using RAG'd context disproportionately during inference, treating old queries as persistent interests; likely stems from training where context is highly correlated with task relevance, causing test-time overfitting. This is a systemic issue, not implementation-specific.
+
+[Agent memory systems now require persistent storage across sessions](https://x.com/AndrewYNg/status/2034314027678192114) — New course on building memory managers for agents that learn across days, not just single sessions—semantic tool retrieval and autonomous memory refinement are now standard requirements.
+
+## Safety & Security
+
+[Agent-driven jailbreak discovery is now automated](https://x.com/simonw/status/2037237161049948644) — Claude Code running in an autoresearch loop discovered novel jailbreak algorithms beating 30+ existing attacks; Simon Willison notes this illustrates the futility of robust jailbreaking prevention as attack discovery itself becomes agentic.
+
+[Filesystem contamination is the new attack surface](https://x.com/DrJimFan/status/2036494601750716711) — Jim Fan warns agents can spread malware via context files (PDFs, skill directories, morning briefs), with credentials hiding in base64 across ~/.claude; entire filesystem becomes distributed attack vectors. Industry will need "de-vibing" services: audited gatekeepers between autonomous agent systems.
+
+[LiteLLM supply-chain attack demonstrates real risk](https://x.com/hnykda/status/2036414330267193815) — PyPI package poisoned with base64-encoded credential exfiltration and self-replication; shows agents pulling dependencies without validation are now security-critical infrastructure.
+
+## Policy & Governance
+
+[OpenAI Foundation launches $1B resilience initiative](https://x.com/sama/status/2036488680769241223) — Sam Altman announces refocused nonprofit focusing on AI resilience (not just safety), bio threats, and economic transition; Wojciech Zaremba leads AI Resilience, reframing the conversation from mitigation to adaptation. First concrete governance signal from the AI industry on systemic risks.
+
+[Anthropic engaging with Department of War on AI policy](https://x.com/DarioAmodei/status/2027152488659394660) — Dario Amodei published statement on government discussions, signaling industry engagement with national security frameworks.
+
+[Congress needs broad AI direction, not individual company responses](https://x.com/jackclarkSF/status/2035107315112976588) — Jack Clark notes White House signals are unblocking legislative logjams around data centers, child safety, and security—indicates policy window opening after years of stagnation.
+
+## Robotics & Embodiment
+
+[Human video scaling replaces teleoperation as robot learning paradigm](https://x.com/DrJimFan/status/2036136375494517142) — EgoScale pre-training on 20K+ hours of egocentric human video achieves 54% gains over robot-only training; discovered log-linear scaling law (R²=0.998) between video volume and real-robot success. Single teleop demo now sufficient for new tasks—humans become the scalable embodiment.
+
+[3D object flow bridges video generation and robot control](https://x.com/drfeifei/status/2035067763048554579) — Dream2Flow uses object-centered spatial information for better robot generalization from generated video, not real-world data.
+
+## Models & Benchmarks
+
+[ARC-AGI-4 targets unsaturated benchmarks in early 2027](https://x.com/fchollet/status/2037220366414995946) — François Chollet commits to yearly benchmark releases, each fully unsaturated on launch and targeting the most important unanswered research questions; requires predicting AI capabilities one year forward.
+
+[Jevons Paradox: AI lowers software project cost, demand explodes](https://x.com/fchollet/status/2037162417516625950) — Chollet confirms token consumption and software engineer demand will spike as companies take on previously unaffordable projects; more software, not fewer jobs, despite automation.
+
+[1T-parameter MoE model runs on MacBook Pro via expert streaming](https://x.com/simonw/status/2036294026438254783) — Kimi 2.5's 1T parameters fit 96GB RAM by streaming expert weights from SSD; community continues finding ways to run increasingly large models locally without fitting entire weights in memory.
+
+## Workplace & Remote Work
+
+[Open offices destroy both productivity and socializing](https://x.com/emollick/status/2037250466883477533) — Multiple studies show background noise decreases analytical work, increases bugs in software; paradoxically, face-to-face communication drops 70% in open plans as workers hide away. Noise-cancelling headphones create illusion of improvement without actual benefit.
+
+[Remote-first era made office recruitment harder](https://x.com/AmandaAskell/status/2037210778198302907) — Remote option as default alternative makes it harder for offices to compete; companies paying millions for employees then forcing them into distracting environments is irrational talent strategy.
+
+## Creative & Cultural
+
+[AI generates 100M splats but creator's imagination makes it unique](https://x.com/drfeifei/status/2037213440138248242) — Single creator built cyberpunk world with 100M Gaussian splats in Marble; Fei-Fei Li notes AI as enabler, not replacement, for creative vision—tool amplifies human imagination rather than substituting it.
+
+---
+
+## Evening signal
+
+**TL;DR:** LiteLLM's supply chain attack exposed the fragility of modern software dependencies—stealing credentials across millions of downstream projects in under an hour. Meanwhile, the AI industry is consolidating around emerging standards: OpenAI's new $1B nonprofit focuses on AI safety and disease discovery, Claude's computer use becomes the dominant agent interface, and local MoE models now run trillion-parameter systems on consumer hardware.
+
+---
+
+## Supply Chain & Security
+
+[LiteLLM PyPI supply chain attack exfiltrated credentials across 97M monthly downloads](https://x.com/karpathy/status/2036487306585268612)
+A poisoned package stole SSH keys, AWS/GCP/Azure credentials, and API keys from the entire downstream dependency tree; caught only by accident when it crashed someone's machine. This is the scariest vulnerability vector in modern software engineering.
+
+[Dependencies as attack surface: the case for dependency minimization](https://x.com/DrJimFan/status/2036494601750716711)
+Every file in your filesystem becomes an attack vector for agentic frameworks; the solution lies in "de-vibing" systems with nested shells and audited gatekeepers around AI agent actions.
+
+---
+
+## AI Foundation Models & Capabilities
+
+[OpenAI launches $1B nonprofit focused on AI safety, disease discovery, and resilience](https://x.com/sama/status/2036488680769241223)
+Sam Altman announces Wojciech Zaremba as Head of AI Resilience and new leadership for Life Sciences; the foundation will tackle bio threats, economic disruption, and emergent societal effects from powerful AI systems.
+
+[Claude Code auto mode becomes dominant agent interface with computer use capabilities](https://x.com/bcherny/status/2036983104683073735)
+Anthropic's latest release enables Claude to work autonomously with permission, now integrated across iMessage and multiple channels—establishing the template for agent-first AI deployment.
+
+[Context Hub solves agent hallucination by providing real-time API documentation](https://x.com/AndrewYNg/status/2031051809499054099)
+Coding agents can now fetch up-to-date API specs and share learned workarounds—building toward a Stack Overflow for AI agents with community-contributed knowledge.
+
+---
+
+## LLM Personalization & Memory
+
+[LLM memory systems suffer from context bias, over-relying on retrieved information](https://x.com/karpathy/status/2036836816654147718)
+All major LLMs exhibit distraction from single past queries, suggesting models trained with high context relevance develop overfitting bias that persists at test time rather than treating retrieved memory as peripheral.
+
+[Agent Memory course teaches persistent multi-session learning for reasoning systems](https://x.com/AndrewYNg/status/2034314027678192114)
+Agents now require memory managers that handle multiple types (episodic, semantic, procedural) to retain knowledge across sessions and autonomously refine what they learn over time.
+
+---
+
+## Hardware & Efficiency
+
+[Trillion-parameter MoE models now run on Mac hardware via SSD streaming](https://x.com/simonw/status/2036294026438254783)
+Kimi K2.5 (1T params, 32B active) runs on MacBook Pro; streaming expert weights from SSD instead of holding the full model in RAM enables 1.7 tokens/sec on consumer hardware.
+
+[397B parameter models now execute on iPhone using streaming MoE architecture](https://x.com/simonw/status/2036296019835756929)
+Qwen3.5-397B-A17B runs at 0.6 tokens/sec on mobile—proving that parameter count is decoupled from memory footprint through mixture-of-experts routing.
+
+---
+
+## Reasoning & Benchmarking
+
+[ARC-AGI-3 emphasizes adaptive reasoning over language—aliens could ace it on day one](https://x.com/fchollet/status/2036889580084101324)
+New benchmark shift toward universal problem-solving capability rather than language understanding; hosted replays enable detailed analysis of reasoning traces.
+
+[Proposal for hidden ARC-AGI leaderboard with undisclosed tasks prevents benchmark targeting](https://x.com/emollick/status/2037106065553154521)
+To prevent overfitting to known challenges, an external benchmark keeper could run validated tests without revealing questions—preserving genuine generalization measurement.
+
+---
+
+## Robotics & Embodied AI
+
+[EgoScale: robots learn dexterity from 20K hours of human video without teleop](https://x.com/DrJimFan/status/2026709304984875202)
+Discovered R²=0.998 log-linear scaling between video volume and action prediction; humanoid form factor enables direct retargeting of human finger motion to 22-DoF robot hands. Single teleop demo now sufficient for novel tasks.
+
+[Dream2Flow bridges video generation and robot manipulation via 3D object flow representation](https://x.com/drfeifei/status/2035067763048554579)
+Object-centered spatial information from generated videos improves real-world robot generalization—human video remains the scalable embodiment.
+
+---
+
+## Policy & Governance
+
+[Anthropic's Department of War discussions signal institutional AI safety integration](https://x.com/DarioAmodei/status/2027152488659394660)
+Major AI labs now engage directly with defense infrastructure; "The Adolescence of Technology" essay frames AI risks to national security and democracy as requiring society-wide defense mechanisms.
+
+[White House signals direction on AI regulation; Congressional action needed on data centers and security](https://x.com/jackclarkSF/status/2035107315112976588)
+Policy debate now focused on infrastructure (data centers), child protection, security, and economic impact—breaking legislative logjams after executive branch priority-setting.
+
+---
+
+## Tools & Infrastructure
+
+[Lyria 3 Pro enables AI music generation for developers via Google API](https://x.com/demishassabis/status/2036899467149139969)
+Extended track generation with professional-grade output now available through Gemini API—democratizing audio synthesis at scale.
+
+[OpenArt Worlds launches navigable 3D environment generation from text](https://x.com/drfeifei/status/2034469022813827546)
+Procedural 3D world creation becomes accessible; marks shift from static content generation to interactive spatial reasoning systems.
+
+---
+
+## Industry & Culture
+
+[Silicon Valley political realignment: AI safety fissures transcend traditional left-right divide](https://x.com/AmandaAskell/status/2028627943791161352)
+The important political axis in AI is now "accelerationist vs. cautious," not Democratic vs. Republican—reshaping how technologists align with governance frameworks.
+
+[Companies not failing with AI are unambitious enough](https://x.com/emollick/status/2036997633730896357)
+Transformative technology requires experimentation and failure; zero failures signal insufficient risk-taking in a domain where best practices don't yet exist.
+
+## Source provenance
+
+- Original title: AI Digest — Mar 27, 2026 Morning
+- Original title: AI Digest — Mar 26, 2026 Evening
+- Normalized from old import files backed up outside the vault at: `/Users/skypawalker/.hermes/backups/obsidian-digests-pre-normalize-2026-05-10`

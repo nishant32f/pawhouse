@@ -1,0 +1,159 @@
+---
+title: "AI X Digest — March 22, 2026"
+date: 2026-03-22
+tags: [AI, digest, x]
+type: daily-digest
+source: bird-cli-json-and-imported-digests
+aliases:
+  - "2026-03-22-evening"
+  - "2026-03-22-morning"
+  - "AI Digest — Mar 22, 2026 Evening"
+  - "AI Digest — Mar 23, 2026 Morning"
+---
+
+# AI X Digest — March 22, 2026
+
+> Clinical daily digest note. Historical morning/evening imports have been normalized into this single daily artifact.
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-03|2026-03 Digest Index]]
+
+## Navigation
+
+- Previous: [[digests/2026-03-21 - AI X Digest|2026-03-21 - AI X Digest]]
+- Next: [[digests/2026-03-23 - AI X Digest|2026-03-23 - AI X Digest]]
+
+## Digest
+
+## Morning signal
+
+**TL;DR:** GPT-5.4 is ramping faster than any prior model with $1B annualized revenue; robotics has cracked dexterity scaling through human video rather than robot data; and the AI field is bifurcating between slick AI content and raw human authenticity.
+
+## Model Capability & Performance
+
+[GPT-5.4 dominates API adoption with 5T tokens/day and $1B revenue run rate within a week](https://x.com/gdb/status/2033605419726483963) — outpacing every prior OpenAI release and signaling market-wide acceleration toward the latest model despite 5.3's already-strong coding abilities.
+
+[Sam Altman confirms humanity is 5.4's distinguishing feature over 5.3, not raw capability](https://x.com/sama/status/2033660522961502288) — builders wanted personality-driven AI not just autistic savant optimization, suggesting emotional resonance now drives adoption.
+
+[François Chollet documents the goalpost-moving pattern in AI claims](https://x.com/fchollet/status/2034811827004350787) — researchers systematically claimed "humans can't do X either" until AI improved, then dropped the argument entirely (e.g., ARC-1 tasks where normal humans actually score >95%).
+
+[Ethan Mollick proves LLMs are terrible judges of writing quality](https://x.com/emollick/status/2035817176758673492) — models prefer pretentious gibberish over actual good writing, creating a feedback loop that stunts writing improvement, unlike the "bitter lesson" that works for coding.
+
+## AI Agents & Autonomy
+
+[Andrew Ng launches Context Hub: agents sharing up-to-date API docs to prevent hallucination and outdated calls](https://x.com/AndrewYNg/status/2031051809499054099) — agents annotate docs with workarounds, creating a Stack Overflow for agents to collectively improve, npm install ready.
+
+[Andrew Ng releases agent memory course enabling persistent learning across sessions](https://x.com/AndrewYNg/status/2034314027678192114) — agents that reset between sessions are useless; the Memory Manager architecture teaches semantic retrieval and autonomous write-back pipelines.
+
+[Cognition's Devin growth formula: cloud compute × coding agent adoption growth](https://x.com/swyx/status/2033618177452871789) — background async agents with sandboxes and dev workspaces are now table stakes, validating the company's 2-year-old vision before the market had terminology.
+
+## Robotics & Embodiment
+
+[NVIDIA's EgoScale: 22-DoF dexterous humanoid trained on 20K+ hours of human egocentric video, no robot-in-loop required](https://x.com/DrJimFan/status/2026709304984875202) — discovered near-perfect log-linear scaling (R²=0.998) between human video volume and robot success, proving humans are the most scalable embodiment on Earth.
+
+[Single teleop demo enables dexterous task learning after EgoScale pretraining](https://x.com/DrJimFan/status/2026709304984875202) — the retargeted 22-DoF action space carries from human video to robot execution with no learned embeddings, exhibiting the "bitter lesson" applied to hardware.
+
+[Dream2Flow bridges video generation and robot control via 3D object flow for better generalization](https://x.com/drfeifei/status/2035067763048554579) — object-centered spatial representations enable robots to understand manipulation from synthetic video, scaling beyond hand-coded trajectories.
+
+## AI Safety & Policy
+
+[Anthropic's Dario Amodei publishes "The Adolescence of Technology" on AI risks to national security, economies, and democracy](https://x.com/DarioAmodei/status/2015833046327402527) — positions AI as entering adolescence phase with asymmetric power and unclear socialization, framing defense strategies against misuse.
+
+[Anthropic in discussions with Department of War per CEO statement](https://x.com/DarioAmodei/status/2027152488659394660) — major AI lab openly coordinating with military on AI governance, signaling normalization of defense-sector engagement.
+
+[Jack Clark signals White House direction on AI will kickstart legislative logjams](https://x.com/jackclarkSF/status/2035107315112976588) — policy momentum building around data centers, child safety, and security, with industry expecting "vigorous debate" on national significance issues.
+
+## AI Research & Benchmarks
+
+[François Chollet announces ARC-AGI-3 launch next week](https://x.com/fchollet/status/2035048473591214563) — new benchmark iteration after a year of team development, likely raising the bar on general reasoning beyond ARC-1 saturation.
+
+[Google DeepMind's AlphaProof and AlphaGeometry papers published in Nature](https://x.com/demishassabis/status/2035010697218621717) — formal proof agents achieving IMO-level mathematics, representing measurable progress on abstract reasoning.
+
+[Yann LeCun shares research on motion-geometry tradeoff in video vs. image models](https://x.com/ylecun/status/2035807864988533158) — video models hallucinate geometry while image models miss motion; fundamental asymmetry in current architectures.
+
+## Culture & Talent
+
+[Demis Hassabis recruits Jas Sekhon (former Bridgewater Chief Scientist) as Google DeepMind's Chief Strategy Officer](https://x.com/demishassabis/status/2035157224893387035) — deepmind seeking thoughtfulness and foresight for AGI path, pulling from quant finance's strategic rigor.
+
+[Amanda Askell jokes about needing to get married again so media stops referencing her ex](https://x.com/AmandaAskell/status/2034690963696967822) — highlighting gender bias in tech media coverage where women are defined by relationships rather than work.
+
+[Andrej Karpathy applauds Project Hail Mary film adaptation for scientific rigor on alien biochemistry](https://x.com/karpathy/status/2034865693544604001) — calls out that quality sci-fi requires "supplementary whitepapers" like Andy Weir's spreadsheets, valuing thought consistency over blockbuster spectacle.
+
+## Content & Social Trends
+
+[AI Love Island fruit content account gained 3.1M followers in 9 days with 15M avg views per video](https://x.com/gregisenberg/status/2035804907102445770) — demonstrates social media bifurcating into polished AI content vs. raw human authenticity as differentiation strategy.
+
+[Greg Isenberg argues VCs shouldn't be allowed without startup building experience](https://x.com/gregisenberg/status/2035804907102445770) — reflecting broader skepticism of armchair AI analysis, demanding skin-in-the-game credibility.
+
+[Simon Willison publishes "Using Git with coding agents" chapter](https://x.com/simonw/status/2035482121037635798) — practical guide emerging as agents become standard dev tooling, version control becomes critical infrastructure.
+
+---
+
+## Evening signal
+
+**TL;DR:** GPT 5.4 is ramping faster than any prior OpenAI model ($1B annualized run rate in week one), with emphasis on personality over raw capability. Meanwhile, robotics is scaling via human video data rather than more robots, and AI agents are gaining memory persistence and tool-sharing infrastructure.
+
+## Model Capabilities & Performance
+
+[GPT 5.4 sees fastest API ramp-up in OpenAI history with 5T tokens/day within first week, hitting $1B annualized revenue](https://x.com/gdb/status/2033605419726483963) — breakneck adoption suggests "humanity" and better coding personality matter more than raw capability jumps.
+
+[Sam Altman feels the 5.3→5.4 upgrade personally, crediting personality over raw intelligence](https://x.com/sama/status/2033660522961502288) — validates that users want relatable assistants, not just capability maximization.
+
+[Claude Opus 4.6 demonstrates sophisticated reasoning across diverse tasks](https://x.com/simonw/status/2035510646561976534) — latest Anthropic model showing tangible improvements in reasoning depth.
+
+[ARC-AGI-3 launching next week with breakthrough results](https://x.com/fchollet/status/2035048473591214563) — Chollet's next benchmark iteration expected to further stress-test reasoning claims.
+
+## Agent Infrastructure & Tooling
+
+[Context Hub scaled from <100 to 1000+ API documents, enabling coding agents to access up-to-date documentation](https://x.com/AndrewYNg/status/2031051809499054099) — solves hallucination problem where Claude Code uses year-old APIs instead of current specs.
+
+[Andrew Ng proposes Stack Overflow for AI agents to share learnings and annotate documentation across sessions](https://x.com/AndrewYNg/status/2033577583200354812) — agent-to-agent knowledge transfer emerging as critical infrastructure.
+
+[New agent memory course teaches persistent memory systems that enable learning across sessions](https://x.com/AndrewYNg/status/2034314027678192114) — memory persistence is now table-stakes for production agents.
+
+[Codex successfully modifies compiled programs (NetHack), downloading source, editing, and delivering working .exe](https://x.com/emollick/status/2035561955964891578) — demonstrates autonomous environment manipulation beyond previous AI capabilities.
+
+## Robotics & Embodied AI
+
+[EgoScale: training humanoid robots on 20K+ hours of egocentric human video achieves 54% gains and extreme data efficiency with single-demo learning](https://x.com/DrJimFan/status/2026709304984875202) — robot dexterity scales via human data, not more robots; near-perfect log-linear scaling law (R²=0.998) between video volume and performance.
+
+[Single teleop demo sufficient to teach dexterous robots never-before-seen tasks](https://x.com/DrJimFan/status/2026709306629091342) — kinematic similarity between humanoid hands and human hands enables direct retargeting without learned embeddings.
+
+[Dream2Flow bridges video generation and robot control using 3D object flow for better generalization](https://x.com/drfeifei/status/2035067763048554579) — object-centric representations improve cross-domain transfer in manipulation.
+
+## Reasoning & Limits
+
+[Chollet calls out pattern of dismissing AI limitations by claiming humans have them too—then stopping once AI improves](https://x.com/fchollet/status/2034811827004350787) — "humans can't do ARC-1 either" claims evaporated once models saturated benchmark; moving goalposts indicate motivated reasoning.
+
+[The space of conceivable actions is smaller than the space of possible actions](https://x.com/fchollet/status/2035415532665786515) — philosophical reflection on why current capability taxonomy misses emergent behaviors.
+
+## Policy & Governance
+
+[White House signaling to Congress on AI regulation should break legislative logjams](https://x.com/jackclarkSF/status/2035107315112976588) — Anthropic's Jack Clark expects vigorous debate on data centers, child protection, security.
+
+[Dario Amodei's "The Adolescence of Technology" essay frames AI risks to national security, economies, democracy](https://x.com/DarioAmodei/status/2015833046327402527) — Anthropic staking position on existential framing for policy discussions.
+
+[Anthropic survey of ~81,000 users on hopes/fears about AI—largest qualitative study of its kind](https://x.com/jackclarkSF/status/2034328875019497478) — data-driven approach to understanding public sentiment for policy conversations.
+
+## Emerging Concerns
+
+[LLMs can profile individuals from 1,000 comments, enabling surveillance dystopia](https://x.com/simonw/status/2035509993664127455) — privacy attack surface expanding as models become better at inference from unstructured text.
+
+[Amanda Askell on media's repeated reference to her past marriage—reveals gendered coverage bias in AI discourse](https://x.com/AmandaAskell/status/2034690963696967822) — systemic issue in how female AI researchers get covered vs. their male peers.
+
+## Community & Culture
+
+[Karpathy praises Project Hail Mary film for honoring alien worldbuilding rigor from the book](https://x.com/karpathy/status/2034865693544604001) — celebration of sci-fi that takes biochemistry, psychology, and tech trees seriously; bromance execution matters as much as spectacle.
+
+[Sam Altman grateful to developers who wrote complex software character-by-character](https://x.com/sama/status/2033935276079510011) — acknowledging the craftsmanship labor that enabled modern AI tooling.
+
+[Ethan Mollick: Civilization V skills correlate with real planning/organizing ability in business school](https://x.com/emollick/status/2035533726319357956) — game expertise transfers to actual strategic thinking.
+
+## Source provenance
+
+- Original title: AI Digest — Mar 23, 2026 Morning
+- Original title: AI Digest — Mar 22, 2026 Evening
+- Normalized from old import files backed up outside the vault at: `/Users/skypawalker/.hermes/backups/obsidian-digests-pre-normalize-2026-05-10`
