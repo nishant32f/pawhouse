@@ -15,17 +15,6 @@ aliases:
 
 > Clinical daily digest note. Historical morning/evening imports have been normalized into this single daily artifact.
 
-## Backlinks
-
-- [[Obsidian Value Map]]
-- [[digests/AI X Digest Hub|AI X Digest Hub]]
-- [[digests/2026-03|2026-03 Digest Index]]
-
-## Navigation
-
-- Previous: [[digests/2026-03-23 - AI X Digest|2026-03-23 - AI X Digest]]
-- Next: [[digests/2026-03-25 - AI X Digest|2026-03-25 - AI X Digest]]
-
 ## Digest
 
 ## Morning signal
@@ -182,3 +171,14 @@ Supply chain attacks have become the critical vulnerability in modern software�
 - Original title: AI Digest — Mar 25, 2026 Morning
 - Original title: AI Digest — Mar 24, 2026 Evening
 - Normalized from old import files backed up outside the vault at: `/Users/skypawalker/.hermes/backups/obsidian-digests-pre-normalize-2026-05-10`
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-03|2026-03 Digest Index]]
+
+## Navigation
+
+- Previous: [[digests/2026-03-23 - AI X Digest|2026-03-23 - AI X Digest]]
+- Next: [[digests/2026-03-25 - AI X Digest|2026-03-25 - AI X Digest]]

@@ -13,17 +13,6 @@ aliases:
 
 > Clinical daily digest note. Historical morning/evening imports have been normalized into this single daily artifact.
 
-## Backlinks
-
-- [[Obsidian Value Map]]
-- [[digests/AI X Digest Hub|AI X Digest Hub]]
-- [[digests/2026-03|2026-03 Digest Index]]
-
-## Navigation
-
-- Previous: [[digests/2026-03-27 - AI X Digest|2026-03-27 - AI X Digest]]
-- Next: [[digests/2026-03-31 - AI X Digest|2026-03-31 - AI X Digest]]
-
 ## Digest
 
 **TL;DR:** LLMs excel at adversarial reasoning but suffer from memory distraction and sycophancy—useful if you triangulate. The real bottleneck in building AI products isn't code but DevOps orchestration; agents will need to handle deployment end-to-end. Security is the next frontier as agentic systems proliferate.
@@ -108,3 +97,14 @@ Previous ARC tests were saturated within 1-2 years; interesting to watch if ARC-
 
 - Original title: AI Digest — Mar 31, 2026 Morning
 - Normalized from old import files backed up outside the vault at: `/Users/skypawalker/.hermes/backups/obsidian-digests-pre-normalize-2026-05-10`
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-03|2026-03 Digest Index]]
+
+## Navigation
+
+- Previous: [[digests/2026-03-27 - AI X Digest|2026-03-27 - AI X Digest]]
+- Next: [[digests/2026-03-31 - AI X Digest|2026-03-31 - AI X Digest]]

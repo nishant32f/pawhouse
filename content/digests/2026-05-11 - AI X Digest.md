@@ -10,17 +10,6 @@ source: bird-cli-json
 
 > Clinical daily digest note. Generated from live X/Twitter data and normalized into the canonical daily digest format.
 
-## Backlinks
-
-- [[Obsidian Value Map]]
-- [[digests/AI X Digest Hub|AI X Digest Hub]]
-- [[digests/2026-05|2026-05 Digest Index]]
-
-## Navigation
-
-- Previous: [[digests/2026-05-05 - AI X Digest|2026-05-05 - AI X Digest]]
-- Next: none
-
 ## Digest
 
 **Signal-quality note:** Pulled from X home timeline, bookmarks, and modest targeted searches for AI agents, OpenAI, Anthropic/Claude Code, Codex, LLM inference, and evals. The recent broad searches were noisy today, so this digest prioritizes technically actionable posts from the home feed and the curated bookmark backlog. Theme of the day: coding agents are becoming operational systems, not just smarter autocomplete.
@@ -134,3 +123,14 @@ Selected tweet URLs:
 - Source items fetched/considered: 174
 - Feeds queried: home timeline, bookmarks, AI agents search, OpenAI search, Anthropic/Claude Code search, Codex search, LLM inference/evals search
 - Digest focus: AI product, coding agents, devtools, agent infrastructure, and operational practices
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-05|2026-05 Digest Index]]
+
+## Navigation
+
+- Previous: [[digests/2026-05-05 - AI X Digest|2026-05-05 - AI X Digest]]
+- Next: none

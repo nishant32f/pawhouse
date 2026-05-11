@@ -13,17 +13,6 @@ aliases:
 
 > Clinical daily digest note. Historical morning/evening imports have been normalized into this single daily artifact.
 
-## Backlinks
-
-- [[Obsidian Value Map]]
-- [[digests/AI X Digest Hub|AI X Digest Hub]]
-- [[digests/2026-03|2026-03 Digest Index]]
-
-## Navigation
-
-- Previous: none
-- Next: [[digests/2026-03-18 - AI X Digest|2026-03-18 - AI X Digest]]
-
 ## Digest
 
 **TL;DR:** Frontier AI is now operational infrastructure—OAuth outages cause "intelligence brownouts," teams manage agent fleets like server infrastructure, and the IDE has evolved into an "agent command center." Personality in models matters as much as raw capability, while robotics discovers human video is the scalable path to dexterity.
@@ -82,3 +71,14 @@ aliases:
 
 - Original title: AI Digest — Mar 18, 2026 Morning
 - Normalized from old import files backed up outside the vault at: `/Users/skypawalker/.hermes/backups/obsidian-digests-pre-normalize-2026-05-10`
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-03|2026-03 Digest Index]]
+
+## Navigation
+
+- Previous: none
+- Next: [[digests/2026-03-18 - AI X Digest|2026-03-18 - AI X Digest]]

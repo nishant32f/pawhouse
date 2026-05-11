@@ -13,17 +13,6 @@ aliases:
 
 > Clinical daily digest note. Historical morning/evening imports have been normalized into this single daily artifact.
 
-## Backlinks
-
-- [[Obsidian Value Map]]
-- [[digests/AI X Digest Hub|AI X Digest Hub]]
-- [[digests/2026-05|2026-05 Digest Index]]
-
-## Navigation
-
-- Previous: [[digests/2026-05-04 - AI X Digest|2026-05-04 - AI X Digest]]
-- Next: none
-
 ## Digest
 
 **Low-signal note:** X quality was weak this cycle (high volume of rumor/opinion posts, fewer primary-source launches). This morning digest is shorter and only includes the most actionable AI-relevant signals.
@@ -70,3 +59,14 @@ This was a **low-signal** morning, but the direction is still clear: AI value is
 
 - Original title: AI Digest — May 05, 2026 Morning
 - Normalized from old import files backed up outside the vault at: `/Users/skypawalker/.hermes/backups/obsidian-digests-pre-normalize-2026-05-10`
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-05|2026-05 Digest Index]]
+
+## Navigation
+
+- Previous: [[digests/2026-05-04 - AI X Digest|2026-05-04 - AI X Digest]]
+- Next: none

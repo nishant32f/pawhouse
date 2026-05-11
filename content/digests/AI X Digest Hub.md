@@ -11,10 +11,6 @@ aliases:
 
 Canonical index for daily AI/X digests. Daily notes use one clinical format: `YYYY-MM-DD - AI X Digest.md`.
 
-## Backlinks
-
-- [[Obsidian Value Map]]
-
 ## Month indexes
 
 - [[digests/2026-05|2026-05]]
@@ -56,3 +52,7 @@ Canonical index for daily AI/X digests. Daily notes use one clinical format: `YY
 - [[digests/2026-03-19 - AI X Digest|2026-03-19 - AI X Digest]]
 - [[digests/2026-03-18 - AI X Digest|2026-03-18 - AI X Digest]]
 - [[digests/2026-03-17 - AI X Digest|2026-03-17 - AI X Digest]]
+
+## Backlinks
+
+- [[Obsidian Value Map]]

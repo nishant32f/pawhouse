@@ -15,17 +15,6 @@ aliases:
 
 > Clinical daily digest note. Historical morning/evening imports have been normalized into this single daily artifact.
 
-## Backlinks
-
-- [[Obsidian Value Map]]
-- [[digests/AI X Digest Hub|AI X Digest Hub]]
-- [[digests/2026-04|2026-04 Digest Index]]
-
-## Navigation
-
-- Previous: [[digests/2026-04-09 - AI X Digest|2026-04-09 - AI X Digest]]
-- Next: [[digests/2026-04-11 - AI X Digest|2026-04-11 - AI X Digest]]
-
 ## Digest
 
 ## Morning signal
@@ -156,3 +145,14 @@ Two distinct AI capability tiers are now visible: frontier agentic models (Claud
 - Original title: AI Digest — Apr 11, 2026 Morning
 - Original title: AI Digest — Apr 10, 2026 Evening
 - Normalized from old import files backed up outside the vault at: `/Users/skypawalker/.hermes/backups/obsidian-digests-pre-normalize-2026-05-10`
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-04|2026-04 Digest Index]]
+
+## Navigation
+
+- Previous: [[digests/2026-04-09 - AI X Digest|2026-04-09 - AI X Digest]]
+- Next: [[digests/2026-04-11 - AI X Digest|2026-04-11 - AI X Digest]]

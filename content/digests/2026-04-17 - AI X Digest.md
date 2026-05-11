@@ -15,17 +15,6 @@ aliases:
 
 > Clinical daily digest note. Historical morning/evening imports have been normalized into this single daily artifact.
 
-## Backlinks
-
-- [[Obsidian Value Map]]
-- [[digests/AI X Digest Hub|AI X Digest Hub]]
-- [[digests/2026-04|2026-04 Digest Index]]
-
-## Navigation
-
-- Previous: [[digests/2026-04-16 - AI X Digest|2026-04-16 - AI X Digest]]
-- Next: [[digests/2026-05-04 - AI X Digest|2026-05-04 - AI X Digest]]
-
 ## Digest
 
 ## Morning signal
@@ -155,3 +144,14 @@ The AI industry has shattered into two realities: free-tier tools that frustrate
 - Original title: AI Digest — Apr 18, 2026 Morning
 - Original title: AI Digest — Apr 17, 2026 Evening
 - Normalized from old import files backed up outside the vault at: `/Users/skypawalker/.hermes/backups/obsidian-digests-pre-normalize-2026-05-10`
+
+## Backlinks
+
+- [[Obsidian Value Map]]
+- [[digests/AI X Digest Hub|AI X Digest Hub]]
+- [[digests/2026-04|2026-04 Digest Index]]
+
+## Navigation
+
+- Previous: [[digests/2026-04-16 - AI X Digest|2026-04-16 - AI X Digest]]
+- Next: [[digests/2026-05-04 - AI X Digest|2026-05-04 - AI X Digest]]
