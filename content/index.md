@@ -12,6 +12,8 @@ description: "Nishant's public localhost: a curated digital garden of identity, 
 ---
 Welcome to Mindscape: Nishant's public localhost for ideas worth revisiting.
 
+![Nishant Khurana ASCII portrait](ascii-art.png){ width=200 }
+
 I spend my days architecting systems and building products. When I'm not writing code, I keep returning to the intersection of technology, human psychology, startups, health, and timeless wisdom.
 
 ## About Nishant
