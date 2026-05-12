@@ -76,12 +76,6 @@ These are beliefs and principles collected from experience, failure, repetition,
 - "Learning is repeated recall, not repeated exposure."
 - "The only way out is through."
 
-## The Main Rooms
-
-**[Wisdom](/wisdom/)** is the evergreen library: curated mental models, life lessons, startup notes, technical references, health protocols, prompts, quotes, and collected writing. It is organized for usefulness, not as a claim that every idea originated with me.
-
-**[[digests/x-ai-2026|X-AIs]]** is the time-based stream: monthly indexes and daily generated snapshots from AI and X/Twitter.
-
 ## Connect
 
 | Platform  | Handle                                                                          |
