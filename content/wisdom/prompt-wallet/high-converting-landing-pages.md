@@ -119,7 +119,7 @@ Generate copy for the following sections, ensuring each aligns with proven frame
 
 ### 7. Offer Section
 
-**Purpose:** Summarize the offer and drive action.
+**Purpose:** summarize the offer and drive action.
 
 **Components:**
 - **Headline:** Restate the core offer (5–10 words, e.g., "Get Funding Today").

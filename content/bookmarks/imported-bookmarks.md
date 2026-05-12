@@ -5,7 +5,6 @@ tags:
 ---
 
 # Imported Bookmarks
-
 Legacy bookmarks imported from the previous site.
 
 ## Items
