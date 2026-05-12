@@ -19,6 +19,7 @@ Canonical index for daily X-AI digests. Daily notes use one clinical format: `X-
 
 ## Recent daily digests
 
+- [[digests/X-AI-2026-05-12|X-AI-2026-05-12]]
 - [[digests/X-AI-2026-05-11|X-AI-2026-05-11]]
 - [[digests/X-AI-2026-05-05|X-AI-2026-05-05]]
 - [[digests/X-AI-2026-05-04|X-AI-2026-05-04]]
