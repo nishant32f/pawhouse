@@ -10,23 +10,19 @@ tags:
 author: "Nishant Khurana"
 description: "Nishant's public localhost: a curated digital garden of identity, principles, quotes, wisdom, digests, and working notes."
 ---
-Welcome to Mindscape: Nishant's public localhost for ideas worth revisiting.
 
 <img src="ascii-art.png" alt="Nishant Khurana ASCII portrait" width="200" />
 
 I spend my days architecting systems and building products. When I'm not writing code, I keep returning to the intersection of technology, human psychology, startups, health, and timeless wisdom.
 
-## About Nishant
-
-**Nishant Khurana**  
-Co-founder and CTO at [Tectonic Technologies Inc](https://tectonic.so)
+## About me
+I am currently Co-founder and CTO at [Tectonic Technologies Inc](https://tectonic.so)
 
 Beyond code, I care about:
-
 - Coffee as fuel for deep work and contemplation
 - Photography as a way to notice fleeting moments
-- Cats as excellent companions
-- Watches as examples of craftsmanship and precision
+- Cats are excellent companions
+- Watches are examples of craftsmanship and precision
 - Elegant solutions to inherently messy problems
 
 ## What This Garden Is For

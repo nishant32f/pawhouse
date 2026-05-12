@@ -1,50 +1,46 @@
 ---
 title: "Rules and Exceptions"
-date: "2024-01-15"
-tags: ["wisdom", "mastery", "personal-development", "rules", "exceptions", "Oliver-Wendell-Holmes"]
-author: "Nishant Khurana"
-description: "Understanding when to follow rules and when to break them, based on Oliver Wendell Holmes' wisdom about the difference between youth and experience."
+tags: ["wisdom", "mastery", "personal-development", "rules", "exceptions", "modern-wisdom", "chriswillx"]
+description: "Why real intuition comes after disciplined practice: rules create the foundation for knowing when to make exceptions."
 ---
 
 # Rules and Exceptions
 
-## Learn the rules so you can break them
+> “The young man knows the rules, but the old man knows the exceptions.” — [Oliver Wendell Holmes](https://en.wikipedia.org/wiki/Oliver_Wendell_Holmes_Jr.)
 
-"The young man knows the rules, but the old man knows the exceptions" ~ [Oliver Wendell Holmes](https://en.wikipedia.org/wiki/Oliver_Wendell_Holmes_Jr.)
+You have to earn your intuition.
 
-This is what comes along with wisdom.
+Everyone likes the image of the savant innovator: unconstrained by convention, operating from taste, bending the form while everyone else is still following the manual. But breaking rules before learning them is not genius. It is usually just not playing the game.
 
-It's simple to have a rote set of practices that you follow, but true mastery is knowing where the edges of those rules lie.
+Rules are scaffolding. They are how you build enough repetitions to notice when the standard pattern no longer fits. Intuition is not the absence of training; it is training that has become invisible.
 
-"In the early stages of training, an aspiring Confucian gentleman needs to memorise entire shelves of archaic texts, learn the precise angle at which to bow, and learn the lengths of the steps with which he is to enter a room.
+> “In the early stages of training, an aspiring Confucian gentleman needs to memorise entire shelves of archaic texts, learn the precise angle at which to bow, and learn the lengths of the steps with which he is to enter a room. His sitting mat must always be perfectly straight.
+>
+> All of this rigour and restraint, however, is ultimately aimed at producing a cultivated, but nonetheless genuine, form of spontaneity. Indeed, the process of training is not considered complete until the individual has passed completely beyond the need for thought or effort.” — [Edward Slingerland](https://en.wikipedia.org/wiki/Edward_Slingerland), describing 3000-year-old Confucianism
 
-His sitting mat must always be perfectly straight.
+## Core Idea
 
-All of this rigour and restraint, however, is ultimately aimed at producing a cultivated, but nonetheless genuine, form of spontaneity.
+True mastery is knowing where the edges of rules lie. Early on, rules protect you from your own lack of pattern recognition. Later, principles scale better than rigid prescriptions because they preserve judgment while allowing context.
 
-Indeed, the process of training is not considered complete until the individual has passed completely beyond the need for thought or effort" ~ [Edward Slingerland](https://en.wikipedia.org/wiki/Edward_Slingerland) describing 3000-year old Confucianism
+This is why one-size-fits-all advice gets worse the more developed someone becomes. Beginners need constraints. Experts need taste. The danger is pretending to be in the second category while still needing the first.
 
-Increasingly I'm becoming skeptical of one size fits all advice for highly developed people.
+Sometimes black-and-white rules work at any stage: sleep with your phone outside the bedroom, do not drink alcohol for no reason, get up at the same time every day. But once you have a few years of momentum, the work shifts from obedience to discernment.
 
-It seems to me that each person is so unique and peculiar that trying to create hard and fast rules for how they operate is a worse idea the longer they have been working on themselves.
+## What We Can Learn
 
-Sometimes black & white rules work, no matter what stage you're at:
-
-Sleep with your phone outside of your bedroom. Don't drink alcohol for no reason. Get up at the same time every day.
-
-Principles work and scale better though.
-
-You sacrifice specificity but maximise applicability when you follow principles rather than strategies.
-
-Once you've got a few years of momentum with your development, don't be afraid of trying to find exceptions to the rules.
+- Earn the right to improvise by first mastering the fundamentals.
+- Treat “just trust your gut” as suspicious advice when the gut has not yet been trained.
+- Use rules as training wheels, not permanent theology.
+- Prefer principles over prescriptions once your judgment is strong enough to carry context.
 
 ## Related Concepts
 
-- [[Discipline vs Motivation]] - Mastering fundamentals before flexibility
-- [[Curse of Competence]] - Sophistication in decision-making
-- [[Luxury Beliefs]] - Context-dependent advice
-- [[Just Do The Thing]] - Moving beyond rigid rules
-- [[Stop Perfectionism]] - Flexibility vs rigidity
+- [[3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
+- [[Self Trust Through Promises]] - discipline as earned self-knowledge
+- [[Curse of Competence]] - sophistication in decision-making
+- [[The Asymmetry of Advice]] - advice depends on the person receiving it
+- [[Action Over Preparation]] - action before over-theorising
+- [[Action Over Confidence]] - competence before confidence
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

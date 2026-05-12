@@ -23,3 +23,7 @@ Show them the infinite pleasure in the touch of a hand.
 And make the ordinary come alive for them.
 
 The extraordinary will take care of itself.
+
+## Related Concepts
+
+- [[Modern Fatherhood]] - presence as the costly, meaningful work of parenting

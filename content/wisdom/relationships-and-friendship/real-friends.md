@@ -35,6 +35,7 @@ The more people who make it feel safe for you to truly be yourself around them, 
 - [[No One Can Beat You at Being You|No One Can Beat You at Being You]] - Authentic self vs personas
 - [[Self Worth vs Validation]] - Authentic relationships vs approval-seeking
 - [[Reverse Charisma]] - Mutual authentic expression
+- [[Text Your Friends]] - Small signals that keep friendship alive
 - [[Kindness vs Choice]] - Genuine caring vs performance
 - [[Love Who vs What]] - Unconditional acceptance in relationships
 

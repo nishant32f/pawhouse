@@ -49,3 +49,4 @@ description: "Charles Darwin's systematic approach to life's biggest decision us
 - [[Expectations and Reality]] - Systematic evaluation of life choices
 - [[Time-Sensitive Opportunities|Time-Sensitive Opportunities]] - Life decisions have optimal timing windows
 - [[Feynman's Love Letter]] - Understanding the depth of committed relationships
+- [[Marriage as Conversation]] - The everyday texture that sustains a long marriage
