@@ -10,10 +10,7 @@ tags:
 author: "Nishant Khurana"
 description: "Nishant's public localhost: a curated digital garden of identity, principles, quotes, wisdom, digests, and working notes."
 ---
-
-# 127.0.0.1
-
-Welcome to Pawhouse: Nishant's public localhost for ideas worth revisiting.
+Welcome to Mindscape: Nishant's public localhost for ideas worth revisiting.
 
 I spend my days architecting systems and building products. When I'm not writing code, I keep returning to the intersection of technology, human psychology, startups, health, and timeless wisdom.
 
@@ -34,13 +31,17 @@ Beyond code, I care about:
 
 The filter is simple: would I reference this again?
 
+Most of this garden is curated, not originally authored from scratch. It includes ideas, quotes, frameworks, protocols, excerpts, and notes gathered from books, podcasts, essays, conversations, and public thinkers, then organized in a way that makes them easier for me to revisit.
+
+When something is mine, it is usually a synthesis, a reframe, or a personal operating note. When something comes from someone else, the intent is preservation and attribution-aware curation, not claiming authorship.
+
 These are not random collections. They are ideas I return to while building products, leading teams, making decisions, or trying to think more clearly about what comes next.
 
 This is a living document and a living garden. It grows, gets reorganized, and occasionally gets pruned.
 
 ## Personal Beliefs and Life Principles
 
-These are beliefs and principles collected from experience, failure, and repetition.
+These are beliefs and principles collected from experience, failure, repetition, and the thinkers I keep learning from.
 
 - Take care of the people who work with you, and the work will take care of itself.
 - Know thyself is the greatest purpose of life.
@@ -77,16 +78,15 @@ These are beliefs and principles collected from experience, failure, and repetit
 
 ## The Main Rooms
 
-**[Wisdom](/wisdom/)** is the evergreen garden: mental models, life lessons, startup notes, technical references, health protocols, prompts, and collected writing.
+**[Wisdom](/wisdom/)** is the evergreen library: curated mental models, life lessons, startup notes, technical references, health protocols, prompts, quotes, and collected writing. It is organized for usefulness, not as a claim that every idea originated with me.
 
 **[[digests/X-AI 2026|X-AIs]]** is the time-based stream: monthly indexes and daily generated snapshots from AI and X/Twitter.
 
 ## Connect
 
-| Platform | Handle |
-| --- | --- |
-| X/Twitter | [@skypawalker](https://x.com/skypawalker) |
-| LinkedIn | [nishant2984](https://www.linkedin.com/in/nishant2984/) |
-| Flickr | [nishant2984](https://www.flickr.com/photos/nishant2984/) |
+| Platform  | Handle                                                                          |
+| --------- | ------------------------------------------------------------------------------- |
+| X         | [@skypawalker](https://x.com/skypawalker)                                       |
+| LinkedIn  | [nishant2984](https://www.linkedin.com/in/nishant2984/)                         |
+| Flickr    | [nishant2984](https://www.flickr.com/photos/nishant2984/)                       |
 | Goodreads | [nishant-khurana](https://www.goodreads.com/user/show/27199789-nishant-khurana) |
-
