@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd -- "$SCRIPT_DIR/.." && pwd)"
-VAULT_PUBLIC_DIR="$(cd -- "$PROJECT_DIR/../obsidian/public" && pwd)"
+VAULT_PUBLIC_DIR="$(cd -- "/Users/skypawalker/Dropbox/Obsidian/public" && pwd)"
 CONTENT_DIR="$PROJECT_DIR/content"
 
 mkdir -p "$CONTENT_DIR"

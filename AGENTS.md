@@ -12,14 +12,14 @@ This repository is a Quartz site for publishing the Pawhouse Obsidian notes.
 - `.github/workflows/deploy.yml` builds and deploys the site to GitHub Pages from `main`.
 - `public/` is generated build output and should not be edited directly.
 
-The source Obsidian vault publish folder is expected at `../obsidian/public`.
+The source Obsidian vault publish folder is expected at `/Users/skypawalker/Dropbox/Obsidian/public`.
 
 ## Build, Test, and Development Commands
 
 - `mise x node@22.16.0 -- npm ci`: install dependencies with the Node version Quartz expects.
 - `mise x node@22.16.0 -- npx quartz build`: build the static site into `public/`.
 - `mise x node@22.16.0 -- npx quartz build --serve --port 8080`: run a local preview server.
-- `./scripts/sync-content-from-vault.sh`: copy notes from `../obsidian/public` into `content/`.
+- `./scripts/sync-content-from-vault.sh`: copy notes from `/Users/skypawalker/Dropbox/Obsidian/public` into `content/`.
 - `npm run publish -- "Update notes"`: sync, build, commit, and push the current branch.
 - `npm run check`: run TypeScript checking and Prettier validation.
 - `npm test`: run Quartz’s test suite via `tsx --test`.
@@ -55,7 +55,7 @@ PRs should include a concise summary, affected areas (`content`, `quartz`, `scri
 
 ## Publishing Notes
 
-Treat `../obsidian/public` as the source of truth for publishable notes. Publish with:
+Treat `/Users/skypawalker/Dropbox/Obsidian/public` as the source of truth for publishable notes. Publish with:
 
 ```bash
 npm run publish -- "Update notes"

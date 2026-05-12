@@ -5,7 +5,7 @@
 Pawhouse is a Quartz site that publishes notes from the Obsidian vault publish folder.
 
 - Live site: <https://nishant32f.github.io/pawhouse/>
-- Source notes: `/Users/skypawalker/Dev/obsidian/public`
+- Source notes: `/Users/skypawalker/Dropbox/Obsidian/public`
 - Published content snapshot: `content/`
 
 ## Publishing
