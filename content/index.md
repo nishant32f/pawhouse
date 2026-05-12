@@ -81,8 +81,6 @@ These are beliefs and principles collected from experience, failure, and repetit
 
 **[[digests/X-AI Hub|X-AIs]]** is the time-based stream: imported and daily generated snapshots from AI and X/Twitter.
 
-**[[bookmarks/inbox|Bookmark Inbox]]** is the raw capture layer: links and references before they are sorted into more permanent shapes.
-
 ## Connect
 
 | Platform | Handle |
@@ -92,6 +90,3 @@ These are beliefs and principles collected from experience, failure, and repetit
 | Flickr | [nishant2984](https://www.flickr.com/photos/nishant2984/) |
 | Goodreads | [nishant-khurana](https://www.goodreads.com/user/show/27199789-nishant-khurana) |
 
-## Navigation
-
-Use the Quartz explorer, search, graph, and backlinks for full navigation. This page is the front door; the directory structure should do the heavy lifting.
