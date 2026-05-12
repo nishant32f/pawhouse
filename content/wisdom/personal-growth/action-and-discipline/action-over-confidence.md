@@ -82,4 +82,5 @@ The smallest completed action is more persuasive than another internal debate.
 - [[Action Over Preparation]]
 - [[Self-Trust Through Promises]]
 - [[Struggle Growth and Mental Toughness]]
+- [[Overcoming Disadvantage: Action vs. Blame]]
 - [[Self-Worth Beyond Validation]]

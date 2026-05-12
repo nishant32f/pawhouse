@@ -82,4 +82,5 @@ Before embracing discomfort, ask:
 
 - [[Late Stage Success Advice]]
 - [[Action Over Confidence]]
+- [[Overcoming Disadvantage: Action vs. Blame]]
 - [[Self-Worth Beyond Validation]]
