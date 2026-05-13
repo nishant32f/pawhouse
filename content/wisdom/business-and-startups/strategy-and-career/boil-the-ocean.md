@@ -44,11 +44,11 @@ The new game:
 
 ## Ephemeralization and Jevons
 
-Tan links this to Buckminster Fuller's "ephemeralization": doing more and more with less and less until eventually you can do everything with nothing.
+Tan links this to [[Ephemeralization|Buckminster Fuller's "ephemeralization"]]: doing more and more with less and less until eventually you can do everything with nothing.
 
 This is not just job destruction. It is civilization getting better at being civilization.
 
-He also frames AI as Jevons Paradox for intelligence. When a resource becomes dramatically more efficient, usage can increase rather than decrease. Steam engines did not reduce coal consumption; they made coal useful enough for demand to explode.
+He also frames AI as [[Jevons Paradox]] for intelligence. When a resource becomes dramatically more efficient, usage can increase rather than decrease. Steam engines did not reduce coal consumption; they made coal useful enough for demand to explode.
 
 The same may happen with intelligence, labor, services, and products.
 
@@ -60,6 +60,8 @@ Use it to ask whether the plan is too small.
 
 ## Related Notes
 
+- [[Ephemeralization]]
+- [[Jevons Paradox]]
 - [[Startup Operating Principles]]
 - [[Ambition vs Entitlement]]
 - [[Action Over Confidence]]
