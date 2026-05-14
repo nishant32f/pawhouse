@@ -73,6 +73,7 @@ These are beliefs and principles collected from experience, failure, repetition,
 - "Life is not fair, get used to it." - Bill Gates
 - "Learning is repeated recall, not repeated exposure."
 - "The only way out is through."
+- "Learning/insights is a smart person’s favourite form of procrastination."
 
 ## Connect
 
