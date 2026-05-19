@@ -17,3 +17,4 @@ Links texted to Hermes land here first. Later we can add automated sorting into 
 - 2026-05-19 07:52 — https://x.com/driaforall/status/2056421018210599199?s=52&t=EU9Msk--WRigzxzhVdBPkA
 - 2026-05-19 07:54 — https://x.com/browserbase/status/2056404332824944970?s=52&t=EU9Msk--WRigzxzhVdBPkA
 - 2026-05-19 07:57 — https://x.com/nainsidwiv50980/status/2051984960819777641?s=52&t=EU9Msk--WRigzxzhVdBPkA
+- 2026-05-19 07:58 — https://github.com/Tracer-Cloud/opensre
