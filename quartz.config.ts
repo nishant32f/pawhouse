@@ -12,7 +12,10 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: "google",
+      tagId: "G-38Q4CJK6GR",
+    },
     locale: "en-US",
     baseUrl: "nishant32f.github.io/pawhouse",
     ignorePatterns: ["private", "templates", ".obsidian"],
