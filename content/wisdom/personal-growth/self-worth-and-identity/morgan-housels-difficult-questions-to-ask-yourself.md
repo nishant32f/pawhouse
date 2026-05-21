@@ -64,6 +64,27 @@ Am I addicted to cheap dopamine?
 
 If I were on my deathbed tomorrow, what would I regret most?
 
+## Additional Prompts: Success Without Status
+
+From a related YouTube Short: [[2026-05-21-youtube-questions-for-self-inquiry|Questions for Self-Inquiry]].
+
+These prompts use subtraction to expose the difference between intrinsic desire and performed success:
+
+- If money and status were no object, what would I do?
+- If I was less afraid of other people's opinions, what would I say?
+- What actually makes me happy?
+- Does success make me happy?
+- What is my definition of success?
+- What is my definition of success if money was taken out of the equation?
+- What is my definition of success if money and followers were taken out of the equation?
+- What are the things that I'm hiding from myself?
+- What are the emotions that I'm unprepared to feel?
+
+The useful pattern is to remove the obvious external scoreboards one by one: money, status, followers, approval. Whatever remains is closer to the honest answer.
+
+Related: [[Self-Worth Beyond Validation]], [[Evening Self Reflection]].
+
 ---
 
 *Source: Chris Williamson*
+
