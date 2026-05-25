@@ -21,3 +21,4 @@ Links texted to Hermes land here first. Later we can add automated sorting into 
 - 2026-05-21 19:47 IST — https://www.instagram.com/p/DX5m_9LnDA8/?img_index=8&igsh=MXRueGZwdmg0Z3RxeQ==
 - 2026-05-23 08:14 — https://x.com/gregpr07/status/2057939790268604786?s=52&t=EU9Msk--WRigzxzhVdBPkA
 - 2026-05-24 21:14 — https://cate.dev/
+- 2026-05-25 20:01 — https://x.com/sukh_saroy/status/2058803966067212384?s=52&t=EU9Msk--WRigzxzhVdBPkA
