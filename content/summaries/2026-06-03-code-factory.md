@@ -83,4 +83,3 @@ Production regressions should create harness-gap issues, which become added case
 6. Require browser evidence for UI/flow changes.
 7. Convert incidents into harness cases and track loop SLOs.
 
-Related wisdom note: [[Code Factory for Agentic Software]]
