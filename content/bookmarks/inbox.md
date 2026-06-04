@@ -27,3 +27,4 @@ Links texted to Hermes land here first. Later we can add automated sorting into 
 - 2026-06-02 13:42 IST — https://x.com/marciok/status/2061560890739020185?s=52&t=EU9Msk--WRigzxzhVdBPkA
 - 2026-06-03 20:38 IST — https://github.com/TirthCodes/HelioBar
   - Title: GitHub - TirthCodes/HelioBar: macOS menu bar app showing live heart rate from an Amazfit Helio Strap over BLE (SwiftUI + CoreBluetooth)
+- 2026-06-04 15:17 IST — https://sophon.at/
