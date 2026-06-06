@@ -28,3 +28,5 @@ Links texted to Hermes land here first. Later we can add automated sorting into 
 - 2026-06-03 20:38 IST — https://github.com/TirthCodes/HelioBar
   - Title: GitHub - TirthCodes/HelioBar: macOS menu bar app showing live heart rate from an Amazfit Helio Strap over BLE (SwiftUI + CoreBluetooth)
 - 2026-06-04 15:17 IST — https://sophon.at/
+- 2026-06-05 14:04 IST — https://github.com/5c0/metropolis
+  - Title: GitHub - 5c0/metropolis: A cyberpunk system monitor that transforms kernel metrics into a living terminal skyline. Built with Rust & Ratatui.
