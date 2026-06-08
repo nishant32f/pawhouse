@@ -18,6 +18,8 @@ Your goal is dynamic persistence over the long term. Taking things seriously giv
 
 Don't be so worried about winning that you forget what winning is supposed to feel like. Is your presiding feeling when things go well one of happiness and satisfaction or one of relief? Is it joy or simply the abatement of fear?
 
+[[3MM - Worries, Women & Clichés]] makes the same point through the comic failure mode of trying to “win” at breathwork. When relaxation becomes another contest, leisure turns into labour and the thing meant to restore you becomes one more arena for self-surveillance.
+
 After a while of winning, you realise that HOW you win is more important than IF you win. How you feel during the event is more important than the outcome of the event. How the people who read your work are impacted is more important than how many are impacted.
 
 Do not be so terrified of failing that even the act of winning is made miserable. Ultimately you are doing things not to say you have done them, but for the experience of having done them. When you look back, it's the experience itself, not just the outcome that matters.

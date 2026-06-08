@@ -29,6 +29,12 @@ Instead, we spend most of our lives learning firsthand the most important lesson
 
 Even reading this list back, I'm rolling my eyes at how fucking trite it is. These are all basic bitch obvious insights that everybody has heard before. But if they're so basic, why does everyone so reliably fall prey to them throughout our lives?
 
+[[3MM - Worries, Women & Clichés]] captures this neatly:
+
+> “A cursed fact of the world is that the most important life lessons you learn are the hardest to communicate to others because they always sound like clichés.” — Nabeel Qureshi
+
+That is why the same lesson can be both obvious and unavailable. The sentence is easy to repeat before experience and hard to actually inhabit until life has extracted the tuition.
+
 Even more than that - for every one of these, if I think a bit deeper, I can recall a time (including right now) where I convinced myself that I'm the exception to the rule. That my particular mental makeup, or life situation, or historical wounds, or dreams for the future render me immune to these lessons being applicable.
 
 No no, MY unique inner landscape WOULD be fixed by skirting around the most well-known wisdom of the ages. No no, I CAN thread this needle properly, watch me dance through this minefield and avoid all the trip wires that everyone else kicks. And then you kick one.

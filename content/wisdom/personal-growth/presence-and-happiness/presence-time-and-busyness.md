@@ -65,6 +65,8 @@ Choose carefully what you are sacrificing for.
 
 Ask: am I using this goal, schedule, routine, or ambition to deepen life or to avoid being here?
 
+[[3MM - Worries, Women & Clichés]] frames the same risk at a smaller scale: if every hobby, meditation session, and recovery practice becomes something to perfect, you have traded presence for another control system.
+
 ## Related Canonical Notes
 
 - [[Self-Worth Beyond Validation]]
