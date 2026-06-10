@@ -31,3 +31,5 @@ Links texted to Hermes land here first. Later we can add automated sorting into 
 - 2026-06-05 14:04 IST — https://github.com/5c0/metropolis
   - Title: GitHub - 5c0/metropolis: A cyberpunk system monitor that transforms kernel metrics into a living terminal skyline. Built with Rust & Ratatui.
 - 2026-06-08 18:21 IST — https://medium.com/@renaud.mathieu/set-up-a-new-mac-in-10-minutes-my-portable-dev-setup-db0aa59b2a5d
+- 2026-06-10 06:24 IST — https://github.com/furan917/go-solar-system
+  - Title: GitHub - furan917/go-solar-system · GitHub
