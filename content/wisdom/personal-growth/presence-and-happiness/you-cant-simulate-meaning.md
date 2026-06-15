@@ -11,7 +11,7 @@ Modern life can feel fake because much of it has become a functional simulation 
 
 Arthur Brooks' argument on *Modern Wisdom* is blunt: the problem is not that people lack comfort, money, or success. The problem is that many people lack meaning.
 
-Source: [[Modern Wisdom #1109 - Arthur Brooks on Why Nothing Feels Real Anymore]]
+Source: [Modern Wisdom #1109 - Arthur Brooks on Why Nothing Feels Real Anymore](/summaries/2026-06-15-modern-wisdom-arthur-brooks-nothing-feels-real)
 
 ## The Core Pattern
 
@@ -59,9 +59,9 @@ Ambitious people are vulnerable because achievement offers a clean scoreboard. W
 
 But a scoreboard can become a way to avoid the actual question: *what is this for?*
 
-This connects to [[Frankl's Inverse Law - Meaning vs Pleasure]] and [[Presence Time and Busyness]]. A person can keep postponing life into a future where achievement will finally authorize joy, only to discover that the postponement itself became the life.
+This connects to [Frankl's Inverse Law - Meaning vs Pleasure](/wisdom/personal-growth/presence-and-happiness/frankls-inverse-law-meaning-vs-pleasure) and [Presence Time and Busyness](/wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness). A person can keep postponing life into a future where achievement will finally authorize joy, only to discover that the postponement itself became the life.
 
-It also connects to [[Arrival Fallacy]]: completed goals rarely deliver the permanent inner state people imagined. The destination quickly becomes the next starting line.
+It also connects to [Arrival Fallacy](/wisdom/personal-growth/presence-and-happiness/arrival-fallacy): completed goals rarely deliver the permanent inner state people imagined. The destination quickly becomes the next starting line.
 
 ## Return to Reality
 
@@ -92,9 +92,9 @@ If a life feels unreal, more stimulation is usually the wrong medicine. The bett
 
 ## Related
 
-- [[Arrival Fallacy]]
-- [[Frankl's Inverse Law - Meaning vs Pleasure]]
-- [[Presence Time and Busyness]]
-- [[Struggle Growth and Mental Toughness]]
-- [[Self-Worth Beyond Validation]]
-- [[The Eliza Effect]]
+- [Arrival Fallacy](/wisdom/personal-growth/presence-and-happiness/arrival-fallacy)
+- [Frankl's Inverse Law - Meaning vs Pleasure](/wisdom/personal-growth/presence-and-happiness/frankls-inverse-law-meaning-vs-pleasure)
+- [Presence Time and Busyness](/wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness)
+- [Struggle Growth and Mental Toughness](/wisdom/personal-growth/resilience-and-mental-health/struggle-growth-and-mental-toughness)
+- [Self-Worth Beyond Validation](/wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation)
+- [The Eliza Effect](/wisdom/society-and-psychology/cognitive-biases-and-belief/the-eliza-effect)

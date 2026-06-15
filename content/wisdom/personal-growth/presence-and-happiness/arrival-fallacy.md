@@ -48,8 +48,8 @@ Achievement is healthiest when it supports a meaningful life, not when it postpo
 
 ## Related
 
-- [[You Can't Simulate Meaning]]
-- [[Frankl's Inverse Law - Meaning vs Pleasure]]
-- [[Presence Time and Busyness]]
-- [[Mexican Fisherman Parable]]
-- [[Self-Worth Beyond Validation]]
+- [You Can't Simulate Meaning](/wisdom/personal-growth/presence-and-happiness/you-cant-simulate-meaning)
+- [Frankl's Inverse Law - Meaning vs Pleasure](/wisdom/personal-growth/presence-and-happiness/frankls-inverse-law-meaning-vs-pleasure)
+- [Presence Time and Busyness](/wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness)
+- [Mexican Fisherman Parable](/wisdom/personal-growth/presence-and-happiness/mexican-fisherman-parable)
+- [Self-Worth Beyond Validation](/wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation)

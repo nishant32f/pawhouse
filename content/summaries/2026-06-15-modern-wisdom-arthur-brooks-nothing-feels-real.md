@@ -12,7 +12,7 @@ YouTube transcript source: <https://www.youtube.com/watch?v=IY-UW2gmnVI>
 Audio source: <https://prfx.byspotify.com/e/pscrb.fm/rss/p/claritaspod.com/measure/traffic.megaphone.fm/SIXMSB7073248050.mp3>
 Summarized: 2026-06-15 12:02 IST
 Expanded from transcript: 2026-06-15 12:20 IST
-Related wisdom: [[You Can't Simulate Meaning]], [[Arrival Fallacy]], [[Frankl's Inverse Law - Meaning vs Pleasure]], [[Presence Time and Busyness]]
+Related wisdom: [You Can't Simulate Meaning](/wisdom/personal-growth/presence-and-happiness/you-cant-simulate-meaning), [Arrival Fallacy](/wisdom/personal-growth/presence-and-happiness/arrival-fallacy), [Frankl's Inverse Law - Meaning vs Pleasure](/wisdom/personal-growth/presence-and-happiness/frankls-inverse-law-meaning-vs-pleasure), [Presence Time and Busyness](/wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness)
 
 ## Brief
 
