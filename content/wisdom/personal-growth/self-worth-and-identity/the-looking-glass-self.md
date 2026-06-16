@@ -57,7 +57,7 @@ And that person you're worried about? They're probably too busy wondering what y
 
 ## Related Articles
 
-- [[False Consensus Effect|False Consensus Effect]] - How we overestimate others sharing our views
-- [[Pluralistic Ignorance|Pluralistic Ignorance]] - When we all pretend to agree
-- [[The Eliza Effect]] - Projecting meaning onto simple patterns
-- [[Self Worth vs Validation]] - Breaking free from external validation
+- False Consensus Effect - How we overestimate others sharing our views
+- Pluralistic Ignorance - When we all pretend to agree
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/the-eliza-effect|The Eliza Effect]] - Projecting meaning onto simple patterns
+- Self Worth vs Validation - Breaking free from external validation

@@ -42,4 +42,4 @@ Quiz her with open-ended or multiple-choice questions using AskUserQuestion. Cha
 
 ## Related
 
-- [[ChatGPT Teaching Prompt]]
+- [[wisdom/prompt-wallet/chatgpt-teaching-prompt|ChatGPT Teaching Prompt]]

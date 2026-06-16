@@ -67,6 +67,6 @@ When evaluating advice, ask:
 
 ## Related Canonical Notes
 
-- [[Action Over Preparation]]
-- [[Struggle Growth and Mental Toughness]]
-- [[Presence Time and Busyness]]
+- [[wisdom/personal-growth/action-and-discipline/action-over-preparation|Action Over Preparation]]
+- [[wisdom/personal-growth/resilience-and-mental-health/struggle-growth-and-mental-toughness|Struggle Growth and Mental Toughness]]
+- [[wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness|Presence Time and Busyness]]

@@ -61,6 +61,6 @@ Then choose a promise small enough to keep and meaningful enough to matter.
 
 ## Related Canonical Notes
 
-- [[Action Over Confidence]]
-- [[Action Over Preparation]]
-- [[Self-Worth Beyond Validation]]
+- [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]]
+- [[wisdom/personal-growth/action-and-discipline/action-over-preparation|Action Over Preparation]]
+- [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]]

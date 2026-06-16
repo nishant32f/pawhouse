@@ -75,6 +75,6 @@ Before chasing approval, ask: am I sacrificing the thing I want, self-worth, for
 
 ## Related Canonical Notes
 
-- [[Self-Trust Through Promises]]
-- [[Presence Time and Busyness]]
-- [[Struggle Growth and Mental Toughness]]
+- [[wisdom/personal-growth/action-and-discipline/self-trust-through-promises|Self-Trust Through Promises]]
+- [[wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness|Presence Time and Busyness]]
+- [[wisdom/personal-growth/resilience-and-mental-health/struggle-growth-and-mental-toughness|Struggle Growth and Mental Toughness]]

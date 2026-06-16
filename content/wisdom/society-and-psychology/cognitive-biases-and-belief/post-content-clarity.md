@@ -30,11 +30,11 @@ You will spend your life focused on unhealthy aims defined for you by others and
 
 ## Related Concepts
 
-- [[Parkinson's Law - Time Management|Parkinson's Law - Time Management]] - Conscious vs unconscious time use
-- [[Cynicism vs Hope]] - Content's impact on worldview
-- [[Rational vs Ideological Thinking|Rational vs Ideological Thinking]] - Critical evaluation of information
-- [[Time vs Money]] - Mindful consumption
-- [[Astrology Study]] - Critical evaluation of claims
+- [[wisdom/personal-growth/presence-and-happiness/parkinsons-law-time-management|Parkinson's Law - Time Management]] - Conscious vs unconscious time use
+- [[wisdom/society-and-psychology/truth-and-social-pressure/cynicism-vs-hope|Cynicism vs Hope]] - Content's impact on worldview
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/rational-vs-ideological-thinking|Rational vs Ideological Thinking]] - Critical evaluation of information
+- Time vs Money - Mindful consumption
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/astrology-study|Astrology Study]] - Critical evaluation of claims
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

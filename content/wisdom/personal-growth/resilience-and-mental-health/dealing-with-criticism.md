@@ -40,11 +40,11 @@ So... go gentle with yourself when dealing with criticism. It's tough. And if yo
 
 ## Related Concepts
 
-- [[Self Worth Independence]] - Internal validation vs external criticism
-- [[Self Worth vs Validation]] - Prioritizing self-worth over others' opinions
-- [[Real Friends]] - Authentic relationships vs criticism avoidance
-- [[Supporting Men]] - Self-compassion in face of criticism
-- [[Love Who vs What]] - Self-acceptance beyond performance
+- Self Worth Independence - Internal validation vs external criticism
+- Self Worth vs Validation - Prioritizing self-worth over others' opinions
+- [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - Authentic relationships vs criticism avoidance
+- [[wisdom/relationships-and-friendship/supporting-men|Supporting Men]] - Self-compassion in face of criticism
+- Love Who vs What - Self-acceptance beyond performance
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

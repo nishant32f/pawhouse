@@ -10,11 +10,6 @@ description: "Insights from Paul Graham's essay on how to do great work, from th
 
 
   
-![Paul Graham - How to do great work](/paul-graham-great-work.jpeg)
-
-  
-
-  
 
 How to Do Great Work by Paul Graham. 
 

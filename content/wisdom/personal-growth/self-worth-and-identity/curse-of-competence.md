@@ -30,11 +30,11 @@ Having lots of competencies you could follow in your life is exciting, but it's 
 
 ## Related Concepts
 
-- [[Success Without Suffering]] - Problems that come with ability
-- [[You Can't Be Everything - Focus Strategy|You Can't Be Everything - Focus Strategy]] - Choosing direction despite options
-- [[Stop Perfectionism]] - Overcoming analysis paralysis
-- [[Operator to Idea Guy]] - Navigating multiple competencies
-- [[Just Do The Thing]] - Action over deliberation
+- Success Without Suffering - Problems that come with ability
+- [[wisdom/personal-growth/action-and-discipline/you-cant-be-everything-focus-strategy|You Can't Be Everything - Focus Strategy]] - Choosing direction despite options
+- Stop Perfectionism - Overcoming analysis paralysis
+- [[wisdom/business-and-startups/strategy-and-career/operator-to-idea-guy|Operator to Idea Guy]] - Navigating multiple competencies
+- Just Do The Thing - Action over deliberation
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

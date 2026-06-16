@@ -53,5 +53,5 @@ Avoid illegal questions. Anything related to race, religion, gender, nationality
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[Leadership]] — shared leadership/startups/team-building graph concepts
+- [[wisdom/business-and-startups/operating-principles/leadership|Leadership]] — shared leadership/startups/team-building graph concepts
 <!-- wisdom-linkage-repair:end -->

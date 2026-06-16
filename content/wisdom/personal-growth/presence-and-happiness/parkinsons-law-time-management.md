@@ -42,11 +42,11 @@ No matter how long I'm alive, I know for a fact that I don't want to look back a
 
 ## Related Concepts
 
-- [[Gastric Band of Busyness]] - Busyness as time-filler vs meaningful work
-- [[Time vs Money]] - Mindful vs unconscious time use
-- [[Post Content Clarity]] - Conscious vs compulsive consumption
-- [[Don't Grip Life Too Tightly - Ted Hughes|Don't Grip Life Too Tightly - Ted Hughes]] - Slowing down vs rushing through life
-- [[Operator to Idea Guy]] - Efficiency vs busy work
+- Gastric Band of Busyness - Busyness as time-filler vs meaningful work
+- Time vs Money - Mindful vs unconscious time use
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/post-content-clarity|Post Content Clarity]] - Conscious vs compulsive consumption
+- [[wisdom/personal-growth/presence-and-happiness/dont-grip-life-too-tightly-ted-hughes|Don't Grip Life Too Tightly - Ted Hughes]] - Slowing down vs rushing through life
+- [[wisdom/business-and-startups/strategy-and-career/operator-to-idea-guy|Operator to Idea Guy]] - Efficiency vs busy work
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

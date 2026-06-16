@@ -44,11 +44,11 @@ If you're so smart, and so wise, then why aren't you happy?
 
 ## Related Concepts
 
-- [[Realistic Path to Enlightenment]] - Mind management and awareness
-- [[Obstacles to Happiness]] - Mental obstacles to well-being
-- [[Self Worth vs Validation]] - Internal self-relationship
-- [[Cynicism vs Hope]] - Internal negative voices
-- [[The World Doesn't Care]] - Managing internal criticism
+- [[wisdom/personal-growth/resilience-and-mental-health/realistic-path-to-enlightenment|Realistic Path to Enlightenment]] - Mind management and awareness
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - Mental obstacles to well-being
+- Self Worth vs Validation - Internal self-relationship
+- [[wisdom/society-and-psychology/truth-and-social-pressure/cynicism-vs-hope|Cynicism vs Hope]] - Internal negative voices
+- [[wisdom/personal-growth/self-worth-and-identity/the-world-doesnt-care|The World Doesn't Care]] - Managing internal criticism
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

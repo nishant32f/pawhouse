@@ -29,11 +29,11 @@ This does not mean marriage is only talk. It means talk is where the rest of the
 
 ## Related Concepts
 
-- [[3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
-- [[Darwin Marriage Decision]] - marriage as a life-structure decision, not just a feeling
-- [[Real Friends]] - ease, low-filter presence, and long-term companionship
-- [[Reverse Charisma]] - making another person feel interesting enough to keep opening up
-- [[Feynmans Love Letter]] - the enduring texture of committed love
+- [[wisdom/modern-wisdom/3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
+- [[wisdom/readings-and-poems/darwin-marriage-decision|Darwin Marriage Decision]] - marriage as a life-structure decision, not just a feeling
+- [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - ease, low-filter presence, and long-term companionship
+- [[wisdom/relationships-and-friendship/reverse-charisma|Reverse Charisma]] - making another person feel interesting enough to keep opening up
+- [[wisdom/readings-and-poems/feynmans-love-letter|Feynmans Love Letter]] - the enduring texture of committed love
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

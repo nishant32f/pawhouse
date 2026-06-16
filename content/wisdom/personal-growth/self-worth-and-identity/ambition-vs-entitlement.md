@@ -29,10 +29,10 @@ True ambition involves:
 
 
 ## Related Concepts
-- [[Self-Love and Standards|Self-Love and Standards]] - Taking responsibility for your own growth
-- [[Growth and Change|Growth and Change]] - Understanding your true motivations
-- [[Hard Work and Discomfort|Hard Work and Discomfort]] - Doing the work regardless of external support
-- [[Expectations and Reality]] - Aligning desires with personal responsibility
+- Self-Love and Standards - Taking responsibility for your own growth
+- Growth and Change - Understanding your true motivations
+- Hard Work and Discomfort - Doing the work regardless of external support
+- Expectations and Reality - Aligning desires with personal responsibility
 
 ---
 

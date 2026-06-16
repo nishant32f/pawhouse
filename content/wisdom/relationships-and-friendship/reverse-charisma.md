@@ -37,11 +37,11 @@ Some people feel interesting, some people make us feel interesting. There's a pl
 
 ## Related Concepts
 
-- [[Real Friends]] - Making others feel safe to be themselves
-- [[Kindness vs Choice]] - Genuine interest vs performance
-- [[Supporting Men]] - Making others feel heard
-- [[Love Who vs What]] - Accepting others authentically
-- [[Self Worth vs Validation]] - Giving vs seeking validation
+- [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - Making others feel safe to be themselves
+- [[wisdom/society-and-psychology/truth-and-social-pressure/kindness-vs-choice|Kindness vs Choice]] - Genuine interest vs performance
+- [[wisdom/relationships-and-friendship/supporting-men|Supporting Men]] - Making others feel heard
+- Love Who vs What - Accepting others authentically
+- Self Worth vs Validation - Giving vs seeking validation
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

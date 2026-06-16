@@ -32,11 +32,11 @@ Some Milgram Questions are intended as genuine questions. But often they only pr
 
 ## Related Concepts
 
-- [[Astrology Study]] - Social pressure vs truth-seeking
-- [[Rational vs Ideological Thinking|Rational vs Ideological Thinking]] - Conformity vs genuine inquiry
-- [[Real Friends]] - Authentic vs socially acceptable expression
-- [[Dealing with Criticism]] - Social penalty management
-- [[Cynicism vs Hope]] - Social pressure and expression
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/astrology-study|Astrology Study]] - Social pressure vs truth-seeking
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/rational-vs-ideological-thinking|Rational vs Ideological Thinking]] - Conformity vs genuine inquiry
+- [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - Authentic vs socially acceptable expression
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - Social penalty management
+- [[wisdom/society-and-psychology/truth-and-social-pressure/cynicism-vs-hope|Cynicism vs Hope]] - Social pressure and expression
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

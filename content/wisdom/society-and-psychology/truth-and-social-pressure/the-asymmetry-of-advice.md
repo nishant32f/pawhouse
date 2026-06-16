@@ -60,7 +60,7 @@ The trick is not discovery but discernment. Not hearing more, but knowing when t
 
 ## Related Articles
 
-- [[Toxic Compassion vs Truth]] - When being kind becomes harmful
-- [[Self Worth Independence]] - Breaking free from external validation
-- [[Curse of Competence]] - When being good at everything becomes a burden
-- [[The Looking-Glass Self|The Looking-Glass Self]] - How our identity forms through perceived judgments
+- Toxic Compassion vs Truth - When being kind becomes harmful
+- Self Worth Independence - Breaking free from external validation
+- [[wisdom/personal-growth/self-worth-and-identity/curse-of-competence|Curse of Competence]] - When being good at everything becomes a burden
+- [[wisdom/personal-growth/self-worth-and-identity/the-looking-glass-self|The Looking-Glass Self]] - How our identity forms through perceived judgments

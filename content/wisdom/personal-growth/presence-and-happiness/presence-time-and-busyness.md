@@ -65,10 +65,10 @@ Choose carefully what you are sacrificing for.
 
 Ask: am I using this goal, schedule, routine, or ambition to deepen life or to avoid being here?
 
-[[3MM - Worries, Women & Clichés]] frames the same risk at a smaller scale: if every hobby, meditation session, and recovery practice becomes something to perfect, you have traded presence for another control system.
+[[wisdom/modern-wisdom/3mm-worries-women-and-cliches|3MM - Worries, Women & Clichés]] frames the same risk at a smaller scale: if every hobby, meditation session, and recovery practice becomes something to perfect, you have traded presence for another control system.
 
 ## Related Canonical Notes
 
-- [[Self-Worth Beyond Validation]]
-- [[Late Stage Success Advice]]
-- [[Struggle Growth and Mental Toughness]]
+- [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]]
+- [[wisdom/business-and-startups/strategy-and-career/late-stage-success-advice|Late Stage Success Advice]]
+- [[wisdom/personal-growth/resilience-and-mental-health/struggle-growth-and-mental-toughness|Struggle Growth and Mental Toughness]]

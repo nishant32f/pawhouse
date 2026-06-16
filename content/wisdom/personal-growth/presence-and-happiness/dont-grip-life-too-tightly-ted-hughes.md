@@ -18,7 +18,7 @@ Your goal is dynamic persistence over the long term. Taking things seriously giv
 
 Don't be so worried about winning that you forget what winning is supposed to feel like. Is your presiding feeling when things go well one of happiness and satisfaction or one of relief? Is it joy or simply the abatement of fear?
 
-[[3MM - Worries, Women & Clichés]] makes the same point through the comic failure mode of trying to “win” at breathwork. When relaxation becomes another contest, leisure turns into labour and the thing meant to restore you becomes one more arena for self-surveillance.
+[[wisdom/modern-wisdom/3mm-worries-women-and-cliches|3MM - Worries, Women & Clichés]] makes the same point through the comic failure mode of trying to “win” at breathwork. When relaxation becomes another contest, leisure turns into labour and the thing meant to restore you becomes one more arena for self-surveillance.
 
 After a while of winning, you realise that HOW you win is more important than IF you win. How you feel during the event is more important than the outcome of the event. How the people who read your work are impacted is more important than how many are impacted.
 
@@ -36,11 +36,11 @@ You are doing this for you. After a certain level of material comfort, the only 
 
 ## Related Concepts
 
-- [[Time vs Money]] - Enjoying the present vs gripping outcomes
-- [[Hope to Live]] - Living in the moment vs future fixation
-- [[Happiness of Pursuit]] - Process enjoyment vs outcome fixation
-- [[Stop Perfectionism]] - Releasing rigid expectations
-- [[Mexican Fisherman Parable]] - Simple enjoyment vs complex striving
+- Time vs Money - Enjoying the present vs gripping outcomes
+- Hope to Live - Living in the moment vs future fixation
+- Happiness of Pursuit - Process enjoyment vs outcome fixation
+- Stop Perfectionism - Releasing rigid expectations
+- [[wisdom/personal-growth/presence-and-happiness/mexican-fisherman-parable|Mexican Fisherman Parable]] - Simple enjoyment vs complex striving
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

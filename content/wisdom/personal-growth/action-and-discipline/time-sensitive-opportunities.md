@@ -25,9 +25,9 @@ Some opportunities for extreme effort have natural expiration dates:
 - Learning capacity optimization periods
 
 ## Related Concepts
-- [[Hard Work and Discomfort|Hard Work and Discomfort]] - Having the capacity when opportunities arise
-- [[Growth and Change|Growth and Change]] - Navigating transitions at optimal times
-- [[Success Traits|Success Traits]] - Applying consistency when it matters most
+- Hard Work and Discomfort - Having the capacity when opportunities arise
+- Growth and Change - Navigating transitions at optimal times
+- [[wisdom/personal-growth/action-and-discipline/success-traits|Success Traits]] - Applying consistency when it matters most
 
 ---
 

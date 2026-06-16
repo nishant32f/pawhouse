@@ -28,5 +28,5 @@ who neither know victory nor defeat.
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[You have no enemies]] — shared courage/poetry graph concepts
+- [[wisdom/readings-and-poems/you-have-no-enemies|You have no enemies]] — shared courage/poetry graph concepts
 <!-- wisdom-linkage-repair:end -->

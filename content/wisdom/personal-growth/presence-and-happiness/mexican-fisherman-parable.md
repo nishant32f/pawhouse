@@ -32,11 +32,11 @@ Life is often simpler than we make it.
 
 ## Related Concepts
 
-- [[Frankl's Inverse Law - Meaning vs Pleasure]] - Simple pleasure vs complex meaning
-- [[Happiness of Pursuit]] - Present enjoyment vs future planning
-- [[Obstacles to Happiness]] - Wanting things to be different
-- [[Time vs Money]] - Valuing present moments
-- [[Hope to Live]] - Living now vs living later
+- [[wisdom/personal-growth/presence-and-happiness/frankls-inverse-law-meaning-vs-pleasure|Frankl's Inverse Law - Meaning vs Pleasure]] - Simple pleasure vs complex meaning
+- Happiness of Pursuit - Present enjoyment vs future planning
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - Wanting things to be different
+- Time vs Money - Valuing present moments
+- Hope to Live - Living now vs living later
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

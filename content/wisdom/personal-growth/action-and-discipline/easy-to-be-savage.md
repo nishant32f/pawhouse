@@ -40,11 +40,11 @@ But sometimes it's hard to find a sidekick.
 
 ## Related Concepts
 
-- [[Discipline vs Motivation]] - Taking advantage through discipline
-- [[What Youre Made Of|How to Find Out What You're Really Made Of]] - Testing resilience vs fragility
-- [[Inverse PTSD]] - Strength through adversity
-- [[Supporting Men]] - Helping others vs carrying them
-- [[The World Doesn't Care]] - Self-reliance in competitive world
+- Discipline vs Motivation - Taking advantage through discipline
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Testing resilience vs fragility
+- [[wisdom/personal-growth/resilience-and-mental-health/inverse-ptsd|Inverse PTSD]] - Strength through adversity
+- [[wisdom/relationships-and-friendship/supporting-men|Supporting Men]] - Helping others vs carrying them
+- [[wisdom/personal-growth/self-worth-and-identity/the-world-doesnt-care|The World Doesn't Care]] - Self-reliance in competitive world
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

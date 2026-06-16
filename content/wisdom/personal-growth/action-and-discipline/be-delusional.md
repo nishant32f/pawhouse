@@ -20,13 +20,13 @@ And sooner or later, you will.
 
 ## Related Notes
 
-- [[Faith in Your Word]] - How keeping commitments to yourself builds confidence
-- [[Strength Through Struggle|Strength Through Struggle]] - Using challenges as fuel for growth
+- Faith in Your Word - How keeping commitments to yourself builds confidence
+- Strength Through Struggle - Using challenges as fuel for growth
 
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[Interest vs Commitment]] — shared success / related-notes graph concepts
-- [[Move Like It'll Work Out]] — shared mindset/motivation graph concepts
-- [[Beyond Self-Belief]] — shared mindset/self-belief/success graph concepts
+- Interest vs Commitment — shared success / related-notes graph concepts
+- [[wisdom/personal-growth/action-and-discipline/move-like-itll-work-out|Move Like It'll Work Out]] — shared mindset/motivation graph concepts
+- Beyond Self-Belief — shared mindset/self-belief/success graph concepts
 <!-- wisdom-linkage-repair:end -->

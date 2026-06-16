@@ -44,11 +44,11 @@ The answer to this discomfort is to find humour in it I think. You have to laugh
 
 ## Related Concepts
 
-- [[Astrology Study]] - Scientific vs pseudoscientific explanations
-- [[Rational vs Ideological Thinking|Rational vs Ideological Thinking]] - Understanding vs accepting explanations
-- [[Milgram Questions]] - Conscious vs unconscious social behaviors
-- [[Post Content Clarity]] - Awareness of behavioral influences
-- [[Self Worth Independence]] - Conscious vs unconscious motivation
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/astrology-study|Astrology Study]] - Scientific vs pseudoscientific explanations
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/rational-vs-ideological-thinking|Rational vs Ideological Thinking]] - Understanding vs accepting explanations
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/milgram-questions|Milgram Questions]] - Conscious vs unconscious social behaviors
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/post-content-clarity|Post Content Clarity]] - Awareness of behavioral influences
+- Self Worth Independence - Conscious vs unconscious motivation
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

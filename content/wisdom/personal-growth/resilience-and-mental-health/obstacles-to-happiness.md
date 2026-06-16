@@ -38,11 +38,11 @@ So, if you're feeling unhappy, look to where you're uncertain, and where you wan
 
 ## Related Concepts
 
-- [[Realistic Path to Enlightenment]] - Present moment awareness
-- [[Internal Multiple Personalities]] - Managing mental obstacles
-- [[Happiness of Pursuit]] - Anticipation vs presence
-- [[Mexican Fisherman Parable]] - Acceptance of current state
-- [[Frankl's Inverse Law - Meaning vs Pleasure]] - Finding satisfaction in the present
+- [[wisdom/personal-growth/resilience-and-mental-health/realistic-path-to-enlightenment|Realistic Path to Enlightenment]] - Present moment awareness
+- [[wisdom/personal-growth/resilience-and-mental-health/internal-multiple-personalities|Internal Multiple Personalities]] - Managing mental obstacles
+- Happiness of Pursuit - Anticipation vs presence
+- [[wisdom/personal-growth/presence-and-happiness/mexican-fisherman-parable|Mexican Fisherman Parable]] - Acceptance of current state
+- [[wisdom/personal-growth/presence-and-happiness/frankls-inverse-law-meaning-vs-pleasure|Frankl's Inverse Law - Meaning vs Pleasure]] - Finding satisfaction in the present
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

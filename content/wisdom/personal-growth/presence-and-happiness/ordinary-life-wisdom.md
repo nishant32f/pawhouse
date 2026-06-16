@@ -11,9 +11,9 @@ Ordinary life wisdom is the practice of noticing and valuing the simple things t
 
 ## Related Notes
 
-- [[Appreciate Everything]] - Finding appreciation in ordinary moments and difficult lessons
-- [[Slow Dance]] - Slowing down enough to notice life as it happens
-- [[Ode to Happiness]] - Remembering happiness as a lived practice rather than an abstract goal
+- [[wisdom/personal-growth/presence-and-happiness/appreciate-everything|Appreciate Everything]] - Finding appreciation in ordinary moments and difficult lessons
+- [[wisdom/readings-and-poems/slow-dance|Slow Dance]] - Slowing down enough to notice life as it happens
+- [[wisdom/readings-and-poems/ode-to-happiness|Ode to Happiness]] - Remembering happiness as a lived practice rather than an abstract goal
 
 ---
-Created during wisdom linkage repair to resolve imported wikilink `[[Ordinary Life Wisdom]]`.
+Created during wisdom linkage repair to resolve imported wikilink `[[wisdom/personal-growth/presence-and-happiness/ordinary-life-wisdom|Ordinary Life Wisdom]]`.

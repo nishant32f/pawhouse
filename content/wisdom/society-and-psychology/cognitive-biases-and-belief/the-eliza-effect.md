@@ -36,6 +36,6 @@ Our social brains are simply too eager to connect.
 
 ## Related Articles
 
-- [[False Consensus Effect|False Consensus Effect]] - How we overestimate agreement with our beliefs
-- [[Pluralistic Ignorance|Pluralistic Ignorance]] - When everyone privately rejects what they think everyone accepts
-- [[The Looking-Glass Self|The Looking-Glass Self]] - How our identity forms through imagined judgments of others
+- False Consensus Effect - How we overestimate agreement with our beliefs
+- Pluralistic Ignorance - When everyone privately rejects what they think everyone accepts
+- [[wisdom/personal-growth/self-worth-and-identity/the-looking-glass-self|The Looking-Glass Self]] - How our identity forms through imagined judgments of others

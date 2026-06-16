@@ -30,11 +30,11 @@ In anticipation, this sounds like building up to some amazingly impressive momen
 
 ## Related Concepts
 
-- [[Happiness of Pursuit]] - Balance between anticipation and presence
-- [[Mexican Fisherman Parable]] - Simple pleasure vs complex meaning
-- [[Obstacles to Happiness]] - Wanting things to be different
-- [[Stop Perfectionism]] - Avoiding perfectionism for enjoyment
-- [[Hope to Live]] - Similar themes of delayed gratification
+- Happiness of Pursuit - Balance between anticipation and presence
+- [[wisdom/personal-growth/presence-and-happiness/mexican-fisherman-parable|Mexican Fisherman Parable]] - Simple pleasure vs complex meaning
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - Wanting things to be different
+- Stop Perfectionism - Avoiding perfectionism for enjoyment
+- Hope to Live - Similar themes of delayed gratification
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

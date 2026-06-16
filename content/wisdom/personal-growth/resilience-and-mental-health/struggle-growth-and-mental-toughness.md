@@ -80,8 +80,8 @@ Before embracing discomfort, ask:
 
 ## Related Canonical Notes
 
-- [[Late Stage Success Advice]]
-- [[Action Over Confidence]]
-- [[Perseverance Under Pressure]]
-- [[Overcoming Disadvantage: Action vs. Blame]]
-- [[Self-Worth Beyond Validation]]
+- [[wisdom/business-and-startups/strategy-and-career/late-stage-success-advice|Late Stage Success Advice]]
+- [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]]
+- [[wisdom/personal-growth/resilience-and-mental-health/perseverance-under-pressure|Perseverance Under Pressure]]
+- [[wisdom/personal-growth/resilience-and-mental-health/overcoming-disadvantage-action-vs-blame|Overcoming Disadvantage: Action vs. Blame]]
+- [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]]

@@ -40,11 +40,11 @@ Aim for a few Moments Of Peace today.
 
 ## Related Concepts
 
-- [[Internal Multiple Personalities]] - Mind management and awareness
-- [[Obstacles to Happiness]] - Present moment awareness
-- [[Time vs Money]] - Mindful living
-- [[Happiness of Pursuit]] - Present vs future focus
-- [[Stop Perfectionism]] - Accepting imperfect mindfulness
+- [[wisdom/personal-growth/resilience-and-mental-health/internal-multiple-personalities|Internal Multiple Personalities]] - Mind management and awareness
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - Present moment awareness
+- Time vs Money - Mindful living
+- Happiness of Pursuit - Present vs future focus
+- Stop Perfectionism - Accepting imperfect mindfulness
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

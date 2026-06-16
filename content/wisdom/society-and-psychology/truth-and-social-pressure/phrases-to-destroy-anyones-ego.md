@@ -25,5 +25,5 @@ description: "Sharp phrases that expose ego-driven behavior and excessive need f
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[Responding to Victim Mentality]] — shared boundaries/communication graph concepts
+- [[wisdom/society-and-psychology/truth-and-social-pressure/responding-to-victim-mentality|Responding to Victim Mentality]] — shared boundaries/communication graph concepts
 <!-- wisdom-linkage-repair:end -->

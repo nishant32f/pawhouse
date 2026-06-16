@@ -29,7 +29,7 @@ Instead, we spend most of our lives learning firsthand the most important lesson
 
 Even reading this list back, I'm rolling my eyes at how fucking trite it is. These are all basic bitch obvious insights that everybody has heard before. But if they're so basic, why does everyone so reliably fall prey to them throughout our lives?
 
-[[3MM - Worries, Women & Clichés]] captures this neatly:
+[[wisdom/modern-wisdom/3mm-worries-women-and-cliches|3MM - Worries, Women & Clichés]] captures this neatly:
 
 > “A cursed fact of the world is that the most important life lessons you learn are the hardest to communicate to others because they always sound like clichés.” — Nabeel Qureshi
 
@@ -45,11 +45,11 @@ And a voice in the back of your mind will say "I told you so."
 
 ## Related Concepts
 
-- [[Fading Affect Bias]] - Learning from past experiences
-- [[Stop Wanting Something You're Not Willing to Work For|Stop Wanting Something You're Not Willing to Work For]] - Accepting hard truths
-- [[What Youre Made Of|How to Find Out What You're Really Made Of]] - Learning through trial
-- [[Inverse PTSD]] - Growth through adversity
-- [[Luxury Beliefs]] - Experience vs theoretical knowledge
+- [[wisdom/personal-growth/resilience-and-mental-health/fading-affect-bias|Fading Affect Bias]] - Learning from past experiences
+- [[wisdom/personal-growth/action-and-discipline/stop-wanting-something-youre-not-willing-to-work-for|Stop Wanting Something You're Not Willing to Work For]] - Accepting hard truths
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Learning through trial
+- [[wisdom/personal-growth/resilience-and-mental-health/inverse-ptsd|Inverse PTSD]] - Growth through adversity
+- Luxury Beliefs - Experience vs theoretical knowledge
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

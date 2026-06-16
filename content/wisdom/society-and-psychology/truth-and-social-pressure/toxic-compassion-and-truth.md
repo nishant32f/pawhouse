@@ -54,5 +54,5 @@ Beware people who prioritize saying good things. They may not be doing good thin
 
 ## Related Canonical Notes
 
-- [[False Social Consensus]]
-- [[Self-Worth Beyond Validation]]
+- [[wisdom/society-and-psychology/group-psychology/false-social-consensus|False Social Consensus]]
+- [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]]

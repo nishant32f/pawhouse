@@ -75,8 +75,8 @@ Do it anyway, with the disadvantages included.
 
 ## Related Canonical Notes
 
-- [[Action Over Confidence]]
-- [[Struggle Growth and Mental Toughness]]
-- [[Self-Worth Beyond Validation]]
-- [[What Youre Made Of]]
-- [[People Lack Accountability]]
+- [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]]
+- [[wisdom/personal-growth/resilience-and-mental-health/struggle-growth-and-mental-toughness|Struggle Growth and Mental Toughness]]
+- [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]]
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|What Youre Made Of]]
+- [[wisdom/society-and-psychology/truth-and-social-pressure/people-lack-accountability|People Lack Accountability]]

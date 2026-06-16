@@ -66,7 +66,7 @@ If I were on my deathbed tomorrow, what would I regret most?
 
 ## Additional Prompts: Success Without Status
 
-From a related YouTube Short: [[2026-05-21-youtube-questions-for-self-inquiry|Questions for Self-Inquiry]].
+From a related YouTube Short: [[summaries/2026-05-21-youtube-questions-for-self-inquiry|Questions for Self-Inquiry]].
 
 These prompts use subtraction to expose the difference between intrinsic desire and performed success:
 
@@ -82,7 +82,7 @@ These prompts use subtraction to expose the difference between intrinsic desire 
 
 The useful pattern is to remove the obvious external scoreboards one by one: money, status, followers, approval. Whatever remains is closer to the honest answer.
 
-Related: [[Self-Worth Beyond Validation]], [[Evening Self Reflection]].
+Related: [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]], [[wisdom/personal-growth/resilience-and-mental-health/evening-self-reflection|Evening Self Reflection]].
 
 ---
 

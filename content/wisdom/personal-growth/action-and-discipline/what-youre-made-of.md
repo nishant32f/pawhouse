@@ -44,11 +44,11 @@ And your best self will have to stop his coughing, and come say hello.
 
 ## Related Concepts
 
-- [[Inverse PTSD]] - Growth through adversity
-- [[Easy to Be Savage]] - Strength revealed through challenge
-- [[Discipline vs Motivation]] - Character revealed through action
-- [[Self Worth Independence]] - Inner strength vs external validation
-- [[Unteachable Lessons]] - Wisdom gained through trial
+- [[wisdom/personal-growth/resilience-and-mental-health/inverse-ptsd|Inverse PTSD]] - Growth through adversity
+- [[wisdom/personal-growth/action-and-discipline/easy-to-be-savage|Easy to Be Savage]] - Strength revealed through challenge
+- Discipline vs Motivation - Character revealed through action
+- Self Worth Independence - Inner strength vs external validation
+- [[wisdom/personal-growth/self-worth-and-identity/unteachable-lessons|Unteachable Lessons]] - Wisdom gained through trial
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

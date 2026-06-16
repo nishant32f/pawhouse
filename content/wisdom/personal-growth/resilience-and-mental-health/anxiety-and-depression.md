@@ -25,13 +25,13 @@ This helps differentiate between anxiety disorders and reasonable stress respons
 This distinguishes between personal social difficulties and being in an unsupportive environment.
 
 ## Related Concepts
-- [[Mental Health Characteristics|Mental Health Characteristics]] - Understanding healthy vs unhealthy mental patterns
-- [[Obstacles to Happiness]] - External factors that impact mental wellbeing
-- [[Evening Self Reflection]] - Daily practice for mental health awareness
-- [[Mental Health Monsters|Mental Health Monsters]] - Managing internal negative voices
-- [[Expectations and Reality]] - Aligning expectations with reality for better mental health
+- [[wisdom/personal-growth/resilience-and-mental-health/mental-health-characteristics|Mental Health Characteristics]] - Understanding healthy vs unhealthy mental patterns
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - External factors that impact mental wellbeing
+- [[wisdom/personal-growth/resilience-and-mental-health/evening-self-reflection|Evening Self Reflection]] - Daily practice for mental health awareness
+- [[wisdom/personal-growth/resilience-and-mental-health/mental-health-monsters|Mental Health Monsters]] - Managing internal negative voices
+- Expectations and Reality - Aligning expectations with reality for better mental health
 
 ## Similar Notes
-- [[Dealing with Criticism]] - Protecting mental health from external criticism
-- [[Insecure Overachiever Mindset]] - Understanding anxiety in high performers
-- [[Fading Affect Bias]] - How memory affects emotional recovery
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - Protecting mental health from external criticism
+- [[wisdom/personal-growth/resilience-and-mental-health/insecure-overachiever-mindset|Insecure Overachiever Mindset]] - Understanding anxiety in high performers
+- [[wisdom/personal-growth/resilience-and-mental-health/fading-affect-bias|Fading Affect Bias]] - How memory affects emotional recovery

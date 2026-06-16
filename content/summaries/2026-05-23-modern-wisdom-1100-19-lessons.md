@@ -11,7 +11,7 @@ YouTube transcript source: <https://www.youtube.com/watch?v=RBZTLptAMao>
 Summarized: 2026-05-23 11:51 IST
 Tool: steipete/summarize + YouTube transcript
 
-Related wisdom note: [[Modern Wisdom 1100 Lessons]]
+Related wisdom note: [[wisdom/personal-growth/action-and-discipline/modern-wisdom-1100-lessons|Modern Wisdom 1100 Lessons]]
 
 ## Brief
 

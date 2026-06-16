@@ -32,6 +32,6 @@ description: "Identifying toxic personality traits that make healthy friendships
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[Be Selective in Friendship]] — shared friendship/relationships graph concepts
-- [[Responding to Victim Mentality]] — shared boundaries/relationships graph concepts
+- [[wisdom/relationships-and-friendship/be-selective-in-friendship|Be Selective in Friendship]] — shared friendship/relationships graph concepts
+- [[wisdom/society-and-psychology/truth-and-social-pressure/responding-to-victim-mentality|Responding to Victim Mentality]] — shared boundaries/relationships graph concepts
 <!-- wisdom-linkage-repair:end -->

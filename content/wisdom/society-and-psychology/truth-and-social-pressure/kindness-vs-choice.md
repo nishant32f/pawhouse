@@ -38,11 +38,11 @@ I have no answer here, interesting question though.
 
 ## Related Concepts
 
-- [[Real Friends]] - Genuine vs compelled caring
-- [[Self Worth Independence]] - Internal virtue vs external validation
-- [[Dealing with Criticism]] - Conscious choice vs automatic response
-- [[Toxic Compassion]] - Authentic vs compelled compassion
-- [[Supporting Men]] - Conscious kindness vs nature
+- [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - Genuine vs compelled caring
+- Self Worth Independence - Internal virtue vs external validation
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - Conscious choice vs automatic response
+- Toxic Compassion - Authentic vs compelled compassion
+- [[wisdom/relationships-and-friendship/supporting-men|Supporting Men]] - Conscious kindness vs nature
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

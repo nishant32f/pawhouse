@@ -37,11 +37,11 @@ Like workload exposure therapy that teaches you "Oh I've been here before and I 
 
 ## Related Concepts
 
-- [[What Youre Made Of|How to Find Out What You're Really Made Of]] - Discovering strength through adversity
-- [[Fading Affect Bias]] - Psychological adaptation to hardship
-- [[Easy to Be Savage]] - Strength built through challenge
-- [[Unteachable Lessons]] - Wisdom gained through experience
-- [[Discipline vs Motivation]] - Building resilience through action
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Discovering strength through adversity
+- [[wisdom/personal-growth/resilience-and-mental-health/fading-affect-bias|Fading Affect Bias]] - Psychological adaptation to hardship
+- [[wisdom/personal-growth/action-and-discipline/easy-to-be-savage|Easy to Be Savage]] - Strength built through challenge
+- [[wisdom/personal-growth/self-worth-and-identity/unteachable-lessons|Unteachable Lessons]] - Wisdom gained through experience
+- Discipline vs Motivation - Building resilience through action
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

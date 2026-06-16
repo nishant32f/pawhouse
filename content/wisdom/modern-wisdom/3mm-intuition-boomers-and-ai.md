@@ -14,7 +14,7 @@ This Three Minute Monday note preserves the durable ideas from the email and str
 
 Intuition is not the opposite of discipline. It is what discipline becomes after enough repetitions. Beginners need rules because they do not yet have taste. Experts can make exceptions because they have internalised the pattern behind the rule.
 
-Related note: [[Rules and Exceptions]]
+Related note: [[wisdom/society-and-psychology/truth-and-social-pressure/rules-and-exceptions|Rules and Exceptions]]
 
 ## Marriage as Conversation
 
@@ -24,7 +24,7 @@ Nietzsche's test for marriage is brutally simple: can you keep having good conve
 
 Conversation is not decoration on top of a relationship. It is the medium through which conflict, boredom, ambition, grief, logistics, children, money, aging, and ordinary days get metabolised.
 
-Related note: [[Marriage as Conversation]]
+Related note: [[wisdom/relationships-and-friendship/marriage-as-conversation|Marriage as Conversation]]
 
 ## Text Your Friends
 
@@ -32,7 +32,7 @@ When a friend crosses your mind, treat that as a prompt to reach out.
 
 Friendship often decays from logistical drift, not dramatic betrayal. A short message is a small proof that the relationship is still alive between scheduled catch-ups, birthdays, and emergencies.
 
-Related note: [[Text Your Friends]]
+Related note: [[wisdom/relationships-and-friendship/text-your-friends|Text Your Friends]]
 
 ## Modern Fatherhood
 
@@ -40,7 +40,7 @@ Modern dads spend far more time on childcare than previous generations. The role
 
 The trade is not simply loss. A life can become heavier because it contains more of what matters.
 
-Related note: [[Modern Fatherhood]]
+Related note: [[wisdom/relationships-and-friendship/modern-fatherhood|Modern Fatherhood]]
 
 ## What We Can Learn
 
@@ -51,10 +51,10 @@ Related note: [[Modern Fatherhood]]
 
 ## Extracted Concepts
 
-- [[Rules and Exceptions]] - earned intuition and the role of rules before exceptions
-- [[Marriage as Conversation]] - marriage as a long conversational partnership
-- [[Text Your Friends]] - small signals that keep friendship alive
-- [[Modern Fatherhood]] - presence, exhaustion, and meaning in modern parenting
+- [[wisdom/society-and-psychology/truth-and-social-pressure/rules-and-exceptions|Rules and Exceptions]] - earned intuition and the role of rules before exceptions
+- [[wisdom/relationships-and-friendship/marriage-as-conversation|Marriage as Conversation]] - marriage as a long conversational partnership
+- [[wisdom/relationships-and-friendship/text-your-friends|Text Your Friends]] - small signals that keep friendship alive
+- [[wisdom/relationships-and-friendship/modern-fatherhood|Modern Fatherhood]] - presence, exhaustion, and meaning in modern parenting
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

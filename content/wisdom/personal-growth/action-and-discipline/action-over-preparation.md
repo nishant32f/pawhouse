@@ -54,6 +54,6 @@ Then do that before thinking more.
 
 ## Related Canonical Notes
 
-- [[Action Over Confidence]]
-- [[Self-Trust Through Promises]]
-- [[Late Stage Success Advice]]
+- [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]]
+- [[wisdom/personal-growth/action-and-discipline/self-trust-through-promises|Self-Trust Through Promises]]
+- [[wisdom/business-and-startups/strategy-and-career/late-stage-success-advice|Late Stage Success Advice]]

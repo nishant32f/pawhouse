@@ -46,7 +46,7 @@ description: "Charles Darwin's systematic approach to life's biggest decision us
 *He married Emma Wedgwood; they had 10 children together.*
 
 ## Related Concepts
-- [[Expectations and Reality]] - Systematic evaluation of life choices
-- [[Time-Sensitive Opportunities|Time-Sensitive Opportunities]] - Life decisions have optimal timing windows
-- [[Feynman's Love Letter]] - Understanding the depth of committed relationships
-- [[Marriage as Conversation]] - The everyday texture that sustains a long marriage
+- Expectations and Reality - Systematic evaluation of life choices
+- [[wisdom/personal-growth/action-and-discipline/time-sensitive-opportunities|Time-Sensitive Opportunities]] - Life decisions have optimal timing windows
+- [[wisdom/readings-and-poems/feynmans-love-letter|Feynman's Love Letter]] - Understanding the depth of committed relationships
+- [[wisdom/relationships-and-friendship/marriage-as-conversation|Marriage as Conversation]] - The everyday texture that sustains a long marriage

@@ -79,8 +79,8 @@ The smallest completed action is more persuasive than another internal debate.
 
 ## Related Canonical Notes
 
-- [[Action Over Preparation]]
-- [[Self-Trust Through Promises]]
-- [[Struggle Growth and Mental Toughness]]
-- [[Overcoming Disadvantage: Action vs. Blame]]
-- [[Self-Worth Beyond Validation]]
+- [[wisdom/personal-growth/action-and-discipline/action-over-preparation|Action Over Preparation]]
+- [[wisdom/personal-growth/action-and-discipline/self-trust-through-promises|Self-Trust Through Promises]]
+- [[wisdom/personal-growth/resilience-and-mental-health/struggle-growth-and-mental-toughness|Struggle Growth and Mental Toughness]]
+- [[wisdom/personal-growth/resilience-and-mental-health/overcoming-disadvantage-action-vs-blame|Overcoming Disadvantage: Action vs. Blame]]
+- [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]]

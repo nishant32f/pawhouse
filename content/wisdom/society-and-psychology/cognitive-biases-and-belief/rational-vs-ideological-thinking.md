@@ -47,11 +47,11 @@ I'm sure there's other common trends I've missed but this seems to be a good sta
 
 ## Related Concepts
 
-- [[Astrology Study]] - Evidence-based vs belief-based thinking
-- [[Milgram Questions]] - Social pressure vs honest inquiry
-- [[Post Content Clarity]] - Critical evaluation of content
-- [[Proximate vs Ultimate]] - Understanding vs accepting explanations
-- [[Cynicism vs Hope]] - Balanced vs tribal thinking
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/astrology-study|Astrology Study]] - Evidence-based vs belief-based thinking
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/milgram-questions|Milgram Questions]] - Social pressure vs honest inquiry
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/post-content-clarity|Post Content Clarity]] - Critical evaluation of content
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/proximate-vs-ultimate|Proximate vs Ultimate]] - Understanding vs accepting explanations
+- [[wisdom/society-and-psychology/truth-and-social-pressure/cynicism-vs-hope|Cynicism vs Hope]] - Balanced vs tribal thinking
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

@@ -38,11 +38,11 @@ The enemy is behind you. The world's not out to get you.
 
 ## Related Concepts
 
-- [[Self Worth Independence]] - Internal vs external enemies
-- [[Dealing with Criticism]] - Inner critic vs external criticism
-- [[Easy to Be Savage]] - Self-reliance in competitive world
-- [[Beware Envying Success]] - Internal struggles despite external success
-- [[What Youre Made Of|How to Find Out What You're Really Made Of]] - Inner strength vs external opposition
+- Self Worth Independence - Internal vs external enemies
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - Inner critic vs external criticism
+- [[wisdom/personal-growth/action-and-discipline/easy-to-be-savage|Easy to Be Savage]] - Self-reliance in competitive world
+- Beware Envying Success - Internal struggles despite external success
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Inner strength vs external opposition
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

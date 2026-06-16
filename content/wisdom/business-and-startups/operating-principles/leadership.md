@@ -11,5 +11,5 @@ description: "Core principles and insights on leadership in startup environments
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[Startup Principles]] — shared leadership/management/startups graph concepts
+- Startup Principles — shared leadership/management/startups graph concepts
 <!-- wisdom-linkage-repair:end -->

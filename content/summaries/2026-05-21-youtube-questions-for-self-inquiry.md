@@ -35,4 +35,4 @@ Key prompts:
 
 ## Wisdom Note
 
-- [[Morgan Housel's Difficult Questions to Ask Yourself]]
+- [[wisdom/personal-growth/self-worth-and-identity/morgan-housels-difficult-questions-to-ask-yourself|Morgan Housel's Difficult Questions to Ask Yourself]]

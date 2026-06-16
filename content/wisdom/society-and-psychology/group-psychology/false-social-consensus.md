@@ -71,4 +71,4 @@ Never treat silence as evidence of agreement. Ask what people actually believe, 
 
 ## Related Canonical Notes
 
-- [[Toxic Compassion and Truth]]
+- [[wisdom/society-and-psychology/truth-and-social-pressure/toxic-compassion-and-truth|Toxic Compassion and Truth]]

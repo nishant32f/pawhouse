@@ -32,10 +32,10 @@ This explains why optics matter so much online. People are not only asking, "Wha
 
 ## Related Concepts
 
-- [[3MM - Cancellations, MisogynistAI & Nervous Systems]] - source note for this idea.
-- [[Dealing with Criticism]] - reputation risk feels threatening because other people may believe the criticism.
-- [[Mimetic Desire]] - status signals spread socially before people consciously inspect them.
-- [[The Messenger Paradox]] - groups often punish the person or symbol that carries uncomfortable meaning.
+- [[wisdom/modern-wisdom/3mm-cancellations-misogynistai-and-nervous-systems|3MM - Cancellations, MisogynistAI & Nervous Systems]] - source note for this idea.
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - reputation risk feels threatening because other people may believe the criticism.
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/mimetic-desire|Mimetic Desire]] - status signals spread socially before people consciously inspect them.
+- [[wisdom/society-and-psychology/truth-and-social-pressure/the-messenger-paradox|The Messenger Paradox]] - groups often punish the person or symbol that carries uncomfortable meaning.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

@@ -18,7 +18,7 @@ Insecure overachievers struggle to distinguish the few domains that genuinely re
 
 > “Pour your finite time and energy into something infinitely more absorbing than trying to keep life under control, which is actually living it.” — Oliver Burkeman
 
-Related note: [[Insecure Overachiever Mindset]]
+Related note: [[wisdom/personal-growth/resilience-and-mental-health/insecure-overachiever-mindset|Insecure Overachiever Mindset]]
 
 ## Leisure Into Labour
 
@@ -30,7 +30,7 @@ That is the trap: even meditation, hobbies, and relaxation become arenas to opti
 
 You are not fixing a problem. There may be no problem to fix. You can stop worrying about doing everything perfectly, especially things you are doing to relax.
 
-Related notes: [[Don't Grip Life Too Tightly - Ted Hughes]], [[Rules About Overthinking]], [[Presence Time and Busyness]]
+Related notes: [[wisdom/personal-growth/presence-and-happiness/dont-grip-life-too-tightly-ted-hughes|Don't Grip Life Too Tightly - Ted Hughes]], [[wisdom/personal-growth/resilience-and-mental-health/rules-about-overthinking|Rules About Overthinking]], [[wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness|Presence Time and Busyness]]
 
 ## Women Are Winning the Job Market
 
@@ -46,7 +46,7 @@ The point is less a complete labour-market theory than a signal: when demographi
 
 The question is valuable because concerns often masquerade as identity. If worry has become your proof of seriousness, letting go can feel like becoming irresponsible rather than becoming free.
 
-Related note: [[Insecure Overachiever Mindset]]
+Related note: [[wisdom/personal-growth/resilience-and-mental-health/insecure-overachiever-mindset|Insecure Overachiever Mindset]]
 
 ## Important Lessons Sound Like Clichés
 
@@ -54,7 +54,7 @@ Related note: [[Insecure Overachiever Mindset]]
 
 The deepest lessons often arrive in embarrassingly simple language: stop worrying, enjoy the moment, call your parents, choose better people, do not work yourself into misery. They sound obvious until your life forces you to learn them from the inside.
 
-Related note: [[Unteachable Lessons]]
+Related note: [[wisdom/personal-growth/self-worth-and-identity/unteachable-lessons|Unteachable Lessons]]
 
 ## What We Can Learn
 
@@ -66,11 +66,11 @@ Related note: [[Unteachable Lessons]]
 
 ## Extracted Concepts
 
-- [[Insecure Overachiever Mindset]] - worry as a mistaken performance enhancer.
-- [[Don't Grip Life Too Tightly - Ted Hughes]] - seriousness becomes brittle when it crowds out enjoyment.
-- [[Rules About Overthinking]] - rumination can replace the life it was supposed to protect.
-- [[Presence Time and Busyness]] - do not trade the present for systems that only promise future permission to live.
-- [[Unteachable Lessons]] - the most important lessons often sound like clichés until they are personally earned.
+- [[wisdom/personal-growth/resilience-and-mental-health/insecure-overachiever-mindset|Insecure Overachiever Mindset]] - worry as a mistaken performance enhancer.
+- [[wisdom/personal-growth/presence-and-happiness/dont-grip-life-too-tightly-ted-hughes|Don't Grip Life Too Tightly - Ted Hughes]] - seriousness becomes brittle when it crowds out enjoyment.
+- [[wisdom/personal-growth/resilience-and-mental-health/rules-about-overthinking|Rules About Overthinking]] - rumination can replace the life it was supposed to protect.
+- [[wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness|Presence Time and Busyness]] - do not trade the present for systems that only promise future permission to live.
+- [[wisdom/personal-growth/self-worth-and-identity/unteachable-lessons|Unteachable Lessons]] - the most important lessons often sound like clichés until they are personally earned.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

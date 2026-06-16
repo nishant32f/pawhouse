@@ -28,12 +28,12 @@ Ask:
 - Am I attracted to the work, or only the status signal attached to the result?
 - Does the desire survive solitude, or only comparison?
 
-[[The Shower Test]] is one practical filter: when inputs disappear, copied desires often lose force while genuine preoccupations keep returning.
+[[wisdom/personal-growth/self-worth-and-identity/the-shower-test|The Shower Test]] is one practical filter: when inputs disappear, copied desires often lose force while genuine preoccupations keep returning.
 
 ## Related Notes
 
-- [[The Shower Test]]
-- [[Fuck You Family]]
-- [[The Looking Glass Self]]
-- [[Self-Worth Beyond Validation]]
-- [[Proximate vs Ultimate]]
+- [[wisdom/personal-growth/self-worth-and-identity/the-shower-test|The Shower Test]]
+- [[wisdom/relationships-and-friendship/fuck-you-family|Fuck You Family]]
+- [[wisdom/personal-growth/self-worth-and-identity/the-looking-glass-self|The Looking Glass Self]]
+- [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]]
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/proximate-vs-ultimate|Proximate vs Ultimate]]

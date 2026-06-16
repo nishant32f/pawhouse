@@ -29,14 +29,14 @@ Understanding this helps us recognize that our harshest self-critical voices oft
 **The only way out is through.** You will take more of the thing that poisons you until you turn it into a tonic that girdles the world around you.
 
 ## Related Concepts
-- [[Mental Health Characteristics|Mental Health Characteristics]] - Understanding healthy vs unhealthy mental patterns
-- [[Obstacles to Happiness]] - External factors that feed our monsters
-- [[Evening Self Reflection]] - Daily practice to monitor and manage our mental state
-- [[Anxiety and Depression]] - Critical self-assessment questions
-- [[Internal Multiple Personalities]] - Understanding internal mental voices
+- [[wisdom/personal-growth/resilience-and-mental-health/mental-health-characteristics|Mental Health Characteristics]] - Understanding healthy vs unhealthy mental patterns
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - External factors that feed our monsters
+- [[wisdom/personal-growth/resilience-and-mental-health/evening-self-reflection|Evening Self Reflection]] - Daily practice to monitor and manage our mental state
+- [[wisdom/personal-growth/resilience-and-mental-health/anxiety-and-depression|Anxiety and Depression]] - Critical self-assessment questions
+- [[wisdom/personal-growth/resilience-and-mental-health/internal-multiple-personalities|Internal Multiple Personalities]] - Understanding internal mental voices
 
 ## Similar Notes
-- [[Dealing with Criticism]] - Protecting yourself from external and internal criticism
-- [[Self-Love and Standards|Self-Love and Standards]] - Balancing self-compassion with personal standards
-- [[Expectations and Reality]] - Managing expectations to reduce internal conflict
-- [[Realistic Path to Enlightenment]] - Practical mindfulness approaches for mental peace
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - Protecting yourself from external and internal criticism
+- Self-Love and Standards - Balancing self-compassion with personal standards
+- Expectations and Reality - Managing expectations to reduce internal conflict
+- [[wisdom/personal-growth/resilience-and-mental-health/realistic-path-to-enlightenment|Realistic Path to Enlightenment]] - Practical mindfulness approaches for mental peace

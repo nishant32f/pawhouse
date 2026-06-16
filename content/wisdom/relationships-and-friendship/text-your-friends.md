@@ -25,11 +25,11 @@ Tiny signals compound. They remind the other person that the relationship is sti
 
 ## Related Concepts
 
-- [[3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
-- [[Real Friends]] - prioritising the people you can be unfiltered around
-- [[Reverse Charisma]] - making others feel seen and interesting
-- [[Slow Dance]] - do not let busyness quietly kill friendship
-- [[Kindness vs Choice]] - small chosen acts of care matter because they are chosen
+- [[wisdom/modern-wisdom/3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
+- [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - prioritising the people you can be unfiltered around
+- [[wisdom/relationships-and-friendship/reverse-charisma|Reverse Charisma]] - making others feel seen and interesting
+- [[wisdom/readings-and-poems/slow-dance|Slow Dance]] - do not let busyness quietly kill friendship
+- [[wisdom/society-and-psychology/truth-and-social-pressure/kindness-vs-choice|Kindness vs Choice]] - small chosen acts of care matter because they are chosen
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

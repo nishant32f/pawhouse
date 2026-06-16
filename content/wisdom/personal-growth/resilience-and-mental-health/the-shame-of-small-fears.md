@@ -98,6 +98,6 @@ And shaming yourself for your emotions only adds a second wound to the first.
 
 ## Related Articles
 
-- [[What Youre Made Of|How to Find Out What You're Really Made Of]] - Discovering your courage through adversity
-- [[Hard Work and Discomfort|Hard Work and Discomfort]] - Why discomfort is the selection criteria for meaningful work
-- [[The No Big Deal Mentality|The No Big Deal Mentality]] - Approaching challenges with lightness rather than fear
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Discovering your courage through adversity
+- Hard Work and Discomfort - Why discomfort is the selection criteria for meaningful work
+- [[wisdom/personal-growth/resilience-and-mental-health/the-no-big-deal-mentality|The No Big Deal Mentality]] - Approaching challenges with lightness rather than fear

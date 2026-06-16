@@ -49,5 +49,5 @@ Rudyard Kipling (1865-1936)
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[Ode to Happiness]] — shared poetry/resilience graph concepts
+- [[wisdom/readings-and-poems/ode-to-happiness|Ode to Happiness]] — shared poetry/resilience graph concepts
 <!-- wisdom-linkage-repair:end -->

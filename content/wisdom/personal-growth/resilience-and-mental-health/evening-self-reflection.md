@@ -34,6 +34,6 @@ A daily practice for developing emotional awareness and processing the day's exp
    - Develops appreciation of small joys
 
 ## Related Topics
-- [[Mental Health Characteristics|Mental Health Characteristics]]
-- [[Obstacles to Happiness]]
-- [[Anxiety and Depression]]
+- [[wisdom/personal-growth/resilience-and-mental-health/mental-health-characteristics|Mental Health Characteristics]]
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]]
+- [[wisdom/personal-growth/resilience-and-mental-health/anxiety-and-depression|Anxiety and Depression]]

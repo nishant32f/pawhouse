@@ -15,6 +15,6 @@ Giving up doesn't always look like quitting. Sometimes it looks like coping. And
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[When Everything Feels Off]] — shared mental-health/resilience graph concepts
-- [[Mental Health Characteristics]] — shared mental-health/psychology/resilience graph concepts
+- [[wisdom/personal-growth/resilience-and-mental-health/when-everything-feels-off|When Everything Feels Off]] — shared mental-health/resilience graph concepts
+- [[wisdom/personal-growth/resilience-and-mental-health/mental-health-characteristics|Mental Health Characteristics]] — shared mental-health/psychology/resilience graph concepts
 <!-- wisdom-linkage-repair:end -->

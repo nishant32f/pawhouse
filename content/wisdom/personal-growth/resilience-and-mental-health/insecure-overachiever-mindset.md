@@ -32,7 +32,7 @@ You can look back on a great run of miserable successes, or actually try to embr
 
 Do not confuse relentless dour severity with seriousness and sophistication. It is not more noble to treat your pursuits so sternly that the only positive element is the end result and absolutely none of the experience.
 
-Chris returns to the same pattern in [[3MM - Worries, Women & Clichés]]: insecure overachievers often fail to distinguish the few areas that deserve full vigilance from the many that do not. The result is that even breathwork, meditation, hobbies, and rest become things to optimise, win, and perfect.
+Chris returns to the same pattern in [[wisdom/modern-wisdom/3mm-worries-women-and-cliches|3MM - Worries, Women & Clichés]]: insecure overachievers often fail to distinguish the few areas that deserve full vigilance from the many that do not. The result is that even breathwork, meditation, hobbies, and rest become things to optimise, win, and perfect.
 
 > “In the process of trying to be perfect you’re thoroughly ruining the enjoyment of whatever you’re supposed to be enjoying by turning leisure into labour.” — Chris Williamson
 
@@ -40,11 +40,11 @@ Things will go well. You will figure it out, just like you always have. So go se
 
 ## Related Concepts
 
-- [[Discipline vs Motivation]] - Performance without worry
-- [[Stop Perfectionism]] - Overcoming perfectionist tendencies
-- [[Curse of Competence]] - High achiever challenges
-- [[Success Without Suffering]] - Enjoying the process
-- [[Happiness of Pursuit]] - Finding joy in the journey
+- Discipline vs Motivation - Performance without worry
+- Stop Perfectionism - Overcoming perfectionist tendencies
+- [[wisdom/personal-growth/self-worth-and-identity/curse-of-competence|Curse of Competence]] - High achiever challenges
+- Success Without Suffering - Enjoying the process
+- Happiness of Pursuit - Finding joy in the journey
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

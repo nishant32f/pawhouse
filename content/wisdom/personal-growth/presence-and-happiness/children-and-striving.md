@@ -26,4 +26,4 @@ The extraordinary will take care of itself.
 
 ## Related Concepts
 
-- [[Modern Fatherhood]] - presence as the costly, meaningful work of parenting
+- [[wisdom/relationships-and-friendship/modern-fatherhood|Modern Fatherhood]] - presence as the costly, meaningful work of parenting

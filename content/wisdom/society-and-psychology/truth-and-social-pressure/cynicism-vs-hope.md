@@ -32,11 +32,11 @@ Believing in hope is a better way to live. You should do the same.
 
 ## Related Concepts
 
-- [[Self Worth vs Validation]] - Internal vs external validation
-- [[Toxic Compassion]] - Performative behaviors
-- [[Rational vs Ideological Thinking|Rational vs Ideological Thinking]] - Constructive vs destructive thinking
-- [[Supporting Men]] - Positive vs negative mindset
-- [[The World Doesn't Care]] - Self-defeating attitudes
+- Self Worth vs Validation - Internal vs external validation
+- Toxic Compassion - Performative behaviors
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/rational-vs-ideological-thinking|Rational vs Ideological Thinking]] - Constructive vs destructive thinking
+- [[wisdom/relationships-and-friendship/supporting-men|Supporting Men]] - Positive vs negative mindset
+- [[wisdom/personal-growth/self-worth-and-identity/the-world-doesnt-care|The World Doesn't Care]] - Self-defeating attitudes
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

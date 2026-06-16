@@ -39,8 +39,8 @@ Do not let shame become a second mistake.
 
 ## Related Notes
 
-- [[Struggle Growth and Mental Toughness]] - resilience as returning to baseline without losing values or behavior.
-- [[What Youre Made Of]] - pressure reveals whether your best self can show up when needed.
-- [[Dealing with Criticism]] - protecting confidence while remaining open to correction.
-- [[Action Over Confidence]] - action builds the confidence that analysis cannot provide.
-- [[Overcoming Disadvantage: Action vs. Blame]] - agency after setbacks.
+- [[wisdom/personal-growth/resilience-and-mental-health/struggle-growth-and-mental-toughness|Struggle Growth and Mental Toughness]] - resilience as returning to baseline without losing values or behavior.
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|What Youre Made Of]] - pressure reveals whether your best self can show up when needed.
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - protecting confidence while remaining open to correction.
+- [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]] - action builds the confidence that analysis cannot provide.
+- [[wisdom/personal-growth/resilience-and-mental-health/overcoming-disadvantage-action-vs-blame|Overcoming Disadvantage: Action vs. Blame]] - agency after setbacks.

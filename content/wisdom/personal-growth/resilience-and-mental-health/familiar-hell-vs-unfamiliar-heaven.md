@@ -27,10 +27,10 @@ This is why people can intellectually want healthier relationships while emotion
 
 ## Related Concepts
 
-- [[3MM - Cancellations, MisogynistAI & Nervous Systems]] - source note for the quote and relational pattern.
-- [[The Shame of Small Fears]] - the nervous system treats modern emotional threats as real danger.
-- [[Dealing with Criticism]] - belonging threats can feel disproportionate because the body reads them as survival risks.
-- [[Realistic Path to Enlightenment]] - growth usually means noticing the pattern before trying to transcend it.
+- [[wisdom/modern-wisdom/3mm-cancellations-misogynistai-and-nervous-systems|3MM - Cancellations, MisogynistAI & Nervous Systems]] - source note for the quote and relational pattern.
+- [[wisdom/personal-growth/resilience-and-mental-health/the-shame-of-small-fears|The Shame of Small Fears]] - the nervous system treats modern emotional threats as real danger.
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - belonging threats can feel disproportionate because the body reads them as survival risks.
+- [[wisdom/personal-growth/resilience-and-mental-health/realistic-path-to-enlightenment|Realistic Path to Enlightenment]] - growth usually means noticing the pattern before trying to transcend it.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

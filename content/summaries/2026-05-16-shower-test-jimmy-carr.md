@@ -10,13 +10,13 @@ Source: <https://youtu.be/2CIz-P3kIUM?si=_Y9lZdw2d2aQ8T7O>
 Summarized: 2026-05-16 17:51 IST
 Tool: steipete/summarize
 
-Wisdom: [[The Shower Test]]
+Wisdom: [[wisdom/personal-growth/self-worth-and-identity/the-shower-test|The Shower Test]]
 
 ## Brief
 
 - Your real priorities show up when nothing is trying to grab your attention: "You can tell what you care about by what you think about in the shower."
 - An interesting life requires exclusion. You cannot live every alternate life, so the work is choosing what you actually want and accepting the tradeoffs.
-- Many desires are borrowed through [[Mimetic Desire]] and status games; the question is not only what you want, but whose game you are playing.
+- Many desires are borrowed through [[wisdom/society-and-psychology/cognitive-biases-and-belief/mimetic-desire|Mimetic Desire]] and status games; the question is not only what you want, but whose game you are playing.
 - If you want the outcome but not the lifestyle, disappointment is guaranteed. The work, the unglamorous repetitions, and the pain are part of the package.
 
 ## Full Summary

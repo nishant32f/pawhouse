@@ -150,6 +150,6 @@ Sometimes the prophet isn't mad. Sometimes the madness is in refusing to listen.
 
 ## Related Articles
 
-- [[The Abilene Paradox]] - When groups collectively decide on what nobody actually wants
-- [[Pluralistic Ignorance|Pluralistic Ignorance]] - When everyone privately rejects what they think everyone accepts
-- [[False Consensus Effect|False Consensus Effect]] - Overestimating how much others agree with us
+- The Abilene Paradox - When groups collectively decide on what nobody actually wants
+- Pluralistic Ignorance - When everyone privately rejects what they think everyone accepts
+- False Consensus Effect - Overestimating how much others agree with us

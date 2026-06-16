@@ -30,11 +30,11 @@ Discomfort in the present can be very painful, don't make it worse by fearing ho
 
 ## Related Concepts
 
-- [[Inverse PTSD]] - Psychological adaptation to adversity
-- [[Unteachable Lessons]] - Temporal perspective on difficult experiences
-- [[Time vs Money]] - Present pain vs future perspective
-- [[Don't Grip Life Too Tightly - Ted Hughes|Don't Grip Life Too Tightly - Ted Hughes]] - Accepting temporary discomfort
-- [[What Youre Made Of|How to Find Out What You're Really Made Of]] - Growth through difficult experiences
+- [[wisdom/personal-growth/resilience-and-mental-health/inverse-ptsd|Inverse PTSD]] - Psychological adaptation to adversity
+- [[wisdom/personal-growth/self-worth-and-identity/unteachable-lessons|Unteachable Lessons]] - Temporal perspective on difficult experiences
+- Time vs Money - Present pain vs future perspective
+- [[wisdom/personal-growth/presence-and-happiness/dont-grip-life-too-tightly-ted-hughes|Don't Grip Life Too Tightly - Ted Hughes]] - Accepting temporary discomfort
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Growth through difficult experiences
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

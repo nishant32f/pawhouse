@@ -27,10 +27,10 @@ description: "The most reliable traits among successful people - consistency and
 
 
 ## Related Concepts
-- [[Hard Work and Discomfort|Hard Work and Discomfort]] - The foundation that enables consistent effort
-- [[Promise Keeping|Promise Keeping]] - Building consistency through small commitments
-- [[Consistency and Discipline|Consistency and Discipline]] - Daily practices that build these traits
-- [[Time-Sensitive Opportunities|Time-Sensitive Opportunities]] - When to apply maximum effort
+- Hard Work and Discomfort - The foundation that enables consistent effort
+- Promise Keeping - Building consistency through small commitments
+- Consistency and Discipline - Daily practices that build these traits
+- [[wisdom/personal-growth/action-and-discipline/time-sensitive-opportunities|Time-Sensitive Opportunities]] - When to apply maximum effort
 
 ---
 

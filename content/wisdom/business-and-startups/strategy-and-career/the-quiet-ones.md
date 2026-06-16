@@ -50,5 +50,5 @@ Because the quiet ones don't leave angry. They leave when they realize you only 
 
 ## Related Notes
 
-- [[Faith in Your Word]] - Building self-trust through consistent follow-through
-- [[Interest vs Commitment|Interest vs Commitment]] - The difference between talking about work and actually doing it
+- Faith in Your Word - Building self-trust through consistent follow-through
+- Interest vs Commitment - The difference between talking about work and actually doing it

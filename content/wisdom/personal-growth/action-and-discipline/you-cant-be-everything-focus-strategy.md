@@ -32,11 +32,11 @@ You can't be everything you want.
 
 ## Related Concepts
 
-- [[Curse of Competence]] - Managing multiple competencies
-- [[Operator to Idea Guy]] - Focus vs scattered effort
-- [[Stop Wanting Something You're Not Willing to Work For|Stop Wanting Something You're Not Willing to Work For]] - Commitment vs wishful thinking
-- [[Parkinson's Law - Time Management]] - Focused vs dispersed effort
-- [[Just Do The Thing]] - Action over analysis paralysis
+- [[wisdom/personal-growth/self-worth-and-identity/curse-of-competence|Curse of Competence]] - Managing multiple competencies
+- [[wisdom/business-and-startups/strategy-and-career/operator-to-idea-guy|Operator to Idea Guy]] - Focus vs scattered effort
+- [[wisdom/personal-growth/action-and-discipline/stop-wanting-something-youre-not-willing-to-work-for|Stop Wanting Something You're Not Willing to Work For]] - Commitment vs wishful thinking
+- [[wisdom/personal-growth/presence-and-happiness/parkinsons-law-time-management|Parkinson's Law - Time Management]] - Focused vs dispersed effort
+- Just Do The Thing - Action over analysis paralysis
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

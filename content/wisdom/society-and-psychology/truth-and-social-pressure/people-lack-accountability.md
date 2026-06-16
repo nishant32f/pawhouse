@@ -13,5 +13,5 @@ People lack accountability, then say, 'You could've talked to me.' No, I couldn'
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[Phrases to Destroy Anyone's Ego]] — shared boundaries/communication graph concepts
+- [[wisdom/society-and-psychology/truth-and-social-pressure/phrases-to-destroy-anyones-ego|Phrases to Destroy Anyone's Ego]] — shared boundaries/communication graph concepts
 <!-- wisdom-linkage-repair:end -->

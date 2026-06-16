@@ -26,5 +26,5 @@ description: "Practical phrases to maintain boundaries and redirect conversation
 
 ## Related Notes
 
-- [[People Lack Accountability|People Lack Accountability]] - Understanding why some conversations are exhausting
-- [[20 Types to Avoid]] - Identifying toxic patterns in relationships
+- [[wisdom/society-and-psychology/truth-and-social-pressure/people-lack-accountability|People Lack Accountability]] - Understanding why some conversations are exhausting
+- [[wisdom/society-and-psychology/truth-and-social-pressure/20-types-to-avoid|20 Types to Avoid]] - Identifying toxic patterns in relationships

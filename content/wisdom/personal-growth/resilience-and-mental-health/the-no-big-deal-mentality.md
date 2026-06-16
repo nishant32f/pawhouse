@@ -17,5 +17,5 @@ When you adopt this powerful mindset shift, you become unstoppable because nothi
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[Beyond Self-Belief]] — shared mindset/personal-growth/resilience graph concepts
+- Beyond Self-Belief — shared mindset/personal-growth/resilience graph concepts
 <!-- wisdom-linkage-repair:end -->

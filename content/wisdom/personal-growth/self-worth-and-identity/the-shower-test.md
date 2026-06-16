@@ -21,11 +21,11 @@ The shower test separates declared priorities from lived priorities.
 
 You may say you care about a goal, relationship, craft, or problem. But when the world goes quiet, the mind keeps voting. It returns to the subject with emotional charge: the thing being avoided, built, grieved, envied, protected, or secretly chosen.
 
-This links to [[Presence Time and Busyness]]: busyness can become an anesthetic. Remove the noise and the avoided signal comes back.
+This links to [[wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness|Presence Time and Busyness]]: busyness can become an anesthetic. Remove the noise and the avoided signal comes back.
 
 ## Borrowed Wants
 
-The test is also a filter against [[Mimetic Desire]]. Many ambitions are copied from the status game nearby: money because someone else has it, a relationship as a social proof object, a career path because it photographs well.
+The test is also a filter against [[wisdom/society-and-psychology/cognitive-biases-and-belief/mimetic-desire|Mimetic Desire]]. Many ambitions are copied from the status game nearby: money because someone else has it, a relationship as a social proof object, a career path because it photographs well.
 
 Carr's sharper question is not just "what do you want?" It is: whose desire is this?
 
@@ -45,7 +45,7 @@ The outcome is never sold separately from the process.
 
 If you want to be a comedian, the package includes testing jokes, bombing, touring, writing, revising, and developing the lens that turns unrelated inputs into material. If you want to be a musician, the package may include years of practice before the visible part begins.
 
-This is the same warning as [[Stop Wanting Something You're Not Willing to Work For]]: wanting the result while rejecting the lifestyle guarantees disappointment.
+This is the same warning as [[wisdom/personal-growth/action-and-discipline/stop-wanting-something-youre-not-willing-to-work-for|Stop Wanting Something You're Not Willing to Work For]]: wanting the result while rejecting the lifestyle guarantees disappointment.
 
 ## Practical Rule
 
@@ -60,14 +60,14 @@ Ask:
 
 ## Source
 
-- Summary: [[What the Shower Test Says About Your Life - Jimmy Carr]]
+- Summary: [[summaries/2026-05-16-shower-test-jimmy-carr|What the Shower Test Says About Your Life - Jimmy Carr]]
 - Video: [What the "Shower Test" Says About Your Life - Jimmy Carr](https://youtu.be/2CIz-P3kIUM?si=_Y9lZdw2d2aQ8T7O)
 
 ## Related Notes
 
-- [[Mimetic Desire]]
-- [[Presence Time and Busyness]]
-- [[Stop Wanting Something You're Not Willing to Work For]]
-- [[Morgan Housel's Difficult Questions To Ask Yourself]]
-- [[Proximate vs Ultimate]]
-- [[Fuck You Family]]
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/mimetic-desire|Mimetic Desire]]
+- [[wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness|Presence Time and Busyness]]
+- [[wisdom/personal-growth/action-and-discipline/stop-wanting-something-youre-not-willing-to-work-for|Stop Wanting Something You're Not Willing to Work For]]
+- [[wisdom/personal-growth/self-worth-and-identity/morgan-housels-difficult-questions-to-ask-yourself|Morgan Housel's Difficult Questions To Ask Yourself]]
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/proximate-vs-ultimate|Proximate vs Ultimate]]
+- [[wisdom/relationships-and-friendship/fuck-you-family|Fuck You Family]]

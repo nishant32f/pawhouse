@@ -30,10 +30,10 @@ If you want to get older without getting better, keep relearning the same lesson
 Sometimes we need to create our own discomfort to force necessary change.
 
 ## Related Concepts
-- [[Growth and Change|Growth and Change]] - Why discomfort signals necessary transition
-- [[Hard Work and Discomfort|Hard Work and Discomfort]] - Choosing difficulty over comfortable stagnation
-- [[Obstacles to Happiness]] - When dissatisfaction becomes a driver for change
-- [[Ambition vs Entitlement|Ambition vs Entitlement]] - Taking action rather than waiting for external pressure
+- Growth and Change - Why discomfort signals necessary transition
+- Hard Work and Discomfort - Choosing difficulty over comfortable stagnation
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - When dissatisfaction becomes a driver for change
+- [[wisdom/personal-growth/self-worth-and-identity/ambition-vs-entitlement|Ambition vs Entitlement]] - Taking action rather than waiting for external pressure
 
 ---
 

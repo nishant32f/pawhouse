@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       tagId: "G-38Q4CJK6GR",
     },
     locale: "en-US",
-    baseUrl: "nishant32f.github.io/pawhouse",
+    baseUrl: "nishantkhurana.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

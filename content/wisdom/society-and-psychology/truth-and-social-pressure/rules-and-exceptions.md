@@ -35,12 +35,12 @@ Sometimes black-and-white rules work at any stage: sleep with your phone outside
 
 ## Related Concepts
 
-- [[3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
-- [[Self Trust Through Promises]] - discipline as earned self-knowledge
-- [[Curse of Competence]] - sophistication in decision-making
-- [[The Asymmetry of Advice]] - advice depends on the person receiving it
-- [[Action Over Preparation]] - action before over-theorising
-- [[Action Over Confidence]] - competence before confidence
+- [[wisdom/modern-wisdom/3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
+- [[wisdom/personal-growth/action-and-discipline/self-trust-through-promises|Self Trust Through Promises]] - discipline as earned self-knowledge
+- [[wisdom/personal-growth/self-worth-and-identity/curse-of-competence|Curse of Competence]] - sophistication in decision-making
+- [[wisdom/society-and-psychology/truth-and-social-pressure/the-asymmetry-of-advice|The Asymmetry of Advice]] - advice depends on the person receiving it
+- [[wisdom/personal-growth/action-and-discipline/action-over-preparation|Action Over Preparation]] - action before over-theorising
+- [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]] - competence before confidence
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

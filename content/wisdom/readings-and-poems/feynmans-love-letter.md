@@ -38,6 +38,6 @@ PS Please excuse my not mailing this — but I don't know your new address.
 
 
 ## Related Concepts
-- [[Darwin Marriage Decision]] - Understanding the depth of committed partnership
-- [[Mental Health Characteristics|Mental Health Characteristics]] - Processing complex emotions healthily
-- [[Obstacles to Happiness]] - When loss creates permanent change in capacity for happiness
+- [[wisdom/readings-and-poems/darwin-marriage-decision|Darwin Marriage Decision]] - Understanding the depth of committed partnership
+- [[wisdom/personal-growth/resilience-and-mental-health/mental-health-characteristics|Mental Health Characteristics]] - Processing complex emotions healthily
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - When loss creates permanent change in capacity for happiness

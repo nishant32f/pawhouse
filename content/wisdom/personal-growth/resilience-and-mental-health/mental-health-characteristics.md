@@ -37,13 +37,13 @@ These traits collectively support resilience, clarity, connection, and purpose.
 - **Nighttime despair**: Exhaustion and rumination peak at night, making suicidal thoughts feel more reasonable or inviting.
 
 ## Related Topics
-- [[Mental Health Monsters|Mental Health Monsters]] - Managing internal negative voices
-- [[Evening Self Reflection]] - Daily practice for mental health awareness
-- [[Anxiety and Depression]] - Critical self-assessment questions
-- [[Obstacles to Happiness]] - External factors that impact mental wellbeing
+- [[wisdom/personal-growth/resilience-and-mental-health/mental-health-monsters|Mental Health Monsters]] - Managing internal negative voices
+- [[wisdom/personal-growth/resilience-and-mental-health/evening-self-reflection|Evening Self Reflection]] - Daily practice for mental health awareness
+- [[wisdom/personal-growth/resilience-and-mental-health/anxiety-and-depression|Anxiety and Depression]] - Critical self-assessment questions
+- [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - External factors that impact mental wellbeing
 
 ## Similar Notes
-- [[Expectations and Reality]] - Managing expectations for better mental health
-- [[Self-Love and Standards|Self-Love and Standards]] - Balancing self-compassion with personal standards
-- [[Growth and Change|Growth and Change]] - Psychological aspects of personal development
-- [[Hard Work and Discomfort|Hard Work and Discomfort]] - Building psychological resilience
+- Expectations and Reality - Managing expectations for better mental health
+- Self-Love and Standards - Balancing self-compassion with personal standards
+- Growth and Change - Psychological aspects of personal development
+- Hard Work and Discomfort - Building psychological resilience

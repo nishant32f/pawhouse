@@ -36,11 +36,11 @@ But it definitely seems to open up a new realm where they care far less about th
 
 ## Related Concepts
 
-- [[Relationships Over Career]] - Prioritizing relationships over status
-- [[Self Worth Independence]] - Internal validation vs external approval
-- [[Love Who vs What]] - Acceptance beyond achievement
-- [[Comparative Happiness]] - Liberation from status comparison
-- [[Real Friends]] - Authentic relationships vs status games
+- Relationships Over Career - Prioritizing relationships over status
+- Self Worth Independence - Internal validation vs external approval
+- Love Who vs What - Acceptance beyond achievement
+- Comparative Happiness - Liberation from status comparison
+- [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - Authentic relationships vs status games
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

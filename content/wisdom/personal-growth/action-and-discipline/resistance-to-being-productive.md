@@ -23,5 +23,5 @@ There's also something I haven't figured out yet. Every time I give advice, I ge
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
-- [[The Last Twenty Percent]] — shared psychology/success graph concepts
+- [[wisdom/personal-growth/action-and-discipline/the-last-twenty-percent|The Last Twenty Percent]] — shared psychology/success graph concepts
 <!-- wisdom-linkage-repair:end -->

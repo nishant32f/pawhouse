@@ -32,11 +32,11 @@ Feel free to choose.
 
 ## Related Concepts
 
-- [[Discipline vs Motivation]] - Action over desire
-- [[Success Without Suffering]] - Accepting the price of success
-- [[Unteachable Lessons]] - Accepting hard truths
-- [[Easy to Be Savage]] - Commitment vs wishful thinking
-- [[What Youre Made Of|How to Find Out What You're Really Made Of]] - Testing true commitment
+- Discipline vs Motivation - Action over desire
+- Success Without Suffering - Accepting the price of success
+- [[wisdom/personal-growth/self-worth-and-identity/unteachable-lessons|Unteachable Lessons]] - Accepting hard truths
+- [[wisdom/personal-growth/action-and-discipline/easy-to-be-savage|Easy to Be Savage]] - Commitment vs wishful thinking
+- [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Testing true commitment
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

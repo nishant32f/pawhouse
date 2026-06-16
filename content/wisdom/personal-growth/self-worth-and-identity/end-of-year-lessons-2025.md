@@ -122,9 +122,9 @@ Three levels of productivity:
 
 ## Related Articles
 
-- [[The Shame of Small Fears|The Shame of Small Fears]] - Full exploration of modern fears and ancient nervous systems
-- [[Inverse PTSD]] - Building strength through adversity
-- [[Self-Belief vs Action]] - Acting despite self-doubt
-- [[Interest vs Commitment|Interest vs Commitment]] - Discipline on hard days
-- [[Mental Toughness Components]] - Framework for mental resilience
-- [[Strength Through Struggle|Strength Through Struggle]] - Using pain as fuel for growth
+- [[wisdom/personal-growth/resilience-and-mental-health/the-shame-of-small-fears|The Shame of Small Fears]] - Full exploration of modern fears and ancient nervous systems
+- [[wisdom/personal-growth/resilience-and-mental-health/inverse-ptsd|Inverse PTSD]] - Building strength through adversity
+- Self-Belief vs Action - Acting despite self-doubt
+- Interest vs Commitment - Discipline on hard days
+- Mental Toughness Components - Framework for mental resilience
+- Strength Through Struggle - Using pain as fuel for growth

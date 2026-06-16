@@ -48,4 +48,4 @@ But Jevons Paradox requires agency. Capital and management have to raise their a
 
 Startups are suited to this because they move fast under radical uncertainty and build for the 10x future while others optimize for the 1.05x present.
 
-Related wisdom note: [[Boil the Ocean]]
+Related wisdom note: Boil the Ocean

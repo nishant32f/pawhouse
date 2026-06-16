@@ -20,5 +20,5 @@ Appreciate that you are constantly evolving and that this position you are in ri
 
 ## Related Notes
 
-- [[Ordinary Life Wisdom]] - Finding wonder in everyday moments
-- [[Strength Through Struggle|Strength Through Struggle]] - Appreciating both blessings and lessons
+- [[wisdom/personal-growth/presence-and-happiness/ordinary-life-wisdom|Ordinary Life Wisdom]] - Finding wonder in everyday moments
+- Strength Through Struggle - Appreciating both blessings and lessons

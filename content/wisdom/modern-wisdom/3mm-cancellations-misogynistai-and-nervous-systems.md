@@ -20,7 +20,7 @@ Momentum complicates the whole thing. Someone who is visibly winning still carri
 
 Crude, but useful: momentum protects public figures from reputational contagion until the hype slows down. Once it does, scrutiny increases.
 
-Related note: [[Reputation Momentum]]
+Related note: [[wisdom/society-and-psychology/truth-and-social-pressure/reputation-momentum|Reputation Momentum]]
 
 ## MisogynistAI
 
@@ -46,7 +46,7 @@ Denzel Rust's harsh truth reframes social pressure as opportunity rather than ho
 
 The useful edge is not that life is fair. It is that most people enter interactions hoping the other person validates their own judgment. They want the son, hire, date, friend, founder, speaker, or partner to turn out well because it reflects well on them too.
 
-Related note: [[Everyone Is Rooting For You]]
+Related note: [[wisdom/personal-growth/action-and-discipline/everyone-is-rooting-for-you|Everyone Is Rooting For You]]
 
 ## Familiar Hell Over Unfamiliar Heaven
 
@@ -56,7 +56,7 @@ Kathy Overman's line captures why people repeat painful relational patterns even
 
 The body often treats familiar dysfunction as safer than unfamiliar peace. Predictable pain can feel less threatening than unknown goodness because the system knows how to survive the former.
 
-Related note: [[Familiar Hell vs Unfamiliar Heaven]]
+Related note: [[wisdom/personal-growth/resilience-and-mental-health/familiar-hell-vs-unfamiliar-heaven|Familiar Hell vs Unfamiliar Heaven]]
 
 ## What We Can Learn
 
@@ -68,11 +68,11 @@ Related note: [[Familiar Hell vs Unfamiliar Heaven]]
 
 ## Extracted Concepts
 
-- [[Reputation Momentum]] - why status and current traction can shield people from reputational collapse.
-- [[Everyone Is Rooting For You]] - an accountability frame for seeing social expectations as latent support.
-- [[Familiar Hell vs Unfamiliar Heaven]] - a relational pattern where nervous-system familiarity beats actual safety.
-- [[Dealing with Criticism]] - the emotional cost of public judgment and reputational risk.
-- [[Mimetic Desire]] - how crowds borrow signals of status, coolness, and desirability from each other.
+- [[wisdom/society-and-psychology/truth-and-social-pressure/reputation-momentum|Reputation Momentum]] - why status and current traction can shield people from reputational collapse.
+- [[wisdom/personal-growth/action-and-discipline/everyone-is-rooting-for-you|Everyone Is Rooting For You]] - an accountability frame for seeing social expectations as latent support.
+- [[wisdom/personal-growth/resilience-and-mental-health/familiar-hell-vs-unfamiliar-heaven|Familiar Hell vs Unfamiliar Heaven]] - a relational pattern where nervous-system familiarity beats actual safety.
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - the emotional cost of public judgment and reputational risk.
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/mimetic-desire|Mimetic Desire]] - how crowds borrow signals of status, coolness, and desirability from each other.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

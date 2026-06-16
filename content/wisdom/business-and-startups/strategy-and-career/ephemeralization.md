@@ -31,10 +31,10 @@ Use the freed capacity to attempt the "more."
 
 ## Related Notes
 
-- [[Boil the Ocean]]
-- [[Jevons Paradox]]
-- [[Startup Operating Principles]]
-- [[How to Do Great Work]]
+- Boil the Ocean
+- [[wisdom/business-and-startups/strategy-and-career/jevons-paradox|Jevons Paradox]]
+- [[wisdom/business-and-startups/operating-principles/startup-operating-principles|Startup Operating Principles]]
+- [[wisdom/business-and-startups/strategy-and-career/how-to-do-great-work|How to Do Great Work]]
 
 ---
 

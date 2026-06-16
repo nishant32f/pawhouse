@@ -32,10 +32,10 @@ When a capability gets cheaper, ask what new demand it unlocks.
 
 ## Related Notes
 
-- [[Boil the Ocean]]
-- [[Ephemeralization]]
-- [[Startup Operating Principles]]
-- [[Ideation]]
+- Boil the Ocean
+- [[wisdom/business-and-startups/strategy-and-career/ephemeralization|Ephemeralization]]
+- [[wisdom/business-and-startups/operating-principles/startup-operating-principles|Startup Operating Principles]]
+- [[wisdom/business-and-startups/strategy-and-career/ideation|Ideation]]
 
 ---
 

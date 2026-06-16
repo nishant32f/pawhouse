@@ -42,11 +42,11 @@ Or, as said best by Sturgill Simpson's mum:
 
 ## Related Concepts
 
-- [[Love Who vs What]] - Unconditional love and acceptance
-- [[Self Worth Independence]] - Worth beyond achievements
-- [[Dealing with Criticism]] - Self-compassion and resilience
-- [[Reverse Charisma]] - Making others feel valued
-- [[Real Friends]] - Safe authentic relationships
+- Love Who vs What - Unconditional love and acceptance
+- Self Worth Independence - Worth beyond achievements
+- [[wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism|Dealing with Criticism]] - Self-compassion and resilience
+- [[wisdom/relationships-and-friendship/reverse-charisma|Reverse Charisma]] - Making others feel valued
+- [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - Safe authentic relationships
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

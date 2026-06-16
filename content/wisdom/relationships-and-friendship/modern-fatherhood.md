@@ -31,11 +31,11 @@ The trade is not simply loss. Greater presence can increase fatigue while also i
 
 ## Related Concepts
 
-- [[3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
-- [[Children and Striving]] - parenting as presence and ordinary wonder
-- [[Mexican Fisherman Parable]] - a full life is not always an optimised life
-- [[Frankl's Inverse Law - Meaning vs Pleasure]] - meaning often carries discomfort
-- [[Text Your Friends]] - relationships are maintained through small recurring acts
+- [[wisdom/modern-wisdom/3mm-intuition-boomers-and-ai|3MM - Intuition, Boomers & AI]] - source newsletter synthesis
+- [[wisdom/personal-growth/presence-and-happiness/children-and-striving|Children and Striving]] - parenting as presence and ordinary wonder
+- [[wisdom/personal-growth/presence-and-happiness/mexican-fisherman-parable|Mexican Fisherman Parable]] - a full life is not always an optimised life
+- [[wisdom/personal-growth/presence-and-happiness/frankls-inverse-law-meaning-vs-pleasure|Frankl's Inverse Law - Meaning vs Pleasure]] - meaning often carries discomfort
+- [[wisdom/relationships-and-friendship/text-your-friends|Text Your Friends]] - relationships are maintained through small recurring acts
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

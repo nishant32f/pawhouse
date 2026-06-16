@@ -7,7 +7,7 @@ description: "A wisdom capture from Chris Williamson's 1100th Modern Wisdom epis
 # Modern Wisdom 1100 Lessons
 
 Source: [Modern Wisdom #1100 - 19 Lessons From 1100 Episodes](https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000768860458)
-Summary: [[2026-05-23-modern-wisdom-1100-19-lessons]]
+Summary: [[summaries/2026-05-23-modern-wisdom-1100-19-lessons|2026-05-23-modern-wisdom-1100-19-lessons]]
 
 The lesson running through the episode is that many personal-development virtues are not pure goods. Obsession, self-awareness, resilience, monk mode, and authenticity are powerful tools, but each has a hidden failure mode when treated as universally good.
 
@@ -25,7 +25,7 @@ This makes obsession unusually productive, but also fragile. You cannot summon i
 
 The useful reframe: what looks like discipline today may be fossilized obsession. The old obsession laid down the habits, routines, and self-image that now look like character.
 
-Related: [[Action Over Confidence]], [[Action Over Preparation]], [[Time-Sensitive Opportunities]], [[Self-Trust Through Promises]]
+Related: [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]], [[wisdom/personal-growth/action-and-discipline/action-over-preparation|Action Over Preparation]], [[wisdom/personal-growth/action-and-discipline/time-sensitive-opportunities|Time-Sensitive Opportunities]], [[wisdom/personal-growth/action-and-discipline/self-trust-through-promises|Self-Trust Through Promises]]
 
 ## Self-Awareness Can Become Paralysis
 
@@ -37,7 +37,7 @@ For overthinkers, courage is not clean certainty. It is movement while reality i
 
 A life can be deeply examined and still never lived.
 
-Related: [[Rules About Overthinking]], [[Action Over Preparation]], [[Curse of Competence]], [[The Inner Citadel]]
+Related: [[wisdom/personal-growth/resilience-and-mental-health/rules-about-overthinking|Rules About Overthinking]], [[wisdom/personal-growth/action-and-discipline/action-over-preparation|Action Over Preparation]], [[wisdom/personal-growth/self-worth-and-identity/curse-of-competence|Curse of Competence]], [[wisdom/personal-growth/self-worth-and-identity/the-inner-citadel|The Inner Citadel]]
 
 ## Omission Errors Need To Be Made Visible
 
@@ -47,7 +47,7 @@ You feel the pain of trying and failing. You rarely feel the full cost of never 
 
 This is why the pain of inaction has to be consciously front-loaded. Ask what not acting has already cost, what it is costing now, and what it will cost later. Otherwise the familiar misery wins because it feels safer than unfamiliar freedom.
 
-Related: [[Region Beta Paradox]], [[The World Doesn't Care]], [[What Youre Made Of]]
+Related: [[wisdom/personal-growth/resilience-and-mental-health/region-beta-paradox|Region Beta Paradox]], [[wisdom/personal-growth/self-worth-and-identity/the-world-doesnt-care|The World Doesn't Care]], [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|What Youre Made Of]]
 
 ## Strength Needs Domain Boundaries
 
@@ -65,7 +65,7 @@ It is also:
 - What does tolerating this turn me into?
 - Is this strength, or an inability to feel the boundary?
 
-Related: [[Curse of Competence]], [[Self-Worth Beyond Validation]], [[Internal Multiple Personalities]]
+Related: [[wisdom/personal-growth/self-worth-and-identity/curse-of-competence|Curse of Competence]], [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]], [[wisdom/personal-growth/resilience-and-mental-health/internal-multiple-personalities|Internal Multiple Personalities]]
 
 ## Monk Mode Requires Reintegration
 
@@ -75,7 +75,7 @@ Private practice is supposed to improve public performance. Private practice in 
 
 The missing fourth “I” after isolation, introspection, and improvement is integration. Set a deadline. Return to the world. Use solitude to become more effective in life, not to avoid life indefinitely.
 
-Related: [[Presence Time and Busyness]], [[Children and Striving]], [[Insecure Overachiever Mindset]]
+Related: [[wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness|Presence Time and Busyness]], [[wisdom/personal-growth/presence-and-happiness/children-and-striving|Children and Striving]], [[wisdom/personal-growth/resilience-and-mental-health/insecure-overachiever-mindset|Insecure Overachiever Mindset]]
 
 ## The True Self May Be A Moral Projection
 
@@ -85,7 +85,7 @@ With allies, virtues are essence and failures are slips. With opponents, virtues
 
 The “true self” may be an invented fiction. It makes forgiveness possible, but it can also blind us to cruelty, group loyalty, and self-excusing narratives.
 
-Related: [[The Looking-Glass Self]], [[Internal Multiple Personalities]], [[Rational vs Ideological Thinking]]
+Related: [[wisdom/personal-growth/self-worth-and-identity/the-looking-glass-self|The Looking-Glass Self]], [[wisdom/personal-growth/resilience-and-mental-health/internal-multiple-personalities|Internal Multiple Personalities]], [[wisdom/society-and-psychology/cognitive-biases-and-belief/rational-vs-ideological-thinking|Rational vs Ideological Thinking]]
 
 ## Practical Takeaway
 

@@ -32,12 +32,12 @@ The more people who make it feel safe for you to truly be yourself around them, 
 
 ## Related Concepts
 
-- [[No One Can Beat You at Being You|No One Can Beat You at Being You]] - Authentic self vs personas
-- [[Self Worth vs Validation]] - Authentic relationships vs approval-seeking
-- [[Reverse Charisma]] - Mutual authentic expression
-- [[Text Your Friends]] - Small signals that keep friendship alive
-- [[Kindness vs Choice]] - Genuine caring vs performance
-- [[Love Who vs What]] - Unconditional acceptance in relationships
+- No One Can Beat You at Being You - Authentic self vs personas
+- Self Worth vs Validation - Authentic relationships vs approval-seeking
+- [[wisdom/relationships-and-friendship/reverse-charisma|Reverse Charisma]] - Mutual authentic expression
+- [[wisdom/relationships-and-friendship/text-your-friends|Text Your Friends]] - Small signals that keep friendship alive
+- [[wisdom/society-and-psychology/truth-and-social-pressure/kindness-vs-choice|Kindness vs Choice]] - Genuine caring vs performance
+- Love Who vs What - Unconditional acceptance in relationships
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

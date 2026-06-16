@@ -26,11 +26,11 @@ In conclusion, despite believing they could do it, the 152 astrologers seemed to
 
 ## Related Concepts
 
-- [[Rational vs Ideological Thinking|Rational vs Ideological Thinking]] - Evidence-based vs belief-based reasoning
-- [[Proximate vs Ultimate]] - Scientific vs pseudoscientific explanations
-- [[Milgram Questions]] - Conformity and belief validation
-- [[Post Content Clarity]] - Critical evaluation of information
-- [[Luxury Beliefs]] - Unfounded confidence in unproven methods
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/rational-vs-ideological-thinking|Rational vs Ideological Thinking]] - Evidence-based vs belief-based reasoning
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/proximate-vs-ultimate|Proximate vs Ultimate]] - Scientific vs pseudoscientific explanations
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/milgram-questions|Milgram Questions]] - Conformity and belief validation
+- [[wisdom/society-and-psychology/cognitive-biases-and-belief/post-content-clarity|Post Content Clarity]] - Critical evaluation of information
+- Luxury Beliefs - Unfounded confidence in unproven methods
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

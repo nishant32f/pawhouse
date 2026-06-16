@@ -46,11 +46,11 @@ We are all chasing a sense of completion but we never actually allow ourselves t
 
 ## Related Concepts
 
-- [[Curse of Competence]] - Evolution of competencies and strategies
-- [[Gastric Band of Busyness]] - Addiction to busyness as identity
-- [[Luxury Beliefs]] - Different strategies for different career stages
-- [[Happiness of Pursuit]] - Enjoying the journey vs rushing to next goal
-- [[Time vs Money]] - Presence vs constant future focus
+- [[wisdom/personal-growth/self-worth-and-identity/curse-of-competence|Curse of Competence]] - Evolution of competencies and strategies
+- Gastric Band of Busyness - Addiction to busyness as identity
+- Luxury Beliefs - Different strategies for different career stages
+- Happiness of Pursuit - Enjoying the journey vs rushing to next goal
+- Time vs Money - Presence vs constant future focus
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*

@@ -33,10 +33,10 @@ The harsh part is the accountability. If the room was quietly hoping you would w
 
 ## Related Concepts
 
-- [[3MM - Cancellations, MisogynistAI & Nervous Systems]] - source note for the quote and frame.
-- [[Action Over Confidence]] - action converts nervous possibility into evidence.
-- [[Overcoming Disadvantage: Action vs. Blame]] - agency begins when blame stops being the only story.
-- [[Self Worth Beyond Validation]] - external approval helps, but it cannot be the foundation.
+- [[wisdom/modern-wisdom/3mm-cancellations-misogynistai-and-nervous-systems|3MM - Cancellations, MisogynistAI & Nervous Systems]] - source note for the quote and frame.
+- [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]] - action converts nervous possibility into evidence.
+- [[wisdom/personal-growth/resilience-and-mental-health/overcoming-disadvantage-action-vs-blame|Overcoming Disadvantage: Action vs. Blame]] - agency begins when blame stops being the only story.
+- [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self Worth Beyond Validation]] - external approval helps, but it cannot be the foundation.
 
 ---
 *[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
