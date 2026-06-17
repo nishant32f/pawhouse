@@ -39,4 +39,4 @@ Feel free to choose.
 - [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Testing true commitment
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

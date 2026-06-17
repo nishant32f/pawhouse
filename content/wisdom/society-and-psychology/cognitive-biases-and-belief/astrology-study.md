@@ -8,7 +8,7 @@ description: "A rigorous study testing 152 astrologers' ability to match people 
 
 # Astrology Study
 
-[Spencer Greenberg](https://en.wikipedia.org/wiki/Spencer_Greenberg) (Modern Wisdom guest) tested the ability of 15 astrologers to see if they could demonstrate genuine astrological skill. Spencer got the help of 6 astrologers to design this study: in each round, each astrologer gets LOTS of information about a real person (answers to 43 questions) along with 5 full astrological charts. They then predict which is the person's real natal chart (the other 4 are decoys).
+[Spencer Greenberg](https://www.spencergreenberg.com/) (Modern Wisdom guest) tested the ability of 15 astrologers to see if they could demonstrate genuine astrological skill. Spencer got the help of 6 astrologers to design this study: in each round, each astrologer gets LOTS of information about a real person (answers to 43 questions) along with 5 full astrological charts. They then predict which is the person's real natal chart (the other 4 are decoys).
 
 Why this study design? One of the most fundamental claims of astrology is that a person's natal chart contains information about that person's life and character. If true, astrologers should be able to correctly choose a person's chart at a rate well above random guessing.
 
@@ -22,7 +22,7 @@ Perhaps the less experienced astrologers were just dragging down the performance
 
 But, even if they aren't getting the answers right, do they at least agree with each other on what the right answers are? No. Astrologers had very low agreement with each other on the chart for each person. If astrologers picked charts at random, they would agree with each other 20% of the time. In the study, even the most experienced astrologers only agreed 28% of the time.
 
-In conclusion, despite believing they could do it, the 152 astrologers seemed to lack any ability to match people to their astrological charts. — h/t [Spencer Greenberg](https://en.wikipedia.org/wiki/Spencer_Greenberg)
+In conclusion, despite believing they could do it, the 152 astrologers seemed to lack any ability to match people to their astrological charts. — h/t [Spencer Greenberg](https://www.spencergreenberg.com/)
 
 ## Related Concepts
 
@@ -33,4 +33,4 @@ In conclusion, despite believing they could do it, the 152 astrologers seemed to
 - Luxury Beliefs - Unfounded confidence in unproven methods
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

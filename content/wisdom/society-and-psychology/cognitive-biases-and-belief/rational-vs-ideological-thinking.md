@@ -54,4 +54,4 @@ I'm sure there's other common trends I've missed but this seems to be a good sta
 - [[wisdom/society-and-psychology/truth-and-social-pressure/cynicism-vs-hope|Cynicism vs Hope]] - Balanced vs tribal thinking
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

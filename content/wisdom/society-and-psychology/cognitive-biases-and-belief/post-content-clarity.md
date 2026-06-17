@@ -37,4 +37,4 @@ You will spend your life focused on unhealthy aims defined for you by others and
 - [[wisdom/society-and-psychology/cognitive-biases-and-belief/astrology-study|Astrology Study]] - Critical evaluation of claims
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

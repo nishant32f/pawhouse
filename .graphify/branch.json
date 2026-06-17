@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "branchName": "main",
+  "worktreePath": "/Users/skypawalker/Dev/pawhouse",
+  "upstream": "origin/main",
+  "mergeBase": "6c037c556fa10561ec55d15dabae7275496d9519",
+  "firstSeenHead": "6c037c556fa10561ec55d15dabae7275496d9519",
+  "lastSeenHead": "6c037c556fa10561ec55d15dabae7275496d9519",
+  "lastAnalyzedHead": "6c037c556fa10561ec55d15dabae7275496d9519",
+  "stale": false,
+  "staleReason": null,
+  "staleSince": null,
+  "lifecycleEvent": null,
+  "createdAt": "2026-06-16T05:40:39.885Z",
+  "updatedAt": "2026-06-16T05:40:39.885Z"
+}

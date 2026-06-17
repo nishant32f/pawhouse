@@ -57,4 +57,4 @@ Related note: [[wisdom/relationships-and-friendship/modern-fatherhood|Modern Fat
 - [[wisdom/relationships-and-friendship/modern-fatherhood|Modern Fatherhood]] - presence, exhaustion, and meaning in modern parenting
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

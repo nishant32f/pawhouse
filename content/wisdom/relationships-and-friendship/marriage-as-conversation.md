@@ -36,4 +36,4 @@ This does not mean marriage is only talk. It means talk is where the rest of the
 - [[wisdom/readings-and-poems/feynmans-love-letter|Feynmans Love Letter]] - the enduring texture of committed love
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

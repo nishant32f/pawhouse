@@ -14,7 +14,7 @@ When faced with a challenge, your nature might be to worry and obsess and grip l
 
 Because worrying is so common in every pursuit you attempt, your successes are seen as proof that worrying is a performance enhancer, and your failures are proof that you should have worried all along.
 
-Unfalsifiable negativity. "A walking anxiety disorder harnessed for productivity" as [Andrew Wilkinson](https://en.wikipedia.org/wiki/Andrew_Wilkinson_(entrepreneur)) says.
+Unfalsifiable negativity. "A walking anxiety disorder harnessed for productivity" as [Andrew Wilkinson](https://x.com/awilkinson) says.
 
 You build a link between worry and performance. A belief that your performance would have been markedly worse if you hadn't worried so much, and that the worrying is precisely what motivated and enabled the outcomes you wanted.
 
@@ -47,4 +47,4 @@ Things will go well. You will figure it out, just like you always have. So go se
 - Happiness of Pursuit - Finding joy in the journey
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

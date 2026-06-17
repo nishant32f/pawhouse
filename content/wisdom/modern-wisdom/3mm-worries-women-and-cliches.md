@@ -73,4 +73,4 @@ Related note: [[wisdom/personal-growth/self-worth-and-identity/unteachable-lesso
 - [[wisdom/personal-growth/self-worth-and-identity/unteachable-lessons|Unteachable Lessons]] - the most important lessons often sound like clichés until they are personally earned.
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

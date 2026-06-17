@@ -39,7 +39,7 @@ Even more than that - for every one of these, if I think a bit deeper, I can rec
 
 No no, MY unique inner landscape WOULD be fixed by skirting around the most well-known wisdom of the ages. No no, I CAN thread this needle properly, watch me dance through this minefield and avoid all the trip wires that everyone else kicks. And then you kick one.
 
-"And you will then share a knowing look, the kind that can only occur between two people who have been hurt in exactly the same way" ~ [Adam Mastroianni](https://en.wikipedia.org/wiki/Adam_Mastroianni)
+"And you will then share a knowing look, the kind that can only occur between two people who have been hurt in exactly the same way" ~ [Adam Mastroianni](https://www.adammastroianni.com/)
 
 And a voice in the back of your mind will say "I told you so."
 
@@ -52,4 +52,4 @@ And a voice in the back of your mind will say "I told you so."
 - Luxury Beliefs - Experience vs theoretical knowledge
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

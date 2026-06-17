@@ -43,4 +43,4 @@ But it definitely seems to open up a new realm where they care far less about th
 - [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - Authentic relationships vs status games
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

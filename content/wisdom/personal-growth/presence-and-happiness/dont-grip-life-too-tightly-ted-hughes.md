@@ -32,7 +32,7 @@ As bad as it feels, this is the breadth of human existence. You are ALIVE. Your 
 
 You are doing this for you. After a certain level of material comfort, the only person you need to do this for is you. Your conscience knows when you're being honest and not. Optimise to make him happy. Be the person your mum thinks you are. Be the person your younger self wanted as a role model. Brave, courageous, earnest, honest, virtuous, flaming.
 
-"And that's how we measure out our real respect for people ~ by the degree of feeling they can register, the voltage of life they can carry and tolerate ~ and enjoy. End of sermon. As Buddha says: live like a mighty river. And as the old Greeks said: live as though all your ancestors were living again through you." ~ [Ted Hughes](https://en.wikipedia.org/wiki/Ted_Hughes) via [Visakan Veerasamy](https://en.wikipedia.org/wiki/Visakan_Veerasamy)
+"And that's how we measure out our real respect for people ~ by the degree of feeling they can register, the voltage of life they can carry and tolerate ~ and enjoy. End of sermon. As Buddha says: live like a mighty river. And as the old Greeks said: live as though all your ancestors were living again through you." ~ [Ted Hughes](https://en.wikipedia.org/wiki/Ted_Hughes) via [Visakan Veerasamy](https://visakanv.com/)
 
 ## Related Concepts
 
@@ -43,4 +43,4 @@ You are doing this for you. After a certain level of material comfort, the only 
 - [[wisdom/personal-growth/presence-and-happiness/mexican-fisherman-parable|Mexican Fisherman Parable]] - Simple enjoyment vs complex striving
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

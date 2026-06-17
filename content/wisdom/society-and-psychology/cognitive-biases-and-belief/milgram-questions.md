@@ -28,7 +28,7 @@ The most important and common type of trick question sounds more like "Do you lo
 
 Some Milgram Questions are intended as genuine questions. But often they only pretend to be a query on the semantic content of the words. The question "Do you love Big Brother" is actually asking "Do you submit to my power?" Or more generally, "Will you agree with me, or suffer the consequences?"
 
-"When punishment for what people say becomes widespread, people stop saying what they really think and instead say whatever is needed to thrive in the social environment. Thus, limits on speech become limits on sincerity" ~ h/t J. Sanilac & [Gurwinder Bhogal](https://en.wikipedia.org/wiki/Gurwinder_Bhogal)
+"When punishment for what people say becomes widespread, people stop saying what they really think and instead say whatever is needed to thrive in the social environment. Thus, limits on speech become limits on sincerity" ~ h/t J. Sanilac & [Gurwinder Bhogal](https://gurwinder.blog/)
 
 ## Related Concepts
 
@@ -39,4 +39,4 @@ Some Milgram Questions are intended as genuine questions. But often they only pr
 - [[wisdom/society-and-psychology/truth-and-social-pressure/cynicism-vs-hope|Cynicism vs Hope]] - Social pressure and expression
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

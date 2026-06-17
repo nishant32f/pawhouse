@@ -22,7 +22,7 @@ We don't use them on good memories, so good memories keep their lustre longer.
 
 Everything is temporary, bad stuff especially.
 
-"Tragedy + time = comedy" is the closest thing psychology has to a chemical equation. ~ [Adam Mastroianni](https://en.wikipedia.org/wiki/Adam_Mastroianni)
+"Tragedy + time = comedy" is the closest thing psychology has to a chemical equation. ~ [Adam Mastroianni](https://www.adammastroianni.com/)
 
 So even when things are going badly, know that in future you'll probably be able to laugh about this.
 
@@ -37,4 +37,4 @@ Discomfort in the present can be very painful, don't make it worse by fearing ho
 - [[wisdom/personal-growth/action-and-discipline/what-youre-made-of|How to Find Out What You're Really Made Of]] - Growth through difficult experiences
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

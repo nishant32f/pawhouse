@@ -51,4 +51,4 @@ And your best self will have to stop his coughing, and come say hello.
 - [[wisdom/personal-growth/self-worth-and-identity/unteachable-lessons|Unteachable Lessons]] - Wisdom gained through trial
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

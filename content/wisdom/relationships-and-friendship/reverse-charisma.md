@@ -44,4 +44,4 @@ Some people feel interesting, some people make us feel interesting. There's a pl
 - Self Worth vs Validation - Giving vs seeking validation
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

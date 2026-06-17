@@ -10,7 +10,7 @@ description: "Understanding human behavior through both proximate explanations (
 
 The Proximate & Ultimate Reasons For Human Behaviour.
 
-"Natural selection favours certain behaviours but doesn't necessarily favour us having explicit awareness of why we do what we do" ~ [Dr Tania Reynolds](https://en.wikipedia.org/wiki/Tania_Reynolds)
+"Natural selection favours certain behaviours but doesn't necessarily favour us having explicit awareness of why we do what we do" ~ [Dr Tania Reynolds](https://psych.unm.edu/people/faculty/profile/tania-reynolds.html)
 
 To properly understand human behaviour, we must understand both ultimate and proximate explanations. Ultimate explanations are concerned with why a behaviour exists, and proximate explanations are concerned with how it works.
 
@@ -51,4 +51,4 @@ The answer to this discomfort is to find humour in it I think. You have to laugh
 - Self Worth Independence - Conscious vs unconscious motivation
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

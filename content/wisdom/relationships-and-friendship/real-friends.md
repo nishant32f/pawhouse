@@ -40,4 +40,4 @@ The more people who make it feel safe for you to truly be yourself around them, 
 - Love Who vs What - Unconditional acceptance in relationships
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

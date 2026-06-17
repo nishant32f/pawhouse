@@ -42,7 +42,7 @@ Here's the thing - almost everyone's life goal is where "I just don't have to do
 
 Finally, why is it so hard to take pleasure in our successes? Well, largely because you are constantly peering over the shoulder of the present moment to see what's coming next. Even during the act of attaining a goal, you are already looking past it, getting ready to move the goal posts further away.
 
-We are all chasing a sense of completion but we never actually allow ourselves to savour any tastes of completion that we get along the way. ~ h/t [Joe Hudson](https://en.wikipedia.org/wiki/Joe_Hudson) & [Brett Kistler](https://en.wikipedia.org/wiki/Brett_Kistler) for breaking my brain with these insights
+We are all chasing a sense of completion but we never actually allow ourselves to savour any tastes of completion that we get along the way. ~ h/t [Joe Hudson](https://en.wikipedia.org/wiki/Joe_Hudson) & [Brett Kistler](https://brett.kistler.life/) for breaking my brain with these insights
 
 ## Related Concepts
 
@@ -53,4 +53,4 @@ We are all chasing a sense of completion but we never actually allow ourselves t
 - Time vs Money - Presence vs constant future focus
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

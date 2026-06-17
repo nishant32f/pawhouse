@@ -49,4 +49,4 @@ No matter how long I'm alive, I know for a fact that I don't want to look back a
 - [[wisdom/business-and-startups/strategy-and-career/operator-to-idea-guy|Operator to Idea Guy]] - Efficiency vs busy work
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

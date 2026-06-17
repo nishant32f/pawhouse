@@ -32,4 +32,4 @@ Tiny signals compound. They remind the other person that the relationship is sti
 - [[wisdom/society-and-psychology/truth-and-social-pressure/kindness-vs-choice|Kindness vs Choice]] - small chosen acts of care matter because they are chosen
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

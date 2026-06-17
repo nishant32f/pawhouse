@@ -39,4 +39,4 @@ The harsh part is the accountability. If the room was quietly hoping you would w
 - [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self Worth Beyond Validation]] - external approval helps, but it cannot be the foundation.
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

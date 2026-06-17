@@ -33,4 +33,4 @@ This is why people can intellectually want healthier relationships while emotion
 - [[wisdom/personal-growth/resilience-and-mental-health/realistic-path-to-enlightenment|Realistic Path to Enlightenment]] - growth usually means noticing the pattern before trying to transcend it.
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

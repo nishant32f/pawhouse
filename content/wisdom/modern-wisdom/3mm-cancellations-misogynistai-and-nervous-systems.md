@@ -75,4 +75,4 @@ Related note: [[wisdom/personal-growth/resilience-and-mental-health/familiar-hel
 - [[wisdom/society-and-psychology/cognitive-biases-and-belief/mimetic-desire|Mimetic Desire]] - how crowds borrow signals of status, coolness, and desirability from each other.
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

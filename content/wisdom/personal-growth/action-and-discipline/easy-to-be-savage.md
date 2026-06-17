@@ -47,4 +47,4 @@ But sometimes it's hard to find a sidekick.
 - [[wisdom/personal-growth/self-worth-and-identity/the-world-doesnt-care|The World Doesn't Care]] - Self-reliance in competitive world
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

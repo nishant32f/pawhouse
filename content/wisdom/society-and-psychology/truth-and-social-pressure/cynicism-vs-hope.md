@@ -8,7 +8,7 @@ description: "How online cynicism serves as self-protection against disappointme
 
 # Cynicism vs Hope
 
-"On social media, fools feel clever by mocking bigger fools, and scoundrels feel virtuous by condemning bigger scoundrels. We feel good simply by portraying others as worse. In an age of anxiety & inaction, many seek self-esteem not in their own successes, but in other's failures" ~ [Gurwinder Bhogal](https://en.wikipedia.org/wiki/Gurwinder_Bhogal)
+"On social media, fools feel clever by mocking bigger fools, and scoundrels feel virtuous by condemning bigger scoundrels. We feel good simply by portraying others as worse. In an age of anxiety & inaction, many seek self-esteem not in their own successes, but in other's failures" ~ [Gurwinder Bhogal](https://gurwinder.blog/)
 
 This is one of my least favourite trends. I am honestly so bored of cynicism on the internet (I might just start a Toxic Positivity trend to try and offset it). I'm sick of seeing comment sections just filled with self defeating, world-hating nihilists who are adamant that the world is against them and it's people who have goals that are the issue. People whose faux-virtue stands on the shoulders of others' shortcomings. Gesturing at the public failure of everyone else in the hope that their own actions never get scrutinised.
 
@@ -24,7 +24,7 @@ The upside of never trying is never having to feel the pain of failure.
 
 Get fucked bro. I don't want your influence within 1000 miles of my life.
 
-"It's good to criticise the vile aspects of the world, but there is nothing more vile than to do nothing about it and convince others to do the same." ~ [Ryan Lazarus](https://en.wikipedia.org/wiki/Ryan_Lazarus)
+"It's good to criticise the vile aspects of the world, but there is nothing more vile than to do nothing about it and convince others to do the same." ~ [Ryan Lazarus](https://chriswillx.com/3-minute-monday-cynicism-poor-people-amp-marriage/)
 
 Believing in hope is a better way to live. You should do the same.
 
@@ -39,4 +39,4 @@ Believing in hope is a better way to live. You should do the same.
 - [[wisdom/personal-growth/self-worth-and-identity/the-world-doesnt-care|The World Doesn't Care]] - Self-defeating attitudes
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

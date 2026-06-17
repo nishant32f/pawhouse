@@ -38,4 +38,4 @@ This explains why optics matter so much online. People are not only asking, "Wha
 - [[wisdom/society-and-psychology/truth-and-social-pressure/the-messenger-paradox|The Messenger Paradox]] - groups often punish the person or symbol that carries uncomfortable meaning.
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

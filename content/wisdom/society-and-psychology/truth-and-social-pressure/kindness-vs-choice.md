@@ -45,4 +45,4 @@ I have no answer here, interesting question though.
 - [[wisdom/relationships-and-friendship/supporting-men|Supporting Men]] - Conscious kindness vs nature
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

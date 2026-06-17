@@ -38,4 +38,4 @@ The trade is not simply loss. Greater presence can increase fatigue while also i
 - [[wisdom/relationships-and-friendship/text-your-friends|Text Your Friends]] - relationships are maintained through small recurring acts
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

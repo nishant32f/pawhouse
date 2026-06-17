@@ -43,4 +43,4 @@ Sometimes black-and-white rules work at any stage: sleep with your phone outside
 - [[wisdom/personal-growth/action-and-discipline/action-over-confidence|Action Over Confidence]] - competence before confidence
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx) | Modern Wisdom / 3MM]*

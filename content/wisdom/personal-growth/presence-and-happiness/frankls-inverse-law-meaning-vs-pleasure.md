@@ -20,7 +20,7 @@ If ease, grace, joy and playfulness don't come easily to you, one solution is to
 
 TLDR: you prioritise meaning over happiness because happiness doesn't come easily to you.
 
-The problem is that as [Bill Perkins](https://en.wikipedia.org/wiki/Bill_Perkins_(author)) says, delayed gratification in the extreme results in no gratification. From the outside, this looks like you've transcended the shallow need for pleasure, but in reality it's just cope to avoid facing the fact that you struggle to feel joy, so instead, you perpetually promise yourself that happiness might finally come tomorrow. But like running toward the horizon, tomorrow never arrives.
+The problem is that as [Bill Perkins](https://diewithzerobook.com/) says, delayed gratification in the extreme results in no gratification. From the outside, this looks like you've transcended the shallow need for pleasure, but in reality it's just cope to avoid facing the fact that you struggle to feel joy, so instead, you perpetually promise yourself that happiness might finally come tomorrow. But like running toward the horizon, tomorrow never arrives.
 
 Congratulations, you've managed to subjugate your joy as a tribute to your work. [Thoreau](https://en.wikipedia.org/wiki/Henry_David_Thoreau) says "The price of anything is the amount of life you exchange for it". By this logic, many of us are paying into a bank account that we never withdraw from. Permanently winning the marshmallow test results in you never actually arriving at a moment where you cash in your efforts for rewards.
 
@@ -37,4 +37,4 @@ In anticipation, this sounds like building up to some amazingly impressive momen
 - Hope to Live - Similar themes of delayed gratification
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

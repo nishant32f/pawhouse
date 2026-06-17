@@ -44,4 +44,4 @@ Like workload exposure therapy that teaches you "Oh I've been here before and I 
 - Discipline vs Motivation - Building resilience through action
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

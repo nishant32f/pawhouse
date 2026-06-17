@@ -1,0 +1,1894 @@
+{
+  "/Users/skypawalker/Dev/pawhouse/globals.d.ts": {
+    "mtime": 1778517096015.1064,
+    "hash": "8a4938dee4503692d85c617fe83c4e92"
+  },
+  "/Users/skypawalker/Dev/pawhouse/index.d.ts": {
+    "mtime": 1778517096015.1748,
+    "hash": "a2ea10a55ebc086a25c900d47895375b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz.config.ts": {
+    "mtime": 1781588195387.9385,
+    "hash": "fe665ea9ba7bfd44719ad680dc524cfe"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz.layout.ts": {
+    "mtime": 1778517096015.7866,
+    "hash": "57d66d05b3d57c01b85bbd13e3fe8f05"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/bootstrap-cli.mjs": {
+    "mtime": 1778517096015.8965,
+    "hash": "27de182d6268dc77433959fd513127e7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/bootstrap-worker.mjs": {
+    "mtime": 1778517096015.962,
+    "hash": "a4568ef53c5d8e441b80940a2338585a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/build.ts": {
+    "mtime": 1778517096016.0544,
+    "hash": "861ec7607a5e647a9362296914df8a0e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/cfg.ts": {
+    "mtime": 1778517096016.1353,
+    "hash": "972ea8748644c54f35f872bccf8cf3b2"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/cli/args.js": {
+    "mtime": 1778517096016.2368,
+    "hash": "ca86f01e63dc65ff7fd0be912f30644c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/cli/constants.js": {
+    "mtime": 1778517096016.294,
+    "hash": "32c014d43fd0aed7eefecaf454decde6"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/cli/handlers.js": {
+    "mtime": 1778517096016.379,
+    "hash": "debc9ae5f494bcbf96dfa6a9bad06b9e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/cli/helpers.js": {
+    "mtime": 1778517096016.448,
+    "hash": "9ec7f4de0475c6160b13a4ae32952c56"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/ArticleTitle.tsx": {
+    "mtime": 1778517096016.5474,
+    "hash": "c3676bd09a83f641cf59a8c61658df7e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Backlinks.tsx": {
+    "mtime": 1778517096016.6064,
+    "hash": "f0c48eb6a675c4aefd6eccbde4f3ebd6"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Body.tsx": {
+    "mtime": 1778517096016.6755,
+    "hash": "babe408c7da74dbf3f4ee33d7c3a9b1e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Breadcrumbs.tsx": {
+    "mtime": 1778517096016.7402,
+    "hash": "0b78d2b0186d3b9541ef860064ccb267"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Comments.tsx": {
+    "mtime": 1778517096016.8203,
+    "hash": "408de52eda30a141ccbbe31ace9effab"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/ConditionalRender.tsx": {
+    "mtime": 1778517096016.8918,
+    "hash": "794513ac7a1f409e1ed6f443106dfa56"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/ContentMeta.tsx": {
+    "mtime": 1778517096016.9597,
+    "hash": "d9c6915dcf252b7cf496a1f5f09f129c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Darkmode.tsx": {
+    "mtime": 1778517096017.0398,
+    "hash": "6a9ae38a80b2adcd2e7cbeebd0cd91be"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Date.tsx": {
+    "mtime": 1778517096017.1033,
+    "hash": "41d250b49254e97257ce0e0cfe8b2ea3"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/DesktopOnly.tsx": {
+    "mtime": 1778517096017.164,
+    "hash": "fbb65f062a07c0b9b4ef7a2929485675"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Explorer.tsx": {
+    "mtime": 1778517096017.2517,
+    "hash": "45d1e8daa09f7ad30456a2ace15f3cca"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Flex.tsx": {
+    "mtime": 1778517096017.312,
+    "hash": "bbf5d4ce862190a666e20d6d4d981a20"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Footer.tsx": {
+    "mtime": 1778517096017.3743,
+    "hash": "235fe36a95188f026565ca1084b38f7d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Graph.tsx": {
+    "mtime": 1778517096017.4521,
+    "hash": "faa6a01e51ad940fe78b66a88894e038"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Head.tsx": {
+    "mtime": 1778517096017.5547,
+    "hash": "a0ca8f8c40f4ee3b6f0f3ab510c5802b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Header.tsx": {
+    "mtime": 1778517096017.6426,
+    "hash": "8e81f5a8295ee39a46924e19b25856ac"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/MobileOnly.tsx": {
+    "mtime": 1778517096017.735,
+    "hash": "464b90f150fe3b5796095e9b00e0e8ba"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/OverflowList.tsx": {
+    "mtime": 1778517096017.803,
+    "hash": "8ad0dd1fa0a60e4c32469350e694f0c7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/PageList.tsx": {
+    "mtime": 1778517096017.8616,
+    "hash": "464cf79c6fb20fddbacf41bb85ab0286"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/PageTitle.tsx": {
+    "mtime": 1778517096017.9373,
+    "hash": "2cc36830d107c325e578814ee61c6f57"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/ReaderMode.tsx": {
+    "mtime": 1778517096018.0154,
+    "hash": "278a3cad28548cfecb982254807178e9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/RecentNotes.tsx": {
+    "mtime": 1778517096018.0825,
+    "hash": "c7902392b2273e337b869b90c00da6ff"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Search.tsx": {
+    "mtime": 1778517096018.1438,
+    "hash": "7ee59f389a54c2e81aa425f2bfc69b5a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/Spacer.tsx": {
+    "mtime": 1778517096018.2017,
+    "hash": "bd27b6675b6868a0979e6c761f7df229"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/TableOfContents.tsx": {
+    "mtime": 1778517096018.2593,
+    "hash": "60b75ca66b3424f39c4b22a9537e7d9b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/TagList.tsx": {
+    "mtime": 1778517096018.3296,
+    "hash": "13581a34526e56b47158a8a25c802a0b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/index.ts": {
+    "mtime": 1778517096018.4092,
+    "hash": "80eb223728d76a8afd4fe160f2d63a85"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/pages/404.tsx": {
+    "mtime": 1778517096018.5217,
+    "hash": "90ecff41c2289d1e3ad1b0db892678d7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/pages/Content.tsx": {
+    "mtime": 1778517096018.586,
+    "hash": "809eed6c96ae684efba229f4ec0bdccf"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/pages/FolderContent.tsx": {
+    "mtime": 1778517096018.6538,
+    "hash": "df9860f5e0c811346e15610827e46b7c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/pages/TagContent.tsx": {
+    "mtime": 1778517096018.7444,
+    "hash": "807fbf7767f7f2fc0545272d90422fce"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/renderPage.tsx": {
+    "mtime": 1778517096018.8408,
+    "hash": "7332722fc00d2ce4511f0240348a4b0d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/callout.inline.ts": {
+    "mtime": 1778517096018.9512,
+    "hash": "709f8484d0c37112f5451b0c8c61bb27"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/checkbox.inline.ts": {
+    "mtime": 1778517096019.0107,
+    "hash": "019fb82b340f4f37b14fded7ae9eb0ed"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/clipboard.inline.ts": {
+    "mtime": 1778517096019.0688,
+    "hash": "e3ecac16e0cc2b720ebc3b8083df5415"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/comments.inline.ts": {
+    "mtime": 1778517096019.1252,
+    "hash": "db914b4fca7561ec3c8145de0b7badac"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/darkmode.inline.ts": {
+    "mtime": 1778517096019.1921,
+    "hash": "b372759f38d419ea1b559b8d1775f860"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/explorer.inline.ts": {
+    "mtime": 1778517096019.284,
+    "hash": "0fc50b096e2794ea4f809822c3fc1c53"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/graph.inline.ts": {
+    "mtime": 1778517096019.3662,
+    "hash": "6b17f1b4a28c6723dce4a389dc3b314f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/mermaid.inline.ts": {
+    "mtime": 1778517096019.4614,
+    "hash": "7baab3de71a5466e5e17acdfd39910a7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/popover.inline.ts": {
+    "mtime": 1778517096019.5415,
+    "hash": "2e735162b964974c3752210985b26d7b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/readermode.inline.ts": {
+    "mtime": 1778517096019.6042,
+    "hash": "af1a0fc8b1079f97e45b19e2aebfe613"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/search.inline.ts": {
+    "mtime": 1778517096019.6838,
+    "hash": "cf7f65b2a8011a0e3b1d6204f7dda327"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/search.test.ts": {
+    "mtime": 1778517096019.7744,
+    "hash": "d9d6b4feebb6c4029938814585f9a72e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/spa.inline.ts": {
+    "mtime": 1778517096019.8562,
+    "hash": "b52a168328cd531b034b846563764b0a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/toc.inline.ts": {
+    "mtime": 1778517096019.9126,
+    "hash": "cb57592a04d7b7dd9c5021eea3749aeb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/scripts/util.ts": {
+    "mtime": 1778517096019.969,
+    "hash": "51bec4a83cb5e865065e042669537470"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/components/types.ts": {
+    "mtime": 1778517096021.1863,
+    "hash": "855d898740e2161baea77c73f4567b40"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/index.ts": {
+    "mtime": 1778517096021.3008,
+    "hash": "165e5ee4da38ee1554eda7df102e422c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/ar-SA.ts": {
+    "mtime": 1778517096021.4082,
+    "hash": "e8c10a9afed66fdd4f00fc481f08eed8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/ca-ES.ts": {
+    "mtime": 1778517096021.4863,
+    "hash": "577315ffab97241f510db829f3f810ba"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/cs-CZ.ts": {
+    "mtime": 1778517096021.5583,
+    "hash": "33e71ed49a996b5ca62f93d5624b8461"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/de-DE.ts": {
+    "mtime": 1778517096021.6353,
+    "hash": "e280f226ff71d5d10874c44c4befd63d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/definition.ts": {
+    "mtime": 1778517096021.7053,
+    "hash": "73d8c0ff69823803932894f7f2ec87ab"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/en-GB.ts": {
+    "mtime": 1778517096021.7866,
+    "hash": "1d55c5b57d8ac7e14933b8c77ef75be8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/en-US.ts": {
+    "mtime": 1778517096021.8633,
+    "hash": "73c81a51d3c3fc956218098a19f0468c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/es-ES.ts": {
+    "mtime": 1778517096021.9329,
+    "hash": "fba48269466f716a3cf27272fec89660"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/fa-IR.ts": {
+    "mtime": 1778517096022.01,
+    "hash": "8f7c811ea2b5609085673795b0c88ec1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/fi-FI.ts": {
+    "mtime": 1778517096022.0845,
+    "hash": "97b010d493349db83e65446fa151539b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/fr-FR.ts": {
+    "mtime": 1778517096022.1611,
+    "hash": "fb6ad17ac499bdb2a3d42d721a56d8db"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/he-IL.ts": {
+    "mtime": 1778517096022.243,
+    "hash": "a885d5d1d6cb138ee3567969525520bd"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/hu-HU.ts": {
+    "mtime": 1778517096022.3174,
+    "hash": "58aca22f2d363795b5c60c7e04ae04e1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/id-ID.ts": {
+    "mtime": 1778517096022.3918,
+    "hash": "ef2ec66f424a983a342a8fca17ac1392"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/it-IT.ts": {
+    "mtime": 1778517096022.4646,
+    "hash": "180e6fb2d583e3df8336a45bb5348245"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/ja-JP.ts": {
+    "mtime": 1778517096022.5464,
+    "hash": "f4a7242fd12079bf32dd5e9708a6bcbe"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/kk-KZ.ts": {
+    "mtime": 1778517096022.617,
+    "hash": "67917321af036e6e527a65b8267a2fa8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/ko-KR.ts": {
+    "mtime": 1778517096022.6987,
+    "hash": "19914e0a0c2db6d380adb00e6ce00b41"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/lt-LT.ts": {
+    "mtime": 1778517096022.7725,
+    "hash": "cd3752d718a1302998153c3058d53ce7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/nb-NO.ts": {
+    "mtime": 1778517096022.8403,
+    "hash": "992e2fcd5e10b22cb639c6acf9944287"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/nl-NL.ts": {
+    "mtime": 1778517096022.9204,
+    "hash": "d1a2fbcd91de810d69c96e1a5d4fd22b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/pl-PL.ts": {
+    "mtime": 1778517096023.0015,
+    "hash": "e1d1b241d5b244f42e12d06d28a7aef2"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/pt-BR.ts": {
+    "mtime": 1778517096023.0735,
+    "hash": "5019637363e8cbf6c151766083af1734"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/ro-RO.ts": {
+    "mtime": 1778517096023.139,
+    "hash": "95f4e6307bd05c274d8fd527129f03ef"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/ru-RU.ts": {
+    "mtime": 1778517096023.2122,
+    "hash": "f3cc20db8ec6ce2c104903e58edc6570"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/th-TH.ts": {
+    "mtime": 1778517096023.2954,
+    "hash": "db731a68097b3bf876944d6f5dcaf17e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/tr-TR.ts": {
+    "mtime": 1778517096023.3694,
+    "hash": "f92772e835e34da7c60102f10eb5cf68"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/uk-UA.ts": {
+    "mtime": 1778517096023.4482,
+    "hash": "3d314c7151c5ba6d7f540314411887f8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/vi-VN.ts": {
+    "mtime": 1778517096023.528,
+    "hash": "45ce64338123163367c992af5e41f3b8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/zh-CN.ts": {
+    "mtime": 1778517096023.594,
+    "hash": "5ab498ae4bb56c25631321c7ff1b8ae8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/i18n/locales/zh-TW.ts": {
+    "mtime": 1778517096023.662,
+    "hash": "d6325a796c50f2482261d94125a9c511"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/404.tsx": {
+    "mtime": 1778517096023.8308,
+    "hash": "725fd153b85fea5762d8043e39c64b88"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/aliases.ts": {
+    "mtime": 1778517096023.905,
+    "hash": "f6e451ae4ea02d1bcbe6b4a8688e9a61"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/assets.ts": {
+    "mtime": 1778517096023.9744,
+    "hash": "46917a9bd326524649b1c31585899323"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/cname.ts": {
+    "mtime": 1778517096024.0444,
+    "hash": "541c9bff0de2a7fd1785152bbd36296f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/componentResources.ts": {
+    "mtime": 1778517096024.1418,
+    "hash": "12f266277145b19600b7a0b2515ca5dc"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/contentIndex.tsx": {
+    "mtime": 1778517096024.4658,
+    "hash": "0b27c578793408f2baa29cf924e17776"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/contentPage.tsx": {
+    "mtime": 1778517096024.5742,
+    "hash": "19cb2e65c3f339752ee65c1aa1077557"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/favicon.ts": {
+    "mtime": 1778517096024.65,
+    "hash": "54a075543067bb08903d74b1a7f3c895"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/folderPage.tsx": {
+    "mtime": 1778517096024.8672,
+    "hash": "fff067c3a8b418fb66d4988c6d9b0ff0"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/helpers.ts": {
+    "mtime": 1778517096024.9731,
+    "hash": "2d8f409d87ba05581c5da5c485eda954"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/index.ts": {
+    "mtime": 1778517096025.063,
+    "hash": "d2038b765d42997bb96693e0dbbbde5e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/ogImage.tsx": {
+    "mtime": 1778517096025.159,
+    "hash": "799a77d5245bb5f36f070d47ae0bfade"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/static.ts": {
+    "mtime": 1778517096025.2231,
+    "hash": "b6e01e0a655f9f92ec32da98b586ca03"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/emitters/tagPage.tsx": {
+    "mtime": 1778517096025.3088,
+    "hash": "ad7869e0a76aabcdbd5977b48e0ef044"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/filters/draft.ts": {
+    "mtime": 1778517096025.4316,
+    "hash": "08f63ee6fabb8932f9eabeb10767784f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/filters/explicit.ts": {
+    "mtime": 1778517096025.4963,
+    "hash": "8f9704fe8dd175ea3505ef43c7a6624c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/filters/index.ts": {
+    "mtime": 1778517096025.5571,
+    "hash": "55ee07ae19c6e2b1161cd037e4fc5e19"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/index.ts": {
+    "mtime": 1778517096025.624,
+    "hash": "ea6ce7fb140200893d5560c1d4f42dd8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/citations.ts": {
+    "mtime": 1778517096025.7234,
+    "hash": "7ffdb57e124a8422bcb571e740e6cf1d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/description.ts": {
+    "mtime": 1778517096025.8074,
+    "hash": "18e253c1ab128fee51a872908fcf8c4b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/frontmatter.ts": {
+    "mtime": 1778517096025.8936,
+    "hash": "ed7f63e3113ee1a5c44c51205d585a1b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/gfm.ts": {
+    "mtime": 1778517096025.9487,
+    "hash": "b01793c966332796b8140d6be23eb95a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/index.ts": {
+    "mtime": 1778517096026.008,
+    "hash": "f51b81b7f9f46128885ea31e35db7ad7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/lastmod.ts": {
+    "mtime": 1778517096026.0752,
+    "hash": "f465a2f32f00607b5cfd11fcf0dba1f4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/latex.ts": {
+    "mtime": 1778517096026.136,
+    "hash": "631f0346858c0b6d751681095bf3cca5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/linebreaks.ts": {
+    "mtime": 1778517096026.2087,
+    "hash": "e01696b6744afb9a2f248d2e218e4850"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/links.ts": {
+    "mtime": 1778517096026.3005,
+    "hash": "c6ba8af3785d6dc12ed8b2a14ee3eb14"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/ofm.ts": {
+    "mtime": 1778517096026.4028,
+    "hash": "667c605c66786b8975ed1974b86ed01c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/oxhugofm.ts": {
+    "mtime": 1778517096026.4878,
+    "hash": "84619d6088f64798180685ff8a6b484b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/roam.ts": {
+    "mtime": 1778517096026.573,
+    "hash": "4ed1e496454a2de5f9e547de02319ed8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/syntax.ts": {
+    "mtime": 1778517096026.648,
+    "hash": "bb934b4f5a081c82e2c26b332c0ecccf"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/transformers/toc.ts": {
+    "mtime": 1778517096026.727,
+    "hash": "a55bf20a2149675c4d63c5913a701cfd"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/types.ts": {
+    "mtime": 1778517096026.7927,
+    "hash": "03d730464727231b3d0d2591fb49882d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/plugins/vfile.ts": {
+    "mtime": 1778517096026.8516,
+    "hash": "65573f6eb4926e363945f3755cac9dd0"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/processors/emit.ts": {
+    "mtime": 1778517096026.9468,
+    "hash": "e276609a127cde6f1e43728de34a400e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/processors/filter.ts": {
+    "mtime": 1778517096027.0078,
+    "hash": "2297b46b80282d047c2228b9a8dd0688"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/processors/parse.ts": {
+    "mtime": 1778517096027.0857,
+    "hash": "2f6da3277900661eeacdd081b3b66cbb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/clone.ts": {
+    "mtime": 1778517096028.198,
+    "hash": "b4f7050df12ad14c0883425ce9148b01"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/ctx.ts": {
+    "mtime": 1778517096028.2688,
+    "hash": "272b585ef19d639a2683f948d3b965a7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/emoji.ts": {
+    "mtime": 1778517096028.3367,
+    "hash": "9942b5892fe088d4eef22369459f2e83"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/escape.ts": {
+    "mtime": 1778517096065.059,
+    "hash": "690c8fb09d750746ebe279d9de3f94cb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/fileTrie.test.ts": {
+    "mtime": 1778517096065.1548,
+    "hash": "34220cebe3c333401878875536e0a0fc"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/fileTrie.ts": {
+    "mtime": 1778517096065.2507,
+    "hash": "ab516b2d7ece712dd879afc2a0f653a5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/glob.ts": {
+    "mtime": 1778517096065.324,
+    "hash": "df53de999e68987764436d87b7b25a03"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/jsx.tsx": {
+    "mtime": 1778517096065.3875,
+    "hash": "cea0c0dff994fa949c7b752ee590f69a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/lang.ts": {
+    "mtime": 1778517096065.4556,
+    "hash": "94bf51cbf94a3a44c7c87e48ab149a4a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/log.ts": {
+    "mtime": 1778517096065.5232,
+    "hash": "6cec9de590665aeeddf98d02d8b02b0b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/og.tsx": {
+    "mtime": 1778517096065.621,
+    "hash": "e3c92091722218be83fccdc2d836c06b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/path.test.ts": {
+    "mtime": 1778517096065.7017,
+    "hash": "2267d587a12bb346f059152f16adb7c8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/path.ts": {
+    "mtime": 1778517096065.809,
+    "hash": "539396500de7ecd0d4bf1b59e8b407f1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/perf.ts": {
+    "mtime": 1778517096065.8875,
+    "hash": "bdb417a9cfe49d5509bf116955513111"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/random.ts": {
+    "mtime": 1778517096065.957,
+    "hash": "01df28c2f5f3133e0f0b89527d4c8149"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/resources.tsx": {
+    "mtime": 1778517096066.0366,
+    "hash": "a51a654d316a5bc2bcb5371d5c6679fe"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/sourcemap.ts": {
+    "mtime": 1778517096066.1252,
+    "hash": "3378f2533abd7182f43ae33366afe093"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/theme.ts": {
+    "mtime": 1778517096066.2288,
+    "hash": "ee0d8871c626305774e1ab58420d1e75"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/util/trace.ts": {
+    "mtime": 1778517096066.3171,
+    "hash": "3841b07cdf8437c60bbef6df31b63e9b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/worker.ts": {
+    "mtime": 1778517096066.3914,
+    "hash": "f7d3aadcb76ce5de30b1d5e87f1f21ac"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/FUNDING.yml": {
+    "mtime": 1778517096002.325,
+    "hash": "a97f425135db9ae541515c91020a9d5f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/ISSUE_TEMPLATE/bug_report.md": {
+    "mtime": 1778517096002.4224,
+    "hash": "2da8504b4770320fcdcbae5e64622fca"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/ISSUE_TEMPLATE/feature_request.md": {
+    "mtime": 1778517096002.4937,
+    "hash": "a60fa8d32902e86de6b87e86eef0995c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/dependabot.yml": {
+    "mtime": 1778517096002.5654,
+    "hash": "14194e20ca9c30082b2ecc4e25f8eaf9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/pull_request_template.md": {
+    "mtime": 1778517096002.6504,
+    "hash": "beec24c7f76e03393b3be00331355f80"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/workflows/build-preview.yaml": {
+    "mtime": 1778517096002.77,
+    "hash": "624dc3e49d20a9099237d14881492542"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/workflows/ci.yaml": {
+    "mtime": 1778517096002.828,
+    "hash": "e6b8d404db574d14af2e84a90dcc5289"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/workflows/deploy-preview.yaml": {
+    "mtime": 1778517096002.8853,
+    "hash": "057da7a794c2a5c888cea89830526a3c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/workflows/deploy.yml": {
+    "mtime": 1778593270473.5593,
+    "hash": "9302d896b668d1ab1a0ddd1321a080a4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/.github/workflows/docker-build-push.yaml": {
+    "mtime": 1778517096002.9592,
+    "hash": "332983372598e2f93c346f41119e1310"
+  },
+  "/Users/skypawalker/Dev/pawhouse/AGENTS.md": {
+    "mtime": 1778566082778.4866,
+    "hash": "56ffcfd458f7fa57b89fc026d53b23a4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/CODE_OF_CONDUCT.md": {
+    "mtime": 1778517096003.4402,
+    "hash": "9bc7828b6a2906b05841f82b9546b05b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/LICENSE.txt": {
+    "mtime": 1778517096003.5737,
+    "hash": "db99912204d44bbfaa34f4eb8f04603c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/README.md": {
+    "mtime": 1778565945746.719,
+    "hash": "72c3025e111a1f35a7213a39abab6ba4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/bookmarks/imported-bookmarks.md": {
+    "mtime": 1778567531000,
+    "hash": "c71edcb5bed500006de5a591df1eb374"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/bookmarks/imported/2026-03-21-openmaic.md": {
+    "mtime": 1778416524000,
+    "hash": "cbdb215f885e9ce125c55f4f5c1934d3"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/bookmarks/inbox.md": {
+    "mtime": 1781052907000,
+    "hash": "3248e1051bd6713e2fe18ce2527db0b9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-17.md": {
+    "mtime": 1778568270000,
+    "hash": "02d8d9350a65b862521a52201a813e45"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-18.md": {
+    "mtime": 1778568270000,
+    "hash": "4f4483f8321fe0b23f4a4b75eb119139"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-19.md": {
+    "mtime": 1778568270000,
+    "hash": "18a129e50551496859c52df96fa6f37d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-20.md": {
+    "mtime": 1778568270000,
+    "hash": "e0e42661aaf0bfd97b2eaea685459b20"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-21.md": {
+    "mtime": 1778568270000,
+    "hash": "34166651c949a9ad4a2d2eb1f33ae1e5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-22.md": {
+    "mtime": 1778568270000,
+    "hash": "3a3a98adec2c66404890e31feca55aa4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-23.md": {
+    "mtime": 1778568270000,
+    "hash": "ffe83269df8ac2092eb162f9ce738d17"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-24.md": {
+    "mtime": 1778568270000,
+    "hash": "4314d4871c456f3dfda90b4c44387375"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-25.md": {
+    "mtime": 1778568270000,
+    "hash": "994f0b8376e08243d317a7df99f8c6b1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-26.md": {
+    "mtime": 1778568270000,
+    "hash": "fc74cb1e1151db3aecfa9a74f13e2c2d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-27.md": {
+    "mtime": 1778568270000,
+    "hash": "b2e273e72b251bdd7ead0ce0dd05951c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-30.md": {
+    "mtime": 1778568270000,
+    "hash": "812262616105141cc8dcc029d91bd2d2"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03-31.md": {
+    "mtime": 1778568270000,
+    "hash": "00e7b7603737646c5eb6b167153467e5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-03.md": {
+    "mtime": 1778568034000,
+    "hash": "049a9dfa0d4060f6a21f7f8fbe8f15c8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-01.md": {
+    "mtime": 1778568270000,
+    "hash": "c83633f2f11f53cba27f5d265741c842"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-02.md": {
+    "mtime": 1778568270000,
+    "hash": "f3c2ded045c180a71d867afb6702a0b6"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-03.md": {
+    "mtime": 1778568270000,
+    "hash": "8f4fcafe6a17e68c86d6cbc074c3bf96"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-04.md": {
+    "mtime": 1778568270000,
+    "hash": "a327ea73342b766bb8f1fc785d99baef"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-05.md": {
+    "mtime": 1778568270000,
+    "hash": "57f2479852c9c6e8d15fddbdb5415350"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-06.md": {
+    "mtime": 1778568270000,
+    "hash": "4c422fdc09308c617154ccce94cc443d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-07.md": {
+    "mtime": 1778568270000,
+    "hash": "0c03bbc4a2d75c1f9c03f5d6aba537ff"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-08.md": {
+    "mtime": 1778568270000,
+    "hash": "04ebe18f683875f8b0d99fc8c1293759"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-09.md": {
+    "mtime": 1778568270000,
+    "hash": "5f8ec191bb5a2073fa11c14a5db8306c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-10.md": {
+    "mtime": 1778568270000,
+    "hash": "56e2ace5a8bd467181810fda0ed5f4e0"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-11.md": {
+    "mtime": 1778568270000,
+    "hash": "68bf83ab1dd9d319b8afe5e95500d481"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-12.md": {
+    "mtime": 1778568270000,
+    "hash": "1f414bc4f94329bbf64ad3cfba5da3af"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-13.md": {
+    "mtime": 1778568270000,
+    "hash": "45b9718d4e2064400c387006eb16680b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-14.md": {
+    "mtime": 1778568270000,
+    "hash": "291e1f98a1aff566fcf169c04f92b09a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-15.md": {
+    "mtime": 1778568270000,
+    "hash": "e6972c84e3483747b93213d84ea76e5c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-16.md": {
+    "mtime": 1778568270000,
+    "hash": "6268e513236f93396e1ef2d4226b5e3b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04-17.md": {
+    "mtime": 1778568270000,
+    "hash": "54227624b6483e9dbb9b5ca2e30d8934"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-04.md": {
+    "mtime": 1778568034000,
+    "hash": "6620f4864f58052a44c4097edffdb9a3"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-04.md": {
+    "mtime": 1780022007000,
+    "hash": "0bdfb559bd316b33aeef9330c1690407"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-05.md": {
+    "mtime": 1780022007000,
+    "hash": "e1a4974af94bff42bbf7d5bee56017fe"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-11.md": {
+    "mtime": 1780022007000,
+    "hash": "2d35e34f1d72b57a8c2cbc4574698dba"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-12.md": {
+    "mtime": 1778639634000,
+    "hash": "3eda83ea9ea5bf824567be5e6f437423"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-13.md": {
+    "mtime": 1778725949000,
+    "hash": "14c4e59edfe174d7e1cacce2aecb7301"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-14.md": {
+    "mtime": 1778812403000,
+    "hash": "766a0b48a05dce19f7c67a33bfed38ec"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-15.md": {
+    "mtime": 1778898769000,
+    "hash": "23e4490c637fe93850663bec957f0cce"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-16.md": {
+    "mtime": 1778985176000,
+    "hash": "4ae3d20308543dd504eda3ea58b5a621"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-17.md": {
+    "mtime": 1779071540000,
+    "hash": "51bf50ff60bad7ff1db8645d3f1327ab"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-18.md": {
+    "mtime": 1779157951000,
+    "hash": "f400feb685115db59ebc28d0f6f8ed80"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-19.md": {
+    "mtime": 1779244389000,
+    "hash": "e7e5bccfd5e1b65bf24ec243a9cee79f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-20.md": {
+    "mtime": 1779330766000,
+    "hash": "6e144890d046172901d8e697bcde8375"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-21.md": {
+    "mtime": 1779417165000,
+    "hash": "6f74271b77947d50c551a3cbbca6452f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-22.md": {
+    "mtime": 1779503587000,
+    "hash": "5136948a04085f2a35cb4103f5098154"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-23.md": {
+    "mtime": 1779589964000,
+    "hash": "8bd05cd62614d33bccafef235ac6d78a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-24.md": {
+    "mtime": 1779677607000,
+    "hash": "d74d11399bb961866e107bd6848bccb0"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-25.md": {
+    "mtime": 1779762777000,
+    "hash": "d6791a88b9bad8aa6e63df8d0bccb885"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-26.md": {
+    "mtime": 1779972532000,
+    "hash": "cc78f3c0b7c5c0c573370b00494376f8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-28.md": {
+    "mtime": 1780022007000,
+    "hash": "e975a52f9dd34e08b40828bf737eb598"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-29.md": {
+    "mtime": 1780108383000,
+    "hash": "0f3c0f79e80f658828c7e724539360ed"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-30.md": {
+    "mtime": 1780236473000,
+    "hash": "9676baee145eaf4f8345afe0b9e479cb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05-31.md": {
+    "mtime": 1780281175000,
+    "hash": "6d78238f85f55befbdd3bc9e11f96890"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-05.md": {
+    "mtime": 1780236473000,
+    "hash": "39f862466d8550143cb06bce19ea04c9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-01.md": {
+    "mtime": 1780367568000,
+    "hash": "0a6d4c9ec7164638c04b71409fe0fe1b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-02.md": {
+    "mtime": 1780453970000,
+    "hash": "c068defef9b6b0c3330b5737492f3712"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-03.md": {
+    "mtime": 1780540419000,
+    "hash": "2959eb1962dfd46e8737402d293c086d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-04.md": {
+    "mtime": 1780626762000,
+    "hash": "9947f2156cc93ea6607ae9c8226b2799"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-05.md": {
+    "mtime": 1780713174000,
+    "hash": "6ea4aafcc8c755369f7fa560a8664d55"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-06.md": {
+    "mtime": 1780799550000,
+    "hash": "dfe102bc45757743383ba604e68fab1c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-07.md": {
+    "mtime": 1780799539000,
+    "hash": "813c03630c03e6e08a952be0c28d64ff"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-08.md": {
+    "mtime": 1780972375000,
+    "hash": "ea46eba25ea1f814f1e0382a1423c564"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-09.md": {
+    "mtime": 1781058751000,
+    "hash": "45bc9dc0e7416974916a2c44dfa24258"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-10.md": {
+    "mtime": 1781145189000,
+    "hash": "91055b9e86698a3209e97ac5fe45617e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-11.md": {
+    "mtime": 1781231575000,
+    "hash": "09848890a50bd1808c63d2ce0c3f0701"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-12.md": {
+    "mtime": 1781373070000,
+    "hash": "d44bcd60a4b49ae339db52662f3e895d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-13.md": {
+    "mtime": 1781373089000,
+    "hash": "3fd242815c7b8d0bee28d68ef6a788ac"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-14.md": {
+    "mtime": 1781404369000,
+    "hash": "c9c1af47410226057afed6398cdabcca"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06-16.md": {
+    "mtime": 1781586012000,
+    "hash": "9ec13ec20f727726d0115fbf40e57c28"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026-06.md": {
+    "mtime": 1781586044000,
+    "hash": "b08c78b9efef0f342e0b3ee45d0474ff"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/digests/x-ai-2026.md": {
+    "mtime": 1781586004000,
+    "hash": "42d902de9836ef37420907a534b7ab49"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/index.md": {
+    "mtime": 1778772030000,
+    "hash": "185cb3f91c92e94190bd13e96b8bd8ea"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/summaries/2026-05-13-boil-the-ocean.md": {
+    "mtime": 1781588260000,
+    "hash": "cec597a5b451cf2215e79212a4835a37"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/summaries/2026-05-16-shower-test-jimmy-carr.md": {
+    "mtime": 1781588186000,
+    "hash": "fdb901d618e3c79daf12b04334f4e932"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/summaries/2026-05-21-youtube-questions-for-self-inquiry.md": {
+    "mtime": 1781588186000,
+    "hash": "3fcca0c045c82ae707262a1445ede1f7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/summaries/2026-05-23-modern-wisdom-1100-19-lessons.md": {
+    "mtime": 1781588186000,
+    "hash": "13e836782bc4d4677b0ed49de56acc1b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/summaries/2026-06-03-code-factory.md": {
+    "mtime": 1780461386000,
+    "hash": "9accc7eb81973a53ddbc00fbd872cb2f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/summaries/2026-06-15-modern-wisdom-arthur-brooks-nothing-feels-real.md": {
+    "mtime": 1781524012000,
+    "hash": "0b093f436a889df2d970b19c9439ac53"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/operating-principles/executive-responsibilities.md": {
+    "mtime": 1778520684000,
+    "hash": "1d7bfa329d7341f3bd53b85a05c68223"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/operating-principles/hiring.md": {
+    "mtime": 1781588186000,
+    "hash": "266f086be60e08b215397b207db7d98d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/operating-principles/leadership.md": {
+    "mtime": 1781588260000,
+    "hash": "9c22d970c7bde1307a9c806ce8133ea9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/operating-principles/startup-operating-principles.md": {
+    "mtime": 1778555639000,
+    "hash": "0b93d1e1df29475fc02480bab5babdec"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/boil-the-ocean.md": {
+    "mtime": 1781588186000,
+    "hash": "7815e139154a291a635b82999c1c7be9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/ephemeralization.md": {
+    "mtime": 1781588260000,
+    "hash": "01fe54ae5f78a2107753a06ac5fc8d9a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/how-to-do-great-work.md": {
+    "mtime": 1781588186000,
+    "hash": "99b86664e12a2a903282356f3e74e820"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/ideation.md": {
+    "mtime": 1778585358000,
+    "hash": "500afa0c6e68bbf3a6d17d37a85bb39b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/jevons-paradox.md": {
+    "mtime": 1781588260000,
+    "hash": "419ae5b54d3edc713ec4ebef65e27011"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/late-stage-success-advice.md": {
+    "mtime": 1781588186000,
+    "hash": "dfdd2f0b010f1c708878b874ef5bac43"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/operator-to-idea-guy.md": {
+    "mtime": 1781588260000,
+    "hash": "407ec73e5656093b865767c341ef194e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/overcoming-startup-blindness.md": {
+    "mtime": 1778520272000,
+    "hash": "636b86b97c3063232ebc41a7e3eb2a85"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/the-quiet-ones.md": {
+    "mtime": 1781588260000,
+    "hash": "469178f9218beb97c808ae02e8b0bade"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/business-and-startups/strategy-and-career/wealth-building.md": {
+    "mtime": 1778520272000,
+    "hash": "450480663a21cfe4a00c7aec8ea72893"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/health-and-protocols/huberman-protocols.md": {
+    "mtime": 1778520272000,
+    "hash": "34c822b9129681ee1bf603375d64d1f5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/modern-wisdom/3mm-cancellations-misogynistai-and-nervous-systems.md": {
+    "mtime": 1781588186000,
+    "hash": "d7d5aed8537c6f7680b8bc6bea953dd0"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/modern-wisdom/3mm-intuition-boomers-and-ai.md": {
+    "mtime": 1781588186000,
+    "hash": "09715bea3474e3f7203a06b1214fae6d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/modern-wisdom/3mm-worries-women-and-cliches.md": {
+    "mtime": 1781588186000,
+    "hash": "92bfefba7df84a252836ae574de4e97a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/action-over-confidence.md": {
+    "mtime": 1781588186000,
+    "hash": "dad6375219b56e8ffa89e10c51ba3618"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/action-over-preparation.md": {
+    "mtime": 1781588186000,
+    "hash": "49fece470b6ef135506bc262ffcbdf72"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/be-delusional.md": {
+    "mtime": 1781588260000,
+    "hash": "f8d89782dcc227fadb18fefb7d2b50c7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/easy-to-be-savage.md": {
+    "mtime": 1781588260000,
+    "hash": "0016bf9de335c43603b9e9dd9608a6a1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/everyone-is-rooting-for-you.md": {
+    "mtime": 1781588186000,
+    "hash": "89b859366064484b656defd4ee5c2d8d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/modern-wisdom-1100-lessons.md": {
+    "mtime": 1781588186000,
+    "hash": "a30b5f1ea979f35559af02f347e18bf9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/move-like-itll-work-out.md": {
+    "mtime": 1778520272000,
+    "hash": "6addba73849b09a5d0937ec26b02f970"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/plan-your-new-era.md": {
+    "mtime": 1778520700000,
+    "hash": "ca1757a1e4d611368f3ab23d043ab913"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/resistance-to-being-productive.md": {
+    "mtime": 1781588186000,
+    "hash": "12a759115e1e351fb7eb8783bb3af259"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/self-trust-through-promises.md": {
+    "mtime": 1781588186000,
+    "hash": "5d772dce4fb9d1dbf904f5dd7e3739fa"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/stop-wanting-something-youre-not-willing-to-work-for.md": {
+    "mtime": 1781588260000,
+    "hash": "6391a12bf1415bc4f3cc0d7c6ac83c83"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/success-traits.md": {
+    "mtime": 1781588260000,
+    "hash": "999e73c2dd785bd17acf1c9b252dfa6f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/the-last-twenty-percent.md": {
+    "mtime": 1778520272000,
+    "hash": "363da347cf5820a40e2ae9e0cc7811c4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/time-sensitive-opportunities.md": {
+    "mtime": 1781588260000,
+    "hash": "fea49da849ef07841166b73c0e0d4d1c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/what-youre-made-of.md": {
+    "mtime": 1781588260000,
+    "hash": "25c6151d801f7b6592d1df5a1cc236a2"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/action-and-discipline/you-cant-be-everything-focus-strategy.md": {
+    "mtime": 1781588260000,
+    "hash": "c29ef88cd37cd0abde1dcc106d4ae7a2"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/appreciate-everything.md": {
+    "mtime": 1781588260000,
+    "hash": "6d6ba677692a5e3fb8bc7079172a47d7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/arrival-fallacy.md": {
+    "mtime": 1781524012000,
+    "hash": "c7dbed4f4011ceb3c3374469a287f9bd"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/children-and-striving.md": {
+    "mtime": 1781588186000,
+    "hash": "da2da66ec568156199a63063162a1c66"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/dont-grip-life-too-tightly-ted-hughes.md": {
+    "mtime": 1781588260000,
+    "hash": "b98e65171a4765b2066999d3ba485984"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/frankls-inverse-law-meaning-vs-pleasure.md": {
+    "mtime": 1781588260000,
+    "hash": "ec0b9a28764775676de818f75defdb55"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/mexican-fisherman-parable.md": {
+    "mtime": 1781588260000,
+    "hash": "35cf07a1a82fc15edb67c386670217a3"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/ordinary-life-wisdom.md": {
+    "mtime": 1781588186000,
+    "hash": "2a22cc1d825a4baa26c26db25990e21f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/parkinsons-law-time-management.md": {
+    "mtime": 1781588260000,
+    "hash": "349f8e6350b23b1d721731f6ba01a0a6"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness.md": {
+    "mtime": 1781588186000,
+    "hash": "709a46fba95354eaf2f995c8a1a395d0"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/the-real-money-dream.md": {
+    "mtime": 1778520272000,
+    "hash": "690787a0b9d899e00f20f902665f4461"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/presence-and-happiness/you-cant-simulate-meaning.md": {
+    "mtime": 1781524012000,
+    "hash": "e2ae2b2b9f88c8c7839c6a52c8ef6ef5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/anxiety-and-depression.md": {
+    "mtime": 1781588260000,
+    "hash": "c3b9a51be70d9b59d84f427c726b5a81"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/dealing-with-criticism.md": {
+    "mtime": 1781588260000,
+    "hash": "4d2a2fc28b773271e817f00fa7a5b6b9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/evening-self-reflection.md": {
+    "mtime": 1781588186000,
+    "hash": "7d44e9dc10b3fde24f72686cf2654d18"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/fading-affect-bias.md": {
+    "mtime": 1781588260000,
+    "hash": "5d0804a881c7b9b502ccb0abc8a26fcd"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/familiar-hell-vs-unfamiliar-heaven.md": {
+    "mtime": 1781588186000,
+    "hash": "0164a6c3575dff67151222832f9eff1d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/insecure-overachiever-mindset.md": {
+    "mtime": 1781588260000,
+    "hash": "529edb61f3325172e09061f9c9636114"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/internal-multiple-personalities.md": {
+    "mtime": 1781588260000,
+    "hash": "725c1445e4a2ff3198ecb1e1a5a71e6a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/inverse-ptsd.md": {
+    "mtime": 1781588260000,
+    "hash": "281bb1fc9bf81fd34e345e5a3757e835"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/mental-health-characteristics.md": {
+    "mtime": 1781588260000,
+    "hash": "c84e44d8b197249a12ba4b9021e1dc7f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/mental-health-monsters.md": {
+    "mtime": 1781588260000,
+    "hash": "94c67085c028215cb68631685b4f3494"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness.md": {
+    "mtime": 1781588260000,
+    "hash": "399742429243ee479f87495aefeb6bd3"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/overcoming-disadvantage-action-vs-blame.md": {
+    "mtime": 1781588186000,
+    "hash": "bff2aaae59cb6ab836d8c947d6740d94"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/perseverance-under-pressure.md": {
+    "mtime": 1781588186000,
+    "hash": "ae3da5e1a8d7d5dcd262a866df8c8d55"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/realistic-path-to-enlightenment.md": {
+    "mtime": 1781588260000,
+    "hash": "d9d0ae609c26ccc5071800a03995e9ce"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/region-beta-paradox.md": {
+    "mtime": 1781588260000,
+    "hash": "749f1fd9da4a1415f3a8dd6a693123b9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/rules-about-overthinking.md": {
+    "mtime": 1781588186000,
+    "hash": "f46db8ad1d06cba542aedb299a636a38"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/struggle-growth-and-mental-toughness.md": {
+    "mtime": 1781588186000,
+    "hash": "9ea98c59e7a13fa591155c4883e6a5b3"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/the-no-big-deal-mentality.md": {
+    "mtime": 1781588260000,
+    "hash": "e39130298455c88209c6f61ef272525e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/the-shame-of-small-fears.md": {
+    "mtime": 1781588260000,
+    "hash": "0a6950b6ae98a99ee6609762d10e91e2"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/ways-of-giving-up.md": {
+    "mtime": 1781588186000,
+    "hash": "4045a11eb1f9907c511669c1c3d45295"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/resilience-and-mental-health/when-everything-feels-off.md": {
+    "mtime": 1778520272000,
+    "hash": "db425e868991334ab7bef9687a0810a7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/ambition-vs-entitlement.md": {
+    "mtime": 1781588260000,
+    "hash": "6526ad241985d74f686154c0047b6eae"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/curse-of-competence.md": {
+    "mtime": 1781588260000,
+    "hash": "ea53283982cf09ab842c8e9b8b5f464f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/end-of-year-lessons-2025.md": {
+    "mtime": 1781588260000,
+    "hash": "b235750162269ece93c4addc58b00169"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/five-life-lessons.md": {
+    "mtime": 1778520272000,
+    "hash": "1c4dd156b4aaf55b2909a3d270106fe5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/morgan-housels-difficult-questions-to-ask-yourself.md": {
+    "mtime": 1781588186000,
+    "hash": "0d21de2e79ed3ae9aaa33a14747ad485"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation.md": {
+    "mtime": 1781588186000,
+    "hash": "50f45155b39530d50746b3f1f7230f58"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/the-inner-citadel.md": {
+    "mtime": 1778520272000,
+    "hash": "f9e2b877b3b207d74d3fa4e9fce47e35"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/the-looking-glass-self.md": {
+    "mtime": 1781588260000,
+    "hash": "7ae30c00f8cdb4a133bfe0a8bfd5c628"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/the-shower-test.md": {
+    "mtime": 1781588186000,
+    "hash": "276dcbf15556281773b6de819a51c37a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/the-world-doesnt-care.md": {
+    "mtime": 1781588260000,
+    "hash": "b0342c211ca269b72de7a4dd00245b92"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/personal-growth/self-worth-and-identity/unteachable-lessons.md": {
+    "mtime": 1781588260000,
+    "hash": "c3645043b5851aff637c821ed480d1f6"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/alisa-prompt-optimizer.md": {
+    "mtime": 1778520272000,
+    "hash": "69bb734eeaf068ebde4e100a4519a9bf"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/chatgpt-teaching-prompt.md": {
+    "mtime": 1778520272000,
+    "hash": "dc53475e2cb74fdc95bc1ed572e8af77"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/claude-4-system-prompt.md": {
+    "mtime": 1778520272000,
+    "hash": "97d52a49eaf47e4104c0bd783efca9f8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/emojify.md": {
+    "mtime": 1756703249000,
+    "hash": "9635bab0ac62428d4a559d6801285003"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/explain-like-i-am-5.md": {
+    "mtime": 1756703249000,
+    "hash": "81f6ac0b6b69536f785dcd3010be0c66"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/fix-grammar-and-spelling.md": {
+    "mtime": 1756703249000,
+    "hash": "186f7c514bf081298d957eca9f9d8643"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/generate-glossary.md": {
+    "mtime": 1756703249000,
+    "hash": "6c52db36c38fe7bb4a74c8d19a97e38b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/generate-table-of-contents.md": {
+    "mtime": 1756703249000,
+    "hash": "54df7d20a9c2f046a4b22c2bf5f50144"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/make-longer.md": {
+    "mtime": 1756703249000,
+    "hash": "03d7c617f66b98652910f7448f2386aa"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/make-shorter.md": {
+    "mtime": 1756703249000,
+    "hash": "6e5b27e0d7b269ca29b5b0b1e0e06f3c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/remove-urls.md": {
+    "mtime": 1756703249000,
+    "hash": "64cb330f59a918bcdfd2eeb9ee20a281"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/rewrite-as-tweet-thread.md": {
+    "mtime": 1756703249000,
+    "hash": "3f59612ee8412d0997f2be70638ad903"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/rewrite-as-tweet.md": {
+    "mtime": 1756703249000,
+    "hash": "6cced08386c6b7b51a6f756fa450b3ce"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/simplify.md": {
+    "mtime": 1778567469000,
+    "hash": "f4abb2b20da21b07427fb209d10eba67"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/summarize.md": {
+    "mtime": 1756703249000,
+    "hash": "5cb6ea4a8d918735283febee69710031"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/copilot-custom-prompts/translate-to-chinese.md": {
+    "mtime": 1756703249000,
+    "hash": "c33bdd4d4c4537f2f88de229b0a1b167"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/high-converting-landing-pages.md": {
+    "mtime": 1778567469000,
+    "hash": "d1d16e2d81f7ad23f4eec852beabd135"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/session-understanding-teacher-prompt.md": {
+    "mtime": 1781588186000,
+    "hash": "10ad66c778d39ea17f6b06e81a3a04e1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/skills.md": {
+    "mtime": 1778520272000,
+    "hash": "b05059a50cc653dd65b82a07544ed089"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/prompt-wallet/tim-ferriss-optimization-prompt.md": {
+    "mtime": 1778520272000,
+    "hash": "8e2f714ef8cb18eead02069a60db838e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/readings-and-poems/darwin-marriage-decision.md": {
+    "mtime": 1781588260000,
+    "hash": "b11de2d906029db61df1a340dc1ec480"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/readings-and-poems/feynmans-love-letter.md": {
+    "mtime": 1781588186000,
+    "hash": "96fed36b9341934a2a247e613dda23ab"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/readings-and-poems/if.md": {
+    "mtime": 1781588186000,
+    "hash": "cd36ee91bcf81b07fe2e8445931589eb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/readings-and-poems/man-in-the-arena.md": {
+    "mtime": 1781588186000,
+    "hash": "4cc6118f1b808813b2f4a60711313acb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/readings-and-poems/ode-to-happiness.md": {
+    "mtime": 1778520272000,
+    "hash": "90d41569aed855ed8e9d4ec0a8e1a6e9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/readings-and-poems/slow-dance.md": {
+    "mtime": 1778520272000,
+    "hash": "aa4e4b1598215ec55fa87180c9e7dcc9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/readings-and-poems/you-have-no-enemies.md": {
+    "mtime": 1778520272000,
+    "hash": "450d40981a8fec5b1ed4875d8f22ff8f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/relationships-and-friendship/be-selective-in-friendship.md": {
+    "mtime": 1778520272000,
+    "hash": "fb9ebcb17b77e5a1cae6ae3a55888189"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/relationships-and-friendship/fuck-you-family.md": {
+    "mtime": 1781588260000,
+    "hash": "28360e5a192ecef28164f393831ffe89"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/relationships-and-friendship/marriage-as-conversation.md": {
+    "mtime": 1781588186000,
+    "hash": "129b59ae21fd27b84145a41b80987b15"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/relationships-and-friendship/modern-fatherhood.md": {
+    "mtime": 1781588186000,
+    "hash": "14562f59a8860751915b86cce379be58"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/relationships-and-friendship/real-friends.md": {
+    "mtime": 1781588260000,
+    "hash": "4fde1545e17c49a00105f9ba21f20136"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/relationships-and-friendship/reverse-charisma.md": {
+    "mtime": 1781588260000,
+    "hash": "3cadc82a2cef0d09243164badf6a3c54"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/relationships-and-friendship/supporting-men.md": {
+    "mtime": 1781588260000,
+    "hash": "b463ad2a627d5c34f3586982c1f6f60b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/relationships-and-friendship/text-your-friends.md": {
+    "mtime": 1781588186000,
+    "hash": "a0a5221ce2df68f5402bcc97deaeb70a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/cognitive-biases-and-belief/astrology-study.md": {
+    "mtime": 1781588260000,
+    "hash": "60c6446423fe86b90490f3ecf0a934d2"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/cognitive-biases-and-belief/milgram-questions.md": {
+    "mtime": 1781588186000,
+    "hash": "d9621bc9ff692ca266a27878fc1dad6e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/cognitive-biases-and-belief/mimetic-desire.md": {
+    "mtime": 1781588186000,
+    "hash": "1c7bffd1b792e7ea13547a093847a6d1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/cognitive-biases-and-belief/post-content-clarity.md": {
+    "mtime": 1781588260000,
+    "hash": "c8b546f3e060e072c479282885d00033"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/cognitive-biases-and-belief/proximate-vs-ultimate.md": {
+    "mtime": 1781588260000,
+    "hash": "a3432f3488a2504e47c04ca989d6b4fb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/cognitive-biases-and-belief/rational-vs-ideological-thinking.md": {
+    "mtime": 1781588186000,
+    "hash": "bcc10790d661a95aa0d2553200801ae4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/cognitive-biases-and-belief/the-eliza-effect.md": {
+    "mtime": 1781588260000,
+    "hash": "b81e030de43d822cb11bf1aa7345be84"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/group-psychology/false-social-consensus.md": {
+    "mtime": 1781588186000,
+    "hash": "bcc7b1b66fc9e02e73b2f9f749e16eee"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/20-types-to-avoid.md": {
+    "mtime": 1781588186000,
+    "hash": "b93382bc224ada54e72165afad6a677d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/cynicism-vs-hope.md": {
+    "mtime": 1781588260000,
+    "hash": "62f499339feab870fb4bbd73ed0d0484"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/kindness-vs-choice.md": {
+    "mtime": 1781588260000,
+    "hash": "0042833f811cce3011416c283988146b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/people-lack-accountability.md": {
+    "mtime": 1781588186000,
+    "hash": "8f3d67eb2270c7e2406ac3600a9f7759"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/phrases-to-destroy-anyones-ego.md": {
+    "mtime": 1781588186000,
+    "hash": "3b51ba050db8579b07d44ededd191986"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/reputation-momentum.md": {
+    "mtime": 1781588186000,
+    "hash": "b5107c1134e84b7371423067befa7f6d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/responding-to-victim-mentality.md": {
+    "mtime": 1781588186000,
+    "hash": "c1b2c8554779a5bb15607cfb4d61babc"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/rules-and-exceptions.md": {
+    "mtime": 1781588186000,
+    "hash": "e2630ce492cfc195eb741ea24e78f07f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/the-asymmetry-of-advice.md": {
+    "mtime": 1781588260000,
+    "hash": "8ee3093b4347bdea6192040bb663ec68"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/the-asymmetry-of-errors.md": {
+    "mtime": 1778520272000,
+    "hash": "14874b676e9f84bba9fdd660f465f429"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/the-cassandra-effect.md": {
+    "mtime": 1781588260000,
+    "hash": "4d13a6d27bee04eed869b84b11d47b75"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/the-messenger-paradox.md": {
+    "mtime": 1781588260000,
+    "hash": "cf39973d430748883cdc62578d2b51c6"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/toxic-compassion-and-truth.md": {
+    "mtime": 1781588186000,
+    "hash": "65ceb0c6e98b210d286e15393f4a5430"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/wisdom/society-and-psychology/truth-and-social-pressure/very-dangerous-mind-games.md": {
+    "mtime": 1778520272000,
+    "hash": "eaa7272f14df0cf336d74aa254db45e4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/advanced/architecture.md": {
+    "mtime": 1778517096003.8909,
+    "hash": "cfbcfdccca06e61e2f3722cee4b3233e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/advanced/creating components.md": {
+    "mtime": 1778517096003.9849,
+    "hash": "1c971e9f3feb6109d110d380d79bf231"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/advanced/index.md": {
+    "mtime": 1778517096004.038,
+    "hash": "1bcd7e06b0e55afb0c4f429dba58883c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/advanced/making plugins.md": {
+    "mtime": 1778517096004.1304,
+    "hash": "74f1a881af9555fc1dba843368c61a2c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/advanced/paths.md": {
+    "mtime": 1778517096004.2046,
+    "hash": "dceb16b4875d5930aaf7ac1e06048905"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/authoring content.md": {
+    "mtime": 1778517096004.279,
+    "hash": "026a9b614582930c01d63ea3410d06b6"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/build.md": {
+    "mtime": 1778517096004.3403,
+    "hash": "1be22e325dd74e3fb549d15a88a799d1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/configuration.md": {
+    "mtime": 1778517096004.4294,
+    "hash": "26dc95edf4637b180f64e0cbd40e6d88"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/Citations.md": {
+    "mtime": 1778517096004.5327,
+    "hash": "5d603aa864cba1a9dc1bb5162f16d003"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/Docker Support.md": {
+    "mtime": 1778517096004.5908,
+    "hash": "86af68421cb2ed4df47a3761d5e86400"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/Latex.md": {
+    "mtime": 1778517096004.6555,
+    "hash": "8edfcf8165e0b3a62df96b1e6ccdf64a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/Mermaid diagrams.md": {
+    "mtime": 1778517096004.7256,
+    "hash": "9c67d9e5faa1204425deb91afbe4ecf3"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/Obsidian compatibility.md": {
+    "mtime": 1778517096004.7864,
+    "hash": "13e59d0caf786d912b59aeca0df55342"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/OxHugo compatibility.md": {
+    "mtime": 1778517096004.846,
+    "hash": "1d56a65b66c0d242f04f79ecc83ba38d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/RSS Feed.md": {
+    "mtime": 1778517096004.9045,
+    "hash": "8eb269bbecaf024d6753fa4bc574bd95"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/Roam Research compatibility.md": {
+    "mtime": 1778517096004.962,
+    "hash": "5faaa4459e2c8c919944b5357e45eb82"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/SPA Routing.md": {
+    "mtime": 1778517096005.0386,
+    "hash": "e9af12c11c2177b6ca638b97bbc147e5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/backlinks.md": {
+    "mtime": 1778517096005.1167,
+    "hash": "9db3f9aee635440dbc379324ed56093b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/breadcrumbs.md": {
+    "mtime": 1778517096005.1897,
+    "hash": "b95df2a75bc6d03a274bb5db91a7c1b9"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/callouts.md": {
+    "mtime": 1778517096005.2534,
+    "hash": "d11a73494c22cce79216030c55493b5b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/comments.md": {
+    "mtime": 1778517096005.3347,
+    "hash": "e539c966a1c1326fa92fb06a794db9b7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/darkmode.md": {
+    "mtime": 1778517096005.4087,
+    "hash": "a2aa33026eeb45078cfd415533c2a066"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/explorer.md": {
+    "mtime": 1778517096005.5044,
+    "hash": "ffa654556218cd5d336f1bcedfe05971"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/folder and tag listings.md": {
+    "mtime": 1778517096005.5715,
+    "hash": "7e2cb93f773c2eefea1bca58bad1c050"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/full-text search.md": {
+    "mtime": 1778517096005.6284,
+    "hash": "a17160cb27cecf550437402007e80a8a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/graph view.md": {
+    "mtime": 1778517096005.6926,
+    "hash": "5b6b56040fca50788e92fedc5ada68be"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/i18n.md": {
+    "mtime": 1778517096005.7544,
+    "hash": "33f1c0d1364edc222839b4cd25ac0042"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/index.md": {
+    "mtime": 1778517096005.805,
+    "hash": "87acf62551bd1e702b49bda19cf2d864"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/popover previews.md": {
+    "mtime": 1778517096005.8901,
+    "hash": "3841664155a90ba99b08548d7c86356e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/private pages.md": {
+    "mtime": 1778517096005.9773,
+    "hash": "45561a6296138afe10ed0ef1f7b9916c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/reader mode.md": {
+    "mtime": 1778517096006.0564,
+    "hash": "2adb04224f022e0263facfea6caa9ac7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/recent notes.md": {
+    "mtime": 1778517096006.1316,
+    "hash": "c4376b75878d4a952ea8541d4fabeb76"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/social images.md": {
+    "mtime": 1778517096006.1992,
+    "hash": "a0fad5d48e15a646dbc255a87e19535b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/syntax highlighting.md": {
+    "mtime": 1778517096006.272,
+    "hash": "3991e98caae49f09741d2bc805140915"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/table of contents.md": {
+    "mtime": 1778517096006.344,
+    "hash": "26fe4390b89e8a6fb4e0565754fa46eb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/upcoming features.md": {
+    "mtime": 1778517096006.422,
+    "hash": "cbfa3db84eb57441c5b005b683e58909"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/features/wikilinks.md": {
+    "mtime": 1778517096006.494,
+    "hash": "6c7b481e9627c486bec829343562a815"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/hosting.md": {
+    "mtime": 1778517096006.585,
+    "hash": "6c07e306f935dca825c9ac00e46b7a4a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/index.md": {
+    "mtime": 1778517096012.49,
+    "hash": "7798687f11c4483d30eaa6afc2eaa1fb"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/layout-components.md": {
+    "mtime": 1778517096012.5613,
+    "hash": "e94471270f9b8eb96f2dd78a0d235650"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/layout.md": {
+    "mtime": 1778517096012.6265,
+    "hash": "0835762a2265b86ae047f5beb6b5c0d6"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/migrating from Quartz 3.md": {
+    "mtime": 1778517096012.6875,
+    "hash": "ef308160cabaa3bb78245777e7b36f8b"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/philosophy.md": {
+    "mtime": 1778517096012.7559,
+    "hash": "4b8580e4194e0c0638b4904a3e7be374"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/AliasRedirects.md": {
+    "mtime": 1778517096012.8635,
+    "hash": "2f0319979ecb4b1353692c0cfef118ba"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/Assets.md": {
+    "mtime": 1778517096012.9307,
+    "hash": "e50ce7436c9b01a22bed333ea0bae889"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/CNAME.md": {
+    "mtime": 1778517096012.992,
+    "hash": "8210b0de5b25d93031a9fe2f18e6f314"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/Citations.md": {
+    "mtime": 1778517096013.0488,
+    "hash": "5eeff19a6237a4be385972f0a626980d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/ComponentResources.md": {
+    "mtime": 1778517096013.1135,
+    "hash": "d06c1fae7f6a878103bf238cf791887a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/ContentIndex.md": {
+    "mtime": 1778517096013.2021,
+    "hash": "09138a49d1c451c6cdddef05098fbc1e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/ContentPage.md": {
+    "mtime": 1778517096013.27,
+    "hash": "1c07ba6228a52ee713048861e567e3f1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/CrawlLinks.md": {
+    "mtime": 1778517096013.3354,
+    "hash": "1319be01868ff5fe3fcf8f26d5586692"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/CreatedModifiedDate.md": {
+    "mtime": 1778517096013.4019,
+    "hash": "658788325a7e12cfa0513b7df363cb83"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/CustomOgImages.md": {
+    "mtime": 1778517096013.4858,
+    "hash": "db1628e12f5a07c80ef113db5be26373"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/Description.md": {
+    "mtime": 1778517096013.5645,
+    "hash": "af35ec1ac392cb17e9fbe46ad802d0a4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/ExplicitPublish.md": {
+    "mtime": 1778517096013.634,
+    "hash": "17192e9a77cf5b30fd8fdf2b5163dd53"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/Favicon.md": {
+    "mtime": 1778517096013.6973,
+    "hash": "d0728c484a61bc515588d752749fa362"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/FolderPage.md": {
+    "mtime": 1778517096013.7566,
+    "hash": "6fbe38e105596dc25eb4f526c386aad2"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/Frontmatter.md": {
+    "mtime": 1778517096013.814,
+    "hash": "37b47f53fb2ff72526fb64ede9197cb4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/GitHubFlavoredMarkdown.md": {
+    "mtime": 1778517096013.876,
+    "hash": "28ccbdb520786afa75e274e5d0217609"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/HardLineBreaks.md": {
+    "mtime": 1778517096013.9614,
+    "hash": "728727aaa380a097f751c27170463ce5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/Latex.md": {
+    "mtime": 1778517096014.0315,
+    "hash": "5d25cf8d1758989cae68be9a442c246e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/NotFoundPage.md": {
+    "mtime": 1778517096014.0894,
+    "hash": "a88abd78f08b7b3855589f169f531584"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/ObsidianFlavoredMarkdown.md": {
+    "mtime": 1778517096014.1501,
+    "hash": "ddbd944ce506cdde5de60e948fbab27c"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/OxHugoFlavoredMarkdown.md": {
+    "mtime": 1778517096014.2117,
+    "hash": "1c5cc06ae3d87f04f65351cd3c192047"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/RemoveDrafts.md": {
+    "mtime": 1778517096014.2664,
+    "hash": "8c1195dd12563922ee4390374af7fe9f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/RoamFlavoredMarkdown.md": {
+    "mtime": 1778517096014.3274,
+    "hash": "9596cc329de2c3cfe9f98270284083ed"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/Static.md": {
+    "mtime": 1778517096014.4019,
+    "hash": "89dc2babd9af347a6ef6b332ea43c0f4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/SyntaxHighlighting.md": {
+    "mtime": 1778517096014.4658,
+    "hash": "73825513d92417e01ec5da3212eeacd5"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/TableOfContents.md": {
+    "mtime": 1778517096014.5283,
+    "hash": "3a309a235ac5ea54c8ca30b24083111f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/TagPage.md": {
+    "mtime": 1778517096014.5986,
+    "hash": "02b8050cfee3cf9c0e69967d4fdd56f4"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/plugins/index.md": {
+    "mtime": 1778517096014.6545,
+    "hash": "6f9cd8bde082d9645cd3286e04c15d33"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/setting up your GitHub repository.md": {
+    "mtime": 1778517096014.7334,
+    "hash": "0924c27213b82398c2aea9ffb32239e7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/showcase.md": {
+    "mtime": 1778517096014.8147,
+    "hash": "f37b8d85839fa841836d7ce6ce9e7435"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/tags/component.md": {
+    "mtime": 1778517096014.9094,
+    "hash": "d590bbd4fd5e651c98b7ac0fcd2efd8f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/tags/plugin.md": {
+    "mtime": 1778517096014.9702,
+    "hash": "6f9cd8bde082d9645cd3286e04c15d33"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/upgrading.md": {
+    "mtime": 1778517096015.0361,
+    "hash": "cb34d27620369a1f5e971290d4011e9f"
+  },
+  "/Users/skypawalker/Dev/pawhouse/content/ascii-art.png": {
+    "mtime": 1778572601000,
+    "hash": "99cd27d9f2db69c575f44bb538f6ac52"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/custom-social-image-preview-dark.png": {
+    "mtime": 1778517096007.0493,
+    "hash": "b4774dadf449718e8bd5288c00daee98"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/custom-social-image-preview-light.png": {
+    "mtime": 1778517096007.406,
+    "hash": "e84037eb1a61890b8094812fc22732c1"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/dns records.png": {
+    "mtime": 1778517096007.69,
+    "hash": "773594d2cf1b6b01d055d4f3cf8cbd15"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/giscus-discussion.png": {
+    "mtime": 1778517096007.996,
+    "hash": "3592c5834cfc1ec2217d9d8bfead63a8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/giscus-example.png": {
+    "mtime": 1778517096009.4888,
+    "hash": "c65e3ecb3c271c06910ff5b193321b51"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/giscus-repo.png": {
+    "mtime": 1778517096009.8452,
+    "hash": "3af4d1b24e513e8d37d7b1e26d2ae64d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/giscus-results.png": {
+    "mtime": 1778517096010.3245,
+    "hash": "3514237df98d84133a1b364da0c05ab7"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/github-init-repo-options.png": {
+    "mtime": 1778517096010.6191,
+    "hash": "f4658d8609dbd0af692ac61bb96adcfc"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/github-quick-setup.png": {
+    "mtime": 1778517096010.9434,
+    "hash": "a949d1d81735bb2264d0aa4cd4eb182d"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/quartz transform pipeline.png": {
+    "mtime": 1778517096011.1943,
+    "hash": "2227b135fe43d14188c9e89d543ee747"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/quartz-layout-desktop.png": {
+    "mtime": 1778517096011.3342,
+    "hash": "81a740ed46d1c5c9af769e09624c135a"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/quartz-layout-mobile.png": {
+    "mtime": 1778517096011.4707,
+    "hash": "c4bf67eddfc6b24918bff503a260f737"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/quartz-layout-tablet.png": {
+    "mtime": 1778517096011.6282,
+    "hash": "e395f7adcdefed86d96c38923b9d331e"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/social-image-preview-dark.png": {
+    "mtime": 1778517096011.9856,
+    "hash": "bdd90c18e13b4437f7725a326788d5d8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/docs/images/social-image-preview-light.png": {
+    "mtime": 1778517096012.4177,
+    "hash": "36d79c1a8153e12d79bb1445ada92e68"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/static/icon.png": {
+    "mtime": 1778517096027.4219,
+    "hash": "f03c27d75fac3d5968b7b155a6ec52f8"
+  },
+  "/Users/skypawalker/Dev/pawhouse/quartz/static/og-image.png": {
+    "mtime": 1778517096027.6238,
+    "hash": "9a0df0e1725d0e140867041059c29ee9"
+  }
+}

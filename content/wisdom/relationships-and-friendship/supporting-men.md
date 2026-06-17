@@ -49,4 +49,4 @@ Or, as said best by Sturgill Simpson's mum:
 - [[wisdom/relationships-and-friendship/real-friends|Real Friends]] - Safe authentic relationships
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

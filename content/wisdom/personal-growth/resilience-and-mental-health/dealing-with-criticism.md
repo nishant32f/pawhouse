@@ -47,4 +47,4 @@ So... go gentle with yourself when dealing with criticism. It's tough. And if yo
 - Love Who vs What - Self-acceptance beyond performance
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

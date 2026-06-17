@@ -37,4 +37,4 @@ Having lots of competencies you could follow in your life is exciting, but it's 
 - Just Do The Thing - Action over deliberation
 
 ---
-*[Chris Williamson](https://en.wikipedia.org/wiki/Chris_Williamson_(podcaster)) | [@chriswillx](https://x.com/chriswillx)*
+*[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*
