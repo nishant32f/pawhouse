@@ -42,6 +42,8 @@ A persona can receive praise. It cannot receive love.
 
 Being yourself does not guarantee everyone will like you. It makes it possible for the right people to actually know you.
 
+[[wisdom/modern-wisdom/3mm-meditation-criminals-and-politics|3MM - Meditation, Criminals & Politics]] names the felt cost of misalignment: as self-awareness increases, every small lie, value-divergence, and unsaid truth starts to feel more abrasive.
+
 ## Love For Who vs What
 
 Most people want to be loved for who they are, not merely for what they achieve. But many people only love themselves when they perform well.

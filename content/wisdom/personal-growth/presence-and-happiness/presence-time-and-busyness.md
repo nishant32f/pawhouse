@@ -67,6 +67,8 @@ Ask: am I using this goal, schedule, routine, or ambition to deepen life or to a
 
 [[wisdom/modern-wisdom/3mm-worries-women-and-cliches|3MM - Worries, Women & Clichés]] frames the same risk at a smaller scale: if every hobby, meditation session, and recovery practice becomes something to perfect, you have traded presence for another control system.
 
+[[wisdom/modern-wisdom/3mm-meditation-criminals-and-politics|3MM - Meditation, Criminals & Politics]] adds the complementary warning that detachment has a cost: a life built on numbing and overwork may achieve its goals while losing the capacity to feel them.
+
 ## Related Canonical Notes
 
 - [[wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation|Self-Worth Beyond Validation]]

@@ -28,5 +28,7 @@ The amount you overthink is directly inverse to how much you live life. Do not t
 
 [[wisdom/modern-wisdom/3mm-worries-women-and-cliches|3MM - Worries, Women & Clichés]] adds a useful adjacent warning: the same mind that overthinks work can also over-optimise rest. At that point worry is no longer protecting the activity; it is replacing the experience of being inside it.
 
+[[wisdom/modern-wisdom/3mm-meditation-criminals-and-politics|3MM - Meditation, Criminals & Politics]] extends this into emotional processing: some problems cannot be solved by more thought because they are unprocessed feelings looking for safe contact, not arguments looking for better logic.
+
 ---
 *[Chris Williamson](https://chriswillx.com/) | [@chriswillx](https://x.com/chriswillx)*

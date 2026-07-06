@@ -53,6 +53,8 @@ Discipline is not punishment. It is reliability. It is the daily practice of pro
 
 The goal is to become someone whose own word carries weight.
 
+[[wisdom/modern-wisdom/3mm-meditation-criminals-and-politics|3MM - Meditation, Criminals & Politics]] is a useful caution: goals can become contracts for self-criticism when commitment is driven by contempt instead of self-respect.
+
 ## Practical Rule
 
 Before making a commitment, ask: am I willing to let this become evidence about me?

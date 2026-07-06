@@ -50,3 +50,4 @@ description: "Charles Darwin's systematic approach to life's biggest decision us
 - [[wisdom/personal-growth/action-and-discipline/time-sensitive-opportunities|Time-Sensitive Opportunities]] - Life decisions have optimal timing windows
 - [[wisdom/readings-and-poems/feynmans-love-letter|Feynman's Love Letter]] - Understanding the depth of committed relationships
 - [[wisdom/relationships-and-friendship/marriage-as-conversation|Marriage as Conversation]] - The everyday texture that sustains a long marriage
+- [[wisdom/modern-wisdom/3mm-meditation-criminals-and-politics|3MM - Meditation, Criminals & Politics]] - important choices often need felt alignment as well as rational tradeoff analysis
