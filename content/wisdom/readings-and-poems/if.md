@@ -46,6 +46,11 @@ And - which is more - you'll be a Man, my son!
 
 Rudyard Kipling (1865-1936)
 
+## Source
+
+- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~0:08.
+- Also collected in [[wisdom/readings-and-poems/poems-from-motiversity-compilation|Poems from Motiversity Compilation]].
+
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
