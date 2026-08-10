@@ -20,6 +20,7 @@ Source: [YouTube — Motiversity Quotes](https://www.youtube.com/watch?v=4C_EvLN
 - [[wisdom/readings-and-poems/character-of-the-happy-warrior|Character of the Happy Warrior]] — William Wordsworth
 - [[wisdom/readings-and-poems/roll-the-dice|Roll the Dice]] — Charles Bukowski
 - [[wisdom/readings-and-poems/the-will-to-win|The Will to Win]] — Berton Braley
+- [[wisdom/readings-and-poems/he-shouldve-spoken-up|He Should've Spoken Up]] — tales and ink
 
 ## Thread
 
