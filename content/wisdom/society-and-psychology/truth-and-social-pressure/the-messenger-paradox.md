@@ -180,7 +180,7 @@ The messenger paradox isn't that we punish people for being wrong—it's that we
 ## Related Articles
 
 - [[wisdom/society-and-psychology/truth-and-social-pressure/the-cassandra-effect|The Cassandra Effect]] - When accurate warnings are systematically dismissed
-- The Abilene Paradox - When groups decide on what nobody wants
+- [[wisdom/society-and-psychology/group-psychology/abilene-paradox|Abilene Paradox]] - When groups decide on what nobody wants
 - Pluralistic Ignorance - When private beliefs differ from public conformity
 - Toxic Compassion vs Truth - When being "nice" enables dysfunction
 

@@ -11,7 +11,7 @@ sources:
 
 Groups often misread what people actually believe, want, or support.
 
-Three related patterns explain much of this confusion: false consensus, pluralistic ignorance, and the Abilene paradox.
+Three related patterns explain much of this confusion: false consensus, pluralistic ignorance, and the [[wisdom/society-and-psychology/group-psychology/abilene-paradox|Abilene Paradox]].
 
 ## False Consensus Effect
 
@@ -42,18 +42,9 @@ Common examples:
 
 Correction: create safe ways to reveal private preferences.
 
-## The Abilene Paradox
+## Abilene Paradox
 
-The Abilene paradox is when a group collectively chooses something nobody individually wants.
-
-It is a failure to manage agreement, not disagreement. Silence gets misread as enthusiasm. People go along because they fear being the difficult one.
-
-Warning signs:
-
-- lots of nodding, little energy
-- nobody owns the decision
-- dissent only appears after the decision fails
-- everyone assumed someone else wanted it
+The [[wisdom/society-and-psychology/group-psychology/abilene-paradox|Abilene Paradox]] is when a group collectively chooses something nobody individually wants.
 
 Correction: explicitly ask for private objections and real preferences before committing.
 
@@ -63,7 +54,7 @@ Correction: explicitly ask for private objections and real preferences before co
 | --- | --- | --- |
 | False consensus | "Everyone agrees with me" | Overconfidence in support |
 | Pluralistic ignorance | "I am the only one who disagrees" | Public compliance with private doubt |
-| Abilene paradox | "Everyone else wants this" | Group action nobody wanted |
+| [[wisdom/society-and-psychology/group-psychology/abilene-paradox|Abilene Paradox]] | "Everyone else wants this" | Group action nobody wanted |
 
 ## Practical Rule
 
@@ -72,3 +63,4 @@ Never treat silence as evidence of agreement. Ask what people actually believe, 
 ## Related Canonical Notes
 
 - [[wisdom/society-and-psychology/truth-and-social-pressure/toxic-compassion-and-truth|Toxic Compassion and Truth]]
+- [[wisdom/society-and-psychology/group-psychology/abilene-paradox|Abilene Paradox]]
