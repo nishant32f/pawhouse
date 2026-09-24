@@ -33,6 +33,7 @@ True ambition involves:
 - Growth and Change - Understanding your true motivations
 - Hard Work and Discomfort - Doing the work regardless of external support
 - Expectations and Reality - Aligning desires with personal responsibility
+- [[wisdom/personal-growth/self-worth-and-identity/youll-never-feel-enough-until-you-understand-this-alain-de-botton|You'll Never Feel Enough Until You Understand This - Alain de Botton]] - ambition as a signal of unmet need, envy, and latent potential
 
 ---
 

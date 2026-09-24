@@ -10,6 +10,7 @@ sources:
   - "modern-wisdom/Comparative Happiness.md"
   - "modern-wisdom/Stop Worrying About Being Liked.md"
   - "mental-health/Self-Love and Standards.md"
+  - "wisdom/personal-growth/self-worth-and-identity/youll-never-feel-enough-until-you-understand-this-alain-de-botton.md"
 ---
 
 # Self-Worth Beyond Validation

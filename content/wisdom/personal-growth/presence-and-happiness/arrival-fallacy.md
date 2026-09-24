@@ -53,3 +53,4 @@ Achievement is healthiest when it supports a meaningful life, not when it postpo
 - [Presence Time and Busyness](/wisdom/personal-growth/presence-and-happiness/presence-time-and-busyness)
 - [Mexican Fisherman Parable](/wisdom/personal-growth/presence-and-happiness/mexican-fisherman-parable)
 - [Self-Worth Beyond Validation](/wisdom/personal-growth/self-worth-and-identity/self-worth-beyond-validation)
+- [[wisdom/personal-growth/self-worth-and-identity/youll-never-feel-enough-until-you-understand-this-alain-de-botton|You'll Never Feel Enough Until You Understand This - Alain de Botton]]
