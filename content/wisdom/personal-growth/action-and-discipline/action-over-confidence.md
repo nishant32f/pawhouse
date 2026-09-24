@@ -6,6 +6,7 @@ sources:
   - "life-lessons/Self-Belief vs Action - Life Lessons.md"
   - "modern-wisdom/Beyond Self-Belief.md"
   - "modern-wisdom/Self-Belief vs Action.md"
+  - "wisdom/modern-wisdom/an-ode-to-people-who-dont-believe-in-themselves.md"
 ---
 
 # Action Over Confidence
