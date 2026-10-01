@@ -40,4 +40,4 @@ Source: image/screenshot shared with Hermes on 2026-08-09. A middle couplet was 
 
 ## Notes
 
-A concise piece on [[Communication]], [[Boundaries]], and [[Vulnerability]]: the person is punished for expression, punished for silence, and then blamed for not speaking sooner.
+A concise piece on communication, boundaries, and vulnerability: the person is punished for expression, punished for silence, and then blamed for not speaking sooner.
