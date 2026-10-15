@@ -1,0 +1,45 @@
+---
+import Paper from "../../layouts/Paper.astro"
+import { editionDate } from "../../components/format"
+import { loadEditions } from "../../lib/digests"
+const editions = await loadEditions()
+---
+<Paper title="Search" compact>
+  <div class="archive search"><h1>Search the daily</h1>
+    <p id="search-guidance">Search headlines and full text, or browse every edition below.</p>
+    <form role="search" id="search-form">
+      <label for="search-query">Search editions and stories</label>
+      <div class="search-input"><input type="search" id="search-query" name="q" aria-describedby="search-guidance" autocomplete="off" /><button type="submit">Search</button></div>
+    </form>
+    <p role="status" aria-live="polite" id="search-status"></p>
+    <p id="no-matches" hidden>No matches. Try fewer words, or <a href="/archive/">browse the edition archive</a>.</p>
+    <ul class="search-results">{editions.flatMap((edition) => [
+      <li data-search={`${editionDate(edition.date)} ${edition.text}`}><a href={edition.path}>{editionDate(edition.date)} · Full edition</a></li>,
+      ...(edition.kind === "identified" ? edition.stories.map((story) => <li data-search={`${editionDate(edition.date)} ${story.headline} ${story.text}`}><a href={story.path}>{story.headline}</a><span>{editionDate(edition.date)}{story.kind === "archived" && " · Archived story"}</span></li>) : [])
+    ])}</ul>
+    <noscript><p>Use your browser's Find command to find a headline, or follow any edition link above.</p></noscript>
+  </div>
+</Paper>
+<script>
+  const form = document.querySelector<HTMLFormElement>("#search-form")
+  const input = document.querySelector<HTMLInputElement>("#search-query")
+  const status = document.querySelector("#search-status")
+  const empty = document.querySelector<HTMLElement>("#no-matches")
+  const entries = Array.from(document.querySelectorAll<HTMLElement>("[data-search]"))
+  const filter = () => {
+    const query = input?.value.trim().toLocaleLowerCase() ?? ""
+    const words = query.split(/\s+/).filter(Boolean)
+    let count = 0
+    for (const entry of entries) {
+      const text = entry.dataset.search?.toLocaleLowerCase() ?? ""
+      entry.hidden = !words.every((word) => text.includes(word))
+      if (!entry.hidden) count++
+    }
+    if (status) status.textContent = query ? `${count} ${count === 1 ? "match" : "matches"}` : "All editions and stories"
+    if (empty) empty.hidden = count !== 0
+  }
+  if (input) input.value = new URLSearchParams(window.location.search).get("q") ?? ""
+  input?.addEventListener("input", filter)
+  form?.addEventListener("submit", (event) => { event.preventDefault(); filter() })
+  filter()
+</script>

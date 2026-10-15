@@ -1,0 +1,23 @@
+---
+import type { Edition } from "../lib/digests"
+import StoryCard from "./StoryCard.astro"
+import ReaderTools from "./ReaderTools.astro"
+import { editionDate } from "./format"
+interface Props { edition: Edition }
+const { edition } = Astro.props
+---
+{edition.kind === "identified" ? <>
+  <div class="front-screen">
+    <div class="front-grid">
+      <StoryCard story={edition.lead} lead />
+      <div>{edition.activeStories.slice(1, 3).map((story) => <StoryCard story={story} />)}</div>
+    </div>
+    {edition.activeStories.slice(3).map((story) => <StoryCard story={story} wide />)}
+    <div class="front-actions"><a href={edition.readPath}>Read the full edition</a><button data-print hidden type="button">Print edition</button></div>
+  </div>
+  <section class="print-edition reading-copy" aria-label="Full edition for print" set:html={edition.html} />
+</> : <article class="reader legacy">
+  <div class="reader-top"><span>Full edition</span><ReaderTools /></div>
+  <h1 class="sr-only">{editionDate(edition.date)}</h1>
+  <div class="reading-copy" set:html={edition.html} />
+</article>}

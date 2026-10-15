@@ -1,0 +1,23 @@
+---
+import Paper from "../../../../layouts/Paper.astro"
+import ReaderTools from "../../../../components/ReaderTools.astro"
+import { editionDate } from "../../../../components/format"
+import { loadEditions, type Edition } from "../../../../lib/digests"
+export async function getStaticPaths() {
+  return (await loadEditions()).map((edition) => ({ params: { date: edition.date }, props: { edition } }))
+}
+interface Props { edition: Edition }
+const { edition } = Astro.props
+---
+<Paper title={`Full edition, ${editionDate(edition.date)}`} canonical={edition.readPath} compact>
+  <article class="reader full-edition">
+    <div class="reader-top"><a href={edition.path}>Back to edition</a><ReaderTools /></div>
+    <p class="article-meta"><time datetime={edition.date}>{editionDate(edition.date)}</time></p>
+    <h1>Full edition</h1>
+    {edition.kind === "identified" ? edition.activeStories.map((story) => <section class="full-story" id={story.id}>
+      <h2><a href={story.path}>{story.headline}</a></h2>
+      <div class="reading-copy" set:html={story.html} />
+    </section>) : <div class="reading-copy" set:html={edition.html} />}
+    <p class="back-link"><a href={edition.path}>Back to edition</a></p>
+  </article>
+</Paper>

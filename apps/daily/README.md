@@ -45,3 +45,29 @@ The producer's `hermes/ai-x-digest/story_identity.py` owns revision comparison. 
 ## Focused evidence
 
 `tests/digests.test.ts` uses the shared fixtures from `hermes/ai-x-digest/contract.md`. It covers the accepted four-story edition, both legacy formats, briefs, archives, stable paths, deterministic output, source boundaries, raw HTML, dates, malformed IDs, and unsafe URLs. Run Python identity checks separately from the repository root when changing the shared identity contract.
+
+## Reading and discovery
+
+The home page shows the latest actual edition and its date. Identified editions use a lead and supporting stories. Legacy editions retain their complete original prose.
+
+| Route                        | Content                                                                                            |
+| ---------------------------- | -------------------------------------------------------------------------------------------------- |
+| `/`                          | Latest edition, with the dated edition as its canonical URL.                                       |
+| `/editions/DATE/`            | Newspaper front, or the complete legacy edition.                                                   |
+| `/editions/DATE/stories/ID/` | Complete identified story, sources, correction when archived, and active previous/next navigation. |
+| `/editions/DATE/read/`       | Complete active edition, or the complete legacy edition.                                           |
+| `/archive/`                  | Every actual edition, newest first.                                                                |
+| `/search/`                   | Browseable edition and story links. Optional JavaScript filters their full text.                   |
+| `/rss.xml`                   | Public RSS 2.0 with complete active edition HTML and citations.                                    |
+| `/sitemap.xml`               | Actual native routes, including retained archived articles.                                        |
+| `/404.html`                  | Missing-page document for static hosting.                                                          |
+
+Reading, sources, navigation, and search browsing work without JavaScript. System dark mode uses CSS. JavaScript adds theme, text size, print buttons, and search filtering. Browser print remains available without JavaScript. Printing a newspaper front includes the complete selected edition.
+
+The app self-hosts Libre Baskerville and DM Sans through pinned Fontsource packages. Their OFL licenses ship under `public/fonts/`. The reader styles and build remain separate from Quartz.
+
+RSS identifies one edition by its dated URL. A correction updates that same item. `pubDate` reflects midnight IST for the source date. Missing days create no routes or feed items. Canonical, RSS, and sitemap URLs use Astro's configured `site`. The default is the production reader origin. Astro's `--site` build option can set a local preview origin.
+
+`public/_headers` supplies the RSS MIME type for Cloudflare static assets. A generated endpoint's Response headers alone do not persist in static build output. Deployment verification must check the served header.
+
+`tests/reading.test.ts` builds the real Astro app in a temporary Git repository containing committed accepted fixtures. It checks complete generated HTML, sources, active navigation, retained archives, legacy prose, static search links, parsed RSS XML, deterministic rebuilds, correction identity, and sitemap XML. It leaves the canonical Git index untouched. Set `DAILY_KEEP_READING_FIXTURE=1` when running the test to retain its temporary repository for browser inspection.
