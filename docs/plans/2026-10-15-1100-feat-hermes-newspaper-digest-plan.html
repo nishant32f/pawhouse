@@ -1728,6 +1728,13 @@
           completed review used an in-process adversarial fallback. No independent external model
           review is claimed.
         </p>
+        <p>
+          GitHub rejected the first workflow before creating jobs because job-level environment
+          expressions cannot use <code>runner.temp</code>. The release job now sets its private
+          directory through <code>GITHUB_ENV</code> in a setup step. Pinned actionlint 1.7.12
+          reproduced the same error before the fix and passed afterwards. A skipped preview check
+          alone did not count as successful reader CI.
+        </p>
         <h3>Activation still required</h3>
         <ol>
           <li>
