@@ -53,7 +53,7 @@ function imageUrl(value: unknown): string {
   }
   if (url.protocol !== "https:" || url.username || url.password)
     throw new Error("editorial metadata: image src must be HTTPS without credentials")
-  return src
+  return url.href
 }
 
 function dimension(value: unknown, field: string): number {

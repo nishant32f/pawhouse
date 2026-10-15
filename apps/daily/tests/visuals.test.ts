@@ -90,3 +90,42 @@ test("edition rendering retains original markup when no illustration exists", ()
   assert.equal((html.match(/data-story-visual="bar"/g) ?? []).length, 1)
   assert.ok(html.includes(renderVisual(chart)))
 })
+
+test("validated image URLs resolve identically in web pages and external readers", () => {
+  const text = readFileSync(
+    new URL("./fixtures/editorial-v2-four-stories.md", import.meta.url),
+    "utf8",
+  )
+  for (const src of [
+    "https:images.example.com/figure.png",
+    "https:/images.example.com/figure.png",
+  ]) {
+    const candidate = text.replace(
+      "digest_format: editorial-v2\n",
+      `digest_format: editorial-v2
+story_metadata:
+  gloss-x-import:
+    section: Reading
+    visual:
+      kind: image
+      src: ${src}
+      width: 1200
+      height: 675
+      alt: A source image
+      caption: The inspected source image.
+      credit: The source author
+      source_url: https://x.com/nutlope/status/2110385721391366263
+`,
+    )
+    const edition = parseEdition({ filename: "x-ai-2026-10-15.md", text: candidate })
+    if (edition.kind !== "identified") return assert.fail("expected identified edition")
+    const visual = edition.stories.find((story) => story.id === "gloss-x-import")?.editorial?.visual
+    if (visual?.kind !== "image") return assert.fail("expected image")
+    assert.equal(
+      new URL(visual.src, "https://daily.nishantkhurana.me/editions/2026-10-15/").href,
+      new URL(visual.src).href,
+    )
+    assert.equal(visual.src, "https://images.example.com/figure.png")
+    assert.match(renderVisual(visual), /src="https:\/\/images\.example\.com\/figure\.png"/)
+  }
+})

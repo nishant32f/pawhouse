@@ -34,6 +34,7 @@ before(
     for (const [file, date] of [
       ["editorial-v2-four-stories.md", "2026-10-15"],
       ["editorial-v2-brief-archive.md", "2026-10-16"],
+      ["editorial-v2-single-story.md", "2026-10-14"],
       ["legacy-unversioned.md", "2026-05-10"],
     ]) {
       if (file && date) cpSync(join(app, "tests/fixtures", file), join(content, `x-ai-${date}.md`))
@@ -172,12 +173,13 @@ r=E.parse(sys.argv[1]).getroot();c=r.find('channel');print(json.dumps([{'guid':i
     assert.ok("body" in item && typeof item.body === "string")
     return { guid: item.guid, link: item.link, date: item.date, body: item.body }
   })
-  assert.equal(parsed.length, 3)
+  assert.equal(parsed.length, 4)
   assert.deepEqual(
     parsed.map((item) => item.guid),
     [
       "https://daily.nishantkhurana.me/editions/2026-10-16/",
       "https://daily.nishantkhurana.me/editions/2026-10-15/",
+      "https://daily.nishantkhurana.me/editions/2026-10-14/",
       "https://daily.nishantkhurana.me/editions/2026-05-10/",
     ],
   )
@@ -223,7 +225,7 @@ r=E.parse(sys.argv[1]).getroot();c=r.find('channel');print(json.dumps([{'guid':i
   ])
   run(process.execPath, [join(app, "node_modules/astro/bin/astro.mjs"), "build"], fixtureApp)
   const revised = read("rss.xml")
-  assert.equal((revised.match(/<item>/g) ?? []).length, 3)
+  assert.equal((revised.match(/<item>/g) ?? []).length, 4)
   assert.match(revised, /Anthropic confirms/)
   assert.match(
     revised,
@@ -269,4 +271,17 @@ test("sitemap contains actual native routes including retained archive articles"
   )
   assert.match(xml, /https:\/\/daily.nishantkhurana.me\/archive\//)
   assert.doesNotMatch(xml, /2026-10-17|404|2026-05-10\/stories/)
+})
+
+test("a quiet edition renders one complete story without supporting placeholders", () => {
+  const front = read("editions/2026-10-14/index.html")
+  assert.equal([...front.matchAll(/<article\b/g)].length, 1)
+  assert.equal([...front.matchAll(/href="#reproducible-fix"/g)].length, 1)
+  assert.match(front, /front-grid single-story/)
+  assert.doesNotMatch(front, /lower-stories|side-story/)
+  assert.match(front, /The report covers one tool version/)
+  assert.match(front, /https:\/\/example\.com\/fix/)
+  const story = read("editions/2026-10-14/stories/reproducible-fix/index.html")
+  assert.match(story, /The report covers one tool version/)
+  assert.doesNotMatch(story, /rel="(?:prev|next)"/)
 })
