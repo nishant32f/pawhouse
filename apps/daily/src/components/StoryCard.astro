@@ -1,0 +1,14 @@
+---
+import type { ActiveStory } from "../lib/digests"
+import Sources from "./Sources.astro"
+interface Props { story: ActiveStory; lead?: boolean; wide?: boolean }
+const { story, lead = false, wide = false } = Astro.props
+---
+<article class:list={[{ lead, "side-story": !lead && !wide, "last-story": wide }]}>
+  {lead ? <h1><a href={story.path}>{story.headline}</a></h1> : <h2><a href={story.path}>{story.headline}</a></h2>}
+  <div class="card-copy">
+    <div class="summary" set:html={story.summaryHtml} />
+    <Sources sources={story.sources} />
+    <a class="read" href={story.path}>Read story<span class="sr-only">: {story.headline}</span></a>
+  </div>
+</article>

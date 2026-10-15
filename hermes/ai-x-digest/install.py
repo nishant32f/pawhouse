@@ -12,6 +12,8 @@ import tempfile
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--hermes-home', type=Path, required=True)
+    parser.add_argument('--phase', choices=('verifier', 'producer'), default='producer',
+                        help='Install the dual checker first; producer installs the complete package')
     args = parser.parse_args()
     package = Path(__file__).resolve().parent
     manifest = json.loads((package / 'runtime-manifest.json').read_text())
@@ -19,10 +21,11 @@ def main():
     if not home.is_dir():
         parser.error('Hermes home must already exist')
     entries = []
-    for relative in manifest['files']:
-        source = (package / 'runtime' / relative).resolve()
+    files = manifest['verifier_files'] if args.phase == 'verifier' else manifest['files']
+    for relative in files:
+        source = (package / manifest['sources'][relative]).resolve() if relative in manifest.get('sources', {}) else (package / 'runtime' / relative).resolve()
         target = (home / relative).resolve()
-        if not source.is_relative_to(package / 'runtime') or not target.is_relative_to(home / 'skills'):
+        if not source.is_relative_to(package) or not target.is_relative_to(home / 'skills'):
             parser.error(f'file is outside the owned skill paths: {relative}')
         if not source.is_file():
             parser.error(f'missing package file: {relative}')
@@ -30,7 +33,7 @@ def main():
     stamp = datetime.now().astimezone().strftime('%Y%m%d-%H%M%S-%f')
     backup = home / 'backups' / f'ai-x-digest-{manifest["version"]}-{stamp}'
     backup.mkdir(parents=True, mode=0o700)
-    receipt = {'version': manifest['version'], 'status': 'preparing', 'files': {}, 'backup': str(backup)}
+    receipt = {'version': manifest['version'], 'phase': args.phase, 'status': 'preparing', 'files': {}, 'backup': str(backup)}
     receipt_path = backup / 'receipt.json'
     staged_files = []
     replaced = []
@@ -80,7 +83,7 @@ def main():
         for staged in staged_files:
             staged.unlink(missing_ok=True)
     print(json.dumps(receipt, indent=2))
-    print('Cron is unchanged. Apply cron-prompt.md through hermes cron edit after verification.')
+    print('Cron is unchanged. Follow rollout.md before producer or cron activation.')
 
 
 if __name__ == '__main__':

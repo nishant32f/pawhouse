@@ -1,11 +1,19 @@
 {
-  "version": "editorial-v1",
+  "version": "editorial-v2",
   "files": [
+    "skills/note-taking/obsidian/scripts/story_identity.py",
+    "skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py",
     "skills/note-taking/ai-x-digest/SKILL.md",
     "skills/note-taking/unslop/SKILL.md",
     "skills/note-taking/obsidian/SKILL.md",
-    "skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py",
     "skills/note-taking/obsidian/references/digest-normalization.md",
     "skills/note-taking/obsidian/references/digest-output.md"
+  ],
+  "sources": {
+    "skills/note-taking/obsidian/scripts/story_identity.py": "story_identity.py"
+  },
+  "verifier_files": [
+    "skills/note-taking/obsidian/scripts/story_identity.py",
+    "skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py"
   ]
 }

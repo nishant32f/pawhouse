@@ -1,0 +1,94 @@
+---
+import "../styles/paper.css"
+interface Props {
+  title: string
+  description?: string
+  canonical?: string
+  compact?: boolean
+  noindex?: boolean
+}
+const { title, description = "Nishant's daily AI digest. Read the day's stories and their original sources.", canonical = Astro.url.pathname, compact = false, noindex = false } = Astro.props
+const canonicalUrl = new URL(canonical, Astro.site)
+const rssUrl = new URL("/rss.xml", Astro.site)
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content={description} />
+    <script is:inline>
+      try {
+        const theme = localStorage.getItem("daily-theme")
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme
+        const size = Number(localStorage.getItem("daily-text-size"))
+        if (size >= 17 && size <= 26) document.documentElement.style.setProperty("--body-size", `${size}px`)
+      } catch {}
+    </script>
+    {noindex && <meta name="robots" content="noindex" />}
+    <title>{title} | The AI daily</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="application/rss+xml" href={rssUrl} title="The AI daily" />
+    <link rel="sitemap" href={new URL("/sitemap.xml", Astro.site)} />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="The AI daily" />
+    <meta property="og:title" content={`${title} | The AI daily`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={`${title} | The AI daily`} />
+    <meta name="twitter:description" content={description} />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class:list={["shell", { compact }]}>
+      <header>
+        <div class="topline">
+          <span class="domain">daily.nishantkhurana.me</span>
+          <nav aria-label="Main navigation">
+            <a href="/">Latest</a><a href="/archive/">Archive</a><a href="/search/">Search</a>
+            <a href="/rss.xml">RSS</a><a href="https://nishantkhurana.me/">Mindscape</a>
+            <button type="button" id="theme" hidden>Dark mode</button>
+          </nav>
+        </div>
+        <div class="masthead"><a class="brand" href="/">The AI daily</a><p>Nishant's daily AI digest</p></div>
+        <slot name="editionline" />
+      </header>
+      <main id="main" tabindex="-1"><slot /></main>
+      <footer class="sitefoot"><span>The AI daily</span><a href="/archive/">Edition archive</a><a href="/rss.xml">Subscribe with RSS</a><a href="https://nishantkhurana.me/">Visit Mindscape</a></footer>
+    </div>
+    <script>
+      const root = document.documentElement
+      const themeButton = document.querySelector<HTMLButtonElement>("#theme")
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      const isDark = () => root.dataset.theme ? root.dataset.theme === "dark" : systemTheme.matches
+      const updateLabel = () => { if (themeButton) themeButton.textContent = isDark() ? "Light mode" : "Dark mode" }
+      if (themeButton) {
+        themeButton.hidden = false
+        updateLabel()
+        themeButton.addEventListener("click", () => {
+          root.dataset.theme = isDark() ? "light" : "dark"
+          try { localStorage.setItem("daily-theme", root.dataset.theme) } catch {}
+          updateLabel()
+        })
+        systemTheme.addEventListener("change", updateLabel)
+      }
+      document.querySelectorAll<HTMLButtonElement>("[data-size]").forEach((button) => {
+        button.hidden = false
+        button.addEventListener("click", () => {
+          const current = Number(root.style.getPropertyValue("--body-size").replace("px", "")) || 18
+          const size = Math.max(17, Math.min(26, current + Number(button.dataset.size)))
+          root.style.setProperty("--body-size", `${size}px`)
+          try { localStorage.setItem("daily-text-size", String(size)) } catch {}
+          const status = document.querySelector("#reader-status")
+          if (status) status.textContent = `Text size ${size} pixels`
+        })
+      })
+      document.querySelectorAll<HTMLButtonElement>("[data-print]").forEach((button) => {
+        button.hidden = false
+        button.addEventListener("click", () => window.print())
+      })
+    </script>
+  </body>
+</html>

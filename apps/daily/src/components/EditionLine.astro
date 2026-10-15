@@ -1,0 +1,11 @@
+---
+import type { Edition } from "../lib/digests"
+import { editionDate } from "./format"
+interface Props { edition: Edition }
+const { edition } = Astro.props
+---
+<div class="editionline">
+  <time datetime={edition.date}>{editionDate(edition.date)}</time>
+  {edition.kind === "identified" && <span class="count">{edition.activeStories.length} stories</span>}
+  <a href={edition.readPath}>Read full edition</a>
+</div>
