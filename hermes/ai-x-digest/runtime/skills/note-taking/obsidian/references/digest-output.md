@@ -13,12 +13,13 @@ Session-specific convention for this user:
 - Daily digest automation exists as Hermes cron job `daily-ai-x-digest-to-obsidian`, scheduled `0 8 * * *`, using `bird` JSON plus summarization.
 - New daily editions use `digest_format: editorial-v2` after the staged producer rollout and the `ai-x-digest` plus `unslop` skills. Write a private first draft, edit it, check the sources, and validate before publication. Use concrete story headings, adjacent source links, and optional advice. The historical H1, theme-count, and takeaway rules do not apply to this format.
 - Absolute output path pattern: `/Users/skypawalker/Dropbox/Obsidian/public/digests/x-ai-YYYY-MM-DD.md`
+- Digest illustrations use optional `story_metadata` frontmatter under the `ai-x-digest` contract. Hermes supplies inspected media, captions and chart facts. The reader owns their HTML and design. Do not apply general Quartz raw-image or asset-copying advice to this workflow.
 
 Recommended workflow:
 
 1. Resolve the vault path from `OBSIDIAN_VAULT_PATH`; do not pass literal `$OBSIDIAN_VAULT_PATH` to file tools.
 2. Stage the draft, edited candidate, source snapshots, review, indexes, and request privately outside the public vault and repository.
-3. Follow `ai-x-digest` for persistent IDs, the actual separate unslop pass, and the shared scoped publisher. Only `publish-from-vault.sh --digest PRIVATE_REQUEST.json` promotes accepted files. Never write a digest directly into the public vault.
+3. Follow `ai-x-digest` for persistent IDs, optional sourced editorial metadata, the separate unslop pass, and the shared scoped publisher. Review prose, decks, captions, labels and numerical bounds against the inspected sources. Only `publish-from-vault.sh --digest PRIVATE_REQUEST.json` promotes accepted files. Never write a digest directly into the public vault.
 4. If the user asks to open the accepted result in Obsidian, use the CLI after publication:
 
 ```bash

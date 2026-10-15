@@ -63,11 +63,63 @@ Load and read the `unslop` skill for every edition. Apply it to the selected fir
 
 1. Read the draft as a reader. Remove abstract openings, repeated significance claims, invented jargon, forced contrasts, decorative bold labels, and summary-recap endings.
 2. Name actors and concrete actions. Split sentences that need rereading. Aim for 25 words or fewer per sentence, except where a quote or necessary condition requires more.
-3. Keep every selected fact, number, proper name, qualification, quote, and source URL unchanged in meaning. Do not turn "the company says" into a verified result. If a claim is wrong, correct it from the original source and record that correction separately from the style edit.
+3. Edit headlines, decks, captions and chart labels as well as prose. Keep every selected fact, number, proper name, qualification, quote, and source URL unchanged in meaning. Do not turn "the company says" into a verified result. If a claim is wrong, correct it from the original source and record that correction separately from the style edit.
 4. Save the edited edition separately from the first draft. Write a short private `review.md` with specific before/after examples, the sources actually inspected, any factual corrections, and remaining uncertainty. If no sentence needs editing, record why the draft passes. Do not invent changes for the report.
-5. Reread the edited edition against the source text. Confirm each story says something specific, each source is nearby, no story repeats another, and no useful qualification disappeared.
+5. Reread the edited edition against the source text. Compare every chart value, unit, period and qualifier with its source. Check each image, caption and credit against the inspected media. Confirm each story says something specific, each source is nearby, no story repeats another, and no useful qualification disappeared.
 
 The deterministic verifier checks structure and size. It does not establish factual accuracy or certify good prose. The source check and unslop pass remain required.
+
+## Editorial metadata
+
+Hermes writes content. The app owns fonts, backgrounds, columns, spacing, image treatment and chart drawing. Never emit HTML, SVG, CSS, JavaScript, templates or layout instructions for the reader. Keep one authored Markdown edition. A design change must work with the same accepted content.
+
+Use optional `story_metadata` frontmatter keyed by the story's persistent ID. Each entry requires a plain-text `section`. A plain-text `deck` and one `visual` are optional. The deck adds useful context without repeating the headline or opening summary. Omit metadata when it adds nothing. Do not add layout or style fields.
+
+Inspect original source media or data before proposing a visual. Save the inspected source URL and source-to-caption/data comparison in private `review.md`. For images, also record the media URL and observed intrinsic dimensions. Do not infer thumbnail dimensions from its parent video. A visual's `source_url` must exactly match an adjacent citation in that same story. Another story's citation does not count.
+
+| Visual  | Required fields and evidence                                                                                                                                                                                                      |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `image` | `src` is the actual inspected HTTPS image URL without credentials. Supply positive integer intrinsic `width` and `height`, plain-text `alt`, `caption`, `credit` and `source_url`. Describe what the image actually shows.        |
+| `bar`   | Supply plain-text `title`, `unit`, `caption`, `source_url` and 2 to 4 comparable `points`. Each point has a plain-text `label`, finite nonnegative numeric `value` and explicit `qualifier`. At least one value must be positive. |
+
+Allowed qualifiers are `exact`, `approximate`, `greater-than` and `at-least`. Preserve bounds and uncertainty. Do not interpolate missing values, invent intermediate periods or mix units in one chart. State company-reported figures as claims. Leave presentation of those qualifiers to the app.
+
+Use a visual only when it helps explain the story and its evidence is available. Omit unavailable or unverified visuals. Do not add stock images, generated illustrations, screenshots of guessed interfaces or a fixed number of images. Do not download media into the public vault or create a separate public page.
+
+This is the data shape for two inspected 15 October sources. It is an example, not content to reuse in future editions.
+
+```yaml
+story_metadata:
+  anthropic-monorepo:
+    section: Engineering
+    deck: Anthropic reports increased daily merges.
+    visual:
+      kind: bar
+      title: Reported code merges per day
+      unit: merges per day
+      caption: Two figures reported by Anthropic; September exceeds 30,000.
+      source_url: https://x.com/AnthropicAI/status/2110047081414987957
+      points:
+        - label: May
+          value: 2500
+          qualifier: approximate
+        - label: September
+          value: 30000
+          qualifier: greater-than
+  gloss-x-import:
+    section: Reading
+    visual:
+      kind: image
+      src: https://pbs.twimg.com/amplify_video_thumb/2110385606014480384/img/Izsh3-4wJEFdJjBI.jpg
+      width: 1200
+      height: 675
+      alt: A saved Magic Ink article card in the Gloss launch demonstration.
+      caption: Saved reading in Gloss, from the launch demonstration.
+      credit: Hassan
+      source_url: https://x.com/nutlope/status/2110385721391366263
+```
+
+The canonical schema is `/Users/skypawalker/Dev/pawhouse/hermes/ai-x-digest/contract.md`. The publisher uses the reader's AST validator for this metadata. The Python editorial checker alone does not validate visual data. Do not add another renderer or validator to Hermes.
 
 ## Persistent story identity
 
@@ -92,6 +144,11 @@ tags: [AI, digest, x]
 type: daily-digest
 source: bird-cli-json
 digest_format: editorial-v2
+story_metadata:
+  concrete-lead-event:
+    section: Engineering
+  supporting-event:
+    section: Tools
 ---
 
 ## Concrete lead headline naming the event

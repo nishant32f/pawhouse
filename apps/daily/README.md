@@ -42,13 +42,23 @@ Stable paths are `/editions/DATE/`, `/editions/DATE/read/`, and `/editions/DATE/
 
 The producer's `hermes/ai-x-digest/story_identity.py` owns revision comparison. The reader validates one accepted input and cannot prove that a previous ID was retained or that archived prose matches history. The publisher must validate those revisions before committing source.
 
+## Editorial data and design
+
+Hermes authors headlines, prose and optional `story_metadata` frontmatter keyed by persistent story ID. Each metadata entry requires plain-text `section` and may include `deck` and one sourced `image` or `bar` visual. The [producer contract](../../hermes/ai-x-digest/contract.md#editorial-metadata-and-design-separation) defines every field. Existing editions without metadata remain valid.
+
+`src/lib/editorial.ts` validates content data and exposes `StoryEditorial`. Each parsed story has `editorial: StoryEditorial | null`. It rejects unknown fields, unsafe image URLs and citations outside the same story. It contains no markup or CSS. Original `story.html` and `edition.html` remain the accepted Markdown renderings.
+
+The view-owned `src/components/visuals.ts` exports `renderVisual(StoryVisual)` and `renderEditionHtml(Edition)`. It escapes visual text and supplies figures to the reader and complete RSS. The app owns fonts, colors, columns, spacing, image treatment and chart drawing. Templates never enter the vault, and the renderer never rewrites accepted content.
+
+Hermes must inspect media, observe intrinsic image dimensions and compare captions and chart values with their cited sources. Charts keep explicit approximate values and bounds. Omit a visual when evidence is unavailable or it adds nothing. Validation proves structure and source membership, not factual accuracy.
+
 ## Focused evidence
 
 `tests/digests.test.ts` uses the shared fixtures from `hermes/ai-x-digest/contract.md`. It covers the accepted four-story edition, both legacy formats, briefs, archives, stable paths, deterministic output, source boundaries, raw HTML, dates, malformed IDs, and unsafe URLs. Run Python identity checks separately from the repository root when changing the shared identity contract.
 
 ## Reading and discovery
 
-The home page shows the latest actual edition and its date. Identified editions use a lead and supporting stories. Legacy editions retain their complete original prose.
+The home page shows the latest actual edition and its date. Identified editions show complete lead and supporting stories in the newspaper layout. Legacy editions retain their complete original prose.
 
 | Route                        | Content                                                                                            |
 | ---------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -64,7 +74,7 @@ The home page shows the latest actual edition and its date. Identified editions 
 
 Reading, sources, navigation, and search browsing work without JavaScript. System dark mode uses CSS. JavaScript adds theme, text size, print buttons, and search filtering. Browser print remains available without JavaScript. Printing a newspaper front includes the complete selected edition.
 
-The app self-hosts Libre Baskerville and DM Sans through pinned Fontsource packages. Their OFL licenses ship under `public/fonts/`. The reader styles and build remain separate from Quartz.
+The app self-hosts UnifrakturCook through the pinned Fontsource package for its nameplate. Georgia supplies reading text and Arial supplies controls and captions. The font's OFL license ships under `public/fonts/`. The reader styles and build remain separate from Quartz.
 
 RSS identifies one edition by its dated URL. A correction updates that same item. `pubDate` reflects midnight IST for the source date. Missing days create no routes or feed items. Canonical, RSS, and sitemap URLs use Astro's configured `site`. The default is the production reader origin. Astro's `--site` build option can set a local preview origin.
 
