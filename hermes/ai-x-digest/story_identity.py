@@ -46,7 +46,6 @@ class Edition:
 
 
 def _structure(lines: list[str]) -> list[str]:
-    """Ignore fenced examples and comments when identifying headings and IDs."""
     visible = []
     fence = None
     in_comment = False
