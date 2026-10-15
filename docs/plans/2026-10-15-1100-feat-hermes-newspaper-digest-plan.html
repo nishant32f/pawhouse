@@ -280,6 +280,38 @@
           actual domain and delivery checks.
         </p>
       </section>
+      <section id="activation-revision">
+        <h2>Authorized activation and Pluto deployment</h2>
+        <p>
+          The user asked to merge PR #11 and make the reader, RSS, and Hermes cutover live. PR #11
+          merged at <code>72cd914</code>. The latest accepted edition gained four persistent IDs at
+          <code>97889eb</code>, without changing its prose. The dual checker is installed. Domain
+          deployment and producer/cron cutover still require live verification.
+        </p>
+        <p>
+          The user then selected deployment from Pluto. This supersedes the earlier Actions
+          production job and the initial local-only execution boundary. Keep GitHub for source
+          history and CI. The Cloudflare credential remains only in the protected Pluto file. The
+          local release command builds, deploys, reads the Cloudflare version, and verifies the
+          reader under one shared lock. It cannot send or complete a Telegram delivery.
+        </p>
+        <p>
+          Complete the domain and feed checks before installing the new producer and cron prompt.
+          Preserve the existing job ID, schedule, model/provider inheritance, state, and delivery
+          channel. Verify the first authorized release and report the next unobserved scheduled run
+          separately. Create no monitor or duplicate message.
+        </p>
+        <p>
+          The Pluto release review completed as <code>20261015-202937-ee6ba1e2</code>. Its three
+          findings are fixed. The command now prepares deployment tools and configuration from the
+          accepted Git commit, validates the request before deployment, and returns a verified retry
+          to pending before its new attempt. Prior successful proof remains private. All 94 Python
+          tests pass, including an uncached real build and Wrangler dry-run with no canonical app
+          dependencies, plus failed-retry delivery rejection. The 17 reader and 69 Quartz tests
+          pass. Type checks and focused formatting pass; root formatting retains unrelated existing
+          warnings.
+        </p>
+      </section>
       <section id="product-contract">
         <h2>Product Contract</h2>
         <h3>Summary</h3>
@@ -731,14 +763,14 @@
             files before another publisher proceeds.
           </p>
           <p>
-            One content commit triggers two independent builds. The daily workflow builds from that
-            exact commit and deploys a complete static artifact. Record the commit, reader
-            deployment version, tested routes, main-site result, and delivery state privately.
-            Serialize daily production deployment in its own concurrency group, independent of
-            Quartz. Refuse normal activation of a commit older than the deployed revision. A newer
-            descendant may satisfy delivery verification only when the accepted edition and source
-            hashes still match. The route-retaining recovery procedure in KTD8 is the explicit
-            exception.
+            One accepted content commit supplies independent reader and Quartz builds. Pluto builds
+            and deploys the reader from that exact commit under the shared publication lock. GitHub
+            runs reader build/test checks only. Record the commit, reader deployment version, tested
+            routes, main-site result, and delivery state privately. Quartz deployment stays
+            independent. Refuse normal activation of a commit older than the deployed revision. A
+            newer descendant may satisfy delivery verification only when the accepted edition and
+            source hashes still match. The route-retaining recovery procedure in KTD8 is the
+            explicit exception.
           </p>
           <p>
             Reader failure leaves its previous artifact available. Retry from the accepted commit
@@ -758,8 +790,9 @@
           <p>
             Use a separate Cloudflare Workers Static Assets project for
             <code>apps/daily/dist/</code>. Deploy static files only, with no Worker script or
-            backend API. A dedicated GitHub Actions workflow installs/builds only the app and
-            publishes that artifact. Existing Quartz GitHub Pages stays independent.
+            backend API. The user selected direct deployment from Pluto after PR #11 merged
+            (session-settled: user-directed). GitHub Actions keeps build/test checks only and holds
+            no reader deployment credential. Existing Quartz GitHub Pages stays independent.
           </p>
           <p>
             Official Astro guidance recommends Workers for new Cloudflare projects. Workers supports
@@ -941,9 +974,9 @@
         </table>
         <h3>Constraints and dependencies</h3>
         <p>
-          Implementation and checks run on Pluto. The current request stops at a local preview and
-          this plan. The preview is an isolated design experiment, not the production app or an
-          approved appearance.
+          Implementation, checks, and the authorized production deployment run on Pluto. The user
+          approved merging PR #11, activating the separate domain and RSS, and switching Hermes
+          after the live verification gates pass. The earlier preview remains a design artifact.
         </p>
         <p>
           Pin compatible Astro, Node, and app dependencies during U2. Keep the app lockfile separate
@@ -1130,8 +1163,8 @@
               <p>
                 Implement KTD6/KTD7. Add the scoped digest mode and common lock without moving
                 ordinary note publishing to the app. Build the reader from the accepted commit and
-                deploy only its static artifact. Add app/content watch paths; keep Quartz workflow
-                unchanged before cutover.
+                deploy only its static artifact from Pluto. Keep app/content watch paths for CI and
+                the Quartz workflow unchanged before cutover.
               </p>
               <ol>
                 <li>
@@ -1276,9 +1309,9 @@
       <section id="verification-contract">
         <h2>Verification Contract</h2>
         <p>
-          Implementation builds and tests locally on Pluto. It makes no production deployment,
-          runtime update, cron edit, or DNS change. The isolated preview uses accepted public
-          content only. Activation must satisfy the live gates below.
+          The user authorized production activation after PR #11. Pluto builds and deploys the
+          reader; GitHub runs CI only. Runtime installation and the cron edit remain gated on
+          complete live reader and RSS verification. Activation must satisfy the live gates below.
         </p>
         <table>
           <thead>
@@ -1709,10 +1742,11 @@
           components/configuration, or existing Pages workflow changed.
         </p>
         <p>
-          The independent production workflow is disabled by default. Only public site files and a
-          sanitized verified redirect map may become Actions artifacts. Private drafts, source
-          captures, reviews, backup manifests, receipts, credentials, and raw Cloudflare responses
-          stay private.
+          PR #11 initially prepared a disabled Actions production job. The later user-directed
+          revision removes it. Pluto owns reader deployment, credentials, verified redirect maps,
+          and publication/delivery receipts. CI may upload only public built site files. Private
+          drafts, source captures, reviews, backups, credentials, and raw Cloudflare responses stay
+          private.
         </p>
         <h3>Final review</h3>
         <p>
@@ -1746,7 +1780,7 @@
             edition without changing its prose.
           </li>
           <li>
-            Configure the protected deployment environment and secrets. Deploy the exact artifact,
+            Configure the protected Pluto credential file. Deploy the exact artifact from Pluto,
             bind daily.nishantkhurana.me, and verify HTTPS and every reading/discovery route.
           </li>
           <li>

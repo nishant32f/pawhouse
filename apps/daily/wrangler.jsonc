@@ -1,6 +1,10 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "pawhouse-daily",
+  "account_id": "1688bfec49a43a217df10ed33b86e300",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{ "pattern": "daily.nishantkhurana.me", "custom_domain": true }],
   "compatibility_date": "2026-10-15",
   "assets": {
     "directory": "./dist",

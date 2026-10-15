@@ -31,3 +31,5 @@ From the repository root, run `python3 -B -m unittest discover -s hermes/ai-x-di
 The cron fixture imports Pluto's actual Hermes CLI parser and edit function. It substitutes an in-memory job store and API. It proves only prompt/skills change while ID, schedule, state, inherited model/provider, Telegram delivery, primary skill, and another job survive. It skips when that Pluto source checkout is unavailable. It never invokes live cron or Telegram.
 
 Follow [the staged rollout](rollout.md) for adoption, delivery accounting, cutover, and rollback. Keep the existing dated Quartz delivery URL until the authorized domain cutover. Returning the scheduled agent's text does not prove Telegram delivery.
+
+The user selected direct deployment from Pluto. After the accepted source push, use `scripts/release-daily-from-pluto.py` with the accepted commit and private request. GitHub Actions keeps build/test checks only. The deployment credential remains in the protected Pluto configuration file. Install the new producer and cron prompt only after live reader verification, as described in `rollout.md`.

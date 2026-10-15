@@ -1,6 +1,6 @@
 # Staged Hermes adoption
 
-These are prepared steps. This implementation does not execute them against the live runtime, vault, cron, DNS, Cloudflare, or Telegram.
+The user authorized production activation after merging PR #11. The reader deploys from Pluto; GitHub retains source history and CI only. Keep the existing producer and delivery until live reader verification passes.
 
 | Phase                               | Required evidence before continuing                                                                                                                                                                                             |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@ hermes cron edit 4eb8e806b8bc \
   --add-skill ai-x-digest --add-skill obsidian --add-skill bird --add-skill unslop
 ```
 
-The checked-in prompt retains `https://nishantkhurana.me/digests/x-ai-YYYY-MM-DD`. Change that URL only after the authorized domain and route verification. Do not replace the job, set its model/provider, alter its schedule or state, change delivery settings, or touch other jobs. Compare the complete before/after job records. Job `4eb8e806b8bc` stays at 08:00 IST with inherited null model/provider and Telegram delivery.
+The checked-in prompt selects `https://daily.nishantkhurana.me/editions/YYYY-MM-DD/`. Install it only after authorized domain and route verification. Do not replace the job, set its model/provider, alter its schedule or state, change delivery settings, or touch other jobs. Compare the complete before/after job records. Job `4eb8e806b8bc` stays at 08:00 IST with inherited null model/provider and Telegram delivery.
 
 ## Editorial and publication proof
 
@@ -31,7 +31,7 @@ The checked-in prompt retains `https://nishantkhurana.me/digests/x-ai-YYYY-MM-DD
 3. Write `review.md` with concrete before/after edits, factual corrections, inspected sources, and remaining uncertainty. Compare the edited facts with the draft and source text. Preserve attribution and exact quote meaning.
 4. Accept exact candidate bytes and hashes privately. Keep the accepted IDs and request unchanged on publication retries.
 5. Stage only the edition, affected indexes, and immediate previous daily note privately. The previous note may change only its Next link. Let the scoped publisher validate and promote them under its lock.
-6. Check actual reader and Quartz text. Keep independent main-site and reader results in private receipts. One RSS item represents each actual date, including corrections.
+6. Run `python3 scripts/release-daily-from-pluto.py --commit ACCEPTED_COMMIT --request REQUEST` on Pluto. Its Cloudflare credential stays in the private local file. Check actual reader and Quartz text. Keep independent main-site and reader results in private receipts. One RSS item represents each actual date, including corrections.
 
 The deterministic checker proves structure. It cannot certify factual accuracy or establish that an agent performed an unslop rewrite. The separate saved draft, edited copy, source comparison, and review are the editorial evidence.
 
