@@ -29,23 +29,37 @@ class MainContent(HTMLParser):
         self.hidden = 0
         self.text = []
         self.links = []
+        self.visuals = []
+        self.figure_depth = 0
 
     def handle_starttag(self, tag, attrs):
         if tag == 'main':
             self.depth += 1
         if self.depth:
+            if tag == 'figure' and (self.figure_depth or any(name == 'data-story-visual' for name, _ in attrs)):
+                if not self.figure_depth:
+                    self.visuals.append([])
+                self.figure_depth += 1
+            if self.figure_depth:
+                self.visuals[-1].append(('start', tag, sorted(attrs)))
             if tag in ('script', 'style'):
                 self.hidden += 1
             if tag == 'a':
                 self.links.extend(value for name, value in attrs if name == 'href')
 
     def handle_endtag(self, tag):
+        if self.figure_depth:
+            self.visuals[-1].append(('end', tag))
+            if tag == 'figure':
+                self.figure_depth -= 1
         if self.depth and tag in ('script', 'style'):
             self.hidden -= 1
         if tag == 'main':
             self.depth -= 1
 
     def handle_data(self, text):
+        if self.figure_depth and text.strip():
+            self.visuals[-1].append(('text', ' '.join(text.split())))
         if self.depth and not self.hidden:
             self.text.append(text)
 
@@ -56,7 +70,7 @@ def content(html):
     text = ' '.join(' '.join(parsed.text).split())
     if not text:
         raise ValueError('rendered page has no main content')
-    return text, parsed.links
+    return text, parsed.links, parsed.visuals
 
 
 def fetch(origin, path):
@@ -156,7 +170,7 @@ def verify(publisher, artifact, origin, request=None, version=None):
         for route in [edition['path'], edition['readPath'], *edition['stories']]:
             served, _ = fetch(origin, route)
             if content(served) != content(route_file(artifact, route).read_text()):
-                raise ValueError(f'complete rendered prose or source links differ: {route}')
+                raise ValueError(f'rendered prose, source links or figures differ: {route}')
             tested.append(route)
         verified_dates.append(edition['date'])
     if not tested:

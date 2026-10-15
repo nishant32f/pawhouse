@@ -103,6 +103,48 @@ class ReleaseContractTest(unittest.TestCase):
         self.assertEqual(set(json.loads((self.home / 'state/verified-redirects.json').read_text())['redirects']),
                          {'/digests/x-ai-2026-10-16'})
 
+    def add_figures(self):
+        figures = ('<figure data-story-visual="image"><img src="https://media.example/original.jpg" '
+                   'width="1200" height="675" alt="The launch screen">'
+                   '<figcaption>A source image. Credit: Author</figcaption></figure>'
+                   '<figure data-story-visual="bar"><h3>Reported daily merges</h3>'
+                   '<div class="bar" style="height:8.333%" data-value="2500">~2,500 May</div>'
+                   '<div class="bar" style="height:100%" data-value="30000">&gt;30,000 September</div>'
+                   '<figcaption>Reported by the company.</figcaption></figure>')
+        routes = ['index.html', 'editions/2026-10-16/index.html',
+                  'editions/2026-10-16/read/index.html',
+                  'editions/2026-10-16/stories/stable-id/index.html']
+        for folder in (self.artifact, self.live):
+            for route in routes:
+                page = folder / route
+                page.write_text(page.read_text().replace('</article>', figures + '</article>'))
+
+    def test_matching_figures_verify_with_full_prose(self):
+        self.add_figures()
+        request, receipt = self.pending_request()
+        result = self.cli('verify', '--artifact', str(self.artifact), '--origin', self.origin,
+                          '--request', str(request))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(receipt.read_text())['phase'], 'readerverified')
+
+    def test_changed_story_image_url_cannot_verify_from_matching_text(self):
+        self.add_figures()
+        page = self.live / 'editions/2026-10-16/stories/stable-id/index.html'
+        page.write_text(page.read_text().replace('media.example/original.jpg', 'media.example/unrelated.jpg'))
+        self.assert_rejected_without_state_writes()
+
+    def test_changed_chart_drawing_cannot_verify_from_matching_labels(self):
+        self.add_figures()
+        page = self.live / 'editions/2026-10-16/read/index.html'
+        page.write_text(page.read_text().replace('height:8.333%', 'height:83.333%'))
+        self.assert_rejected_without_state_writes()
+
+    def test_changed_front_image_alt_cannot_verify_from_matching_body(self):
+        self.add_figures()
+        page = self.live / 'index.html'
+        page.write_text(page.read_text().replace('alt="The launch screen"', 'alt="An unrelated screen"'))
+        self.assert_rejected_without_state_writes()
+
     def change_rss(self, field, value, attribute=None):
         rss = ET.parse(self.live / 'rss.xml')
         node = rss.getroot().find('./channel/item/' + field)
