@@ -12,3 +12,6 @@ replit.nix
 
 apps/daily/dist/
 apps/daily/.astro/
+
+__pycache__/
+apps/daily/.wrangler/
