@@ -13,6 +13,51 @@ One public Markdown edition remains the authored source. The reader derives its 
 
 A legacy edition remains a whole edition in the reader. Explicit adoption of the latest accepted edition changes only its version and adds reviewed ID comments. Preserve its original source privately. The four-story adoption fixture proves this change without changing the public source file.
 
+## Editorial metadata and design separation
+
+The optional `story_metadata` frontmatter map contains content, keyed by an existing story ID. It works only with `editorial-v2`. Existing editions without it keep their original prose and routes.
+
+Each entry requires a plain-text `section`. It may include a plain-text `deck` and one `visual`. These are editorial facts and descriptions. Fonts, colors, columns, spacing, chart drawing, image treatment and templates belong to the app. The metadata rejects unknown fields, including layout or style instructions. Hermes emits no HTML, SVG, CSS or JavaScript.
+
+```yaml
+story_metadata:
+  anthropic-monorepo:
+    section: Engineering
+    deck: Anthropic reports increased daily merges.
+    visual:
+      kind: bar
+      title: Reported code merges per day
+      unit: merges per day
+      caption: Two figures reported by Anthropic; September exceeds 30,000.
+      source_url: https://x.com/AnthropicAI/status/2110047081414987957
+      points:
+        - label: May
+          value: 2500
+          qualifier: approximate
+        - label: September
+          value: 30000
+          qualifier: greater-than
+  gloss-x-import:
+    section: Reading
+    visual:
+      kind: image
+      src: https://pbs.twimg.com/amplify_video_thumb/2110385606014480384/img/Izsh3-4wJEFdJjBI.jpg
+      width: 1200
+      height: 675
+      alt: A saved Magic Ink article card in the Gloss launch demonstration.
+      caption: Saved reading in Gloss, from the launch demonstration.
+      credit: Hassan
+      source_url: https://x.com/nutlope/status/2110385721391366263
+```
+
+Both visual variants require a nonempty caption and a `source_url` that matches an actual adjacent source in that same story. An image requires an HTTPS URL without credentials or control characters, positive integer intrinsic width and height, nonempty alt text and credit. Native images do not cause server-side media downloads. An unavailable image leaves the article, alt text, caption and source readable.
+
+A bar chart requires a title, unit and two to four comparable points. Each point requires a label, finite nonnegative numeric value and explicit `exact`, `approximate`, `greater-than` or `at-least` qualifier. At least one value must be positive. Do not infer missing intermediate figures, mix measurement units, or convert an approximate value or bound into an exact measurement.
+
+The examples contain actual 15 October sources. New editions must use their own inspected source media and data, never copy the sample URLs or values as filler. Omit a visual when useful evidence is unavailable. Keep provenance and the source-to-caption/data comparison in the private review. The unslop edit covers decks, labels and captions too.
+
+`src/lib/editorial.ts` validates this data at the reader AST boundary used by publication. Parsed story records expose `editorial: StoryEditorial | null`. The module owns no markup or CSS. Existing `story.html` and `edition.html` remain the accepted Markdown renderings. The view-owned `src/components/visuals.ts` renders escaped figures for the reader and full-text RSS. A design change reuses identical accepted Markdown; a content change reuses the same renderer. No renderer writes back into the vault.
+
 ## Active stories
 
 A full story uses an H2 heading. A brief uses an H3 heading inside the exact reserved H2 section `In brief`.
