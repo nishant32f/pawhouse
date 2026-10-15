@@ -95,7 +95,6 @@ class Publisher:
         journal = json.loads(self.journal.read_text())
         head = self.git('rev-parse', 'HEAD')
         paths = ['content/' + path for path in journal['files']]
-        # Check every target before restoring any file. A manual edit must survive recovery.
         for item in journal['targets']:
             target = Path(item['target']).resolve()
             relative = target.relative_to(self.vault if self.vault in target.parents else self.content).as_posix()
@@ -200,7 +199,6 @@ class Publisher:
             validate_revision(previous.read_text(), candidate)
         else:
             parse_edition(candidate)
-        # Editorial and AST safety checks run on private input before any public write.
         with tempfile.TemporaryDirectory(prefix='pawhouse-validate-', dir=self.state) as temporary:
             private_vault = Path(temporary)
             staged_path = private_vault / 'public' / edition
@@ -209,7 +207,6 @@ class Publisher:
             checker = ROOT / 'hermes/ai-x-digest/runtime/skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py'
             run([sys.executable, checker, private_vault])
             run([MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', 'scripts/validate-edition.ts', staged_path], ROOT / 'apps/daily')
-        # The previous daily file may change only its Next link, never its prose.
         for relative, data in accepted.items():
             if re.fullmatch(r'digests/x-ai-\d{4}-\d{2}-\d{2}\.md', relative) and relative != edition:
                 old = (self.content / relative).read_text()
@@ -269,7 +266,6 @@ class Publisher:
         contained = False
         if remote:
             remote_head = remote[0]
-            # Fetch into FETCH_HEAD only. Do not move the canonical branch or Git index.
             self.git('fetch', '--quiet', 'origin', 'main')
             contained = subprocess.run(['git', '-C', str(self.repo), 'merge-base', '--is-ancestor',
                                         receipt['commit'], remote_head], capture_output=True).returncode == 0

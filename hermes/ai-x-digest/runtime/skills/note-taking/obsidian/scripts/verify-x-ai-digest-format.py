@@ -10,7 +10,6 @@ import re
 import sys
 from pathlib import Path
 
-# The installer places the canonical helper beside this checker.
 identity_directory = Path(__file__).resolve().parent
 if not (identity_directory / 'story_identity.py').exists():
     identity_directory = Path(__file__).resolve().parents[5]

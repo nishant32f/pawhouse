@@ -78,7 +78,6 @@ jobs:
 
   production:
     needs: build
-    # Activation requires a later deliberate repository setting and environment approval.
     if: github.ref == 'refs/heads/main' && vars.DAILY_PRODUCTION_ENABLED == 'true'
     environment: daily-production
     concurrency:

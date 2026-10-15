@@ -86,7 +86,6 @@ def guard(publisher, candidate, origin, bootstrap=False):
     candidate = publisher.git('rev-parse', '--verify', candidate + '^{commit}')
     live = manifest_at(origin, bootstrap)
     if live is not None:
-        # An unknown live SHA, unavailable origin, or unrelated history fails closed.
         publisher.git('merge-base', '--is-ancestor', live['sourceRevision'], candidate)
     return {'candidate': candidate, 'live_revision': live['sourceRevision'] if live else None}
 
@@ -179,7 +178,6 @@ def verify(publisher, artifact, origin, request=None, version=None):
     tested.append(missing)
     result = {'origin': origin.rstrip('/'), 'sourceRevision': live['sourceRevision'], 'version': version,
               'tested_routes': tested, 'dates': verified_dates}
-    # Only a complete successful probe can extend the dates available to an activation consumer.
     mapping_path = publisher.state / 'verified-redirects.json'
     mapping = json.loads(mapping_path.read_text()) if mapping_path.exists() else {'redirects': {}}
     for edition in editions:
