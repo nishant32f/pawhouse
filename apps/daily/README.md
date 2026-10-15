@@ -98,8 +98,7 @@ Run these commands from the repository root. Commands that publish source commit
 
 ```sh
 ./scripts/publish-from-vault.sh --digest /private/staging/request.json
-python3 scripts/daily-release.py build --commit ACCEPTED_COMMIT
-python3 scripts/daily-release.py verify --artifact /private/state/artifacts/ACCEPTED_COMMIT --origin https://READER_ORIGIN --request /private/staging/request.json --version CLOUDFLARE_VERSION
+python3 scripts/release-daily-from-pluto.py --commit ACCEPTED_COMMIT --request /private/staging/request.json
 ```
 
 The first command returns the private receipt as JSON. Repeating the same request returns its accepted commit and retries its push. It does not generate prose or create another content commit. A remote descendant already containing that commit also satisfies the push. The pinned reader build uses a separate private checkout and installs the app lockfile. A failed build never replaces an earlier complete artifact.
@@ -120,14 +119,22 @@ Main-site status is independent. Record it with `publication.py main-result --re
 
 Before sending the dated message, call `publication.py delivery-begin --request REQUEST`. After success, call `publication.py delivery-complete --request REQUEST --reference DELIVERY_ID`. An ambiguous result requires `delivery-resolve --request REQUEST --outcome delivered|not-delivered --reference OPERATOR_EVIDENCE`. The receipt does not promise exactly-once delivery. Before cutover, keep delivering the existing Quartz dated URL.
 
-## Prepared deployment and cutover
+## Deployment from Pluto
 
-`deploy-daily.yml` independently checks, tests, builds, and uploads the complete reader artifact from its exact checkout SHA. Quartz's workflow remains separate. Production defaults to disabled. Later activation requires verified Cloudflare authority, `DAILY_CLOUDFLARE_ACCOUNT_ID` and `DAILY_CLOUDFLARE_API_TOKEN` secrets, a `DAILY_ORIGIN` variable, the protected `daily-production` environment, and deliberate `DAILY_PRODUCTION_ENABLED=true`. No account, domain, or redirect binding is configured here.
+Pluto owns production deployment. `deploy-daily.yml` runs build and test checks only. It holds no Cloudflare token and cannot publish the reader. Quartz keeps its separate GitHub Pages deployment.
 
-The production job serializes deployments without cancellation. Before invoking Wrangler, `daily-release.py deploy` reads the live source revision and rejects an older or unrelated candidate. It also rejects removed published routes or missing candidate files. This protects historical URLs during ordinary note sync and a later code rollback. Explicit bootstrap accepts only an absent initial manifest/deployment. Authentication, network, and malformed responses remain failures.
+Store the personal Cloudflare deployment credential only at `~/.config/pawhouse-daily/cloudflare.json` on Pluto, with mode `0600` and its parent directory private. The file contains `account_id` and `api_token`. Account `1688bfec49a43a217df10ed33b86e300` is NK2984. Initial Worker creation requires Workers Admin. After bootstrap, reduce the token to Workers Editor on `pawhouse-daily`. Keep Workers Routes Write, Zone Read, and DNS Read scoped to `nishantkhurana.me`, with Account Settings Read for Wrangler. Never add this file to a repository, public vault, or GitHub Actions secret.
 
-After deployment, the workflow reads the Cloudflare version and verifies actual pages against the pinned artifact. `deployment.json` contains public Git identity, Markdown hashes, and native routes only. It cannot substitute for those page probes. A failed deployment or probe preserves the previous private release/map and blocks the accepted publication's delivery.
+Run the release from the clean canonical Pluto checkout after the accepted content commit is pushed:
 
-Successful full-artifact verification writes `verified-redirects.json` under private state with one exact old dated path per verified destination. The first release checks every published date. Later accepted-day verification extends this map. A failed release adds nothing. After success, the public workflow uploads only the sanitized map as `daily-verified-redirects-SHA` for the later activation consumer. Pluto keeps authoritative publication and delivery receipts privately. Cloudflare responses, failure details, and private receipts are never uploaded. There is no Cloudflare redirect write in these helpers.
+```sh
+python3 scripts/release-daily-from-pluto.py --commit ACCEPTED_COMMIT --request /private/staging/request.json
+```
 
-At authorized cutover, bind the verified reader origin, connect that artifact consumer to the verified account's redirect capability, and apply only those exact mappings. Preserve old pages if that capability is unavailable. To reverse cutover, disable the external redirect consumer/rules and restore old-site delivery URLs. Keep the accepted Markdown and retained routes. Domain/redirect activation and cron changes require their later explicit request.
+The command holds the shared publication lock, builds that exact commit in a private checkout, prepares Wrangler and its configuration from that commit in a private checkout, deploys the complete cached artifact, reads the actual Cloudflare version, and verifies live pages. It rejects an older or unrelated revision, missing retained routes, incomplete content, and failed RSS/discovery checks. A release validates the accepted request before deployment. A retry returns its receipt to pending while retaining prior reader details. A failed release preserves the prior verified map and blocks delivery until the new attempt passes. Reuse the same accepted request on retry. Code-only releases may omit `--request`.
+
+The initial authorized bootstrap is an operator action. First prove account and zone ownership, absence of the Worker deployment, and absence of conflicting hostname records. Deploy the reviewed complete artifact with the checked-in custom-domain configuration, then run full-artifact live verification before installing the new Hermes producer. The normal release command requires an existing deployment and has no bootstrap override.
+
+`deployment.json` contains public Git identity, Markdown hashes, and routes only. It cannot substitute for complete rendered page checks. Private release state remains under `~/.local/state/pawhouse-publication` on Pluto. `verified-redirects.json` records only old dated paths whose reader destinations passed. Private source captures, drafts, reviews, credentials, raw Cloudflare responses, backups, and publication/delivery receipts are never uploaded by CI.
+
+Use only verified mappings if the account supports external redirects. Preserve old pages when redirects are unavailable. Update main-site navigation and feed discovery only after their destinations work. To reverse cutover, restore old delivery URLs and reverse external redirect rules separately. Retain accepted Markdown and published article routes.

@@ -96,11 +96,7 @@ def route_file(artifact, route):
     return artifact / route.lstrip('/') / 'index.html' if route.endswith('/') else artifact / route.lstrip('/')
 
 
-def verify(publisher, artifact, origin, request=None, version=None):
-    artifact = Path(artifact).resolve()
-    expected = json.loads((artifact / 'deployment.json').read_text())
-    live = manifest_at(origin)
-    publisher.git('merge-base', '--is-ancestor', expected['sourceRevision'], live['sourceRevision'])
+def accepted_editions(publisher, expected, request=None):
     editions = expected['editions']
     receipt_path = None
     receipt = None
@@ -113,6 +109,15 @@ def verify(publisher, artifact, origin, request=None, version=None):
         editions = [edition for edition in editions if edition['date'] == accepted['date']]
         if len(editions) != 1 or editions[0]['sourceSha256'] != receipt['files'][f'digests/x-ai-{accepted["date"]}.md']:
             raise ValueError('reader artifact does not contain the accepted date and source hash')
+    return editions, receipt_path, receipt
+
+
+def verify(publisher, artifact, origin, request=None, version=None):
+    artifact = Path(artifact).resolve()
+    expected = json.loads((artifact / 'deployment.json').read_text())
+    live = manifest_at(origin)
+    publisher.git('merge-base', '--is-ancestor', expected['sourceRevision'], live['sourceRevision'])
+    editions, receipt_path, receipt = accepted_editions(publisher, expected, request)
     home, _ = fetch(origin, '/')
     if live['sourceRevision'] == expected['sourceRevision']:
         expected_home = (artifact / 'index.html').read_text()

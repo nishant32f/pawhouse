@@ -7,13 +7,14 @@ related_skills: [unslop, obsidian, bird, obsidian-knowledge-pipeline]
 
 # X-AI digest
 
-Use this skill to generate or repair the daily AI digest. New editions use `digest_format: editorial-v2` after the staged rollout authorizes the producer. The same daily Markdown supplies Quartz and the independent reader. Keep the existing dated Quartz delivery URL until the authorized domain cutover.
+Use this skill to generate or repair the daily AI digest. New editions use `digest_format: editorial-v2` after the staged rollout authorizes the producer. The same daily Markdown supplies Quartz and the independent reader. The installed producer uses the verified daily reader after the authorized domain cutover.
 
 ## Paths and dates
 
 - Vault: `/Users/skypawalker/Dropbox/Obsidian`.
 - Published note: `public/digests/x-ai-YYYY-MM-DD.md` relative to the vault.
-- Website: `https://nishantkhurana.me/digests/x-ai-YYYY-MM-DD`.
+- Reader: `https://daily.nishantkhurana.me/editions/YYYY-MM-DD/`.
+- Knowledge copy: `https://nishantkhurana.me/digests/x-ai-YYYY-MM-DD`.
 - Monthly index: `public/digests/x-ai-YYYY-MM.md`.
 - Year index: `public/digests/x-ai-YYYY.md`.
 - Private source data, drafts, reviews, and backups: `/Users/skypawalker/.hermes/state/ai-x-digest/<date-and-run>/`. These never belong in the vault's public folder or the Git repository.
@@ -137,7 +138,7 @@ The first H2 is the lead. Further story H2s are supporting stories. Omit `In bri
 3. Run the installed verifier against `<run>/staged`. Resolve errors and review length warnings without padding. Compare any existing identified edition with the candidate through `story_identity.validate_revision`. Inspect the before/after/source comparison in `review.md` before accepting the candidate.
 4. From `/Users/skypawalker/Dev/pawhouse`, read `apps/daily/README.md` for the accepted publication request. Create a private JSON request outside both the repository and public vault. Set `date`, full `expected_head`, and `files` entries containing absolute private `staged`, current `before_sha256` or null for a new file, and exact `staged_sha256`. Include only the edition, affected indexes, and previous daily navigation. Hash exact bytes, not rendered text.
 5. Run `./scripts/publish-from-vault.sh --digest <run>/request.json`. Humans and Hermes use this same publisher. It checks the base, hashes, editorial format, stable IDs, and reader AST privately under the common lock before promoting any public files. It then commits and pushes the declared paths. Do not use broad `npm run publish` for a digest or bypass the publisher after a rejection.
-6. Keep the returned receipt private. A push leaves the reader pending. Verify the pinned reader artifact and actual reader pages through `scripts/daily-release.py` as documented in the app README. Check the existing Pages run with `--repo nishant32f/pawhouse` and inspect the dated Quartz prose too. Record that independent result with `scripts/publication.py main-result --request <run>/request.json --status verified|failed|pending --reference EVIDENCE`. No command status or HTTP 200 alone proves publication.
+6. Keep the returned receipt private. A push leaves the reader pending. Run `python3 scripts/release-daily-from-pluto.py --commit ACCEPTED_COMMIT --request <run>/request.json` on Pluto. Use the accepted commit from the publisher receipt. This command builds, deploys, and verifies the pinned reader under the shared lock. Its private Cloudflare credential stays on Pluto; never print it or copy it to GitHub. Follow `apps/daily/README.md` for setup. Check the existing Pages run with `--repo nishant32f/pawhouse` and inspect the dated Quartz prose too. Record that independent result with `scripts/publication.py main-result --request <run>/request.json --status verified|failed|pending --reference EVIDENCE`. No command status or HTTP 200 alone proves publication.
 7. Preserve the raw sources, first draft, edited candidate, review, request, and receipts privately. The public vault remains the single authored source, one Markdown file per date. Do not create public story files, source snapshots, review notes, or another content formatter. Keep Graphify state private and bookmarks only in Karakeep.
 
 A successful collection with no publishable story stops before staging or publishing. Write only the private no-news record. It creates no public file, route, feed item, or delivery URL. A collection failure remains an error.
