@@ -1,0 +1,1759 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hermes daily newspaper reader - Plan</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: light-dark(#fcfcfa, #191c20);
+        --fg: light-dark(#17202a, #edf0ed);
+        --dim: light-dark(#53616b, #b5bec6);
+        --rule: light-dark(#cbd0d0, #444c52);
+        --wash: light-dark(#eff3f5, #262e36);
+        --link: light-dark(#234f78, #adcee8);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          16px/1.6 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 960px;
+        margin: auto;
+        padding: 38px 28px 65px;
+      }
+      h1,
+      h2 {
+        font-family: Georgia, serif;
+        letter-spacing: -0.025em;
+        line-height: 1.2;
+      }
+      h1 {
+        font-size: 38px;
+        max-width: 24ch;
+        margin: 16px 0;
+      }
+      h2 {
+        font-size: 28px;
+        margin: 38px 0 18px;
+        padding-top: 18px;
+        border-top: 1px solid var(--rule);
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 1.3;
+        margin: 25px 0 12px;
+      }
+      h4 {
+        font-size: 16px;
+        margin: 20px 0 8px;
+      }
+      p,
+      li {
+        max-width: 76ch;
+      }
+      p {
+        margin: 10px 0;
+      }
+      a {
+        color: var(--link);
+        text-underline-offset: 3px;
+      }
+      code {
+        font:
+          13px/1.5 ui-monospace,
+          monospace;
+        overflow-wrap: anywhere;
+      }
+      nav {
+        display: flex;
+        gap: 12px 20px;
+        flex-wrap: wrap;
+        border-block: 1px solid var(--rule);
+        padding: 15px 0;
+        font-size: 14px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 14px 0;
+        font-size: 14px;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid var(--rule);
+        padding: 10px 12px 10px 0;
+      }
+      th {
+        font-weight: 600;
+      }
+      td:first-child {
+        min-width: 48px;
+      }
+      .meta {
+        color: var(--dim);
+        font-size: 13px;
+      }
+      .note {
+        background: var(--wash);
+        padding: 18px 22px;
+        margin: 20px 0;
+      }
+      .unit {
+        padding: 0 0 22px;
+        border-bottom: 1px solid var(--rule);
+      }
+      dl {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        gap: 8px 14px;
+        font-size: 14px;
+      }
+      dt {
+        font-weight: 600;
+      }
+      dd {
+        margin: 0;
+        overflow-wrap: anywhere;
+      }
+      details {
+        margin: 14px 0;
+      }
+      summary {
+        font-weight: 600;
+        color: var(--link);
+        cursor: pointer;
+      }
+      details > div {
+        padding: 6px 0 2px;
+      }
+      .diagram {
+        overflow-x: auto;
+      }
+      svg {
+        display: block;
+        min-width: 720px;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        color: var(--fg);
+      }
+      svg text {
+        fill: currentColor;
+        font-family: system-ui, sans-serif;
+        font-size: 14px;
+      }
+      svg rect {
+        fill: var(--wash);
+        stroke: var(--rule);
+      }
+      svg path {
+        stroke: var(--dim);
+        fill: none;
+      }
+      footer {
+        margin-top: 40px;
+        padding-top: 18px;
+        border-top: 1px solid var(--rule);
+        font-size: 13px;
+        color: var(--dim);
+      }
+      .swatch {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        vertical-align: middle;
+        margin-right: 7px;
+        border: 1px solid var(--rule);
+      }
+      @media (max-width: 600px) {
+        main {
+          padding: 22px 17px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 25px;
+        }
+        table {
+          font-size: 13px;
+        }
+        dl {
+          grid-template-columns: 1fr;
+          gap: 3px;
+        }
+        dd {
+          margin-bottom: 10px;
+        }
+      }
+      @media print {
+        details > div {
+          display: block !important;
+        }
+        main {
+          max-width: none;
+          padding: 0;
+        }
+        nav {
+          display: none;
+        }
+        body {
+          font-size: 11pt;
+        }
+        h2 {
+          break-after: avoid;
+        }
+        .unit {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="meta">
+          Pluto · Pawhouse and Hermes · Independent reader at daily.nishantkhurana.me
+        </p>
+        <h1>Hermes daily newspaper reader - Plan</h1>
+        <dl>
+          <dt>Type</dt>
+          <dd>feat</dd>
+          <dt>Date</dt>
+          <dd>2026-10-15</dd>
+          <dt>Artifact contract</dt>
+          <dd>ce-unified-plan/v1</dd>
+          <dt>Product contract source</dt>
+          <dd>ce-plan-bootstrap</dd>
+          <dt>Execution</dt>
+          <dd>code</dd>
+          <dt>Origin</dt>
+          <dd>
+            The digest discussion, selected Newspaper direction, and explicit separate-app decision.
+          </dd>
+        </dl>
+      </header>
+      <nav aria-label="Plan sections">
+        <a href="#goal-capsule">Goal</a><a href="#product-contract">Product</a
+        ><a href="#planning-contract">Technical decisions</a
+        ><a href="#implementation-units">Work units</a
+        ><a href="#verification-contract">Verification</a><a href="#definition-of-done">Done</a
+        ><a href="#appendix">Evidence</a><a href="#content-release">Content release</a
+        ><a href="#implementation-record">Implementation</a>
+      </nav>
+      <section id="goal-capsule">
+        <h2>Goal Capsule</h2>
+        <p>
+          <strong>Objective.</strong> Readers can scan a daily AI newspaper, open individual
+          stories, and read sourced coverage comfortably on phones and desktop at
+          daily.nishantkhurana.me.
+        </p>
+        <p>
+          <strong>Means.</strong> An independent static app reads the same authored Markdown that
+          Hermes publishes. The main website continues publishing wisdom, summaries, and other vault
+          notes.
+        </p>
+        <p>
+          <strong>Authority.</strong> The separate app and domain are settled. The newspaper
+          direction guides the preview; its exact appearance remains subject to user review.
+        </p>
+        <p>
+          <strong>Current boundary.</strong> The user invoked ce-work after approving the separate
+          reader and RSS. This authorizes implementation, local verification, review, and a pull
+          request. DNS, production deployment, redirects, runtime installation, and cron activation
+          require a later request.
+        </p>
+        <p>
+          <strong>Finish boundary.</strong> Deliver the implemented U1–U5, checked local reader and
+          RSS, and reviewed pull request. U6 live activation remains separate and requires its
+          actual domain and delivery checks.
+        </p>
+      </section>
+      <section id="product-contract">
+        <h2>Product Contract</h2>
+        <h3>Summary</h3>
+        <p>
+          Publish daily editions in a dedicated newspaper reader. Keep the existing vault as the
+          authoring source and the main website as the knowledge library.
+        </p>
+        <h3>Problem Frame</h3>
+        <p>
+          The content release removed repetitive themes and forced takeaways. Quartz still surrounds
+          the digest with note navigation and graph furniture. Mixing two reading styles within that
+          site would make the destination unclear.
+        </p>
+        <h3>Key decisions</h3>
+        <p>
+          <strong>Newspaper reader.</strong>
+          <span
+            >(session-settled: user-directed; chosen over briefing, feed, and magazine after seeing
+            examples.)</span
+          >
+          Governs <a href="#r1">R1</a>, <a href="#r2">R2</a>, <a href="#r3">R3</a>.
+        </p>
+        <p>
+          <strong>Separate app and subdomain.</strong>
+          <span
+            >(session-settled: user-approved; daily.nishantkhurana.me chosen over digest-only Quartz
+            styling to give the reader a consistent identity.)</span
+          >
+          Governs <a href="#r9">R9</a>, <a href="#r12">R12</a>.
+        </p>
+        <h3 id="product-requirements">Requirements</h3>
+        <h4>Reading and presentation</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Required behavior</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="r1">
+              <td>R1.</td>
+              <td>
+                The home page shows the latest published edition, with one lead and ordered
+                supporting stories. Mobile stacks stories; desktop gives the lead more space.
+              </td>
+            </tr>
+            <tr id="r2">
+              <td>R2.</td>
+              <td>
+                The reader uses a consistent paper background, serif headlines, thin rules, and
+                restrained blue links. Support a readable dark theme and controlled article width.
+              </td>
+            </tr>
+            <tr id="r3">
+              <td>R3.</td>
+              <td>
+                Each identified story has a stable shareable URL, adjacent sources, and
+                previous/next/back links. Offer an archive and a full-edition view from the same
+                content.
+              </td>
+            </tr>
+            <tr id="r4">
+              <td>R4.</td>
+              <td>
+                Edition, story, archive, sources, and navigation work without JavaScript. Preserve
+                keyboard focus, readable zoom, and print output.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Editorial quality</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Required behavior</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="r5">
+              <td>R5.</td>
+              <td>
+                Preserve the live editorial-v1 rules for concrete headlines, concise evidence,
+                attributed claims, and optional specific advice.
+              </td>
+            </tr>
+            <tr id="r6">
+              <td>R6.</td>
+              <td>
+                Keep the mandatory separate unslop edit and private source comparison. Preserve
+                uncertainty, numbers, dates, and source support during edits.
+              </td>
+            </tr>
+            <tr id="r7">
+              <td>R7.</td>
+              <td>
+                Publish fewer stories on quiet days without padding. Successful collection with no
+                publishable news creates no edition; collection failure remains an error.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Automation and compatibility</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Required behavior</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="r8">
+              <td>R8.</td>
+              <td>
+                Hermes and human operators use the same validation and publication commands.
+                Markdown remains the only authored edition content; derived app data needs no second
+                edit.
+              </td>
+            </tr>
+            <tr id="r9">
+              <td>R9.</td>
+              <td>
+                The reader has its own design, build, and deployment at daily.nishantkhurana.me. The
+                main website retains existing knowledge content and presentation.
+              </td>
+            </tr>
+            <tr id="r10">
+              <td>R10.</td>
+              <td>
+                Headline edits preserve published story URLs. Reruns do not duplicate entries;
+                failed publication can resume from accepted content without another generation pass.
+              </td>
+            </tr>
+            <tr id="r11">
+              <td>R11.</td>
+              <td>
+                Preserve the installed editorial workflow, cron identity, 08:00 IST schedule, model
+                settings, and delivery channel. Change future delivery URLs only after live reader
+                verification.
+              </td>
+            </tr>
+            <tr id="r12">
+              <td>R12.</td>
+              <td>
+                A failed reader build or deployment leaves its last complete edition available.
+                Redirect old digest URLs only to verified destinations, with a reversible cutover.
+              </td>
+            </tr>
+            <tr id="r13">
+              <td>R13.</td>
+              <td>
+                Legacy editions remain readable as originally written, without fabricated article
+                boundaries or sources. Provide a public full-text RSS feed at
+                <code>/rss.xml</code> with one item per edition. Keep reader search/sitemap and
+                existing vault graph meaning.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Acceptance examples</h3>
+        <ol>
+          <li id="ae1">
+            AE1. At 390px, the first screen shows the lead headline and useful summary. A normal
+            link opens the complete story. Covers R1–R4.
+          </li>
+          <li id="ae2">
+            AE2. Revising a headline or reordering stories leaves their URLs unchanged. An old
+            edition retains its original prose and citations. Covers R10, R13.
+          </li>
+          <li id="ae3">
+            AE3. Missing or duplicate stable IDs, unsafe URLs, and malformed current-format content
+            fail before promotion. Covers R8, R10.
+          </li>
+          <li id="ae4">
+            AE4. A failed deploy leaves the previous home and dated editions working. No message
+            announces an unavailable date. Covers R11, R12.
+          </li>
+          <li id="ae5">
+            AE5. With JavaScript disabled, readers can open editions, stories, full-edition pages,
+            and sources. Covers R3, R4.
+          </li>
+          <li id="ae6">
+            AE6. A no-news day leaves the latest edition on home with its actual date. The missing
+            dated route returns 404. Covers R1, R7.
+          </li>
+        </ol>
+        <h3>Scope boundaries</h3>
+        <p>
+          Build a static public reader, one Markdown adapter, safe publication integration, and a
+          later domain/redirect cutover. No database, CMS, login, backend API, new bookmark store,
+          or Quartz newspaper renderer.
+        </p>
+        <p>
+          <strong>Deferred.</strong> Historical content rewrites, personalized feeds, subscriptions,
+          highlighting, AI questions, offline installation, and Gloss integration.
+        </p>
+        <p>
+          Karakeep remains the sole bookmark store. Digests, requested summaries, and curated wisdom
+          remain in the vault. Citations do not create bookmark copies.
+        </p>
+      </section>
+      <section id="planning-contract">
+        <h2>Planning Contract</h2>
+        <h3>Evidence at planning</h3>
+        <p>
+          The content release is live on Pawhouse main at <code>54ee3e6</code>. The canonical
+          workflow package is <code>hermes/ai-x-digest/</code>. Its README describes the installed
+          editorial-v1 format and private unslop evidence.
+        </p>
+        <p>
+          At planning, the publisher synced the public vault into <code>content/</code>, built
+          Quartz, staged all changes, and pushed the current branch. The existing GitHub Pages
+          workflow builds Quartz from main. It cannot also own a second independent hostname as a
+          new project.
+        </p>
+        <h3>Key technical decisions</h3>
+        <article id="ktd1">
+          <h4>KTD1. Keep the reader in an independent app directory</h4>
+          <p>
+            Create <code>apps/daily/</code> in Pawhouse with its own package, lockfile, build,
+            styles, and deployment workflow. Keep <code>hermes/ai-x-digest/</code> as the canonical
+            producer package.
+          </p>
+          <p>
+            The reader uses Astro static output. It reads only committed digest Markdown from
+            <code>content/digests/</code> at build time. This instantiates R9's settled separate-app
+            decision. No Quartz layout/component changes implement the reader.
+          </p>
+        </article>
+        <article id="ktd2">
+          <h4>KTD2. Parse one authored Markdown edition</h4>
+          <p>
+            Continue authoring <code>digests/x-ai-YYYY-MM-DD.md</code> in the public vault and
+            syncing that file into <code>content/</code>. Do not create a second authored article
+            tree or require a JSON writer checkpoint.
+          </p>
+          <p>
+            For newly identified editions, add an explicit format version <code>editorial-v2</code>.
+            Each H2 story and H3 brief receives a hidden comment containing an immutable safe ASCII
+            ID. The marker belongs immediately after its heading. Metadata and Markdown prose are
+            the source; parsed records and HTML are generated output.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Record</th>
+                <th>Contract</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Edition</td>
+                <td>
+                  Date from the validated filename/frontmatter, title, format version, and ordered
+                  story blocks. Pin the daily date once in Asia/Kolkata.
+                </td>
+              </tr>
+              <tr>
+                <td>Story</td>
+                <td>
+                  Marker such as <code>&lt;!-- story-id: anthropic-monorepo --&gt;</code>, headline
+                  from the heading, opening paragraph as summary, remaining prose and adjacent
+                  sources as body. First full story is lead. IDs match
+                  <code>[a-z0-9]+(?:-[a-z0-9]+)*</code> and are unique within the edition.
+                </td>
+              </tr>
+              <tr>
+                <td>Exclusions</td>
+                <td>
+                  Navigation and Backlinks sections are vault furniture, not stories. The reserved
+                  In brief section contains H3 brief records.
+                </td>
+              </tr>
+              <tr>
+                <td>Source handling</td>
+                <td>
+                  Preserve actual adjacent source links and attribution. Escape raw HTML and reject
+                  unsafe link schemes. Interpret the one allowlisted ID comment as metadata, never
+                  executable HTML.
+                </td>
+              </tr>
+              <tr>
+                <td>Legacy</td>
+                <td>
+                  Unversioned and editorial-v1 editions render as whole editions with existing
+                  sources. They do not gain invented individual article routes. Initial production
+                  adoption adds reviewed IDs to the latest accepted edition and changes its format
+                  to editorial-v2 without rewriting its prose. Keep the original source privately.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Retain IDs when headlines change or stories move. The revision validator compares old
+            and new editions and requires an explicit correction when an existing ID disappears.
+            Never regenerate IDs from headlines or array positions.
+          </p>
+          <p>
+            For a removed published story, keep its original ID and prose in an archived block in
+            that same edition Markdown, with a correction note. Omit it from current cards and
+            previous/next navigation; retain its existing article URL. No secondary authoring store
+            is introduced.
+          </p>
+          <p>
+            The preview's four IDs are illustrative and do not modify public Markdown. U1/U5
+            implement the identity and verifier support. Actual production marker adoption remains
+            part of authorized U6 activation.
+          </p>
+        </article>
+        <article id="ktd3">
+          <h4>KTD3. Generate independent static routes</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Route</th>
+                <th>Behavior</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>/</code></td>
+                <td>
+                  Latest accepted edition in the deployed artifact, labelled with its actual date.
+                  Canonical points to its dated edition.
+                </td>
+              </tr>
+              <tr>
+                <td><code>/editions/YYYY-MM-DD/</code></td>
+                <td>Edition front page. Legacy editions show their original whole body.</td>
+              </tr>
+              <tr>
+                <td><code>/editions/YYYY-MM-DD/stories/ID/</code></td>
+                <td>
+                  Complete identified story, sources, edition link, and active previous/next story
+                  links.
+                </td>
+              </tr>
+              <tr>
+                <td><code>/editions/YYYY-MM-DD/read/</code></td>
+                <td>Full active edition in reading order. Legacy content is unchanged.</td>
+              </tr>
+              <tr>
+                <td><code>/rss.xml</code></td>
+                <td>
+                  Public RSS 2.0 feed, newest editions first, with full edition prose and source
+                  links. No login is required.
+                </td>
+              </tr>
+              <tr>
+                <td><code>/archive/</code></td>
+                <td>All actual editions, newest first. No synthetic no-news entries.</td>
+              </tr>
+              <tr>
+                <td><code>/search/</code></td>
+                <td>
+                  Discoverable reader search with a labelled query input, matching edition/story
+                  links, initial guidance, and no-match feedback. Client filtering is optional;
+                  without JavaScript, show browseable edition/story links.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Generate ordinary HTML links and a real 404. Every route works on direct entry and
+            reload. Theme/font preferences and search filtering use optional client JavaScript.
+            Without JavaScript, archive and search browse links remain available. There is no SPA
+            catch-all that turns missing editions into the latest edition.
+          </p>
+          <p>
+            Build the full edition and individual stories from the same parsed records. Validate
+            parent references, article membership, unique IDs, and source adjacency before emitting
+            the artifact. Covers R1, R3, R4, R10.
+          </p>
+        </article>
+        <article id="ktd4">
+          <h4>KTD4. Give the entire reader the newspaper design</h4>
+          <p>
+            Use the selected paper/serif direction across home, edition, story, archive, and error
+            pages. Start the preview with Libre Baskerville headlines and DM Sans text; retain
+            Georgia and system fallbacks. Self-host production font files after checking their
+            licenses.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Target</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Light</td>
+                <td>Paper #fcfcfa, ink #17202a, secondary #59636b, rule #cbd0d0, links #234f78.</td>
+              </tr>
+              <tr>
+                <td>Dark</td>
+                <td>Paper #191c20, ink #edf0ed, secondary #b0b9c1, rule #444c52, links #adcee8.</td>
+              </tr>
+              <tr>
+                <td>Reading</td>
+                <td>
+                  17 to 18px base text, about 65 characters per line, 1.6 to 1.7 line height,
+                  bounded article width.
+                </td>
+              </tr>
+              <tr>
+                <td>Responsive</td>
+                <td>
+                  One column on phones. A lead and supporting column on wide screens, within an
+                  edition width near 1120px.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Use visible focus and touch targets of at least 44px. Respect system dark mode without
+            JavaScript. Font controls preserve all prose. Print shows the full selected article or
+            edition and hides reader controls. Covers R1–R4. Exact visual acceptance awaits preview
+            review.
+          </p>
+        </article>
+        <article id="ktd5">
+          <h4>KTD5. Preserve the live editorial process</h4>
+          <p>
+            Extend the installed workflow to assign/preserve the KTD2 markers and validate them.
+            Replace its direct public-vault copy and index writes with U4's scoped publisher,
+            passing privately staged accepted content. After cutover, consume its reader
+            verification result and report the main-site result separately. Keep source collection,
+            first draft, unslop editing, private review, and collection-error/no-news distinctions
+            from the shipped package. Covers R5–R8, R11.
+          </p>
+          <p>
+            Successful no-news runs create no public files or dated links. A quiet edition with one
+            useful lead remains valid. A failed collection cannot be relabelled as no news.
+          </p>
+        </article>
+        <article id="ktd6">
+          <h4>KTD6. Publish one source revision and track each deployment</h4>
+          <p>
+            Add a narrow digest publication mode to the existing publisher. It acquires a shared
+            host lock, requires main and expected file hashes, and refuses unrelated source/vault
+            changes before sync. Stage only declared digest/index paths. Normal note publishing
+            keeps its scope and joins the same lock.
+          </p>
+          <p>
+            Stage and back up the accepted edition outside the public vault. Promote the one source
+            Markdown and affected indexes under the lock. Interrupted promotion restores touched
+            files before another publisher proceeds.
+          </p>
+          <p>
+            One content commit triggers two independent builds. The daily workflow builds from that
+            exact commit and deploys a complete static artifact. Record the commit, reader
+            deployment version, tested routes, main-site result, and delivery state privately.
+            Serialize daily production deployment in its own concurrency group, independent of
+            Quartz. Refuse normal activation of a commit older than the deployed revision. A newer
+            descendant may satisfy delivery verification only when the accepted edition and source
+            hashes still match. The route-retaining recovery procedure in KTD8 is the explicit
+            exception.
+          </p>
+          <p>
+            Reader failure leaves its previous artifact available. Retry from the accepted commit
+            without another editorial pass. After cutover, Hermes announces a dated reader URL only
+            after that date and sources are verified live. A main-site failure is reported
+            separately and does not falsely imply reader failure. Before cutover, preserve existing
+            delivery behavior.
+          </p>
+          <p>
+            Delivery remains distinct from publication. A recorded successful delivery suppresses
+            ordinary rerun messages; ambiguous delivery requires manual resolution. Do not promise
+            exactly-once delivery. Covers R8, R10–R12.
+          </p>
+        </article>
+        <article id="ktd7">
+          <h4>KTD7. Host the app separately and migrate discovery deliberately</h4>
+          <p>
+            Use a separate Cloudflare Workers Static Assets project for
+            <code>apps/daily/dist/</code>. Deploy static files only, with no Worker script or
+            backend API. A dedicated GitHub Actions workflow installs/builds only the app and
+            publishes that artifact. Existing Quartz GitHub Pages stays independent.
+          </p>
+          <p>
+            Official Astro guidance recommends Workers for new Cloudflare projects. Workers supports
+            static files without server code. Bind only daily.nishantkhurana.me after confirming the
+            user's personal Cloudflare account, zone ownership, current DNS, and rollback target.
+            Account access and hostname availability remain live activation prerequisites.
+          </p>
+          <p>
+            On the reader, emit <code>https://daily.nishantkhurana.me/rss.xml</code>,
+            article/edition search entries, sitemap, canonical and social metadata. Preserve
+            original publication dates. Legacy sources remain as-is. Keep vault daily filenames and
+            graph/report logic unchanged because no nested story files are added.
+          </p>
+          <h4 id="rss-contract">RSS contract</h4>
+          <p>
+            Generate RSS 2.0 at <code>/rss.xml</code> from the same accepted edition records. Each
+            item contains the full sanitized edition HTML, including actual source links, with an
+            absolute link to the dated edition. Use one stable date-based GUID per edition,
+            independent of headline edits. Corrections update the existing item; reruns create no
+            duplicate item.
+          </p>
+          <p>
+            Order items newest first and preserve their original edition dates. If only a date
+            exists, represent it as midnight IST when serializing RSS pubDate; do not claim an
+            observed publication time. No-news days add no item. Legacy editions retain their prose
+            and actual sources.
+          </p>
+          <p>
+            Serve <code>application/rss+xml; charset=utf-8</code>. Add a visible RSS link and an
+            HTML <code>rel="alternate"</code> feed-discovery link. Feed links use the production
+            reader hostname after launch. Keep the existing main website feed working through
+            cutover. The preview feed uses its local origin.
+          </p>
+          <p>
+            At cutover, provide an explicit verified-date mapping from each existing dated digest
+            URL to its verified reader edition. Extend that mapping after every successful reader
+            release, including the first day after cutover. Add a date only after its destination is
+            verified. A failed reader deployment leaves the prior mapping and working old page
+            unchanged. Do not use a wildcard for unverified future dates. GitHub Pages does not
+            provide the planned cross-host HTTP redirects itself. Use Cloudflare redirect rules on
+            the old host only after confirming it is proxied and the account permits those rules.
+            Otherwise stop the redirect step and retain the working old pages until a supported HTTP
+            redirect mechanism is approved.
+          </p>
+          <p>
+            Update the main site's digest navigation and its feed/search/sitemap entries to avoid
+            advertising duplicate canonical digest content. Preserve all knowledge-note discovery.
+            Keep the existing main RSS endpoint valid with a documented reader-feed link. Covers R9,
+            R12, R13.
+          </p>
+        </article>
+        <article id="ktd8">
+          <h4>KTD8. Cut over only after the reader works</h4>
+          <ol>
+            <li>
+              Review the local preview and implement the production app without changing the live
+              domain or job.
+            </li>
+            <li>
+              With explicit activation authority, install the dual-compatible verifier before any
+              public editorial-v2 file. Keep the existing delivery URL template. Prepare and
+              validate the first identified edition before deployment.
+            </li>
+            <li>
+              Deploy the independent app from a commit whose latest accepted edition is
+              editorial-v2. Verify its version and every expected article route.
+            </li>
+            <li>
+              Bind and verify daily.nishantkhurana.me, including HTTPS, direct story URLs, legacy
+              editions, feeds, and a real 404.
+            </li>
+            <li>
+              Activate verified old-to-new digest redirects and the main navigation link. Verify
+              HTTP status and Location for each mapped route.
+            </li>
+            <li>
+              Finish installing reviewed marker-aware producer instructions, then switch only the
+              daily job's delivery URL template through the supported cron interface.
+            </li>
+          </ol>
+          <p>
+            Preserve the existing job ID, schedule, model/provider, delivery channel, state, and
+            unrelated fields. Wait for an active digest run to finish before its cutover.
+          </p>
+          <p>
+            Rollback first restores the previous cron URL template and old-site routes/navigation.
+            Restore only manifest-owned runtime files if needed. Keep already published reader
+            article URLs available. A failed deployment can leave the previous artifact in place.
+            After successful publication, rollback must use the last working reader implementation
+            built against all retained published content. Do not restore an older artifact that
+            omits newly published routes. Verify retained routes before switching artifacts. Covers
+            R9–R12.
+          </p>
+        </article>
+        <h3>High-level technical design</h3>
+        <p>
+          Directional architecture and publication order are shown below. Exact helper names may
+          change; the one-source boundary and verification gates do not.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Data flow</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hermes private collection → first draft → unslop edit</td>
+              <td>Accepted edition with source evidence kept private.</td>
+            </tr>
+            <tr>
+              <td>Accepted Markdown → public vault → committed content/digests</td>
+              <td>One authored source revision.</td>
+            </tr>
+            <tr>
+              <td>Committed digest → daily build → static artifact</td>
+              <td>Independent reader domain.</td>
+            </tr>
+            <tr>
+              <td>Committed public notes → existing Quartz build</td>
+              <td>Main knowledge website.</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Publication sequence</th>
+              <th>Gate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Validate → lock → preflight → promote → commit</td>
+              <td>Abort before unrelated writes; recover incomplete promotion.</td>
+            </tr>
+            <tr>
+              <td>Reader build → deploy → live route inspection</td>
+              <td>Do not deliver the new dated URL until this succeeds.</td>
+            </tr>
+            <tr>
+              <td>Main-site build → independent inspection</td>
+              <td>Record separately; preserve the main website's content.</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Private state</th>
+              <th>Recovery</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Accepted → promoted → committed → reader-deploy-pending → reader-verified →
+                delivery-pending → complete
+              </td>
+              <td>
+                A failure records the phase, commit, and error. Retry accepted bytes. Main-site
+                result is tracked separately.
+              </td>
+            </tr>
+            <tr>
+              <td>Collection success + no publishable news</td>
+              <td>
+                Private no-news outcome. No source promotion, new dated URL, or dated edition
+                announcement. Preserve the existing short no-news response without a URL or
+                fabricated quote.
+              </td>
+            </tr>
+            <tr>
+              <td>Collection failure</td>
+              <td>Private error. Preserve previous edition; never claim successful no news.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Constraints and dependencies</h3>
+        <p>
+          Implementation and checks run on Pluto. The current request stops at a local preview and
+          this plan. The preview is an isolated design experiment, not the production app or an
+          approved appearance.
+        </p>
+        <p>
+          Pin compatible Astro, Node, and app dependencies during U2. Keep the app lockfile separate
+          from Quartz. Do not install a server adapter for static output. Verify current framework
+          requirements before choosing the exact version.
+        </p>
+        <p>
+          Cloudflare authority and old-host proxy status are cutover prerequisites, not facts
+          established by this planning task. If they prevent the proposed redirects, preserve the
+          old URLs and surface the exact remaining decision.
+        </p>
+      </section>
+      <section id="implementation-units">
+        <h2>Implementation Units</h2>
+        <article class="unit" id="u1">
+          <h3>U1. Define Markdown identity and compatibility</h3>
+          <dl>
+            <dt>Goal</dt>
+            <dd>Give stories stable IDs without a second authored content tree.</dd>
+            <dt>Requirements</dt>
+            <dd>R5–R8, R10, R13</dd>
+            <dt>Dependencies</dt>
+            <dd>None</dd>
+            <dt>Files</dt>
+            <dd>
+              <code
+                >hermes/ai-x-digest/contract.md; hermes/ai-x-digest/tests/test_story_identity.py;
+                apps/daily/tests/fixtures/</code
+              >
+            </dd>
+          </dl>
+          <details open>
+            <summary>Approach and checks</summary>
+            <div>
+              <p>
+                Implement KTD2/KTD5 using today's accepted four-story edition and legacy examples.
+                Document archived blocks and source attribution. Preserve existing editorial targets
+                rather than rewrite the shipped editing workflow.
+              </p>
+              <ol>
+                <li>
+                  A headline edit and story reorder retain IDs and routes. A missing or duplicated
+                  ID rejects editorial-v2.
+                </li>
+                <li>
+                  Unversioned and editorial-v1 fixtures remain whole editions with unchanged source
+                  links.
+                </li>
+                <li>
+                  A removed published story requires a correction and retains its old article URL.
+                </li>
+                <li>
+                  No-news and collection-error fixtures produce no public edition or dated delivery
+                  URL.
+                </li>
+              </ol>
+              <p>
+                <strong>Verification.</strong> Run focused fixtures for this unit on Pluto and
+                inspect the actual generated output. Live checks apply only during authorized U6
+                activation.
+              </p>
+            </div>
+          </details>
+        </article>
+        <article class="unit" id="u2">
+          <h3>U2. Build the independent static content adapter</h3>
+          <dl>
+            <dt>Goal</dt>
+            <dd>Read committed Markdown once and generate validated edition/story records.</dd>
+            <dt>Requirements</dt>
+            <dd>R3, R4, R8–R10, R13</dd>
+            <dt>Dependencies</dt>
+            <dd>U1</dd>
+            <dt>Files</dt>
+            <dd>
+              <code
+                >apps/daily/package.json; apps/daily/package-lock.json; apps/daily/astro.config.mjs;
+                apps/daily/src/lib/digests.ts; apps/daily/tests/digests.test.ts;
+                apps/daily/README.md</code
+              >
+            </dd>
+          </dl>
+          <details open>
+            <summary>Approach and checks</summary>
+            <div>
+              <p>
+                Implement KTD1–KTD3 with an AST-based parser, one allowlisted ID comment, and safe
+                Markdown rendering. Resolve content from the repository input, never fetch the live
+                website during a build. Use stable records for every view.
+              </p>
+              <ol>
+                <li>
+                  Reject traversal IDs, unsafe links, duplicate dates, unknown formats, or malformed
+                  story markers before output.
+                </li>
+                <li>Repeated source bytes produce the same routes and ordered text.</li>
+                <li>
+                  A legacy body is not heuristically split into articles. A revised current headline
+                  does not change its path.
+                </li>
+                <li>Direct dated and story routes exist; missing editions return a real 404.</li>
+              </ol>
+              <p>
+                <strong>Verification.</strong> Run focused fixtures for this unit on Pluto and
+                inspect the actual generated output. Live checks apply only during authorized U6
+                activation.
+              </p>
+            </div>
+          </details>
+        </article>
+        <article class="unit" id="u3">
+          <h3>U3. Build the newspaper and article reader</h3>
+          <dl>
+            <dt>Goal</dt>
+            <dd>Implement the selected reading direction throughout the independent app.</dd>
+            <dt>Requirements</dt>
+            <dd>R1–R4, R9, R13</dd>
+            <dt>Dependencies</dt>
+            <dd>U2</dd>
+            <dt>Files</dt>
+            <dd>
+              <code
+                >apps/daily/src/layouts/; apps/daily/src/components/; apps/daily/src/styles/;
+                apps/daily/src/pages/; apps/daily/public/fonts/; apps/daily/public/_headers;
+                apps/daily/src/pages/rss.xml.ts; apps/daily/tests/reading.test.ts</code
+              >
+            </dd>
+          </dl>
+          <details open>
+            <summary>Approach and checks</summary>
+            <div>
+              <p>
+                Implement KTD3/KTD4. Home, edition, article, full edition, archive, search, and
+                error pages share one design. Derive all views from U2 records. Theme/font controls
+                are optional enhancements. The prototype supplies visual evidence, not production
+                code requirements.
+              </p>
+              <ol>
+                <li>
+                  Verify lead order, adjacent sources, first/last story boundaries, and back links.
+                </li>
+                <li>With JavaScript disabled, navigate every reading route and source.</li>
+                <li>
+                  Inspect 390px, tablet, and 1440px; dark theme, fallback fonts, 200% zoom, keyboard
+                  focus, and print. Check search entry, empty query, matching results, no-match
+                  feedback, keyboard use, and legacy edition links. Parse RSS XML and verify full
+                  text, source links, newest-first order, stable GUIDs/dates after a rerun, no
+                  no-news item, feed discovery, absolute URLs, and the RSS response content type.
+                </li>
+                <li>
+                  No-news leaves the previous latest edition with its true date. Legacy articles
+                  show their original content.
+                </li>
+              </ol>
+              <p>
+                <strong>Verification.</strong> Run focused fixtures for this unit on Pluto and
+                inspect the actual generated output. Live checks apply only during authorized U6
+                activation.
+              </p>
+            </div>
+          </details>
+        </article>
+        <article class="unit" id="u4">
+          <h3>U4. Add safe source publication and independent app deployment</h3>
+          <dl>
+            <dt>Goal</dt>
+            <dd>Publish one source revision while keeping each website failure visible.</dd>
+            <dt>Requirements</dt>
+            <dd>R8, R10, R12</dd>
+            <dt>Dependencies</dt>
+            <dd>U2, U3</dd>
+            <dt>Files</dt>
+            <dd>
+              <code
+                >scripts/publish-from-vault.sh; scripts/sync-content-from-vault.sh;
+                .github/workflows/deploy-daily.yml; apps/daily/wrangler.jsonc;
+                hermes/ai-x-digest/tests/test_publishing.py</code
+              >
+            </dd>
+          </dl>
+          <details open>
+            <summary>Approach and checks</summary>
+            <div>
+              <p>
+                Implement KTD6/KTD7. Add the scoped digest mode and common lock without moving
+                ordinary note publishing to the app. Build the reader from the accepted commit and
+                deploy only its static artifact. Add app/content watch paths; keep Quartz workflow
+                unchanged before cutover.
+              </p>
+              <ol>
+                <li>
+                  Concurrent manual/daily publishing serializes. Unrelated dirty source or vault
+                  changes abort untouched.
+                </li>
+                <li>
+                  Interruption during promotion restores touched source files before a later
+                  publish.
+                </li>
+                <li>
+                  Reader build/deploy failure preserves the last live reader artifact and blocks its
+                  dated delivery.
+                </li>
+                <li>
+                  Retry the same commit after failure without regenerating prose or repeating a
+                  recorded delivery. Exercise overlapping commits with reversed build completion; an
+                  older normal deployment cannot replace the newer revision. A descendant verifies
+                  delivery only with matching accepted hashes. The first post-cutover edition gains
+                  its verified redirect; a failed deploy adds no mapping.
+                </li>
+              </ol>
+              <p>
+                <strong>Verification.</strong> Run focused fixtures for this unit on Pluto and
+                inspect the actual generated output. Live checks apply only during authorized U6
+                activation.
+              </p>
+            </div>
+          </details>
+        </article>
+        <article class="unit" id="u5">
+          <h3>U5. Extend Hermes without regressing the content release</h3>
+          <dl>
+            <dt>Goal</dt>
+            <dd>
+              Future editions retain their editing process and receive persistent story identity.
+            </dd>
+            <dt>Requirements</dt>
+            <dd>R5–R8, R10, R11, R13</dd>
+            <dt>Dependencies</dt>
+            <dd>U1, U2, U4</dd>
+            <dt>Files</dt>
+            <dd>
+              <code
+                >hermes/ai-x-digest/runtime/; hermes/ai-x-digest/runtime-manifest.json;
+                hermes/ai-x-digest/cron-prompt.md; hermes/ai-x-digest/tests/test_compatibility.py;
+                hermes/ai-x-digest/rollout.md</code
+              >
+            </dd>
+          </dl>
+          <details open>
+            <summary>Approach and checks</summary>
+            <div>
+              <p>
+                Implement KTD5/KTD8 by extending the existing manifest installer and version-aware
+                checker. Move runtime promotion and index edits into the scoped publisher under its
+                common lock. Test in a fixture Hermes home. Keep the delivered unslop pass and
+                private review required. Defer the live URL-template switch until U6 has verified
+                the domain.
+              </p>
+              <ol>
+                <li>
+                  Existing legacy/editorial-v1 tests pass; editorial-v2 requires immutable IDs and
+                  current reserved headings.
+                </li>
+                <li>
+                  Installer success/failure preserves unrelated files and restores replaced files on
+                  failure.
+                </li>
+                <li>
+                  A fixture cron update changes only the intended prompt/skill fields and preserves
+                  identity, schedule, state, model, delivery, and other jobs.
+                </li>
+                <li>
+                  No nested public story files appear, so daily graph counts and chronology remain
+                  unchanged. Runtime fixtures prove it calls the scoped publisher rather than
+                  copying public files before acquiring the lock.
+                </li>
+              </ol>
+              <p>
+                <strong>Verification.</strong> Run focused fixtures for this unit on Pluto and
+                inspect the actual generated output. Live checks apply only during authorized U6
+                activation.
+              </p>
+            </div>
+          </details>
+        </article>
+        <article class="unit" id="u6">
+          <h3>U6. Verify and activate the separate reader</h3>
+          <dl>
+            <dt>Goal</dt>
+            <dd>Make the domain and delivery cutover reversible and prove real reading routes.</dd>
+            <dt>Requirements</dt>
+            <dd>R1–R13</dd>
+            <dt>Dependencies</dt>
+            <dd>U1–U5</dd>
+            <dt>Files</dt>
+            <dd>
+              <code
+                >apps/daily/acceptance.md; hermes/ai-x-digest/rollout.md; reviewed redirect mapping
+                and main-site navigation/discovery changes</code
+              >
+            </dd>
+          </dl>
+          <details open>
+            <summary>Approach and checks</summary>
+            <div>
+              <p>
+                First complete the user-authorized local preview. Production activation is a
+                separate later action. Follow KTD8 in order, with account/DNS evidence and rollback
+                prepared. Use a specific published revision for route and source checks.
+              </p>
+              <ol>
+                <li>
+                  Verify the independent deployed version, custom-domain HTTPS, article reloads,
+                  full edition, legacy archive, RSS/search/sitemap, and real 404.
+                </li>
+                <li>
+                  Verify old digest HTTP redirects only after destinations work; unrelated knowledge
+                  routes and assets remain unchanged.
+                </li>
+                <li>
+                  Switch the daily delivery URL only after live checks. Send no duplicate canary
+                  Telegram message. Exercise rollback after a newly published story, proving its
+                  shared URL remains available.
+                </li>
+                <li>
+                  Observe one authorized canary and the next normal run. If the next run is not
+                  observed, report that remaining proof; create no automatic monitor without a
+                  request.
+                </li>
+              </ol>
+              <p>
+                <strong>Verification.</strong> Run focused fixtures for this unit on Pluto and
+                inspect the actual generated output. Live checks apply only during authorized U6
+                activation.
+              </p>
+            </div>
+          </details>
+        </article>
+      </section>
+      <section id="verification-contract">
+        <h2>Verification Contract</h2>
+        <p>
+          Implementation builds and tests locally on Pluto. It makes no production deployment,
+          runtime update, cron edit, or DNS change. The isolated preview uses accepted public
+          content only. Activation must satisfy the live gates below.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Gate</th>
+              <th>Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Editorial/identity</td>
+              <td>
+                <code>python3 -m unittest discover -s hermes/ai-x-digest/tests</code>. Preserve
+                existing proof tests and add identity, legacy, no-news, recovery, and publication
+                cases.
+              </td>
+            </tr>
+            <tr>
+              <td>App</td>
+              <td>
+                Define and run the app's own <code>check</code>, <code>test</code>, and
+                <code>build</code> scripts. Inspect emitted HTML, canonical URLs, feeds, sitemap,
+                sources, and missing-route behavior.
+              </td>
+            </tr>
+            <tr>
+              <td>Main compatibility</td>
+              <td>
+                Run repository <code>npm run check</code> and <code>npm test</code> for touched
+                code, plus the Quartz build after navigation/discovery cutover changes. Report
+                existing failures separately.
+              </td>
+            </tr>
+            <tr>
+              <td>Browser</td>
+              <td>
+                U3 reading checks on actual generated pages, direct story navigation, no JavaScript,
+                responsive/dark/print, and untouched knowledge pages.
+              </td>
+            </tr>
+            <tr>
+              <td>Activation</td>
+              <td>
+                Exact reader artifact/version, real custom domain, valid HTTP redirects, unchanged
+                unrelated website routes, narrow runtime/cron changes, and verified delivery
+                behavior.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Raw source captures, drafts, editing reviews, credentials, failure receipts, and recovery
+          manifests remain private. Only accepted prose, actual citations, and reader navigation
+          become public.
+        </p>
+      </section>
+      <section id="definition-of-done">
+        <h2>Definition of Done</h2>
+        <ol>
+          <li>
+            The current execution finishes with U1–U5 implemented, a checked local preview of
+            today's four real stories, full-text RSS, and a reviewed pull request. It does not
+            activate daily.nishantkhurana.me.
+          </li>
+          <li>
+            Production implementation satisfies U1–U5 and their traced requirements before
+            requesting activation.
+          </li>
+          <li>
+            One authored Markdown edition supplies every reader view. Headline edits preserve
+            published story URLs; legacy prose and sources remain unchanged.
+          </li>
+          <li>
+            The reader and main website have separate builds and deployments. Main knowledge content
+            and its existing design remain available.
+          </li>
+          <li>
+            Live activation finishes only after U6 verifies the new domain, old-route redirects,
+            delivery-template cutover, and normal scheduled output.
+          </li>
+          <li>
+            Remove abandoned prototype experiments from the production change. Preserve reviewed
+            rollback records and report unobserved live checks as unfinished.
+          </li>
+        </ol>
+      </section>
+      <section id="appendix">
+        <h2>Appendix</h2>
+        <h3>Evidence and references</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Consequence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>hermes/ai-x-digest/README.md</code>, main 54ee3e6</td>
+              <td>
+                Editorial-v1 and mandatory unslop editing are installed. Extend this package rather
+                than author in the backup mirror.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>scripts/publish-from-vault.sh</code>,
+                <code>.github/workflows/deploy.yml</code>
+              </td>
+              <td>
+                The publisher stages all files/current branch; the independent reader needs scoped
+                publication and its own deployment.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://docs.astro.build/en/guides/content-collections/"
+                  >Astro content collections</a
+                >
+              </td>
+              <td>
+                Build-time Markdown loading supports the static reader. The custom AST adapter
+                implements the edition/story grammar.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://docs.astro.build/en/guides/deploy/cloudflare/"
+                  >Astro Cloudflare deployment</a
+                >
+              </td>
+              <td>Current official guidance recommends Workers for new Cloudflare projects.</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://developers.cloudflare.com/workers/static-assets/"
+                  >Workers Static Assets</a
+                >
+              </td>
+              <td>Deploy the app's generated files without server code.</td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://developers.cloudflare.com/workers/configuration/routing/custom-domains/"
+                  >Workers custom domains</a
+                >
+              </td>
+              <td>
+                Bind the reader hostname only during authorized activation and verify ownership
+                first.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages"
+                  >GitHub Pages custom domains</a
+                >
+              </td>
+              <td>
+                The existing project continues serving the main website; the new reader is a
+                distinct hosting project.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.rssboard.org/rss-specification">RSS 2.0 specification</a>
+              </td>
+              <td>
+                Full HTML edition descriptions, stable item GUIDs, and serialized publication dates.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency"
+                  >GitHub Actions concurrency</a
+                >
+              </td>
+              <td>
+                Concurrency groups serialize execution but do not guarantee source order. The reader
+                therefore also checks deployment ancestry.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Deferred decisions</h3>
+        <p>
+          The implemented preview uses Libre Baskerville headlines, DM Sans text, paper colors, and
+          optional reading controls. Its appearance remains subject to user review. Cloudflare
+          account access, DNS state, and redirect capability require live preflight during
+          production work. They do not authorize a deploy today.
+        </p>
+      </section>
+      <section id="content-release">
+        <h2>Content release, 15 October 2026</h2>
+        <p class="meta">
+          Verified 12:54 IST. Pawhouse main <code>54ee3e643825c5b872b0795e8704b136450e9a50</code>.
+        </p>
+        <p>
+          The user authorized content changes live first, with a real unslop editing pass. This
+          later instruction authorizes this release only. The current request separately authorizes
+          a reader preview and this architecture revision.
+        </p>
+        <p>
+          The release uses <code>digest_format: editorial-v1</code> in the existing daily Markdown
+          file. It applies the editorial parts of R5–R7 and runtime compatibility from R11. It does
+          not complete the independent reader work or its newspaper acceptance criteria.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Delivered and verified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Writing</td>
+              <td>
+                Concrete headlines, one lead, normally 2 to 4 supporting stories, optional briefs,
+                source attribution and adjacent links. No theme quota, repeated context, forced
+                takeaways, title duplication, or signal-quality preamble.
+              </td>
+            </tr>
+            <tr>
+              <td>Editing</td>
+              <td>
+                Hermes generated a private first draft and a separate edited copy. The mandatory
+                unslop pass records concrete changes and a comparison with source evidence. Today's
+                revised edition contains four stories, with a corrected Gloss import claim. Raw
+                captures, drafts, editing review and backups remain private.
+              </td>
+            </tr>
+            <tr>
+              <td>Runtime</td>
+              <td>
+                Six manifest-owned files installed on Pluto. The daily job now attaches unslop; only
+                its prompt and skill list changed. Schedule remains 08:00 IST. Model selection,
+                delivery, identity and scheduler state were preserved.
+              </td>
+            </tr>
+            <tr>
+              <td>Checks</td>
+              <td>
+                13 focused tests, installer success and failure recovery, all 178 existing digest
+                files, and the accepted private edition passed. Quartz's 69 tests passed. TypeScript
+                passed; the combined check still reports 300 pre-existing content-format warnings.
+              </td>
+            </tr>
+            <tr>
+              <td>Review</td>
+              <td>
+                ce-code-review completed, run <code>20261015-editorial-7f14</code>, including
+                independent Claude Opus 5.5 review. Findings #1, #2 and #4 were fixed with
+                regressions. No justified finding remains unresolved.
+              </td>
+            </tr>
+            <tr>
+              <td>Live proof</td>
+              <td>
+                GitHub Pages run
+                <a href="https://github.com/nishant32f/pawhouse/actions/runs/38698277121"
+                  >38698277121</a
+                >
+                deployed the exact revision. The custom-domain page shows four stories with seven
+                adjacent source links and one H1. Inspected desktop and 390px phone rendering. The
+                previous daily URL still opens; the retired bookmark inbox still returns 404. The
+                private graph was refreshed.
+              </td>
+            </tr>
+            <tr>
+              <td>No-news behavior</td>
+              <td>
+                A fresh Hermes session loaded the installed skills and simulated successful
+                collection with zero publishable stories. It wrote no public files or index changes,
+                and returned no dated URL or fabricated quote. Collection errors remain errors.
+              </td>
+            </tr>
+            <tr>
+              <td>Recovery</td>
+              <td>
+                Runtime backup
+                <code>~/.hermes/backups/ai-x-digest-editorial-v1-20261015-125039-359962/</code>.
+                Original public edition and cron snapshot remain in the private release run
+                directory. The installer records prior existence before replacement and rolls back a
+                failed install.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>What remains</h3>
+        <p>
+          The independent newspaper reader at daily.nishantkhurana.me is now the settled direction.
+          At the time of this content release, its production implementation, hosting, redirects,
+          and delivery-link cutover remained future work. The later implementation record below
+          supersedes that implementation status. A local preview uses today's four published
+          stories. Existing Quartz presentation remains live. The former separate-story Markdown and
+          JSON formatter proposal is superseded by KTD2.
+        </p>
+        <p>
+          The next scheduled run is 16 October at 08:00 IST. Its output and normal Telegram delivery
+          have not yet been observed. No follow-up monitor was created. This release sent no
+          duplicate Telegram message.
+        </p>
+        <p>
+          The canonical workflow package is committed and deployed in Pawhouse. The sanitized
+          runtime mirror is saved locally at <code>0695683</code>; it was not pushed with its
+          pre-existing bookmark-retirement commit. The plan was initially saved on its local
+          documentation branch. The implementation branch now carries this updated copy.
+        </p>
+      </section>
+      <section id="implementation-record">
+        <h2>Implementation record, 15 October 2026</h2>
+        <p>
+          Execution host is Pluto. The canonical checkout is
+          <code>/Users/skypawalker/Dev/pawhouse</code>, branch
+          <code>feat/daily-newspaper-reader</code>, based on main <code>54ee3e6</code>. The earlier
+          editorial-v1 release remains live. This record describes local implementation, not
+          production activation.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Unit</th>
+              <th>Local outcome</th>
+              <th>Evidence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>U1</td>
+              <td>
+                Persistent editorial-v2 IDs, revision comparison, correction archives, and shared
+                fixtures.
+              </td>
+              <td>
+                Identity tests reject missing, duplicate, mutated, and removed IDs. Legacy input
+                remains unsplit.
+              </td>
+            </tr>
+            <tr>
+              <td>U2</td>
+              <td>
+                Independent Astro 7.3.8 adapter reads exact committed Markdown blobs. Node 22.23.3
+                serves the app; Quartz retains Node 22.16.0.
+              </td>
+              <td>
+                AST validation covers source ownership, safe links, calendar dates, and old
+                knowledge links. Every build records its source revision and Markdown hashes.
+              </td>
+            </tr>
+            <tr>
+              <td>U3</td>
+              <td>
+                Paper typography, responsive fronts, complete articles, full editions, archive,
+                search, full-text RSS, sitemap, and custom 404.
+              </td>
+              <td>
+                17 app tests and zero app-check diagnostics. Canonical history builds 360 pages.
+                Today's private marker adoption builds 364 pages with four article routes.
+              </td>
+            </tr>
+            <tr>
+              <td>U4</td>
+              <td>
+                Shared publisher lock, private accepted requests, scoped promotion and recovery,
+                pinned builds, release ordering, retained routes, and verified redirect mappings.
+              </td>
+              <td>
+                Real temporary Git/vault fixtures cover crashes, retries, conflicting edits,
+                delivery ambiguity, old deployment rejection, missing prose, and failed releases.
+              </td>
+            </tr>
+            <tr>
+              <td>U5</td>
+              <td>
+                Dual legacy/v1/v2 checker, canonical helper packaging, helper-before-checker
+                installation, private staging, and separate unslop editing instructions.
+              </td>
+              <td>
+                66 combined Python tests pass. Actual Hermes CLI parser/edit code changes only
+                prompt/skills in an in-memory fixture. No live job changed.
+              </td>
+            </tr>
+            <tr>
+              <td>U6 local</td>
+              <td>
+                Checked the generated reader in a browser and Cloudflare's local static-assets
+                server.
+              </td>
+              <td>
+                See <a href="../../apps/daily/acceptance.md">acceptance evidence</a>. Live
+                activation remains pending.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Reading and feed evidence</h3>
+        <p>
+          The local preview is <a href="http://localhost:56548/">localhost:56548</a>. Its
+          <a href="http://localhost:56548/rss.xml">RSS endpoint</a> serves complete sanitized
+          editions and actual citations as <code>application/rss+xml; charset=utf-8</code>. It has
+          one dated GUID per edition. Missing days produce no item or route.
+        </p>
+        <p>
+          The preview uses today's accepted four-story prose with private illustrative IDs. It does
+          not replace the live vault's editorial-v1 file. All 178 dates remain readable. Historical
+          prose is not rewritten or divided into invented stories.
+        </p>
+        <p>
+          Browser evidence covers desktop, 390px phone, tablet, 200% layout, light/dark themes,
+          remembered reading size, keyboard focus, blocked fonts, no JavaScript, search states, and
+          print. The accessibility audit reported 34 passes, zero violations, and zero incomplete
+          checks. Actual local HTTP probes checked complete rendered text, sources, home, archive,
+          search, sitemap, RSS, and a real missing-route 404.
+        </p>
+        <p>
+          <a href="../assets/daily-desktop.png">Desktop screenshot</a> ·
+          <a href="../assets/daily-mobile.png">Phone screenshot</a>
+        </p>
+        <h3>Main-site compatibility</h3>
+        <p>
+          Quartz's 69 tests pass. TypeScript passes. The combined root check retains 300
+          pre-existing formatting warnings in content and generated graph records. New changed files
+          pass their focused formatting checks. No authored content, Quartz
+          components/configuration, or existing Pages workflow changed.
+        </p>
+        <p>
+          The independent production workflow is disabled by default. Only public site files and a
+          sanitized verified redirect map may become Actions artifacts. Private drafts, source
+          captures, reviews, backup manifests, receipts, credentials, and raw Cloudflare responses
+          stay private.
+        </p>
+        <h3>Activation still required</h3>
+        <ol>
+          <li>
+            Approve and merge the reviewed implementation. Confirm the exact Cloudflare account, DNS
+            ownership, permissions, and redirect capability.
+          </li>
+          <li>
+            Install the dual checker first. Privately adopt stable IDs in the latest accepted
+            edition without changing its prose.
+          </li>
+          <li>
+            Configure the protected deployment environment and secrets. Deploy the exact artifact,
+            bind daily.nishantkhurana.me, and verify HTTPS and every reading/discovery route.
+          </li>
+          <li>
+            Apply only verified old-date redirects. Update main navigation and feed discovery after
+            their destinations work. Preserve old pages if redirects are unavailable.
+          </li>
+          <li>
+            Install the marker-aware producer and change the existing cron prompt/skills and
+            delivery URL through the supported CLI. Preserve its identity, schedule, inherited
+            model/provider, state, and Telegram settings.
+          </li>
+          <li>
+            Observe an authorized canary and the next normal scheduled run. Confirm actual delivery
+            before completing its private receipt. No monitor or duplicate Telegram message was
+            created.
+          </li>
+        </ol>
+        <p>
+          Rollback keeps accepted Markdown and published story URLs. Restore working app code in a
+          new descendant commit with all retained content. Reverse external redirect and delivery
+          changes separately. Keep ambiguous delivery pending until actual evidence resolves it.
+        </p>
+      </section>
+      <footer>
+        Created 15 October 2026. Revised for the user-approved separate app at
+        daily.nishantkhurana.me. Current authorization covers implementation, local verification,
+        and review. Production activation remains separate.
+      </footer>
+    </main>
+  </body>
+</html>
