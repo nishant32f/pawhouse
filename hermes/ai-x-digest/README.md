@@ -1,13 +1,33 @@
-# AI digest editorial release
+# Hermes daily digest package
 
-Canonical source for the content-only `editorial-v1` release. The existing Quartz website renders this Markdown without a new layout or domain.
+This package prepares future `editorial-v2` editions for the independent daily reader. The current live editorial-v1 producer stays active until the separate rollout authorizes replacement. No installation, cron edit, domain change, or delivery happens when these sources change.
 
-New editions select one lead and normally 2 to 4 supporting stories, with optional briefs and fewer stories on quiet days. Every edition gets a private first draft, a fact-preserving `unslop` pass, an edited copy, and a private review. Sources sit beside their stories. Unversioned archived editions keep their existing content and validation rules.
+The public vault keeps one authored Markdown file per day. Story markers give the reader persistent article paths without separate public story files. Hermes must retain IDs through headline changes, reorders, retries, and archived corrections. It must complete a separate unslop rewrite and private draft/source comparison before accepting the candidate.
 
-Run focused checks with `python3 -m unittest discover -s hermes/ai-x-digest/tests` from Pawhouse. Install the exact manifest with `python3 hermes/ai-x-digest/install.py --hermes-home /Users/skypawalker/.hermes`. The installer stages all files, records prior existence and backups, then replaces the listed files. A failed install restores files already replaced. It prints installed hashes on success. It does not alter cron.
+The shared scoped publisher validates the accepted private request before public writes. Humans and Hermes both use `scripts/publish-from-vault.sh --digest PRIVATE_REQUEST.json`. The request, first draft, edited copy, source snapshots, and review stay outside the repository and public vault. See [the reader's publication contract](../../apps/daily/README.md#accepted-publication) for the exact request and receipt fields.
 
-After verification, update only the daily job's authored prompt from `cron-prompt.md` and append `unslop` to its existing skills through `hermes cron edit`. Preserve the job ID, primary skill, schedule, state, model/provider selection, delivery, and other jobs.
+## Install phases
 
-Generate one edition privately with the installed skills. Validate it, inspect source accuracy and the editing review, then copy only the accepted edition into the public vault and publish through Pawhouse. No separate story files, JSON formatter, newspaper styling, domain changes, or additional notification are part of this release.
+Run these commands only during the separately authorized rollout. Use the checker phase first.
 
-Recovery copies and install receipts are under `~/.hermes/backups/ai-x-digest-editorial-v1-<timestamp>/`. The receipt records each file's prior existence and install status. To reverse a successful install, restore listed files whose `existed` value is true from their backup paths. Remove listed files whose value is false. Leave all other files alone. A `recovery-failed` receipt lists files that need manual recovery. Restore a revised public edition from its private source backup and republish if needed. The sanitized `hermes-setup-backup` repository remains a runtime mirror.
+```sh
+python3 hermes/ai-x-digest/install.py --hermes-home /Users/skypawalker/.hermes --phase verifier
+```
+
+This phase installs only the dual legacy/v1/v2 checker and `story_identity.py`. The installer packages that helper from the canonical source in this directory. It keeps no second implementation in runtime. Test the installed checker against private fixtures before the producer phase.
+
+```sh
+python3 hermes/ai-x-digest/install.py --hermes-home /Users/skypawalker/.hermes --phase producer
+```
+
+The producer phase installs every manifest file, including the skills and references. It remains the default for compatibility with the earlier installer interface. Both phases stage files, record hashes and prior existence, and back up replaced files. Failure restores completed replacements and removes files that did not exist before. Unrelated files and cron stay untouched.
+
+Recovery receipts live under `~/.hermes/backups/ai-x-digest-editorial-v2-TIMESTAMP/`. Restore each listed file whose `existed` value is true from its matching backup path. Remove only listed files whose value is false. A `recovery-failed` receipt names unresolved restores. Keep the previous editorial-v1 installation backup for producer rollback.
+
+## Verification
+
+From the repository root, run `python3 -B -m unittest discover -s hermes/ai-x-digest/tests`. The compatibility suite exercises real publication into temporary Git, vault, state, and bare-remote directories. It verifies v2 acceptance, accepted-request retry, malformed and mutated IDs before promotion, isolated helper packaging, checker-phase rollback, and visible archived attribution.
+
+The cron fixture imports Pluto's actual Hermes CLI parser and edit function. It substitutes an in-memory job store and API. It proves only prompt/skills change while ID, schedule, state, inherited model/provider, Telegram delivery, primary skill, and another job survive. It skips when that Pluto source checkout is unavailable. It never invokes live cron or Telegram.
+
+Follow [the staged rollout](rollout.md) for adoption, delivery accounting, cutover, and rollback. Keep the existing dated Quartz delivery URL until the authorized domain cutover. Returning the scheduled agent's text does not prove Telegram delivery.

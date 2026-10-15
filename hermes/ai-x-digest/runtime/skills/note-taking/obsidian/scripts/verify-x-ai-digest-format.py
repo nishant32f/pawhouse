@@ -10,6 +10,13 @@ import re
 import sys
 from pathlib import Path
 
+# The installer places the canonical helper beside this checker.
+identity_directory = Path(__file__).resolve().parent
+if not (identity_directory / 'story_identity.py').exists():
+    identity_directory = Path(__file__).resolve().parents[5]
+sys.path.insert(0, str(identity_directory))
+from story_identity import IdentityError, parse_edition
+
 
 def display_stem(path: Path) -> str:
     # Public filenames are lowercase kebab-case; note titles/H1s keep the readable X-AI casing.
@@ -22,18 +29,31 @@ def without_hidden_blocks(content: str) -> str:
     return visible
 
 
-def has_source_link(content: str) -> bool:
+def has_source_link(content: str, edition: str | None = None) -> bool:
     visible = without_hidden_blocks(content)
     # Match links before code spans so a code-formatted link label remains valid.
     tokens = re.finditer(r'!?(\[[^\]\n]+\]\(https://[^\s)]+\))|(`+).*?\2', visible, re.S)
-    return any(token.group(1) and not token.group().startswith('!') for token in tokens)
+    if any(token.group(1) and not token.group().startswith('!') for token in tokens):
+        return True
+    if edition is None:
+        return False
+    definitions = {label.strip().casefold(): url for label, url in re.findall(
+        r'^ {0,3}\[([^\]\n]+)\]:\s*<?(https://[^\s>]+)>?', without_hidden_blocks(edition), re.M)}
+    visible = re.sub(r'(`+).*?\1', '', visible, flags=re.S)
+    for match in re.finditer(r'(?<!!)\[([^\]\n]+)\](?:\[([^\]\n]*)\])?(?![(:])', visible):
+        label = match[2] or match[1]
+        if label.strip().casefold() in definitions:
+            return True
+    return False
 
 
-def check_editorial(text: str, expected_date: str) -> tuple[list[str], list[str]]:
+def check_editorial(text: str, expected_date: str, identified: bool = False) -> tuple[list[str], list[str]]:
     issues: list[str] = []
     warnings: list[str] = []
     body = re.sub(r'\A---\n.*?\n---\n', '', text, count=1, flags=re.S)
     body = without_hidden_blocks(body)
+    if identified:
+        body = re.sub(r'^## Archived stories\n.*?(?=^## Navigation\s*$)', '', body, flags=re.M | re.S)
     if re.search(r'^#\s+', body, re.M):
         issues.append('duplicate H1; the website already displays the frontmatter title')
     if not re.search(rf'^date:\s*["\']?{re.escape(expected_date)}["\']?\s*$', text, re.M):
@@ -41,7 +61,7 @@ def check_editorial(text: str, expected_date: str) -> tuple[list[str], list[str]
     for token in ['Practical takeaway:', 'Signal quality:', '**Signal-quality note:',
                   '## Digest\n', '## Source provenance']:
         if token in body:
-            issues.append(f'legacy boilerplate is not allowed in editorial-v1: {token.strip()}')
+            issues.append(f'legacy boilerplate is not allowed in editorial editions: {token.strip()}')
 
     matches = list(re.finditer(r'^##\s+(.+?)\s*$', body, re.M))
     if matches and body[:matches[0].start()].strip():
@@ -60,7 +80,7 @@ def check_editorial(text: str, expected_date: str) -> tuple[list[str], list[str]
         issues.append('duplicate story headlines')
 
     def check_story(title: str, content: str, brief: bool = False) -> None:
-        if not has_source_link(content):
+        if not has_source_link(content, text if identified else None):
             issues.append(f'{title}: missing adjacent HTTPS source link')
         prose = re.sub(r'^Sources?:.*$', '', content, flags=re.M).strip()
         prose = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', prose)
@@ -122,7 +142,7 @@ def main() -> int:
         frontmatter = re.match(r'\A---\n(.*?)\n---(?:\n|$)', text, re.S)
         version = re.search(r'^digest_format:\s*(.*?)\s*$', frontmatter.group(1), re.M) if frontmatter else None
         digest_format = version.group(1).strip('"\'') if version else None
-        editorial = digest_format == 'editorial-v1'
+        editorial = digest_format in ('editorial-v1', 'editorial-v2')
         if digest_format is not None and not editorial:
             issues.append(f'{rel}: unsupported digest_format: {digest_format}')
 
@@ -150,7 +170,16 @@ def main() -> int:
         if not editorial and path.name >= 'x-ai-2026-05-11.md' and '**Practical takeaway:**' not in text:
             issues.append(f'{rel}: no Practical takeaway labels found')
         if editorial:
-            errors, notes = check_editorial(text, path.stem.removeprefix('x-ai-'))
+            identified = digest_format == 'editorial-v2'
+            if identified:
+                try:
+                    parsed = parse_edition(text)
+                    for story in parsed.archived_stories:
+                        if not has_source_link(story.body, text):
+                            issues.append(f'{rel}: {story.headline}: missing adjacent HTTPS source link')
+                except IdentityError as error:
+                    issues.append(f'{rel}: {error}')
+            errors, notes = check_editorial(text, path.stem.removeprefix('x-ai-'), identified)
             issues.extend(f'{rel}: {message}' for message in errors)
             warnings.extend(f'{rel}: {message}' for message in notes)
         m = re.match(r'x-ai-(\d{4})-(\d{2})-\d{2}\.md$', path.name)

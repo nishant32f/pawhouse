@@ -1,6 +1,6 @@
 # Historical digest normalization for Obsidian
 
-This reference governs unversioned historical imports. New daily editions use `digest_format: editorial-v1` and the `ai-x-digest` skill, including its required `unslop` pass. Do not apply the archive's duplicate H1 or mandatory takeaway rules to editorial-v1 notes. Do not rewrite archived editions during a normal daily run.
+This reference governs unversioned historical imports. New daily editions use `digest_format: editorial-v2` after the staged producer rollout and the `ai-x-digest` skill, including its required `unslop` pass. Do not apply the archive's duplicate H1 or mandatory takeaway rules to editorial-v1 or editorial-v2 notes. Do not rewrite archived editions during a normal daily run.
 
 Nishant explicitly prefers clinical consistency and rich backlinks over historical fidelity for digest imports.
 
@@ -71,7 +71,7 @@ Verification checklist:
    - Navigation section exists
    - Navigation and Backlinks are the final top-level sections in the note, in that order
    - No `### Run metadata` section
-   - unversioned generated notes from the old workflow use the label `Practical takeaway:`; editorial-v1 editions omit it and put sources beside each story
+   - unversioned generated notes from the old workflow use the label `Practical takeaway:`; editorial-v1 and editorial-v2 editions omit it and put sources beside each story
 4. Check explicit path wikilinks resolve within the vault.
 5. Use Obsidian CLI backlinks as a smoke test, for example:
    - `obsidian backlinks path="digests/x-ai-2026.md" format=json`

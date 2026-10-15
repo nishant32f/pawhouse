@@ -11,15 +11,15 @@ Session-specific convention for this user:
 - Daily notes should end with `## Navigation` followed by `## Backlinks`, linking to `[[index|Mindscape]]`, `[[digests/x-ai-YYYY|X-AI YYYY]]`, and `[[digests/x-ai-YYYY-MM|X-AI-YYYY-MM]]`.
 - Historical imports should be normalized for clinical consistency; see `references/digest-normalization.md`.
 - Daily digest automation exists as Hermes cron job `daily-ai-x-digest-to-obsidian`, scheduled `0 8 * * *`, using `bird` JSON plus summarization.
-- New daily editions use `digest_format: editorial-v1` and the `ai-x-digest` plus `unslop` skills. Write a private first draft, edit it, check the sources, and validate before publication. Use concrete story headings, adjacent source links, and optional advice. The historical H1, theme-count, and takeaway rules do not apply to this format.
+- New daily editions use `digest_format: editorial-v2` after the staged producer rollout and the `ai-x-digest` plus `unslop` skills. Write a private first draft, edit it, check the sources, and validate before publication. Use concrete story headings, adjacent source links, and optional advice. The historical H1, theme-count, and takeaway rules do not apply to this format.
 - Absolute output path pattern: `/Users/skypawalker/Dropbox/Obsidian/public/digests/x-ai-YYYY-MM-DD.md`
 
 Recommended workflow:
 
 1. Resolve the vault path from `OBSIDIAN_VAULT_PATH`; do not pass literal `$OBSIDIAN_VAULT_PATH` to file tools.
-2. Ensure the `public/digests/` folder exists.
-3. Write the final Markdown digest directly to the absolute path. Direct filesystem writes are valid for Obsidian vaults and are safer than shell-quoting large multiline content through the CLI.
-4. If the user asks to open the result in Obsidian, use the CLI after writing:
+2. Stage the draft, edited candidate, source snapshots, review, indexes, and request privately outside the public vault and repository.
+3. Follow `ai-x-digest` for persistent IDs, the actual separate unslop pass, and the shared scoped publisher. Only `publish-from-vault.sh --digest PRIVATE_REQUEST.json` promotes accepted files. Never write a digest directly into the public vault.
+4. If the user asks to open the accepted result in Obsidian, use the CLI after publication:
 
 ```bash
 obsidian open path="public/digests/x-ai-YYYY-MM-DD.md"

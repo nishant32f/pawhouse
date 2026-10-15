@@ -7,7 +7,7 @@ related_skills: [unslop, obsidian, bird, obsidian-knowledge-pipeline]
 
 # X-AI digest
 
-Use this skill to generate or repair the daily AI digest. New editions use `digest_format: editorial-v1`. This content format works with the existing Quartz website; it does not require the planned newspaper reader.
+Use this skill to generate or repair the daily AI digest. New editions use `digest_format: editorial-v2` after the staged rollout authorizes the producer. The same daily Markdown supplies Quartz and the independent reader. Keep the existing dated Quartz delivery URL until the authorized domain cutover.
 
 ## Paths and dates
 
@@ -68,10 +68,21 @@ Load and read the `unslop` skill for every edition. Apply it to the selected fir
 
 The deterministic verifier checks structure and size. It does not establish factual accuracy or certify good prose. The source check and unslop pass remain required.
 
+## Persistent story identity
+
+Assign each selected story and brief one lowercase kebab-case ID before the first draft. Save these IDs privately with the source selection. Reuse that selection and the accepted candidate on a retry. Do not recollect or mint replacement IDs to retry a failed publication.
+
+For an existing v2 edition, read its accepted IDs before editing. Headlines and order can change, but IDs cannot. Put each marker immediately after its H2 or H3 headline, without a blank line. Never derive a replacement ID from an edited headline.
+
+A removed story stays under `## Archived stories` as an H3 with its original ID. Put a `Correction: ` paragraph first, then retain its complete original prose and sources. Archived stories keep their article routes. They do not enter active navigation or edition RSS content. Keep one RSS item per actual edition.
+
+Use the canonical `story_identity.py` beside the installed verifier to parse candidates and compare revisions. The shared publisher also validates identity under its lock. Do not copy or reimplement the identity parser. Leave legacy and editorial-v1 history unchanged. Do not infer historical story routes.
+
 ## Markdown contract
 
 Use this shape for new editions:
 
+<!-- prettier-ignore -->
 ```markdown
 ---
 title: "X-AI-YYYY-MM-DD"
@@ -79,16 +90,18 @@ date: YYYY-MM-DD
 tags: [AI, digest, x]
 type: daily-digest
 source: bird-cli-json
-digest_format: editorial-v1
+digest_format: editorial-v2
 ---
 
 ## Concrete lead headline naming the event
+<!-- story-id: concrete-lead-event -->
 
 Opening summary, followed by the story's necessary detail and context.
 
 Source: [Named primary source](https://example.com/original). First-party claim.
 
 ## Concrete supporting headline naming another event
+<!-- story-id: supporting-event -->
 
 Summary and necessary detail.
 
@@ -97,6 +110,7 @@ Source: [Named source](https://example.com/another). Community report.
 ## In brief
 
 ### Concrete brief headline
+<!-- story-id: brief-event -->
 
 A short development and its relevant qualification.
 
@@ -114,27 +128,28 @@ Source: [Named source](https://example.com/brief).
 - [[digests/x-ai-YYYY-MM|X-AI-YYYY-MM]]
 ```
 
-The first H2 is the lead. Further story H2s are supporting stories. Omit `In brief` entirely when there are no briefs. It may contain 1 to 3 H3 items. The final two H2 sections must be `Navigation`, then `Backlinks`. Add relevant existing note backlinks only when the relationship is useful; do not invent topic notes or indexes.
+The first H2 is the lead. Further story H2s are supporting stories. Omit `In brief` entirely when there are no briefs. It may contain 1 to 3 H3 items. If needed, put `Archived stories` after `In brief` and before the final sections. Its H3 records require IDs and corrections. The final two H2 sections must be `Navigation`, then `Backlinks`. Add relevant existing note backlinks only when the relationship is useful; do not invent topic notes or indexes.
 
 ## Validate and publish
 
-1. Stage the edited note privately under `<run>/staged/public/digests/x-ai-YYYY-MM-DD.md`. Validate that staging vault with:
+1. Keep the first draft, edited edition, source snapshots, `review.md`, and accepted request under the private run directory. The edited edition is the accepted candidate only after the separate unslop rewrite and source comparison. Record its exact SHA-256 hash in the review. Reuse these exact bytes and the same request on a publication retry.
+2. Stage the edited edition at `<run>/staged/public/digests/x-ai-YYYY-MM-DD.md`. Stage affected month/year indexes and the immediately previous daily note privately too. Preserve index content and chronology. Change only the previous note's `Next` link. Never copy candidates into the live vault or repository yourself.
+3. Run the installed verifier against `<run>/staged`. Resolve errors and review length warnings without padding. Compare any existing identified edition with the candidate through `story_identity.validate_revision`. Inspect the before/after/source comparison in `review.md` before accepting the candidate.
+4. From `/Users/skypawalker/Dev/pawhouse`, read `apps/daily/README.md` for the accepted publication request. Create a private JSON request outside both the repository and public vault. Set `date`, full `expected_head`, and `files` entries containing absolute private `staged`, current `before_sha256` or null for a new file, and exact `staged_sha256`. Include only the edition, affected indexes, and previous daily navigation. Hash exact bytes, not rendered text.
+5. Run `./scripts/publish-from-vault.sh --digest <run>/request.json`. Humans and Hermes use this same publisher. It checks the base, hashes, editorial format, stable IDs, and reader AST privately under the common lock before promoting any public files. It then commits and pushes the declared paths. Do not use broad `npm run publish` for a digest or bypass the publisher after a rejection.
+6. Keep the returned receipt private. A push leaves the reader pending. Verify the pinned reader artifact and actual reader pages through `scripts/daily-release.py` as documented in the app README. Check the existing Pages run with `--repo nishant32f/pawhouse` and inspect the dated Quartz prose too. Record that independent result with `scripts/publication.py main-result --request <run>/request.json --status verified|failed|pending --reference EVIDENCE`. No command status or HTTP 200 alone proves publication.
+7. Preserve the raw sources, first draft, edited candidate, review, request, and receipts privately. The public vault remains the single authored source, one Markdown file per date. Do not create public story files, source snapshots, review notes, or another content formatter. Keep Graphify state private and bookmarks only in Karakeep.
 
-```bash
-python3 /Users/skypawalker/.hermes/skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py <run>/staged
-```
-
-2. Resolve errors. Review length warnings using editorial judgment; do not pad copy to remove a warning.
-3. Back up an existing daily file privately before replacement. Copy only the accepted edited note into the public vault. Update month/year indexes and the previous note's Next link when needed, preserving their existing content. Use the index reference in `references/digest-index-hierarchy.md`.
-4. Run the same verifier against `/Users/skypawalker/Dropbox/Obsidian`. Keep the raw sources, first draft, review, and backups private.
-5. Inspect the Pawhouse checkout and vault sync before publishing. Do not publish unrelated dirty files. From `/Users/skypawalker/Dev/pawhouse`, use the existing `npm run publish -- "Update daily digest"` workflow. A push to `main` triggers GitHub Pages.
-6. Check the Pages run with `--repo nishant32f/pawhouse` and inspect the live digest. A successful command or HTTP 200 alone does not prove the edited text is live.
-7. Use the existing Graphify rebuild/enrichment jobs after publication. Raw bookmark storage remains in Karakeep.
+A successful collection with no publishable story stops before staging or publishing. Write only the private no-news record. It creates no public file, route, feed item, or delivery URL. A collection failure remains an error.
 
 ## Daily job and delivery
 
-The existing `daily-ai-x-digest-to-obsidian` job runs at 08:00 IST. Keep its schedule, model selection, delivery settings, and job ID. Preload `ai-x-digest`, `unslop`, `obsidian`, and `bird`.
+The existing `daily-ai-x-digest-to-obsidian` job runs at 08:00 IST. Preserve job `4eb8e806b8bc`, its 08:00 IST schedule, enabled/paused state, inherited null model/provider, Telegram delivery, and all other jobs. Preload `ai-x-digest`, `unslop`, `obsidian`, and `bird`.
 
-For the normal scheduled run, keep the existing short Telegram delivery. Use the custom-domain digest URL and one real snippet from public wisdom. Keep it to 2 to 5 short lines. Include no build details or editorial review notes. Do not fabricate a quote or send a duplicate notification during an operator's private generation check.
+For the normal scheduled run, keep the existing short Telegram delivery. Before returning dated success text, run `scripts/publication.py delivery-begin --request <run>/request.json`. It requires reader verification and refuses ambiguous delivery or completed retries. Follow the private receipt rather than generating another candidate.
+
+Hermes sends scheduled auto-delivery after the agent returns. Returning text does not prove Telegram delivery. Do not mark the receipt complete yourself from generated output. A later confirmed Hermes delivery receipt can support `delivery-complete --request REQUEST --reference DELIVERY_ID`. If the outcome is ambiguous, preserve `deliverypending` and require an operator to resolve it through `delivery-resolve` using actual evidence. Do not send a separate Telegram message from this workflow.
+
+Use the custom-domain digest URL and one real snippet from public wisdom. Keep it to 2 to 5 short lines. Include no build details or editorial review notes. Do not fabricate a quote or send a duplicate notification during an operator's private generation check.
 
 For missed-day repair, inspect the actual date file and schedule first. Run the normal workflow once or generate privately and publish the accepted edition. Report a collection or publish failure truthfully. Do not rerun the whole job merely to obtain an `ok` status or resend a message.
