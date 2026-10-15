@@ -465,6 +465,76 @@
           prose/sources are intact; RSS has the same figures and full text; installed producer bytes
           match reviewed source. Record the unobserved next scheduled run separately.
         </p>
+        <h3>Implementation verification on 15 October</h3>
+        <p>
+          U7 adds pure editorial metadata validation. U8 carries the approved newspaper design and
+          shares figure rendering across the front, article, full-edition and RSS views. U9 updates
+          the producer and its source-review instructions. U10 compares rendered figures during
+          release verification. The authored edition contains no layout or style fields.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Check</th>
+              <th>Observed result on Pluto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Reader contracts</td>
+              <td>32 tests pass, including real temporary Git and Astro builds.</td>
+            </tr>
+            <tr>
+              <td>Types</td>
+              <td>Astro checks 29 files without errors, warnings or hints.</td>
+            </tr>
+            <tr>
+              <td>Publication and producer</td>
+              <td>99 Python tests pass.</td>
+            </tr>
+            <tr>
+              <td>Complete local reader</td>
+              <td>
+                178 editions and 366 HTTP routes match the built artifact, including RSS and a real
+                404.
+              </td>
+            </tr>
+            <tr>
+              <td>Browser</td>
+              <td>
+                320px, 390px, tablet and desktop have no horizontal overflow. Larger text persists.
+                Light, dark and legacy accessibility audits have no violations.
+              </td>
+            </tr>
+            <tr>
+              <td>Fallbacks and print</td>
+              <td>
+                Content remains readable without JavaScript, the masthead font or the source image.
+                The two-page print was visually inspected.
+              </td>
+            </tr>
+            <tr>
+              <td>Quiet edition</td>
+              <td>
+                A one-story build has one article, one jump link, no supporting placeholders and one
+                full-width desktop grid column.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Code review <code>20261015-illustrated-d9255aa</code> completed. Both findings are fixed.
+          Image URLs now use their parsed absolute address, and a one-story edition has build and
+          browser coverage. Producer examples also pass the actual publication parser. The Claude
+          peer could not start because its ACP dependency returned npm ETARGET. The local
+          adversarial fallback completed; no external review is claimed.
+        </p>
+        <p>
+          Reviewed staging retains today's exact body paragraphs, four persistent IDs and seven
+          source URLs. It changes only the approved headlines and sourced editorial metadata. Keep
+          accepted requests, deployment results, installed-file hashes and cron comparisons in the
+          private release records. Report the next scheduled generation separately until observed.
+        </p>
       </section>
       <section id="product-contract">
         <h2>Product Contract</h2>
