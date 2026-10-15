@@ -1,18 +1,26 @@
-# Local acceptance, 15 October 2026
+# Reader acceptance, 15 October 2026
 
-Verified on Pluto. Production activation remains pending. Full evidence and rollout status are in [the implementation record](../../docs/plans/2026-10-15-1100-feat-hermes-newspaper-digest-plan.html#implementation-record).
+The separate reader and full-text RSS are live. Pluto deploys the accepted Git revision directly. GitHub runs reader CI; Quartz keeps its independent Pages deployment.
 
-| Contract     | Local evidence                                                                                                                                                                                                           |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| R1–R4        | Real browser at 1440px, 390px, tablet, and 200% layout. Native article navigation, no JavaScript, keyboard focus, theme/size persistence, blocked fonts, and print. Accessibility audit had 34 passes and no violations. |
-| R5–R7        | Accepted prose and source URLs preserved. Separate private editing evidence remains required. Quiet-day and collection-error contracts remain distinct.                                                                  |
-| R8–R10       | 81 Python tests cover AST/identity validation and real temporary Git/vault publication. Missing/mutated IDs reject before promotion. Retry reuses the accepted commit.                                                   |
-| R11–R12      | Installer replacement/recovery fixtures and actual Hermes CLI against an in-memory API. Interrupted promotion and failed release preserve accepted state. Production remains disabled.                                   |
-| R13          | 178 historical dates retained; 17 app tests; 360 canonical pages. Four-story preview has 364 pages. Real local static-assets server returns full-text RSS with correct MIME and true 404.                                |
-| Main website | 69 Quartz tests pass; TypeScript passes. Root check retains 300 pre-existing formatting warnings. Authored content, Quartz rendering, and Pages workflow are unchanged.                                                  |
+| Contract     | Evidence                                                                                                                                                                                                                                                                                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| R1–R4        | Earlier browser acceptance covered desktop, 390px phone, tablet, 200% layout, no JavaScript, keyboard focus, themes, text size, blocked fonts, and print. Accessibility audit had 34 passes and no violations. Live desktop/mobile checks confirmed the newspaper layout, self-hosted fonts, article reloads, and no horizontal overflow.               |
+| R5–R7        | Today's accepted prose and source URLs survived identity adoption unchanged. The installed producer requires a separate unslop edit and private comparison with inspected sources. Quiet-day and collection-error behavior remain distinct.                                                                                                             |
+| R8–R10       | 94 Python tests pass. A real uncached build and Wrangler dry-run pass without canonical app dependencies. Invalid requests fail before deployment, and failed retries cannot authorize delivery.                                                                                                                                                        |
+| R11–R12      | All seven installed producer files match reviewed source bytes. The supported cron edit changed only the prompt. Job identity, schedule, state, skills, null model/provider, Telegram settings, and all other jobs remain unchanged. An older live revision candidate was refused; its existing article still returned 200. No production rollback ran. |
+| R13          | Full live verification passed 178 dates across 366 routes, complete prose/source comparisons, RSS identity/full text/MIME, discovery, and a real 404. The feed has one item per actual edition. The 17 app tests pass.                                                                                                                                  |
+| Main website | Today's four headlines and seven source links passed live checks. The existing footer gains Daily and Daily RSS links. The 69 Quartz tests, TypeScript, focused formatting, and full Quartz build pass. Root formatting retains 301 existing warnings outside changed paths.                                                                            |
 
-Preview [reader](http://localhost:56548/) and [RSS](http://localhost:56548/rss.xml) run separately from production. Today's preview IDs exist only in its private fixture. The live vault stays editorial-v1.
+The deployed source is `d774fdf21697e4492f7356fff520531ea2fb2bcb`. A real release through `release-daily-from-pluto.py` passed with Individual Workers Editor limited to `pawhouse-daily` and recorded Cloudflare version `f75749b3-b99f-4f6d-8d64-b5621aeb0dcc`. The accepted publication receipt is `readerverified`.
 
-Pending live proof includes the custom domain, deployment version, redirects, main navigation/discovery, runtime installation, cron cutover, canary delivery, and next scheduled output. Follow [the rollout](../../hermes/ai-x-digest/rollout.md) under separate activation authority.
+- [Reader](https://daily.nishantkhurana.me/)
+- [Full-text RSS](https://daily.nishantkhurana.me/rss.xml)
+- [Today's edition](https://daily.nishantkhurana.me/editions/2026-10-15/)
 
-Code review run `20261015-164051-e36143ee` completed. All four confirmed P2 findings are fixed, with no unresolved findings. Added checks cover archived source targets, discovery links, RSS metadata, and new-day promotion/recovery. The external adapter failed before diff transmission; the review used an in-process adversarial fallback.
+Existing dated knowledge URLs remain available. No external redirect rules were added. No duplicate Telegram message or monitor was created.
+
+The next scheduled Hermes run is **16 October 2026 at 08:00 IST**. Its generated edition and actual Telegram delivery have not been observed. Returning text cannot complete its delivery receipt.
+
+Implementation review `20261015-164051-e36143ee` and Pluto deployment review `20261015-202937-ee6ba1e2` completed; all confirmed findings are fixed. Their external adapter failed before provider egress, so both used an in-process adversarial fallback. Footer review `20261015-210034-c111c23c` completed without findings.
+
+See the [live activation record](../../docs/plans/2026-10-15-1100-feat-hermes-newspaper-digest-plan.html#activation-revision) and [rollback procedure](../../hermes/ai-x-digest/rollout.md). Private credentials, source captures, drafts, reviews, backups, and release receipts remain outside the repository and public vault.
