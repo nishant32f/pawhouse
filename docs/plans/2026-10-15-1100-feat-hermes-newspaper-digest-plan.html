@@ -1661,7 +1661,7 @@
                 installation, private staging, and separate unslop editing instructions.
               </td>
               <td>
-                66 combined Python tests pass. Actual Hermes CLI parser/edit code changes only
+                81 combined Python tests pass. Actual Hermes CLI parser/edit code changes only
                 prompt/skills in an in-memory fixture. No live job changed.
               </td>
             </tr>
@@ -1713,6 +1713,20 @@
           sanitized verified redirect map may become Actions artifacts. Private drafts, source
           captures, reviews, backup manifests, receipts, credentials, and raw Cloudflare responses
           stay private.
+        </p>
+        <h3>Final review</h3>
+        <p>
+          Code review completed under run <code>20261015-164051-e36143ee</code>. All four confirmed
+          P2 findings are fixed. Archived stories now preserve resolved source URLs through the
+          existing reader AST gate. Release verification checks discovery links and exact RSS
+          identity, link, and date metadata. New-day tests cover scoped commits, retries, and
+          interrupted promotion. No justified review findings remain unresolved.
+        </p>
+        <p>
+          The post-fix checks passed 81 Python tests and 17 reader tests. The reader check reports
+          zero diagnostics. The external review adapter failed before sending the diff, so the
+          completed review used an in-process adversarial fallback. No independent external model
+          review is claimed.
         </p>
         <h3>Activation still required</h3>
         <ol>
