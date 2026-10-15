@@ -269,47 +269,65 @@
           direction guides the preview; its exact appearance remains subject to user review.
         </p>
         <p>
-          <strong>Current boundary.</strong> The user invoked ce-work after approving the separate
-          reader and RSS. This authorizes implementation, local verification, review, and a pull
-          request. DNS, production deployment, redirects, runtime installation, and cron activation
-          require a later request.
+          <strong>Current boundary.</strong> The user authorized merging PR #11 and activating the
+          domain, RSS, and Hermes. The later user-directed revision moved deployment to Pluto.
+          Production checks and the installed cutover are now complete.
         </p>
         <p>
-          <strong>Finish boundary.</strong> Deliver the implemented U1–U5, checked local reader and
-          RSS, and reviewed pull request. U6 live activation remains separate and requires its
-          actual domain and delivery checks.
+          <strong>Finish boundary.</strong> Publish the main-site discovery links and record live
+          verification. Report the next scheduled run as unobserved; create no monitor or duplicate
+          Telegram delivery.
         </p>
       </section>
       <section id="activation-revision">
-        <h2>Authorized activation and Pluto deployment</h2>
+        <h2>Live activation, 15 October 2026</h2>
         <p>
-          The user asked to merge PR #11 and make the reader, RSS, and Hermes cutover live. PR #11
-          merged at <code>72cd914</code>. The latest accepted edition gained four persistent IDs at
-          <code>97889eb</code>, without changing its prose. The dual checker is installed. Domain
-          deployment and producer/cron cutover still require live verification.
+          PR #11 merged at <code>72cd914</code>. The accepted edition gained four persistent IDs at
+          <code>97889eb</code> without changing its prose. PR #12 merged the user-directed Pluto
+          deployment at <code>d774fdf</code>. The reader and RSS are live at
+          <a href="https://daily.nishantkhurana.me/">daily.nishantkhurana.me</a>.
         </p>
         <p>
-          The user then selected deployment from Pluto. This supersedes the earlier Actions
-          production job and the initial local-only execution boundary. Keep GitHub for source
-          history and CI. The Cloudflare credential remains only in the protected Pluto file. The
-          local release command builds, deploys, reads the Cloudflare version, and verifies the
-          reader under one shared lock. It cannot send or complete a Telegram delivery.
+          The first complete live check verified 178 editions across 366 routes, including home,
+          archive, search, sitemap, full editions, four article routes, RSS metadata/full text/MIME,
+          and an actual missing-route 404. The source revision is <code>d774fdf</code>. A subsequent
+          real release through the new Pluto command passed with the restricted token and recorded
+          Cloudflare version <code>f75749b3-b99f-4f6d-8d64-b5621aeb0dcc</code>.
         </p>
         <p>
-          Complete the domain and feed checks before installing the new producer and cron prompt.
-          Preserve the existing job ID, schedule, model/provider inheritance, state, and delivery
-          channel. Verify the first authorized release and report the next unobserved scheduled run
-          separately. Create no monitor or duplicate message.
+          The credential remains only in Pluto's private configuration. Its Worker access is
+          Individual Workers Editor on <code>pawhouse-daily</code>. Account Settings Read remains
+          account-scoped. Workers Routes Write, Zone Read, and DNS Read are limited to
+          <code>nishantkhurana.me</code>. GitHub keeps source history and CI only; the independent
+          Quartz Pages deployment continues.
         </p>
         <p>
-          The Pluto release review completed as <code>20261015-202937-ee6ba1e2</code>. Its three
-          findings are fixed. The command now prepares deployment tools and configuration from the
-          accepted Git commit, validates the request before deployment, and returns a verified retry
-          to pending before its new attempt. Prior successful proof remains private. All 94 Python
-          tests pass, including an uncached real build and Wrangler dry-run with no canonical app
-          dependencies, plus failed-retry delivery rejection. The 17 reader and 69 Quartz tests
-          pass. Type checks and focused formatting pass; root formatting retains unrelated existing
-          warnings.
+          All seven producer files were installed with a recovery backup and matched their reviewed
+          source bytes. The supported Hermes CLI changed only job
+          <code>4eb8e806b8bc</code>'s prompt. Its schedule, state, skills, inherited null
+          model/provider, Telegram settings, and every other job remain unchanged. The next run is
+          <strong>16 October 2026 at 08:00 IST</strong> and has not been observed.
+        </p>
+        <p>
+          The existing Quartz footer gains Daily and Daily RSS links after the destinations passed.
+          Existing dated knowledge pages remain available. No external redirect rules were added.
+          Live main-site checks found today's four headlines and all seven source links. An older
+          release candidate was rejected by the live revision guard, and its already shared article
+          still returned HTTP 200. No production rollback or duplicate Telegram message ran.
+        </p>
+        <p>
+          Pluto deployment review <code>20261015-202937-ee6ba1e2</code> completed; all three
+          findings are fixed. Deployment tools and configuration come from the accepted commit.
+          Requests validate before deployment, and a retry returns to pending until its new live
+          checks pass. All 94 Python tests pass, including an uncached real build/Wrangler dry-run
+          without canonical app dependencies and failed-retry delivery rejection. The 17 reader and
+          69 Quartz tests pass. Type checks and focused formatting pass. Root formatting retains 301
+          unrelated existing warnings.
+        </p>
+        <p>
+          Footer review <code>20261015-210034-c111c23c</code> completed without findings. The
+          earlier implementation record below preserves its local acceptance history. Current
+          private operational evidence remains outside the repository and public vault.
         </p>
       </section>
       <section id="product-contract">
@@ -1273,9 +1291,9 @@
             <summary>Approach and checks</summary>
             <div>
               <p>
-                First complete the user-authorized local preview. Production activation is a
-                separate later action. Follow KTD8 in order, with account/DNS evidence and rollback
-                prepared. Use a specific published revision for route and source checks.
+                The user authorized production activation after the preview and PR #11. Follow KTD8
+                in order, with account/DNS evidence and rollback prepared. Use a specific published
+                revision for route and source checks. The live result is recorded above.
               </p>
               <ol>
                 <li>
@@ -1626,13 +1644,14 @@
         </p>
       </section>
       <section id="implementation-record">
-        <h2>Implementation record, 15 October 2026</h2>
+        <h2>Earlier local implementation record, 15 October 2026</h2>
         <p>
-          Execution host is Pluto. The canonical checkout is
+          This section preserves the earlier local acceptance history. Current production results
+          are in the live activation section above. The execution host was Pluto. The canonical
+          checkout is
           <code>/Users/skypawalker/Dev/pawhouse</code>, branch
           <code>feat/daily-newspaper-reader</code>, based on main <code>54ee3e6</code>. The earlier
-          editorial-v1 release remains live. This record describes local implementation, not
-          production activation.
+          editorial-v1 release was live at that stage. This record describes local implementation.
         </p>
         <table>
           <thead>
@@ -1769,7 +1788,7 @@
           reproduced the same error before the fix and passed afterwards. A skipped preview check
           alone did not count as successful reader CI.
         </p>
-        <h3>Activation still required</h3>
+        <h3>Original activation checklist</h3>
         <ol>
           <li>
             Approve and merge the reviewed implementation. Confirm the exact Cloudflare account, DNS
@@ -1806,8 +1825,8 @@
       </section>
       <footer>
         Created 15 October 2026. Revised for the user-approved separate app at
-        daily.nishantkhurana.me. Current authorization covers implementation, local verification,
-        and review. Production activation remains separate.
+        daily.nishantkhurana.me. The user authorized production activation. The reader, RSS, and
+        Hermes cutover are live; the next scheduled run remains unobserved.
       </footer>
     </main>
   </body>
