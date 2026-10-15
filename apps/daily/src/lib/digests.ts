@@ -9,6 +9,7 @@ import { toHtml } from "hast-util-to-html"
 import remarkParse from "remark-parse"
 import { unified } from "unified"
 import { parseDocument } from "yaml"
+import { parseStoryMetadata, type StoryEditorial } from "./editorial"
 
 export type Source = { label: string; url: string }
 type StoryFields = {
@@ -23,6 +24,7 @@ type StoryFields = {
   html: string
   text: string
   sources: Source[]
+  editorial: StoryEditorial | null
 }
 export type ActiveStory = StoryFields & { kind: "story" | "brief" }
 export type ArchivedStory = StoryFields & { kind: "archived"; correction: string }
@@ -238,6 +240,7 @@ export function parseEdition({ filename, text }: EditionInput): Edition {
     originalMarkdown: text,
   }
   if (format !== "editorial-v2") {
+    if ("story_metadata" in metadata) fail("editorial story_metadata requires editorial-v2")
     return {
       ...common,
       kind: "legacy",
@@ -336,6 +339,7 @@ export function parseEdition({ filename, text }: EditionInput): Edition {
       html: renderNodes(children),
       text: plainText(children),
       sources,
+      editorial: null,
     }
     if (kind === "archived") {
       if (correction === undefined) return fail(`${id}: missing correction`)
@@ -385,6 +389,8 @@ export function parseEdition({ filename, text }: EditionInput): Edition {
   walk(tree, (node) => {
     if (isMarker(node) && !consumed.has(node)) fail("story-id is not attached to a story heading")
   })
+  const editorial = parseStoryMetadata(metadata.story_metadata, stories)
+  for (const story of stories) story.editorial = editorial.get(story.id) ?? null
   const activeStories = stories.filter((story): story is ActiveStory => story.kind !== "archived")
   const archivedStories = stories.filter(
     (story): story is ArchivedStory => story.kind === "archived",

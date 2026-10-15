@@ -58,7 +58,7 @@ For the initial/repair migration shape, see `references/initial-vault-porting.md
 
 For this user's vault graph setup, Graphify outputs live under `.graphify/` in the vault and the dashboard note is private at `/Users/skypawalker/Dropbox/Obsidian/Graphify Vault Dashboard.md` (outside `public/`). Rebuild with `/Users/skypawalker/.hermes/scripts/graphify-obsidian/rebuild-vault-graph.sh` or consult the `graphify` skill's `references/obsidian-vaults.md`.
 
-For Pawhouse/Quartz public assets and homepage images, see `references/pawhouse-quartz-assets.md`: place assets in `/Users/skypawalker/Dropbox/Obsidian/public/`, use relative links from notes, and prefer raw `<img width="..." />` for sized images because Markdown image attribute syntax can render literally in this Quartz setup.
+For Pawhouse/Quartz public assets and homepage images, see `references/pawhouse-quartz-assets.md`: place assets in `/Users/skypawalker/Dropbox/Obsidian/public/`, use relative links from notes, and prefer raw `<img width="..." />` for sized images because Markdown image attribute syntax can render literally in this Quartz setup. Daily digest visuals instead follow `ai-x-digest` and its `story_metadata` contract. Do not copy assets or emit raw image HTML for that workflow.
 
 For Pawhouse site-level Quartz configuration changes (analytics/gtag, site metadata, layout, deploy verification), see `references/pawhouse-quartz-site-config.md`: edit source config such as `quartz.config.ts`, build locally, publish with `npm run publish -- "..."` when the request implies live-site change, watch GitHub Pages, and verify the live asset. Do not hand-edit generated `public/` files or bulk-format existing content as part of unrelated config work.
 

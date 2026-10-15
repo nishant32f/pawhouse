@@ -23,21 +23,21 @@ const rssUrl = new URL("/rss.xml", Astro.site)
         const theme = localStorage.getItem("daily-theme")
         if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme
         const size = Number(localStorage.getItem("daily-text-size"))
-        if (size >= 17 && size <= 26) document.documentElement.style.setProperty("--body-size", `${size}px`)
+        if (size >= 16 && size <= 26) document.documentElement.style.setProperty("--body-size", `${size}px`)
       } catch {}
     </script>
     {noindex && <meta name="robots" content="noindex" />}
-    <title>{title} | The AI daily</title>
+    <title>{title} | The AI Daily</title>
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" type="application/rss+xml" href={rssUrl} title="The AI daily" />
+    <link rel="alternate" type="application/rss+xml" href={rssUrl} title="The AI Daily" />
     <link rel="sitemap" href={new URL("/sitemap.xml", Astro.site)} />
     <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="The AI daily" />
-    <meta property="og:title" content={`${title} | The AI daily`} />
+    <meta property="og:site_name" content="The AI Daily" />
+    <meta property="og:title" content={`${title} | The AI Daily`} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content={`${title} | The AI daily`} />
+    <meta name="twitter:title" content={`${title} | The AI Daily`} />
     <meta name="twitter:description" content={description} />
   </head>
   <body>
@@ -52,11 +52,11 @@ const rssUrl = new URL("/rss.xml", Astro.site)
             <button type="button" id="theme" hidden>Dark mode</button>
           </nav>
         </div>
-        <div class="masthead"><a class="brand" href="/">The AI daily</a><p>Nishant's daily AI digest</p></div>
+        <div class="masthead"><a class="brand" href="/">The AI Daily</a><p>A daily paper on artificial intelligence</p></div>
         <slot name="editionline" />
       </header>
       <main id="main" tabindex="-1"><slot /></main>
-      <footer class="sitefoot"><span>The AI daily</span><a href="/archive/">Edition archive</a><a href="/rss.xml">Subscribe with RSS</a><a href="https://nishantkhurana.me/">Visit Mindscape</a></footer>
+      <footer class="sitefoot"><span>The AI Daily</span><a href="/archive/">Edition archive</a><a href="/rss.xml">Subscribe with RSS</a><a href="https://nishantkhurana.me/">Visit Mindscape</a></footer>
     </div>
     <script>
       const root = document.documentElement
@@ -77,8 +77,8 @@ const rssUrl = new URL("/rss.xml", Astro.site)
       document.querySelectorAll<HTMLButtonElement>("[data-size]").forEach((button) => {
         button.hidden = false
         button.addEventListener("click", () => {
-          const current = Number(root.style.getPropertyValue("--body-size").replace("px", "")) || 18
-          const size = Math.max(17, Math.min(26, current + Number(button.dataset.size)))
+          const current = Number.parseFloat(getComputedStyle(root).getPropertyValue("--body-size"))
+          const size = Math.max(16, Math.min(26, current + Number(button.dataset.size)))
           root.style.setProperty("--body-size", `${size}px`)
           try { localStorage.setItem("daily-text-size", String(size)) } catch {}
           const status = document.querySelector("#reader-status")

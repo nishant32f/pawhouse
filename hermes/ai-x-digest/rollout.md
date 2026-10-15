@@ -24,11 +24,23 @@ hermes cron edit 4eb8e806b8bc \
 
 The checked-in prompt selects `https://daily.nishantkhurana.me/editions/YYYY-MM-DD/`. Install it only after authorized domain and route verification. Do not replace the job, set its model/provider, alter its schedule or state, change delivery settings, or touch other jobs. Compare the complete before/after job records. Job `4eb8e806b8bc` stays at 08:00 IST with inherited null model/provider and Telegram delivery.
 
+## Illustrated reader revision
+
+Keep content and design as separate changes. Hermes supplies optional `story_metadata` under [the accepted contract](contract.md#editorial-metadata-and-design-separation). The app validates that data and renders the figures. Do not install a template, media service or second formatter into Hermes.
+
+1. Inspect the source media and data for the accepted edition. Save provenance, observed image dimensions and numerical qualifiers in its private review.
+2. Compare the draft and edited headlines, prose, decks, captions and chart labels with those sources. Preserve persistent IDs and every adjacent source.
+3. Verify the pinned app with and without metadata. Check complete prose, sourced figures, article routes, legacy editions, mobile, desktop, print and full-text RSS. A design-only change must render the same accepted Markdown.
+4. Publish the accepted private request and release its pinned commit from Pluto. Check actual live figures and complete RSS, including image URLs and numerical qualifiers. Record reader and independent Quartz results in their private receipts.
+5. Install the reviewed producer with the existing producer phase. Compare all seven installed manifest files against the accepted source bytes. Update only the intended cron prompt and skills through the supported CLI, then compare complete job records.
+
+Do not rerun the scheduled job or send a canary Telegram message for this revision. Record the next scheduled run as unobserved until it happens. Installation proves file and prompt state, not future generation quality or delivery.
+
 ## Editorial and publication proof
 
 1. Save collection results and inspected source text privately. A failed collection is an error. A successful no-news result stops with a private record and no public files, routes, feed item, or delivery URL.
 2. Assign IDs once. Save a complete first draft, apply unslop as a separate rewrite, and save a separate edited edition.
-3. Write `review.md` with concrete before/after edits, factual corrections, inspected sources, and remaining uncertainty. Compare the edited facts with the draft and source text. Preserve attribution and exact quote meaning.
+3. Write `review.md` with concrete before/after edits, factual corrections, inspected sources, and remaining uncertainty. Compare prose, decks, captions, labels, image evidence and chart values with the draft and sources. Preserve numerical bounds, attribution and exact quote meaning.
 4. Accept exact candidate bytes and hashes privately. Keep the accepted IDs and request unchanged on publication retries.
 5. Stage only the edition, affected indexes, and immediate previous daily note privately. The previous note may change only its Next link. Let the scoped publisher validate and promote them under its lock.
 6. Run `python3 scripts/release-daily-from-pluto.py --commit ACCEPTED_COMMIT --request REQUEST` on Pluto. Its Cloudflare credential stays in the private local file. Check actual reader and Quartz text. Keep independent main-site and reader results in private receipts. One RSS item represents each actual date, including corrections.

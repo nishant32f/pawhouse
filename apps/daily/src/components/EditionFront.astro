@@ -7,15 +7,14 @@ interface Props { edition: Edition }
 const { edition } = Astro.props
 ---
 {edition.kind === "identified" ? <>
-  <div class="front-screen">
-    <div class="front-grid">
-      <StoryCard story={edition.lead} lead />
-      <div>{edition.activeStories.slice(1, 3).map((story) => <StoryCard story={story} />)}</div>
-    </div>
-    {edition.activeStories.slice(3).map((story) => <StoryCard story={story} wide />)}
-    <div class="front-actions"><a href={edition.readPath}>Read the full edition</a><button data-print hidden type="button">Print edition</button></div>
+  <div class="front-reader-tools"><span>In this edition</span><ReaderTools /></div>
+  <nav class="jump-links" aria-label="In this edition">{edition.activeStories.map((story) => <a href={`#${story.id}`}>{story.editorial?.section ?? story.headline}</a>)}</nav>
+  <div class:list={["front-grid", { "single-story": edition.activeStories.length === 1 }]}>
+    <StoryCard story={edition.lead} lead />
+    {edition.activeStories[1] && <StoryCard story={edition.activeStories[1]} />}
   </div>
-  <section class="print-edition reading-copy" aria-label="Full edition for print" set:html={edition.html} />
+  {edition.activeStories.length > 2 && <div class="lower-stories">{edition.activeStories.slice(2).map((story) => <StoryCard story={story} />)}</div>}
+  <div class="front-actions"><a href={edition.readPath}>Read the full edition</a><a href="/rss.xml">Get the next edition with RSS</a></div>
 </> : <article class="reader legacy">
   <div class="reader-top"><span>Full edition</span><ReaderTools /></div>
   <h1 class="sr-only">{editionDate(edition.date)}</h1>

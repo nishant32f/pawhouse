@@ -266,7 +266,8 @@
         </p>
         <p>
           <strong>Authority.</strong> The separate app and domain are settled. The newspaper
-          direction guides the preview; its exact appearance remains subject to user review.
+          direction is settled. The user approved the illustrated Karen Times-inspired preview on 15
+          October and asked to continue implementation.
         </p>
         <p>
           <strong>Current boundary.</strong> The user authorized merging PR #11 and activating the
@@ -274,9 +275,10 @@
           Production checks and the installed cutover are now complete.
         </p>
         <p>
-          <strong>Finish boundary.</strong> Publish the main-site discovery links and record live
-          verification. Report the next scheduled run as unobserved; create no monitor or duplicate
-          Telegram delivery.
+          <strong>Finish boundary.</strong> Carry the approved illustrated design through the reader
+          and Hermes producer, review and verify it, then use the existing authorized release path.
+          Report the next scheduled run as unobserved; create no monitor or duplicate Telegram
+          delivery.
         </p>
       </section>
       <section id="activation-revision">
@@ -328,6 +330,210 @@
           Footer review <code>20261015-210034-c111c23c</code> completed without findings. The
           earlier implementation record below preserves its local acceptance history. Current
           private operational evidence remains outside the repository and public vault.
+        </p>
+      </section>
+      <section id="illustrated-revision">
+        <h2>Approved illustrated newspaper revision</h2>
+        <p>
+          <strong>Session-settled direction.</strong> The user identified Karen X. Cheng's newspaper
+          as the reference, approved the rendered 15 October redesign, then asked to proceed. Keep
+          the separate app and Pluto deployment. The reference is
+          <a href="https://x.com/karenxcheng/status/2097383854923538770">the original demo</a>. The
+          local approved artifact is
+          <code>/tmp/daily-paper-redesign-2026-10-15/www/index.html</code> on Pluto. It is a visual
+          reference, not production code.
+        </p>
+        <h3>Requirements and decisions</h3>
+        <ol>
+          <li>
+            <strong>R14. Carry the approved design.</strong> Use a self-hosted blackletter
+            nameplate, paper background, restrained rules, smaller serif headlines, illustrations
+            and complete stories on the edition page. Retain stable article URLs and navigation.
+            Desktop uses varied columns; phones read one article at a time in one column. Support
+            320px, 390px, tablet, desktop, larger text, dark mode, keyboard, no JavaScript, missing
+            fonts, and print. Existing archive/search/legacy pages inherit the same typography.
+          </li>
+          <li>
+            <strong>R15. Keep one authored source.</strong> Add an optional YAML
+            <code>story_metadata</code> map keyed by existing story IDs in editorial-v2 Markdown.
+            Each entry has required plain-text <code>section</code>, optional <code>deck</code>, and
+            optional <code>visual</code>. Existing editions without metadata remain valid. Unknown
+            IDs, unknown fields, malformed variants and story metadata on legacy editions reject at
+            the existing reader AST boundary. An absent visual produces an ordinary text story.
+          </li>
+          <li>
+            <strong>R16. Support sourced images and simple charts.</strong> A visual is exactly one
+            <code>image</code> or <code>bar</code>. Both require a caption and a
+            <code>source_url</code> matching a real adjacent source in the same story. Images
+            require an HTTPS <code>src</code> without credentials or control characters, positive
+            integer width/height, nonempty alt text and credit. Images render natively without a
+            server-side downloader. Bars require title, unit and 2 to 4 comparable points. Each
+            point has a label, a finite nonnegative number, and an explicit qualifier from
+            <code>exact</code>, <code>approximate</code>, <code>greater-than</code>,
+            <code>at-least</code>. At least one value is positive. Render labels, qualifiers, data,
+            captions and credit as escaped text. No authored HTML, SVG, CSS, JavaScript or second
+            public writer checkpoint. The chart must preserve lower bounds and approximate numbers.
+          </li>
+          <li>
+            <strong>R17. Make the producer supply evidence.</strong> Hermes selects relevant
+            original source media or chartable figures while inspecting sources, records their
+            provenance privately, and writes the optional fields into the accepted Markdown. Never
+            invent image URLs, substitute stock imagery for evidence, infer intermediate data, or
+            add a visual merely to fill space. Its separate unslop pass checks captions/decks as
+            well as body text. Preserve all useful qualifications and source support. Reuse exact
+            accepted metadata on retries. No new collector, image generator, notification channel or
+            formatter service.
+          </li>
+          <li>
+            <strong>R18. Preserve publication and feed contracts.</strong> Validate visuals through
+            the shared TypeScript adapter already used by the scoped publisher. Render the same
+            validated visual on edition, article, full-edition and RSS surfaces. Keep full accepted
+            prose and all source links. RSS retains one item per date, stable GUID/link/pubDate,
+            absolute image URLs and useful text without CSS. Archived story routes retain their
+            correction and prose; metadata never reactivates them. Extend live comparison to cover
+            figure structure/attributes, so a changed image URL or chart value fails release
+            verification. The normal release remains pinned, locked and reversible through the
+            existing mechanisms.
+          </li>
+        </ol>
+        <p>
+          The YAML schema uses raw snake-case <code>source_url</code>; the reader parses it into
+          content-only <code>StoryEditorial</code> data with a discriminated typed visual. Each
+          story has <code>editorial: StoryEditorial | null</code>; absent metadata becomes
+          <code>null</code>. Hermes supplies content. The app owns rendering. An image failure
+          leaves its alt text, caption, credit and article readable. The current edition receives
+          reviewed story metadata and shorter headlines through private staging and the scoped
+          publisher. Its persistent IDs, body paragraphs and seven actual source URLs remain
+          unchanged. Historical prose is not rewritten.
+        </p>
+        <p>
+          <strong>Content and design ownership.</strong> The user explicitly requires these to
+          remain separate. Story metadata contains only section, deck, media, caption, provenance
+          and chart facts. Reject font, color, column, template and other layout or style fields.
+          Image width and height describe intrinsic asset dimensions only. Pure metadata validation
+          never emits HTML or CSS. Components own figure HTML, column placement, fonts, colors and
+          responsive behavior. A design revision can reuse identical Markdown; content revisions
+          reuse the same layout.
+        </p>
+        <h3>Implementation units</h3>
+        <ol>
+          <li>
+            <strong>U7. Define and validate editorial metadata.</strong> Own
+            <code>apps/daily/src/lib/editorial.ts</code>, <code>digests.ts</code>, focused
+            <code>editorial.test.ts</code> parser/validation tests and the editorial metadata
+            contract documentation. Add failing tests before implementation for an illustrated real
+            fixture, absent metadata, invalid IDs/variants, unsafe images, mismatched sources and
+            invalid chart values. Keep this module limited to types and pure validation, with no
+            HTML or CSS generation. Preserve existing <code>story.html</code> and
+            <code>edition.html</code> as the accepted Markdown rendering. Commit this shared
+            interface before dependent units.
+          </li>
+          <li>
+            <strong>U8. Integrate the approved reader design.</strong> Depends on U7. Own reader
+            layouts/components, page composition, CSS, masthead font dependency and
+            lockfile/license, and focused rendered-reading tests. View-owned
+            <code>src/components/visuals.ts</code> generates escaped figures and full RSS edition
+            HTML from validated typed data. UI and RSS share this renderer; no
+            <code>visualHtml</code> field is stored in domain records. Match the approved preview
+            while handling arbitrary story counts and legacy editions. Retain existing reader
+            controls, canonical URLs, safe markup and full-text content. Browser evidence replaces
+            style-only unit tests; add rendered checks for figures and complete story text.
+          </li>
+          <li>
+            <strong>U9. Update Hermes guidance.</strong> Depends on U7 and can run beside U8. Own
+            the canonical ai-x-digest runtime skill, cron prompt, relevant runtime references,
+            rollout/README guidance and focused producer contract tests. Document exact schema
+            examples and source/unslop/retry rules. Installer ownership and recovery remain
+            unchanged. Root owns runtime installation after review.
+          </li>
+          <li>
+            <strong>U10. Verify and release.</strong> Depends on U7 through U9. Extend
+            <code>scripts/daily-release.py</code> and its focused tests to compare figures. Test a
+            real pinned temporary build and served artifact; inspect desktop/mobile/tablet, larger
+            text, dark mode, no JavaScript, missing fonts, source images and print. Simplify,
+            review, update from main, run affected checks, open and attach a PR, address feedback
+            and use existing merge/deploy authorization. Privately stage today's accepted story
+            metadata, validate/publish once, deploy from Pluto, inspect actual reader and RSS,
+            install reviewed producer files and update only the cron prompt. Preserve job
+            schedule/model/provider/state and Telegram settings. Do not send a duplicate message or
+            claim the next normal run was observed.
+          </li>
+        </ol>
+        <p>
+          <strong>Done.</strong> The deployed reader reflects the approved edition on desktop and
+          phone; all historical editions and stable article URLs remain available; today's
+          prose/sources are intact; RSS has the same figures and full text; installed producer bytes
+          match reviewed source. Record the unobserved next scheduled run separately.
+        </p>
+        <h3>Implementation verification on 15 October</h3>
+        <p>
+          U7 adds pure editorial metadata validation. U8 carries the approved newspaper design and
+          shares figure rendering across the front, article, full-edition and RSS views. U9 updates
+          the producer and its source-review instructions. U10 compares rendered figures during
+          release verification. The authored edition contains no layout or style fields.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Check</th>
+              <th>Observed result on Pluto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Reader contracts</td>
+              <td>32 tests pass, including real temporary Git and Astro builds.</td>
+            </tr>
+            <tr>
+              <td>Types</td>
+              <td>Astro checks 29 files without errors, warnings or hints.</td>
+            </tr>
+            <tr>
+              <td>Publication and producer</td>
+              <td>99 Python tests pass.</td>
+            </tr>
+            <tr>
+              <td>Complete local reader</td>
+              <td>
+                178 editions and 366 HTTP routes match the built artifact, including RSS and a real
+                404.
+              </td>
+            </tr>
+            <tr>
+              <td>Browser</td>
+              <td>
+                320px, 390px, tablet and desktop have no horizontal overflow. Larger text persists.
+                Light, dark and legacy accessibility audits have no violations.
+              </td>
+            </tr>
+            <tr>
+              <td>Fallbacks and print</td>
+              <td>
+                Content remains readable without JavaScript, the masthead font or the source image.
+                The two-page print was visually inspected.
+              </td>
+            </tr>
+            <tr>
+              <td>Quiet edition</td>
+              <td>
+                A one-story build has one article, one jump link, no supporting placeholders and one
+                full-width desktop grid column.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Code review <code>20261015-illustrated-d9255aa</code> completed. Both findings are fixed.
+          Image URLs now use their parsed absolute address, and a one-story edition has build and
+          browser coverage. Producer examples also pass the actual publication parser. The Claude
+          peer could not start because its ACP dependency returned npm ETARGET. The local
+          adversarial fallback completed; no external review is claimed.
+        </p>
+        <p>
+          Reviewed staging retains today's exact body paragraphs, four persistent IDs and seven
+          source URLs. It changes only the approved headlines and sourced editorial metadata. Keep
+          accepted requests, deployment results, installed-file hashes and cron comparisons in the
+          private release records. Report the next scheduled generation separately until observed.
         </p>
       </section>
       <section id="product-contract">
@@ -708,10 +914,11 @@
         <article id="ktd4">
           <h4>KTD4. Give the entire reader the newspaper design</h4>
           <p>
-            Use the selected paper/serif direction across home, edition, story, archive, and error
-            pages. Start the preview with Libre Baskerville headlines and DM Sans text; retain
-            Georgia and system fallbacks. Self-host production font files after checking their
-            licenses.
+            Use the approved illustrated newspaper direction across home, edition, story, archive,
+            and error pages. The approved 15 October artifact in the illustrated revision governs
+            current typography, paper colors, and layout. The earlier preview used Libre Baskerville
+            headlines and DM Sans text. Its measurements below are historical. Keep readable font
+            fallbacks and self-host production font files after checking their licenses.
           </p>
           <table>
             <thead>
@@ -748,8 +955,8 @@
           <p>
             Use visible focus and touch targets of at least 44px. Respect system dark mode without
             JavaScript. Font controls preserve all prose. Print shows the full selected article or
-            edition and hides reader controls. Covers R1–R4. Exact visual acceptance awaits preview
-            review.
+            edition and hides reader controls. Covers R1–R4. The user approved the illustrated
+            preview; implementation checks must compare against that artifact.
           </p>
         </article>
         <article id="ktd5">
@@ -1388,31 +1595,37 @@
       </section>
       <section id="definition-of-done">
         <h2>Definition of Done</h2>
+        <p>
+          The original U1–U6 implementation and activation are recorded above. The current execution
+          implements and releases the approved illustrated revision through U7–U10.
+        </p>
         <ol>
           <li>
-            The current execution finishes with U1–U5 implemented, a checked local preview of
-            today's four real stories, full-text RSS, and a reviewed pull request. It does not
-            activate daily.nishantkhurana.me.
+            The deployed reader matches the approved edition on desktop and phone. Responsive,
+            accessibility, no-JavaScript, missing-font, missing-image, and print checks pass.
           </li>
           <li>
-            Production implementation satisfies U1–U5 and their traced requirements before
-            requesting activation.
+            Content-only story metadata passes the shared publisher validator. Components own visual
+            rendering and layout. UI and RSS use the same validated editorial data.
           </li>
           <li>
             One authored Markdown edition supplies every reader view. Headline edits preserve
-            published story URLs; legacy prose and sources remain unchanged.
+            published story URLs; legacy prose and sources remain unchanged. Today's body paragraphs
+            and seven source URLs remain intact.
           </li>
           <li>
             The reader and main website have separate builds and deployments. Main knowledge content
             and its existing design remain available.
           </li>
           <li>
-            Live activation finishes only after U6 verifies the new domain, old-route redirects,
-            delivery-template cutover, and normal scheduled output.
+            The reviewed revision is merged and deployed from Pluto through the authorized release
+            path. Live reader and full-text RSS checks cover complete prose, sources, and figures.
+            Installed producer bytes match reviewed source; only the existing cron prompt changes.
           </li>
           <li>
-            Remove abandoned prototype experiments from the production change. Preserve reviewed
-            rollback records and report unobserved live checks as unfinished.
+            Preserve reviewed recovery records. Report the next scheduled run and normal delivery as
+            unobserved until actual evidence exists. Create no monitor or duplicate Telegram
+            message.
           </li>
         </ol>
       </section>
@@ -1517,12 +1730,13 @@
             </tr>
           </tbody>
         </table>
-        <h3>Deferred decisions</h3>
+        <h3>Settled design and deployment</h3>
         <p>
-          The implemented preview uses Libre Baskerville headlines, DM Sans text, paper colors, and
-          optional reading controls. Its appearance remains subject to user review. Cloudflare
-          account access, DNS state, and redirect capability require live preflight during
-          production work. They do not authorize a deploy today.
+          The user approved the illustrated 15 October artifact on Pluto. It supersedes the earlier
+          preview's visual targets and pending design review. The reader and Hermes revision use the
+          existing authorized Pluto release path after verification. Existing dated knowledge pages
+          remain available; no external redirect rules were added. The next scheduled run remains
+          unobserved.
         </p>
       </section>
       <section id="content-release">
