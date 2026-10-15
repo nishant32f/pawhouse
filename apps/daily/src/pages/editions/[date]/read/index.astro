@@ -1,5 +1,6 @@
 ---
 import Paper from "../../../../layouts/Paper.astro"
+import { renderVisual } from "../../../../components/visuals"
 import ReaderTools from "../../../../components/ReaderTools.astro"
 import { editionDate } from "../../../../components/format"
 import { loadEditions, type Edition } from "../../../../lib/digests"
@@ -15,7 +16,10 @@ const { edition } = Astro.props
     <p class="article-meta"><time datetime={edition.date}>{editionDate(edition.date)}</time></p>
     <h1>Full edition</h1>
     {edition.kind === "identified" ? edition.activeStories.map((story) => <section class="full-story" id={story.id}>
+      {(story.editorial || story.kind === "brief") && <p class="kicker">{story.editorial?.section ?? "In brief"}</p>}
       <h2><a href={story.path}>{story.headline}</a></h2>
+      {story.editorial?.deck && <p class="deck">{story.editorial.deck}</p>}
+      {story.editorial?.visual && <Fragment set:html={renderVisual(story.editorial.visual)} />}
       <div class="reading-copy" set:html={story.html} />
     </section>) : <div class="reading-copy" set:html={edition.html} />}
     <p class="back-link"><a href={edition.path}>Back to edition</a></p>

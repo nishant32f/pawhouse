@@ -1,5 +1,6 @@
 ---
 import Paper from "../../../../../layouts/Paper.astro"
+import { renderVisual } from "../../../../../components/visuals"
 import ReaderTools from "../../../../../components/ReaderTools.astro"
 import { editionDate } from "../../../../../components/format"
 import { loadEditions, type IdentifiedEdition, type Story } from "../../../../../lib/digests"
@@ -16,7 +17,10 @@ const next = position >= 0 ? edition.activeStories[position + 1] : undefined
   <article class="reader">
     <div class="reader-top"><a href={edition.path}>Back to edition</a><ReaderTools /></div>
     <p class="article-meta"><time datetime={edition.date}>{editionDate(edition.date)}</time>{story.kind === "brief" && " · In brief"}{story.kind === "archived" && " · Archived story"}</p>
+    {story.editorial && <p class="kicker">{story.editorial.section}</p>}
     <h1>{story.headline}</h1>
+    {story.editorial?.deck && <p class="deck">{story.editorial.deck}</p>}
+    {story.editorial?.visual && <Fragment set:html={renderVisual(story.editorial.visual)} />}
     <div class:list={["reading-copy", { "story-copy": story.kind !== "archived", "archived-copy": story.kind === "archived" }]} set:html={story.html} />
     {(previous || next) && <nav class="story-nav" aria-label="Story navigation">
       <div>{previous && <a rel="prev" href={previous.path}><span>Previous story</span>{previous.headline}</a>}</div>

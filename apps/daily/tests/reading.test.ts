@@ -38,6 +38,38 @@ before(
     ]) {
       if (file && date) cpSync(join(app, "tests/fixtures", file), join(content, `x-ai-${date}.md`))
     }
+    const illustrated = join(content, "x-ai-2026-10-15.md")
+    writeFileSync(
+      illustrated,
+      readFileSync(illustrated, "utf8").replace(
+        "digest_format: editorial-v2",
+        `digest_format: editorial-v2
+story_metadata:
+  anthropic-monorepo:
+    section: Engineering
+    deck: Two company-reported merge figures.
+    visual:
+      kind: bar
+      title: Reported code merges
+      unit: merges per day
+      caption: September exceeds the stated lower bound.
+      source_url: https://x.com/AnthropicAI/status/2110047081414987957
+      points:
+        - { label: May, value: 2500, qualifier: approximate }
+        - { label: September, value: 30000, qualifier: greater-than }
+  gloss-x-import:
+    section: Reading
+    visual:
+      kind: image
+      src: https://example.com/launch.jpg?a=1&b=2
+      width: 1200
+      height: 675
+      alt: Saved article in the launch demonstration
+      caption: A source image with an adjacent citation.
+      credit: Hassan
+      source_url: https://x.com/nutlope/status/2110385721391366263`,
+      ),
+    )
     run("git", ["init", "-q"])
     run("git", ["add", "content"])
     run("git", [
@@ -66,13 +98,17 @@ test("latest and dated front pages retain actual dates and story order", () => {
   assert.match(home, /canonical[^>]+https:\/\/daily\.nishantkhurana\.me\/editions\/2026-10-16\//)
   const front = read("editions/2026-10-15/index.html")
   const headlines = ["Anthropic says", "Hang Huang announces", "Gloss requires", "tanelog reports"]
-  const positions = headlines.map((headline) => front.indexOf(headline, front.indexOf("<main")))
-  assert.ok(positions.every((position) => position >= 0))
-  assert.deepEqual(
-    positions,
-    [...positions].sort((a, b) => a - b),
-  )
+  const articles = [...front.matchAll(/<article\b[^>]*>[\s\S]*?<\/article>/g)]
+  assert.equal(articles.length, headlines.length)
+  for (const [index, headline] of headlines.entries()) {
+    const article = articles[index]?.[0]
+    assert.ok(article)
+    assert.ok(article.includes(headline))
+  }
   assert.match(front, /Read full edition/)
+  assert.match(front, /The README says social posts/)
+  assert.match(front, /more than 30,000 per day/)
+  assert.doesNotMatch(front, /print-edition/)
 })
 
 test("static article routes contain complete prose, adjacent sources and active navigation", () => {
@@ -193,6 +229,31 @@ r=E.parse(sys.argv[1]).getroot();c=r.find('channel');print(json.dumps([{'guid':i
     revised,
     /<guid isPermaLink="true">https:\/\/daily.nishantkhurana.me\/editions\/2026-10-15\/<\/guid>/,
   )
+})
+
+test("one shared source-backed figure appears on front, article, read view and full RSS", () => {
+  const front = read("editions/2026-10-15/index.html")
+  const figures =
+    front.match(/<figure[^>]+data-story-visual="(?:bar|image)"[\s\S]*?<\/figure>/g) ?? []
+  assert.equal(figures.length, 2)
+  const full = read("editions/2026-10-15/read/index.html")
+  const rssBody = run("python3", [
+    "-c",
+    "import sys,xml.etree.ElementTree as E; r=E.parse(sys.argv[1]); print(next(i.findtext('description') for i in r.findall('./channel/item') if '2026-10-15/' in i.findtext('guid')))",
+    join(output, "rss.xml"),
+  ])
+  for (const figure of figures) {
+    assert.ok(full.includes(figure))
+    assert.ok(rssBody.includes(figure))
+    const story = figure.includes('data-story-visual="bar"')
+      ? "anthropic-monorepo"
+      : "gloss-x-import"
+    assert.ok(read(`editions/2026-10-15/stories/${story}/index.html`).includes(figure))
+  }
+  assert.match(rssBody, /~2,500/)
+  assert.match(rssBody, /&gt;30,000/)
+  assert.match(rssBody, /https:\/\/example.com\/launch.jpg\?a=1&amp;b=2/)
+  assert.match(rssBody, /Two company-reported merge figures/)
 })
 
 test("sitemap contains actual native routes including retained archive articles", () => {
