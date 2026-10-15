@@ -88,7 +88,7 @@ Successful collection with no publishable news creates no edition or dated URL. 
 
 Content parsing alone cannot detect deletion of an old published ID. The U5 verifier and scoped publisher must call revision validation against the accepted previous Markdown before promotion. They must also run editorial and source checks. A legacy-to-v2 migration requires operator review of identity and prose, since legacy input has no story IDs to compare.
 
-The helper does not validate dates, filenames, prose targets, source URLs, delivery state, or publication locks. These belong to the named reader, verifier, and publisher units.
+The helper does not validate dates, filenames, prose targets, source URLs, delivery state, or publication locks. These belong to the named reader, verifier, and publisher units. The publisher also passes the private previous edition to the reader AST validator. It compares each archived story's resolved citations with its previous record, including reference definitions outside the story. Raw body equality alone cannot preserve those targets.
 
 ## Shared fixtures
 

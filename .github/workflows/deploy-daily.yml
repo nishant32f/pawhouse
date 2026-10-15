@@ -63,13 +63,7 @@ jobs:
       - name: Check publication, identity, editorial, and source contracts
         shell: bash
         run: |
-          python3 -m unittest discover -s hermes/ai-x-digest/tests -p test_publishing.py
-          python3 -m unittest discover -s hermes/ai-x-digest/tests -p test_daily_release.py
-          python3 -m unittest discover -s hermes/ai-x-digest/tests -p test_editorial_format.py
-          python3 -m unittest discover -s hermes/ai-x-digest/tests -p test_editorial_visible_sources.py
-          python3 -m unittest discover -s hermes/ai-x-digest/tests -p test_source_adjacency.py
-          python3 -m unittest discover -s hermes/ai-x-digest/tests -p test_story_identity.py
-          python3 -m unittest discover -s hermes/ai-x-digest/tests -p test_compatibility.py
+          python3 -m unittest discover -s hermes/ai-x-digest/tests
       - uses: actions/upload-artifact@v4
         with:
           name: daily-${{ github.sha }}

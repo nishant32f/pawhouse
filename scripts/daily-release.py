@@ -124,7 +124,15 @@ def verify(publisher, artifact, origin, request=None, version=None):
     tested = ['/']
     for route in ('/archive/', '/search/'):
         page, _ = fetch(origin, route)
-        content(page)
+        actual_content = content(page)
+        expected_content = content(route_file(artifact, route).read_text())
+        if live['sourceRevision'] == expected['sourceRevision']:
+            if actual_content != expected_content:
+                raise ValueError(f'discovery page differs from pinned artifact: {route}')
+        else:
+            native_links = {link for link in expected_content[1] if link.startswith('/') and not link.startswith('//')}
+            if not native_links <= set(actual_content[1]):
+                raise ValueError(f'discovery page is missing accepted reader links: {route}')
         tested.append(route)
     sitemap, _ = fetch(origin, '/sitemap.xml')
     live_sitemap = ET.fromstring(sitemap)
@@ -162,6 +170,11 @@ def verify(publisher, artifact, origin, request=None, version=None):
                 raise ValueError('RSS is missing its unique dated item')
             return matches[0]
         actual_item, expected_item = item_for(actual_rss), item_for(local_rss)
+        for field in ('guid', 'link', 'pubDate'):
+            if actual_item.findtext(field) != expected_item.findtext(field):
+                raise ValueError(f'RSS edition {field} differs from pinned item')
+        if actual_item.find('guid').get('isPermaLink') != expected_item.find('guid').get('isPermaLink'):
+            raise ValueError('RSS edition GUID isPermaLink differs from pinned item')
         if actual_item.findtext('description') != expected_item.findtext('description'):
             raise ValueError('RSS full edition content differs')
         if not actual_item.findtext('description'):

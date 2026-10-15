@@ -195,8 +195,9 @@ class Publisher:
             accepted[relative] = data
         candidate = accepted[edition].decode('utf-8')
         previous = self.content / edition
-        if previous.exists():
-            validate_revision(previous.read_text(), candidate)
+        previous_text = previous.read_text() if previous.exists() else None
+        if previous_text is not None:
+            validate_revision(previous_text, candidate)
         else:
             parse_edition(candidate)
         with tempfile.TemporaryDirectory(prefix='pawhouse-validate-', dir=self.state) as temporary:
@@ -206,7 +207,13 @@ class Publisher:
             staged_path.write_bytes(accepted[edition])
             checker = ROOT / 'hermes/ai-x-digest/runtime/skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py'
             run([sys.executable, checker, private_vault])
-            run([MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', 'scripts/validate-edition.ts', staged_path], ROOT / 'apps/daily')
+            validation = [MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', 'scripts/validate-edition.ts', staged_path]
+            if previous_text is not None:
+                previous_path = private_vault / 'previous' / staged_path.name
+                previous_path.parent.mkdir()
+                previous_path.write_text(previous_text)
+                validation.append(previous_path)
+            run(validation, ROOT / 'apps/daily')
         for relative, data in accepted.items():
             if re.fullmatch(r'digests/x-ai-\d{4}-\d{2}-\d{2}\.md', relative) and relative != edition:
                 old = (self.content / relative).read_text()
