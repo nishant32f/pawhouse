@@ -7,6 +7,7 @@ function ProfileNav({ fileData }: Pick<QuartzComponentProps, "fileData">) {
     <nav class="profile-nav" aria-label="Site">
       <a
         class="internal"
+        data-no-popover="true"
         href={joinSegments(baseDir, "about")}
         aria-current={fileData.slug === "about" ? "page" : undefined}
       >
@@ -14,6 +15,7 @@ function ProfileNav({ fileData }: Pick<QuartzComponentProps, "fileData">) {
       </a>
       <a
         class="internal"
+        data-no-popover="true"
         href={joinSegments(baseDir, "/")}
         aria-current={fileData.slug === "index" ? "page" : undefined}
       >
