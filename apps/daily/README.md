@@ -35,7 +35,7 @@ RSS bytes come from the neutral publisher. The reader streams the immutable arti
 
 The browser-safe neutral wire module supplies `decodeEdition` and `materializeEdition`. `src/lib/digests.ts` exports view types only. It does not import the Markdown parser, compiler, S3 client, filesystem or Git runtime loader. Parser tests import the neutral parser directly.
 
-Read records contain rendered HTML, plain text, persistent identities, heading anchors, sources and editorial metadata. They omit authored Markdown and private source paths. Existing story and edition templates retain newspaper rendering. Both persistent story IDs and their old heading aliases remain targets on front and full-edition pages. The first brief keeps the old In brief target. Archived heading targets lead to retained articles through a small archived-links section, without presenting archived prose as active news.
+Read records contain rendered HTML, plain text, persistent identities, heading anchors, sources and editorial metadata. They omit authored Markdown and internal storage metadata. Historical authored prose remains intact. Existing story and edition templates retain newspaper rendering. Both persistent story IDs and their old heading aliases remain targets on front and full-edition pages. The first brief keeps the old In brief target. Archived heading targets lead to retained articles through a small archived-links section, without presenting archived prose as active news.
 
 ## Reading and discovery
 
