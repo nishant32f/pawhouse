@@ -6,6 +6,9 @@ on:
       - apps/daily/**
       - scripts/daily-release.py
       - scripts/daily-content-proof.ts
+      - scripts/daily-history.py
+      - scripts/daily-history-urls.mjs
+      - scripts/daily-redirects.py
       - scripts/release-daily-from-pluto.py
       - scripts/publication.py
       - scripts/r2_publication.py
@@ -19,6 +22,9 @@ on:
       - apps/daily/**
       - scripts/daily-release.py
       - scripts/daily-content-proof.ts
+      - scripts/daily-history.py
+      - scripts/daily-history-urls.mjs
+      - scripts/daily-redirects.py
       - scripts/release-daily-from-pluto.py
       - scripts/publication.py
       - scripts/r2_publication.py
