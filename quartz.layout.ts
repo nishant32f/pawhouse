@@ -1,5 +1,8 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { QuartzComponentProps } from "./quartz/components/types"
+
+const isNotAboutPage = (page: QuartzComponentProps) => page.fileData.slug !== "about"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -21,16 +24,16 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index" && page.fileData.slug !== "about",
+      condition: (page) => page.fileData.slug !== "index" && isNotAboutPage(page),
     }),
     Component.ArticleTitle(),
     Component.ConditionalRender({
       component: Component.ContentMeta(),
-      condition: (page) => page.fileData.slug !== "about",
+      condition: isNotAboutPage,
     }),
     Component.ConditionalRender({
       component: Component.TagList(),
-      condition: (page) => page.fileData.slug !== "about",
+      condition: isNotAboutPage,
     }),
   ],
   left: [
@@ -46,28 +49,28 @@ export const defaultContentPageLayout: PageLayout = {
         {
           Component: Component.ConditionalRender({
             component: Component.ReaderMode(),
-            condition: (page) => page.fileData.slug !== "about",
+            condition: isNotAboutPage,
           }),
         },
       ],
     }),
     Component.ConditionalRender({
       component: Component.Explorer(),
-      condition: (page) => page.fileData.slug !== "about",
+      condition: isNotAboutPage,
     }),
   ],
   right: [
     Component.ConditionalRender({
       component: Component.Graph(),
-      condition: (page) => page.fileData.slug !== "about",
+      condition: isNotAboutPage,
     }),
     Component.ConditionalRender({
       component: Component.DesktopOnly(Component.TableOfContents()),
-      condition: (page) => page.fileData.slug !== "about",
+      condition: isNotAboutPage,
     }),
     Component.ConditionalRender({
       component: Component.Backlinks(),
-      condition: (page) => page.fileData.slug !== "about",
+      condition: isNotAboutPage,
     }),
   ],
 }

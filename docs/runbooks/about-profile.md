@@ -15,4 +15,4 @@ The website is `/Users/skypawalker/Dev/pawhouse` on Pluto. Its authoritative sou
 
 Future edits belong in vault `public/about.md`. Publish through the existing notes workflow after inspecting its staging scope. The publish script stages every repository change.
 
-If publication must be reversed, restore the two backed-up vault files and revert the profile commit through a reviewed branch. Rebuild and verify the garden. Removing only repository content will not persist through the next vault sync.
+If publication must be reversed, restore the two backed-up vault files and revert the profile changes through a reviewed branch. Rebuild and verify the garden. Removing only repository content will not persist through the next vault sync.
