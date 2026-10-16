@@ -94,7 +94,7 @@ def main(argv=None):
                 except (ValueError, RuntimeError, OSError, KeyError, ET.ParseError) as error:
                     save(publisher.state / 'reader-failure.json', {
                         'origin': ORIGIN, 'codeRevision': args.commit, 'artifact': artifact,
-                        'phase': phase, 'version': version, 'error': str(error).replace(token, '[redacted]')})
+                        'phase': phase, 'version': version, 'error': release.redacted(error)})
                     raise
         finally:
             for name, value in previous.items():

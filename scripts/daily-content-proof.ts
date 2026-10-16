@@ -1,4 +1,3 @@
-/** Decode frozen prose with the content package, without importing reader views. */
 import { readFileSync } from "node:fs"
 import {
   decodeEdition,

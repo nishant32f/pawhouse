@@ -106,7 +106,6 @@ def manifest_at(origin, bootstrap=False):
 
 
 def code_revision(manifest):
-    # The initial SSR upgrade still has a legacy reader on the other end.
     return manifest.get('codeRevision', manifest.get('sourceRevision'))
 
 

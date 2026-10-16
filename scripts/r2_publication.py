@@ -124,7 +124,6 @@ class R2Publisher:
         return {'request': request, 'receipt': receipt, 'receipt_path': receipt_path, 'bundle': bundle}
 
     def published_history(self):
-        """Read the seven latest sources selected by the published manifest."""
         current = self.transport('inspect')
         editions = []
         if current['manifest']:

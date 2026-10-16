@@ -55,7 +55,6 @@ def relocate(source, destination, backup, hashes, remove_source=False):
         if sha(backup / name) != digest or sha(destination / name) != digest:
             raise ValueError('relocation readback failed: ' + name)
     if remove_source:
-        # Recheck the entire source set after backup/readback, before deleting any source.
         for name, digest in hashes.items():
             if (source / name).exists() and sha(source / name) != digest:
                 raise ValueError('source changed before removal: ' + name)

@@ -1,4 +1,3 @@
-// Use the same YAML, path, Markdown and heading plugins as Quartz.
 import { readFile } from "node:fs/promises"
 import path from "node:path"
 import { load as parse } from "js-yaml"
