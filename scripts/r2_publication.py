@@ -5,11 +5,14 @@ import json
 import os
 from pathlib import Path
 import re
+import signal
+import subprocess
 import tempfile
 
 EDITION = re.compile(r'x-ai-\d{4}-\d{2}-\d{2}\.md')
 SOURCE = re.compile(r'x-ai-\d{4}(?:-\d{2}(?:-\d{2})?)?\.md')
 PHASES = ('accepted', 'source-promoted', 'objects-verified', 'published', 'readerverified', 'deliverypending', 'complete')
+TRANSPORT_TIMEOUTS = {'inspect': 60, 'objects': 300, 'publish': 120}
 
 
 class R2Publisher:
@@ -27,7 +30,7 @@ class R2Publisher:
         for path in (self.state, self.config):
             if any(path == public or public in path.parents for public in (owner.repo, owner.vault, self.root)):
                 raise ValueError('R2 state and credentials must stay outside repository and vault')
-        if self.root == owner.repo or owner.repo in self.root.parents or self.sources == owner.vault / 'digests':
+        if any(self.root == public or public in self.root.parents for public in (owner.repo, owner.vault)):
             raise ValueError('R2 accepted sources must use a private vault root')
         for receipt_path in (self.state / 'receipts').glob('*.json'):
             receipt = json.loads(receipt_path.read_text())
@@ -55,13 +58,26 @@ class R2Publisher:
         return run([MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', script, *args], self.package)
 
     def transport(self, action, *args):
-        import subprocess
         from publication import MISE
-        result = subprocess.run([MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', 'r2-cli.ts', action, *map(str, args)],
-                                cwd=self.package, env=dict(os.environ, PUBLISH_R2_CONFIG=str(self.config), PUBLISH_R2_VAULT_ROOT=str(self.root)), capture_output=True, text=True)
-        if result.returncode:
-            raise RuntimeError('R2 transport failed: ' + (result.stderr.strip() or 'unknown error'))
-        return json.loads(result.stdout)
+        timeout = TRANSPORT_TIMEOUTS[action]
+        process = subprocess.Popen([MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', 'r2-cli.ts', action, *map(str, args)],
+                                   cwd=self.package, env=dict(os.environ, PUBLISH_R2_CONFIG=str(self.config), PUBLISH_R2_VAULT_ROOT=str(self.root)),
+                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, start_new_session=True)
+        try:
+            stdout, stderr = process.communicate(timeout=timeout)
+        except BaseException as error:
+            # Kill mise and its Node descendants before the shared publication lock can be released.
+            try:
+                os.killpg(process.pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+            process.communicate()
+            if isinstance(error, subprocess.TimeoutExpired):
+                raise RuntimeError(f'R2 transport {action} timed out after {timeout} seconds') from None
+            raise
+        if process.returncode:
+            raise RuntimeError('R2 transport failed: ' + (stderr.strip() or 'unknown error'))
+        return json.loads(stdout)
 
     def private(self, path):
         path = Path(path).expanduser().resolve()
