@@ -4,7 +4,10 @@ Machine Herald reads a selected private R2 publication at request time. Code rel
 
 Use Node 22.23.3. The app pins Astro 7.3.8, `@astrojs/cloudflare` 14.3.3 and Wrangler 4.151.0. The adapter uses the Worker entrypoint, disables sessions and passes images through unchanged. It adds no KV or Images dependency.
 
+Install the neutral content package first, from the repository root. Then run the app commands.
+
 ```sh
+mise exec node@22.23.3 -- npm --prefix hermes/ai-x-digest/content ci
 cd apps/daily
 mise exec node@22.23.3 -- npm ci
 mise exec node@22.23.3 -- npm run check
