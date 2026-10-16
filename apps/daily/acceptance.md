@@ -1,4 +1,22 @@
-# Reader acceptance, 15 October 2026
+# R2 reader implementation acceptance, 16 October 2026
+
+U4 separates code artifacts from accepted content. These results cover isolated Pluto fixtures and local packaging. The production reader still uses its earlier Git release.
+
+| Contract            | Evidence                                                                                                                                                                                                                                                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Code release        | A private clone installs and checks the neutral content package, then the app. Its complete SSR handler and client assets pass a real Wrangler dry-run. The cache identifies only the code revision. Deployment uses `dist/server/wrangler.json`.                                                            |
+| Content proof       | The verifier reads immutable objects from the selected frozen bundle. It checks the exact publication and compiler revisions, expected code revision, every edition/read/story route, archived bodies, adjacent source links, figures, discovery, complete RSS bytes and MIME, and a real unknown-route 404. |
+| Recovery            | HTTP errors, missing prose, altered figures, stale content, malformed RSS and false 404s fail proof. A failed retry preserves the publication ID and prior proof, records `verificationError`, returns to `published`, and blocks delivery. Completed and ambiguous delivery receipts remain unchanged.      |
+| Local verification  | The 58 release tests pass on Pluto. The fixture runs the generated SSR handler against local R2 with accepted legacy, current and archived Markdown fixtures. It copies prebuilt SSR output into private temporary storage. The proof utility also passes TypeScript checking.                               |
+| Activation boundary | No R2 resource, Worker deployment or private backend switch was performed for U4. Real Cloudflare preview, runtime CPU and production publication proof remain pending deployment authorization. A local fixture result is not that proof.                                                                   |
+
+For an active R2 publication, use `python3 scripts/daily-release.py verify --request PRIVATE_REQUEST --origin READER_URL --code-revision CODE_SHA`. This command requires neither digest Git ancestry nor a build, Wrangler or Quartz. Add `--version` only with the actual separately observed Worker version.
+
+Before backend activation, select `--bundle FROZEN_BUNDLE` instead of `--request`. This verifies the selected preview URL without mutating a publication receipt. The production code-release wrapper uses `--commit CODE_SHA` with either `--request PRIVATE_REQUEST` or `--bundle FROZEN_BUNDLE`. Its private Cloudflare credentials and actual deployment-version lookup remain required. It retains the selected live content and rejects older code or removed routes.
+
+The record below describes the earlier deployed Git reader. Its revision, tests and live proofs do not describe the R2 implementation.
+
+## Earlier reader acceptance, 15 October 2026
 
 The separate reader and full-text RSS are live. Pluto deploys the accepted Git revision directly. GitHub runs reader CI; Quartz keeps its independent Pages deployment.
 

@@ -43,6 +43,8 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--commit', required=True)
     parser.add_argument('--request')
+    parser.add_argument('--bundle', help='frozen accepted publication, including before backend activation')
+    parser.add_argument('--bootstrap', action='store_true')
     parser.add_argument('--credentials', default='~/.config/pawhouse-daily/cloudflare.json')
     args = parser.parse_args(argv)
     token = None
@@ -58,29 +60,29 @@ def main(argv=None):
                 artifact = None
                 version = None
                 try:
-                    release.cloudflare_deployments()
-                    release.guard(publisher, args.commit, ORIGIN)
+                    release.cloudflare_deployments(args.bootstrap)
+                    release.guard(publisher, args.commit, ORIGIN, args.bootstrap)
+                    bundle, loaded = release.selected_publication(publisher, args.request, args.bundle)
                     phase = 'build'
                     built = release.build(publisher, args.commit)
                     artifact = str(Path(built['artifact']).resolve())
                     phase = 'acceptance'
-                    expected = json.loads((Path(artifact) / 'deployment.json').read_text())
-                    _, receipt_path, receipt = release.accepted_editions(publisher, expected, args.request)
-                    if receipt is not None:
-                        receipt['phase'] = 'readerpending'
-                        save(receipt_path, receipt)
+                    expected = release.code_artifact(artifact)
                     phase = 'tools'
                     with tempfile.TemporaryDirectory(prefix='reader-deploy-', dir=publisher.state) as temporary:
                         checkout = Path(temporary) / 'source'
                         release.run(['git', 'clone', '--shared', '--no-checkout', publisher.repo, checkout])
-                        release.run(['git', '-C', checkout, 'checkout', '--detach', expected['sourceRevision']])
+                        release.run(['git', '-C', checkout, 'checkout', '--detach', expected['codeRevision']])
                         app = checkout / 'apps/daily'
                         release.run([MISE, 'exec', 'node@22.23.3', '--', 'npm', 'ci'], app)
                         command = [MISE, 'exec', 'node@22.23.3', '--', 'node',
                                    app / 'node_modules/wrangler/bin/wrangler.js', 'deploy',
-                                   '--config', app / 'wrangler.jsonc', '--assets', artifact]
+                                   '--config', Path(artifact) / 'server/wrangler.json']
                         phase = 'deploy'
-                        release.deploy(publisher, artifact, ORIGIN, command)
+                        if loaded:
+                            loaded['receipt'].update(phase='published', verificationError='code release awaiting reader verification')
+                            publisher.r2().save(loaded['receipt_path'], loaded['receipt'])
+                        release.deploy(publisher, artifact, bundle, ORIGIN, command, args.bootstrap)
                     phase = 'version'
                     deployments = release.cloudflare_deployments()
                     with tempfile.TemporaryDirectory(prefix='reader-version-', dir=publisher.state) as temporary:
@@ -88,10 +90,10 @@ def main(argv=None):
                         save(filename, deployments)
                         version = release.deployment_version(filename)
                     phase = 'verify'
-                    result = release.verify(publisher, artifact, ORIGIN, args.request, version)
+                    result = release.verify(publisher, bundle, ORIGIN, args.request, version, expected['codeRevision'])
                 except (ValueError, RuntimeError, OSError, KeyError, ET.ParseError) as error:
                     save(publisher.state / 'reader-failure.json', {
-                        'origin': ORIGIN, 'sourceRevision': args.commit, 'artifact': artifact,
+                        'origin': ORIGIN, 'codeRevision': args.commit, 'artifact': artifact,
                         'phase': phase, 'version': version, 'error': str(error).replace(token, '[redacted]')})
                     raise
         finally:

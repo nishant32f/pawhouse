@@ -1,149 +1,84 @@
-"""Release checks must preserve the pinned discovery and RSS contracts."""
-import hashlib
+"""Negative HTTP proofs preserve full prose, figures, discovery, RSS and real 404s."""
 import json
 import unittest
 import xml.etree.ElementTree as ET
+import daily_release_fixtures as fixtures
 
-import test_daily_release as fixtures
 
-
-class ReleaseContractTest(unittest.TestCase):
-    git = fixtures.ReleaseTest.git
-    cli = fixtures.ReleaseTest.cli
-    verify = fixtures.ReleaseTest.verify
-
-    def setUp(self):
-        fixtures.ReleaseTest.setUp(self)
-        discovery = ('<main><h1>Published editions</h1>'
-                     '<a href="/editions/2026-10-16/">October 16</a>'
-                     '<a href="/editions/2026-10-16/stories/stable-id/">A full story</a></main>')
-        for folder in (self.artifact, self.live):
-            for route in ('archive', 'search'):
-                (folder / route / 'index.html').write_text(discovery)
-            rss = ET.parse(folder / 'rss.xml')
-            item = rss.getroot().find('./channel/item')
-            item.find('guid').set('isPermaLink', 'true')
-            ET.SubElement(item, 'link').text = 'https://daily.example/editions/2026-10-16/'
-            ET.SubElement(item, 'pubDate').text = 'Fri, 16 Oct 2026 00:00:00 GMT'
-            rss.write(folder / 'rss.xml', encoding='unicode')
-
-    def pending_request(self):
-        relative = 'digests/x-ai-2026-10-16.md'
-        accepted = {'date': '2026-10-16', 'expected_head': self.old, 'files': {
-            relative: {'staged': str(self.home / 'accepted.md'), 'before_sha256': None,
-                       'staged_sha256': 'a' * 64}}}
-        request = self.home / 'accepted.json'
-        request.write_text(json.dumps(accepted))
-        key = hashlib.sha256(json.dumps(accepted, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
-        receipt = self.home / 'state/receipts' / (key + '.json')
-        receipt.parent.mkdir(parents=True, exist_ok=True)
-        receipt.write_text(json.dumps({'phase': 'readerpending', 'commit': self.old,
-                                       'files': {relative: 'a' * 64}}))
-        return request, receipt
-
-    def descendant(self):
-        pinned = json.loads((self.artifact / 'deployment.json').read_text())
-        pinned['sourceRevision'] = self.old
-        (self.artifact / 'deployment.json').write_text(json.dumps(pinned))
-        live = json.loads((self.live / 'deployment.json').read_text())
-        latest = dict(live['editions'][0], date='2026-10-17', path='/editions/2026-10-17/',
-                      readPath='/editions/2026-10-17/read/', stories=[])
-        live['editions'].append(latest)
-        (self.live / 'deployment.json').write_text(json.dumps(live))
-        front = self.live / 'editions/2026-10-17/index.html'
-        front.parent.mkdir(parents=True)
-        front.write_text('<main>The newer October 17 edition</main>')
-        (self.live / 'index.html').write_bytes(front.read_bytes())
-        for route in ('archive', 'search'):
-            path = self.live / route / 'index.html'
-            path.write_text(path.read_text().replace('</main>',
-                '<a href="/editions/2026-10-17/">October 17</a></main>'))
-        rss = ET.parse(self.live / 'rss.xml')
-        extra = ET.SubElement(rss.getroot().find('channel'), 'item')
-        ET.SubElement(extra, 'guid', isPermaLink='true').text = 'https://daily.example/editions/2026-10-17/'
-        ET.SubElement(extra, 'link').text = 'https://daily.example/editions/2026-10-17/'
-        ET.SubElement(extra, 'pubDate').text = 'Sat, 17 Oct 2026 00:00:00 GMT'
-        ET.SubElement(extra, 'description').text = '<main>The newer October 17 edition</main>'
-        rss.write(self.live / 'rss.xml', encoding='unicode')
-
-    def assert_rejected_without_state_writes(self):
+class ReleaseContractTest(fixtures.Fixture, unittest.TestCase):
+    def assert_rejected(self, expected=None):
         request, receipt = self.pending_request()
-        result = self.cli('verify', '--artifact', str(self.artifact), '--origin', self.origin,
-                          '--request', str(request))
+        result = self.verify('--request', request)
         self.assertNotEqual(result.returncode, 0, result.stdout)
-        self.assertEqual(json.loads(receipt.read_text())['phase'], 'readerpending')
-        self.assertFalse((self.home / 'state/verified-redirects.json').exists())
-        self.assertFalse((self.home / 'state/reader-release.json').exists())
+        value = json.loads(receipt.read_text())
+        self.assertEqual(value['phase'], 'published')
+        self.assertIn('verificationError', value)
+        if expected:
+            self.assertIn(expected, result.stderr)
+        self.assertFalse((self.state / 'verified-redirects.json').exists())
+        self.assertFalse((self.state / 'reader-release.json').exists())
 
-    def assert_linkless_discovery_rejected(self, route, descendant=False):
-        if descendant:
-            self.descendant()
-        (self.live / route / 'index.html').write_text('<main>Published editions are coming soon.</main>')
-        self.assert_rejected_without_state_writes()
+    def change(self, route, before, after):
+        page = self.live / route
+        text = page.read_text()
+        self.assertIn(before, text)
+        page.write_text(text.replace(before, after))
+        self.assert_rejected()
 
-    def test_same_revision_archive_requires_pinned_content(self):
-        self.assert_linkless_discovery_rejected('archive')
+    def test_matching_figures_full_prose_archives_and_rss_verify(self):
+        self.assertEqual(self.verify().returncode, 0)
 
-    def test_same_revision_search_requires_pinned_content(self):
-        self.assert_linkless_discovery_rejected('search')
+    def test_same_revision_archive_requires_published_links(self):
+        (self.live / 'archive/index.html').write_text('<main>Published editions are coming soon.</main>')
+        self.assert_rejected('archive')
 
-    def test_descendant_archive_requires_pinned_native_links(self):
-        self.assert_linkless_discovery_rejected('archive', descendant=True)
+    def test_same_revision_search_requires_full_text_and_native_links(self):
+        (self.live / 'search/index.html').write_text('<main>Published editions are coming soon.</main>')
+        self.assert_rejected('search')
 
-    def test_descendant_search_requires_pinned_native_links(self):
-        self.assert_linkless_discovery_rejected('search', descendant=True)
+    def test_matching_hash_cannot_hide_omitted_archived_route(self):
+        (self.live / 'editions/2026-10-16/stories/vendor-benchmark/index.html').unlink()
+        self.assert_rejected()
 
-    def test_descendant_keeps_pinned_links_and_accepts_newer_links_and_rss_item(self):
-        self.descendant()
-        request, receipt = self.pending_request()
-        result = self.cli('verify', '--artifact', str(self.artifact), '--origin', self.origin,
-                          '--request', str(request))
-        self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(json.loads(receipt.read_text())['phase'], 'readerverified')
-        self.assertEqual(set(json.loads((self.home / 'state/verified-redirects.json').read_text())['redirects']),
-                         {'/digests/x-ai-2026-10-16'})
-
-    def add_figures(self):
-        figures = ('<figure data-story-visual="image"><img src="https://media.example/original.jpg" '
-                   'width="1200" height="675" alt="The launch screen">'
-                   '<figcaption>A source image. Credit: Author</figcaption></figure>'
-                   '<figure data-story-visual="bar"><h3>Reported daily merges</h3>'
-                   '<div class="bar" style="height:8.333%" data-value="2500">~2,500 May</div>'
-                   '<div class="bar" style="height:100%" data-value="30000">&gt;30,000 September</div>'
-                   '<figcaption>Reported by the company.</figcaption></figure>')
-        routes = ['index.html', 'editions/2026-10-16/index.html',
-                  'editions/2026-10-16/read/index.html',
-                  'editions/2026-10-16/stories/stable-id/index.html']
-        for folder in (self.artifact, self.live):
-            for route in routes:
-                page = folder / route
-                page.write_text(page.read_text().replace('</article>', figures + '</article>'))
-
-    def test_matching_figures_verify_with_full_prose(self):
-        self.add_figures()
-        request, receipt = self.pending_request()
-        result = self.cli('verify', '--artifact', str(self.artifact), '--origin', self.origin,
-                          '--request', str(request))
-        self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(json.loads(receipt.read_text())['phase'], 'readerverified')
+    def test_matching_hash_cannot_hide_omitted_legacy_edition(self):
+        (self.live / 'editions/2026-05-10/read/index.html').unlink()
+        self.assert_rejected()
 
     def test_changed_story_image_url_cannot_verify_from_matching_text(self):
-        self.add_figures()
-        page = self.live / 'editions/2026-10-16/stories/stable-id/index.html'
-        page.write_text(page.read_text().replace('media.example/original.jpg', 'media.example/unrelated.jpg'))
-        self.assert_rejected_without_state_writes()
+        self.change('editions/2026-10-15/stories/gloss-x-import/index.html', 'media.example/original.jpg', 'media.example/unrelated.jpg')
 
     def test_changed_chart_drawing_cannot_verify_from_matching_labels(self):
-        self.add_figures()
-        page = self.live / 'editions/2026-10-16/read/index.html'
-        page.write_text(page.read_text().replace('height:8.333%', 'height:83.333%'))
-        self.assert_rejected_without_state_writes()
+        self.change('editions/2026-10-15/read/index.html', 'height:8.333333333333332%', 'height:83.33333333333333%')
 
     def test_changed_front_image_alt_cannot_verify_from_matching_body(self):
-        self.add_figures()
-        page = self.live / 'index.html'
-        page.write_text(page.read_text().replace('alt="The launch screen"', 'alt="An unrelated screen"'))
-        self.assert_rejected_without_state_writes()
+        self.change('editions/2026-10-15/index.html', 'alt="The launch screen"', 'alt="An unrelated screen"')
+
+    def test_changed_image_credit_is_rejected(self):
+        self.change('editions/2026-10-15/read/index.html', 'Image: Author.', 'Image: Another.')
+
+    def test_changed_caption_is_rejected(self):
+        self.change('editions/2026-10-15/index.html', 'Reported by the company.', 'Independently verified.')
+
+    def test_missing_chart_visible_qualifier_is_rejected(self):
+        self.change('editions/2026-10-15/index.html', '~2,500', '2,500')
+
+    def test_changed_chart_raw_value_is_rejected(self):
+        self.change('editions/2026-10-15/read/index.html', 'data-chart-value="2500"', 'data-chart-value="25000"')
+
+    def test_changed_chart_raw_qualifier_is_rejected(self):
+        self.change('editions/2026-10-15/read/index.html', 'data-chart-qualifier="approximate"', 'data-chart-qualifier="exact"')
+
+    def test_source_relocated_outside_story_does_not_verify(self):
+        self.change('editions/2026-10-16/stories/reproducible-test/index.html', 'href="https://example.com/test"', 'href="https://example.com/other"')
+
+    def test_sitemap_cannot_omit_archived_routes(self):
+        sitemap = self.live / 'sitemap.xml'
+        root = ET.fromstring(sitemap.read_text())
+        for child in list(root):
+            if '/vendor-benchmark/' in ''.join(child.itertext()):
+                root.remove(child)
+        sitemap.write_text(ET.tostring(root, encoding='unicode'))
+        self.assert_rejected('sitemap')
 
     def change_rss(self, field, value, attribute=None):
         rss = ET.parse(self.live / 'rss.xml')
@@ -153,7 +88,7 @@ class ReleaseContractTest(unittest.TestCase):
         else:
             node.text = value
         rss.write(self.live / 'rss.xml', encoding='unicode')
-        self.assert_rejected_without_state_writes()
+        self.assert_rejected('RSS')
 
     def test_rss_guid_host_must_match_pinned_item(self):
         self.change_rss('guid', 'https://wrong.example/editions/2026-10-16/')
@@ -166,6 +101,41 @@ class ReleaseContractTest(unittest.TestCase):
 
     def test_rss_pubdate_must_match_pinned_item(self):
         self.change_rss('pubDate', 'Sat, 17 Oct 2026 00:00:00 GMT')
+
+    def test_rss_full_body_must_match_accepted_bytes(self):
+        self.change_rss('description', '<p>Truncated</p>')
+
+    def test_rss_parse_error_keeps_published_receipt_and_blocks_delivery(self):
+        (self.live / 'rss.xml').write_text('<rss>')
+        self.assert_rejected()
+
+    def test_rss_mime_is_enforced(self):
+        self.server.RequestHandlerClass.func.extensions_map['.xml'] = 'text/plain'
+        self.addCleanup(self.server.RequestHandlerClass.func.extensions_map.update, {'.xml': 'application/rss+xml; charset=utf-8'})
+        self.assert_rejected('RSS')
+
+    def test_unknown_route_must_return_real404(self):
+        path = self.live / 'editions/0001-01-01/stories/not-a-published-story/index.html'
+        path.parent.mkdir(parents=True)
+        path.write_text('<main>Not found</main>')
+        self.assert_rejected('real 404')
+
+    def test_endpoint503_blocks_delivery_and_retains_same_publication(self):
+        handler = self.server.RequestHandlerClass.func
+        original = handler.do_GET
+        def unavailable(request):
+            if request.path == '/deployment.json':
+                request.send_error(503)
+            else:
+                original(request)
+        handler.do_GET = unavailable
+        self.addCleanup(setattr, handler, 'do_GET', original)
+        self.assert_rejected()
+
+    def test_wrong_code_identity_is_rejected_separately(self):
+        result = self.verify('--code-revision', '0' * 40)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('code revision', result.stderr)
 
 
 if __name__ == '__main__':
