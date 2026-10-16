@@ -79,6 +79,18 @@ class Publisher:
         os.chmod(self.state, 0o700)
         self.journal = self.state / 'promotion.json'
 
+    def r2(self):
+        backend_path = self.state / 'backend.json'
+        if not backend_path.exists():
+            return None
+        backend = json.loads(backend_path.read_text())
+        if backend == {'schemaVersion': 1, 'backend': 'legacy'}:
+            return None
+        if set(backend) != {'schemaVersion', 'backend', 'vaultRoot', 'configPath'} or backend.get('schemaVersion') != 1 or backend.get('backend') != 'r2':
+            raise ValueError('unsupported explicit publication backend')
+        from r2_publication import R2Publisher
+        return R2Publisher(self, backend)
+
     def git(self, *args):
         return run(['git', '-C', self.repo, *args])
 
@@ -90,6 +102,9 @@ class Publisher:
             yield
 
     def recover(self):
+        active = self.r2()
+        if active:
+            return active.recover()
         if not self.journal.exists():
             return
         journal = json.loads(self.journal.read_text())
@@ -136,6 +151,9 @@ class Publisher:
         self.journal.unlink()
 
     def request(self, filename):
+        active = self.r2()
+        if active:
+            return active.request(filename)
         filename = Path(filename).resolve()
         if any(public == filename or public in filename.parents for public in (self.repo, self.vault)):
             raise ValueError('accepted request must remain private, outside repository and public vault')
@@ -223,6 +241,9 @@ class Publisher:
         return accepted
 
     def digest(self, filename):
+        active = self.r2()
+        if active:
+            return active.digest(filename)
         request, receipt_path = self.request(filename)
         receipt = json.loads(receipt_path.read_text()) if receipt_path.exists() else None
         if receipt and receipt['phase'] == 'deliverypending':
@@ -302,7 +323,7 @@ class Publisher:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
-    for name in ('digest', 'delivery-begin', 'delivery-complete', 'delivery-resolve', 'main-result'):
+    for name in ('digest', 'resume', 'status', 'delivery-begin', 'delivery-complete', 'delivery-resolve', 'main-result'):
         command = sub.add_parser(name)
         command.add_argument('--request', required=True)
         if name in ('delivery-complete', 'delivery-resolve'):
@@ -319,7 +340,7 @@ def main():
     args = parser.parse_args()
     publisher = Publisher()
     with publisher.locked():
-        if args.command == 'digest':
+        if args.command in ('digest', 'resume'):
             result = publisher.digest(args.request)
         elif args.command == 'notes':
             result = publisher.notes(args.message)
@@ -332,6 +353,8 @@ def main():
             _, receipt_path = publisher.request(args.request)
             result = json.loads(receipt_path.read_text())
             if args.command == 'delivery-begin':
+                if result.get('schemaVersion') == 2 and result['kind'] != 'scheduled':
+                    raise ValueError('correction and backfill publications cannot initiate delivery')
                 if result['phase'] != 'readerverified':
                     raise ValueError('dated delivery requires readerverified; ambiguous delivery requires manual resolution')
                 result['phase'] = 'deliverypending'
@@ -344,8 +367,11 @@ def main():
                     raise ValueError('no ambiguous delivery to resolve')
                 result.update(phase='complete' if args.outcome == 'delivered' else 'readerverified', delivery_reference=args.reference)
             elif args.command == 'main-result':
+                if result.get('schemaVersion') == 2:
+                    raise ValueError('Quartz main-result does not apply to R2 publications')
                 result['main'] = {'status': args.status, 'reference': args.reference}
-            save(receipt_path, result)
+            if args.command != 'status':
+                save(receipt_path, result)
         print(json.dumps(result, sort_keys=True))
 
 
