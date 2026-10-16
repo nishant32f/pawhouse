@@ -453,7 +453,6 @@ test("old story, brief and archived heading fragments lead to retained content",
   }
 })
 
-
 test("search retains one copy of full text and native title queries", async () => {
   const search = read("search/index.html")
   assert.equal(search.split("Original imported wording remains intact.").length - 1, 1)

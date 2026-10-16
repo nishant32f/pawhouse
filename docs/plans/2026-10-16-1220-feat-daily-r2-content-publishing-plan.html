@@ -1350,9 +1350,9 @@
             <dd>
               <code>scripts/publication.py</code>, <code>scripts/sync-content-from-vault.sh</code>,
               <code>quartz.config.ts</code>, <code>quartz.layout.ts</code>,
-              <code>content/index.md</code>, <code>content/digests/**</code>; matching public-vault
-              source notes; new redirect inventory/apply verifier under <code>scripts/</code>;
-              publisher/Quartz exclusion and redirect tests; repository
+              <code>content/{index,about}.md</code>, <code>content/digests/**</code>; matching
+              public-vault source notes; new redirect inventory/apply verifier under
+              <code>scripts/</code>; publisher/Quartz exclusion and redirect tests; repository
               <code>AGENTS.md</code> publishing guidance.
             </dd>
           </dl>
@@ -1373,8 +1373,9 @@
                 rules and wait for asynchronous list creation before enabling the dedicated rule.
               </li>
               <li>
-                Remove digest navigation and homepage mentions in the vault source as well as the
-                repository. Audit backlinks and generated indexes without touching unrelated notes.
+                Remove digest navigation and references from the homepage and About page in both the
+                vault source and repository. Audit backlinks and generated indexes without touching
+                unrelated notes.
               </li>
               <li>
                 Keep implementation/deletion changes staged behind the activation gates. A PR merge
@@ -1701,6 +1702,29 @@
                 </td>
               </tr>
               <tr>
+                <td>Completed review and fixes</td>
+                <td>
+                  The full ce-code-review receipt covers twelve local lenses. All six confirmed
+                  findings are fixed, including first-release compatibility, bounded child
+                  processes, private roots, CI coverage, search text duplication and pinned staging.
+                  Real SIGINT and timeout tests prove child termination before lock release. The
+                  Claude route failed before initialization and sent no reviewed code; the local
+                  adversarial fallback completed.
+                </td>
+              </tr>
+              <tr>
+                <td>Final integration</td>
+                <td>
+                  After merging the latest main branch, the app passes 39 tests, the neutral content
+                  package passes 18, and Quartz passes 71. All 172 Python tests pass. Typechecks and
+                  both builds pass. The generated-site audit checks all 619 old URL variants across
+                  707 output files and finds no digest content or links. Its 161 ordinary source
+                  notes include the new About page and existing wisdom and summaries. Mobile and
+                  desktop browser checks preserve the profile navigation. Search result counts match
+                  the accepted index without duplicating article text.
+                </td>
+              </tr>
+              <tr>
                 <td>Build separation</td>
                 <td>
                   The reader release passes an uncached pinned build and Wrangler dry-run. Quartz
@@ -1718,15 +1742,21 @@
           also exists.
         </p>
         <p>
-          The full Hermes/Python suite passes all 163 tests. Quartz passes its TypeScript check and
-          69 tests. The full formatting check reports existing repository warnings; new and changed
+          The full Hermes/Python suite passes all 172 tests. Quartz passes its TypeScript check and
+          71 tests. The full formatting check reports existing repository warnings; new and changed
           code receives focused formatting checks.
         </p>
         <p>
           Activation remains pending. The existing token lacks R2 and redirect-list access. Four
-          legacy publication receipts need evidence-based closure, including one ambiguous delivery.
-          No vault relocation, installed producer change, cron edit, R2 write, Worker deployment,
-          redirect installation or website removal has run.
+          legacy publication receipts still need documented closure. The user confirmed receiving
+          the scheduled 16 October Telegram message. No receipt write or resend has run. No vault
+          relocation, installed producer change, cron edit, R2 write, Worker deployment, redirect
+          installation or website removal has run.
+        </p>
+        <p>
+          The current About page and profile navigation remain intact. Private reviewed retirement
+          snapshots cover both public/index.md and public/about.md. Neither live source file has
+          changed in this migration.
         </p>
         <p>
           Private run records retain exact source inventories, frozen objects, screenshots and
