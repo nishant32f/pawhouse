@@ -452,3 +452,17 @@ test("old story, brief and archived heading fragments lead to retained content",
     }
   }
 })
+
+
+test("search retains one copy of full text and native title queries", async () => {
+  const search = read("search/index.html")
+  assert.equal(search.split("Original imported wording remains intact.").length - 1, 1)
+  const response = await fetchPath("/search/?q=X-AI-2026-05-10")
+  assert.equal(response.status, 200)
+  const html = await response.text()
+  const result = [...html.matchAll(/<li\b[^>]*>[\s\S]*?<\/li>/g)].find((match) =>
+    match[0].includes('href="/editions/2026-05-10/"'),
+  )
+  assert.ok(result)
+  assert.doesNotMatch(result[0].split(">")[0] ?? "", /\bhidden/)
+})

@@ -22,7 +22,7 @@ const matchCount = entries.filter((entry) => entry.matches).length
     </form>
     <p role="status" aria-live="polite" id="search-status">{query && `${matchCount} ${matchCount === 1 ? "match" : "matches"}`}</p>
     <p id="no-matches" hidden={matchCount !== 0}>No matches. Try fewer words, or <a href="/archive/">browse the edition archive</a>.</p>
-    <ul class="search-results">{entries.map((document) => <li data-search={document.searchText} hidden={!document.matches}><a href={document.path}>{document.path === `/editions/${document.date}/` ? `${editionDate(document.date)} · Full edition` : document.title}</a>{document.path !== `/editions/${document.date}/` && <span>{editionDate(document.date)}{archived.has(document.path) && " · Archived story"}</span>}<span class="sr-only">{document.text}</span></li>)}</ul>
+    <ul class="search-results">{entries.map((document) => <li data-search hidden={!document.matches}><a href={document.path}>{document.path === `/editions/${document.date}/` ? `${editionDate(document.date)} · Full edition` : document.title}</a>{document.path !== `/editions/${document.date}/` && <span>{editionDate(document.date)}{archived.has(document.path) && " · Archived story"}</span>}<span class="sr-only" data-search-text>{document.searchText}</span></li>)}</ul>
     <noscript><p>Use your browser's Find command to find a headline, or follow any edition link above.</p></noscript>
   </div>
 </Paper>
@@ -31,15 +31,17 @@ const matchCount = entries.filter((entry) => entry.matches).length
   const input = document.querySelector<HTMLInputElement>("#search-query")
   const status = document.querySelector("#search-status")
   const empty = document.querySelector<HTMLElement>("#no-matches")
-  const entries = Array.from(document.querySelectorAll<HTMLElement>("[data-search]"))
+  const entries = Array.from(document.querySelectorAll<HTMLElement>("[data-search]")).map((element) => ({
+    element,
+    text: element.querySelector("[data-search-text]")?.textContent?.toLocaleLowerCase() ?? "",
+  }))
   const filter = () => {
     const query = input?.value.trim().toLocaleLowerCase() ?? ""
     const words = query.split(/\s+/).filter(Boolean)
     let count = 0
-    for (const entry of entries) {
-      const text = entry.dataset.search?.toLocaleLowerCase() ?? ""
-      entry.hidden = !words.every((word) => text.includes(word))
-      if (!entry.hidden) count++
+    for (const { element, text } of entries) {
+      element.hidden = !words.every((word) => text.includes(word))
+      if (!element.hidden) count++
     }
     if (status) status.textContent = query ? `${count} ${count === 1 ? "match" : "matches"}` : "All editions and stories"
     if (empty) empty.hidden = count !== 0
