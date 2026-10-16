@@ -109,7 +109,8 @@ test("latest and dated front pages retain actual dates and story order", () => {
   assert.match(front, /Read full edition/)
   assert.match(front, /The README says social posts/)
   assert.match(front, /more than 30,000 per day/)
-  assert.doesNotMatch(front, /print-edition/)
+  assert.match(front, /Machine Herald/)
+  assert.doesNotMatch(front, /data-print|print-edition|A daily paper on artificial intelligence/)
 })
 
 test("static article routes contain complete prose, adjacent sources and active navigation", () => {
@@ -156,6 +157,7 @@ test("legacy editions remain whole; archive and search work without JavaScript",
 
 test("RSS has full sanitized editions, stable date identity, real citations and deterministic output", () => {
   const xml = read("rss.xml")
+  assert.match(xml, /<channel><title>Machine Herald<\/title>/)
   const outputData: unknown = JSON.parse(
     run("python3", [
       "-c",

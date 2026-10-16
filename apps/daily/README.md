@@ -72,9 +72,9 @@ The home page shows the latest actual edition and its date. Identified editions 
 | `/sitemap.xml`               | Actual native routes, including retained archived articles.                                        |
 | `/404.html`                  | Missing-page document for static hosting.                                                          |
 
-Reading, sources, navigation, and search browsing work without JavaScript. System dark mode uses CSS. JavaScript adds theme, text size, print buttons, and search filtering. Browser print remains available without JavaScript. Printing a newspaper front includes the complete selected edition.
+Reading, sources, navigation, and search browsing work without JavaScript. System dark mode uses CSS. JavaScript adds theme, text size, and search filtering. The reader has no Print control or dedicated print layout.
 
-The app self-hosts UnifrakturCook through the pinned Fontsource package for its nameplate. Georgia supplies reading text and Arial supplies controls and captions. The font's OFL license ships under `public/fonts/`. The reader styles and build remain separate from Quartz.
+Machine Herald uses self-hosted Old Standard TT for its masthead and headlines, Newsreader for reading text, and Arial for controls and captions. Both Fontsource packages are pinned, with their OFL licenses under `public/fonts/`. The app owns the publication name, type, pale newsprint palette and responsive layout. The reader styles and build remain separate from Quartz and Hermes.
 
 RSS identifies one edition by its dated URL. A correction updates that same item. `pubDate` reflects midnight IST for the source date. Missing days create no routes or feed items. Canonical, RSS, and sitemap URLs use Astro's configured `site`. The default is the production reader origin. Astro's `--site` build option can set a local preview origin.
 
