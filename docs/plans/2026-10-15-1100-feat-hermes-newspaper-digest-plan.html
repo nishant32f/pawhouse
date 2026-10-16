@@ -1596,12 +1596,15 @@
       <section id="definition-of-done">
         <h2>Definition of Done</h2>
         <p>
-          The original U1–U6 implementation and activation are recorded above. The illustrated revision through U7–U10 completed on 15 October. The current execution releases the selected Machine Herald design in U11, then addresses curation separately in U12.
+          The original U1–U6 implementation and activation are recorded above. The illustrated
+          revision through U7–U10 completed on 15 October. The current execution releases the
+          selected Machine Herald design in U11, then addresses curation separately in U12.
         </p>
         <ol>
           <li>
             The deployed reader matches the approved edition on desktop and phone. Responsive,
-            accessibility, no-JavaScript, missing-font and missing-image checks pass. The app has no Print control or dedicated print layout.
+            accessibility, no-JavaScript, missing-font and missing-image checks pass. The app has no
+            Print control or dedicated print layout.
           </li>
           <li>
             Content-only story metadata passes the shared publisher validator. Components own visual
@@ -2041,18 +2044,117 @@
         daily.nishantkhurana.me. The user authorized production activation. The reader, RSS, and
         Hermes cutover are live; the next scheduled run remains unobserved.
       </footer>
-    <section id="machine-herald-release">
-<h2>Machine Herald release, 16 October 2026</h2>
-<p>The user selected direction 1 from the local name and typography proposals, with the name Machine Herald. The user authorized making it live, then addressing curation.</p>
-<h3>Approved design scope</h3>
-<ul><li>R19. Use Machine Herald consistently in the masthead, page metadata, empty state, footer and RSS channel. Keep dated paths and RSS item identities.</li><li>R20. Use self-hosted Old Standard TT for the masthead and headlines, Newsreader for reading, and the selected pale newsprint palette. Keep dark mode, text sizing and keyboard access.</li><li>R21. Remove the visible subtitle, Print control, its handler and dedicated print layout.</li><li>R22. Match the selected desktop hierarchy with a lead, up to two stories beside it, and remaining stories below. Mobile remains one readable column. Single-story and legacy editions remain valid.</li><li>R23. Publish the current accepted Markdown only. Do not publish the twelve-item specimen or rewrite stories as part of design deployment.</li></ul>
-<h3>Implementation and verification</h3>
-<p>U11 changes only the daily app, font packages/licenses and its documentation. Use the existing real-build reading tests for branding, sources, ordering, RSS identity and removal of print controls. Pure typography receives browser verification rather than CSS assertion tests. Inspect desktop, mobile, dark mode, text sizing, a single story and a legacy edition. Review the diff, open and merge a PR, then run the existing code-only release from canonical Pluto main. Verify actual live prose, RSS and retained routes.</p>
-<h3>Local design verification</h3><p>The existing build tests were strengthened for the Machine Herald page and RSS names and removal of the subtitle/print control. They failed for the old branding before implementation. All 32 app tests pass, with zero Astro diagnostics. Browser checks covered 1440px desktop, 390px mobile, 320px narrow mobile, light/dark modes, persistent text sizing, the four-story illustrated edition, a legacy edition, a dated article and the real single-story build fixture. The mobile accessibility audit had 19 passes, zero violations and zero incomplete checks.</p>
-<p>Simplification removed two redundant CSS rules. Focused code review completed with no findings at /tmp/compound-engineering-501/ce-code-review/20261016-machine-herald-2fe1a9b on Pluto. A local adversarial read covered the independent lens after the external route failed before sending content.</p>
-<h3>Curation follows the design release</h3>
-<p>U12 addresses the approved discovery problem separately. Start from the proposed 10–14-item target and four discovery lanes in the reviewed proposal. Preserve content/design separation, primary sources, separate unslop editing, private selection evidence and one authored Markdown edition. Compare a privately generated candidate with today's edition before installing the revised producer. Do not backfill old material as current news or send a duplicate Telegram message.</p>
-</section>
-</main>
+      <section id="machine-herald-release">
+        <h2>Machine Herald release, 16 October 2026</h2>
+        <p>
+          The user selected direction 1 from the local name and typography proposals, with the name
+          Machine Herald. The user authorized making it live, then addressing curation.
+        </p>
+        <h3>Approved design scope</h3>
+        <ul>
+          <li>
+            R19. Use Machine Herald consistently in the masthead, page metadata, empty state, footer
+            and RSS channel. Keep dated paths and RSS item identities.
+          </li>
+          <li>
+            R20. Use self-hosted Old Standard TT for the masthead and headlines, Newsreader for
+            reading, and the selected pale newsprint palette. Keep dark mode, text sizing and
+            keyboard access.
+          </li>
+          <li>
+            R21. Remove the visible subtitle, Print control, its handler and dedicated print layout.
+          </li>
+          <li>
+            R22. Match the selected desktop hierarchy with a lead, up to two stories beside it, and
+            remaining stories below. Mobile remains one readable column. Single-story and legacy
+            editions remain valid.
+          </li>
+          <li>
+            R23. Publish the current accepted Markdown only. Do not publish the twelve-item specimen
+            or rewrite stories as part of design deployment.
+          </li>
+        </ul>
+        <h3>Implementation and verification</h3>
+        <p>
+          U11 changes only the daily app, font packages/licenses and its documentation. Use the
+          existing real-build reading tests for branding, sources, ordering, RSS identity and
+          removal of print controls. Pure typography receives browser verification rather than CSS
+          assertion tests. Inspect desktop, mobile, dark mode, text sizing, a single story and a
+          legacy edition. Review the diff, open and merge a PR, then run the existing code-only
+          release from canonical Pluto main. Verify actual live prose, RSS and retained routes.
+        </p>
+        <h3>Local design verification</h3>
+        <p>
+          The existing build tests were strengthened for the Machine Herald page and RSS names and
+          removal of the subtitle/print control. They failed for the old branding before
+          implementation. All 32 app tests pass, with zero Astro diagnostics. Browser checks covered
+          1440px desktop, 390px mobile, 320px narrow mobile, light/dark modes, persistent text
+          sizing, the four-story illustrated edition, a legacy edition, a dated article and the real
+          single-story build fixture. The mobile accessibility audit had 19 passes, zero violations
+          and zero incomplete checks.
+        </p>
+        <p>
+          Simplification removed two redundant CSS rules. Focused code review completed with no
+          findings at /tmp/compound-engineering-501/ce-code-review/20261016-machine-herald-2fe1a9b
+          on Pluto. A local adversarial read covered the independent lens after the external route
+          failed before sending content.
+        </p>
+        <h3>Curation follows the design release</h3>
+        <p>
+          U12 addresses the approved discovery problem separately. Start from the proposed
+          10–14-item target and four discovery lanes in the reviewed proposal. Preserve
+          content/design separation, primary sources, separate unslop editing, private selection
+          evidence and one authored Markdown edition. Compare a privately generated candidate with
+          today's edition before installing the revised producer. Do not backfill old material as
+          current news or send a duplicate Telegram message.
+        </p>
+        <h3>U11 live proof</h3>
+        <p>
+          PR #15 merged at cd9aa432997b20e73cb2989cc90c0fe7172ed937. The Pluto release verified all
+          179 editions, their retained routes, RSS full text and the new publication name.
+          Cloudflare version ad6d8c80-c589-44a4-a488-2f9db89c81e4 serves the selected design. The
+          release receipt remains private.
+        </p>
+        <h3>U12 execution contract</h3>
+        <p>
+          Broaden discovery across official releases, repositories, builder reports and research.
+          Compare seven accepted editions, use a seven-day dated catch-up window, and record source
+          collection and selection privately. Normal editions aim for 10 to 14 distinct items,
+          usually one lead, five to seven supporting stories and four to six briefs. Counts are
+          targets. Quiet days may remain short without filler.
+        </p>
+        <p>
+          Keep v1 and legacy validation unchanged. V2 permits up to eight full stories and six
+          briefs, with the existing hard word limits. Soft targets become 140 to 200 words for the
+          lead, 70 to 120 for supporting stories, and 25 to 45 for briefs. Preserve mandatory
+          separate unslop editing, persistent IDs and the existing publishing route.
+        </p>
+        <p>
+          Update the producer, cron prompt, checker and matching documentation. Prove v2 capacity
+          and boundaries through the existing editorial test suite before implementing the checker
+          change. Review a private twelve-item revision of 16 October against inspected primary
+          sources. Retain today's three existing IDs and RSS identity. After review and merge,
+          publish through the scoped publisher and verify both live readers. Install reviewed
+          producer files with backups, change only the existing cron prompt, and verify the 08:00
+          IST schedule and delivery settings. Send no duplicate Telegram notification.
+        </p>
+        <h3>U12 verification before activation</h3>
+        <p>
+          The added capacity and length-target tests failed against the old checker before
+          implementation. All 11 targeted tests and all 103 Hermes package tests now pass. Quartz's
+          69 tests and TypeScript check pass. Scoped formatting passes; the repository-wide
+          formatter reports existing warnings in unrelated generated state and published content.
+          Those files remain untouched.
+        </p>
+        <p>
+          The private 16 October candidate has seven full stories and five briefs. All twelve
+          received source comparison and a separate unslop edit. The previous three IDs remain
+          intact. Both editorial and reader AST validation pass. The 133-word lead has an accepted
+          soft-target warning; no filler was added. The integrated private preview shows twelve
+          articles without horizontal overflow at desktop and 390px mobile widths. Simplification
+          made no changes.
+        </p>
+      </section>
+    </main>
   </body>
 </html>

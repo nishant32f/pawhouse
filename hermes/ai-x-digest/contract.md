@@ -113,7 +113,9 @@ Archived records retain their IDs and article routes. Exclude them from current 
 
 ## Editorial and source boundaries
 
-Identity does not change the shipped editorial targets. Keep concrete headlines, concise evidence, attributed claims, uncertainty, numbers, dates, and source support. Keep the separate mandatory unslop edit and private source comparison.
+V2 permits one to eight full stories and an optional group of one to six briefs. Normal editions aim for 10 to 14 distinct items; quiet days may be shorter. Soft word targets are 140 to 200 for the lead, 70 to 120 for supporting stories and 25 to 45 for briefs. Hard limits remain 220 and 85. Legacy and v1 rules remain unchanged.
+
+Discovery covers official releases, repositories, builder reports and research. Compare seven accepted editions and label any seven-day catch-up with its actual event date. Keep collection, selection and source evidence private. Keep concrete headlines, concise evidence, attributed claims, uncertainty, numbers, dates, and source support. Keep the separate mandatory unslop edit and private source comparison.
 
 Preserve each story's actual adjacent source links and attribution. A source in another story does not cover a missing citation. The existing editorial checker owns prose targets and source adjacency. The reader adapter owns Markdown rendering and unsafe-link rejection. Identity parsing does not replace either check.
 

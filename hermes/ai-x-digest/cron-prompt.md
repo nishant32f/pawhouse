@@ -4,7 +4,11 @@ Load `ai-x-digest`, `unslop`, `obsidian`, and `bird`. For new editions, the `ai-
 
 Use today's date in Asia/Kolkata. Keep the daily path `/Users/skypawalker/Dropbox/Obsidian/public/digests/x-ai-YYYY-MM-DD.md` and the existing monthly/year indexes.
 
-Select one lead and normally 2 to 4 distinct supporting stories. Publish fewer on quiet days. Briefs are optional. A successful collection with no publishable news creates only a private no-news record; a collection failure is an error. Do not pad with recurring themes or old saved posts.
+Complete the four discovery categories in `ai-x-digest`: official releases, repositories, builder reports and research. A small X sample alone is insufficient. Inspect selected primary sources, repository releases/licenses/platform limits and relevant paper results. Keep private collection and selection records with source snapshots, event dates, novelty checks and failure status. Compare the last seven accepted editions. Label catch-up within seven days with its actual date and current reason; do not repeat an old project without a new development.
+
+Aim for 10 to 14 distinct items, usually one lead, five to seven supporting stories and four to six briefs. The v2 checker permits eight full stories and six briefs. Counts are targets. If fewer than ten qualify, make a second focused discovery pass before accepting a shorter edition. Keep useful new repositories and builder tools eligible even when their launch posts sound promotional. Strip marketing, verify facts and link the repository. Do not infer growth from a single star count. Quiet days may remain short. Successful collection with no publishable news creates only a private no-news record; collection failure is an error. Never pad with recurring themes or old saved posts.
+
+Write roughly 140 to 200 words for the lead, 70 to 120 for supporting stories and 25 to 45 for briefs. These are soft targets. Keep material qualifications and omit generic significance paragraphs. Do not add filler to meet a length target.
 
 Write a complete first draft privately, then load and apply `unslop`. Save a separate edited edition and a private review with concrete edits and the sources actually inspected. Preserve facts, numbers, attribution, uncertainty, exact quotes, and URLs. Correct unsupported claims from their sources. No signal-quality preamble, duplicate H1, forced takeaways, or source appendix. Each story has a concrete headline, concise opening summary, and nearby sources.
 

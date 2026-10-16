@@ -4,6 +4,12 @@ This package supplies the `editorial-v2` producer for the independent daily read
 
 The public vault keeps one authored Markdown file per day. Story markers give the reader persistent article paths without separate public story files. Hermes must retain IDs through headline changes, reorders, retries, and archived corrections. It must complete a separate unslop rewrite and private draft/source comparison before accepting the candidate.
 
+## Discovery and length
+
+The producer checks official releases, repositories, builder reports and research before selecting. It compares seven accepted editions and labels catch-up with the actual event date. Private collection and selection records distinguish failed sources, rejected candidates and no-news outcomes.
+
+Normal editions aim for 10 to 14 distinct items. V2 permits up to eight full stories and six briefs. Quiet days may be shorter after a second discovery pass. The lead targets 140 to 200 words, supporting stories 70 to 120, and briefs 25 to 45. Hard limits remain 220 and 85. Legacy and v1 checks remain unchanged.
+
 ## Content and design
 
 Hermes owns headlines, prose, section labels, decks and optional sourced visual data. The reader owns typography, backgrounds, columns, spacing, image treatment and chart drawing. The same accepted edition supplies the website, article pages and full-text RSS. No second public draft or formatter belongs in Hermes.
