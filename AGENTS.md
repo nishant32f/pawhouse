@@ -61,4 +61,12 @@ Treat `/Users/skypawalker/Dropbox/Obsidian/public` as the source of truth for pu
 npm run publish -- "Update notes"
 ```
 
-The publish script runs `rsync --delete`, builds Quartz, stages all repo changes, commits with the provided message, and pushes the current branch to `origin`. A push to `main` triggers the GitHub Pages workflow.
+The publish script runs `rsync --delete` for ordinary notes, excluding root `public/digests/`. It builds Quartz, stages all repo changes, commits with the provided message, and pushes the current branch to `origin`. A push to `main` triggers the GitHub Pages workflow.
+
+Digests use private vault Markdown and the R2 publisher described in `hermes/ai-x-digest/rollout.md`. Ordinary sync must neither import public digests nor delete any existing legacy destination digests. The retirement change removes `content/digests/` explicitly and Quartz ignores `digests/**`.
+
+The user selected a direct personal-app cutover on 16 October 2026. Do not install legacy redirects or create a temporary preview app. Old main-site digest URLs may stop working, and downtime is acceptable. This supersedes the original plan's redirect and isolated-preview gates.
+
+Verify the replacement archive, actual newspaper and RSS before releasing Quartz removal. At authorized retirement, apply the matching public-vault homepage and About edits from their private reviewed snapshots before the next notes sync. Preserve accepted sources and backups. Keep Hermes schedule, inherited model/provider and delivery configuration intact. Do not send a migration Telegram message.
+
+The redirect CLI is unused in this rollout. It must not create lists, rules or tokens without a new explicit request for redirects.

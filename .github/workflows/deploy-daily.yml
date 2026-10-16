@@ -4,10 +4,14 @@ on:
   pull_request:
     paths:
       - apps/daily/**
-      - content/digests/**
       - scripts/daily-release.py
+      - scripts/daily-content-proof.ts
+      - scripts/daily-history.py
+      - scripts/daily-history-urls.mjs
+      - scripts/daily-redirects.py
       - scripts/release-daily-from-pluto.py
       - scripts/publication.py
+      - scripts/r2_publication.py
       - scripts/publish-from-vault.sh
       - scripts/sync-content-from-vault.sh
       - hermes/ai-x-digest/**
@@ -16,10 +20,14 @@ on:
     branches: [main]
     paths:
       - apps/daily/**
-      - content/digests/**
       - scripts/daily-release.py
+      - scripts/daily-content-proof.ts
+      - scripts/daily-history.py
+      - scripts/daily-history-urls.mjs
+      - scripts/daily-redirects.py
       - scripts/release-daily-from-pluto.py
       - scripts/publication.py
+      - scripts/r2_publication.py
       - scripts/publish-from-vault.sh
       - scripts/sync-content-from-vault.sh
       - hermes/ai-x-digest/**
@@ -39,9 +47,27 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
+          node-version: 22.16.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install Quartz dependencies for the legacy URL inventory
+        run: npm ci
+      - uses: actions/setup-node@v4
+        with:
           node-version: 22.23.3
           cache: npm
-          cache-dependency-path: apps/daily/package-lock.json
+          cache-dependency-path: |
+            hermes/ai-x-digest/content/package-lock.json
+            apps/daily/package-lock.json
+      - run: npm ci
+        working-directory: hermes/ai-x-digest/content
+      - run: npm run check
+        working-directory: hermes/ai-x-digest/content
+      - run: npm test
+        working-directory: hermes/ai-x-digest/content
+      - name: Check the release proof utility
+        run: npm exec -- tsc --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --strict --allowImportingTsExtensions --skipLibCheck --typeRoots node_modules/@types ../../../scripts/daily-content-proof.ts
+        working-directory: hermes/ai-x-digest/content
       - run: npm ci
         working-directory: apps/daily
       - run: npm run check
@@ -49,6 +75,10 @@ jobs:
       - run: npm test
         working-directory: apps/daily
       - run: npm run build
+        working-directory: apps/daily
+      - name: Record the SSR artifact code revision
+        run: |
+          node -e 'require("node:fs").writeFileSync("dist/code.json", JSON.stringify({ codeRevision: process.env.GITHUB_SHA }) + "\n")'
         working-directory: apps/daily
       - uses: actions/setup-python@v5
         with:

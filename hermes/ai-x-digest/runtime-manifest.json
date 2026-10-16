@@ -7,7 +7,11 @@
     "skills/note-taking/unslop/SKILL.md",
     "skills/note-taking/obsidian/SKILL.md",
     "skills/note-taking/obsidian/references/digest-normalization.md",
-    "skills/note-taking/obsidian/references/digest-output.md"
+    "skills/note-taking/obsidian/references/digest-output.md",
+    "skills/note-taking/obsidian/references/vault-operating-map.md",
+    "skills/note-taking/obsidian/references/vault-cleanup-and-republish.md",
+    "skills/note-taking/obsidian/references/initial-vault-porting.md",
+    "skills/note-taking/ai-x-digest/references/digest-index-hierarchy.md"
   ],
   "sources": {
     "skills/note-taking/obsidian/scripts/story_identity.py": "story_identity.py"
@@ -15,5 +19,18 @@
   "verifier_files": [
     "skills/note-taking/obsidian/scripts/story_identity.py",
     "skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py"
-  ]
+  ],
+  "sha256": {
+    "skills/note-taking/obsidian/scripts/story_identity.py": "6672bbfd329798ff05f446bdcb20d17b40735a12fc88d9eb22a786b2d8205fff",
+    "skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py": "9a70b4a131ad6fd457f988ab2fd511264b58ffb33d7d5f892890e72d0c2ac152",
+    "skills/note-taking/ai-x-digest/SKILL.md": "f5573c32aeb337df0217742e564dcd8ba67e8990cbd3e8c2cc1f49d493df35cc",
+    "skills/note-taking/unslop/SKILL.md": "59932955e3e7a8a171969310d6b27a3fa3cc6abacf2a049dd08366738c337138",
+    "skills/note-taking/obsidian/SKILL.md": "e684386577a5c53e97903619acbb6eb0e2c83e249f4c10f8958edcb2dce58186",
+    "skills/note-taking/obsidian/references/digest-normalization.md": "f9bc8f4c82b07c79770a845dd8615f20d903d1cd5efe2998fe9adf39c3f89080",
+    "skills/note-taking/obsidian/references/digest-output.md": "f8a284479589724b3b8a3f345dbb08946937f589ad93cce5a7490a671e9e2fb2",
+    "skills/note-taking/obsidian/references/vault-operating-map.md": "f12e30a28ddd35b047ffb19d0910e7e55542205f9e707291101e004172a31a0a",
+    "skills/note-taking/obsidian/references/vault-cleanup-and-republish.md": "d36b0f422109cdd5bc48a07747607235519cbadab3c2ada15e2490405ddcf08a",
+    "skills/note-taking/obsidian/references/initial-vault-porting.md": "60c269cb7a888a21dc3b8cb0c5123f05c0d6114429cab73e2e25f8a6a288eefa",
+    "skills/note-taking/ai-x-digest/references/digest-index-hierarchy.md": "73a28c132a96145d1b8a52abcdd454b3b063e1988de189b17af10fe1ee973845"
+  }
 }

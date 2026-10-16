@@ -30,7 +30,7 @@ class CompatibilityTest(unittest.TestCase):
                 folder = vault / 'public/digests'
                 folder.mkdir(parents=True)
                 (folder / f'x-ai-{day}.md').write_text(text)
-                result = subprocess.run([sys.executable, str(VERIFY), str(vault)], text=True, capture_output=True)
+                result = subprocess.run([sys.executable, str(VERIFY), str(vault), '--digest-dir', str(vault / 'public/digests')], text=True, capture_output=True)
                 self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
     def test_v2_one_lead_with_reference_source(self):
@@ -42,7 +42,7 @@ class CompatibilityTest(unittest.TestCase):
             folder = Path(tmp) / 'public/digests'
             folder.mkdir(parents=True)
             (folder / 'x-ai-2026-10-15.md').write_text(text)
-            result = subprocess.run([sys.executable, str(VERIFY), tmp], capture_output=True, text=True)
+            result = subprocess.run([sys.executable, str(VERIFY), tmp, '--digest-dir', str(Path(tmp) / 'public/digests')], capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
     def test_verifier_phase_packages_canonical_identity_before_producer(self):
@@ -63,7 +63,7 @@ class CompatibilityTest(unittest.TestCase):
                 folder = Path(staged) / 'public/digests'
                 folder.mkdir(parents=True)
                 (folder / 'x-ai-2026-10-15.md').write_bytes((FIXTURES / 'editorial-v2-four-stories.md').read_bytes())
-                verified = subprocess.run([sys.executable, str(home / SCRIPT / 'verify-x-ai-digest-format.py'), staged], capture_output=True, text=True)
+                verified = subprocess.run([sys.executable, str(home / SCRIPT / 'verify-x-ai-digest-format.py'), staged, '--digest-dir', str(Path(staged) / 'public/digests')], capture_output=True, text=True)
                 self.assertEqual(verified.returncode, 0, verified.stdout + verified.stderr)
 
 
@@ -85,7 +85,7 @@ class CompatibilityTest(unittest.TestCase):
                     result = original(source, target)
                     checker = home / SCRIPT / 'verify-x-ai-digest-format.py'
                     if checker.exists():
-                        probe = subprocess.run([sys.executable, str(checker), str(vault)], capture_output=True, text=True)
+                        probe = subprocess.run([sys.executable, str(checker), str(vault), '--digest-dir', str(vault / 'public/digests')], capture_output=True, text=True)
                         checks.append((str(target), probe.returncode, probe.stderr + probe.stdout))
                     return result
                 with patch('sys.argv', ['install.py', '--hermes-home', str(home), '--phase', phase]), patch.object(Path, 'replace', replace_and_probe), redirect_stdout(io.StringIO()):
@@ -129,7 +129,7 @@ class CompatibilityTest(unittest.TestCase):
             text = text.replace('[Original benchmark report](https://example.com/benchmark)', 'Original benchmark report')
             text += '\n- [[digests/x-ai-2026|X-AI 2026]]\n- [[digests/x-ai-2026-10|X-AI-2026-10]]\n'
             (folder / 'x-ai-2026-10-16.md').write_text(text)
-            result = subprocess.run([sys.executable, str(VERIFY), tmp], capture_output=True, text=True)
+            result = subprocess.run([sys.executable, str(VERIFY), tmp, '--digest-dir', str(Path(tmp) / 'public/digests')], capture_output=True, text=True)
             self.assertNotEqual(result.returncode, 0)
             self.assertIn('missing adjacent HTTPS source', result.stdout)
 

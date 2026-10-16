@@ -1,50 +1,44 @@
 import assert from "node:assert/strict"
 import { execFileSync } from "node:child_process"
 import {
-  cpSync,
   mkdirSync,
   mkdtempSync,
   readFileSync,
   rmSync,
-  symlinkSync,
   writeFileSync,
   existsSync,
+  readdirSync,
 } from "node:fs"
 import { tmpdir } from "node:os"
-import { join, resolve } from "node:path"
+import { dirname, join, resolve } from "node:path"
 import { after, before, test } from "node:test"
+import { Miniflare, type WorkerOptions } from "miniflare"
+import { decodeEdition } from "../../../hermes/ai-x-digest/content/wire.ts"
+import { compileRepository } from "../../../hermes/ai-x-digest/content/compiler.ts"
 
 const app = resolve(import.meta.dirname, "..")
 const fixtureRoot = mkdtempSync(join(tmpdir(), "daily-reading-"))
-const fixtureApp = join(fixtureRoot, "apps/daily")
-const output = join(fixtureApp, "dist")
+const output = join(fixtureRoot, "responses")
 const read = (path: string) => readFileSync(join(output, path), "utf8")
-const run = (command: string, args: string[], cwd = fixtureRoot) =>
+const run = (command: string, args: string[], cwd = app) =>
   execFileSync(command, args, { cwd, encoding: "utf8", stdio: "pipe" })
-
-before(
-  () => {
-    mkdirSync(fixtureApp, { recursive: true })
-    for (const name of ["src", "public", "astro.config.mjs", "tsconfig.json", "package.json"])
-      if (existsSync(join(app, name)))
-        cpSync(join(app, name), join(fixtureApp, name), { recursive: true })
-    symlinkSync(join(app, "node_modules"), join(fixtureApp, "node_modules"), "dir")
-    const content = join(fixtureRoot, "content/digests")
-    mkdirSync(content, { recursive: true })
-    for (const [file, date] of [
-      ["editorial-v2-four-stories.md", "2026-10-15"],
-      ["editorial-v2-brief-archive.md", "2026-10-16"],
-      ["editorial-v2-single-story.md", "2026-10-14"],
-      ["legacy-unversioned.md", "2026-05-10"],
-    ]) {
-      if (file && date) cpSync(join(app, "tests/fixtures", file), join(content, `x-ai-${date}.md`))
-    }
-    const illustrated = join(content, "x-ai-2026-10-15.md")
-    writeFileSync(
-      illustrated,
-      readFileSync(illustrated, "utf8").replace(
-        "digest_format: editorial-v2",
-        `digest_format: editorial-v2
+let worker: Miniflare
+let bucket: Awaited<ReturnType<Miniflare["getR2Bucket"]>>
+const headers = new Map<string, Headers>()
+const inputs = [
+  ["editorial-v2-four-stories.md", "2026-10-15"],
+  ["editorial-v2-brief-archive.md", "2026-10-16"],
+  ["editorial-v2-single-story.md", "2026-10-14"],
+  ["legacy-unversioned.md", "2026-05-10"],
+].map(([file, date]) => ({
+  filename: `x-ai-${date}.md`,
+  text: readFileSync(join(app, "tests/fixtures", file ?? ""), "utf8"),
+}))
+const illustrated = inputs[0]
+assert.ok(illustrated)
+illustrated.text = illustrated.text.replace(
+  "digest_format: editorial-v2",
+  `digest_format: editorial-v2
 story_metadata:
   anthropic-monorepo:
     section: Engineering
@@ -69,25 +63,87 @@ story_metadata:
       caption: A source image with an adjacent citation.
       credit: Hassan
       source_url: https://x.com/nutlope/status/2110385721391366263`,
-      ),
+)
+const publication = () =>
+  compileRepository(inputs, { compilerRevision: "reading-fixture-compiler" })
+async function publish(compiled = publication()) {
+  for (const object of compiled.objects)
+    await bucket.put(object.key, object.bytes, {
+      httpMetadata: { contentType: object.contentType },
+    })
+  await bucket.put("v1/head.json", JSON.stringify(compiled.head))
+  return compiled
+}
+async function provenance() {
+  const value: unknown = await (await fetchPath("/deployment.json")).json()
+  assert.ok(
+    value &&
+      typeof value === "object" &&
+      "codeRevision" in value &&
+      typeof value.codeRevision === "string" &&
+      "publicationRevision" in value &&
+      typeof value.publicationRevision === "string",
+  )
+  return { codeRevision: value.codeRevision, publicationRevision: value.publicationRevision }
+}
+async function fetchPath(path: string) {
+  return worker.dispatchFetch(`https://daily.nishantkhurana.me${path}`)
+}
+before(
+  async () => {
+    // This build is invoked by the test runner, never against a production binding.
+    run(process.execPath, [join(app, "node_modules/astro/bin/astro.mjs"), "build"])
+    const server = join(app, "dist/server")
+    const config = JSON.parse(readFileSync(join(server, "wrangler.json"), "utf8"))
+    const modules: NonNullable<WorkerOptions["config"]["manifest"]>["modules"] = {}
+    for (const file of readdirSync(server, { recursive: true, encoding: "utf8" })) {
+      if (file.endsWith(".mjs") || file.endsWith(".js"))
+        modules[file] = { type: "esm", contents: readFileSync(join(server, file), "utf8") }
+    }
+    worker = new Miniflare({
+      workers: [
+        {
+          config: {
+            name: "daily-reading-fixture",
+            compatibilityDate: config.compatibility_date,
+            compatibilityFlags: config.compatibility_flags,
+            manifest: { mainModule: config.main, modulesRoot: server, modules },
+            env: {
+              DAILY_CONTENT: { type: "r2", name: "daily-reading-fixture", dev: { remote: false } },
+              ASSETS: { type: "assets" },
+            },
+            assets: {
+              directory: resolve(server, config.assets.directory),
+              notFoundHandling: "404-page",
+              hasUserWorker: true,
+            },
+          },
+        },
+      ],
+    })
+    bucket = await worker.getR2Bucket("DAILY_CONTENT")
+    await publish()
+    const provenance: unknown = await (await fetchPath("/deployment.json")).json()
+    assert.ok(
+      provenance &&
+        typeof provenance === "object" &&
+        "routes" in provenance &&
+        Array.isArray(provenance.routes),
     )
-    run("git", ["init", "-q"])
-    run("git", ["add", "content"])
-    run("git", [
-      "-c",
-      "user.name=Reader fixture",
-      "-c",
-      "user.email=reader@example.com",
-      "commit",
-      "-qm",
-      "Accepted reading fixtures",
-    ])
-    run(process.execPath, [join(app, "node_modules/astro/bin/astro.mjs"), "build"], fixtureApp)
+    assert.ok(provenance.routes.every((path): path is string => typeof path === "string"))
+    for (const path of [...provenance.routes, "/404.html"]) {
+      const response = await fetchPath(path)
+      headers.set(path, new Headers([...response.headers.entries()]))
+      const file = path.endsWith("/") ? `${path.slice(1)}index.html` : path.slice(1)
+      const destination = join(output, file)
+      mkdirSync(dirname(destination), { recursive: true })
+      writeFileSync(destination, await response.text())
+    }
   },
   { timeout: 120000 },
 )
-
-after(() => {
+after(async () => {
+  await worker?.dispose()
   if (process.env.DAILY_KEEP_READING_FIXTURE)
     process.stderr.write(`Reader fixture: ${fixtureRoot}\n`)
   else rmSync(fixtureRoot, { recursive: true, force: true })
@@ -113,7 +169,7 @@ test("latest and dated front pages retain actual dates and story order", () => {
   assert.doesNotMatch(front, /data-print|print-edition|A daily paper on artificial intelligence/)
 })
 
-test("static article routes contain complete prose, adjacent sources and active navigation", () => {
+test("request-time article routes contain complete prose, adjacent sources and active navigation", () => {
   const first = read("editions/2026-10-15/stories/anthropic-monorepo/index.html")
   assert.match(first, /more than 30,000 per day/)
   assert.match(first, /href="https:\/\/x.com\/AnthropicAI\/status\/2110047081414987957"/)
@@ -130,7 +186,8 @@ test("static article routes contain complete prose, adjacent sources and active 
   assert.doesNotMatch(archived, /rel="(?:prev|next)"/)
   for (const file of ["editions/2026-10-16/index.html", "editions/2026-10-16/read/index.html"]) {
     const html = read(file)
-    assert.doesNotMatch(html, /vendor-benchmark/)
+    assert.match(html, /href="\/editions\/2026-10-16\/stories\/vendor-benchmark\/"/)
+    assert.doesNotMatch(html, /The vendor reported a faster benchmark|The vendor withdrew/)
     assert.match(html, /import-limit/)
   }
 })
@@ -155,7 +212,7 @@ test("legacy editions remain whole; archive and search work without JavaScript",
   assert.equal(existsSync(join(output, "editions/2026-10-17")), false)
 })
 
-test("RSS has full sanitized editions, stable date identity, real citations and deterministic output", () => {
+test("RSS has full sanitized editions, stable date identity, real citations and deterministic output", async () => {
   const xml = read("rss.xml")
   assert.match(xml, /<channel><title>Machine Herald<\/title>/)
   const outputData: unknown = JSON.parse(
@@ -204,35 +261,8 @@ r=E.parse(sys.argv[1]).getroot();c=r.find('channel');print(json.dumps([{'guid':i
       read(page),
       /rel="alternate"[^>]+type="application\/rss\+xml"[^>]+href="https:\/\/daily.nishantkhurana.me\/rss.xml"/,
     )
-  assert.match(read("_headers"), /\/rss\.xml\s+Content-Type: application\/rss\+xml; charset=utf-8/)
-  run(process.execPath, [join(app, "node_modules/astro/bin/astro.mjs"), "build"], fixtureApp)
-  assert.equal(read("rss.xml"), xml)
-  const source = join(fixtureRoot, "content/digests/x-ai-2026-10-15.md")
-  writeFileSync(
-    source,
-    readFileSync(source, "utf8").replace(
-      "Anthropic says it migrated",
-      "Anthropic confirms it migrated",
-    ),
-  )
-  run("git", ["add", "content"])
-  run("git", [
-    "-c",
-    "user.name=Reader fixture",
-    "-c",
-    "user.email=reader@example.com",
-    "commit",
-    "-qm",
-    "Correct headline",
-  ])
-  run(process.execPath, [join(app, "node_modules/astro/bin/astro.mjs"), "build"], fixtureApp)
-  const revised = read("rss.xml")
-  assert.equal((revised.match(/<item>/g) ?? []).length, 4)
-  assert.match(revised, /Anthropic confirms/)
-  assert.match(
-    revised,
-    /<guid isPermaLink="true">https:\/\/daily.nishantkhurana.me\/editions\/2026-10-15\/<\/guid>/,
-  )
+  assert.equal(headers.get("/rss.xml")?.get("content-type"), "application/rss+xml; charset=utf-8")
+  assert.equal(await (await fetchPath("/rss.xml")).text(), xml)
 })
 
 test("one shared source-backed figure appears on front, article, read view and full RSS", () => {
@@ -248,7 +278,7 @@ test("one shared source-backed figure appears on front, article, read view and f
   ])
   for (const figure of figures) {
     assert.ok(full.includes(figure))
-    assert.ok(rssBody.includes(figure))
+    // The neutral feed keeps the facts in accessible markup, independent of newspaper CSS.
     const story = figure.includes('data-story-visual="bar"')
       ? "anthropic-monorepo"
       : "gloss-x-import"
@@ -258,6 +288,13 @@ test("one shared source-backed figure appears on front, article, read view and f
   assert.match(rssBody, /&gt;30,000/)
   assert.match(rssBody, /https:\/\/example.com\/launch.jpg\?a=1&amp;b=2/)
   assert.match(rssBody, /Two company-reported merge figures/)
+  assert.match(rssBody, /<table>/)
+  assert.match(rssBody, /Reported code merges/)
+  assert.match(rssBody, /merges per day/)
+  assert.doesNotMatch(rssBody, /bar-track|bar-fill|<svg/)
+  assert.match(rssBody, /Saved article in the launch demonstration/)
+  assert.match(rssBody, /A source image with an adjacent citation/)
+  assert.match(rssBody, /Hassan/)
 })
 
 test("sitemap contains actual native routes including retained archive articles", () => {
@@ -286,4 +323,145 @@ test("a quiet edition renders one complete story without supporting placeholders
   const story = read("editions/2026-10-14/stories/reproducible-fix/index.html")
   assert.match(story, /The report covers one tool version/)
   assert.doesNotMatch(story, /rel="(?:prev|next)"/)
+})
+
+test("one built Worker follows publication B across every mutable reading route", async () => {
+  const before = await provenance()
+  const original = illustrated.text
+  try {
+    illustrated.text = original.replace(
+      "Anthropic says it migrated",
+      "Anthropic confirms it migrated",
+    )
+    const latest = inputs.find((input) => input.filename === "x-ai-2026-10-16.md")
+    assert.ok(latest)
+    const latestOriginal = latest.text
+    latest.text = latest.text.replace(
+      "A developer publishes a reproducible test",
+      "A developer confirms a reproducible test",
+    )
+    const b = await publish()
+    latest.text = latestOriginal
+    const after = await provenance()
+    assert.equal(after.codeRevision, before.codeRevision)
+    assert.equal(after.publicationRevision, b.head.manifest.sha256)
+    assert.notEqual(after.publicationRevision, before.publicationRevision)
+    for (const path of [
+      "/",
+      "/archive/",
+      "/search/",
+      "/editions/2026-10-15/stories/anthropic-monorepo/",
+      "/sitemap.xml",
+      "/rss.xml",
+    ]) {
+      const response = await fetchPath(path)
+      assert.equal(response.status, 200, path)
+      assert.equal(response.headers.get("cache-control"), "no-store", path)
+      const text = await response.text()
+      if (path === "/") assert.match(text, /A developer confirms/)
+      if (
+        [
+          "/archive/",
+          "/search/",
+          "/editions/2026-10-15/stories/anthropic-monorepo/",
+          "/rss.xml",
+        ].includes(path)
+      )
+        assert.match(text, /Anthropic confirms/)
+    }
+    for (const path of [
+      "/editions/2026-10-17/",
+      "/editions/2026-10-15/stories/absent/",
+      "/_astro/missing.css",
+    ])
+      assert.equal((await fetchPath(path)).status, 404, path)
+    const search = await (await fetchPath("/search/?q=vendor")).text()
+    assert.match(search, /vendor-benchmark/)
+    assert.match(search, /The vendor reported a faster benchmark/)
+    const emptySearch = await (await fetchPath("/search/?q=zzznomatches")).text()
+    assert.match(emptySearch, /id="search-status">0 matches/)
+    assert.match(emptySearch, /<p id="no-matches">No matches/)
+    const newest = b.manifest.editions[0]
+    assert.ok(newest)
+    await bucket.delete(newest.object.key)
+    assert.equal((await fetchPath("/")).status, 503)
+    await bucket.put("v1/head.json", '{"schemaVersion":2}')
+    assert.equal((await fetchPath("/archive/")).status, 503)
+  } finally {
+    illustrated.text = original
+    await publish()
+  }
+})
+
+test("the retained accepted twelve-story edition keeps complete reading and original source links", async () => {
+  const accepted = compileRepository(
+    [
+      {
+        filename: "x-ai-2026-10-16.md",
+        text: readFileSync(
+          join(app, "tests/fixtures/accepted-2026-10-16-twelve-stories.md"),
+          "utf8",
+        ),
+      },
+    ],
+    { compilerRevision: "reading-fixture-compiler" },
+  )
+  try {
+    await publish(accepted)
+    const edition = decodeEdition(
+      JSON.parse(
+        accepted.objects.find((object) => object.key === accepted.manifest.editions[0]?.object.key)
+          ?.bytes ?? "null",
+      ),
+    )
+    assert.equal(edition.kind, "identified")
+    if (edition.kind !== "identified") return
+    assert.equal(edition.stories.length, 12)
+    const home = await (await fetchPath("/")).text()
+    assert.equal((home.match(/<article\b[^>]*class="newspaper-story/g) ?? []).length, 12)
+    const full = await (await fetchPath("/editions/2026-10-16/read/")).text()
+    for (const story of edition.stories) {
+      const article = await fetchPath(story.path)
+      assert.equal(article.status, 200)
+      const body = await article.text()
+      assert.ok(full.includes(story.id))
+      for (const source of story.sources)
+        assert.ok(body.includes(source.url.replaceAll("&", "&amp;")))
+    }
+  } finally {
+    await publish()
+  }
+})
+
+test("old story, brief and archived heading fragments lead to retained content", () => {
+  const compiled = publication()
+  const entry = compiled.manifest.editions.find((edition) => edition.date === "2026-10-16")
+  const object = compiled.objects.find((object) => object.key === entry?.object.key)
+  assert.ok(object)
+  const edition = decodeEdition(JSON.parse(object.bytes))
+  assert.equal(edition.kind, "identified")
+  if (edition.kind !== "identified") return
+  for (const file of ["editions/2026-10-16/index.html", "editions/2026-10-16/read/index.html"]) {
+    const html = read(file)
+    assert.match(html, /id="in-brief"/)
+    assert.match(html, /id="archived-stories"/)
+    for (const story of edition.stories) {
+      assert.ok(html.includes(`id="${story.id}"`))
+      assert.ok(html.includes(`id="${story.legacyAnchor}"`))
+      if (story.kind === "archived") assert.ok(html.includes(`href="${story.path}"`))
+    }
+  }
+})
+
+test("search retains one copy of full text and native title queries", async () => {
+  const search = read("search/index.html")
+  assert.equal(search.split("Original imported wording remains intact.").length - 1, 1)
+  const response = await fetchPath("/search/?q=X-AI-2026-05-10")
+  assert.equal(response.status, 200)
+  const html = await response.text()
+  const result = [...html.matchAll(/<li\b[^>]*>[\s\S]*?<\/li>/g)].find((match) =>
+    match[0].includes('href="/editions/2026-05-10/"'),
+  )
+  assert.ok(result)
+  assert.doesNotMatch(result[0].split(">")[0] ?? "", /\bhidden/)
 })

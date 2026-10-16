@@ -2,7 +2,7 @@ import assert from "node:assert/strict"
 import { readFileSync } from "node:fs"
 import { test } from "node:test"
 import { stringify } from "yaml"
-import { parseEdition } from "../src/lib/digests.ts"
+import { parseEdition } from "../../../hermes/ai-x-digest/content/parser.ts"
 
 const actual = readFileSync(
   new URL("./fixtures/editorial-v2-four-stories.md", import.meta.url),

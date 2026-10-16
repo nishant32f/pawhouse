@@ -52,7 +52,7 @@ class EditorialFormatTest(unittest.TestCase):
             folder = vault / "public/digests"
             folder.mkdir(parents=True)
             (folder / "x-ai-2026-10-15.md").write_text(text)
-            return subprocess.run([sys.executable, str(VERIFY), str(vault)], text=True, capture_output=True)
+            return subprocess.run([sys.executable, str(VERIFY), str(vault), '--digest-dir', str(vault / 'public/digests')], text=True, capture_output=True)
 
     def test_editorial_edition_needs_no_duplicate_h1_or_takeaway(self):
         result = self.verify(edition(STORY))

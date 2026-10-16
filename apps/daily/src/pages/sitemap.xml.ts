@@ -1,9 +1,8 @@
 import type { APIRoute } from "astro"
-import { loadEditions } from "../lib/digests"
 import { xmlEscape } from "../components/format"
 
-export const GET: APIRoute = async ({ site }) => {
-  const editions = await loadEditions()
+export const GET: APIRoute = async ({ site, locals }) => {
+  const { editions } = await locals.publication.catalog()
   const paths = [
     "/",
     "/archive/",
@@ -11,7 +10,7 @@ export const GET: APIRoute = async ({ site }) => {
     ...editions.flatMap((edition) => [
       edition.path,
       edition.readPath,
-      ...(edition.kind === "identified" ? edition.stories.map((story) => story.path) : []),
+      ...edition.stories.map((story) => story.path),
     ]),
   ]
   const xml = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map((path) => `<url><loc>${xmlEscape(new URL(path, site).href)}</loc></url>`).join("")}</urlset>`

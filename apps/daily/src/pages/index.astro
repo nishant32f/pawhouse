@@ -4,8 +4,7 @@ import { publicationName } from "../components/publication"
 import EditionLine from "../components/EditionLine.astro"
 import EditionFront from "../components/EditionFront.astro"
 import { editionDate } from "../components/format"
-import { loadEditions } from "../lib/digests"
-const edition = (await loadEditions())[0]
+const edition = await Astro.locals.publication.edition()
 ---
 <Paper title={edition ? editionDate(edition.date) : "Latest edition"} canonical={edition?.path ?? "/"}>
   {edition && <EditionLine slot="editionline" edition={edition} />}

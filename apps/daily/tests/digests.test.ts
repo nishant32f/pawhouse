@@ -1,7 +1,7 @@
 import assert from "node:assert/strict"
 import { readFileSync } from "node:fs"
 import test from "node:test"
-import { parseEdition, parseEditions } from "../src/lib/digests.ts"
+import { parseEdition, parseEditions } from "../../../hermes/ai-x-digest/content/parser.ts"
 
 const fixture = (name: string) =>
   readFileSync(new URL(`./fixtures/${name}`, import.meta.url), "utf8")

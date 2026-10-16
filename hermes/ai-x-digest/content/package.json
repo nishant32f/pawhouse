@@ -1,0 +1,43 @@
+{
+  "name": "@pawhouse/digest-content",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "exports": {
+    "./parser": "./parser.ts",
+    "./wire": "./wire.ts",
+    "./prose": "./prose.ts",
+    "./compiler": "./compiler.ts",
+    "./syndication": "./syndication.ts",
+    "./editorial": "./editorial.ts",
+    "./storage": "./storage.ts",
+    "./discovery": "./discovery.ts",
+    "./format": "./format.ts"
+  },
+  "scripts": {
+    "test": "tsx --test tests/*.test.ts",
+    "check": "tsc --noEmit",
+    "export": "tsx cli.ts"
+  },
+  "dependencies": {
+    "hast-util-to-html": "9.0.5",
+    "mdast-util-find-and-replace": "3.0.2",
+    "mdast-util-to-hast": "13.2.1",
+    "mdast-util-to-string": "4.0.0",
+    "remark-parse": "11.0.0",
+    "unified": "11.0.5",
+    "yaml": "2.9.1",
+    "rehype-slug": "6.0.0",
+    "remark-smartypants": "3.0.2",
+    "@aws-sdk/client-s3": "3.1152.0"
+  },
+  "devDependencies": {
+    "@types/mdast": "4.0.4",
+    "@types/node": "22.15.30",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3"
+  }
+}

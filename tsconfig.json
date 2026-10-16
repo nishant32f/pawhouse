@@ -18,5 +18,10 @@
     "jsxImportSource": "preact"
   },
   "include": ["**/*.ts", "**/*.tsx", "./package.json"],
-  "exclude": ["build/**/*.d.ts", "apps/**"]
+  "exclude": [
+    "build/**/*.d.ts",
+    "apps/**",
+    "hermes/ai-x-digest/content/**",
+    "scripts/daily-content-proof.ts"
+  ]
 }

@@ -3,12 +3,10 @@ import Paper from "../../../../../layouts/Paper.astro"
 import { renderVisual } from "../../../../../components/visuals"
 import ReaderTools from "../../../../../components/ReaderTools.astro"
 import { editionDate } from "../../../../../components/format"
-import { loadEditions, type IdentifiedEdition, type Story } from "../../../../../lib/digests"
-export async function getStaticPaths() {
-  return (await loadEditions()).flatMap((edition) => edition.kind === "identified" ? edition.stories.map((story) => ({ params: { date: edition.date, id: story.id }, props: { edition, story } })) : [])
-}
-interface Props { edition: IdentifiedEdition; story: Story }
-const { edition, story } = Astro.props
+const edition = await Astro.locals.publication.edition(Astro.params.date)
+if (!edition || edition.kind !== "identified") return Astro.rewrite("/404")
+const story = edition.stories.find((story) => story.id === Astro.params.id)
+if (!story) return Astro.rewrite("/404")
 const position = edition.activeStories.findIndex((active) => active.id === story.id)
 const previous = position > 0 ? edition.activeStories[position - 1] : undefined
 const next = position >= 0 ? edition.activeStories[position + 1] : undefined

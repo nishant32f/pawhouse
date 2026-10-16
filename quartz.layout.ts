@@ -11,8 +11,6 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      Daily: "https://daily.nishantkhurana.me/",
-      "Daily RSS": "https://daily.nishantkhurana.me/rss.xml",
       GitHub: "https://github.com/jackyzha0/quartz",
       "Discord Community": "https://discord.gg/cRFFHYye7t",
     },

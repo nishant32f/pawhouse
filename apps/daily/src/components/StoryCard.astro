@@ -1,12 +1,13 @@
 ---
 import type { ActiveStory } from "../lib/digests"
 import { renderVisual } from "./visuals"
-interface Props { story: ActiveStory; lead?: boolean }
-const { story, lead = false } = Astro.props
+interface Props { story: ActiveStory; lead?: boolean; briefHeading?: boolean }
+const { story, lead = false, briefHeading = false } = Astro.props
 const { editorial } = story
 ---
 <article class:list={["newspaper-story", { lead, "side-story": !lead }]} id={story.id}>
-  {(editorial || story.kind === "brief") && <p class="kicker">{editorial?.section ?? "In brief"}</p>}
+  {story.legacyAnchor !== story.id && <span id={story.legacyAnchor} />}
+  {(editorial || story.kind === "brief") && <p class="kicker" id={briefHeading ? "in-brief" : undefined}>{editorial?.section ?? "In brief"}</p>}
   {lead ? <h1><a href={story.path}>{story.headline}</a></h1> : <h2><a href={story.path}>{story.headline}</a></h2>}
   {editorial?.deck && <p class="deck">{editorial.deck}</p>}
   {editorial?.visual && <Fragment set:html={renderVisual(editorial.visual)} />}

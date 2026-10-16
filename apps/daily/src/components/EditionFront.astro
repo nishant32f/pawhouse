@@ -1,19 +1,22 @@
 ---
 import type { Edition } from "../lib/digests"
 import StoryCard from "./StoryCard.astro"
+import ArchivedLinks from "./ArchivedLinks.astro"
 import ReaderTools from "./ReaderTools.astro"
 import { editionDate } from "./format"
 interface Props { edition: Edition }
 const { edition } = Astro.props
+const firstBrief = edition.kind === "identified" ? edition.activeStories.find((story) => story.kind === "brief") : undefined
 ---
 {edition.kind === "identified" ? <>
   <div class="front-reader-tools"><span>In this edition</span><ReaderTools /></div>
   <nav class="jump-links" aria-label="In this edition">{edition.activeStories.map((story) => <a href={`#${story.id}`}>{story.editorial?.section ?? story.headline}</a>)}</nav>
   <div class:list={["front-grid", { "single-story": edition.activeStories.length === 1 }]}>
     <StoryCard story={edition.lead} lead />
-    {edition.activeStories.length > 1 && <div class="front-sidebar">{edition.activeStories.slice(1, 3).map((story) => <StoryCard story={story} />)}</div>}
+    {edition.activeStories.length > 1 && <div class="front-sidebar">{edition.activeStories.slice(1, 3).map((story) => <StoryCard story={story} briefHeading={story.id === firstBrief?.id} />)}</div>}
   </div>
-  {edition.activeStories.length > 3 && <div class="lower-stories">{edition.activeStories.slice(3).map((story) => <StoryCard story={story} />)}</div>}
+  {edition.activeStories.length > 3 && <div class="lower-stories">{edition.activeStories.slice(3).map((story) => <StoryCard story={story} briefHeading={story.id === firstBrief?.id} />)}</div>}
+  <ArchivedLinks stories={edition.archivedStories} />
   <div class="front-actions"><a href={edition.readPath}>Read the full edition</a><a href="/rss.xml">Get the next edition with RSS</a></div>
 </> : <article class="reader legacy">
   <div class="reader-top"><span>Full edition</span><ReaderTools /></div>

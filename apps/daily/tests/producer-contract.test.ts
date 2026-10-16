@@ -1,7 +1,7 @@
 import assert from "node:assert/strict"
 import { readFileSync } from "node:fs"
 import { test } from "node:test"
-import { parseEdition } from "../src/lib/digests.ts"
+import { parseEdition } from "../../../hermes/ai-x-digest/content/parser.ts"
 
 const producer = readFileSync(
   new URL(

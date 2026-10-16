@@ -3,12 +3,8 @@ import Paper from "../../../layouts/Paper.astro"
 import EditionLine from "../../../components/EditionLine.astro"
 import EditionFront from "../../../components/EditionFront.astro"
 import { editionDate } from "../../../components/format"
-import { loadEditions, type Edition } from "../../../lib/digests"
-export async function getStaticPaths() {
-  return (await loadEditions()).map((edition) => ({ params: { date: edition.date }, props: { edition } }))
-}
-interface Props { edition: Edition }
-const { edition } = Astro.props
+const edition = await Astro.locals.publication.edition(Astro.params.date)
+if (!edition) return Astro.rewrite("/404")
 ---
 <Paper title={editionDate(edition.date)} canonical={edition.path}>
   <EditionLine slot="editionline" edition={edition} />
