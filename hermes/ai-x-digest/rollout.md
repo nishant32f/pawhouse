@@ -2,12 +2,14 @@
 
 R2 production activation requires the user's explicit deployment instruction for this migration. Keep the existing producer and delivery until the replacement passes live verification. Preserve all source snapshots and historical publication records.
 
+The user selected a direct cutover on 16 October 2026. Legacy website URLs do not need redirects, no temporary preview app is required, and downtime is acceptable. This supersedes earlier redirect, preview and availability gates. Preserve all accepted editions and verify the live newspaper, archive and RSS.
+
 | Phase                                | Required evidence before continuing                                                                                                                                                                    |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Install the dual checker             | Private legacy, editorial-v1, v2, brief, and archived fixtures pass with the installed canonical helper. The current producer remains unchanged.                                                       |
 | Inventory accepted history privately | Preserve every accepted edition, existing story ID and index byte from the pinned legacy snapshot. Check hashes, routes, aliases and RSS identities. Never infer story routes for older history.       |
 | Verify the reader and domain         | Verify the pinned app artifact and actual home, dated/read/story pages, archive, search, complete RSS/MIME, sitemap, and missing-page behavior. Bind the domain only under its separate authorization. |
-| Cut over discovery                   | Apply verified redirects, navigation, and feed cutover only when their actual reader destinations pass. Preserve the old pages when redirects are unavailable.                                         |
+| Cut over discovery                   | Remove the website digest section after the replacement reader passes. No legacy redirects are required.                                                                                               |
 | Install the producer and edit cron   | Install the complete manifest only after earlier phases pass. Accept the marker producer and change only the intended prompt/skills and later authorized delivery URL.                                 |
 
 ## Cron update prepared from the supported CLI
@@ -59,15 +61,15 @@ Before any R2-only edition has been accepted, a failed initial switch may restor
 
 After any R2-only edition has been accepted, retain private sources and every accepted R2 generation. Select a previously verified R2-compatible reader and producer that support all retained editions. Never restore a Git-writing producer, a static reader, or an old website delivery URL for new editions.
 
-Keep the daily reader domain and permanent legacy redirects active. Verify the selected manifest, newest accepted prose and complete RSS with the restored compatible pair before resuming publication. Preserve the job's ID, schedule, state, inherited model/provider, delivery configuration and other jobs. Keep the dual checker, persistent IDs, archived routes, source backups and private publication/delivery receipts. A pending delivery still requires evidence-based resolution before another dated message.
+Keep the daily reader domain active. Verify the selected manifest, newest accepted prose and complete RSS with the restored compatible pair before resuming publication. Preserve the job's ID, schedule, state, inherited model/provider, delivery configuration and other jobs. Keep the dual checker, persistent IDs, archived routes, source backups and private publication/delivery receipts. A pending delivery still requires evidence-based resolution before another dated message.
 
 ## Private-source writer switch
 
 1. Inventory the full pinned legacy snapshot with `daily-history.py inventory`. Check actual editions, indexes, aliases, heading anchors, source hashes, story routes and RSS identities. Resolve every old publication/recovery receipt before activation. Explicit operator no-delivery closure requires reason and evidence; ambiguous scheduled delivery still needs genuine provider proof.
-2. Backfill isolated preview R2 through the shared publisher. Use an isolated `PUBLISH_STATE_DIR` for every preview command, including reader verification. Its backend configuration and proof records must remain separate from production state. Preview verification writes `reader-release.json`; it must never overwrite production's approved reader code revision. Verify every retained route, complete prose, archived sources and feed. Run the import twice and compare immutable objects. Keep production sources and the old writer available.
+2. Use the pinned history inventory for the production R2 import. A separate preview bucket or Worker is unnecessary for this personal app. Verify retained editions, complete prose, archived sources and the feed against the accepted inventory. Keep source backups for recovery.
 3. Between scheduled runs, fence scheduled and manual starts, then drain active tasks. Hold the common publication lock across final import, reader deployment, live verification, source relocation, backend switch and producer switch. Install sync exclusions before relocating anything. Use the library `relocate()` while holding that lock; do not invoke a second locking subprocess.
 4. Copy and back up accepted sources outside the public subtree. Verify all bytes before deletion. Different destination bytes stop the switch. Keep Obsidian year/month indexes and historical prose unchanged. If a gate fails, preserve snapshots and follow the rollback boundary above before resuming.
 5. Install the reviewed eleven-file manifest and compare every installed hash. Restore the identical cron job definition and enabled state before releasing the fence. Do not replace job `4eb8e806b8bc`, its 08:00 IST schedule, inherited model/provider, Telegram delivery or other jobs.
 6. Verify an actual accepted publication with unchanged code revision and Worker version. Corrections/backfills produce no extra Telegram. Observe the next normal scheduled run separately; installation and local tests cannot prove that run or its delivery.
 
-Enable and verify permanent redirects before removing the old website digest inputs. Keep redirects and accepted generations through rollback. No live changes occur merely because these instructions are reviewed.
+Remove the old website digest inputs after live reader verification. Do not install redirects. Keep accepted generations and source backups through rollback. Production activation still requires the user's deployment instruction, which was given for PR #19 on 16 October 2026.

@@ -42,3 +42,7 @@ The next scheduled Hermes run is **16 October 2026 at 08:00 IST**. Its generated
 Implementation review `20261015-164051-e36143ee` and Pluto deployment review `20261015-202937-ee6ba1e2` completed; all confirmed findings are fixed. Their external adapter failed before provider egress, so both used an in-process adversarial fallback. Footer review `20261015-210034-c111c23c` completed without findings.
 
 See the [live activation record](../../docs/plans/2026-10-15-1100-feat-hermes-newspaper-digest-plan.html#activation-revision) and [rollback procedure](../../hermes/ai-x-digest/rollout.md). Private credentials, source captures, drafts, reviews, backups, and release receipts remain outside the repository and public vault.
+
+## Direct cutover selected on 16 October 2026
+
+The user authorized merging PR #19 and completing R2 deployment and the Hermes cutover. They then removed legacy redirects, isolated preview infrastructure and downtime requirements from the scope. Historical verification records above describe the earlier system and do not require keeping old website digest pages. Verify the live newspaper, archive and complete RSS against accepted sources. Preserve source backups and the existing job's schedule and delivery controls. Do not send a migration Telegram message.
