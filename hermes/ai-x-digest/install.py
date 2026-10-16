@@ -29,6 +29,8 @@ def main():
             parser.error(f'file is outside the owned skill paths: {relative}')
         if not source.is_file():
             parser.error(f'missing package file: {relative}')
+        if hashlib.sha256(source.read_bytes()).hexdigest() != manifest['sha256'][relative]:
+            parser.error(f'owned runtime source hash differs from reviewed manifest: {relative}')
         entries.append((relative, source, target))
     stamp = datetime.now().astimezone().strftime('%Y%m%d-%H%M%S-%f')
     backup = home / 'backups' / f'ai-x-digest-{manifest["version"]}-{stamp}'
@@ -59,6 +61,8 @@ def main():
         for (relative, _, target), staged in zip(entries, staged_files):
             staged.replace(target)
             replaced.append((relative, target))
+            if hashlib.sha256(target.read_bytes()).hexdigest() != manifest['sha256'][relative]:
+                raise OSError(f'installed runtime hash differs from reviewed manifest: {relative}')
         receipt['status'] = 'installed'
         receipt_path.write_text(json.dumps(receipt, indent=2) + '\n')
     except Exception:

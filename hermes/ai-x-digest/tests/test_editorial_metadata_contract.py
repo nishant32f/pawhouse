@@ -22,7 +22,7 @@ class EditorialMetadataContractTest(unittest.TestCase):
             folder = Path(tmp) / "public/digests"
             folder.mkdir(parents=True)
             (folder / "x-ai-2026-10-15.md").write_text(example)
-            result = subprocess.run([sys.executable, str(VERIFY), tmp], capture_output=True, text=True)
+            result = subprocess.run([sys.executable, str(VERIFY), tmp, '--digest-dir', str(Path(tmp) / 'public/digests')], capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
 

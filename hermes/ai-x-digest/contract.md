@@ -1,6 +1,6 @@
 # Daily edition identity contract
 
-One public Markdown edition remains the authored source. The reader derives its records and HTML from that edition. It introduces no authored article files or JSON writer checkpoint.
+One private Markdown edition under `<vault>/digests/` remains the authored source. The reader derives its records and HTML from that edition. It introduces no authored article files or JSON writer checkpoint.
 
 ## Format compatibility
 
@@ -115,7 +115,7 @@ Archived records retain their IDs and article routes. Exclude them from current 
 
 V2 permits one to eight full stories and an optional group of one to six briefs. Normal editions aim for 10 to 14 distinct items; quiet days may be shorter. Soft word targets are 140 to 200 for the lead, 70 to 120 for supporting stories and 25 to 45 for briefs. Hard limits remain 220 and 85. Legacy and v1 rules remain unchanged.
 
-Discovery covers official releases, repositories, builder reports and research. Compare seven accepted editions and label any seven-day catch-up with its actual event date. Keep collection, selection and source evidence private. Keep concrete headlines, concise evidence, attributed claims, uncertainty, numbers, dates, and source support. Keep the separate mandatory unslop edit and private source comparison.
+Discovery covers official releases, repositories, builder reports and research. Compare the last seven published accepted editions and label any seven-day catch-up with its actual event date. Keep collection, selection and source evidence private. Keep concrete headlines, concise evidence, attributed claims, uncertainty, numbers, dates, and source support. Keep the separate mandatory unslop edit and private source comparison.
 
 Preserve each story's actual adjacent source links and attribution. A source in another story does not cover a missing citation. The existing editorial checker owns prose targets and source adjacency. The reader adapter owns Markdown rendering and unsafe-link rejection. Identity parsing does not replace either check.
 
@@ -151,3 +151,29 @@ Fixtures live in `apps/daily/tests/fixtures/` for Python identity tests and the 
 | `collection-error.txt`          | A distinct failed-collection fixture outcome, without an edition or a dated URL.              |
 
 The four reviewed IDs are `anthropic-monorepo`, `cloud-computers`, `gloss-x-import`, and `claude-code-hooks`. Tests remove those comments and restore `editorial-v1` to prove byte-for-byte equality with the accepted original.
+
+## R2 publication and history
+
+The private vault root is `/Users/skypawalker/Dropbox/Obsidian`. Accepted editions and year/month indexes live in its `digests/` directory, outside `public/`. Keep drafts, captures, reviews, requests, credentials and publication state outside the vault and repository. Humans and Hermes use `scripts/publish-from-vault.sh --digest PRIVATE_REQUEST.json` under one publication lock. Normal content publication never commits Git content, deploys a Worker or publishes Quartz.
+
+The explicit private backend configuration is `state/backend.json` with `schemaVersion: 1`, `backend: r2`, absolute `vaultRoot` and private `configPath`. Activation requires separate authorization. Legacy requests containing `expected_head` are rejected after cutover, before uploads or source writes.
+
+A version 2 request contains exactly `schemaVersion`, `backend`, `kind`, `date`, `compilerRevision`, `expected`, and `files`. Use `schemaVersion: 2`, `backend: r2` and a full current compiler Git SHA. `kind` is `scheduled`, `correction`, or `backfill`. `expected` has `manifestSha256` and the opaque `etag` from the selected published head. Only the explicit initial backfill uses null for both. Each `files` key is a digest filename without a directory. Its value contains absolute private `staged`, current `beforeSha256` or null, and exact `stagedSha256`. Keep every request and accepted candidate unchanged on retries.
+
+`python3 scripts/daily-history.py published` returns private JSON with the selected publication ID, expected head/ETag and the last seven published accepted editions. Each edition includes `date`, `sourceSha256` and exact accepted `text`. It reads the manifest and hash-checked private accepted snapshots. Pending candidates, vault edits and Git are not novelty history. This is an operator/Hermes CLI, not a public endpoint.
+
+Read the approved reader `codeRevision` from the private publication state's `reader-release.json`, captured by the last verified code release. Use `PUBLISH_STATE_DIR` when configured; its default is `~/.local/state/pawhouse-publication`. Stop if that recorded code revision is absent. Do not substitute `compilerRevision`, Git HEAD or the endpoint's self-reported revision. Pass the recorded value explicitly as `--code-revision`.
+
+Receipts progress through `accepted`, `source-promoted`, `objects-verified`, `published`, `readerverified`, `deliverypending`, and `complete`. Run `python3 scripts/daily-release.py verify --origin https://daily.nishantkhurana.me --code-revision FULL_CODE_SHA --request PRIVATE_REQUEST.json` to verify the frozen generation. Verification failure leaves `published` with `verificationError`, blocks delivery, and resumes verification of that same publication. Corrections and backfills cannot begin scheduled delivery. Existing `delivery-begin`, `delivery-complete` and evidence-based `delivery-resolve` remain authoritative. Generated text and job status do not prove a send.
+
+Unresolved legacy receipts block activation. An operator may close a legacy `readerverified` publication that owed no send using `python3 scripts/publication.py legacy-close --receipt FULL_RECEIPT_HASH --classification operator-no-delivery --reason REASON --evidence EVIDENCE`. This records explicit classification and evidence without a delivery reference. It never infers publication kind from the old status. A `deliverypending` receipt remains blocked until genuine provider evidence resolves it through `delivery-resolve`. Never reinterpret a legacy Git commit as an R2 generation.
+
+## History inventory and source relocation
+
+`python3 scripts/daily-history.py inventory --legacy-sha FULL_PINNED_LEGACY_SHA --compiler-revision FULL_CURRENT_SHA --output PRIVATE_DIRECTORY --rss ACCEPTED_RSS` reads only the pinned bootstrap snapshot. It preserves exact edition/index bytes, compiles every actual edition and checks full RSS identities. It creates `sources/`, `bundle/` and `inventory.json`. Running it twice reuses identical immutable bytes. It performs no transport, source relocation or delivery.
+
+`inventory.json` version 1 contains counts, pinned code/source revisions, publication ID, source records and redirects. Source records include filename, kind, date or null, SHA-256, byte length, canonical slug, actual alias slugs, old paths, Quartz heading anchors, reader destination, RSS link/guid/isPermaLink/pubDate, story IDs/routes/kinds and source associations. `redirects` contains `{path, target}` entries for U6. Generated `/digests`, `/digests/` and `/digests/index.html` lead to `/archive/`. Canonical and alias pages retain their actual extensionless and `.html` variants. Heading fragments remain recorded separately; HTTP cannot inspect a fragment. Accepted legacy editions receive no invented story IDs.
+
+`python3 scripts/daily-history.py backfill --inventory-dir PRIVATE_DIRECTORY` uses the shared publisher and its lock, prepares a pinned bootstrap request and resumes that exact request on retry. This command writes R2 only during authorized preview or activation. It never sends Telegram. Later accepted revisions use ordinary publication requests.
+
+`python3 scripts/daily-history.py relocate --inventory INVENTORY_JSON --source SOURCE_DIGESTS --destination PRIVATE_DIGESTS --backup PRIVATE_BACKUP` copies exact inventoried bytes, verifies backups and destination, and stops on any different destination bytes. Destination and backup files must be independent copies, not symlinks. The R2 private digest directory cannot be a symlink into public sources. It preserves Obsidian indexes without editorial rewriting. Source removal requires explicit `--remove-source` during authorized activation after the required live gates. Reruns accept identical files, including after prior removal. The `relocate()` Python function takes the same hash map and assumes the caller already holds the publication lock, so U7 can retain one lock across the switch.

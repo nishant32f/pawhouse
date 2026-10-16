@@ -1,5 +1,8 @@
 import importlib.util
 import json
+import hashlib
+import io
+from contextlib import redirect_stdout, redirect_stderr
 from pathlib import Path
 import tempfile
 import unittest
@@ -43,6 +46,41 @@ class InstallRecoveryTest(unittest.TestCase):
                 self.assertEqual(receipt['status'], 'rolled-back')
                 self.assertTrue(receipt['files']['skills/note-taking/ai-x-digest/SKILL.md']['existed'])
                 self.assertFalse(receipt['files']['skills/note-taking/unslop/SKILL.md']['existed'])
+
+
+    def test_complete_install_matches_all_eleven_reviewed_files(self):
+        package = Path(__file__).resolve().parents[1]
+        manifest = json.loads((package / 'runtime-manifest.json').read_text())
+        with tempfile.TemporaryDirectory() as tmp:
+            home = Path(tmp)
+            with patch('sys.argv', ['install.py', '--hermes-home', str(home)]), redirect_stdout(io.StringIO()):
+                installer.main()
+            self.assertEqual(len(manifest['files']), 11)
+            for relative in manifest['files']:
+                self.assertEqual(hashlib.sha256((home / relative).read_bytes()).hexdigest(), manifest['sha256'][relative])
+            receipt = json.loads(next(home.glob('backups/*/receipt.json')).read_text())
+            self.assertEqual(receipt['status'], 'installed')
+            self.assertEqual(set(receipt['files']), set(manifest['files']))
+
+    def test_changed_package_bytes_stop_before_installation(self):
+        package = Path(__file__).resolve().parents[1]
+        manifest = json.loads((package / 'runtime-manifest.json').read_text())
+        with tempfile.TemporaryDirectory() as tmp:
+            home, copied = Path(tmp) / 'home', Path(tmp) / 'package'
+            home.mkdir()
+            copied.mkdir()
+            (copied / 'runtime-manifest.json').write_text(json.dumps(manifest))
+            for relative in manifest['files']:
+                name = manifest.get('sources', {}).get(relative, 'runtime/' + relative)
+                target = copied / name
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes((package / name).read_bytes())
+            changed = copied / 'runtime' / manifest['files'][-1]
+            changed.write_text('unreviewed instructions')
+            with patch.object(installer, '__file__', str(copied / 'install.py')), patch('sys.argv', ['install.py', '--hermes-home', str(home)]), redirect_stderr(io.StringIO()):
+                with self.assertRaises(SystemExit):
+                    installer.main()
+            self.assertEqual(list(home.iterdir()), [])
 
 
 if __name__ == '__main__':

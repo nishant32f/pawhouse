@@ -18,6 +18,8 @@ class R2Publisher:
         self.state = owner.state
         self.root = Path(backend['vaultRoot']).expanduser().resolve()
         self.sources = self.root / 'digests'
+        if self.sources.is_symlink():
+            raise ValueError('private digest source directory cannot be a symlink')
         configured = Path(backend['configPath']).expanduser().absolute()
         if configured.is_symlink():
             raise ValueError('private S3 configuration cannot be a symlink')
@@ -121,6 +123,20 @@ class R2Publisher:
                 raise ValueError('frozen publication object changed')
         return {'request': request, 'receipt': receipt, 'receipt_path': receipt_path, 'bundle': bundle}
 
+    def published_history(self):
+        """Read the seven latest sources selected by the published manifest."""
+        current = self.transport('inspect')
+        editions = []
+        if current['manifest']:
+            for entry in sorted(current['manifest']['editions'], key=lambda item: item['date'], reverse=True)[:7]:
+                source = self.state / 'accepted' / (entry['sourceSha256'] + '.md')
+                if self.sha(source) != entry['sourceSha256']:
+                    raise RuntimeError('published accepted snapshot missing or changed: ' + entry['date'])
+                editions.append({'date': entry['date'], 'sourceSha256': entry['sourceSha256'], 'text': source.read_bytes().decode('utf-8')})
+        return {'schemaVersion': 1, 'publicationId': current['head']['manifest']['sha256'] if current['head'] else None,
+                'expected': {'manifestSha256': current['head']['manifest']['sha256'] if current['head'] else None,
+                             'etag': current['etag']}, 'editions': editions}
+
     def prepare(self, filename, request, receipt_path):
         current = self.transport('inspect')
         actual = {'manifestSha256': current['head']['manifest']['sha256'] if current['head'] else None, 'etag': current['etag']}
@@ -188,7 +204,7 @@ class R2Publisher:
                     checker_input.parent.mkdir(parents=True)
                     checker_input.write_bytes(data)
                     checker = self.owner.repo / 'hermes/ai-x-digest/runtime/skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py'
-                    run([sys.executable, checker, private_vault])
+                    run([sys.executable, checker, private_vault, '--digest-dir', checker_input.parent])
                 self.node('r2-cli.ts', 'validate', old, *([previous_path] if previous_path else []))
             output = work / 'output'
             metadata = json.loads(self.node('cli.ts', '--input-dir', inputs, '--output-dir', output, '--compiler-revision', request['compilerRevision']))

@@ -224,7 +224,7 @@ class Publisher:
             staged_path.parent.mkdir(parents=True)
             staged_path.write_bytes(accepted[edition])
             checker = ROOT / 'hermes/ai-x-digest/runtime/skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py'
-            run([sys.executable, checker, private_vault])
+            run([sys.executable, checker, private_vault, '--digest-dir', staged_path.parent])
             validation = [MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', 'scripts/validate-edition.ts', staged_path]
             if previous_text is not None:
                 previous_path = private_vault / 'previous' / staged_path.name
@@ -320,6 +320,19 @@ class Publisher:
         return {'branch': branch}
 
 
+def close_legacy(receipt_path, reason, evidence):
+    """Explicit operator classification closes a legacy publication without a send claim."""
+    receipt = json.loads(receipt_path.read_text())
+    if receipt.get('schemaVersion') == 2 or receipt.get('phase') != 'readerverified':
+        raise ValueError('operator closure requires a legacy readerverified receipt; resolve ambiguous delivery with provider evidence')
+    if not reason.strip() or not evidence.strip():
+        raise ValueError('operator classification requires a reason and evidence')
+    receipt.update(phase='complete', legacyResolution={'classification': 'operator-no-delivery',
+                                                      'reason': reason, 'evidence': evidence})
+    save(receipt_path, receipt)
+    return receipt
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
@@ -333,12 +346,27 @@ def main():
         if name == 'main-result':
             command.add_argument('--status', choices=['pending', 'verified', 'failed'], required=True)
             command.add_argument('--reference', required=True)
+    closure = sub.add_parser('legacy-close')
+    closure.add_argument('--receipt', required=True, help='Full legacy receipt hash')
+    closure.add_argument('--classification', choices=['operator-no-delivery'], required=True)
+    closure.add_argument('--reason', required=True)
+    closure.add_argument('--evidence', required=True)
     sub.add_parser('sync')
     sub.add_parser('recover')
     notes = sub.add_parser('notes')
     notes.add_argument('--message', default='Update content')
     args = parser.parse_args()
     publisher = Publisher()
+    if args.command == 'legacy-close':
+        if not re.fullmatch('[a-f0-9]{64}', args.receipt):
+            raise ValueError('receipt must be its full private receipt hash')
+        with (publisher.state / 'host.lock').open('a') as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            if publisher.journal.exists() or (publisher.state / 'r2-promotion.json').exists():
+                raise ValueError('recover pending promotion before legacy closure')
+            result = close_legacy(publisher.state / 'receipts' / (args.receipt + '.json'), args.reason, args.evidence)
+        print(json.dumps(result, sort_keys=True))
+        return
     with publisher.locked():
         if args.command in ('digest', 'resume'):
             result = publisher.digest(args.request)

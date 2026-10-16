@@ -6,6 +6,7 @@ Usage:
 """
 from __future__ import annotations
 
+import argparse
 import re
 import sys
 from pathlib import Path
@@ -120,8 +121,12 @@ def check_editorial(text: str, expected_date: str, identified: bool = False) -> 
 
 
 def main() -> int:
-    vault = Path(sys.argv[1]).expanduser() if len(sys.argv) > 1 else Path('/Users/skypawalker/Dropbox/Obsidian')
-    digests = vault / 'public' / 'digests'
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('vault', type=Path, nargs='?', default=Path('/Users/skypawalker/Dropbox/Obsidian'))
+    parser.add_argument('--digest-dir', type=Path, help='Explicit staging or legacy fixture directory')
+    args = parser.parse_args()
+    vault = args.vault.expanduser().resolve()
+    digests = args.digest_dir.expanduser().resolve() if args.digest_dir else vault / 'digests'
     files = sorted(digests.glob('x-ai-????-??-??.md'))
     issues: list[str] = []
     warnings: list[str] = []
@@ -141,7 +146,7 @@ def main() -> int:
 
     for path in files:
         text = path.read_text(encoding='utf-8')
-        rel = path.relative_to(vault)
+        rel = path.relative_to(vault) if path.is_relative_to(vault) else path
         expected_title = display_stem(path)
         frontmatter = re.match(r'\A---\n(.*?)\n---(?:\n|$)', text, re.S)
         version = re.search(r'^digest_format:\s*(.*?)\s*$', frontmatter.group(1), re.M) if frontmatter else None
