@@ -159,7 +159,6 @@ This is also my [digital garden](index.md). Most of it is curated from books, po
 
 - [Wisdom](wisdom/) collects ideas, principles and frameworks I return to.
 - [Summaries](summaries/) holds curated notes from longer pieces.
-- [Digests](digests/) gathers recurring reading and AI notes.
 
 ## Connect
 
