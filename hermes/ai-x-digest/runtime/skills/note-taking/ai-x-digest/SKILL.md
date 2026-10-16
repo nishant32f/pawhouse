@@ -7,7 +7,7 @@ related_skills: [unslop, obsidian, bird, obsidian-knowledge-pipeline]
 
 # X-AI digest
 
-Use this skill to generate or repair the daily AI digest. New editions use `digest_format: editorial-v2` after the staged rollout authorizes the producer. The private daily Markdown supplies the independent R2 reader. The installed producer uses the verified daily reader after the authorized domain cutover.
+Use this skill to generate or repair the daily AI digest. The editorial-v2/R2 producer is active on Pluto. New editions use `digest_format: editorial-v2`. The private daily Markdown supplies the independent R2 reader. The installed producer uses the verified daily reader after the authorized domain cutover.
 
 ## Paths and dates
 
