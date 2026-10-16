@@ -225,6 +225,50 @@
   </head>
   <body>
     <main>
+      <section id="production-activation">
+        <h2>Production activation, 16 October 2026</h2>
+        <p>
+          The live newspaper reads from the private pawhouse-daily-content R2 bucket. All 179
+          editions passed 380 live route checks, including complete prose, article routes, archive,
+          search, sitemap and full RSS. Existing feed identities match.
+        </p>
+        <p>
+          A content-only correction made the REA story's earlier-edition reference clickable. The
+          live article and RSS changed while Git HEAD and Worker version stayed fixed. No migration
+          Telegram message was sent.
+        </p>
+        <dl>
+          <dt>Reader code</dt>
+          <dd><code>c8049195f1b099805c5e97abd7b887327cc2c718</code></dd>
+          <dt>Worker version</dt>
+          <dd><code>e4aed1d2-34ec-429d-8fed-26e1b37cd46f</code></dd>
+          <dt>Accepted publication</dt>
+          <dd><code>56490d331f038bcdb31001b8a95e43b454db19db19886164b41a378732a9e96c</code></dd>
+        </dl>
+        <p>
+          All 188 Markdown sources and indexes moved to private Obsidian digests outside public. The
+          eleven installed Hermes files match the reviewed manifest. Only the cron prompt changed;
+          the job ID, schedule, model, provider, Telegram settings and other jobs are unchanged.
+        </p>
+        <p>
+          PR #19 removes the Quartz digest files and discovery entries. The public-vault homepage
+          and About edits are applied, so ordinary note sync cannot restore the old links. Legacy
+          URLs may return 404, as requested. No redirect resources or temporary preview app were
+          created.
+        </p>
+        <p>
+          Desktop and mobile browser checks passed. Private activation records, source backups and
+          HTTP observations remain on Pluto under
+          <code>~/.local/share/pawhouse-migrations/daily-r2-2026-10-16/activation/</code>.
+          Record post-merge website verification there as <code>website-proof.json</code>.
+        </p>
+        <p>
+          The next scheduled run is 17 October at 08:00 IST. That first unattended run and its
+          Telegram delivery remain unobserved; installation and the manual publication do not prove
+          them.
+        </p>
+      </section>
+
       <section aria-label="Current deployment scope">
         <h2>Current deployment scope, 16 October 2026</h2>
         <p>
