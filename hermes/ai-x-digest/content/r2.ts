@@ -101,7 +101,6 @@ async function operateBundle(
     verify(stored.bytes, ref)
   }
   if (!commitHead) return current
-  // The head write is last. A lost response never authorizes a rollback or an unconditional write.
   try {
     await store.put(
       "v1/head.json",

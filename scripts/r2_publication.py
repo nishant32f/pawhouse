@@ -7,7 +7,6 @@ from pathlib import Path
 import re
 import tempfile
 
-ACCOUNT_ID = '1688bfec49a43a217df10ed33b86e300'
 EDITION = re.compile(r'x-ai-\d{4}-\d{2}-\d{2}\.md')
 SOURCE = re.compile(r'x-ai-\d{4}(?:-\d{2}(?:-\d{2})?)?\.md')
 PHASES = ('accepted', 'source-promoted', 'objects-verified', 'published', 'readerverified', 'deliverypending', 'complete')
@@ -54,7 +53,6 @@ class R2Publisher:
         return run([MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', script, *args], self.package)
 
     def transport(self, action, *args):
-        # Pass the private filename, never credentials, through the subprocess boundary.
         import subprocess
         from publication import MISE
         result = subprocess.run([MISE, 'exec', 'node@22.23.3', '--', 'node', '--import', 'tsx', 'r2-cli.ts', action, *map(str, args)],
@@ -188,7 +186,6 @@ class R2Publisher:
                     checker_input.parent.mkdir(parents=True)
                     checker_input.write_bytes(data)
                     checker = self.owner.repo / 'hermes/ai-x-digest/runtime/skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py'
-                    # The checker lives with the installed compiler package in fixture tests too.
                     run([sys.executable, checker, private_vault])
                 self.node('r2-cli.ts', 'validate', old, *([previous_path] if previous_path else []))
             output = work / 'output'
@@ -274,7 +271,6 @@ class R2Publisher:
         receipt = json.loads(receipt_path.read_text()) if receipt_path.exists() else None
         bundle = self.state / 'bundles' / receipt_path.stem
         if receipt is None and bundle.exists():
-            # A host interruption may happen after freezing but before the external receipt rename.
             frozen_receipt = bundle / 'acceptance.json'
             if not frozen_receipt.exists():
                 raise RuntimeError('incomplete unreceipted bundle; no sources promoted; inspect before retrying')

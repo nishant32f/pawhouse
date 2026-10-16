@@ -1,27 +1,7 @@
 import type { Edition } from "../lib/digests"
-import type { ChartPoint, StoryVisual } from "../lib/editorial"
+import type { StoryVisual } from "../lib/editorial"
 import { xmlEscape as escape } from "./format"
-
-function pointValue(point: ChartPoint): string {
-  const value =
-    point.value > 0 && (point.value < 0.000001 || point.value >= 1e12)
-      ? String(point.value)
-      : new Intl.NumberFormat("en-US", { maximumSignificantDigits: 21 }).format(point.value)
-  switch (point.qualifier) {
-    case "exact":
-      return value
-    case "approximate":
-      return `~${value}`
-    case "greater-than":
-      return `>${value}`
-    case "at-least":
-      return `≥${value}`
-    default: {
-      const exhaustive: never = point.qualifier
-      return exhaustive
-    }
-  }
-}
+import { pointValue } from "../../../../hermes/ai-x-digest/content/format.ts"
 
 export function renderVisual(visual: StoryVisual): string {
   const citation = `<a href="${escape(visual.source.url)}">${escape(visual.source.label)}</a>`

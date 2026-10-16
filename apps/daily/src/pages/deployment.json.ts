@@ -17,16 +17,17 @@ export const GET: APIRoute = async ({ locals }) => {
       "/deployment.json",
       ...routes.map((route) => route.path),
     ],
-    editions: editions.map((edition) => ({
-      date: edition.date,
-      sourceSha256: publication.manifest.editions.find((entry) => entry.date === edition.date)
-        ?.sourceSha256,
-      contentSha256: publication.manifest.editions.find((entry) => entry.date === edition.date)
-        ?.object.sha256,
-      path: edition.path,
-      readPath: edition.readPath,
-      stories: edition.stories.map((story) => story.path),
-    })),
+    editions: editions.map((edition, index) => {
+      const entry = publication.manifest.editions[index]
+      return {
+        date: edition.date,
+        sourceSha256: entry?.sourceSha256,
+        contentSha256: entry?.object.sha256,
+        path: edition.path,
+        readPath: edition.readPath,
+        stories: edition.stories.map((story) => story.path),
+      }
+    }),
   }
   return new Response(JSON.stringify(provenance), {
     headers: { "Content-Type": "application/json; charset=utf-8" },

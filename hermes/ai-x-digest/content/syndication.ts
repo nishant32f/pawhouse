@@ -1,33 +1,8 @@
 import type { WireEdition } from "./wire.ts"
-import type { ChartPoint, StoryVisual } from "./editorial.ts"
+import type { StoryVisual } from "./editorial.ts"
 import { proseHtml } from "./prose.ts"
+import { pointValue, xmlEscape as escapeXml } from "./format.ts"
 
-export function escapeXml(value: string): string {
-  return value.replace(
-    /[<>&"']/g,
-    (ch) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&apos;" })[ch] ?? ch,
-  )
-}
-function pointValue(point: ChartPoint): string {
-  const value =
-    point.value > 0 && (point.value < 0.000001 || point.value >= 1e12)
-      ? String(point.value)
-      : new Intl.NumberFormat("en-US", { maximumSignificantDigits: 21 }).format(point.value)
-  switch (point.qualifier) {
-    case "exact":
-      return value
-    case "approximate":
-      return `~${value}`
-    case "greater-than":
-      return `>${value}`
-    case "at-least":
-      return `≥${value}`
-    default: {
-      const exhaustive: never = point.qualifier
-      return exhaustive
-    }
-  }
-}
 export function visualHtml(visual: StoryVisual): string {
   const citation = `<a href="${escapeXml(visual.source.url)}">${escapeXml(visual.source.label)}</a>`
   const caption = `${escapeXml(visual.caption)} Source: ${citation}.`

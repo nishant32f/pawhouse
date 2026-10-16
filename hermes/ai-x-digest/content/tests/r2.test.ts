@@ -3,7 +3,7 @@ import { createServer } from "node:http"
 import { chmod, mkdtemp, mkdir, readFile, realpath, rm, symlink, writeFile } from "node:fs/promises"
 import { tmpdir } from "node:os"
 import { dirname, join } from "node:path"
-import { spawnSync } from "node:child_process"
+import { execFile, spawnSync } from "node:child_process"
 import test, { type TestContext } from "node:test"
 import { S3Client } from "@aws-sdk/client-s3"
 import { compileRepository, jsonBytes } from "../compiler.ts"
@@ -199,4 +199,58 @@ test("the transport CLI rejects public permissions and symlinks without echoing 
   const alias = join(directory, "alias.json")
   await symlink(config, alias)
   assert.equal(invoke(alias).status, 1)
+})
+
+test("valid S3 credentials require a private regular file before any network request", async (t) => {
+  const directory = await realpath(await mkdtemp(join(tmpdir(), "daily-r2-valid-config-")))
+  let requests = 0
+  const server = createServer((_request, response) => {
+    requests++
+    response.writeHead(404, { "content-type": "application/xml" })
+    response.end("<Error><Code>NoSuchKey</Code></Error>")
+  })
+  await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve))
+  t.after(async () => {
+    await new Promise<void>((resolve) => server.close(() => resolve()))
+    await rm(directory, { recursive: true, force: true })
+  })
+  const address = server.address()
+  assert.ok(address && typeof address !== "string")
+  const config = join(directory, "s3.json")
+  await writeFile(
+    config,
+    JSON.stringify({
+      accountId: "1688bfec49a43a217df10ed33b86e300",
+      bucket: "fixture",
+      accessKeyId: "fixture",
+      secretAccessKey: "fixture",
+      endpoint: `http://127.0.0.1:${address.port}`,
+    }),
+    { mode: 0o600 },
+  )
+  const invoke = (path: string) =>
+    new Promise<{ status: number | string; stdout: string; stderr: string }>((resolve) => {
+      execFile(
+        process.execPath,
+        ["--import", "tsx", "r2-cli.ts", "inspect"],
+        {
+          cwd: new URL("..", import.meta.url),
+          env: { ...process.env, PUBLISH_R2_CONFIG: path },
+          encoding: "utf8",
+        },
+        (error, stdout, stderr) => resolve({ status: error?.code ?? 0, stdout, stderr }),
+      )
+    })
+  const allowed = await invoke(config)
+  assert.equal(allowed.status, 0, allowed.stderr)
+  assert.deepEqual(JSON.parse(allowed.stdout), { head: null, manifest: null, etag: null })
+  assert.equal(requests, 1)
+  await chmod(config, 0o644)
+  assert.equal((await invoke(config)).status, 1)
+  assert.equal(requests, 1)
+  await chmod(config, 0o600)
+  const alias = join(directory, "alias.json")
+  await symlink(config, alias)
+  assert.equal((await invoke(alias)).status, 1)
+  assert.equal(requests, 1)
 })

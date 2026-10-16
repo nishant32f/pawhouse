@@ -105,7 +105,6 @@ function decodeNode(value: unknown): RootContent {
           throw new Error("invalid prose list item")
         parsed.checked = node.checked
       }
-      // The allowlist above validates each field before the mdast serializer consumes it.
       return parsed as RootContent
     }
     default:

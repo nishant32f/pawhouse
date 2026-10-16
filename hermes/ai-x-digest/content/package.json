@@ -14,7 +14,8 @@
     "./syndication": "./syndication.ts",
     "./editorial": "./editorial.ts",
     "./storage": "./storage.ts",
-    "./discovery": "./discovery.ts"
+    "./discovery": "./discovery.ts",
+    "./format": "./format.ts"
   },
   "scripts": {
     "test": "tsx --test tests/*.test.ts",
