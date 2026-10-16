@@ -5,9 +5,14 @@
   "workers_dev": false,
   "preview_urls": false,
   "routes": [{ "pattern": "daily.nishantkhurana.me", "custom_domain": true }],
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "compatibility_flags": ["nodejs_compat"],
+  "r2_buckets": [
+    { "binding": "DAILY_CONTENT", "bucket_name": "pawhouse-daily-content", "remote": false },
+  ],
   "compatibility_date": "2026-10-15",
   "assets": {
-    "directory": "./dist",
+    "directory": "./dist/client",
     "not_found_handling": "404-page",
   },
 }

@@ -1,14 +1,13 @@
 ---
 import Paper from "../../layouts/Paper.astro"
 import { editionDate } from "../../components/format"
-import { loadEditions } from "../../lib/digests"
-const editions = await loadEditions()
+const { editions } = await Astro.locals.publication.catalog()
 ---
 <Paper title="Edition archive" compact>
   <div class="archive"><h1>Edition archive</h1><p>Every published edition, newest first.</p>
     {editions.map((edition) => <section class="archive-item">
       <div><h2><a href={edition.path}><time datetime={edition.date}>{editionDate(edition.date)}</time></a></h2><a href={edition.readPath}>Read full edition</a></div>
-      {edition.kind === "identified" ? <ul>{edition.activeStories.map((story) => <li><a href={story.path}>{story.headline}</a></li>)}</ul> : <p>A complete edition with its original reporting and sources.</p>}
+      {edition.kind === "identified" ? <ul>{edition.stories.filter((story) => story.kind !== "archived").map((story) => <li><a href={story.path}>{story.headline}</a></li>)}</ul> : <p>A complete edition with its original reporting and sources.</p>}
     </section>)}
   </div>
 </Paper>

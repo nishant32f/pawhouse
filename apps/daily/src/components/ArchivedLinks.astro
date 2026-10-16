@@ -1,0 +1,9 @@
+---
+import type { ArchivedStory } from "../lib/digests"
+interface Props { stories: ArchivedStory[] }
+const { stories } = Astro.props
+---
+{stories.length > 0 && <section class="back-link">
+  <h2 id="archived-stories">Archived stories</h2>
+  <ul>{stories.map((story) => <li id={story.id}><a id={story.legacyAnchor !== story.id ? story.legacyAnchor : undefined} href={story.path}>{story.headline}</a></li>)}</ul>
+</section>}

@@ -23,7 +23,8 @@
     "mdast-util-to-string": "4.0.0",
     "remark-parse": "11.0.0",
     "unified": "11.0.5",
-    "yaml": "2.9.1"
+    "yaml": "2.9.1",
+    "@astrojs/cloudflare": "14.3.3"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
@@ -31,6 +32,8 @@
     "@types/node": "22.15.30",
     "tsx": "4.21.0",
     "typescript": "5.9.3",
-    "wrangler": "4.151.0"
+    "wrangler": "4.151.0",
+    "miniflare": "5.20261012.0-beta",
+    "@cloudflare/workers-types": "5.20261006.1"
   }
 }

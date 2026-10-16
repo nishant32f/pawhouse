@@ -1,31 +1,34 @@
 import type { APIRoute } from "astro"
-import { loadDigestRepository } from "../lib/digests"
 
-export const GET: APIRoute = async () => {
-  const { sourceRevision, editions } = await loadDigestRepository()
-  const manifest = {
-    sourceRevision,
+export const GET: APIRoute = async ({ locals }) => {
+  const publication = locals.publication
+  const { editions } = await publication.catalog()
+  const { routes } = await publication.routes()
+  const provenance = {
+    codeRevision: __DAILY_CODE_REVISION__,
+    publicationRevision: publication.publicationRevision,
+    compilerRevision: publication.compilerRevision,
     routes: [
       "/",
       "/archive/",
       "/search/",
       "/rss.xml",
       "/sitemap.xml",
-      "/404.html",
-      ...editions.flatMap((edition) => [
-        edition.path,
-        edition.readPath,
-        ...(edition.kind === "identified" ? edition.stories.map((story) => story.path) : []),
-      ]),
+      "/deployment.json",
+      ...routes.map((route) => route.path),
     ],
     editions: editions.map((edition) => ({
       date: edition.date,
-      sourcePath: edition.sourcePath,
-      sourceSha256: edition.sourceSha256,
+      sourceSha256: publication.manifest.editions.find((entry) => entry.date === edition.date)
+        ?.sourceSha256,
+      contentSha256: publication.manifest.editions.find((entry) => entry.date === edition.date)
+        ?.object.sha256,
       path: edition.path,
       readPath: edition.readPath,
-      stories: edition.kind === "identified" ? edition.stories.map((story) => story.path) : [],
+      stories: edition.stories.map((story) => story.path),
     })),
   }
-  return new Response(JSON.stringify(manifest), { headers: { "Content-Type": "application/json" } })
+  return new Response(JSON.stringify(provenance), {
+    headers: { "Content-Type": "application/json; charset=utf-8" },
+  })
 }

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict"
 import { readFileSync } from "node:fs"
 import test from "node:test"
-import { parseEdition } from "../src/lib/digests.ts"
+import { parseEdition } from "../../../hermes/ai-x-digest/content/parser.ts"
 import { renderEditionHtml, renderVisual } from "../src/components/visuals.ts"
 import type { BarVisual, ImageVisual } from "../src/lib/editorial.ts"
 

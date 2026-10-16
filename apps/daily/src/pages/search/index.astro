@@ -1,22 +1,24 @@
 ---
 import Paper from "../../layouts/Paper.astro"
 import { editionDate } from "../../components/format"
-import { loadEditions } from "../../lib/digests"
-const editions = await loadEditions()
+const { documents } = await Astro.locals.publication.search()
+const { editions } = await Astro.locals.publication.catalog()
+const archived = new Set(editions.flatMap((edition) => edition.stories.filter((story) => story.kind === "archived").map((story) => story.path)))
+const query = Astro.url.searchParams.get("q")?.trim().toLocaleLowerCase() ?? ""
+const words = query.split(/\s+/).filter(Boolean)
+const matches = (text: string) => words.every((word) => text.toLocaleLowerCase().includes(word))
+const matchCount = documents.filter((document) => matches(`${editionDate(document.date)} ${document.title} ${document.text}`)).length
 ---
 <Paper title="Search" compact>
   <div class="archive search"><h1>Search the daily</h1>
     <p id="search-guidance">Search headlines and full text, or browse every edition below.</p>
     <form role="search" id="search-form">
       <label for="search-query">Search editions and stories</label>
-      <div class="search-input"><input type="search" id="search-query" name="q" aria-describedby="search-guidance" autocomplete="off" /><button type="submit">Search</button></div>
+      <div class="search-input"><input type="search" id="search-query" name="q" aria-describedby="search-guidance" autocomplete="off" value={query} /><button type="submit">Search</button></div>
     </form>
-    <p role="status" aria-live="polite" id="search-status"></p>
-    <p id="no-matches" hidden>No matches. Try fewer words, or <a href="/archive/">browse the edition archive</a>.</p>
-    <ul class="search-results">{editions.flatMap((edition) => [
-      <li data-search={`${editionDate(edition.date)} ${edition.text}`}><a href={edition.path}>{editionDate(edition.date)} · Full edition</a></li>,
-      ...(edition.kind === "identified" ? edition.stories.map((story) => <li data-search={`${editionDate(edition.date)} ${story.headline} ${story.text}`}><a href={story.path}>{story.headline}</a><span>{editionDate(edition.date)}{story.kind === "archived" && " · Archived story"}</span></li>) : [])
-    ])}</ul>
+    <p role="status" aria-live="polite" id="search-status">{query && `${matchCount} ${matchCount === 1 ? "match" : "matches"}`}</p>
+    <p id="no-matches" hidden={matchCount !== 0}>No matches. Try fewer words, or <a href="/archive/">browse the edition archive</a>.</p>
+    <ul class="search-results">{documents.map((document) => <li data-search={`${editionDate(document.date)} ${document.title} ${document.text}`} hidden={!matches(`${editionDate(document.date)} ${document.title} ${document.text}`)}><a href={document.path}>{document.path === `/editions/${document.date}/` ? `${editionDate(document.date)} · Full edition` : document.title}</a>{document.path !== `/editions/${document.date}/` && <span>{editionDate(document.date)}{archived.has(document.path) && " · Archived story"}</span>}<span class="sr-only">{document.text}</span></li>)}</ul>
     <noscript><p>Use your browser's Find command to find a headline, or follow any edition link above.</p></noscript>
   </div>
 </Paper>
