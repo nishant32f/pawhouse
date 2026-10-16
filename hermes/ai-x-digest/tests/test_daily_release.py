@@ -188,5 +188,38 @@ class ReleaseTest(fixtures.Fixture, unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
 
 
+    def test_initial_legacy_upgrade_ignores_only_static_error_document(self):
+        path = self.live / 'deployment.json'
+        manifest = json.loads(path.read_text())
+        manifest['sourceRevision'] = manifest.pop('codeRevision')
+        manifest.pop('publicationRevision')
+        manifest['routes'] = fixtures.release.routes(manifest) | {'/404.html'}
+        manifest['routes'] = sorted(manifest['routes'])
+        path.write_text(json.dumps(manifest))
+        result, marker = self.deploy()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertTrue(marker.exists())
+
+    def test_legacy_upgrade_still_rejects_missing_content_route(self):
+        path = self.live / 'deployment.json'
+        manifest = json.loads(path.read_text())
+        manifest['sourceRevision'] = manifest.pop('codeRevision')
+        manifest.pop('publicationRevision')
+        manifest['routes'] = sorted(fixtures.release.routes(manifest) | {'/404.html', '/editions/2026-01-01/'})
+        path.write_text(json.dumps(manifest))
+        result, marker = self.deploy()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertFalse(marker.exists())
+
+    def test_r2_upgrade_cannot_discard_declared_error_document(self):
+        path = self.live / 'deployment.json'
+        manifest = json.loads(path.read_text())
+        manifest['routes'] = sorted(fixtures.release.routes(manifest) | {'/404.html'})
+        path.write_text(json.dumps(manifest))
+        result, marker = self.deploy()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertFalse(marker.exists())
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -413,7 +413,10 @@ def deploy(publisher, artifact, bundle, origin, command, bootstrap=False):
     guard(publisher, manifest['codeRevision'], origin, bootstrap)
     expected, _, _, _ = frozen_publication(publisher, bundle)
     live = manifest_at(origin, bootstrap)
-    if live is not None and not routes(live) <= routes(expected):
+    previous_routes = routes(live) if live is not None else set()
+    if live is not None and 'sourceRevision' in live and 'codeRevision' not in live:
+        previous_routes.discard('/404.html')
+    if not previous_routes <= routes(expected):
         raise ValueError('candidate would remove previously deployed reader URLs')
     if live and live.get('publicationRevision') and live['publicationRevision'] != expected['publicationRevision']:
         raise ValueError('code release must retain the current selected publication')
