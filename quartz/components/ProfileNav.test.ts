@@ -17,7 +17,7 @@ test("profile navigation reaches About and Garden from content, folders and tags
   for (const [filePath, pageUrl, active] of pages) {
     assert(isFilePath(filePath))
     const [, file] = defaultProcessedContent({ slug: slugifyFilePath(filePath) })
-    const html = render(h(ProfileNav(), { fileData: file.data }))
+    const html = render(h(ProfileNav(), { fileData: file.data, cfg: { baseUrl: "example.com" } }))
     assert.match(html, /<nav[^>]+aria-label="Site"/)
     const links = [...html.matchAll(/<a([^>]+)>(About|Garden)<\/a>/g)]
     assert.equal(links.length, 2)
@@ -30,6 +30,30 @@ test("profile navigation reaches About and Garden from content, folders and tags
       )
       assert.match(attributes, /class="internal"/)
       assert.equal(attributes.includes('aria-current="page"'), label === active)
+    }
+  }
+})
+
+test("404 recovery links reach the configured site root from a missing nested URL", () => {
+  const filePath = "404.md"
+  assert(isFilePath(filePath))
+  const [, file] = defaultProcessedContent({ slug: slugifyFilePath(filePath) })
+  for (const [baseUrl, root] of [
+    ["example.com", "/"],
+    ["example.com/garden", "/garden/"],
+    ["example.com/garden/", "/garden/"],
+  ]) {
+    const html = render(h(ProfileNav(), { fileData: file.data, cfg: { baseUrl } }))
+    const links = [...html.matchAll(/<a([^>]+)>(About|Garden)<\/a>/g)]
+    assert.equal(links.length, 2)
+    for (const [, attributes, label] of links) {
+      const href = attributes.match(/href="([^"]+)"/)?.[1]
+      assert(href)
+      assert.equal(
+        new URL(href, "https://example.com/missing/deep/page").pathname,
+        label === "About" ? `${root}about` : root,
+      )
+      assert(!attributes.includes("aria-current"))
     }
   }
 })

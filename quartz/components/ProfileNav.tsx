@@ -1,8 +1,17 @@
 import { joinSegments, pathToRoot } from "../util/path"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-function ProfileNav({ fileData }: Pick<QuartzComponentProps, "fileData">) {
-  const baseDir = fileData.slug ? pathToRoot(fileData.slug) : "."
+type ProfileNavProps = Pick<QuartzComponentProps, "fileData"> & {
+  cfg: Pick<QuartzComponentProps["cfg"], "baseUrl">
+}
+
+function ProfileNav({ fileData, cfg }: ProfileNavProps) {
+  const baseDir =
+    fileData.slug === "404"
+      ? new URL(`https://${cfg.baseUrl ?? "example.com"}`).pathname
+      : fileData.slug
+        ? pathToRoot(fileData.slug)
+        : "."
   return (
     <nav class="profile-nav" aria-label="Site">
       <a
@@ -16,7 +25,7 @@ function ProfileNav({ fileData }: Pick<QuartzComponentProps, "fileData">) {
       <a
         class="internal"
         data-no-popover="true"
-        href={joinSegments(baseDir, "/")}
+        href={baseDir.endsWith("/") ? baseDir : joinSegments(baseDir, "/")}
         aria-current={fileData.slug === "index" ? "page" : undefined}
       >
         Garden

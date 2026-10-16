@@ -10,9 +10,10 @@ The website is `/Users/skypawalker/Dev/pawhouse` on Pluto. Its authoritative sou
 4. Apply only this branch's homepage biography and About-link changes to vault `public/index.md`. Compare with the current file and preserve any newer edits.
 5. Rehearse `scripts/sync-content-from-vault.sh` using a disposable destination and state folder. Set `PUBLISH_REPO`, `PUBLISH_VAULT_PUBLIC` and `PUBLISH_STATE_DIR` explicitly. Confirm `about.md`, the discovery link and portrait survive.
 6. Merge the approved PR only after the vault agrees with the reviewed profile. Do not switch or reset another session's checkout.
-7. Watch the Pages workflow finish. Open `https://nishantkhurana.me/about` in a browser. Check portrait, search, theme toggle, garden navigation and Back/Forward from a nested note.
-8. Verify `/about.html`, native metadata, social image and sitemap on the live site. Record the deployed commit and browser result.
+7. Update the canonical Pluto checkout to the merged revision after coordinating with its owner. Confirm vault/content equality before publication resumes.
+8. Watch the Pages workflow finish. Open `https://nishantkhurana.me/about` in a browser. Check portrait, search, theme toggle, garden navigation and Back/Forward from a nested note.
+9. Verify `/about.html`, native metadata, social image and sitemap on the live site. Record the deployed commit and browser result.
 
 Future edits belong in vault `public/about.md`. Publish through the existing notes workflow after inspecting its staging scope. The publish script stages every repository change.
 
-If publication must be reversed, restore the two backed-up vault files and revert the profile changes through a reviewed branch. Rebuild and verify the garden. Removing only repository content will not persist through the next vault sync.
+If publication must be reversed, restore the backed-up vault files. If `about.md` was newly added, remove it from the vault. Revert the profile changes through a reviewed branch. Rebuild and verify the garden. Removing only repository content will not persist through the next vault sync.
