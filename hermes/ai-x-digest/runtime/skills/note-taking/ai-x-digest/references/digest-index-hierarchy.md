@@ -8,7 +8,7 @@ Use this reference when creating, repairing, or auditing Nishant's X-AI digest i
 - Monthly index: `digests/x-ai-YYYY-MM.md`
 - Year parent index: `digests/x-ai-YYYY.md`
 
-These are private Obsidian paths outside `public/`. Reader editions use `/editions/YYYY-MM-DD/`; old website year/month indexes redirect to `/archive/`. They are not new Quartz inputs.
+These are private Obsidian paths outside `public/`. Reader editions use `/editions/YYYY-MM-DD/` and reader discovery uses `/archive/`. Old website digest and index URLs may return 404; no legacy redirects were installed. They are not new Quartz inputs.
 
 ## What not to create
 

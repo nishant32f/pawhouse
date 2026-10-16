@@ -1,6 +1,18 @@
-# R2 reader implementation acceptance, 16 October 2026
+# Daily reader acceptance
 
-U4 separates code artifacts from accepted content. These results cover isolated Pluto fixtures and local packaging. The production reader still uses its earlier Git release.
+## Production acceptance, 16 October 2026
+
+PR #19 is merged and the R2 cutover is live. All 179 accepted editions passed 380 live route checks, including complete prose, archive, search, article pages, sitemap, RSS bytes and MIME. Existing RSS identities remain unchanged. Desktop and mobile browser checks passed.
+
+A subsequent accepted internal-link correction changed reading and RSS while Git HEAD and Worker version stayed fixed. All 188 Markdown sources and indexes are private in Obsidian. All eleven installed Hermes files matched the reviewed manifest at cutover, with only the cron prompt changed.
+
+The notes website retained 162 ordinary notes and no digest discovery entries. Its old digest and digest-tag URLs return 404. Redirects and temporary preview infrastructure were explicitly excluded. The first unattended run after cutover was scheduled for 17 October, 08:00 IST, and remained unobserved at acceptance.
+
+See [current operations](../../hermes/ai-x-digest/rollout.md#current-production-state) and the private activation proofs on Pluto. The sections below are dated historical evidence, not instructions to reactivate the Git reader or repeat migration.
+
+## Earlier U4 implementation evidence, 16 October 2026
+
+U4 separated code artifacts from accepted content. At this earlier snapshot, results covered isolated Pluto fixtures and local packaging, and production still used its Git release.
 
 | Contract            | Evidence                                                                                                                                                                                                                                                                                                     |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

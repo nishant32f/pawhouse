@@ -1,4 +1,16 @@
-# Staged Hermes adoption
+# Hermes digest operations
+
+## Current production state
+
+The R2 cutover and PR #19 completed on 16 October 2026. Machine Herald and full-text RSS read the private `pawhouse-daily-content` bucket through Worker `pawhouse-daily`. Accepted Markdown and indexes live at `/Users/skypawalker/Dropbox/Obsidian/digests`. The main website excludes digests; old digest URLs return 404. No redirects were installed.
+
+Hermes job `4eb8e806b8bc` is enabled at 08:00 IST with inherited model/provider and Telegram delivery. The next run at cutover was 17 October, 08:00 IST, and was unobserved. Check current job and delivery evidence before reporting later success.
+
+Read selected content and reader revisions from `~/.local/state/pawhouse-publication/`, including `backend.json` and `reader-release.json`. The private activation proofs and backups are under `~/.local/share/pawhouse-migrations/daily-r2-2026-10-16/activation/`. A live content correction changed the article and RSS without changing Git HEAD or the Worker version.
+
+Use the editorial/publication and delivery-accounting sections below for daily work. The adoption, cron-edit and source-switch procedures document the completed migration and future authorized repairs. Do not replay the bootstrap, move sources again, recreate resources or rerun cron merely because this guide contains those commands. Owned Hermes documentation updates use the manifest installer and hash readback, without changing cron or sending Telegram.
+
+## Completed adoption procedure
 
 R2 production activation requires the user's explicit deployment instruction for this migration. Keep the existing producer and delivery until the replacement passes live verification. Preserve all source snapshots and historical publication records.
 

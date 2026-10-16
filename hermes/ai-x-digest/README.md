@@ -1,6 +1,6 @@
 # Hermes daily digest package
 
-This package supplies the `editorial-v2` producer for the independent daily reader. Changes to these sources do not install files, edit cron, deploy the app or send messages. The reviewed producer revision installs after its reader passes live verification.
+This package supplies the `editorial-v2` producer for the independent daily reader. Changes to these sources do not install files, edit cron, deploy the app or send messages. The R2 producer is installed on Pluto. The cutover completed on 16 October 2026 through PR #19; see [current operations](rollout.md#current-production-state).
 
 The private vault keeps one authored Markdown file per day. Story markers give the reader persistent article paths without separate public story files. Hermes must retain IDs through headline changes, reorders, retries, and archived corrections. It must complete a separate unslop rewrite and private draft/source comparison before accepting the candidate.
 
@@ -24,7 +24,7 @@ The shared scoped publisher validates the accepted private request before accept
 
 ## Install phases
 
-Run these commands only during the separately authorized rollout. Use the checker phase first.
+Use these phases for authorized installation or updates to owned Hermes files. The initial rollout is complete. Documentation updates must refresh the manifest hashes, preserve installation backups, verify installed bytes and leave cron and delivery unchanged. A fresh adoption uses the checker phase first.
 
 ```sh
 python3 hermes/ai-x-digest/install.py --hermes-home /Users/skypawalker/.hermes --phase verifier
