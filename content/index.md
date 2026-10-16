@@ -16,7 +16,9 @@ description: "Nishant's public localhost: a curated digital garden of identity, 
 I spend my days architecting systems and building products. When I'm not writing code, I keep returning to the intersection of technology, human psychology, startups, health, and timeless wisdom.
 
 ## About me
-I am currently Co-founder and CTO at [Tectonic Technologies Inc](https://tectonic.so)
+I am Co-founder and CTO at [Spectrum](https://getspectrum.ai), formerly Tectonic.
+
+Read [about my work, career and principles](about.md).
 
 Beyond code, I care about:
 - Coffee as fuel for deep work and contemplation
