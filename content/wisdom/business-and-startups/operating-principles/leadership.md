@@ -8,6 +8,10 @@ description: "Core principles and insights on leadership in startup environments
 
 # Leadership
 
+## Team motivation
+
+- [[wisdom/business-and-startups/operating-principles/four-beliefs-behind-team-motivation|Four Beliefs Behind Team Motivation]] — check interest, importance, confidence, and a clear next step before interpreting low effort.
+
 <!-- wisdom-linkage-repair:start -->
 ## Wisdom linkage repair
 
