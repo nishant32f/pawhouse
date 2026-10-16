@@ -128,8 +128,10 @@ class R2Publisher:
             raise RuntimeError('unexpected published head; publication conflict')
         if self.owner.git('rev-parse', 'HEAD') != request['compilerRevision']:
             raise RuntimeError('compilerRevision does not match the executing compiler code')
-        compiler_files = [str(self.package / name) for name in ('cli.ts', 'compiler.ts', 'storage.ts', 'parser.ts', 'wire.ts', 'prose.ts', 'discovery.ts', 'syndication.ts', 'editorial.ts')]
-        self.owner.git('diff', '--exit-code', 'HEAD', '--', *compiler_files)
+        try:
+            self.owner.git('diff', '--quiet', 'HEAD', '--', self.package)
+        except RuntimeError:
+            raise RuntimeError('compiler package differs from the claimed compilerRevision') from None
         manifest = current['manifest']
         prior = {f'x-ai-{edition["date"]}.md': edition['sourceSha256'] for edition in manifest['editions']} if manifest else {}
         day = request['date']

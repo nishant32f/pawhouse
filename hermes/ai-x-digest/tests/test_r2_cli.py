@@ -142,6 +142,15 @@ class CliPublicationTest(unittest.TestCase):
         self.assertEqual(self.git('status', '--porcelain', '--untracked-files=all'), '')
         self.assertEqual(self.git('diff', '--cached', '--name-only'), '')
 
+    def test_uncommitted_shared_formatter_rejects_the_claimed_compiler_revision(self):
+        formatter = self.package / 'format.ts'
+        formatter.write_text(formatter.read_text().replace('return "&lt;"', 'return "CHANGED"', 1))
+        result = self.cli('digest', '--request', str(self.request_path))
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(self.objects, {})
+        self.assertFalse((self.vault / 'digests').exists())
+        self.assertEqual(self.git('rev-parse', 'HEAD'), self.head)
+
     def test_actual_cli_bootstrap_new_day_and_delivery_controls_without_git_writes(self):
         first = self.publish()
         self.assertEqual(first['phase'], 'published')
