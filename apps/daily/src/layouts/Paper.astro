@@ -1,5 +1,6 @@
 ---
 import "../styles/paper.css"
+import { publicationName } from "../components/publication"
 interface Props {
   title: string
   description?: string
@@ -27,17 +28,17 @@ const rssUrl = new URL("/rss.xml", Astro.site)
       } catch {}
     </script>
     {noindex && <meta name="robots" content="noindex" />}
-    <title>{title} | The AI Daily</title>
+    <title>{title} | {publicationName}</title>
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" type="application/rss+xml" href={rssUrl} title="The AI Daily" />
+    <link rel="alternate" type="application/rss+xml" href={rssUrl} title={publicationName} />
     <link rel="sitemap" href={new URL("/sitemap.xml", Astro.site)} />
     <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="The AI Daily" />
-    <meta property="og:title" content={`${title} | The AI Daily`} />
+    <meta property="og:site_name" content={publicationName} />
+    <meta property="og:title" content={`${title} | ${publicationName}`} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content={`${title} | The AI Daily`} />
+    <meta name="twitter:title" content={`${title} | ${publicationName}`} />
     <meta name="twitter:description" content={description} />
   </head>
   <body>
@@ -52,11 +53,11 @@ const rssUrl = new URL("/rss.xml", Astro.site)
             <button type="button" id="theme" hidden>Dark mode</button>
           </nav>
         </div>
-        <div class="masthead"><a class="brand" href="/">The AI Daily</a><p>A daily paper on artificial intelligence</p></div>
+        <div class="masthead"><a class="brand" href="/">{publicationName}</a></div>
         <slot name="editionline" />
       </header>
       <main id="main" tabindex="-1"><slot /></main>
-      <footer class="sitefoot"><span>The AI Daily</span><a href="/archive/">Edition archive</a><a href="/rss.xml">Subscribe with RSS</a><a href="https://nishantkhurana.me/">Visit Mindscape</a></footer>
+      <footer class="sitefoot"><span>{publicationName}</span><a href="/archive/">Edition archive</a><a href="/rss.xml">Subscribe with RSS</a><a href="https://nishantkhurana.me/">Visit Mindscape</a></footer>
     </div>
     <script>
       const root = document.documentElement
@@ -84,10 +85,6 @@ const rssUrl = new URL("/rss.xml", Astro.site)
           const status = document.querySelector("#reader-status")
           if (status) status.textContent = `Text size ${size} pixels`
         })
-      })
-      document.querySelectorAll<HTMLButtonElement>("[data-print]").forEach((button) => {
-        button.hidden = false
-        button.addEventListener("click", () => window.print())
       })
     </script>
   </body>

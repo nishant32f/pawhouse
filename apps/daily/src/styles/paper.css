@@ -1,18 +1,22 @@
-@import "@fontsource/unifrakturcook/latin-700.css";
+@import "@fontsource/old-standard-tt/latin-400.css";
+@import "@fontsource/old-standard-tt/latin-700.css";
+@import "@fontsource/newsreader/latin-400.css";
+@import "@fontsource/newsreader/latin-400-italic.css";
+@import "@fontsource/newsreader/latin-700.css";
 :root {
-  --desk: #e9e7e1;
-  --paper: #f7f4ec;
-  --ink: #20231e;
-  --muted: #51554c;
-  --rule: #b3b1a6;
-  --blue: #20231e;
-  --body-size: 16px;
+  --desk: #e3e3df;
+  --paper: #f6f3e9;
+  --ink: #27271e;
+  --muted: #4c4d42;
+  --rule: #a9a89d;
+  --blue: #27271e;
+  --body-size: 18px;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --desk: #151713;
-    --paper: #20231e;
+    --paper: #27271e;
     --ink: #f1eee5;
     --muted: #c4c6ba;
     --rule: #666b5f;
@@ -22,7 +26,7 @@
 }
 :root[data-theme="dark"] {
   --desk: #151713;
-  --paper: #20231e;
+  --paper: #27271e;
   --ink: #f1eee5;
   --muted: #c4c6ba;
   --rule: #666b5f;
@@ -43,7 +47,7 @@ body {
   background: var(--desk);
   color: var(--ink);
   font:
-    16px/1.55 Georgia,
+    18px/1.55 "Newsreader",
     "Times New Roman",
     serif;
   -webkit-font-smoothing: antialiased;
@@ -79,7 +83,7 @@ button:hover {
 h1,
 h2,
 h3 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Old Standard TT", "Times New Roman", serif;
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.1;
@@ -118,9 +122,9 @@ blockquote {
   padding-left: 22px;
 }
 .shell {
-  max-width: 1160px;
+  max-width: 1270px;
   margin: 28px auto 38px;
-  padding: 22px 42px 12px;
+  padding: 26px 37px 15px;
   background: var(--paper);
   border: 1px solid var(--rule);
 }
@@ -160,19 +164,12 @@ blockquote {
 .brand {
   display: inline-block;
   font:
-    700 90px/1.04 "UnifrakturCook",
-    Georgia,
+    700 clamp(32px, 8vw, 104px)/1.07 "Old Standard TT",
+    "Newsreader",
     serif;
-  letter-spacing: -2px;
+  letter-spacing: -0.055em;
   color: var(--ink);
   text-decoration: none;
-}
-.masthead p {
-  margin: 9px 0 0;
-  font:
-    italic 14px/1.4 Georgia,
-    serif;
-  color: var(--muted);
 }
 .editionline {
   border-bottom: 1px solid var(--ink);
@@ -225,7 +222,7 @@ blockquote {
 }
 .front-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.93fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr);
   gap: 28px;
   padding: 23px 0 26px;
 }
@@ -237,7 +234,7 @@ blockquote {
   scroll-margin-top: 24px;
 }
 .newspaper-story h1 {
-  font-size: 36px;
+  font-size: 49px;
   line-height: 1.06;
   margin: 0 0 12px;
 }
@@ -246,9 +243,15 @@ blockquote {
   line-height: 1.09;
   margin: 0 0 12px;
 }
-.front-grid > .side-story {
+.front-sidebar {
+  min-width: 0;
   border-left: 1px solid var(--rule);
   padding-left: 27px;
+}
+.front-sidebar > article + article {
+  border-top: 1px solid var(--rule);
+  margin-top: 22px;
+  padding-top: 22px;
 }
 .kicker {
   margin: 0 0 9px;
@@ -259,7 +262,7 @@ blockquote {
 }
 .deck {
   font:
-    italic 18px/1.4 Georgia,
+    italic 18px/1.4 "Newsreader",
     serif;
   color: var(--muted);
   margin: 0 0 15px;
@@ -310,18 +313,19 @@ blockquote {
 }
 .lower-stories {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 28px;
   padding: 25px 0;
   border-top: 3px double var(--ink);
 }
-.lower-stories > :nth-child(even) {
-  border-left: 1px solid var(--rule);
-  padding-left: 27px;
+.lower-stories > article {
+  min-width: 0;
 }
-.lower-stories > :nth-child(n + 3) {
-  border-top: 1px solid var(--rule);
-  padding-top: 25px;
+.lower-stories h2 {
+  font-size: 28px;
+}
+.lower-stories .reading-copy {
+  font-size: max(16px, calc(var(--body-size) - 1px));
 }
 .front-actions {
   display: flex;
@@ -385,7 +389,7 @@ blockquote {
 }
 .bar-value {
   font:
-    26px/1.2 Georgia,
+    26px/1.2 "Newsreader",
     serif;
   margin-bottom: 7px;
   overflow-wrap: anywhere;
@@ -441,9 +445,6 @@ blockquote {
 .compact .brand {
   font-size: 48px;
   letter-spacing: -1px;
-}
-.compact .masthead p {
-  display: none;
 }
 .reader {
   max-width: 710px;
@@ -647,9 +648,6 @@ blockquote {
   }
 }
 @media (max-width: 640px) {
-  :root {
-    --body-size: 17px;
-  }
   .shell {
     padding: 12px 20px 8px;
   }
@@ -668,12 +666,8 @@ blockquote {
     padding: 0 0 15px;
   }
   .brand {
-    font-size: clamp(47px, 15vw, 70px);
+    font-size: clamp(32px, 10.2vw, 52px);
     letter-spacing: -1px;
-  }
-  .masthead p {
-    font-size: 13px;
-    margin-top: 5px;
   }
   .editionline {
     font-size: 10px;
@@ -703,16 +697,12 @@ blockquote {
     font-size: 29px;
     line-height: 1.11;
   }
-  .front-grid > .side-story,
-  .lower-stories > :nth-child(even),
-  .lower-stories > :nth-child(n + 3) {
+  .front-sidebar,
+  .lower-stories > article + article {
     margin-top: 26px;
     padding: 22px 0 0;
     border-left: 0;
     border-top: 1px solid var(--ink);
-  }
-  .lower-stories > :first-child {
-    margin-top: 0;
   }
   .reading-copy {
     line-height: 1.6;
@@ -741,7 +731,7 @@ blockquote {
     padding: 8px 0 16px;
   }
   .compact .brand {
-    font-size: 42px;
+    font-size: clamp(32px, 10.2vw, 42px);
   }
   .story-nav {
     gap: 18px;
@@ -772,137 +762,5 @@ blockquote {
   }
   .bar-value {
     font-size: 20px;
-  }
-}
-@page {
-  size: A4;
-  margin: 12mm;
-}
-@media print {
-  :root,
-  :root[data-theme="dark"] {
-    --paper: white !important;
-    --ink: black !important;
-    --muted: #333 !important;
-    --rule: #aaa !important;
-    --blue: black !important;
-    --body-size: 10.5pt !important;
-    color-scheme: light !important;
-  }
-  body {
-    background: white;
-    color: black;
-  }
-  .shell {
-    padding: 0;
-    max-width: none;
-    margin: 0;
-    border: 0;
-  }
-  .topline,
-  .adjust,
-  .story-nav,
-  .reader-top,
-  .sitefoot,
-  .skip,
-  .back-link,
-  .editionline a,
-  .front-actions,
-  .front-reader-tools,
-  .jump-links,
-  .read {
-    display: none !important;
-  }
-  .masthead,
-  .compact .masthead {
-    padding: 0 0 16px;
-    text-align: center;
-  }
-  .brand,
-  .compact .brand {
-    font-size: 58pt;
-  }
-  .editionline {
-    padding: 8px 0;
-  }
-  .reader {
-    max-width: none;
-    padding-top: 20px;
-  }
-  .front-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
-    gap: 20px;
-  }
-  .front-grid.single-story {
-    grid-template-columns: 1fr;
-  }
-  .front-grid > .side-story {
-    margin-top: 0;
-    border-top: 0;
-    border-left: 1px solid var(--rule);
-    padding: 0 0 0 20px;
-  }
-  .front-grid .lead .story-body {
-    column-count: 2;
-    column-gap: 18px;
-  }
-  .newspaper-story h1 {
-    font-size: 27pt;
-  }
-  .newspaper-story h2 {
-    font-size: 20pt;
-  }
-  .lower-stories {
-    display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
-    gap: 20px;
-    break-before: page;
-  }
-  .lower-stories > :nth-child(even) {
-    margin-top: 0;
-    border-top: 0;
-    border-left: 1px solid var(--rule);
-    padding: 0 0 0 20px;
-  }
-  .reading-copy {
-    line-height: 1.4;
-  }
-  .deck {
-    font-size: 12pt;
-  }
-  .story-visual {
-    break-inside: avoid;
-  }
-  .story-visual img {
-    max-height: 180px;
-    width: auto;
-    margin-inline: auto;
-    object-fit: contain;
-  }
-  .bar-track {
-    height: 90px;
-  }
-  .bar-fill {
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
-  .story-body > p:last-child,
-  .story-visual figcaption {
-    font-size: 8pt;
-  }
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  h1,
-  h2,
-  h3,
-  .kicker {
-    break-after: avoid;
-  }
-  p {
-    orphans: 3;
-    widows: 3;
   }
 }
