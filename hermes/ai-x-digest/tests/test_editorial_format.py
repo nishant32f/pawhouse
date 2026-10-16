@@ -85,6 +85,44 @@ class EditorialFormatTest(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("story count", result.stdout)
 
+    def test_v2_accepts_eight_stories_and_six_briefs(self):
+        result = self.verify(self.identified_edition(8, 6))
+        self.assertEqual(result.returncode, 0, result.stdout)
+
+    def test_v2_rejects_ninth_story_and_seventh_brief(self):
+        for count, briefs, message in ((9, 0, "story count"), (1, 7, "1 to 6")):
+            with self.subTest(stories=count, briefs=briefs):
+                result = self.verify(self.identified_edition(count, briefs))
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn(message, result.stdout)
+
+    def test_v2_quiet_day_remains_valid(self):
+        result = self.verify(self.identified_edition(1, 0))
+        self.assertEqual(result.returncode, 0, result.stdout)
+
+    def test_v2_uses_distinct_length_targets_without_changing_v1(self):
+        result = self.verify(self.identified_edition(2, 1))
+        self.assertIn("target 140 to 200", result.stdout)
+        self.assertIn("target 70 to 120", result.stdout)
+        self.assertIn("target 25 to 45", result.stdout)
+        legacy = self.verify(edition(STORY))
+        self.assertNotIn("target 140 to 200", legacy.stdout)
+        self.assertNotIn("target 70 to 120", legacy.stdout)
+
+    def identified_edition(self, count, briefs):
+        stories = []
+        for index in range(count):
+            story = STORY.replace("A developer", f"Developer {index}", 1)
+            headline, body = story.split("\n", 1)
+            # A short body exposes the soft target without failing hard limits.
+            body = "\nA developer published a test.\n\nSource: [Test](https://example.com/test).\n"
+            stories.append(f"{headline}\n<!-- story-id: story-{index} -->\n{body}")
+        if briefs:
+            stories.append("## In brief\n")
+            for index in range(briefs):
+                stories.append(f"### Brief {index}\n<!-- story-id: brief-{index} -->\n\nA smaller release.\n\nSource: [Release](https://example.com/release).\n")
+        return edition("\n\n".join(stories), version="editorial-v2")
+
     def test_quiet_day_with_one_story_and_optional_brief_passes(self):
         brief = """\n\n## In brief
 

@@ -73,19 +73,23 @@ def check_editorial(text: str, expected_date: str, identified: bool = False) -> 
             issues.append(f'use the reserved heading exactly: {reserved[title.casefold()]}')
     stories = [(title, content) for title, content in sections
                if title.casefold() not in reserved]
-    if not 1 <= len(stories) <= 5:
-        issues.append(f'story count must be 1 to 5, found {len(stories)}; do not pad quiet days')
+    story_limit = 8 if identified else 5
+    if not 1 <= len(stories) <= story_limit:
+        issues.append(f'story count must be 1 to {story_limit}, found {len(stories)}; do not pad quiet days')
     if len({title.lower() for title, _ in stories}) != len(stories):
         issues.append('duplicate story headlines')
 
-    def check_story(title: str, content: str, brief: bool = False) -> None:
+    def check_story(title: str, content: str, brief: bool = False, lead: bool = False) -> None:
         if not has_source_link(content, text if identified else None):
             issues.append(f'{title}: missing adjacent HTTPS source link')
         prose = re.sub(r'^Sources?:.*$', '', content, flags=re.M).strip()
         prose = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', prose)
         words = re.findall(r"\b[\w]+(?:[-'][\w]+)*\b", prose)
         maximum = 85 if brief else 220
-        target_min, target_max = (30, 60) if brief else (100, 180)
+        if identified:
+            target_min, target_max = (25, 45) if brief else (140, 200) if lead else (70, 120)
+        else:
+            target_min, target_max = (30, 60) if brief else (100, 180)
         if not words:
             issues.append(f'{title}: empty story')
         elif len(words) > maximum:
@@ -100,15 +104,16 @@ def check_editorial(text: str, expected_date: str, identified: bool = False) -> 
             elif not 25 <= summary_words <= 40:
                 warnings.append(f'{title}: opening summary has {summary_words} words; target 25 to 40')
 
-    for title, content in stories:
-        check_story(title, content)
+    for index, (title, content) in enumerate(stories):
+        check_story(title, content, lead=index == 0)
     brief_sections = [content for title, content in sections if title.casefold() == 'in brief']
     if len(brief_sections) > 1:
         issues.append('multiple In brief sections')
+    brief_limit = 6 if identified else 3
     for content in brief_sections:
         briefs = list(re.finditer(r'^###\s+(.+?)\s*$', content, re.M))
-        if not 1 <= len(briefs) <= 3 or content[:briefs[0].start()].strip():
-            issues.append('In brief must contain 1 to 3 short items with ### headlines')
+        if not 1 <= len(briefs) <= brief_limit or content[:briefs[0].start()].strip():
+            issues.append(f'In brief must contain 1 to {brief_limit} short items with ### headlines')
         for i, item in enumerate(briefs):
             check_story(item.group(1), content[item.end():briefs[i + 1].start() if i + 1 < len(briefs) else len(content)], brief=True)
     return issues, warnings
