@@ -18,7 +18,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "nishantkhurana.me",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "digests/**"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

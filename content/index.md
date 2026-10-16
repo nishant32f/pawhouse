@@ -8,7 +8,7 @@ tags:
   - personal
   - digital-garden
 author: "Nishant Khurana"
-description: "Nishant's public localhost: a curated digital garden of identity, principles, quotes, wisdom, digests, and working notes."
+description: "Nishant's public localhost: a curated digital garden of identity, principles, quotes, wisdom, and working notes."
 ---
 
 <img src="ascii-art.png" alt="Nishant Khurana ASCII portrait" width="200" />

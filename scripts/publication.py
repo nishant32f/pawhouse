@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Serialize vault publication and keep private accepted-revision receipts.
 
-Only the digest command promotes declared paths. Ordinary notes retain full sync.
+Only the digest command promotes declared paths. Ordinary notes exclude root digests.
 All entry points share this lock and recover the preceding promotion first.
 """
 from __future__ import annotations
@@ -306,7 +306,7 @@ class Publisher:
 
     def sync(self):
         self.content.mkdir(parents=True, exist_ok=True)
-        run(['rsync', '-a', '--delete', '--exclude', '.DS_Store', '--exclude', '.obsidian', '--exclude', '.git',
+        run(['rsync', '-a', '--delete', '--exclude', '.DS_Store', '--exclude', '.obsidian', '--exclude', '.git', '--exclude', '/digests/',
              str(self.vault) + '/', str(self.content) + '/'])
 
     def notes(self, message):
@@ -321,7 +321,6 @@ class Publisher:
 
 
 def close_legacy(receipt_path, reason, evidence):
-    """Explicit operator classification closes a legacy publication without a send claim."""
     receipt = json.loads(receipt_path.read_text())
     if receipt.get('schemaVersion') == 2 or receipt.get('phase') != 'readerverified':
         raise ValueError('operator closure requires a legacy readerverified receipt; resolve ambiguous delivery with provider evidence')

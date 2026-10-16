@@ -61,4 +61,12 @@ Treat `/Users/skypawalker/Dropbox/Obsidian/public` as the source of truth for pu
 npm run publish -- "Update notes"
 ```
 
-The publish script runs `rsync --delete`, builds Quartz, stages all repo changes, commits with the provided message, and pushes the current branch to `origin`. A push to `main` triggers the GitHub Pages workflow.
+The publish script runs `rsync --delete` for ordinary notes, excluding root `public/digests/`. It builds Quartz, stages all repo changes, commits with the provided message, and pushes the current branch to `origin`. A push to `main` triggers the GitHub Pages workflow.
+
+Digests use private vault Markdown and the R2 publisher described in `hermes/ai-x-digest/rollout.md`. Ordinary sync must neither import public digests nor delete any existing legacy destination digests. The retirement change removes `content/digests/` explicitly and Quartz ignores `digests/**`.
+
+Keep the Quartz ignore, removal and navigation changes unmerged until replacement history and every exact HTTP 301 pass live verification. Installing ignore early would hide legacy pages on the next notes build. At authorized retirement, apply the matching public-vault homepage edit from its private reviewed snapshot before the next notes sync. Preserve accepted sources and backups.
+
+`scripts/daily-redirects.py prepare --inventory INVENTORY --output PLAN` consumes the pinned U5 inventory. `preflight --inventory INVENTORY` reads the personal Cloudflare account, DNS, token permissions and conservative Free capacity. Under explicit deployment authorization, `apply --inventory INVENTORY --reader-proof U4_PROOF` requires the exhaustive U4 proof for that publication and rechecks its served revision before enabling redirects. It creates only its dedicated list and rule and records private resource ownership for safe retry. `verify --inventory INVENTORY` requires actual HTTP 301, exact Location with preserved queries, final 200, and unknown-date 404. API success alone does not permit Quartz removal. See `python3 scripts/daily-redirects.py --help` for private report and state paths.
+
+Redirect preflight uses the canonical account-owned token through `/accounts/1688bfec49a43a217df10ed33b86e300/tokens/verify` and its token-details GET. It needs Account API Tokens Read for self-policy inspection, plus Account Filter Lists Edit, Bulk URL Redirects Edit, Zone Read and DNS Read. Account API Tokens Write is unnecessary. Keep the existing credential unchanged during implementation; a 403 stops preflight and does not prove resources are absent.
