@@ -75,8 +75,11 @@ def inventory(legacy_sha, output, compiler_revision, rss=None):
     if not re.fullmatch('[a-f0-9]{40}', compiler_revision) or run(['git', 'rev-parse', 'HEAD'], ROOT) != compiler_revision:
         raise ValueError('compilerRevision must match current full HEAD')
     run(['git', 'diff', '--quiet', 'HEAD', '--', 'hermes/ai-x-digest/content'], ROOT)
-    output = Path(output).resolve()
-    for public in (ROOT, Path('/Users/skypawalker/Dropbox/Obsidian')):
+    output = Path(output)
+    if output.is_symlink():
+        raise ValueError('inventory staging cannot be a symlink')
+    output = output.resolve()
+    for public in (ROOT.resolve(), Path('/Users/skypawalker/Dropbox/Obsidian').resolve()):
         if output == public or public in output.parents:
             raise ValueError('inventory staging must remain outside repository and vault')
     names = run(['git', 'ls-tree', '-r', '--name-only', legacy_sha, '--', 'content/digests'], ROOT).splitlines()
@@ -88,8 +91,17 @@ def inventory(legacy_sha, output, compiler_revision, rss=None):
         sources[name] = subprocess.check_output(['git', 'show', legacy_sha + ':' + path], cwd=ROOT)
     if not sources:
         raise ValueError('pinned legacy snapshot has no digest sources')
+    if any(path.is_symlink() for path in output.rglob('*')):
+        raise ValueError('inventory staging cannot contain symlinks')
+    staged = output / 'sources'
+    if staged.exists():
+        if not staged.is_dir():
+            raise ValueError('inventory sources must be a directory')
+        for path in staged.iterdir():
+            if path.name not in sources or not path.is_file():
+                raise ValueError('unexpected staged source: ' + path.name)
     for name, data in sources.items():
-        exact_copy(output / 'sources' / name, data)
+        exact_copy(staged / name, data)
     inputs = [{'filename': name, 'text': data.decode('utf-8')} for name, data in sorted(sources.items())]
     with tempfile.TemporaryDirectory(prefix='daily-history-') as tmp:
         input_json = Path(tmp) / 'sources.json'

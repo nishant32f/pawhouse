@@ -171,6 +171,68 @@ class HistoryTest(unittest.TestCase):
             self.assertEqual(result['anchors'], ['duplicate', 'duplicate-1', 'a-word--value'])
 
 
+class InventoryStagingTest(unittest.TestCase):
+    def test_inventory_rejects_extra_valid_edition_in_reused_sources(self):
+        legacy = 'd6d6a71d42dd3b8e7d9359ddba7e656548368d16'
+        revision = history.run(['git', 'rev-parse', 'HEAD'], ROOT)
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / 'inventory'
+            staged = output / 'sources'
+            staged.mkdir(parents=True)
+            extra = staged / 'x-ai-2000-01-01.md'
+            extra.write_text('---\ndate: 2000-01-01\ntitle: Extra accepted-looking edition\n---\n# Extra edition\n\nThis file is outside the pinned legacy snapshot.\n')
+            before = extra.read_bytes()
+            with self.assertRaisesRegex(ValueError, 'unexpected staged source.*x-ai-2000-01-01.md'):
+                history.inventory(legacy, output, revision)
+            self.assertEqual(extra.read_bytes(), before)
+            self.assertEqual(list(staged.iterdir()), [extra])
+            self.assertFalse((output / 'bundle').exists())
+            self.assertFalse((output / 'inventory.json').exists())
+
+    def test_inventory_rejects_sources_symlink_before_writing_external_files(self):
+        legacy = 'd6d6a71d42dd3b8e7d9359ddba7e656548368d16'
+        revision = history.run(['git', 'rev-parse', 'HEAD'], ROOT)
+        with tempfile.TemporaryDirectory() as tmp:
+            output = Path(tmp) / 'inventory'
+            output.mkdir()
+            external = Path(tmp) / 'external'
+            external.mkdir()
+            (output / 'sources').symlink_to(external, target_is_directory=True)
+            with self.assertRaisesRegex(ValueError, 'symlink'):
+                history.inventory(legacy, output, revision)
+            self.assertEqual(list(external.iterdir()), [])
+            self.assertTrue((output / 'sources').is_symlink())
+            self.assertFalse((output / 'bundle').exists())
+
+
+class InventoryVaultAliasTest(unittest.TestCase):
+    def test_inventory_rejects_output_beneath_symlinked_vault_root_before_reading_sources(self):
+        from unittest.mock import patch
+        revision = 'a' * 40
+        with tempfile.TemporaryDirectory() as tmp:
+            vault = Path(tmp) / 'real-vault'
+            vault.mkdir()
+            alias = Path(tmp) / 'vault-alias'
+            alias.symlink_to(vault, target_is_directory=True)
+
+            def configured_path(value):
+                return alias if str(value) == '/Users/skypawalker/Dropbox/Obsidian' else Path(value)
+
+            def read_git(args, cwd):
+                if args[1:3] == ['rev-parse', 'HEAD']:
+                    return revision
+                if args[1:3] == ['diff', '--quiet']:
+                    return ''
+                raise AssertionError('inventory reached source reading inside the vault')
+
+            for root in (alias, vault):
+                with self.subTest(root=root):
+                    with patch.object(history, 'Path', side_effect=configured_path), patch.object(history, 'run', side_effect=read_git):
+                        with self.assertRaisesRegex(ValueError, 'outside repository and vault'):
+                            history.inventory(revision, root / 'inventory', revision)
+            self.assertEqual(list(vault.iterdir()), [])
+
+
 class HistoryCliTest(unittest.TestCase):
     from test_r2_cli import CliPublicationTest as Fixture
     setUp = Fixture.setUp
