@@ -29,6 +29,7 @@ Understanding this helps us recognize that our harshest self-critical voices oft
 **The only way out is through.** You will take more of the thing that poisons you until you turn it into a tonic that girdles the world around you.
 
 ## Related Concepts
+- [[wisdom/personal-growth/resilience-and-mental-health/hidden-pain-and-inner-monsters|Hidden Pain and Inner Monsters]] — collected excerpts and paraphrases about concealed pain and inner darkness.
 - [[wisdom/personal-growth/resilience-and-mental-health/mental-health-characteristics|Mental Health Characteristics]] - Understanding healthy vs unhealthy mental patterns
 - [[wisdom/personal-growth/resilience-and-mental-health/obstacles-to-happiness|Obstacles to Happiness]] - External factors that feed our monsters
 - [[wisdom/personal-growth/resilience-and-mental-health/evening-self-reflection|Evening Self Reflection]] - Daily practice to monitor and manage our mental state
