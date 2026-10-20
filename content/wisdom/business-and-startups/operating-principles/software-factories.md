@@ -102,5 +102,7 @@ If the answer is not “we do,” it is not a software factory. It may still be 
 
 ## Related notes
 
+- [[wisdom/business-and-startups/operating-principles/ambition-with-ai-models|Ambition with AI Models]] — broaden the outcome delegated to AI while retaining independent verification.
+
 - [[startup-operating-principles|Startup Operating Principles]]
 - [[leadership|Leadership]]
