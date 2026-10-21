@@ -18,15 +18,51 @@ class ReleaseContractTest(fixtures.Fixture, unittest.TestCase):
         self.assertFalse((self.state / 'verified-redirects.json').exists())
         self.assertFalse((self.state / 'reader-release.json').exists())
 
-    def change(self, route, before, after):
+    def change(self, route, before, after, expected=None):
         page = self.live / route
         text = page.read_text()
         self.assertIn(before, text)
         page.write_text(text.replace(before, after))
-        self.assert_rejected()
+        self.assert_rejected(expected)
 
     def test_matching_figures_full_prose_archives_and_rss_verify(self):
         self.assertEqual(self.verify().returncode, 0)
+
+    def test_front_secondary_requires_the_exact_accepted_summary(self):
+        self.change('editions/2026-10-15/index.html',
+                    'Hang Huang announced an invite-only beta on October 14',
+                    'Hang Huang announced an open beta on October 14')
+
+    def test_front_secondary_cannot_omit_the_accepted_summary(self):
+        self.change('editions/2026-10-15/index.html',
+                    'Hang Huang announced an invite-only beta on October 14 for cloud computers for AI agents. He claims a machine with 4 vCPU and 8 GB RAM starts in under one second.', '')
+
+    def test_front_secondary_requires_its_adjacent_source(self):
+        self.change('editions/2026-10-15/index.html',
+                    '<a href="https://x.com/hanghuang_/status/2110349488200057326">Hang Huang&#39;s beta announcement</a>', '',
+                    expected='preview sources')
+
+    def test_front_secondary_cannot_change_its_source_url(self):
+        self.change('editions/2026-10-15/index.html',
+                    'href="https://x.com/hanghuang_/status/2110349488200057326"',
+                    'href="https://example.com/unrelated"', expected='preview sources')
+
+    def test_front_brief_requires_the_exact_accepted_summary(self):
+        self.change('index.html',
+                    'The documentation does not promise direct import.',
+                    'The documentation promises direct import.')
+
+    def test_front_lead_cannot_omit_full_prose(self):
+        self.change('editions/2026-10-15/index.html',
+                    "The post does not establish that another team's bottleneck is Git.", '')
+
+    def test_full_story_cannot_omit_prose_beyond_its_front_summary(self):
+        self.change('editions/2026-10-15/stories/cloud-computers/index.html',
+                    'The post does not describe credential isolation or network controls.', '')
+
+    def test_full_edition_cannot_omit_prose_beyond_the_front_summary(self):
+        self.change('editions/2026-10-15/read/index.html',
+                    'The post does not describe credential isolation or network controls.', '')
 
     def test_same_revision_archive_requires_published_links(self):
         (self.live / 'archive/index.html').write_text('<main>Published editions are coming soon.</main>')

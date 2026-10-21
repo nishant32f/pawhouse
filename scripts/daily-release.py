@@ -213,11 +213,19 @@ def check_visual(node, visual, point_values):
                 raise ValueError('chart drawing differs from accepted value')
 
 
-def check_story(node, story):
+def check_story(node, story, preview=False):
     copies = node.nodes(css='reading-copy')
     if len(copies) != 1:
         raise ValueError('story requires one complete reading copy')
-    check_prose(copies[0], story['html'])
+    check_prose(copies[0], story['summaryHtml'] if preview else story['html'])
+    if preview:
+        citations = node.nodes('p', css='source')
+        sources = story['sources']
+        label = 'Source: ' if len(sources) == 1 else 'Sources: '
+        expected = normalized(label + ', '.join(source['label'] for source in sources))
+        if (len(citations) != 1 or citations[0].text() != expected
+                or citations[0].links() != [source['url'] for source in sources]):
+            raise ValueError('story preview sources differ from accepted content')
     if normalized(story['headline']) not in node.text():
         raise ValueError('story headline is missing')
     editorial = story.get('editorial')
@@ -228,7 +236,7 @@ def check_story(node, story):
     check_visual(node, editorial['visual'] if editorial else None, story['proofPointValues'])
 
 
-def check_edition(html, edition):
+def check_edition(html, edition, front=False):
     node = main_content(html)
     if edition['kind'] == 'legacy':
         copies = node.nodes(css='reading-copy')
@@ -240,7 +248,7 @@ def check_edition(html, edition):
             matches = [child for child in node.walk() if child.attrs.get('id') == story['id'] and child.tag in ('article', 'section')]
             if len(matches) != 1:
                 raise ValueError('edition is missing an accepted story')
-            check_story(matches[0], story)
+            check_story(matches[0], story, preview=front and story['id'] != edition['lead']['id'])
         for story in edition['archivedStories']:
             if story['path'] not in node.links():
                 raise ValueError('edition is missing an archived story link')
@@ -261,10 +269,10 @@ def verify_publication(publisher, bundle, origin, code, version=None):
         html, _ = fetch(origin, route)
         tested.append(route)
         return html
-    check_edition(page('/'), max(editions, key=lambda edition: edition['date']))
+    check_edition(page('/'), max(editions, key=lambda edition: edition['date']), front=True)
     for edition in editions:
         for route in (edition['path'], edition['readPath']):
-            check_edition(page(route), edition)
+            check_edition(page(route), edition, front=route == edition['path'])
         for story in edition.get('stories', []):
             check_story(main_content(page(story['path'])), story)
     archive = main_content(page('/archive/'))
