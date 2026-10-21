@@ -95,6 +95,9 @@
     local-only R2 fixture for the real build and verify today's ten stories at desktop and mobile
     widths, plus legacy/single-story/archive/search/full-article routes. Check no-JavaScript
     navigation, theme and text-size controls. Update reader documentation and acceptance evidence.
+    Adapt the release verifier to check exact non-lead previews and adjacent sources on front pages,
+    while retaining complete prose checks on lead, article and full-edition routes and exact RSS
+    bytes.
   </p>
   <h2>Verification contract</h2>
   <table>
@@ -118,7 +121,10 @@
     </tr>
     <tr>
       <td>Separation of concerns</td>
-      <td>Diff confined to reader UI, tests and docs; existing R2 runtime and RSS tests pass.</td>
+      <td>
+        Diff confined to reader UI, release verification, tests and docs; R2 runtime and exact RSS
+        checks remain intact.
+      </td>
     </tr>
     <tr>
       <td>Reading controls</td>
@@ -139,6 +145,15 @@
     Correctness, standards, testing and adversarial reviewers covered the final reader diff. The
     Claude peer could not authenticate, so the review used its in-process adversarial fallback. No
     external peer result contributed to the verdict.
+  </p>
+  <p>
+    CI exposed a release-verifier assumption that every front-page card contained full prose. The
+    approved layout intentionally uses accepted summaries for non-leads. U2 therefore includes exact
+    summary and adjacent-source verification on front pages, plus negative HTTP proofs that reject
+    missing full prose on canonical reading routes. The compiler and publisher are unchanged.
+    Focused review <code>20261021-112552-948d7e11</code> found no actionable issues in this
+    adaptation. The corrected-tree Python publication suite passed all 180 tests on Pluto, with no
+    skips.
   </p>
   <h2>Definition of done</h2>
   <p>
