@@ -54,6 +54,8 @@ Read records contain rendered HTML, plain text, persistent identities, heading a
 | `/sitemap.xml`               | Native catalog routes, including retained archived stories.                                                                   |
 | `/deployment.json`           | Public code and content provenance.                                                                                           |
 
+The front page uses a compact masthead with the selected date, story count and an Inside list of secondary article headlines. The main column keeps the complete lead and opening-paragraph previews for secondary articles; a ruled sidebar groups actual briefs. Previews reuse the neutral content package's authored summary HTML and retain adjacent source links. Full article and full-edition routes keep complete prose. Phones stack the same stories in one column.
+
 Reading, sources, navigation and search work without JavaScript. System dark mode uses CSS. JavaScript adds theme, text size and immediate search filtering. The reader has no Print control.
 
 The app retains Old Standard TT for masthead and headlines, Newsreader for reading, and Arial for controls and captions. Fontsource pins and licenses remain unchanged. `src/components/visuals.ts` owns page images and chart drawing. The neutral RSS serializer uses accessible tables for charts and preserves titles, units, qualifiers, values, image descriptions, captions, credits and citations.

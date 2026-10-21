@@ -1,12 +1,10 @@
 ---
 import Paper from "../layouts/Paper.astro"
 import { publicationName } from "../components/publication"
-import EditionLine from "../components/EditionLine.astro"
 import EditionFront from "../components/EditionFront.astro"
 import { editionDate } from "../components/format"
 const edition = await Astro.locals.publication.edition()
 ---
-<Paper title={edition ? editionDate(edition.date) : "Latest edition"} canonical={edition?.path ?? "/"}>
-  {edition && <EditionLine slot="editionline" edition={edition} />}
+<Paper title={edition ? editionDate(edition.date) : "Latest edition"} canonical={edition?.path ?? "/"} edition={edition ?? undefined}>
   {edition ? <EditionFront edition={edition} /> : <div class="archive"><h1>{publicationName}</h1><p>No editions have been published yet.</p></div>}
 </Paper>

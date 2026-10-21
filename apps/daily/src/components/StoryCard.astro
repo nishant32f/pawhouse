@@ -1,16 +1,22 @@
 ---
 import type { ActiveStory } from "../lib/digests"
+import Sources from "./Sources.astro"
 import { renderVisual } from "./visuals"
-interface Props { story: ActiveStory; lead?: boolean; briefHeading?: boolean }
-const { story, lead = false, briefHeading = false } = Astro.props
+interface Props { story: ActiveStory; lead?: boolean }
+const { story, lead = false } = Astro.props
 const { editorial } = story
 ---
-<article class:list={["newspaper-story", { lead, "side-story": !lead }]} id={story.id}>
+<article class:list={["newspaper-story", { lead, "brief-story": story.kind === "brief", "secondary-story": !lead && story.kind === "story" }]} id={story.id}>
   {story.legacyAnchor !== story.id && <span id={story.legacyAnchor} />}
-  {(editorial || story.kind === "brief") && <p class="kicker" id={briefHeading ? "in-brief" : undefined}>{editorial?.section ?? "In brief"}</p>}
+  {(editorial || story.kind === "brief") && <p class="kicker">{editorial?.section ?? "In brief"}</p>}
   {lead ? <h1><a href={story.path}>{story.headline}</a></h1> : <h2><a href={story.path}>{story.headline}</a></h2>}
   {editorial?.deck && <p class="deck">{editorial.deck}</p>}
-  {editorial?.visual && <Fragment set:html={renderVisual(editorial.visual)} />}
-  <div class="reading-copy story-body" set:html={story.html} />
-  <a class="read" href={story.path}>Read story<span class="sr-only">: {story.headline}</span></a>
+  <div class:list={["story-preview", { "with-visual": !!editorial?.visual }]}>
+    <div class="story-summary">
+      <div class="reading-copy story-body" set:html={lead ? story.html : story.summaryHtml} />
+      {!lead && <Sources sources={story.sources} />}
+      <a class="read" href={story.path}>Read full story<span class="sr-only">: {story.headline}</span></a>
+    </div>
+    {editorial?.visual && <Fragment set:html={renderVisual(editorial.visual)} />}
+  </div>
 </article>

@@ -163,10 +163,65 @@ test("latest and dated front pages retain actual dates and story order", () => {
     assert.ok(article.includes(headline))
   }
   assert.match(front, /Read full edition/)
-  assert.match(front, /The README says social posts/)
+  assert.match(
+    front,
+    /The official README and MCP implementation describe limits on importing X content/,
+  )
+  assert.doesNotMatch(front, /The README says social posts/)
   assert.match(front, /more than 30,000 per day/)
+  assert.match(front, /aria-label="Inside"/)
+  for (const id of ["cloud-computers", "gloss-x-import", "claude-code-hooks"])
+    assert.match(front, new RegExp(`href="#${id}"`))
   assert.match(front, /Machine Herald/)
   assert.doesNotMatch(front, /data-print|print-edition|A daily paper on artificial intelligence/)
+})
+
+test("front page groups interleaved briefs without dropping or repeating active stories", async () => {
+  const mixed = compileRepository(
+    inputs.map((input) => ({
+      ...input,
+      text:
+        input.filename === "x-ai-2026-10-15.md"
+          ? input.text.replace("## Hang Huang", "## In brief\n\n### Hang Huang")
+          : input.text,
+    })),
+    { compilerRevision: "reading-fixture-compiler" },
+  )
+  try {
+    await publish(mixed)
+    const front = await (await fetchPath("/editions/2026-10-15/")).text()
+    const main = front.match(/<section[^>]+aria-label="Main stories"[^>]*>([\s\S]*?)<\/aside>/)?.[1]
+    assert.ok(main)
+    const [articles, briefs] = main.split(/<aside[^>]+aria-label="In brief"[^>]*>/)
+    assert.ok(articles && briefs)
+    assert.match(articles, /id="anthropic-monorepo"/)
+    assert.match(articles, /id="gloss-x-import"/)
+    assert.match(articles, /id="claude-code-hooks"/)
+    assert.doesNotMatch(articles, /id="cloud-computers"/)
+    assert.match(briefs, /id="cloud-computers"/)
+    assert.doesNotMatch(briefs, /id="(?:anthropic-monorepo|gloss-x-import|claude-code-hooks)"/)
+    assert.match(briefs, /id="in-brief"/)
+    for (const id of [
+      "anthropic-monorepo",
+      "cloud-computers",
+      "gloss-x-import",
+      "claude-code-hooks",
+    ])
+      assert.equal([...front.matchAll(new RegExp(`<article[^>]+id="${id}"`, "g"))].length, 1)
+    const preview = front.match(/<article[^>]+id="gloss-x-import"[^>]*>([\s\S]*?)<\/article>/)?.[1]
+    assert.ok(preview)
+    assert.match(preview, /The official README and MCP implementation describe limits/)
+    assert.doesNotMatch(preview, /The README says social posts/)
+    assert.match(
+      preview,
+      /href="https:\/\/raw.githubusercontent.com\/Nutlope\/gloss\/main\/lib\/mcp.ts"/,
+    )
+    const full = await (await fetchPath("/editions/2026-10-15/read/")).text()
+    assert.match(full, /The README says social posts/)
+    assert.match(full, /more than 30,000 per day/)
+  } finally {
+    await publish()
+  }
 })
 
 test("request-time article routes contain complete prose, adjacent sources and active navigation", () => {
@@ -199,6 +254,7 @@ test("legacy editions remain whole; archive and search work without JavaScript",
   assert.equal(existsSync(join(output, "editions/2026-05-10/stories")), false)
   const full = read("editions/2026-10-15/read/index.html")
   assert.match(full, /The README says social posts/)
+  assert.match(full, /more than 30,000 per day/)
   assert.match(full, /https:\/\/raw.githubusercontent.com\/Nutlope\/gloss\/main\/lib\/mcp.ts/)
   const archive = read("archive/index.html")
   assert.ok(archive.indexOf("2026-10-16") < archive.indexOf("2026-05-10"))
@@ -315,9 +371,9 @@ test("sitemap contains actual native routes including retained archive articles"
 test("a quiet edition renders one complete story without supporting placeholders", () => {
   const front = read("editions/2026-10-14/index.html")
   assert.equal([...front.matchAll(/<article\b/g)].length, 1)
-  assert.equal([...front.matchAll(/href="#reproducible-fix"/g)].length, 1)
+  assert.equal([...front.matchAll(/id="reproducible-fix"/g)].length, 1)
   assert.match(front, /front-grid single-story/)
-  assert.doesNotMatch(front, /lower-stories|side-story/)
+  assert.doesNotMatch(front, /secondary-story|aria-label="In brief"|aria-label="Inside"/)
   assert.match(front, /The report covers one tool version/)
   assert.match(front, /https:\/\/example\.com\/fix/)
   const story = read("editions/2026-10-14/stories/reproducible-fix/index.html")
