@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><title>Machine Herald approved newspaper layout</title>
+  <style>
+    body {
+      max-width: 920px;
+      margin: 40px auto;
+      padding: 0 24px;
+      font:
+        17px/1.6 Georgia,
+        serif;
+      color: #20242a;
+      background: #f8f7f2;
+    }
+    h1,
+    h2 {
+      line-height: 1.2;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td,
+    th {
+      border: 1px solid #aaa99f;
+      padding: 9px;
+      text-align: left;
+    }
+    code {
+      font-size: 14px;
+    }
+  </style>
+  <h1>Machine Herald newspaper layout</h1>
+  <p>
+    Approved on 21 October 2026 after the user viewed the desktop/mobile newspaper preview and said
+    “I like this one, go with it”.
+  </p>
+  <h2>Goal capsule</h2>
+  <p>
+    Apply the approved compact masthead, ruled columns and readable phone layout to the actual
+    request-time reader. Preserve the separation between accepted content, publishing and
+    presentation.
+  </p>
+  <h2>Requirements</h2>
+  <ol>
+    <li>
+      Use the approved palette and existing Old Standard TT/Newsreader fonts, compact left-aligned
+      desktop masthead, date/count cell and an Inside list derived from the selected edition.
+    </li>
+    <li>
+      Arrange the lead and secondary articles in the main column and actual brief stories in a
+      distinct ruled sidebar. On phones stack articles and briefs with readable text, no horizontal
+      overflow and no oversized desktop canvas.
+    </li>
+    <li>
+      Show bounded front-page previews without rewriting authored prose. Full stories, sources and
+      numerical qualifiers remain available at their existing canonical article and full-edition
+      routes.
+    </li>
+    <li>
+      Keep all active stories exactly once on the front page. Preserve persistent and legacy
+      anchors, archived access, single-story and legacy editions, and work without JavaScript.
+    </li>
+    <li>
+      Preserve authored image/chart rendering and their sources. Do not hardcode the one-off
+      DeepInfer drawing or today's facts into the general reader.
+    </li>
+    <li>
+      Retain theme and text-size controls, archive/search, RSS discovery and existing
+      dated/canonical URLs.
+    </li>
+    <li>
+      Do not change the neutral compiler, R2 schema, publisher, accepted Markdown, Hermes
+      configuration, cron, Telegram, main Quartz website or RSS bytes.
+    </li>
+  </ol>
+  <h2>Settled decisions</h2>
+  <p>
+    The reference and approved 21 October preview settle the visual direction. The preview is
+    retained in local branch <code>preview/newspaper-20261021</code>, commit <code>b0ddb3d8</code>.
+    Production keeps canonical article navigation rather than importing the preview-only device
+    controls or frozen content.
+  </p>
+  <h2>Implementation units</h2>
+  <h3>U1. Apply the newspaper layout</h3>
+  <p>
+    One cohesive UI unit owns reader Astro components/layout/page wiring, CSS and focused reader
+    integration assertions. Reuse existing types and visual rendering. No new dependencies or
+    publication changes. Pure styling uses screenshot comparison; behavior-bearing grouping/excerpts
+    get focused real-Worker coverage before implementation where practical.
+  </p>
+  <h3>U2. Verify and document the reader</h3>
+  <p>
+    After U1, run package checks, full reader tests and SSR build with Node 22.23.3 on Pluto. Seed a
+    local-only R2 fixture for the real build and verify today's ten stories at desktop and mobile
+    widths, plus legacy/single-story/archive/search/full-article routes. Check no-JavaScript
+    navigation, theme and text-size controls. Update reader documentation and acceptance evidence.
+    Adapt the release verifier to check exact non-lead previews and adjacent sources on front pages,
+    while retaining complete prose checks on lead, article and full-edition routes and exact RSS
+    bytes.
+  </p>
+  <h2>Verification contract</h2>
+  <table>
+    <tr>
+      <th>Concern</th>
+      <th>Evidence</th>
+    </tr>
+    <tr>
+      <td>Typography and density</td>
+      <td>
+        Actual built-reader checks at 1440, 768, 390 and 320 pixels, with retained desktop and phone
+        screenshots compared with the approved preview.
+      </td>
+    </tr>
+    <tr>
+      <td>Story completeness</td>
+      <td>
+        Rendered front cards include all active identities once; full article/edition responses
+        retain prose, sources, qualifiers and archived access.
+      </td>
+    </tr>
+    <tr>
+      <td>Separation of concerns</td>
+      <td>
+        Diff confined to reader UI, release verification, tests and docs; R2 runtime and exact RSS
+        checks remain intact.
+      </td>
+    </tr>
+    <tr>
+      <td>Reading controls</td>
+      <td>
+        Browser-driven article navigation, return link, theme and size controls; no-JavaScript
+        reading.
+      </td>
+    </tr>
+  </table>
+  <h2>Implementation evidence</h2>
+  <p>
+    U1 and U2 are complete. On Pluto, Astro check reported no diagnostics, all 40 reader tests
+    passed and the SSR build passed. The acceptance record contains the browser checks and retained
+    screenshots. The publication pipeline and main website have no changes.
+  </p>
+  <p>
+    Code review <code>20261021-110616-d77fe1a9</code> completed with no actionable findings.
+    Correctness, standards, testing and adversarial reviewers covered the final reader diff. The
+    Claude peer could not authenticate, so the review used its in-process adversarial fallback. No
+    external peer result contributed to the verdict.
+  </p>
+  <p>
+    CI exposed a release-verifier assumption that every front-page card contained full prose. The
+    approved layout intentionally uses accepted summaries for non-leads. U2 therefore includes exact
+    summary and adjacent-source verification on front pages, plus negative HTTP proofs that reject
+    missing full prose on canonical reading routes. The compiler and publisher are unchanged.
+    Focused review <code>20261021-112552-948d7e11</code> found no actionable issues in this
+    adaptation. The corrected-tree Python publication suite passed all 180 tests on Pluto, with no
+    skips.
+  </p>
+  <h2>Definition of done</h2>
+  <p>
+    The approved layout is implemented, required checks and browser verification pass, and a
+    reviewed PR is ready for merge. Production deployment remains a separately authorized step.
+  </p>
+</html>

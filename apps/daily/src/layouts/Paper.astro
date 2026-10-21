@@ -1,5 +1,7 @@
 ---
 import "../styles/paper.css"
+import type { Edition } from "../lib/digests"
+import EditionLine from "../components/EditionLine.astro"
 import { publicationName } from "../components/publication"
 interface Props {
   title: string
@@ -7,8 +9,10 @@ interface Props {
   canonical?: string
   compact?: boolean
   noindex?: boolean
+  edition?: Edition
 }
-const { title, description = "Nishant's daily AI digest. Read the day's stories and their original sources.", canonical = Astro.url.pathname, compact = false, noindex = false } = Astro.props
+const { title, description = "Nishant's daily AI digest. Read the day's stories and their original sources.", canonical = Astro.url.pathname, compact = false, noindex = false, edition } = Astro.props
+const inside = edition?.kind === "identified" ? edition.activeStories.filter((story) => story.kind === "story" && story.id !== edition.lead.id).slice(0, 3) : []
 const canonicalUrl = new URL(canonical, Astro.site)
 const rssUrl = new URL("/rss.xml", Astro.site)
 ---
@@ -53,8 +57,13 @@ const rssUrl = new URL("/rss.xml", Astro.site)
             <button type="button" id="theme" hidden>Dark mode</button>
           </nav>
         </div>
-        <div class="masthead"><a class="brand" href="/">{publicationName}</a></div>
-        <slot name="editionline" />
+        <div class:list={["masthead", { "edition-masthead": !!edition, "without-inside": inside.length === 0 }]}>
+          <a class="brand" href="/">{publicationName}</a>
+          {edition && <EditionLine edition={edition} />}
+          {inside.length > 0 && <nav class="inside" aria-label="Inside">
+            <p>Inside</p><ol>{inside.map((story) => <li><a href={`#${story.id}`}>{story.headline}</a></li>)}</ol>
+          </nav>}
+        </div>
       </header>
       <main id="main" tabindex="-1"><slot /></main>
       <footer class="sitefoot"><span>{publicationName}</span><a href="/archive/">Edition archive</a><a href="/rss.xml">Subscribe with RSS</a><a href="https://nishantkhurana.me/">Visit Mindscape</a></footer>

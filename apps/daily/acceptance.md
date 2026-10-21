@@ -1,5 +1,17 @@
 # Daily reader acceptance
 
+## Approved newspaper layout, 21 October 2026
+
+The reader follows the desktop/mobile layout approved from the 21 October preview. Its compact masthead carries the selected edition date, count and Inside links. Main articles and actual briefs have separate columns; secondary previews reuse authored summary HTML and retain sources. Complete lead prose and canonical article/full-edition reading remain intact.
+
+Verification ran on Pluto with Node 22.23.3. Astro check reported zero errors, warnings or hints; all 40 reader tests and the SSR build passed. Browser checks used the built Worker with isolated local R2 storage, seeded from the published 21 October accepted snapshot plus retained legacy, single-story and brief/archive fixtures. No production bucket was modified.
+
+At 1440, 768, 390 and 320 pixels, all ten current stories appeared once, the four briefs stayed grouped, and the document had no horizontal overflow. Browser-driven article navigation and return links worked. Theme and text-size controls worked. With JavaScript disabled, article navigation and server-rendered search worked. The RSS, complete prose, source/figure, archived-anchor and publication-replacement integration checks passed.
+
+Screenshots: [desktop](../../docs/previews/2026-10-21-newspaper/desktop.png), [mobile](../../docs/previews/2026-10-21-newspaper/mobile.png). The frozen prototype's one-off DeepInfer drawing is not part of the general renderer; authored media remains the content source. This is local verification, not a production deployment receipt.
+
+CI initially rejected the new front-page previews because the release verifier expected full prose in every card. The verifier now checks exact accepted summaries and adjacent source labels/URLs for non-lead previews. Eight new negative HTTP cases reject altered/missing previews and sources, plus omitted full prose in the lead, canonical articles and full editions. Full figure and RSS checks remain unchanged. The corrected-tree Python publication suite passed all 180 tests on Pluto, with no skips. The focused real-SSR regression and all 33 release-contract tests also passed. The original layout review and a focused verifier review found no actionable issues; both used local adversarial fallback after Claude authentication failed.
+
 ## Production acceptance, 16 October 2026
 
 PR #19 is merged and the R2 cutover is live. All 179 accepted editions passed 380 live route checks, including complete prose, archive, search, article pages, sitemap, RSS bytes and MIME. Existing RSS identities remain unchanged. Desktop and mobile browser checks passed.
