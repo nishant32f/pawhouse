@@ -39,6 +39,21 @@ These are not random collections. They are ideas I return to while building prod
 
 This is a living document and a living garden. It grows, gets reorganized, and occasionally gets pruned.
 
+## Browse the Garden
+
+Each note holds one idea and is titled with the claim it makes. Notes link to the ideas they depend on or disagree with. Maps group them by theme. Source notes record where a cluster of ideas came from.
+
+- [[map-action|Action and discipline]]
+- [[map-meaning|Meaning and presence]]
+- [[map-resilience|Resilience and mental health]]
+- [[map-self-worth|Self-worth and identity]]
+- [[map-relationships|Relationships]]
+- [[map-social-psychology|Social psychology and truth]]
+- [[map-startups-and-ai|Startups, leadership and AI]]
+- [[map-practices|Practices]], protocols, question lists and templates
+- [[map-readings|Readings]], poems and letters
+- [[map-prompts|Prompts]]
+
 ## Personal Beliefs and Life Principles
 
 These are beliefs and principles collected from experience, failure, repetition, and the thinkers I keep learning from.

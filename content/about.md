@@ -157,8 +157,8 @@ Bachelor of Engineering, Information Technology · Delhi
 
 This is also my [digital garden](index.md). Most of it is curated from books, podcasts, essays and public thinkers. I preserve ideas with attribution and add my own synthesis where it helps.
 
-- [Wisdom](wisdom/) collects ideas, principles and frameworks I return to.
-- [Summaries](summaries/) holds curated notes from longer pieces.
+- [[map-action|Action]], [[map-meaning|meaning]], [[map-resilience|resilience]], [[map-self-worth|self-worth]], [[map-relationships|relationships]], [[map-social-psychology|social psychology]] and [[map-startups-and-ai|startups and AI]] group the idea notes by theme.
+- [[map-practices|Practices]], [[map-readings|readings]] and [[map-prompts|prompts]] hold the material kept close to verbatim.
 
 ## Connect
 
