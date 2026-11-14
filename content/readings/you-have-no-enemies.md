@@ -1,7 +1,7 @@
 ---
 title: "You have no enemies"
 date: "2026-01-04"
-tags: [poetry, courage, conviction, integrity]
+tags: [poetry, courage, character]
 author: "Charles Mackay"
 description: "Charles Mackay's poem arguing that having no enemies means you never stood for anything."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "He Should've Spoken Up"
 date: "2026-08-09"
-tags: [poetry, masculinity, vulnerability, mental-health, communication]
+tags: [poetry, family, courage, mental-health, communication]
 author: "tales and ink"
 description: "A poem about men being criticised for speaking, for staying silent and for asking for help."
 derived_from:
@@ -10,7 +10,7 @@ derived_from:
 
 # He Should've Spoken Up
 
-Source: image/screenshot shared with Hermes on 2026-08-09. The Instagram Reel overlay partly obscured a middle couplet, so the unreadable words are marked below. [[poems-from-motiversity-compilation|Poems from Motiversity Compilation]] also lists this poem as a Motiversity capture, which does not match this source.
+Source: an Instagram Reel shared on 2026-08-09. The Reel's overlay covered part of a middle couplet, so the unreadable words are marked below.
 
 > If a man speaks anger,  
 > they call him vile.  

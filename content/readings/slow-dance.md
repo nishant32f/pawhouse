@@ -1,7 +1,7 @@
 ---
 title: "Slow Dance"
 date: "2026-01-04"
-tags: [poetry, mindfulness, time, presence]
+tags: [poetry, presence, time]
 author: "David L Weatherford"
 description: "A poem by child psychologist David L Weatherford about slowing down before the music ends."
 derived_from:

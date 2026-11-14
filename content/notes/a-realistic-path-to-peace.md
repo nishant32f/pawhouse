@@ -1,7 +1,7 @@
 ---
 title: "A realistic goal is a few moments of peace a day"
 date: "2024-01-15"
-tags: [mindfulness, meditation, present-moment, peace, expectations]
+tags: [presence, happiness]
 author: "Chris Williamson"
 description: "Mindfulness comes in moments that fade and return, so an aim is a few moments a day with your mind where your feet are."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Alisa Prompt Optimizer"
 date: "2024-12-20"
-tags: [prompt-engineering, meta-prompting, ai-optimization, alisa]
+tags: [prompt, ai]
 author: "TheMindShift"
 description: "A meta-prompt that turns vague requests into optimised prompts using a four-step method."
 derived_from:

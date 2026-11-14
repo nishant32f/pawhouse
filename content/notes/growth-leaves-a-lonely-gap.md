@@ -1,7 +1,7 @@
 ---
 title: "Growth leaves a lonely gap between old and new belonging"
 date: "2026-11-13"
-tags: [growth, belonging, identity, change, loneliness]
+tags: [self-awareness, friendship, self-worth, mental-health]
 author: "Chris Williamson"
 description: "Changing can mean leaving old habits and relationships before new ones arrive, and the resulting self-doubt does not show the change was wrong."
 derived_from:

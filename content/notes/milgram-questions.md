@@ -1,7 +1,7 @@
 ---
 title: "A question that punishes honest answers cannot be answered honestly"
 date: "2026-01-04"
-tags: [psychology, social-pressure, rhetoric, critical-thinking, manipulation]
+tags: [psychology, social-pressure, communication, critical-thinking]
 author: "Chris Williamson / Gurwinder Bhogal"
 description: "A Milgram question has a social penalty for an unflattering answer that exceeds the reward for the truth, so its answers cannot be trusted."
 derived_from:

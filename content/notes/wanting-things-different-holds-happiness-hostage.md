@@ -1,7 +1,7 @@
 ---
 title: "Wanting things to be different blocks happiness"
 date: "2024-01-15"
-tags: [happiness, acceptance, naval-ravikant, change, present-moment]
+tags: [happiness, healing, presence]
 author: "Chris Williamson"
 description: "Happiness waits on a change that has not happened yet, so some of the wanting should be turned into action."
 derived_from:

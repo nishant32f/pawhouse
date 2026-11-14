@@ -1,7 +1,7 @@
 ---
 title: "Use AI models to raise speed, altitude, depth and range"
 date: "2026-11-13"
-tags: ["startups", "ai", "ambition", "workflows", "verification"]
+tags: [startups, ai, ambition, productivity]
 author: "Felix Rieseberg"
 description: "Rieseberg splits ambition with models into four dimensions and says higher-level delegation needs data, tools and independent checks."
 source: "https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/"

@@ -1,7 +1,7 @@
 ---
 title: "Choose a partner by the quality of conversation"
 date: "2026-11-13"
-tags: [marriage, relationships, conversation, nietzsche, decision-making]
+tags: [relationships, communication, decision-making]
 author: "Friedrich Nietzsche / Chris Williamson"
 description: "Nietzsche's test for marriage is whether you can keep having good conversations with this person into old age."
 derived_from:

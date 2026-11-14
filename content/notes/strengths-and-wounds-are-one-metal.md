@@ -1,7 +1,7 @@
 ---
 title: "Your strengths and your wounds come from the same source"
 date: "2025-12-27"
-tags: [strengths, wounds, parenting, attribution, grievance]
+tags: [suffering, family, healing]
 author: "Arthur Brooks / Chris Williamson"
 description: "A trait that makes someone effective at work may damage intimacy. People blame parents for flaws and do not credit them for strengths."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

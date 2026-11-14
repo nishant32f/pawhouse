@@ -1,7 +1,7 @@
 ---
 title: "Self-awareness can simulate futures faster than action resolves them"
 date: "2026-11-13"
-tags: [self-awareness, overthinking, action, courage, hamlet]
+tags: [self-awareness, anxiety, action, courage]
 author: "Chris Williamson"
 description: "Reflection lets you pre-live rejection and failure before anything happens, so courage for overthinkers means moving while things are unclear."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000768860458"

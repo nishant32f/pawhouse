@@ -1,7 +1,7 @@
 ---
 title: "Appreciation of ordinary things is a practice"
 date: "2025-09-28"
-tags: [gratitude, mindfulness, ordinary-life, life-philosophy]
+tags: [happiness, presence, meaning]
 author: "Nishant Khurana / William Martin"
 description: "Warmth, smiles, effort and being here are easy to overlook. Appreciation is something you do, and it covers lessons as well as blessings."
 derived_from:

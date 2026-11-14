@@ -1,7 +1,7 @@
 ---
 title: "Many people want comfort more than success"
 date: "2025-09-28"
-tags: [productivity, comfort, self-sabotage, ambition, psychology]
+tags: [productivity, rest, ambition, psychology]
 author: "Jonathan Blow (jblow)"
 description: "A 2017 forum comment argues that many people do not want success, and that self-defeating beliefs may protect them from blame for failing."
 derived_from:

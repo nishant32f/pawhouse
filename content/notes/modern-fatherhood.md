@@ -1,7 +1,7 @@
 ---
 title: "Present fathers are more exhausted and more fulfilled"
 date: "2026-11-13"
-tags: [fatherhood, parenting, meaning, generations, satisfaction]
+tags: [family, meaning, happiness]
 author: "Derek Thompson"
 description: "Modern fathers spend far more time on childcare than earlier generations and report more fatigue and more satisfaction with life."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Most wants are borrowed from other people"
 date: "2026-11-13"
-tags: [desire, psychology, status, self-knowledge, rene-girard]
+tags: [emotions, psychology, social-pressure, self-awareness]
 author: "René Girard / Jimmy Carr"
 description: "Mimetic desire is wanting something because someone else wants it or has it, which makes a desire feel personal while being borrowed."
 source: "https://youtu.be/2CIz-P3kIUM"

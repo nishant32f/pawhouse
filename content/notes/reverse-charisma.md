@@ -1,7 +1,7 @@
 ---
 title: "Good company makes you feel interesting"
 date: "2024-01-15"
-tags: [charisma, relationships, connection, empathy, alain-de-botton]
+tags: [friendship, relationships, communication]
 author: "Chris Williamson"
 description: "The people we like most make us feel interesting, which depends on how much of us they can take in without our editing."
 derived_from:

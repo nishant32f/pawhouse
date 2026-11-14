@@ -1,7 +1,7 @@
 ---
 title: "Behaviour has a proximate mechanism and an ultimate reason"
 date: "2026-01-04"
-tags: [psychology, evolution, behaviour, tania-reynolds, explanation]
+tags: [psychology, communication]
 author: "Chris Williamson / Tania Reynolds"
 description: "Understanding human behaviour needs both how it works in the moment and why evolution shaped it that way, and the two do not conflict."
 derived_from:
@@ -25,8 +25,6 @@ The two reasons do not contradict each other.
 Seeing the ultimate explanations can make us feel less agentic and less in control of our desires, and more cynical, contrived and manipulative. Williamson's answer is humour. You are a sovereign creature who feels you have your own will. You are also largely driven by preferences millennia old, which is absurd enough to laugh at.
 
 > "Ultimately happiness comes down to choosing between the discomfort of becoming aware of your mental afflictions, or the discomfort of becoming ruled by them"
-
-No author is named for this quote.
 
 ## Related
 

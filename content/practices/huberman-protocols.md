@@ -1,8 +1,8 @@
 ---
 title: "Huberman protocols"
 date: "2026-11-13"
-tags: [health, protocols, sleep, fitness, neuroscience, huberman]
-author: "Andrew Huberman (summarised by an unnamed community poster)"
+tags: [practice, rest, psychology]
+author: "Andrew Huberman"
 description: "A simplified list of practical protocols drawn from Huberman Lab episodes, covering sleep, caffeine, cold, heat, fitness, focus, learning and supplements."
 source: "https://hubermanlab.com"
 derived_from:

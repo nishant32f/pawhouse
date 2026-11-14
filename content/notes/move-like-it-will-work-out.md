@@ -1,7 +1,7 @@
 ---
 title: "Moving as if it will work out keeps you moving"
 date: "2025-09-28"
-tags: [mindset, belief, faith, persistence, motivation]
+tags: [critical-thinking, meaning, discipline, productivity]
 author: "Ross Harkness / Leadersonlyco"
 description: "Two short quotes argue that believing it will work out is the precondition for making it work, and that doubt leads to self-sabotage."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Experienced astrologers did no better than chance"
 date: "2026-01-04"
-tags: [science, critical-thinking, astrology, spencer-greenberg, skepticism]
+tags: [critical-thinking]
 author: "Spencer Greenberg"
 description: "In a study of 152 astrologers matching people to natal charts, the group scored 20 percent, the same as random guessing."
 source: "https://www.spencergreenberg.com/"

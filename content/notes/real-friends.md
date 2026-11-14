@@ -1,7 +1,7 @@
 ---
 title: "Real friends are the people you filter yourself least around"
 date: "2024-01-15"
-tags: [friendship, authenticity, relationships, adulthood, belonging]
+tags: [friendship, relationships, time]
 author: "Chris Williamson"
 description: "Ask who you filter yourself least around and who you can sit in silence with, then spend your time with them."
 derived_from:

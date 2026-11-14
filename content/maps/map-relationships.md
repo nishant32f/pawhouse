@@ -35,8 +35,4 @@ Partners, family, friends and the boundaries that protect them.
 - [[boundary-scripts|Boundary scripts]]. Four lists for dealing with difficult people. Traits to avoid, replies to victim mentality, ego-checking phrases and manipulation tactics.
 - [[toxic-compassion|Compassion that avoids truth does harm]]. Putting short-term emotional comfort ahead of reality and long-term outcomes optimises for looking good rather than doing good.
 
-## Sources
-
-- [[source-3mm-intuition-boomers-ai|3MM: intuition, boomers and AI]]. A Three Minute Monday newsletter on earned intuition, marriage as conversation, texting friends and modern fatherhood.
-
 Back to [[index|home]].

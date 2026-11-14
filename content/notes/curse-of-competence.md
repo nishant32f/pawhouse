@@ -1,7 +1,7 @@
 ---
 title: "Being good at many things makes every choice your fault"
 date: "2026-01-04"
-tags: [competence, choice, paralysis, decision-making, barry-schwartz]
+tags: [career, decision-making, action]
 author: "Chris Williamson"
 description: "When you can do many things, your options are limited by your own choices, so every unhappy outcome is yours to answer for."
 derived_from:

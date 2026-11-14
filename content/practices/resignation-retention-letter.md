@@ -1,8 +1,8 @@
 ---
 title: "Resignation retention letter"
 date: "2026-11-13"
-tags: [leadership, retention, management, culture, template]
-author: "Unknown (letter from a user-provided screenshot)"
+tags: [practice, leadership, social-pressure]
+author: "Unknown"
 description: "A letter pattern for responding to a valued teammate's resignation with warmth and a real invitation to stay."
 derived_from:
   - "wisdom/business-and-startups/organization-and-culture/resignation-retention-letter-template.md"
@@ -10,7 +10,7 @@ derived_from:
 
 # Resignation retention letter
 
-A letter pattern for when a strong teammate resigns and the honest response is to fight for them respectfully rather than accept it passively. The source is a user-provided screenshot.
+A letter pattern for when a strong teammate resigns and the honest response is to fight for them respectfully rather than accept it passively.
 
 ## Use it when
 
@@ -20,7 +20,7 @@ A letter pattern for when a strong teammate resigns and the honest response is t
 - You want to show conviction without guilt-tripping them.
 - You want retention to rest on meaning, people and a shared future as well as compensation.
 
-## The letter in the screenshot
+## The letter
 
 Subject: **Resignation / Keanu Reeves**
 
@@ -31,8 +31,6 @@ Subject: **Resignation / Keanu Reeves**
 > I happen to love working with great people that are eager and unafraid of creating the future, so quintessentially you.
 >
 > So, although I am happy for you for your external opportunity, I have real difficulty restraining my urge to fight. Especially since I feel that we are at the cusp of something truly great that I would...
-
-The screenshot ends there.
 
 ## Why it works
 

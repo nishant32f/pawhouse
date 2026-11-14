@@ -1,7 +1,7 @@
 ---
 title: "Advice amplifies what you already are"
 date: "2025-01-22"
-tags: [advice, self-improvement, personal-development, psychology, discernment]
+tags: [self-awareness, psychology, critical-thinking]
 author: "Chris Williamson"
 description: "Advice exaggerates existing traits instead of reshaping people, so those who need it least take the most of it."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "A software factory is defined by who takes the call when production breaks"
 date: "2026-11-13"
-tags: ["startups", "software", "ai", "operations", "accountability"]
+tags: [startups, ai, leadership, character]
 author: "Chamath"
 description: "Chamath defines a software factory as an accountable production system, and gives five tests that separate it from an AI coding tool."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "The nervous system prefers a familiar hell to an unfamiliar heaven"
 date: "2026-11-13"
-tags: [nervous-system, relationships, healing, patterns, safety]
+tags: [anxiety, relationships, healing]
 author: "Kathy Overman / Chris Williamson"
 description: "People repeat painful patterns because they are known, while peace has no survival script yet and can feel unsafe."
 derived_from:

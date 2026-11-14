@@ -1,7 +1,7 @@
 ---
 title: "You may already have the life you are working to earn"
 date: "2025-09-28"
-tags: [life-philosophy, simplicity, wealth, happiness, parable]
+tags: [meaning, happiness, wealth]
 author: "Chris Williamson"
 description: "A parable about a plan whose end point is the life the fisherman already has, and a short note on what money is for."
 derived_from:

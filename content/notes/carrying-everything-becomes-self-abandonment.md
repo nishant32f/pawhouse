@@ -1,7 +1,7 @@
 ---
 title: "Carrying everyone else's load becomes self-abandonment"
 date: "2025-12-27"
-tags: [boundaries, strength, relationships, responsibility, self-worth]
+tags: [boundaries, resilience, relationships, character]
 author: "Chris Williamson"
 description: "Endurance helps in work and training but in relationships it can mean absorbing blame and tolerating more than you want."
 source: "https://www.youtube.com/watch?v=RBZTLptAMao"

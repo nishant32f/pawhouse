@@ -3,12 +3,12 @@ title: "Readings"
 date: "2026-11-13"
 tags: [map]
 author: "Nishant Khurana"
-description: "Poems, letters and short texts kept in full or as excerpts."
+description: "Poems, letters, a speech and short texts."
 ---
 
 # Readings
 
-Poems, letters and short texts kept in full or as excerpts.
+Poems, letters, a speech and short texts.
 
 ## Readings
 
@@ -21,12 +21,11 @@ Poems, letters and short texts kept in full or as excerpts.
 - [[invictus|Invictus]]. William Ernest Henley's poem of agency under suffering.
 - [[man-in-the-arena|Man in the Arena]]. Theodore Roosevelt's excerpt on credit belonging to those who try, fail and try again.
 - [[ode-to-happiness|Ode to Happiness]]. A dark comic poem by Keanu Reeves that ends on the reminder that it can always be worse.
-- [[poems-from-motiversity-compilation|Poems from Motiversity Compilation]]. Index of poems and excerpts captured from a Motiversity poetry compilation.
 - [[roll-the-dice|Roll the Dice]]. Excerpts from Bukowski's poem on committing fully or not starting.
 - [[slow-dance|Slow Dance]]. A poem by child psychologist David L Weatherford about slowing down before the music ends.
 - [[stopping-by-woods-on-a-snowy-evening|Stopping by Woods on a Snowy Evening]]. A short Frost excerpt on beauty, obligation and the promises that keep a person moving.
 - [[the-road-not-taken|The Road Not Taken]]. A Frost excerpt on choice and how we retell the road we took.
-- [[the-seafarer-and-wanderer-excerpts|Excerpts from The Seafarer and The Wanderer]]. Short Old English excerpts on exile, struggle and patience, from a recited compilation.
+- [[the-seafarer-and-wanderer-excerpts|Excerpts from The Seafarer and The Wanderer]]. Short Old English excerpts on exile, struggle and patience.
 - [[the-will-to-win|The Will to Win]]. Berton Braley's poem on wanting something enough to fight and sacrifice for it.
 - [[ways-of-giving-up|Ways of Giving Up]]. A short text listing ways people give up, including coping and functioning.
 - [[when-everything-feels-off|When Everything Feels Off]]. A comfort text for heavy days with no clear cause.

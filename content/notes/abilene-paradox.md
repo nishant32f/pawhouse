@@ -1,7 +1,7 @@
 ---
 title: "A group can choose what nobody wants"
 date: "2026-11-13"
-tags: [group-dynamics, decision-making, communication, consensus, paradoxes]
+tags: [social-pressure, decision-making, communication, psychology]
 author: "Chris Williamson"
 description: "In the Abilene paradox a group agrees on a course of action that no member individually wants, because each assumes the others do."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Teaching prompts"
 date: "2025-09-28"
-tags: [learning, ai, education, prompting, debugging]
+tags: [prompt, ai]
 author: "Nishant Khurana"
 description: "Two prompts that make an AI teach in a loop and move on only once understanding is shown."
 derived_from:

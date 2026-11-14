@@ -1,7 +1,7 @@
 ---
 title: "Busyness and achievement can numb what you would otherwise feel"
 date: "2026-11-13"
-tags: [busyness, achievement, avoidance, meaning, relationships]
+tags: [rest, ambition, meaning, relationships]
 author: "Arthur Brooks / Chris Williamson"
 description: "Busyness keeps you moving too fast to feel loneliness or misalignment. Remove it and the feelings remain, which is a first honest contact."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

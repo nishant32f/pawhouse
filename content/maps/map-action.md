@@ -37,9 +37,4 @@ How to start, how to keep going, and what to give up to do either.
 - [[crisis-shows-what-youre-made-of|Only a crisis shows what you are made of]]. Most hard things in life are chosen, so only an unchosen worst case shows whether your best self can show up.
 - [[goals-are-hypotheses|Treat goals as hypotheses to test]]. A goal held as a contract to self-criticise until it is met turns ambition into a threat, while a hypothesis can fail without harm.
 
-## Sources
-
-- [[source-modern-wisdom-1100|Modern Wisdom 1100, 19 lessons]]. Chris Williamson's 1100th Modern Wisdom episode, a review of lessons on the hidden costs of common personal-development virtues.
-- [[source-ode-to-people-who-dont-believe|Chris Williamson, an ode to people who don't believe in themselves]]. A 6 minute 53 second Modern Wisdom video on acting without self-belief, loosening the grip on outcomes and enjoying the process.
-
 Back to [[index|home]].

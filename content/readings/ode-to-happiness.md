@@ -1,7 +1,7 @@
 ---
 title: "Ode to Happiness"
 date: "2026-01-04"
-tags: [poetry, mental-health, perspective, humor]
+tags: [poetry, mental-health, rest]
 author: "Keanu Reeves"
 description: "A dark comic poem by Keanu Reeves that ends on the reminder that it can always be worse."
 derived_from:

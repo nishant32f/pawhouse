@@ -3,12 +3,12 @@ title: "Prompts"
 date: "2026-11-13"
 tags: [map]
 author: "Nishant Khurana"
-description: "AI prompts kept verbatim."
+description: "AI prompts for writing, teaching, career planning and Obsidian Copilot."
 ---
 
 # Prompts
 
-AI prompts kept verbatim.
+AI prompts for writing, teaching, career planning and Obsidian Copilot.
 
 ## Prompts
 

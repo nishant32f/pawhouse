@@ -1,7 +1,7 @@
 ---
 title: "Tolerable situations keep you stuck longer than bad ones"
 date: "2024-01-15"
-tags: [change, decision-making, stagnation, discomfort, psychology]
+tags: [decision-making, resilience, psychology]
 author: "Chris Williamson"
 description: "A situation that is merely okay gets tolerated indefinitely, while a worse one would force a change."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Healing needs safety plus contact with emotion"
 date: "2026-11-13"
-tags: [healing, emotion, suppression, resentment, anger]
+tags: [healing, emotions]
 author: "Chris Williamson"
 description: "Most healing methods reduce to a safe container plus felt contact with difficult emotion, and suppression or detachment skips both."
 derived_from:

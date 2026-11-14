@@ -44,8 +44,4 @@ Ambition in the AI era, running teams, building companies and building wealth.
 - [[operator-to-strategist|Moving from operator to strategist means giving up busyness as identity]]. The shift from grinding operator to strategic thinker is hard because busyness has become proof of success.
 - [[curse-of-competence|Being good at many things makes every choice your fault]]. When you can do many things, your options are limited by your own choices, so every unhappy outcome is yours to answer for.
 
-## Sources
-
-- [[source-kalanick-senra|Travis Kalanick with David Senra]]. Summary of David Senra's interview with Travis Kalanick on Uber, China, founder pain, management capacity and Adams.
-
 Back to [[index|home]].

@@ -1,7 +1,7 @@
 ---
 title: "The mind holds many competing selves"
 date: "2026-01-04"
-tags: [self-awareness, sam-harris, inner-voice, mindfulness, psychology]
+tags: [self-awareness, self-worth, presence, psychology]
 author: "Sam Harris"
 description: "The person in the mirror is many voices, and wisdom is learning to make your mind your friend."
 source: "https://www.instagram.com/p/Dep_kL_j-4l/"

@@ -1,7 +1,7 @@
 ---
 title: "Obsession removes the friction from hard work"
 date: "2026-11-13"
-tags: [obsession, discipline, motivation, habits, identity]
+tags: [ambition, discipline, productivity, self-worth]
 author: "Chris Williamson"
 description: "Obsession removes the friction that discipline pushes through, cannot be summoned, and fades, so use it to build routines while it lasts."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000768860458"

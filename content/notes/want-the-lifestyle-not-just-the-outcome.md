@@ -1,7 +1,7 @@
 ---
 title: "Wanting the outcome without its lifestyle guarantees disappointment"
 date: "2024-01-15"
-tags: [discipline, desire, work-ethic, commitment]
+tags: [discipline, emotions]
 author: "Chris Williamson"
 description: "Some people want success they lack the resilience or work ethic to reach, and the choices are to do the work, drop the aim, or stay stuck."
 derived_from:

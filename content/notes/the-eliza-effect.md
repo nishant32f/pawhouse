@@ -1,7 +1,7 @@
 ---
 title: "People read understanding into simple pattern-matching"
 date: "2025-01-18"
-tags: [psychology, ai, cognitive-biases, anthropomorphism]
+tags: [psychology, ai]
 author: "Chris Williamson"
 description: "The Eliza effect is reading far more understanding into computer responses than exists, and knowing about it does not make you immune."
 derived_from:

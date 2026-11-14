@@ -1,7 +1,7 @@
 ---
 title: "Hire for traits and treat a split decision as a no"
 date: "2026-01-04"
-tags: ["hiring", "startups", "leadership", "team-building", "interviewing"]
+tags: [leadership, startups]
 author: "Nishant Khurana"
 description: "Seven traits to look for in candidates, how long to interview, when to decide and what not to ask."
 derived_from:

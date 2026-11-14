@@ -1,7 +1,7 @@
 ---
 title: "Where your mind goes in the shower shows what you care about"
 date: "2026-11-13"
-tags: [priorities, attention, desire, solitude, jimmy-carr]
+tags: [decision-making, presence, emotions]
 author: "Jimmy Carr"
 description: "With nothing pulling on your attention, the mind returns to what you actually care about. It also shows whether a desire is yours."
 source: "https://youtu.be/2CIz-P3kIUM?si=_Y9lZdw2d2aQ8T7O"

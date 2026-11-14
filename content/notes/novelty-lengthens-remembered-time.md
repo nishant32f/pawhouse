@@ -1,7 +1,7 @@
 ---
 title: "Novelty lengthens remembered time and routine shrinks it"
 date: "2026-11-13"
-tags: [time, memory, novelty, presence]
+tags: [time, presence]
 author: "Chris Williamson"
 description: "Time passes at one speed while it happens. How long it feels afterwards depends on how many distinct memories it left."
 derived_from:

@@ -1,8 +1,8 @@
 ---
 title: "When Everything Feels Off"
 date: "2025-09-28"
-tags: [mental-health, self-care, rest, resilience]
-author: "Unknown (uncredited comfort text)"
+tags: [prose, mental-health, rest, resilience]
+author: "Unknown"
 description: "A comfort text for heavy days with no clear cause."
 derived_from:
   - "wisdom/personal-growth/resilience-and-mental-health/when-everything-feels-off.md"

@@ -1,7 +1,7 @@
 ---
 title: "Stopping by Woods on a Snowy Evening"
 date: "2026-08-07"
-tags: [poetry, duty, rest, promises]
+tags: [poetry, character, rest, discipline]
 author: "Robert Frost"
 description: "A short Frost excerpt on beauty, obligation and the promises that keep a person moving."
 source: "https://www.youtube.com/watch?v=4C_EvLN4-yA"
@@ -25,8 +25,7 @@ Beauty invites the speaker to stay, and his commitments keep him moving.
 
 ## Source
 
-- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~4:11.
-- Selected excerpt only; full text not reproduced here because modern editions of Frost are not safely public-domain for web republication.
+- Read aloud at 4:11 in the [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA&t=251s).
 
 ## Related
 

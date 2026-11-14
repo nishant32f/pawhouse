@@ -1,7 +1,7 @@
 ---
 title: "When blocked from what we want, we teach ourselves not to want it"
 date: "2025-08-06"
-tags: [stoicism, coping, desire, isaiah-berlin, self-deception]
+tags: [character, mental-health, emotions, self-awareness]
 author: "Isaiah Berlin / Chris Williamson"
 description: "Isaiah Berlin's Inner Citadel is the retreat in which people stop wanting what they cannot get, which protects them and also limits them."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Surviving a hard period raises what you believe you can handle"
 date: "2026-01-04"
-tags: [resilience, adversity, capacity, growth, perspective]
+tags: [resilience, leadership, self-awareness]
 author: "Chris Williamson"
 description: "Each hard period you get through works like exposure therapy for workload, and shows you can handle more than you thought."
 derived_from:

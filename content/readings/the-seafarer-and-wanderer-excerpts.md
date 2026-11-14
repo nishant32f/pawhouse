@@ -1,9 +1,9 @@
 ---
 title: "Excerpts from The Seafarer and The Wanderer"
 date: "2026-08-07"
-tags: [poetry, old-english, exile, endurance]
+tags: [poetry, discipline]
 author: "Anonymous"
-description: "Short Old English excerpts on exile, struggle and patience, from a recited compilation."
+description: "Short Old English excerpts on exile, struggle and patience."
 source: "https://www.youtube.com/watch?v=4C_EvLN4-yA"
 derived_from:
   - "wisdom/readings-and-poems/the-seafarer-and-wanderer-excerpts.md"
@@ -11,9 +11,9 @@ derived_from:
 
 # Excerpts from The Seafarer and The Wanderer
 
-*Anonymous Old English poems; translation source in the recited compilation is not identified.*
+*Anonymous Old English poems. The translator is not named.*
 
-## Selected excerpts from the transcript
+## Selected excerpts
 
 > Often I war with waves,  
 > battle the winds,  
@@ -36,8 +36,7 @@ The excerpts link hardship to wisdom. They advise patience, restraint in speech,
 
 ## Source
 
-- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~4:48.
-- The video does not identify the translator, so this note keeps only short excerpts from the supplied transcript.
+- Read aloud at 4:48 in the [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA&t=288s).
 
 ## Related
 

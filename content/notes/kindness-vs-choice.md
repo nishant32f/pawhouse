@@ -1,7 +1,7 @@
 ---
 title: "Is kindness you are forced into still kindness?"
 date: "2026-01-04"
-tags: [philosophy, virtue, kindness, people-pleasing, la-rochefoucauld]
+tags: [meaning, character, communication, self-worth]
 author: "Chris Williamson"
 description: "A reflection on whether a good act is virtuous when your nature compels it rather than your choice, left without an answer."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Meaning has three parts: coherence, purpose, significance"
 date: "2026-11-13"
-tags: [meaning, purpose, significance, calling, transcendence]
+tags: [meaning]
 author: "Arthur Brooks"
 description: "Michael Steger's three components of meaning, with Brooks's account of what supplies each and how meaning tends to arrive."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

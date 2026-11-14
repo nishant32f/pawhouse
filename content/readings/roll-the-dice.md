@@ -1,7 +1,7 @@
 ---
 title: "Roll the Dice"
 date: "2026-08-07"
-tags: [poetry, commitment, endurance, solitude, art]
+tags: [poetry, discipline]
 author: "Charles Bukowski"
 description: "Excerpts from Bukowski's poem on committing fully or not starting."
 source: "https://www.youtube.com/watch?v=4C_EvLN4-yA"
@@ -32,8 +32,7 @@ The poem argues against half-commitment. It is extreme by design and asks whethe
 
 ## Source
 
-- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~18:12.
-- Selected excerpt only; full text not reproduced here because Bukowski's work is copyrighted.
+- Read aloud at 18:12 in the [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA&t=1092s).
 
 ## Related
 

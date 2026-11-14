@@ -1,7 +1,7 @@
 ---
 title: "Excellence is the capacity to take pain"
 date: "2026-11-13"
-tags: ["startups", "pain", "founder-temperament", "resilience", "entrepreneurship"]
+tags: [startups, suffering, ambition, resilience]
 author: "Travis Kalanick / Alex Hormozi"
 description: "Pain tolerance sets how large a problem you can take on, but numbness and fragility are both failure modes."
 source: "https://www.youtube.com/watch?v=QVnU5lGlKE8"

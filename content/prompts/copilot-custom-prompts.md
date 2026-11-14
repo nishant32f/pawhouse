@@ -1,7 +1,7 @@
 ---
 title: "Copilot custom prompts"
 date: "2026-11-13"
-tags: [ai-prompts, obsidian, copilot, text-editing, index]
+tags: [prompt]
 author: "Nishant Khurana"
 description: "Index of 13 saved Obsidian Copilot plugin prompts for editing, summarising, rewriting and translating selected text."
 derived_from:
@@ -22,7 +22,7 @@ derived_from:
 
 # Copilot custom prompts
 
-Thirteen prompt files for the Obsidian Copilot plugin. Each file keeps the plugin's own front matter and uses `{}` as the placeholder for the selected text. The files are stored unedited in the `copilot-custom-prompts` folder next to this note.
+Thirteen prompt files for the Obsidian Copilot plugin. Each file keeps the plugin's own front matter and uses `{}` as the placeholder for the selected text. The files are in the `copilot-custom-prompts` folder.
 
 - [[summarize|Summarize]]. Bullet-point summary with one key point per bullet.
 - [[simplify|Simplify]]. Rewrites at a 6th-grade reading level.

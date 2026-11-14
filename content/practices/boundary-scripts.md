@@ -1,8 +1,8 @@
 ---
 title: "Boundary scripts"
 date: "2025-09-28"
-tags: [boundaries, communication, relationships, toxic-behavior, manipulation]
-author: "Unknown (uncredited social-media lists)"
+tags: [practice, boundaries, communication, relationships]
+author: "Unknown"
 description: "Four lists for dealing with difficult people. Traits to avoid, replies to victim mentality, ego-checking phrases and manipulation tactics."
 derived_from:
   - "wisdom/society-and-psychology/truth-and-social-pressure/20-types-to-avoid.md"
@@ -12,8 +12,6 @@ derived_from:
 ---
 
 # Boundary scripts
-
-Four short lists on handling difficult people, kept as written. None names an original author.
 
 ## 20 types to avoid
 

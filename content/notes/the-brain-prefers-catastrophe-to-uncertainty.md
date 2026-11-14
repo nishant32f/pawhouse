@@ -1,7 +1,7 @@
 ---
 title: "The brain prefers an imagined catastrophe to not knowing"
 date: "2024-01-15"
-tags: [uncertainty, worry, rumination, happiness, fear]
+tags: [anxiety, happiness]
 author: "Chris Williamson"
 description: "Not being able to predict the future pushes the mind toward a worst-case scenario, because a bad certainty feels better than an open question."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Reaching a goal does not deliver the state you expected"
 date: "2026-01-04"
-tags: [achievement, happiness, ambition, meaning, mental-models]
+tags: [ambition, happiness, meaning, psychology]
 author: "Arthur Brooks / Chris Williamson"
 description: "The arrival fallacy is the belief that reaching a milestone will bring peace, worth or security. The mind adjusts, and the goal stops satisfying."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

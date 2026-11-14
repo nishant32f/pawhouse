@@ -1,7 +1,7 @@
 ---
 title: "Evening self-reflection"
 date: "2026-01-04"
-tags: [self-reflection, emotional-awareness, mindfulness, mental-health, daily-practice]
+tags: [practice, self-awareness, emotions, presence, mental-health]
 author: "Nishant Khurana"
 description: "Five questions to ask each evening to process worries, sadness, irritation, bodily needs and what is still good."
 derived_from:

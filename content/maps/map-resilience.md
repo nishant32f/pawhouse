@@ -51,10 +51,4 @@ How the anxious mind works, why people stay stuck, and how hardship and healing 
 - [[a-realistic-path-to-peace|A realistic goal is a few moments of peace a day]]. Mindfulness comes in moments that fade and return, so an aim is a few moments a day with your mind where your feet are.
 - [[carrying-everything-becomes-self-abandonment|Carrying everyone else's load becomes self-abandonment]]. Endurance helps in work and training but in relationships it can mean absorbing blame and tolerating more than you want.
 
-## Sources
-
-- [[source-3mm-meditation-criminals-politics|3MM: meditation, criminals and politics]]. A Three Minute Monday newsletter on goals, forgiveness, healing, silence, resentment and politics. Undated in the vault.
-- [[source-3mm-cancellations-ai-nervous-systems|3MM: cancellations, AI and nervous systems]]. A Three Minute Monday newsletter on cancellation and momentum, AI job exposure by sex, support from others and familiar patterns. Undated.
-- [[source-3mm-worries-women-cliches|3MM: worries, women and cliches]]. A Three Minute Monday newsletter on anxious overachievement, optimising rest, women's US job gains, letting go and cliches. Undated.
-
 Back to [[index|home]].

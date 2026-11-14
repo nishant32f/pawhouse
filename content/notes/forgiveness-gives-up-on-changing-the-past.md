@@ -1,7 +1,7 @@
 ---
 title: "Forgiveness is giving up on changing the past"
 date: "2026-11-13"
-tags: [forgiveness, resentment, acceptance, past, healing]
+tags: [healing, time]
 author: "Chris Williamson"
 description: "Forgiving means dropping the impossible project of altering history, which lightens the person who carries the injury."
 derived_from:

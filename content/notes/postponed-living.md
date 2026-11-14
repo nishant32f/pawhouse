@@ -1,7 +1,7 @@
 ---
 title: "Postponing life to buy time later makes the postponement permanent"
 date: "2026-11-13"
-tags: [presence, time, money, happiness, mindfulness]
+tags: [presence, time, wealth, happiness]
 author: "Chris Williamson"
 description: "Trading time for money and happiness for success to enjoy life later builds a habit of postponement that outlasts the trade."
 derived_from:

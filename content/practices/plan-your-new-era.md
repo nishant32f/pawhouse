@@ -1,7 +1,7 @@
 ---
 title: "Plan your new era"
 date: "2025-09-28"
-tags: [goal-setting, self-reflection, planning, personal-development]
+tags: [practice, action, self-awareness]
 author: "Nishant Khurana"
 description: "Twenty-five questions for reflecting on your current state and planning goals for the year ahead."
 derived_from:

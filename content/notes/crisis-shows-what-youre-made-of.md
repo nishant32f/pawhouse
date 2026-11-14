@@ -1,7 +1,7 @@
 ---
 title: "Only a crisis shows what you are made of"
 date: "2026-01-04"
-tags: [resilience, adversity, character, courage, self-knowledge]
+tags: [resilience, character, courage, self-awareness]
 author: "Chris Williamson"
 description: "Most hard things in life are chosen, so only an unchosen worst case shows whether your best self can show up."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "You can't simulate meaning"
 date: "2026-11-13"
-tags: [meaning, technology, simulation, presence, modern-wisdom]
+tags: [meaning, ai, presence]
 author: "Arthur Brooks"
 description: "Algorithmic life offers near substitutes for connection, status and purpose. They ease the surface of a need and leave the need unmet."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

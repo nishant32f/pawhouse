@@ -1,7 +1,7 @@
 ---
 title: "Perseverance is keeping your behaviour intact after failure"
 date: "2025-09-28"
-tags: [perseverance, resilience, mistakes, pressure, failure]
+tags: [discipline, resilience, courage]
 author: "Marc Andreessen"
 description: "High achievers make frequent mistakes under pressure, so the skill that counts is recovering quickly and treating setbacks as information."
 derived_from:
@@ -11,7 +11,7 @@ derived_from:
 
 # Perseverance is keeping your behaviour intact after failure
 
-Marc Andreessen, in *The Pmarca Guide to Career Planning, part 2: Skills and Education*, as captured from an a16z post:
+Marc Andreessen, in *The Pmarca Guide to Career Planning, part 2: Skills and Education*, published by a16z:
 
 > If you're going to be a high achiever, you're going to be in lots of situations where you're going to be quickly making decisions in the presence of incomplete or incorrect information, under intense time pressure, and often under intense political pressure. You're going to screw up — frequently — and the screwups will have serious consequences, and you'll feel incredibly stupid every time. It can't faze you — you have to be able to just get right back up and keep on going.
 

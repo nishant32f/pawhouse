@@ -1,7 +1,7 @@
 ---
 title: "Judge content by how you feel after consuming it"
 date: "2026-01-04"
-tags: [media-diet, attention, content-consumption, mental-health, social-media]
+tags: [presence, mental-health]
 author: "Chris Williamson"
 description: "Compelling content is not necessarily good for you, and the way to tell is to check how you feel once it ends."
 derived_from:

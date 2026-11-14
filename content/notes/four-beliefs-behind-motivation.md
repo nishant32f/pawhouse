@@ -1,7 +1,7 @@
 ---
 title: "Low effort often means a missing belief"
 date: "2026-11-13"
-tags: ["startups", "leadership", "management", "motivation", "duckworth"]
+tags: [startups, leadership, productivity]
 author: "Angela Duckworth"
 description: "Duckworth's four thoughts behind sustained effort, used as a conversation checklist before treating low effort as a character problem."
 source: "https://www.instagram.com/p/DehjlmHlJ_6/"

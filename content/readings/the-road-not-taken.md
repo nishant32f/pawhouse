@@ -1,7 +1,7 @@
 ---
 title: "The Road Not Taken"
 date: "2026-08-07"
-tags: [poetry, choices, uncertainty, life-paths]
+tags: [poetry, decision-making, anxiety]
 author: "Robert Frost"
 description: "A Frost excerpt on choice and how we retell the road we took."
 source: "https://www.youtube.com/watch?v=4C_EvLN4-yA"
@@ -33,8 +33,7 @@ Readers often take the poem as a celebration of unconventional choices. It also 
 
 ## Source
 
-- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~2:25.
-- Full text not reproduced here because modern editions of Frost are not safely public-domain for web republication.
+- Read aloud at 2:25 in the [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA&t=145s).
 
 ## Related
 

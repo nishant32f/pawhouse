@@ -1,7 +1,7 @@
 ---
 title: "Invictus"
 date: "2026-08-07"
-tags: [poetry, resilience, agency, stoicism]
+tags: [poetry, resilience, character]
 author: "William Ernest Henley"
 description: "William Ernest Henley's poem of agency under suffering."
 source: "https://www.youtube.com/watch?v=4C_EvLN4-yA"
@@ -35,7 +35,7 @@ I am the captain of my soul.
 
 ## Source
 
-- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~7:51.
+- Read aloud at 7:51 in the [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA&t=471s).
 
 ## Related
 

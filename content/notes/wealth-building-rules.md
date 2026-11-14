@@ -1,7 +1,7 @@
 ---
 title: "Hormozi's rules for building wealth"
 date: "2026-01-01"
-tags: ["entrepreneurship", "wealth-building", "mindset", "business-strategy", "hormozi"]
+tags: [startups, wealth]
 author: "Alex Hormozi"
 description: "Rules for building wealth in your 20s and 30s from Alex Hormozi, who built companies with $100M+ in annual revenue."
 derived_from:

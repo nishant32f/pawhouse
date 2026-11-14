@@ -1,7 +1,7 @@
 ---
 title: "Pain can drive early effort but harms you if you never outgrow it"
 date: "2026-11-13"
-tags: [pain, motivation, insecurity, success, maturity]
+tags: [suffering, productivity, self-worth, success]
 author: "Chris Williamson"
 description: "Fear, insecurity and resentment can drive early effort, but suffering does not make success more legitimate and high standards can turn into a trap."
 derived_from:

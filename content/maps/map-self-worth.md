@@ -38,10 +38,4 @@ Where ambition comes from, what self-worth rests on, and lessons about the self 
 - [[the-position-is-not-you|Better treatment from a position belongs to the position]]. As you gain a position, people treat you better. That treatment is for the position and the level you reached, and nobody else.
 - [[speak-last|Speak last so people feel heard and you decide with more information]]. Simon Sinek advises speaking last in a group, so everyone feels heard and you act after hearing them.
 
-## Sources
-
-- [[source-de-botton-never-feel-enough|Alain de Botton: you'll never feel enough until you understand this]]. A 15 minute interview with Alain de Botton on envy, potential, fame and why success often comes from unhappiness.
-- [[source-end-of-year-lessons-2025|End of year lessons, 2025]]. A list of year-end lessons on parents, advice, vulnerability, procrastination, productivity, relationships, fear and over-responsibility.
-- [[source-five-life-lessons|Five life lessons]]. Five life and leadership lessons credited to Simon Sinek, collected from the Modern Wisdom podcast.
-
 Back to [[index|home]].

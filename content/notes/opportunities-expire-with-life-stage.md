@@ -1,7 +1,7 @@
 ---
 title: "Some opportunities expire with your life stage"
 date: "2026-01-04"
-tags: [timing, opportunity, career, life-stage, decision-making]
+tags: [time, career, decision-making]
 author: "Chris Williamson"
 description: "Some extreme efforts are only reasonable at certain ages, and later years trade physical and time freedom for financial freedom."
 derived_from:

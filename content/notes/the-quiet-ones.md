@@ -1,7 +1,7 @@
 ---
 title: "Reviews reward visible work over essential invisible work"
 date: "2025-09-28"
-tags: ["workplace", "performance", "leadership", "recognition"]
+tags: [leadership, productivity, success]
 author: "Nishant Khurana"
 description: "Performance matrices miss people whose work crosses levels and prevents problems, and those people leave when they stop expecting to be seen."
 derived_from:

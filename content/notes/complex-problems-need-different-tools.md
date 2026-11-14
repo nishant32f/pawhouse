@@ -1,7 +1,7 @@
 ---
 title: "Complex life questions can't be solved with tools for complicated problems"
 date: "2026-11-13"
-tags: [meaning, mcgilchrist, scientism, love, complexity]
+tags: [meaning, critical-thinking, relationships]
 author: "Arthur Brooks"
 description: "Analysis and optimisation solve mechanical problems. Love, a calling and a marriage are lived mysteries and need another mode of attention."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

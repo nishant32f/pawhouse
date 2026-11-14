@@ -1,7 +1,7 @@
 ---
 title: "Nobody is thinking about you as much as you think"
 date: "2024-01-15"
-tags: [self-perception, looking-glass-self, inner-critic, social-psychology, churchill]
+tags: [self-worth, psychology]
 author: "Chris Williamson"
 description: "Your sense of self runs on imagined judgments from people who are mostly absorbed in themselves, and the harshest critic is internal."
 derived_from:

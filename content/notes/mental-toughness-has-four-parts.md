@@ -1,7 +1,7 @@
 ---
 title: "Mental toughness has four parts: tolerance, fortitude, resilience, adaptability"
 date: "2026-11-13"
-tags: [mental-toughness, resilience, adversity, behaviour, framework]
+tags: [resilience, psychology, decision-making]
 author: "Chris Williamson"
 description: "Mental toughness splits into four capacities, and the aim is to keep your values and behaviour intact while feeling something."
 derived_from:

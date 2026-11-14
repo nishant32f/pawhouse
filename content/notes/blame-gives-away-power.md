@@ -1,7 +1,7 @@
 ---
 title: "Blaming something gives it power over you"
 date: "2026-01-01"
-tags: [blame, agency, accountability, adversity, responsibility]
+tags: [character, resilience]
 author: "Alex Hormozi / Simon Sinek"
 description: "Disadvantage can be real and unfair, but blame hands authorship of your future to whatever you blame, so taking ownership returns the power."
 derived_from:

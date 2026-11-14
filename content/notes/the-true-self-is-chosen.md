@@ -1,7 +1,7 @@
 ---
 title: "The true self is projected from your values"
 date: "2026-11-13"
-tags: [identity, authenticity, true-self, morality, forgiveness]
+tags: [self-worth, character, healing]
 author: "Chris Williamson"
 description: "People call a change authentic when it matches their own values, so the true self looks more invented than discovered."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000768860458"

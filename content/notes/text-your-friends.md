@@ -1,7 +1,7 @@
 ---
 title: "Text a friend when they cross your mind"
 date: "2026-11-13"
-tags: [friendship, connection, relationships, habits, maintenance]
+tags: [friendship, relationships, discipline]
 author: "Chris Williamson"
 description: "When a friend crosses your mind, send a short message, since friendships fade from drift more than from conflict."
 derived_from:

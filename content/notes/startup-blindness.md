@@ -1,7 +1,7 @@
 ---
 title: "Ignorance of obstacles is what lets founders start"
 date: "2025-09-28"
-tags: ["startups", "entrepreneurship", "problem-solving", "ignorance", "young-founders"]
+tags: [startups, leadership]
 author: "Paul Graham"
 source: "https://paulgraham.com/schlep.html"
 description: "Ignorance is the best antidote to schlep blindness, and asking what problem you wish someone would solve for you finds the rest."

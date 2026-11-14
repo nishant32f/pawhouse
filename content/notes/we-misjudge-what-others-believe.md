@@ -1,7 +1,7 @@
 ---
 title: "We misjudge what others believe"
 date: "2026-11-13"
-tags: [cognitive-biases, group-dynamics, social-norms, communication]
+tags: [psychology, social-pressure, communication]
 author: "Chris Williamson"
 description: "False consensus and pluralistic ignorance are opposite errors about what other people think, and silence is not evidence of agreement."
 derived_from:

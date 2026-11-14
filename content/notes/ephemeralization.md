@@ -1,7 +1,7 @@
 ---
 title: "Doing more with less frees capacity to attempt more"
 date: "2026-05-13"
-tags: ["technology", "progress", "ai", "leverage", "systems"]
+tags: [ai, wealth, productivity]
 author: "Buckminster Fuller / Garry Tan"
 description: "Fuller's ephemeralization is doing more with less until you can do everything with nothing, and it argues for using freed capacity."
 source: "https://garryslist.org/posts/boil-the-ocean"

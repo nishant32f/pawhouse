@@ -1,7 +1,7 @@
 ---
 title: "Healthy minds filter, forgive, keep perspective and rank worries"
 date: "2026-01-04"
-tags: [mental-health, emotional-regulation, self-compassion, perspective, well-being]
+tags: [mental-health, emotions, healing, happiness]
 author: "Nishant Khurana"
 description: "Healthy minds filter thoughts, speak kindly to themselves and rank worries, while unhealthy ones let everything intrude at once."
 derived_from:

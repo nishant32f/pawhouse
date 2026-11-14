@@ -1,7 +1,7 @@
 ---
 title: "Errors of omission cost more than they feel"
 date: "2025-01-06"
-tags: [decision-making, regret, omission, action, biases]
+tags: [decision-making, action, psychology]
 author: "Chris Williamson"
 description: "Mistakes of doing show up fast, mistakes of not doing leave no evidence, so the cost of inaction has to be counted on purpose."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000768860458"

@@ -1,7 +1,7 @@
 ---
 title: "The Will to Win"
 date: "2026-08-07"
-tags: [poetry, ambition, discipline, endurance]
+tags: [poetry, ambition, discipline]
 author: "Berton Braley"
 description: "Berton Braley's poem on wanting something enough to fight and sacrifice for it."
 source: "https://www.youtube.com/watch?v=4C_EvLN4-yA"
@@ -43,7 +43,7 @@ You'll get it.
 
 ## Source
 
-- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~19:52.
+- Read aloud at 19:52 in the [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA&t=1192s).
 
 ## Related
 

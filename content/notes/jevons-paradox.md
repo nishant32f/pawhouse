@@ -1,7 +1,7 @@
 ---
 title: "Cheaper use of a resource can raise total demand"
 date: "2026-05-13"
-tags: ["paradox", "economics", "ai", "efficiency", "demand"]
+tags: [psychology, wealth, ai]
 author: "Garry Tan"
 description: "When a resource becomes much more efficient to use, total consumption can rise, and Tan expects this for intelligence."
 source: "https://garryslist.org/posts/boil-the-ocean"

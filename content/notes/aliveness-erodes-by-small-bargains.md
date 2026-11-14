@@ -1,7 +1,7 @@
 ---
 title: "Aliveness fades through small compromises and returns through small acts"
 date: "2026-11-13"
-tags: [vitality, hope, regret, inner-life, life-philosophy]
+tags: [happiness, decision-making, self-awareness, meaning]
 author: "Norman Cousins"
 description: "The loss the quote points to is the slow numbing of curiosity, tenderness and hope. One small act can start to restore it."
 source: "https://www.instagram.com/reel/DeIQPrlha2v/"

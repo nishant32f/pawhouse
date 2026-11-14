@@ -1,7 +1,7 @@
 ---
 title: "AI is a reason to attempt bigger projects"
 date: "2026-05-13"
-tags: ["ai", "ambition", "startups", "strategy", "agency"]
+tags: [ai, ambition, startups, decision-making]
 author: "Garry Tan"
 description: "Garry Tan argues that superintelligence should be used to build something 10x better, and running the current plan cheaper falls short of that."
 source: "https://garryslist.org/posts/boil-the-ocean"

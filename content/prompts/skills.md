@@ -1,7 +1,7 @@
 ---
 title: "Skills"
 date: "2026-01-04"
-tags: [ai-prompts, future-of-work, skill-assessment, career-strategy]
+tags: [prompt, career]
 author: "Nishant Khurana"
 description: "A prompt that evaluates a professional's skills from a 2030 vantage point and lists what to drop and what to build."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Trust thinkers who change their minds and admit mistakes"
 date: "2026-01-04"
-tags: [critical-thinking, rationality, ideology, truth-seeking, intellectual-honesty]
+tags: [critical-thinking]
 author: "Chris Williamson"
 description: "Four questions separate rational truth-seekers from ideological charlatans among the creators you follow."
 derived_from:

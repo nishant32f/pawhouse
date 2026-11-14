@@ -1,7 +1,7 @@
 ---
 title: "Darwin Marriage Decision"
 date: "2024-01-15"
-tags: [decision-making, marriage, charles-darwin, framework, letters]
+tags: [prose, decision-making, relationships]
 author: "Charles Darwin"
 description: "Charles Darwin's written pros and cons list on whether to marry, with his conclusion."
 derived_from:
@@ -52,6 +52,5 @@ derived_from:
 - [[feynmans-love-letter|Feynman's Love Letter]]. A different view of committed partnership.
 - [[opportunities-expire-with-life-stage|Some opportunities expire with your life stage]]. Life decisions have timing windows.
 - [[marriage-as-conversation|Choose a partner by the quality of conversation]]. The everyday texture that sustains a long marriage.
-- [[source-3mm-meditation-criminals-politics|3MM: meditation, criminals and politics]]. Adds that important choices need felt alignment as well as rational tradeoff analysis.
 
 Map: [[map-readings|Readings]]

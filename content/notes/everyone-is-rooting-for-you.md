@@ -1,7 +1,7 @@
 ---
 title: "Most people are rooting for you"
 date: "2026-11-13"
-tags: [accountability, agency, social-pressure, confidence]
+tags: [character, social-pressure, self-worth]
 author: "Chris Williamson / Denzel Rust"
 description: "People entering an interaction usually hope you succeed because your success validates their judgment, which removes the story that the deck was stacked against you."
 derived_from:

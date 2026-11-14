@@ -1,7 +1,7 @@
 ---
 title: "Questions to ask yourself"
 date: "2025-08-11"
-tags: [self-reflection, journaling, questions, self-inquiry, morgan-housel]
+tags: [practice, self-awareness]
 author: "Morgan Housel / Chris Williamson"
 description: "Journal prompts from Morgan Housel's list, shared by Chris Williamson, plus a short set that removes money, status and followers one at a time."
 source: "https://www.youtube.com/shorts/lcfvR4DTPfg"

@@ -1,7 +1,7 @@
 ---
 title: "A family frees you from status games"
 date: "2026-01-04"
-tags: [family, fatherhood, status, freedom, priorities]
+tags: [family, social-pressure, decision-making]
 author: "Chris Williamson"
 description: "Fathers report that starting a family ended their need to impress status holders, because the people who matter most are at home."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "People who can't feel pleasure hide in meaning and delayed gratification"
 date: "2026-01-04"
-tags: [meaning, pleasure, viktor-frankl, delayed-gratification, fulfillment]
+tags: [meaning, happiness, discipline]
 author: "Chris Williamson"
 description: "The inverse of Frankl's principle. Those who struggle to feel joy chase hard things forever and never collect the reward."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

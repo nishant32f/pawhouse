@@ -1,7 +1,7 @@
 ---
 title: "You can be anything but not everything"
 date: "2024-01-15"
-tags: [focus, priorities, strategy, goals, saying-no]
+tags: [decision-making, action, boundaries]
 author: "Chris Williamson / Alex Hormozi"
 description: "You can change direction far more than you believe, but time is finite, so progress requires narrow and deep focus and deciding what to say no to."
 derived_from:

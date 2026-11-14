@@ -1,7 +1,7 @@
 ---
 title: "Avoiding boredom with screens makes life feel emptier"
 date: "2026-11-13"
-tags: [boredom, technology, addiction, attention, meaning]
+tags: [rest, ai, mental-health, presence]
 author: "Arthur Brooks"
 description: "Boredom feels bad, so people distract themselves, which lowers tolerance for boredom. Boundaries and sitting with yourself break the loop."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

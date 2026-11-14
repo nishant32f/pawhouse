@@ -1,7 +1,7 @@
 ---
 title: "Happiness is achieving what you are capable of"
 date: "2026-11-13"
-tags: [happiness, mediocrity, potential, acceptance, alain-de-botton]
+tags: [happiness, self-worth, ambition, healing]
 author: "Alain de Botton"
 description: "Alain de Botton says happiness comes from using your own capacity, and that tolerating averageness in most fields marks the start of wisdom."
 source: "https://youtu.be/Dv9v1Br83Vs"

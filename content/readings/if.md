@@ -1,7 +1,7 @@
 ---
 title: "If"
 date: "2026-01-04"
-tags: [poetry, stoicism, character, resilience]
+tags: [poetry, character, resilience]
 author: "Rudyard Kipling"
 description: "Rudyard Kipling's poem on composure, patience and balanced judgment in triumph and disaster."
 source: "https://www.youtube.com/watch?v=4C_EvLN4-yA"
@@ -51,8 +51,7 @@ Rudyard Kipling (1865-1936)
 
 ## Source
 
-- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~0:08.
-- Also collected in [[poems-from-motiversity-compilation|Poems from Motiversity Compilation]].
+- Read aloud at 0:08 in the [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA&t=8s).
 
 ## Related
 

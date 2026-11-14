@@ -1,7 +1,7 @@
 ---
 title: "An executive charts the course, sets the pace and holds the line"
 date: "2026-01-04"
-tags: ["leadership", "executive", "management", "dhh", "responsibility"]
+tags: [leadership, character]
 author: "DHH"
 description: "DHH splits an executive's core work into charting the course, setting the pace and holding the line on quality."
 derived_from:

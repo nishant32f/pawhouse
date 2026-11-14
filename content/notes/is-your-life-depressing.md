@@ -1,7 +1,7 @@
 ---
 title: "Ask whether your life is depressing before asking whether you are depressed"
 date: "2026-01-04"
-tags: [depression, anxiety, mental-health, self-assessment, circumstances]
+tags: [mental-health, anxiety, self-awareness]
 author: "Nishant Khurana"
 description: "Three questions separate a clinical problem from a normal response to hard circumstances or an unsupportive environment."
 derived_from:

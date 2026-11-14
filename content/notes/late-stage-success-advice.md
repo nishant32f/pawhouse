@@ -1,7 +1,7 @@
 ---
 title: "Successful people give advice from the maintenance phase"
 date: "2026-11-13"
-tags: ["success", "advice", "strategy", "career", "critical-thinking"]
+tags: [success, self-awareness, decision-making, career]
 author: "Chris Williamson"
 description: "Successful people often describe the strategies they use now, which differ from the ones that built their success."
 derived_from:

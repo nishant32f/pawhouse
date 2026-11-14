@@ -1,7 +1,7 @@
 ---
 title: "Accurate warnings are dismissed when early or from a low-status source"
 date: "2025-10-04"
-tags: [communication, credibility, cognitive-biases, warnings, social-dynamics]
+tags: [communication, psychology, social-pressure]
 author: "Chris Williamson"
 description: "Valid warnings are ignored when the threat is not yet visible or the warner lacks standing, and the more dire the warning, the less it is believed."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Man in the Arena"
 date: "2026-01-04"
-tags: [poetry, courage, perseverance, action, excellence]
+tags: [speech, courage, discipline, action, ambition]
 author: "Theodore Roosevelt"
 description: "Theodore Roosevelt's excerpt on credit belonging to those who try, fail and try again."
 derived_from:

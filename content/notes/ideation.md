@@ -1,7 +1,7 @@
 ---
 title: "Good startup ideas come from living in the future"
 date: "2026-01-04"
-tags: ["startups", "ideation", "product", "paul-graham", "problem-solving"]
+tags: [startups, leadership]
 author: "Paul Graham"
 description: "Start from users who urgently need something, live in the future and build what is missing, and test the problem against five criteria."
 source: "https://paulgraham.com/greatwork.html"

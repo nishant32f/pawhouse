@@ -1,7 +1,7 @@
 ---
 title: "Intuition is earned by following the rules first"
 date: "2026-11-13"
-tags: [mastery, intuition, rules, expertise, judgment]
+tags: [ambition, critical-thinking, decision-making, career]
 author: "Chris Williamson"
 description: "Rules supply the repetitions that make intuition possible, and breaking them before learning them is usually just not playing the game."
 derived_from:
@@ -34,6 +34,5 @@ Some black-and-white rules work at any stage, such as sleeping with the phone ou
 - [[curse-of-competence|Being good at many things makes every choice your fault]]. Sophistication in decision-making.
 - [[advice-amplifies-what-you-are|Advice amplifies what you already are]]. Advice depends on the person receiving it.
 - [[preparation-becomes-avoidance|Preparation becomes avoidance once it delays execution]]. Tension. Rules before exceptions does not justify endless preparation.
-- [[source-3mm-intuition-boomers-ai|3MM: intuition, boomers and AI]]. The newsletter this note draws on.
 
 Map: [[map-social-psychology|Social psychology and truth]]

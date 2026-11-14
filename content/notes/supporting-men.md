@@ -1,7 +1,7 @@
 ---
 title: "Men need to hear both \"you can be more\" and \"you are enough\""
 date: "2024-01-15"
-tags: [men, support, self-acceptance, ambition, compassion]
+tags: [family, friendship, healing, ambition]
 author: "Chris Williamson"
 description: "Men want inspiration and acceptance together, and the hard part is offering support that does not make them feel broken or insufficient."
 derived_from:

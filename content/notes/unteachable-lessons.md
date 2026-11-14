@@ -1,7 +1,7 @@
 ---
 title: "The most important lessons sound like cliches until you live them"
 date: "2024-01-15"
-tags: [lessons, experience, cliches, hard-way, wisdom]
+tags: [self-awareness, action]
 author: "Chris Williamson"
 description: "Some advice is only learned firsthand, and the most important lessons are the ones that sound like cliches beforehand."
 derived_from:

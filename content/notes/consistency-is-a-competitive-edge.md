@@ -1,7 +1,7 @@
 ---
 title: "Consistency is rare enough to be an edge"
 date: "2026-01-04"
-tags: [consistency, discipline, competition, resilience, opportunity]
+tags: [discipline, ambition, resilience, time]
 author: "Chris Williamson"
 description: "When most people avoid discomfort, modest consistency, intentionality and resilience already put you ahead, with limits on how much weight to carry for others."
 derived_from:

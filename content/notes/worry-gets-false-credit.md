@@ -1,7 +1,7 @@
 ---
 title: "Worry takes credit for results it did not produce"
 date: "2026-01-04"
-tags: [worry, overachiever, performance, anxiety, identity]
+tags: [anxiety, ambition, productivity, self-worth]
 author: "Chris Williamson"
 description: "Anxious achievers read success as proof that worry works and failure as proof they should have worried more, so the belief never gets tested."
 derived_from:

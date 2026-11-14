@@ -1,8 +1,8 @@
 ---
 title: "Claude 4 System Prompt"
 date: "2025-05-25"
-tags: [ai, claude, system-prompt]
-author: "Simon Willison (linked post)"
+tags: [prompt, ai]
+author: "Simon Willison"
 description: "A saved link to a post on the Claude 4 system prompt."
 source: "https://simonwillison.net/2025/May/25/claude-4-system-prompt/"
 derived_from:
@@ -10,8 +10,6 @@ derived_from:
 ---
 
 # Claude 4 System Prompt
-
-This note is a link only and records no highlights.
 
 https://simonwillison.net/2025/May/25/claude-4-system-prompt/
 

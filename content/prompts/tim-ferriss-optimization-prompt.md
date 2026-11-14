@@ -1,7 +1,7 @@
 ---
 title: "Tim Ferriss Optimization Prompt"
 date: "2026-01-03"
-tags: [productivity, optimization, tim-ferriss, ai-prompt, 80-20-rule]
+tags: [prompt, productivity]
 author: "Tim Ferriss (principles) / Nishant Khurana"
 description: "A coach prompt built on Tim Ferriss principles that analyses a goal with six questions."
 derived_from:

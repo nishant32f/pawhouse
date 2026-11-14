@@ -1,7 +1,7 @@
 ---
 title: "Envy points at capabilities you may have"
 date: "2026-11-13"
-tags: [envy, desire, potential, comparison, alain-de-botton]
+tags: [emotions, ambition, self-worth]
 author: "Alain de Botton"
 description: "De Botton treats envy as a sign of a possible future self, tested with an exercise and checked against the cost of that life."
 source: "https://youtu.be/Dv9v1Br83Vs"

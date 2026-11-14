@@ -44,8 +44,4 @@ Why reaching goals disappoints, how time gets spent, and what meaning is made of
 - [[aliveness-erodes-by-small-bargains|Aliveness fades through small compromises and returns through small acts]]. The loss the quote points to is the slow numbing of curiosity, tenderness and hope. One small act can start to restore it.
 - [[the-shower-test|Where your mind goes in the shower shows what you care about]]. With nothing pulling on your attention, the mind returns to what you actually care about. It also shows whether a desire is yours.
 
-## Sources
-
-- [[source-arthur-brooks-nothing-feels-real|Arthur Brooks on Modern Wisdom: why nothing feels real]]. Episode #1109 of Modern Wisdom. Brooks argues that simulated life cannot supply meaning, and sets out how contact with reality restores it.
-
 Back to [[index|home]].

@@ -1,7 +1,7 @@
 ---
 title: "Monk mode needs an end date and a way back"
 date: "2026-11-13"
-tags: [monk-mode, solitude, focus, integration, growth]
+tags: [action, decision-making, self-awareness]
 author: "Chris Williamson"
 description: "Isolation can produce focused growth but can also turn retreat into identity, so set a deadline and return to the world."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000768860458"

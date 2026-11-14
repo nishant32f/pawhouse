@@ -1,7 +1,7 @@
 ---
 title: "Cynicism protects against disappointment and excuses inaction"
 date: "2026-01-04"
-tags: [mindset, social-media, cynicism, optimism, internet-culture]
+tags: [presence, critical-thinking, happiness, social-pressure]
 author: "Chris Williamson"
 description: "Online cynicism is a guarded response that spares you the risk of trying, and choosing hope without naivety is the better way to live."
 derived_from:

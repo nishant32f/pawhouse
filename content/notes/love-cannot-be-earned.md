@@ -1,7 +1,7 @@
 ---
 title: "Love that must be earned is not love"
 date: "2026-11-13"
-tags: [love, achievement, specialness, parenting, approval]
+tags: [relationships, ambition, self-worth, family]
 author: "Arthur Brooks"
 description: "Many high achievers learned as children that love follows performance, and keep trying to earn it with status, money or fame."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

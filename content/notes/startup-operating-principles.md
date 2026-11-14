@@ -1,7 +1,7 @@
 ---
 title: "Startup operating principles"
 date: "2026-11-13"
-tags: ["startups", "business", "product-management", "scaling", "leadership", "strategy"]
+tags: [startups, leadership, decision-making]
 author: "Nishant Khurana"
 description: "Principles compiled from older notes on business imperatives, product management, money and scaling."
 derived_from:

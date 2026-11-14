@@ -1,7 +1,7 @@
 ---
 title: "Moving from operator to strategist means giving up busyness as identity"
 date: "2026-01-04"
-tags: ["career", "productivity", "leadership", "transition", "identity", "delegation"]
+tags: [career, productivity, leadership, self-worth]
 author: "Chris Williamson"
 description: "The shift from grinding operator to strategic thinker is hard because busyness has become proof of success."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Children and Striving"
 date: "2025-09-28"
-tags: [parenting, life-philosophy, ordinary-moments]
+tags: [poetry, family, meaning, happiness]
 author: "William Martin"
 description: "A short passage by William Martin on helping children find wonder in ordinary life."
 derived_from:

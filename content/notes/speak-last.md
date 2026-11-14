@@ -1,7 +1,7 @@
 ---
 title: "Speak last so people feel heard and you decide with more information"
 date: "2026-01-04"
-tags: [leadership, listening, communication, simon-sinek, decision-making]
+tags: [leadership, communication, decision-making]
 author: "Simon Sinek"
 description: "Simon Sinek advises speaking last in a group, so everyone feels heard and you act after hearing them."
 derived_from:

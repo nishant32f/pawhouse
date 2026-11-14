@@ -1,7 +1,7 @@
 ---
 title: "Feynman's Love Letter"
 date: "1946-10-17"
-tags: [letters, love, grief, loss]
+tags: [letter, relationships, suffering]
 author: "Richard Feynman"
 description: "A letter Richard Feynman wrote to his wife D'Arline two years after her death."
 derived_from:

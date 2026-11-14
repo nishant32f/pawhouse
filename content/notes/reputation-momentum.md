@@ -1,7 +1,7 @@
 ---
 title: "Reputation holds while momentum looks like approval"
 date: "2026-11-13"
-tags: [reputation, social-pressure, status, public-opinion, cancellation]
+tags: [social-pressure]
 author: "Chris Williamson"
 description: "A public figure can survive a serious accusation while people still watch and buy, because momentum reads as the crowd still approving."
 derived_from:
@@ -31,7 +31,6 @@ People ask "What happened?" and also "What does everyone else think this means?"
 
 ## Related
 
-- [[source-3mm-cancellations-ai-nervous-systems|3MM: cancellations, AI and nervous systems]]. The newsletter this idea comes from.
 - [[mimetic-desire|Most wants are borrowed from other people]]. Status signals spread socially before people inspect them.
 - [[the-messenger-paradox|Groups that punish messengers stop hearing bad news]]. Groups punish the person or symbol that carries uncomfortable meaning.
 - [[dealing-with-criticism|Criticism stings because we want to be accepted]]. Reputation risk feels threatening because others may believe the criticism.

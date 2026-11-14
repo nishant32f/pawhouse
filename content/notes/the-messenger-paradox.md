@@ -1,7 +1,7 @@
 ---
 title: "Groups that punish messengers stop hearing bad news"
 date: "2025-10-04"
-tags: [communication, leadership, organizational-culture, psychological-safety, cognitive-biases]
+tags: [communication, leadership, healing, psychology]
 author: "Chris Williamson"
 description: "People who deliver accurate bad news get punished, which removes the early warning an organisation needs and leads to crises it never saw coming."
 derived_from:

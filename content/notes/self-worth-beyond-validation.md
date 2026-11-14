@@ -1,7 +1,7 @@
 ---
 title: "Self-worth outsourced to approval is never secure"
 date: "2025-12-27"
-tags: [self-worth, validation, authenticity, comparison, neediness]
+tags: [self-worth]
 author: "Chris Williamson"
 description: "Approval, achievement and comparison are unstable places to rest your worth, and the validation you want is usually permission to validate yourself."
 derived_from:

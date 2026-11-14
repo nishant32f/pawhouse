@@ -1,7 +1,7 @@
 ---
 title: "Treat goals as hypotheses to test"
 date: "2026-09-24"
-tags: [goals, self-criticism, experimentation, ambition, overachiever]
+tags: [action, self-worth, ambition]
 author: "Chris Williamson"
 description: "A goal held as a contract to self-criticise until it is met turns ambition into a threat, while a hypothesis can fail without harm."
 source: "https://youtu.be/yBEfU-Ul_iI"

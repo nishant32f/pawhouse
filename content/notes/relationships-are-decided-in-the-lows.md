@@ -1,7 +1,7 @@
 ---
 title: "Relationships are decided in the lows"
 date: "2025-12-27"
-tags: [relationships, partner, red-flags, divorce, conscientiousness]
+tags: [relationships]
 author: "Chris Williamson"
 description: "How a couple handles bad times predicts the relationship better than how they enjoy good times, so a partner should be chosen with that in mind."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Silence makes weak signals audible"
 date: "2026-11-13"
-tags: [silence, attention, intuition, simplicity, reflection]
+tags: [presence, critical-thinking, happiness, self-awareness]
 author: "Chris Williamson"
 description: "Important insights arrive faintly, and a loud, information-heavy life lowers the sensitivity needed to hear them."
 source: "https://www.youtube.com/watch?v=RBZTLptAMao"

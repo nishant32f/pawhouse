@@ -1,7 +1,7 @@
 ---
 title: "Better treatment from a position belongs to the position"
 date: "2026-01-04"
-tags: [leadership, humility, status, simon-sinek, gratitude]
+tags: [leadership, character, social-pressure, happiness]
 author: "Simon Sinek"
 description: "As you gain a position, people treat you better. That treatment is for the position and the level you reached, and nobody else."
 derived_from:

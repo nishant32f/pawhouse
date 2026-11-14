@@ -1,7 +1,7 @@
 ---
 title: "Overthinking is often underfeeling"
 date: "2026-01-04"
-tags: [overthinking, rumination, emotion, anxiety, psychology]
+tags: [anxiety, emotions, psychology]
 author: "Chris Williamson"
 description: "More thinking cannot fix a problem that is really an unfelt emotion, and heavy self-assessment makes happiness harder to reach."
 derived_from:

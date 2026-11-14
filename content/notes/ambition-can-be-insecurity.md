@@ -1,7 +1,7 @@
 ---
 title: "Outsized ambition is often powered by an outsized wound"
 date: "2026-01-04"
-tags: [ambition, fame, insecurity, success, alain-de-botton]
+tags: [ambition, success, self-worth]
 author: "Alain de Botton"
 description: "Alain de Botton argues that big achievement and the wish for fame usually compensate for invisibility, a lack of love or an early problem."
 source: "https://youtu.be/Dv9v1Br83Vs"

@@ -1,7 +1,7 @@
 ---
 title: "High Converting Landing Pages"
 date: "2026-01-04"
-tags: [ai-prompts, copywriting, marketing, landing-pages]
+tags: [prompt, startups]
 author: "Nishant Khurana"
 description: "A prompt for generating landing page copy from a section-by-section framework, after asking the user ten questions."
 derived_from:

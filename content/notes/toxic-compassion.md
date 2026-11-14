@@ -1,7 +1,7 @@
 ---
 title: "Compassion that avoids truth does harm"
 date: "2026-11-13"
-tags: [truth, compassion, performative-empathy, virtue, critical-thinking]
+tags: [communication, character, critical-thinking]
 author: "Chris Williamson"
 description: "Putting short-term emotional comfort ahead of reality and long-term outcomes optimises for looking good rather than doing good."
 derived_from:

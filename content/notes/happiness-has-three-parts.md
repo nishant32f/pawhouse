@@ -1,7 +1,7 @@
 ---
 title: "Happiness needs enjoyment, satisfaction and meaning"
 date: "2026-11-13"
-tags: [happiness, enjoyment, satisfaction, meaning, strivers]
+tags: [happiness, meaning, ambition]
 author: "Arthur Brooks"
 description: "Brooks defines happiness as three macronutrients. Strivers tend to have plenty of satisfaction, little enjoyment and too little meaning."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

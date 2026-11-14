@@ -1,7 +1,7 @@
 ---
 title: "Work expands to fill the time available"
 date: "2026-01-04"
-tags: [productivity, time-management, psychology, social-media, habits]
+tags: [productivity, time, psychology, presence]
 author: "Chris Williamson"
 description: "Parkinson's Law explains missing deadlines and untouched cupboards. A related effect lets compulsive phone use take two hours a day."
 derived_from:

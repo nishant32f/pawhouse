@@ -1,7 +1,7 @@
 ---
 title: "Suffering helps only when it builds capacity or serves meaning"
 date: "2026-11-13"
-tags: [suffering, discernment, meaning, loyalty, uncertainty]
+tags: [suffering, critical-thinking, meaning, character]
 author: "Jake Kozloski / Chris Williamson"
 description: "Hardship earns its place when it develops capacity or serves a value you endorse, and pointless loyalty to pain does neither."
 derived_from:
@@ -18,7 +18,7 @@ Jake Kozloski:
 > It's bad to romanticise pointless suffering.
 > A good life is found in telling the two apart."
 
-Two unattributed lines shared with it were "There is no reason to live a sad life out of pointless loyalty." and "Your desire to control and predict your life is not only painful, but impossible."
+Two more lines came with it, "There is no reason to live a sad life out of pointless loyalty." and "Your desire to control and predict your life is not only painful, but impossible."
 
 Endurance is no proof a commitment is worthwhile. Meaningful hardship serves love, learning, responsibility or work worth doing. Pointless hardship persists without serving what matters. The test is whether the cost still has a purpose you endorse. Ask whether you are staying for a living value or out of loyalty to a choice that no longer fits.
 

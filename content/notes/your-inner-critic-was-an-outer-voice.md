@@ -1,7 +1,7 @@
 ---
 title: "Your inner critic was once an outer voice"
 date: "2024-01-15"
-tags: [inner-critic, self-compassion, churchill, inner-voice, mindset]
+tags: [self-worth, healing]
 author: "Chris Williamson"
 description: "The harshest voice in your head is usually an internalised outside voice, and the world cares far less about you than that voice does."
 derived_from:

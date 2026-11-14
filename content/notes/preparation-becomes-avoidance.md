@@ -1,7 +1,7 @@
 ---
 title: "Preparation becomes avoidance once it delays execution"
 date: "2025-12-27"
-tags: [action, execution, perfectionism, procrastination, discipline]
+tags: [action, self-worth, discipline]
 author: "Chris Williamson"
 description: "Preparation helps only while it increases execution. After that it protects you from being seen failing, and the next physical step is the cure."
 derived_from:

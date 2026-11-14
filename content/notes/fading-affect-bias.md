@@ -1,7 +1,7 @@
 ---
 title: "Bad memories fade faster than good ones"
 date: "2026-11-13"
-tags: [memory, emotion, resilience, psychology, perspective]
+tags: [time, emotions, resilience, psychology]
 author: "Chris Williamson"
 description: "The emotional pain of a memory fades faster than its pleasure because the mind works on bad memories and leaves good ones alone."
 derived_from:

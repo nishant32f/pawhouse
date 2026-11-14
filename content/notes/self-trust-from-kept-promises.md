@@ -1,7 +1,7 @@
 ---
 title: "Self-trust is built by keeping small promises"
 date: "2026-11-13"
-tags: [self-trust, discipline, commitment, habits, confidence]
+tags: [discipline, self-worth]
 author: "Chris Williamson"
 description: "Confidence comes from completed commitments to yourself, so start with promises small enough to keep and finish them fully."
 derived_from:

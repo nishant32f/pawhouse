@@ -1,7 +1,7 @@
 ---
 title: "Agent-written code merges only through deterministic gates"
 date: "2026-11-13"
-tags: ["ai-agents", "software-engineering", "code-review", "ci", "verification"]
+tags: [ai, critical-thinking]
 author: "Ryan Carson"
 description: "Ryan Carson's setup for a repo where agents write and review code and merge depends on auditable, current-commit checks."
 source: "https://x.com/ryancarson/status/2023452909883609111"

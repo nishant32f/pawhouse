@@ -1,7 +1,7 @@
 ---
 title: "Chronic seriousness makes you brittle"
 date: "2026-01-04"
-tags: [mindfulness, enjoyment, playfulness, perspective, ted-hughes]
+tags: [presence, happiness, rest]
 author: "Chris Williamson"
 description: "Seriousness gives an edge in bursts but makes long-term persistence rigid. Joy is what winning should feel like, rather than relief."
 source: "https://youtu.be/yBEfU-Ul_iI"

@@ -1,7 +1,7 @@
 ---
 title: "Problem-solving capacity must keep up with problem creation"
 date: "2026-11-13"
-tags: ["startups", "operations", "leadership", "management", "scaling"]
+tags: [startups, leadership]
 author: "Travis Kalanick"
 description: "Kalanick says a company's ambition is limited by management capacity, so problems should be created no faster than they can be solved."
 source: "https://www.youtube.com/watch?v=QVnU5lGlKE8"
@@ -33,7 +33,6 @@ Leadership is finding the line between order and chaos. Too much of either gives
 ## Related
 
 - [[excellence-is-capacity-to-take-pain|Excellence is the capacity to take pain]]. The same interview on how much difficulty a founder can carry.
-- [[source-kalanick-senra|Travis Kalanick with David Senra]]. The full interview summary with the other points.
 - [[executive-responsibilities|An executive charts the course, sets the pace and holds the line]]. A different answer to how an executive keeps a company moving.
 - [[startup-operating-principles|Startup operating principles]]. Scaling steps that add capacity as scope grows.
 - [[parkinsons-law|Work expands to fill the time available]]. Pace and ambition interact, which contrasts with limiting creation to capacity.

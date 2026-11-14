@@ -1,7 +1,7 @@
 ---
 title: "The last 20 percent of effort carries most of the return"
 date: "2025-09-28"
-tags: [effort, persistence, obsession, success]
+tags: [discipline, ambition, success]
 author: "Nishant Khurana"
 description: "A stated theory that 100 percent effort returns far more than 80 percent, because few people are willing to keep going past the point where logic says stop."
 derived_from:

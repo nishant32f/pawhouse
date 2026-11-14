@@ -1,7 +1,7 @@
 ---
 title: "Criticism stings because we want to be accepted"
 date: "2026-01-04"
-tags: [criticism, acceptance, self-worth, reputation, resilience]
+tags: [communication, healing, self-worth, social-pressure]
 author: "Chris Williamson"
 description: "Most coping strategies for criticism are ways of avoiding the pain of wanting to be liked, and untrue criticism often stings more than true."
 derived_from:

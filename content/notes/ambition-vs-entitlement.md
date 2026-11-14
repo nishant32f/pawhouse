@@ -1,7 +1,7 @@
 ---
 title: "Ambition expects you to close the gap and entitlement expects others to"
 date: "2026-01-04"
-tags: [ambition, responsibility, ownership, self-worth, motivation]
+tags: [ambition, character, self-worth, productivity]
 author: "Chris Williamson"
 description: "Ambition means expecting yourself to close the gap between what you have and what you want. Entitlement means expecting others to."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "Optimising rest turns leisure into work"
 date: "2026-01-04"
-tags: [leisure, perfectionism, rest, overachievement, meaning]
+tags: [rest, self-worth, ambition, meaning]
 author: "Chris Williamson / Arthur Brooks"
 description: "Meditation, hobbies and friendships stop restoring you when each becomes a contest to win or an activity to improve."
 source: "https://podcasts.apple.com/in/podcast/modern-wisdom/id1347973549?i=1000772156480"

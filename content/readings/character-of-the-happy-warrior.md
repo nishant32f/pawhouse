@@ -1,7 +1,7 @@
 ---
 title: "Character of the Happy Warrior"
 date: "2026-08-07"
-tags: [poetry, character, leadership, virtue, resilience]
+tags: [poetry, character, leadership, resilience]
 author: "William Wordsworth"
 description: "Wordsworth's portrait of the ideal warrior, shown through discipline, compassion and principle."
 source: "https://www.youtube.com/watch?v=4C_EvLN4-yA"
@@ -40,7 +40,7 @@ Wordsworth's warrior is brave. He is also governed by reason, disciplined by suf
 
 ## Source
 
-- Recited in [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA), timestamp ~9:09.
+- Read aloud at 9:09 in the [Motiversity Quotes compilation](https://www.youtube.com/watch?v=4C_EvLN4-yA&t=549s).
 
 ## Related
 

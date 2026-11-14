@@ -1,7 +1,7 @@
 ---
 title: "You don't need self-belief before acting"
 date: "2026-09-24"
-tags: [action, self-belief, confidence, evidence, discipline]
+tags: [action, self-worth, critical-thinking, discipline]
 author: "Chris Williamson"
 description: "Acting without self-belief generates the evidence that belief later rests on, and waiting for the right internal state is a way to avoid acting."
 source: "https://youtu.be/yBEfU-Ul_iI"

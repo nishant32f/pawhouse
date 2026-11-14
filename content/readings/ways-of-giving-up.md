@@ -1,8 +1,8 @@
 ---
 title: "Ways of Giving Up"
 date: "2025-09-28"
-tags: [mental-health, coping, numbness, resilience]
-author: "Unknown (uncredited circulated text)"
+tags: [prose, mental-health, resilience]
+author: "Unknown"
 description: "A short text listing ways people give up, including coping and functioning."
 derived_from:
   - "wisdom/personal-growth/resilience-and-mental-health/ways-of-giving-up.md"

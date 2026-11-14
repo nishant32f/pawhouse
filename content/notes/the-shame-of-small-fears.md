@@ -1,7 +1,7 @@
 ---
 title: "Being ashamed of small fears makes them worse"
 date: "2025-12-08"
-tags: [fear, courage, nervous-system, self-compassion, shame]
+tags: [anxiety, courage, healing, emotions]
 author: "Chris Williamson"
 description: "The nervous system reacts to a hard conversation as it once reacted to a predator, and shaming yourself for that adds a second hurt."
 derived_from:

@@ -1,7 +1,7 @@
 ---
 title: "An apology is not accountability and forgiveness is not access"
 date: "2025-09-28"
-tags: [boundaries, accountability, self-respect, forgiveness, communication]
+tags: [boundaries, character, self-worth, healing]
 author: "@mindset.unchained"
 description: "Regret and good words do not show a pattern has changed, so trust follows behaviour and forgiveness need not restore access."
 source: "https://www.instagram.com/p/DeDW_MbGMKc/"
