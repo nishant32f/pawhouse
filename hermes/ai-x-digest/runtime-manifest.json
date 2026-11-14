@@ -22,15 +22,15 @@
   ],
   "sha256": {
     "skills/note-taking/obsidian/scripts/story_identity.py": "6672bbfd329798ff05f446bdcb20d17b40735a12fc88d9eb22a786b2d8205fff",
-    "skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py": "9a70b4a131ad6fd457f988ab2fd511264b58ffb33d7d5f892890e72d0c2ac152",
-    "skills/note-taking/ai-x-digest/SKILL.md": "cc0834e9929a5a23ab5e1beeb91d77e2aa0c0d0a0b84d58477568f4e9294d899",
+    "skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py": "a941ec83cd3e2681fb6490635554f19293993aeb9f76e44d72ad7471db36b70f",
+    "skills/note-taking/ai-x-digest/SKILL.md": "65d0c34682800c4b0c713dbec0dc619be5e8d91b61aaddc0a92cfebeb3729de4",
     "skills/note-taking/unslop/SKILL.md": "59932955e3e7a8a171969310d6b27a3fa3cc6abacf2a049dd08366738c337138",
-    "skills/note-taking/obsidian/SKILL.md": "d33b55dbc25d62fbc981866539c490ec1721f8a008971ab7538bdcf87bcedd16",
+    "skills/note-taking/obsidian/SKILL.md": "98025b521c87649f398d0fdfc89aead8e9e550188364f63a05bd5672c7f870aa",
     "skills/note-taking/obsidian/references/digest-normalization.md": "f9bc8f4c82b07c79770a845dd8615f20d903d1cd5efe2998fe9adf39c3f89080",
-    "skills/note-taking/obsidian/references/digest-output.md": "7fdbb5b625dc49fd4d623d0074f5baa55464cc8dfa8bb4db1d2b60ec4eafd575",
+    "skills/note-taking/obsidian/references/digest-output.md": "a2fd7f49decad2be7df76e20e751dd110bbe925e9d7bf1dd3b0760efc339bb45",
     "skills/note-taking/obsidian/references/vault-operating-map.md": "488a2f1352843be5c830cf50e334fed9076efda7e96ebdb5408360a8c4861a68",
     "skills/note-taking/obsidian/references/vault-cleanup-and-republish.md": "b2d4bc5143ce358ba767500a5bf6b94cc3b51e46a1350eb7d659bd445768f351",
     "skills/note-taking/obsidian/references/initial-vault-porting.md": "82198702619e8836757009383a12308dd2a69e61a3771774a78cdac38832ab43",
-    "skills/note-taking/ai-x-digest/references/digest-index-hierarchy.md": "5fbe006892205b73022c0c2c8de6a981033ea514b95e97bbe8d4f7df036327b8"
+    "skills/note-taking/ai-x-digest/references/digest-index-hierarchy.md": "1e1afcfd8814c86085ffa7086a394cf45f2bf899649d70960183a924e012fbd1"
   }
 }

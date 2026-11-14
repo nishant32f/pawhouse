@@ -37,10 +37,40 @@ class ProducerContractTest(unittest.TestCase):
         self.assertNotIn("public/digests/", text)
         self.assertNotIn("release-daily-from-pluto.py", text)
         self.assertIn("last seven published accepted editions", text)
-        self.assertIn("reader-release.json", text)
+        self.assertIn("READY.json", text)
         self.assertIn("140 to 200", text)
         self.assertIn("70 to 120", text)
         self.assertIn("25 to 45", text)
+
+    def test_curator_stages_and_never_publishes_or_sends(self):
+        names = (
+            "cron-prompt.md",
+            "runtime/skills/note-taking/ai-x-digest/SKILL.md",
+            "runtime/skills/note-taking/obsidian/references/digest-output.md",
+        )
+        for name in names:
+            text = (PACKAGE / name).read_text()
+            with self.subTest(name=name):
+                for retired in (
+                    "publish-from-vault.sh",
+                    "daily-history.py",
+                    "daily-release.py",
+                    "delivery-begin",
+                    "BIRD_",
+                    "/Users/skypawalker/",
+                ):
+                    self.assertNotIn(retired, text)
+                self.assertIn("/outbox/digest-staging/", text)
+                self.assertIn("/vault-mirror/digests/", text)
+        for name in names[:2]:
+            text = (PACKAGE / name).read_text()
+            with self.subTest(name=name):
+                self.assertIn("READY.json", text)
+                self.assertIn("home_timeline", text)
+                self.assertIn(
+                    "/root/.hermes/external_skills/0/note-taking/obsidian/scripts/verify-x-ai-digest-format.py",
+                    text,
+                )
 
 
 if __name__ == "__main__":
