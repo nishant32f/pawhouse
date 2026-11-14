@@ -67,7 +67,7 @@ ul.tags {
 a.internal.tag-link {
   border-radius: 0;
   background: transparent;
-  color: var(--gray);
+  color: var(--secondary);
   font-family: var(--codeFont);
   font-size: 0.8rem;
   padding: 0;
@@ -79,7 +79,7 @@ a.internal.tag-link {
 
   &:hover {
     background: transparent;
-    color: var(--dark);
+    color: var(--tertiary);
     text-decoration: underline;
   }
 }
