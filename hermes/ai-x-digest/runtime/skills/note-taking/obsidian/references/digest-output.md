@@ -2,7 +2,7 @@
 
 Convention for this user:
 
-- The digest runs in Hermes's `digest` profile sandbox. It reads accepted digests from the read-only mirror `/vault-mirror/digests/` and writes only `/outbox/digest-staging/YYYY-MM-DD/`.
+- The digest runs in Hermes's `digest` profile sandbox. It reads accepted digests from the read-only mirror `/vault-mirror/digests/`, takes the Telegram snippet from `/vault-mirror/public/`, and writes only `/outbox/digest-staging/YYYY-MM-DD/`.
 - Vault digest folder: `digests/`. Only the publisher job on Nishant's Mac writes it.
 - Daily X-AI digest filename pattern: `x-ai-YYYY-MM-DD.md`
 - Year digest parent index: `digests/x-ai-YYYY.md` (for example `x-ai-2026.md`; title/H1 stay `X-AI 2026`)

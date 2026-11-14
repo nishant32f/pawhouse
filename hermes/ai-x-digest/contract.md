@@ -158,7 +158,7 @@ The private vault root is the absolute `vaultRoot` in the private backend config
 
 ## Hermes curator staging
 
-Hermes curates the scheduled edition in its `digest` profile, in a VM sandbox with no secrets, no R2 key and no Pawhouse checkout. It reads accepted editions and indexes from a read-only mirror of the vault's `digests/` at `/vault-mirror/digests/`. It writes only `/outbox/digest-staging/D/` for edition date `D`. It runs no Pawhouse command and writes no request.
+Hermes curates the scheduled edition in its `digest` profile, in a VM sandbox with no secrets, no R2 key and no Pawhouse checkout. It reads accepted editions and indexes from a read-only mirror of the vault's `digests/` at `/vault-mirror/digests/`. It reads the published notes from a read-only mirror of `public/` at `/vault-mirror/public/`, for the Telegram snippet only. It writes only `/outbox/digest-staging/D/` for edition date `D`. It runs no Pawhouse command and writes no request.
 
 | Path in `/outbox/digest-staging/D/`           | Content                                                                                                |
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------------ |

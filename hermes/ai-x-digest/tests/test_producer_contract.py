@@ -67,6 +67,8 @@ class ProducerContractTest(unittest.TestCase):
             with self.subTest(name=name):
                 self.assertIn("READY.json", text)
                 self.assertIn("home_timeline", text)
+                self.assertIn("/vault-mirror/public/", text)
+                self.assertNotIn("https://nishantkhurana.me", text)
                 self.assertIn(
                     "/root/.hermes/external_skills/0/note-taking/obsidian/scripts/verify-x-ai-digest-format.py",
                     text,

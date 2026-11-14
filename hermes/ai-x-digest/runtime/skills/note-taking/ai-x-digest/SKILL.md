@@ -14,6 +14,7 @@ The digest runs in Hermes's `digest` profile, in a sandbox with no secrets. This
 ## Paths and dates
 
 - Accepted editions and indexes, read only: `/vault-mirror/digests/`. This is a copy of the vault's `digests/`, refreshed every 5 minutes.
+- Published public notes, read only: `/vault-mirror/public/`. This is a copy of the vault's `public/`, refreshed every 5 minutes. Use it only for the Telegram snippet.
 - Staging folder for edition date `D`: `/outbox/digest-staging/D/`. This is the only folder you can write outside `/workspace/`.
 - Edition file: `x-ai-YYYY-MM-DD.md`. Monthly index: `x-ai-YYYY-MM.md`. Year index: `x-ai-YYYY.md`.
 - Reader: `https://daily.nishantkhurana.me/editions/YYYY-MM-DD/`.
@@ -255,7 +256,7 @@ Hermes job `ai-x-digest` in the `digest` profile runs at 08:00 Asia/Kolkata with
 
 Your final answer is not sent to Telegram. Return one short status line for the job log: staged, already staged, no news, or the collection error. Never send a Telegram message, run a delivery command or write a status file.
 
-For a normal edition, write `telegram.txt`. Use the custom-domain digest URL `https://daily.nishantkhurana.me/editions/D/` exactly once and one real snippet from a public note. Public notes are not in the mirror, so read the snippet from a page on `https://nishantkhurana.me` in this run. Keep it to 2 to 5 short lines and under 1,000 characters. Include no changelog, build details, verification notes or editorial review notes. Do not fabricate a quote.
+For a normal edition, write `telegram.txt`. Use the custom-domain digest URL `https://daily.nishantkhurana.me/editions/D/` exactly once and one real snippet from a public note. Take the snippet from a note under `/vault-mirror/public/`, the read-only copy of the notes already published on the website. Prefer the notes that replaced the old wisdom library, in `notes/` and `readings/`. Copy the words exactly from the note. Do not fetch the website for the snippet. Keep it to 2 to 5 short lines and under 1,000 characters. Include no changelog, build details, verification notes or editorial review notes. Do not fabricate a quote.
 
 The job on the Mac checks the text's length and URL. It writes the text to a status file only after reader verification passes. Hermes's `main` profile then sends it once. A failed publication sends nothing.
 
