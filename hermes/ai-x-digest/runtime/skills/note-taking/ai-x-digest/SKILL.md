@@ -224,7 +224,7 @@ For the normal scheduled run, keep the existing short Telegram delivery. Before 
 
 Hermes sends scheduled auto-delivery after the agent returns. Returning text does not prove Telegram delivery. Do not mark the receipt complete yourself from generated output. A later confirmed Hermes delivery receipt can support `delivery-complete --request REQUEST --reference DELIVERY_ID`. If the outcome is ambiguous, preserve `deliverypending` and require an operator to resolve it through `delivery-resolve` using actual evidence. Do not send a separate Telegram message from this workflow.
 
-Use the custom-domain digest URL and one real snippet from public wisdom. Keep it to 2 to 5 short lines. Include no build details or editorial review notes. Do not fabricate a quote or send a duplicate notification during an operator's private generation check.
+Use the custom-domain digest URL and one real snippet from a public note. Keep it to 2 to 5 short lines. Include no build details or editorial review notes. Do not fabricate a quote or send a duplicate notification during an operator's private generation check.
 
 For missed-day repair, inspect the actual date file and schedule first. Generate privately and use an operator backfill or correction request. These requests never initiate scheduled delivery. Report a collection or publish failure truthfully. Do not rerun the whole job merely to obtain an `ok` status or resend a message.
 

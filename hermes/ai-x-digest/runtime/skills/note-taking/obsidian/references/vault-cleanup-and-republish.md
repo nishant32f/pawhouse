@@ -5,7 +5,7 @@ Use this reference when Nishant has renamed Obsidian public files/folders, asks 
 ## Canonical public shape
 
 - Hosted content root: `/Users/skypawalker/Dropbox/Obsidian/public`
-- Public top-level areas: `summaries/`, `wisdom/`, plus `index.md`. Bookmarks belong only in private Karakeep
+- Public top-level areas: `notes/`, `maps/`, `readings/`, `practices/`, `prompts/`, plus `index.md` and `about.md`. Summaries live in the private `<vault>/sources/` folder. Bookmarks belong only in private Karakeep
 - Public filenames and folders are lowercase kebab-case.
 - Human-facing `title:` values and H1 headings may remain readable Title Case / `X-AI ...` casing.
 - `obsidian-value-map.md` is obsolete; use `public/index.md` and `[[index|Mindscape]]` as the home/value-map backlink target.
@@ -38,7 +38,7 @@ python /Users/skypawalker/.hermes/skills/note-taking/obsidian/scripts/verify-x-a
 ```
 
 8. Verify the graph summary and spot-check key edge families when relevant. For digest rename work, confirm `NEXT_DIGEST` and `INDEXED_BY_MONTH` edges are nonzero in `.graphify/graph.json`.
-9. Publish ordinary public notes through Pawhouse from `/Users/skypawalker/Dev/pawhouse`:
+9. Publish ordinary public notes through Pawhouse from the `main` branch of `/Users/skypawalker/Dev/pawhouse`:
 
 ```bash
 npm run publish -- "Update notes"
