@@ -52,46 +52,32 @@ For this user's generated digests, stage accepted notes privately and use the sh
 
 For accepted historical digests, preserve exact bytes, aliases, prose and the canonical digest indexes (`digests/x-ai-YYYY.md` year parent plus `digests/x-ai-YYYY-MM.md` monthly indexes), and verify backlinks. See `references/digest-normalization.md`. New editions use `digest_format: editorial-v2` after the staged producer rollout and the `ai-x-digest` plus `unslop` skills; do not impose the archive's duplicate H1 or mandatory takeaways on them. Do not rewrite archives during a normal daily run.
 
-For this user's current vault operating map, see `references/vault-operating-map.md`: hosted public areas are `public/wisdom/` and `public/summaries/`; accepted digests are private under `digests/`; private/runtime state such as `.graphify/` stays outside `public/`. Bookmarks belong only in private Karakeep via `bookmark-capture` and `karakeep`, and only on an explicit save/bookmark request. A bare link in another workflow is context; if he explicitly asks to summarize a URL/image/file, use `summarize-to-obsidian` and save under `public/summaries/`. For rename/cleanup passes after Nishant reorganizes files, use `references/vault-cleanup-and-republish.md`.
+For this user's current vault operating map, see `references/vault-operating-map.md`: hosted public areas are `public/notes/`, `public/maps/`, `public/readings/`, `public/practices/` and `public/prompts/`; accepted digests are private under `digests/`; summaries are private under `sources/`; private/runtime state such as `.graphify/` stays outside `public/`. Bookmarks belong only in private Karakeep via `bookmark-capture` and `karakeep`, and only on an explicit save/bookmark request. A bare link in another workflow is context; if he explicitly asks to summarize a URL/image/file, use `summarize-to-obsidian` and save under `sources/`. For rename/cleanup passes after Nishant reorganizes files, use `references/vault-cleanup-and-republish.md`.
 
-For the historical initial migration record, see `references/initial-vault-porting.md`: one-time port legacy digests from `~/Dev/digest/`, use `~/Dev/dg-gatsby/content/garden/` TOC files to structure `public/wisdom/`, treat files outside those TOCs as context about Nishant, and verify digests/linkages/Graphify/Pawhouse after changes.
+For the historical initial migration record, see `references/initial-vault-porting.md`. Its `public/wisdom/` layout is retired; do not use it to restructure `public/`.
 
-For this user's vault graph setup, Graphify outputs live under `.graphify/` in the vault and the dashboard note is private at `/Users/skypawalker/Dropbox/Obsidian/Graphify Vault Dashboard.md` (outside `public/`). Rebuild with `/Users/skypawalker/.hermes/scripts/graphify-obsidian/rebuild-vault-graph.sh` or consult the `graphify` skill's `references/obsidian-vaults.md`.
+For this user's vault graph setup, Graphify outputs live under `.graphify/` in the vault and the dashboard note is private at `/Users/skypawalker/Dropbox/Obsidian/graphify-vault-dashboard.md` (outside `public/`). Rebuild with `/Users/skypawalker/.hermes/scripts/graphify-obsidian/rebuild-vault-graph.sh` or consult the `graphify` skill's `references/obsidian-vaults.md`.
 
-For Pawhouse/Quartz public assets and homepage images, see `references/pawhouse-quartz-assets.md`: place assets in `/Users/skypawalker/Dropbox/Obsidian/public/`, use relative links from notes, and prefer raw `<img width="..." />` for sized images because Markdown image attribute syntax can render literally in this Quartz setup. Daily digest visuals instead follow `ai-x-digest` and its `story_metadata` contract. Do not copy assets or emit raw image HTML for that workflow.
+For Pawhouse/Quartz public assets and homepage images, place assets in `/Users/skypawalker/Dropbox/Obsidian/public/`, use relative links from notes, and prefer raw `<img width="..." />` for sized images because Markdown image attribute syntax can render literally in this Quartz setup. Daily digest visuals instead follow `ai-x-digest` and its `story_metadata` contract. Do not copy assets or emit raw image HTML for that workflow.
 
-For Pawhouse site-level Quartz configuration changes (analytics/gtag, site metadata, layout, deploy verification), see `references/pawhouse-quartz-site-config.md`: edit source config such as `quartz.config.ts`, build locally, publish with `npm run publish -- "..."` when the request implies live-site change, watch GitHub Pages, and verify the live asset. Do not hand-edit generated `public/` files or bulk-format existing content as part of unrelated config work.
+For Pawhouse site-level Quartz configuration changes (analytics/gtag, site metadata, layout, deploy verification), edit source config such as `quartz.config.ts`, build locally, publish with `npm run publish -- "..."` when the request implies live-site change, watch GitHub Pages, and verify the live asset. Do not hand-edit generated `public/` files or bulk-format existing content as part of unrelated config work.
 
-For Pawhouse 404/bad-URL cleanup, see `references/pawhouse-link-health.md`: do not claim links are fixed from a successful build or one sampled URL. Run the generated-site internal crawl, distinguish internal links from external URLs, fix `baseUrl`, path-qualify resolvable wikilinks, unlink genuinely missing internal targets or add the missing asset, then publish and verify live routes.
+For Pawhouse 404/bad-URL cleanup, do not claim links are fixed from a successful build or one sampled URL. Run the generated-site internal crawl, distinguish internal links from external URLs, fix `baseUrl`, path-qualify resolvable wikilinks, unlink genuinely missing internal targets or add the missing asset, then publish and verify live routes.
 
-## Wisdom linkage audits
+## Link audits
 
-When asked to scan the user's `public/wisdom/` folder for missing Obsidian linkages, run a conservative report-only audit before editing notes. Use the bundled helper:
-
-```bash
-python /Users/skypawalker/.hermes/skills/note-taking/obsidian/scripts/wisdom-linkage-scan.py /Users/skypawalker/Dropbox/Obsidian
-```
-
-It writes `<vault>/.graphify/wisdom-linkage-scan.md` and reports unresolved/broken wikilinks, notes with no inbound/outbound wisdom links, fully isolated wisdom notes, exact-title mentions that are not linked, related-section entries that are not linked, and conservative Graphify-backed structural candidates. It resolves links by path stem, frontmatter title, aliases, and slugified title because Nishant's current public wisdom convention is lowercase kebab-case filenames with readable title/H1 wikilinks. Treat remaining unresolved links as genuinely missing or intentionally pruned concept notes unless the user asks for repair.
+When asked to check links in `public/`, report before editing. List broken `[[...]]` links, notes that no map lists, and idea notes without a `Map:` line. Resolve links by filename, which is lowercase kebab-case and unique across the vault.
 
 For a requested repair pass:
 
-- Backup touched wisdom notes under `<vault>/.graphify/backups/<repair-run>/` before modifying them.
-- First canonicalize old imported long-title wikilinks to existing note names, preserving display aliases only when useful, e.g. `[[Curse of Competence - Paradox of Choice]]` -> `[[Curse of Competence]]` and `[[How to Find Out What You're Really Made Of]]` -> `[[What Youre Made Of|How to Find Out What You're Really Made Of]]`.
-- Path-qualified wikilinks such as `[[wisdom/deep/Index]]` are valid; do not treat them as broken. Bare duplicate names such as `[[Index]]` should be path-qualified because many wisdom subfolders have `Index.md`.
-- If two notes share the same stem, rename or path-qualify to remove ambiguity. In Nishant's vault, the life-lessons duplicate was renamed to `wisdom/life-lessons/Self-Belief vs Action - Life Lessons.md`, while `wisdom/modern-wisdom/Self-Belief vs Action.md` remains canonical for the shorter modern-wisdom note.
-- If a missing wikilink names a real concept with no file, create a small bridge note rather than self-linking. Example: `wisdom/deep/Ordinary Life Wisdom.md` resolves the imported `[[Ordinary Life Wisdom]]` link and points back to `[[Appreciate Everything]]`.
-- After edits, rerun the scan helper and rebuild Graphify with `/Users/skypawalker/.hermes/scripts/graphify-obsidian/rebuild-vault-graph.sh`. A successful repair should drive unresolved wisdom wikilinks to zero and keep fully isolated wisdom notes at zero.
+- Back up touched notes under `<vault>/.graphify/backups/<repair-run>/` before modifying them.
+- Point each broken link at the existing note it meant. Remove the link when no such note exists.
+- Do not link from `public/` to `sources/`, which Quartz does not publish.
+- After edits, rebuild Graphify with `/Users/skypawalker/.hermes/scripts/graphify-obsidian/rebuild-vault-graph.sh`, run a Quartz build from Pawhouse, and confirm the output has no `internal broken` links.
 
-## Wisdom term-derived concept map
+## Graphify concept maps
 
-When the user says wisdom relations are too dependent on `Related Notes` / imported related-article metadata, build a second linkage layer from the actual note body text:
-
-1. Parse wisdom notes while excluding frontmatter, existing wikilinks, imported provenance, and sections named `Related Notes`, `Related Concepts`, `Similar Notes`, `Wisdom linkage repair`, or `Graphify suggested links`.
-2. Use curated concept vocabularies/patterns for recurring wisdom themes such as Action and Agency, Ambition and Expectations, Boundaries and Communication, Discipline and Consistency, Focus and Attention, Happiness and Fulfillment, Leadership and Startups, Learning and Advice, Mental Health and Self-Awareness, Relationships and Love, Resilience and Adversity, Self-Belief and Confidence, Self-Worth and Validation, Strategy and Decision-Making, Gratitude and Presence, Wealth and Business, AI Prompting and Tools, and Technology and Systems.
-3. Do not create Graphify-derived concept notes, Wisdom Concept Map files, or managed term-concept blocks inside `public/`. Nishant wants public to remain only `summaries` and curated `wisdom` notes; Graphify concepts/files must stay private outside `public/` (for example under `<vault>/.graphify/` or a private non-hosted vault path).
-4. If a term-derived concept map is requested, produce it as a private report under `<vault>/.graphify/` unless Nishant explicitly asks to publish it.
-5. Backup touched files under `<vault>/.graphify/backups/<run>/`, write a run report under `.graphify/`, rerun the wisdom linkage scan helper, and rebuild Graphify. The goal is to use Graphify as a private map/backbone without leaking generated concept artifacts into hosted content.
+Do not create Graphify-derived concept notes, concept-map files, or managed concept blocks inside `public/`. The hand-edited maps in `public/maps/` are the public theme index. If Nishant asks for a term-derived concept map, write it as a private report under `<vault>/.graphify/` unless he explicitly asks to publish it. Back up touched files under `<vault>/.graphify/backups/<run>/`, write a run report under `.graphify/`, and rebuild Graphify.
 
 ## Append to a note
 
