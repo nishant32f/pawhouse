@@ -23,8 +23,6 @@ Hermes owns research, curation, factual checks and a separate unslop rewrite. Th
 - `.github/workflows/deploy.yml` builds and deploys the site to GitHub Pages from `main`.
 - `public/` is generated build output and should not be edited directly.
 
-The source Obsidian vault publish folder is expected at `/Users/skypawalker/Dropbox/Obsidian/public`.
-
 ## Build, Test, and Development Commands
 
 - `mise x node@22.16.0 -- npm ci`: install dependencies with the Node version Quartz expects.
@@ -37,7 +35,7 @@ The source Obsidian vault publish folder is expected at `/Users/skypawalker/Drop
 
 ## Coding Style & Naming Conventions
 
-Use the existing Quartz TypeScript style. Keep two-space indentation, ES modules, and descriptive camelCase names for variables/functions. Markdown files may use human-readable Obsidian titles with spaces, for example `content/wisdom/tech/Linux.md`.
+Use the existing Quartz TypeScript style. Keep two-space indentation, ES modules, and descriptive camelCase names for variables/functions.
 
 Format changed files only. Avoid bulk-formatting unrelated notes or editing generated `public/` files.
 
@@ -78,7 +76,7 @@ The publish script runs `rsync --delete` for ordinary notes, excluding root `pub
 
 ## Daily publishing and operations
 
-R2 and the Hermes cutover are live as of 16 October 2026, through PR #19. Digests use private vault Markdown and the R2 publisher described in `hermes/ai-x-digest/rollout.md`.
+Digests use private vault Markdown and the R2 publisher described in `hermes/ai-x-digest/rollout.md`.
 
 1. Read `python3 scripts/daily-history.py published` for the selected publication, expected head/ETag and last seven published editions.
 2. Follow the editorial contract, stage and accept the exact candidate privately, then use `./scripts/publish-from-vault.sh --digest PRIVATE_REQUEST.json`.
@@ -88,8 +86,8 @@ Normal digest publication makes no Git content commit, push, Quartz build or Wor
 
 Private backend and receipts live in `~/.local/state/pawhouse-publication/`. Credentials live in mode-0600 files under `~/.config/pawhouse-daily/`; never print or commit their values. The R2 publisher credential is restricted to objects in `pawhouse-daily-content`. Read current revisions from private receipts, not a hard-coded document snapshot. Ordinary sync must neither import public digests nor delete any existing legacy destination digests. `content/digests/` is retired and Quartz ignores `digests/**`. Do not restore digest files, navigation, tags or feed entries to the notes website.
 
-The user selected a direct personal-app cutover on 16 October 2026. Do not install legacy redirects or create a temporary preview app. Old main-site digest URLs may stop working, and downtime is acceptable. This supersedes the original plan's redirect and isolated-preview gates.
+Do not install legacy redirects or create a temporary preview app. Old main-site digest URLs may stop working, and downtime is acceptable.
 
-The archive, newspaper, RSS and website removal passed live verification. The public-vault homepage and About edits are applied. Preserve accepted sources and backups. Job `4eb8e806b8bc` stays at 08:00 IST with inherited model/provider and Telegram delivery. Installation does not prove a future scheduled run or delivery. Never rerun the job or send a canary to check documentation changes.
+Preserve accepted sources and backups. Job `4eb8e806b8bc` stays at 08:00 IST with inherited model/provider and Telegram delivery. Installation does not prove a future scheduled run or delivery. Never rerun the job or send a canary to check documentation changes.
 
-The redirect CLI is unused in this rollout. It must not create lists, rules or tokens without a new explicit request for redirects.
+The redirect CLI, `scripts/daily-redirects.py`, is unused. It must not create lists, rules or tokens without a new explicit request for redirects.
