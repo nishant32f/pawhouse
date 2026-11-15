@@ -1,22 +1,25 @@
 ---
 name: ai-x-digest
 description: Generate Nishant's daily X-AI digest with selected stories, adjacent sources, and a required unslop editing pass.
-platforms: [macos]
-related_skills: [unslop, obsidian, bird, obsidian-knowledge-pipeline]
+platforms: [macos, linux]
+related_skills: [unslop, obsidian, obsidian-knowledge-pipeline]
 ---
 
 # X-AI digest
 
-Use this skill to generate or repair the daily AI digest. The editorial-v2/R2 producer is active on Pluto. New editions use `digest_format: editorial-v2`. The private daily Markdown supplies the independent R2 reader. The installed producer uses the verified daily reader after the authorized domain cutover.
+Use this skill to curate the daily AI digest. New editions use `digest_format: editorial-v2`. The private daily Markdown supplies the independent R2 reader.
+
+The digest runs in Hermes's `digest` profile, in a sandbox with no secrets. This skill collects, drafts, edits, reviews and stages one edition. A job on Nishant's Mac, owned by skyw-selfhost, publishes it. That job builds the R2 request, runs Pawhouse's publisher and reader verification, and writes the status that Hermes's `main` profile sends to Telegram. This skill never publishes, writes a request or sends a message.
 
 ## Paths and dates
 
-- Vault: `/Users/skypawalker/Dropbox/Obsidian`.
-- Published note: `digests/x-ai-YYYY-MM-DD.md` relative to the vault.
+- Accepted editions and indexes, read only: `/vault-mirror/digests/`. This is a copy of the vault's `digests/`, refreshed every 5 minutes.
+- Published public notes, read only: `/vault-mirror/public/`. This is a copy of the vault's `public/`, refreshed every 5 minutes. Use it only for the Telegram snippet.
+- Staging folder for edition date `D`: `/outbox/digest-staging/D/`. This is the only folder you can write outside `/workspace/`.
+- Edition file: `x-ai-YYYY-MM-DD.md`. Monthly index: `x-ai-YYYY-MM.md`. Year index: `x-ai-YYYY.md`.
 - Reader: `https://daily.nishantkhurana.me/editions/YYYY-MM-DD/`.
-- Monthly index: `digests/x-ai-YYYY-MM.md`.
-- Year index: `digests/x-ai-YYYY.md`.
-- Private source data, drafts, reviews, and backups: `/Users/skypawalker/.hermes/state/ai-x-digest/<date-and-run>/`. These never belong in the authored digests folder or the Git repository.
+- Installed skills: `/root/.hermes/external_skills/0/`. The verifier is `/root/.hermes/external_skills/0/note-taking/obsidian/scripts/verify-x-ai-digest-format.py`.
+- Private source data, drafts and run records: `/workspace/ai-x-digest/<date-and-run>/`. These never belong in the staging `files/` folder.
 
 Derive the date in `Asia/Kolkata`. Keep daily filenames and existing URLs unchanged. Do not rewrite historical editions during a normal daily run. For one-time historical imports, use the Obsidian skill's `references/digest-normalization.md`; its old takeaway and H1 rules apply only to unversioned archives.
 
@@ -29,14 +32,22 @@ Discovery must cover four sources before selection. A small X timeline sample al
 3. Builder reports. Use X and the current Hacker News front page for launches, technical reports and measured workflow changes. Follow links to original evidence.
 4. Research. Check current papers and research discussions. Read the selected paper's abstract, relevant method and results, or the original research essay.
 
-Use available web/search tools and the `bird` skill. Take modest structured JSON samples, with separate searches for releases, repositories, builder reports and research. Map host credentials without printing them:
+Use available web/search tools and the `bird` MCP tool for X. The tool runs outside the sandbox and holds the X login, so no X credential reaches your commands. It has three read calls, each returning structured JSON. Hermes names them `mcp__bird__<call>`.
 
-```bash
-AUTH_TOKEN="$BIRD_AUTH_TOKEN" CT0="$BIRD_CT0" bird --plain --no-color home -n 50 --json
-AUTH_TOKEN="$BIRD_AUTH_TOKEN" CT0="$BIRD_CT0" bird --plain --no-color search "AI release OR model launch OR inference" -n 20 --json
-AUTH_TOKEN="$BIRD_AUTH_TOKEN" CT0="$BIRD_CT0" bird --plain --no-color search "AI github OR open source agent OR reverse engineering" -n 20 --json
-AUTH_TOKEN="$BIRD_AUTH_TOKEN" CT0="$BIRD_CT0" bird --plain --no-color search "AI paper OR benchmark OR interpretability" -n 20 --json
-```
+| Call            | Arguments                        | Result                     |
+| --------------- | -------------------------------- | -------------------------- |
+| `home_timeline` | `count`, 1 to 50                 | Nishant's home timeline    |
+| `search`        | `query`, and `count` 1 to 50     | Posts that match the query |
+| `post`          | `post_id`, the post's numeric ID | One post                   |
+
+Take modest samples, with separate searches for releases, repositories, builder reports and research:
+
+1. `home_timeline` with `count` 50.
+2. `search` with `query` `AI release OR model launch OR inference` and `count` 20.
+3. `search` with `query` `AI github OR open source agent OR reverse engineering` and `count` 20.
+4. `search` with `query` `AI paper OR benchmark OR interpretability` and `count` 20.
+
+There is no `bird` command line in the sandbox and no X bookmarks call. The tool refuses an empty query and a query that starts with `-`.
 
 These are starting queries. Follow promising projects and use narrower searches when broad results repeat. Do not treat one company's feed as the whole field.
 
@@ -46,7 +57,7 @@ Read original posts and primary documents for selected claims. Save source text,
 
 Keep private `collection.json` with the window, queries or checked URLs, retrieval times, category status, candidate counts and snapshot paths. Keep private `selection.json` with persistent IDs, event dates, novelty against recent editions, primary URLs, and inclusion or rejection reasons. If a category remains unavailable, record that limitation. Do not claim complete coverage or put collection logs in public prose.
 
-Karakeep is the only saved-bookmark library. Use it for optional background research. Never mirror bookmarks into Obsidian or fill an edition from a recurring saved-post backlog.
+Karakeep is the only saved-bookmark library. Use it for optional background research through the read-only `karakeep` MCP tool, named `mcp__karakeep__<call>`: `recent_bookmarks(limit)`, `bookmark(bookmark_id)`, `bookmark_text(bookmark_id, max_chars)`, `lists()` and `list_bookmarks(list_id, limit)`. Never mirror bookmarks into Obsidian or fill an edition from a recurring saved-post backlog.
 
 Select stories for Nishant as a CTO and builder:
 
@@ -56,7 +67,7 @@ Select stories for Nishant as a CTO and builder:
 4. Include useful repositories and builder tools alongside model releases and research. Engagement helps discovery, but it does not establish quality. A single star count cannot prove growth or that a repository went viral.
 5. Combine posts about one event. A popular reply is not another story. Check named repositories directly and include their links when relevant.
 6. Keep concrete launches eligible even when their announcement uses promotional language. Strip the marketing and verify the product. Reject empty promotion, unsupported forecasts, repeated themes and financial chatter without a useful consequence.
-7. If collection succeeds but nothing merits publication, save a private no-news note. Leave public editions and indexes untouched. Do not invent news to satisfy a count.
+7. If collection succeeds but nothing merits publication, stage the no-news outcome described under "Validate and stage". Stage no edition or index. Do not invent news to satisfy a count.
 
 ## Write the first draft
 
@@ -135,7 +146,7 @@ story_metadata:
       source_url: https://x.com/nutlope/status/2110385721391366263
 ```
 
-The canonical schema is `/Users/skypawalker/Dev/pawhouse/hermes/ai-x-digest/contract.md`. The publisher uses the reader's AST validator for this metadata. The Python editorial checker alone does not validate visual data. Do not add another renderer or validator to Hermes.
+The canonical schema is `hermes/ai-x-digest/contract.md` in the Pawhouse repository. The sandbox has no Pawhouse checkout, so follow the schema in this section. The publisher uses the reader's AST validator for this metadata. The Python editorial checker alone does not validate visual data. Do not add another renderer or validator to Hermes.
 
 ## Persistent story identity
 
@@ -145,7 +156,7 @@ For an existing v2 edition, read its accepted IDs before editing. Headlines and 
 
 A removed story stays under `## Archived stories` as an H3 with its original ID. Put a `Correction: ` paragraph first, then retain its complete original prose and sources. Archived stories keep their article routes. They do not enter active navigation or edition RSS content. Keep one RSS item per actual edition.
 
-Use the canonical `story_identity.py` beside the installed verifier to parse candidates and compare revisions. The shared publisher also validates identity under its lock. Do not copy or reimplement the identity parser. Leave legacy and editorial-v1 history unchanged. Do not infer historical story routes.
+Use the canonical `story_identity.py` beside the installed verifier, in `/root/.hermes/external_skills/0/note-taking/obsidian/scripts/`, to parse candidates and compare revisions. The shared publisher also validates identity under its lock. Do not copy or reimplement the identity parser. Leave legacy and editorial-v1 history unchanged. Do not infer historical story routes.
 
 ## Markdown contract
 
@@ -204,28 +215,51 @@ Source: [Named source](https://example.com/brief).
 
 The first H2 is the lead. Further story H2s are supporting stories. Omit `In brief` entirely when there are no briefs. It may contain 1 to 6 H3 items. If needed, put `Archived stories` after `In brief` and before the final sections. Its H3 records require IDs and corrections. The final two H2 sections must be `Navigation`, then `Backlinks`. Add relevant existing note backlinks only when the relationship is useful; do not invent topic notes or indexes.
 
-## Validate and publish
+## Validate and stage
 
-1. Keep the first draft, edited edition, source snapshots, `review.md`, and accepted request under the private run directory. The edited edition is the accepted candidate only after the separate unslop rewrite and source comparison. Record its exact SHA-256 hash in the review. Reuse these exact bytes and the same request on a publication retry.
-2. Stage the edited edition at `<run>/staged/digests/x-ai-YYYY-MM-DD.md`. Stage affected month/year indexes and the immediately previous daily note privately too. Preserve index content and chronology. Change only the previous note's `Next` link. Never copy candidates into the live vault or repository yourself.
-3. Run the installed verifier against `<run>/staged`. Resolve errors and review length warnings without padding. Compare any existing identified edition with the candidate through `story_identity.validate_revision`. Inspect the before/after/source comparison in `review.md` before accepting the candidate.
-4. From `/Users/skypawalker/Dev/pawhouse`, run `python3 scripts/daily-history.py published`. This reads the last seven published accepted editions from the selected manifest and their accepted source hashes. Pending candidates and Git content are not novelty history. Follow `hermes/ai-x-digest/contract.md` for the version 2 R2 request. Use `schemaVersion: 2`, `backend: r2`, `kind: scheduled` for the normal job, `date`, full current `compilerRevision`, and `expected` containing the selected `manifestSha256` and opaque `etag`. Each filename in `files` contains absolute private `staged`, `beforeSha256`, and `stagedSha256`.
-5. Run `./scripts/publish-from-vault.sh --digest <run>/request.json`. Humans and Hermes share this publisher and common lock. It checks base hashes, editorial format, stable IDs, and the content AST. It promotes only accepted private sources, verifies immutable objects, and conditionally publishes the R2 head. It performs no content Git commit, push, Worker deployment or broad note publication. Keep the exact request on retries.
-6. Keep the receipt private. Read the approved reader `codeRevision` from the private publication state's `reader-release.json`, captured by the last verified code release. Use `PUBLISH_STATE_DIR` when configured; its default is `~/.local/state/pawhouse-publication`. Stop if that recorded code revision is absent. Do not substitute `compilerRevision`, Git HEAD or the endpoint's self-reported revision. Pass the recorded value explicitly as `--code-revision`. Run `python3 scripts/daily-release.py verify --origin https://daily.nishantkhurana.me --code-revision FULL_CODE_SHA --request <run>/request.json` on Pluto. Verify the frozen accepted generation and actual prose, routes and complete RSS. A verification failure stays `published` with `verificationError`, blocks delivery, and resumes the same publication. Success reaches `readerverified`. Normal content publication does not change code Git HEAD or Worker version. The code deployment wrapper is only for an authorized code release.
-7. Preserve the raw sources, first draft, edited candidate, review, request, and receipts privately. The private vault remains the single authored source, one Markdown file per date. Do not create public story files, source snapshots, review notes, or another content formatter. Keep Graphify state private and bookmarks only in Karakeep.
+The staging folder for edition date `D` is `/outbox/digest-staging/D/`. A job on Nishant's Mac copies it only after `READY.json` appears.
 
-A successful collection with no publishable story stops before staging or publishing. Write only the private no-news record. It creates no public file, route, feed item, or delivery URL. A collection failure remains an error.
+| Path in the folder                            | Content                                                     |
+| --------------------------------------------- | ----------------------------------------------------------- |
+| `files/x-ai-D.md`                             | The accepted, unslop-edited edition                         |
+| `files/x-ai-YYYY-MM.md`, `files/x-ai-YYYY.md` | The month and year indexes, only when they change           |
+| `files/x-ai-P.md`                             | The previous edition `P`, only when it changes              |
+| `telegram.txt`                                | The Telegram text, described under "Daily job and delivery" |
+| `review.md`                                   | The private review                                          |
+| `READY.json`                                  | Written last, after every other file is complete            |
+
+1. Check for `/outbox/digest-staging/D/READY.json` before collecting. If it exists, date `D` is already staged. Change nothing in that folder and stop with a short status. A folder without `READY.json` is an unfinished run, which you may complete or rewrite.
+2. Keep the first draft, edited edition, source snapshots, collection and selection records under `/workspace/ai-x-digest/<date-and-run>/`. The edited edition is the accepted candidate only after the separate unslop rewrite and source comparison. Record its exact SHA-256 hash in the review. Reuse these exact bytes and the same selection on a retry for the same date.
+3. Write the accepted edition to `files/x-ai-D.md`. Read the month and year indexes and the immediately previous daily note from `/vault-mirror/digests/`. Stage an index in `files/` only when the new edition changes it. Preserve index content and chronology. Stage the previous note with only its `Next` link changed. Never write into `/vault-mirror/`.
+4. Keep `files/` flat. It holds only the files listed in `READY.json`, each named to match `^x-ai-[0-9]{4}(-[0-9]{2}){0,2}\.md$`. Each staged file replaces the vault file of the same name after publication.
+5. Run the installed verifier on the staged files: `python3 /root/.hermes/external_skills/0/note-taking/obsidian/scripts/verify-x-ai-digest-format.py --digest-dir /outbox/digest-staging/D/files`. Resolve errors and review length warnings without padding. When a staged edition already exists in `/vault-mirror/digests/`, compare the mirror copy with the staged copy through `story_identity.validate_revision`. Inspect the before/after/source comparison in `review.md` before accepting the candidate.
+6. Write `telegram.txt`, and copy the final `review.md` into the staging folder.
+7. Write `READY.json` last. Compute each hash from the staged bytes after the final write. `files` maps each filename in `files/` to its SHA-256 hex digest. `telegram` is the SHA-256 hex digest of `telegram.txt`. `kind` is always `scheduled`, because the publisher refuses any other kind from the sandbox. Never change a folder after its `READY.json` exists.
+
+```json
+{
+  "schemaVersion": 1,
+  "date": "D",
+  "kind": "scheduled",
+  "files": { "x-ai-D.md": "<sha256 hex of the staged bytes>" },
+  "telegram": "<sha256 hex of telegram.txt>"
+}
+```
+
+The job on the Mac checks the names and hashes, builds the version 2 request, publishes and verifies the reader. Its receipt stops at `readerverified`. The sandbox cannot see the request or receipt. Do not wait for publication or report it as done. The private vault remains the single authored source, one Markdown file per date. Do not create public story files, source snapshots, review notes, or another content formatter. Keep Graphify state private and bookmarks only in Karakeep.
+
+A successful collection with no publishable story is a no-news day. Stage only `review.md` and a `READY.json` with `"files": {}` and `"noNews": true`. Stage no `files/` folder and no `telegram.txt`. Nothing is published and no message is sent. A collection failure stages nothing and writes no `READY.json`. End that run with an error that names the failed sources, so the cron job fails.
 
 ## Daily job and delivery
 
-The existing `daily-ai-x-digest-to-obsidian` job runs at 08:00 IST. Preserve job `4eb8e806b8bc`, its 08:00 IST schedule, enabled/paused state, inherited null model/provider, Telegram delivery, and all other jobs. Preload `ai-x-digest`, `unslop`, `obsidian`, and `bird`.
+Hermes job `ai-x-digest` in the `digest` profile runs at 08:00 Asia/Kolkata with local delivery. skyw-selfhost creates and owns the job. It loads `ai-x-digest`, `unslop` and `obsidian`. Do not load a `bird` skill, because X is the `bird` MCP tool.
 
-For the normal scheduled run, keep the existing short Telegram delivery. Before returning dated success text, run `scripts/publication.py delivery-begin --request <run>/request.json`. It requires reader verification and refuses ambiguous delivery or completed retries. Follow the private receipt rather than generating another candidate.
+Your final answer is not sent to Telegram. Return one short status line for the job log: staged, already staged, no news, or the collection error. Never send a Telegram message, run a delivery command or write a status file.
 
-Hermes sends scheduled auto-delivery after the agent returns. Returning text does not prove Telegram delivery. Do not mark the receipt complete yourself from generated output. A later confirmed Hermes delivery receipt can support `delivery-complete --request REQUEST --reference DELIVERY_ID`. If the outcome is ambiguous, preserve `deliverypending` and require an operator to resolve it through `delivery-resolve` using actual evidence. Do not send a separate Telegram message from this workflow.
+For a normal edition, write `telegram.txt`. Use the custom-domain digest URL `https://daily.nishantkhurana.me/editions/D/` exactly once and one real snippet from a public note. Take the snippet from a note under `/vault-mirror/public/`, the read-only copy of the notes already published on the website. Prefer the notes that replaced the old wisdom library, in `notes/` and `readings/`. Copy the words exactly from the note. Do not fetch the website for the snippet. Keep it to 2 to 5 short lines and under 1,000 characters. Include no changelog, build details, verification notes or editorial review notes. Do not fabricate a quote.
 
-Use the custom-domain digest URL and one real snippet from a public note. Keep it to 2 to 5 short lines. Include no build details or editorial review notes. Do not fabricate a quote or send a duplicate notification during an operator's private generation check.
+The job on the Mac checks the text's length and URL. It writes the text to a status file only after reader verification passes. Hermes's `main` profile then sends it once. A failed publication sends nothing.
 
-For missed-day repair, inspect the actual date file and schedule first. Generate privately and use an operator backfill or correction request. These requests never initiate scheduled delivery. Report a collection or publish failure truthfully. Do not rerun the whole job merely to obtain an `ok` status or resend a message.
+A correction, a backfill or a new edition for a past date is outside this job. Report a collection failure truthfully. Do not rerun the whole job merely to obtain an `ok` status or resend a message.
 
 Read `references/digest-index-hierarchy.md` for private Obsidian index notes. Never rewrite historical editorial prose during source relocation.

@@ -4,11 +4,11 @@
 
 The R2 cutover and PR #19 completed on 16 October 2026. Machine Herald and full-text RSS read the private `pawhouse-daily-content` bucket through Worker `pawhouse-daily`. Accepted Markdown and indexes live at `/Users/skypawalker/Dropbox/Obsidian/digests`. The main website excludes digests; old digest URLs return 404. No redirects were installed.
 
-Hermes job `4eb8e806b8bc` is enabled at 08:00 IST with inherited model/provider and Telegram delivery. The next run at cutover was 17 October, 08:00 IST, and was unobserved. Check current job and delivery evidence before reporting later success.
+At cutover, Hermes job `4eb8e806b8bc` was enabled at 08:00 IST with inherited model/provider and Telegram delivery. The Hermes VM rebuild in skyw-selfhost replaces it with the curator flow under [Hermes VM curator](#hermes-vm-curator). Check the live job list and delivery evidence before reporting which job runs or that a run succeeded.
 
 Read selected content and reader revisions from `~/.local/state/pawhouse-publication/`, including `backend.json` and `reader-release.json`. The private activation proofs and backups are under `~/.local/share/pawhouse-migrations/daily-r2-2026-10-16/activation/`. A live content correction changed the article and RSS without changing Git HEAD or the Worker version.
 
-Use the editorial/publication and delivery-accounting sections below for daily work. The adoption, cron-edit and source-switch procedures document the completed migration and future authorized repairs. Do not replay the bootstrap, move sources again, recreate resources or rerun cron merely because this guide contains those commands. Owned Hermes documentation updates use the manifest installer and hash readback, without changing cron or sending Telegram.
+Use the editorial/publication and delivery-accounting sections below for daily work. The adoption and source-switch procedures document the completed migration and future authorized repairs. Do not replay the bootstrap, move sources again, recreate resources or rerun cron merely because this guide contains those commands. Owned Hermes documentation updates use the manifest installer and hash readback, without changing cron or sending Telegram.
 
 ## Completed adoption procedure
 
@@ -24,19 +24,19 @@ The user selected a direct cutover on 16 October 2026. Legacy website URLs do no
 | Cut over discovery                   | Remove the website digest section after the replacement reader passes. No legacy redirects are required.                                                                                               |
 | Install the producer and edit cron   | Install the complete manifest only after earlier phases pass. Accept the marker producer and change only the intended prompt/skills and later authorized delivery URL.                                 |
 
-## Cron update prepared from the supported CLI
+## Hermes VM curator
 
-The source inspected on Pluto was `~/.hermes/hermes-agent/hermes_cli/subcommands/cron.py` and `hermes_cli/cron.py`. Its edit interface accepts `--prompt`, repeatable `--add-skill`, and preserves omitted fields. It has no prompt-file flag.
+Hermes runs in a Lima VM on Pluto, set up by skyw-selfhost. The digest is split into two parts.
 
-At the authorized producer phase, the supported command is:
+| Part          | Where                                                      | What it does                                                                                                                                                                                |
+| ------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Curator       | Hermes `digest` profile, cron job `ai-x-digest`, in the VM | Collects, drafts, applies unslop, reviews and stages one edition in `/outbox/digest-staging/D/`, following [the staging contract](contract.md#hermes-curator-staging) and `cron-prompt.md`. |
+| Publisher job | macOS, under the owner's user, owned by skyw-selfhost      | Copies a ready folder, builds the version 2 request, runs `publish-from-vault.sh` and `daily-release.py verify`, then writes the Telegram text to a status file.                            |
+| Notification  | Hermes `main` profile, no-agent cron job `digest-notify`   | Sends the verified status text to Telegram once.                                                                                                                                            |
 
-```sh
-hermes cron edit 4eb8e806b8bc \
-  --prompt "$(cat hermes/ai-x-digest/cron-prompt.md)" \
-  --add-skill ai-x-digest --add-skill obsidian --add-skill bird --add-skill unslop
-```
+The curator has no secrets, no R2 key and no Pawhouse checkout. It reads X through the `bird` MCP tool and Karakeep through the `karakeep` MCP tool. Both tools run in the Hermes gateway and hold the keys. It reads the last seven accepted editions from `/vault-mirror/digests/`, a read-only copy of the vault's `digests/`. It takes the Telegram snippet from `/vault-mirror/public/`, a read-only copy of the published notes. Its cron job delivers to `local`, so its final answer is a log line, not a message.
 
-The checked-in prompt selects `https://daily.nishantkhurana.me/editions/YYYY-MM-DD/`. Install it only after authorized domain and route verification. Do not replace the job, set its model/provider, alter its schedule or state, change delivery settings, or touch other jobs. Compare the complete before/after job records. Job `4eb8e806b8bc` stays at 08:00 IST with inherited null model/provider and Telegram delivery.
+skyw-selfhost installs the manifest files with `python3 hermes/ai-x-digest/install.py --hermes-home /Users/Shared/hermes-config --phase producer` from a Pawhouse checkout on the Mac. The VM mounts that folder read-only. skyw-selfhost also creates the cron job with `hermes -p digest cron create --name ai-x-digest`, at 08:00 Asia/Kolkata with `--deliver local`, using this package's `cron-prompt.md` and the skills `ai-x-digest`, `unslop` and `obsidian`. Do not attach a `bird` skill, because the digest must load no skill that declares the X cookie variables. Each of these steps needs the owner's ask.
 
 ## Illustrated reader revision
 
@@ -56,16 +56,16 @@ Do not rerun the scheduled job or send a canary Telegram message for this revisi
 2. Assign IDs once. Save a complete first draft, apply unslop as a separate rewrite, and save a separate edited edition.
 3. Write `review.md` with concrete before/after edits, factual corrections, inspected sources, and remaining uncertainty. Compare prose, decks, captions, labels, image evidence and chart values with the draft and sources. Preserve numerical bounds, attribution and exact quote meaning.
 4. Accept exact candidate bytes and hashes privately. Keep the accepted IDs and request unchanged on publication retries.
-5. Stage only the edition, affected indexes, and immediate previous daily note privately. The previous note may change only its Next link. Let the scoped publisher validate and promote them under its lock.
-6. Run `python3 scripts/daily-release.py verify --origin https://daily.nishantkhurana.me --code-revision FULL_CODE_SHA --request REQUEST` on Pluto. Check the frozen accepted generation and full reader/RSS content. Failed verification stays published and blocks delivery. One RSS item represents each actual date, including corrections. Keep code Git HEAD and Worker version fixed during content publication.
+5. Stage only the edition, affected indexes, and immediate previous daily note, with `telegram.txt`, `review.md` and `READY.json`, in `/outbox/digest-staging/D/`. The previous note may change only its Next link. The publisher job lets the scoped publisher validate and promote them under its lock.
+6. The publisher job runs `python3 scripts/daily-release.py verify --origin https://daily.nishantkhurana.me --code-revision FULL_CODE_SHA --request REQUEST` on Pluto. Check the frozen accepted generation and full reader/RSS content. Failed verification stays published and blocks the Telegram text. One RSS item represents each actual date, including corrections. Keep code Git HEAD and Worker version fixed during content publication.
 
 The deterministic checker proves structure. It cannot certify factual accuracy or establish that an agent performed an unslop rewrite. The separate saved draft, edited copy, source comparison, and review are the editorial evidence.
 
 ## Scheduled delivery accounting
 
-Hermes auto-delivers the final text after the agent returns. Before returning dated text, `delivery-begin` records the attempt. It requires verified reader publication. The agent must not treat its generated text as a delivery receipt.
+The curator never sends Telegram and its final answer goes to the local log. The publisher job writes the staged `telegram.txt` to a status file only after reader verification passes, and only when the text is under 1,000 characters and holds that day's edition URL once. Hermes's `main` profile sends it once from its no-agent `digest-notify` job. The message can arrive up to 5 minutes after verification.
 
-After Hermes supplies confirmed delivery evidence, a later receipt update may call `delivery-complete --request REQUEST --reference DELIVERY_ID`. An interruption or unknown outcome stays pending. An operator resolves it with `delivery-resolve --request REQUEST --outcome delivered|not-delivered --reference EVIDENCE`. Completed receipts suppress ordinary duplicate delivery. No additional Telegram send belongs in a private generation check.
+The publisher job does not run `delivery-begin`, so scheduled receipts from this flow stop at `readerverified`. No Telegram message ID reaches the receipt. `delivery-begin`, `delivery-complete` and `delivery-resolve` stay in the publisher for receipts that already used them. An interruption or unknown outcome on such a receipt stays pending until an operator resolves it with `delivery-resolve --request REQUEST --outcome delivered|not-delivered --reference EVIDENCE`. No additional Telegram send belongs in a private generation check.
 
 ## Rollback
 

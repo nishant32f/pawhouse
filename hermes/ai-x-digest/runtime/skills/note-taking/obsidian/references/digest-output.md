@@ -1,30 +1,24 @@
 # Digest notes in Obsidian
 
-Session-specific convention for this user:
+Convention for this user:
 
-- Vault path: `/Users/skypawalker/Dropbox/Obsidian`
-- Hermes env var: `OBSIDIAN_VAULT_PATH="/Users/skypawalker/Dropbox/Obsidian"`
-- Digest folder: `digests/`
+- The digest runs in Hermes's `digest` profile sandbox. It reads accepted digests from the read-only mirror `/vault-mirror/digests/`, takes the Telegram snippet from `/vault-mirror/public/`, and writes only `/outbox/digest-staging/YYYY-MM-DD/`.
+- Vault digest folder: `digests/`. Only the publisher job on Nishant's Mac writes it.
 - Daily X-AI digest filename pattern: `x-ai-YYYY-MM-DD.md`
 - Year digest parent index: `digests/x-ai-YYYY.md` (for example `x-ai-2026.md`; title/H1 stay `X-AI 2026`)
 - Monthly digest indexes: `digests/x-ai-YYYY-MM.md`
 - Daily notes should end with `## Navigation` followed by `## Backlinks`, linking to `[[index|Mindscape]]`, `[[digests/x-ai-YYYY|X-AI YYYY]]`, and `[[digests/x-ai-YYYY-MM|X-AI-YYYY-MM]]`.
 - Historical accepted imports preserve exact bytes; see `references/digest-normalization.md`.
-- Daily digest automation exists as Hermes cron job `daily-ai-x-digest-to-obsidian`, scheduled `0 8 * * *`, using `bird` JSON plus summarization.
+- Daily digest automation is Hermes cron job `ai-x-digest` in the `digest` profile, at 08:00 Asia/Kolkata, using the `bird` MCP tool's JSON plus summarization.
 - The active R2 producer uses `digest_format: editorial-v2` and the `ai-x-digest` plus `unslop` skills. Write a private first draft, edit it, check the sources, and validate before publication. Use concrete story headings, adjacent source links, and optional advice. The historical H1, theme-count, and takeaway rules do not apply to this format.
 - Follow `ai-x-digest` for four discovery categories and private collection/selection records. Normal v2 editions aim for 10 to 14 distinct items, with shorter quiet days. Use dated catch-up and check recent editions for repeats.
-- Absolute output path pattern: `/Users/skypawalker/Dropbox/Obsidian/digests/x-ai-YYYY-MM-DD.md`
+- Staged output path pattern: `/outbox/digest-staging/YYYY-MM-DD/files/x-ai-YYYY-MM-DD.md`
 - Digest illustrations use optional `story_metadata` frontmatter under the `ai-x-digest` contract. Hermes supplies inspected media, captions and chart facts. The reader owns their HTML and design. Do not apply general Quartz raw-image or asset-copying advice to this workflow.
 
 Recommended workflow:
 
-1. Resolve the vault path from `OBSIDIAN_VAULT_PATH`; do not pass literal `$OBSIDIAN_VAULT_PATH` to file tools.
-2. Stage the draft, edited candidate, source snapshots, review, indexes, and request privately outside the public vault and repository.
-3. Follow `ai-x-digest` for persistent IDs, optional sourced editorial metadata, the separate unslop pass, and the shared scoped publisher. Review prose, decks, captions, labels and numerical bounds against the inspected sources. Only `publish-from-vault.sh --digest PRIVATE_REQUEST.json` promotes accepted files. Never write a digest directly into the public vault.
-4. If the user asks to open the accepted result in Obsidian, use the CLI after publication:
+1. Keep the draft, edited candidate, source snapshots and run records under `/workspace/ai-x-digest/<date-and-run>/`.
+2. Follow `ai-x-digest` for persistent IDs, optional sourced editorial metadata, the separate unslop pass, and the staging folder. Review prose, decks, captions, labels and numerical bounds against the inspected sources.
+3. Stage the edition, changed indexes, changed previous note, Telegram text, review and `READY.json` as `ai-x-digest` describes. The sandbox writes no request. Only the publisher job on the Mac promotes accepted files into the vault.
 
-```bash
-obsidian open path="digests/x-ai-YYYY-MM-DD.md"
-```
-
-For daily digest automation, keep collection scripts under `~/.hermes/scripts/<workflow>/` and raw/state data under `~/.hermes/data/<workflow>/`; only the final curated digest belongs in the vault.
+Only the final curated digest belongs in the vault.

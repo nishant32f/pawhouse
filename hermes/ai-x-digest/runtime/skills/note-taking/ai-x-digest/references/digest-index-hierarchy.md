@@ -41,7 +41,13 @@ Monthly index backlinks should include:
 
 The year parent should list all monthly indexes for that year and backlink `[[index|Mindscape]]`.
 
+## Daily run
+
+The daily run in the `digest` sandbox reads the current indexes from `/vault-mirror/digests/`. It stages a changed month or year index in `/outbox/digest-staging/YYYY-MM-DD/files/` and runs the verifier there, as `ai-x-digest` describes. It writes nothing else.
+
 ## Repair workflow
+
+A repair writes the vault, so it runs on Nishant's Mac, outside the sandbox.
 
 1. Back up touched digest files outside the hosted tree, preferably under `<vault>/.graphify/backups/<run>/`.
 2. For a new accepted revision, update monthly indexes from existing `x-ai-YYYY-MM-DD.md` files.
@@ -51,7 +57,9 @@ The year parent should list all monthly indexes for that year and backlink `[[in
 6. Run the X-AI digest verifier:
 
 ```bash
-python /Users/skypawalker/.hermes/skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py /Users/skypawalker/Dropbox/Obsidian
+python3 hermes/ai-x-digest/runtime/skills/note-taking/obsidian/scripts/verify-x-ai-digest-format.py VAULT
 ```
+
+Run it from the Pawhouse checkout. `VAULT` is the `vaultRoot` in the publisher's `backend.json`.
 
 7. Rebuild private Graphify when requested. Publish accepted digest revisions through the shared R2 publisher, without broad notes publication. If digest filename casing changed, verify the Graphify Obsidian rebuild script still recognizes lowercase `digests/x-ai-YYYY-MM-DD.md` and produces `NEXT_DIGEST` / `INDEXED_BY_MONTH` edges.

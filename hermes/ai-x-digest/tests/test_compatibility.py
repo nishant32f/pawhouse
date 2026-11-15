@@ -182,46 +182,5 @@ class V2PublishingTest(unittest.TestCase):
             self.assertEqual((base / 'digests/x-ai-2026-10-15.md').read_bytes(), identified)
 
 
-class CronCompatibilityTest(unittest.TestCase):
-    @unittest.skipUnless(Path('/Users/skypawalker/.hermes/hermes-agent/hermes_cli/subcommands/cron.py').exists() and Path('/Users/skypawalker/.hermes/hermes-agent/venv/bin/python').exists(), 'requires Pluto Hermes CLI source; never touches live cron')
-    def test_supported_cron_edit_preserves_job_fields_and_other_jobs(self):
-        code = r'''import argparse
-import copy
-import json
-import sys
-import types
-from unittest.mock import patch
-sys.path.insert(0, '/Users/skypawalker/.hermes/hermes-agent')
-from hermes_cli.subcommands.cron import build_cron_parser
-from hermes_cli import cron
-parser = argparse.ArgumentParser()
-build_cron_parser(parser.add_subparsers(), cmd_cron=lambda args: None)
-prompt = open(sys.argv[1]).read()
-args = parser.parse_args(['cron', 'edit', '4eb8e806b8bc', '--prompt', prompt, '--add-skill', 'ai-x-digest', '--add-skill', 'obsidian', '--add-skill', 'bird', '--add-skill', 'unslop'])
-jobs = [dict(id='4eb8e806b8bc', job_id='4eb8e806b8bc', name='daily-ai-x-digest-to-obsidian', skill='ai-x-digest', skills=['ai-x-digest', 'obsidian', 'bird'], schedule='0 8 * * *', timezone='Asia/Kolkata', enabled=False, paused_reason='fixture', model=None, model_provider=None, deliver='telegram', delivery_target='fixture-chat'), dict(id='other', prompt='preserve the other job')]
-before = copy.deepcopy(jobs)
-fake = types.ModuleType('cron.jobs')
-fake.AmbiguousJobReference = ValueError
-fake.resolve_job_ref = lambda job_id: jobs[0] if job_id == jobs[0]['id'] else None
-calls = []
-def update(**kwargs):
-    calls.append(kwargs)
-    for key, value in kwargs.items():
-        if key not in ('action', 'job_id') and value is not None:
-            jobs[0][key] = value
-    return dict(success=True, job=jobs[0])
-with patch.dict(sys.modules, {'cron.jobs': fake}), patch.object(cron, '_cron_api', update):
-    assert cron.cron_edit(args) == 0
-expected = copy.deepcopy(before)
-expected[0]['prompt'] = prompt
-expected[0]['skills'].append('unslop')
-assert jobs == expected, (jobs, expected)
-assert {k for k, v in calls[0].items() if v is not None} == {'action', 'job_id', 'prompt', 'skills'}
-print('Only the fixture prompt and skills changed. No live jobs or Telegram calls.')
-'''
-        result = subprocess.run(['/Users/skypawalker/.hermes/hermes-agent/venv/bin/python', '-B', '-c', code, str(PACKAGE / 'cron-prompt.md')], capture_output=True, text=True)
-        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-
-
 if __name__ == '__main__':
     unittest.main()

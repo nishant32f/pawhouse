@@ -20,31 +20,37 @@ Charts preserve numeric values, periods, units and explicit qualifiers. Hermes m
 
 The reader's AST validator checks visual metadata during scoped publication. The Python checker still owns editorial structure and size. Neither validator proves that a caption or numeric claim matches its source.
 
-The shared scoped publisher validates the accepted private request before accepted source writes. Humans and Hermes both use `scripts/publish-from-vault.sh --digest PRIVATE_REQUEST.json`. The request, first draft, edited copy, source snapshots, and review stay outside the repository and vault. See [the R2 contract](contract.md#r2-publication-and-history) for the exact request and receipt fields.
+The shared scoped publisher validates the accepted private request before accepted source writes. Humans and the scheduled publisher job use `scripts/publish-from-vault.sh --digest PRIVATE_REQUEST.json`. The request, first draft, edited copy, source snapshots, and review stay outside the repository and vault. See [the R2 contract](contract.md#r2-publication-and-history) for the exact request and receipt fields.
+
+## Curator and publisher split
+
+Hermes runs in a Lima VM on Pluto, set up by skyw-selfhost. Its `digest` profile is a curator only. It collects, drafts, applies unslop, reviews and stages one edition in `/outbox/digest-staging/D/`, with the changed indexes, the changed previous note, the review and the Telegram text. It reads X and Karakeep through gateway MCP tools and holds no secrets. It never publishes, writes a request or sends Telegram.
+
+A job on macOS, owned by skyw-selfhost, builds the version 2 request, publishes, verifies the reader and writes the status file. Hermes's `main` profile sends that text. Scheduled receipts from this flow stop at `readerverified`. See [the staging contract](contract.md#hermes-curator-staging) and [the operations guide](rollout.md#hermes-vm-curator).
 
 ## Install phases
 
-Use these phases for authorized installation or updates to owned Hermes files. The initial rollout is complete. Documentation updates must refresh the manifest hashes, preserve installation backups, verify installed bytes and leave cron and delivery unchanged. A fresh adoption uses the checker phase first.
+Use these phases for authorized installation or updates to owned Hermes files. The Hermes home is `/Users/Shared/hermes-config` on Pluto, which the VM mounts read-only. The initial rollout is complete. Documentation updates must refresh the manifest hashes, preserve installation backups, verify installed bytes and leave cron and delivery unchanged. A fresh adoption uses the checker phase first.
 
 ```sh
-python3 hermes/ai-x-digest/install.py --hermes-home /Users/skypawalker/.hermes --phase verifier
+python3 hermes/ai-x-digest/install.py --hermes-home /Users/Shared/hermes-config --phase verifier
 ```
 
 This phase installs only the dual legacy/v1/v2 checker and `story_identity.py`. The installer packages that helper from the canonical source in this directory. It keeps no second implementation in runtime. Test the installed checker against private fixtures before the producer phase.
 
 ```sh
-python3 hermes/ai-x-digest/install.py --hermes-home /Users/skypawalker/.hermes --phase producer
+python3 hermes/ai-x-digest/install.py --hermes-home /Users/Shared/hermes-config --phase producer
 ```
 
 The producer phase installs every manifest file, including the skills and references. It remains the default for compatibility with the earlier installer interface. Both phases stage files, record hashes and prior existence, and back up replaced files. Failure restores completed replacements and removes files that did not exist before. Unrelated files and cron stay untouched.
 
-Recovery receipts live under `~/.hermes/backups/ai-x-digest-editorial-v2-TIMESTAMP/`. Restore each listed file whose `existed` value is true from its matching backup path. Remove only listed files whose value is false. A `recovery-failed` receipt names unresolved restores. Keep each previous installation backup for producer rollback.
+Recovery receipts live under `HERMES_HOME/backups/ai-x-digest-editorial-v2-TIMESTAMP/`, for the `--hermes-home` given. Restore each listed file whose `existed` value is true from its matching backup path. Remove only listed files whose value is false. A `recovery-failed` receipt names unresolved restores. Keep each previous installation backup for producer rollback.
 
 ## Verification
 
 From the repository root, run `python3 -B -m unittest discover -s hermes/ai-x-digest/tests`. The compatibility suite exercises real publication into temporary Git, vault, state, and bare-remote directories. It verifies v2 acceptance, accepted-request retry, malformed and mutated IDs before promotion, isolated helper packaging, checker-phase rollback, and visible archived attribution.
 
-The cron fixture imports Pluto's actual Hermes CLI parser and edit function. It substitutes an in-memory job store and API. It proves only prompt/skills change while ID, schedule, state, inherited model/provider, Telegram delivery, primary skill, and another job survive. It skips when that Pluto source checkout is unavailable. It never invokes live cron or Telegram.
+`tests/test_producer_contract.py` checks that the curator prompt and skill name the staging folder, the vault mirror and the sandbox verifier path, and no publish, history, release or delivery command. It does not prove that a scheduled run follows them. The cron job itself is created and tested in skyw-selfhost.
 
 `tests/test_editorial_metadata_contract.py` checks the producer's complete Markdown example with the packaged editorial checker. Reader tests cover metadata validation and rendering. This example check does not prove source accuracy or that a scheduled run followed the editorial instructions.
 

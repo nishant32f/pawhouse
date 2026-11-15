@@ -2,7 +2,8 @@
 """Verify Nishant's X-AI daily digest formatting conventions.
 
 Usage:
-  python verify-x-ai-digest-format.py /Users/skypawalker/Dropbox/Obsidian
+  python3 verify-x-ai-digest-format.py --digest-dir /outbox/digest-staging/YYYY-MM-DD/files
+  python3 verify-x-ai-digest-format.py /vault-mirror
 """
 from __future__ import annotations
 
@@ -122,7 +123,7 @@ def check_editorial(text: str, expected_date: str, identified: bool = False) -> 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('vault', type=Path, nargs='?', default=Path('/Users/skypawalker/Dropbox/Obsidian'))
+    parser.add_argument('vault', type=Path, nargs='?', default=Path('/vault-mirror'))
     parser.add_argument('--digest-dir', type=Path, help='Explicit staging or legacy fixture directory')
     args = parser.parse_args()
     vault = args.vault.expanduser().resolve()
