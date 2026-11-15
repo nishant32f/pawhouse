@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import hashlib
 from html.parser import HTMLParser
 import json
@@ -24,6 +25,8 @@ from publication import Publisher, MISE, run, save
 CLOUDFLARE_API = 'https://api.cloudflare.com/client/v4'
 ACCOUNT = '1688bfec49a43a217df10ed33b86e300'
 BASE_ROUTES = {'/', '/archive/', '/search/', '/rss.xml', '/sitemap.xml', '/deployment.json'}
+# Pages verify fetches at once. Each live request takes about 1 s, so 707 routes took 12 minutes one at a time.
+FETCH_WORKERS = 6
 
 
 def normalized(value):
@@ -87,6 +90,15 @@ def fetch(origin, path):
         if response.status != 200:
             raise ValueError(f'route did not return 200: {path}')
         return response.read().decode('utf-8'), response.headers
+
+
+def fetch_all(origin, paths, workers=FETCH_WORKERS):
+    """Each path's body, fetched concurrently. The first failure in path order is raised and unstarted fetches are cancelled."""
+    pool = ThreadPoolExecutor(max_workers=workers)
+    try:
+        return dict(zip(paths, pool.map(lambda path: fetch(origin, path)[0], paths)))
+    finally:
+        pool.shutdown(cancel_futures=True)
 
 
 def manifest_at(origin, bootstrap=False):
@@ -265,10 +277,12 @@ def verify_publication(publisher, bundle, origin, code, version=None):
     if routes(live) != routes(expected):
         raise ValueError('live routes differ from accepted publication')
     tested = []
+    pages = fetch_all(origin, ['/', *[route for edition in editions for route in (
+        edition['path'], edition['readPath'], *[story['path'] for story in edition.get('stories', [])])],
+        '/archive/', '/search/', '/sitemap.xml'])
     def page(route):
-        html, _ = fetch(origin, route)
         tested.append(route)
-        return html
+        return pages[route]
     check_edition(page('/'), max(editions, key=lambda edition: edition['date']), front=True)
     for edition in editions:
         for route in (edition['path'], edition['readPath']):
