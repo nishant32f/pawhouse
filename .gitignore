@@ -15,3 +15,9 @@ apps/daily/.astro/
 
 __pycache__/
 apps/daily/.wrangler/
+
+# graphify local state: machine paths and AST cache
+.graphify/cache/
+.graphify/branch.json
+.graphify/worktree.json
+.graphify/manifest.json
