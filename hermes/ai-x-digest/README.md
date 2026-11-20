@@ -8,7 +8,7 @@ The private vault keeps one authored Markdown file per day. Story markers give t
 
 The producer checks official releases, repositories, builder reports and research before selecting. It compares the last seven published accepted editions and labels catch-up with the actual event date. Private collection and selection records distinguish failed sources, rejected candidates and no-news outcomes.
 
-Normal editions aim for 10 to 14 distinct items. V2 permits up to eight full stories and six briefs. Quiet days may be shorter after a second discovery pass. The lead targets 140 to 200 words, supporting stories 70 to 120, and briefs 25 to 45. Hard limits remain 220 and 85. Legacy and v1 checks remain unchanged.
+Normal editions aim for 10 to 14 distinct items, plus 3 to 5 in a separate verification, review and security section. V2 permits up to 11 full stories and 8 briefs. Quiet days may be shorter after a second discovery pass. The lead targets 140 to 200 words, supporting stories 70 to 120, and briefs 25 to 45. Hard limits remain 220 and 85. Legacy and v1 checks remain unchanged.
 
 ## Content and design
 

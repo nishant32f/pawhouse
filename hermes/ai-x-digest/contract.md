@@ -17,7 +17,7 @@ A legacy edition remains a whole edition in the reader. Explicit adoption of the
 
 The optional `story_metadata` frontmatter map contains content, keyed by an existing story ID. It works only with `editorial-v2`. Existing editions without it keep their original prose and routes.
 
-Each entry requires a plain-text `section`. It may include a plain-text `deck` and one `visual`. These are editorial facts and descriptions. Fonts, colors, columns, spacing, chart drawing, image treatment and templates belong to the app. The metadata rejects unknown fields, including layout or style instructions. Hermes emits no HTML, SVG, CSS or JavaScript.
+Each entry requires a plain-text `section`. Every verification, pull request review or security story uses the exact section `Verification, review and security`, which no other story uses. It may include a plain-text `deck` and one `visual`. These are editorial facts and descriptions. Fonts, colors, columns, spacing, chart drawing, image treatment and templates belong to the app. The metadata rejects unknown fields, including layout or style instructions. Hermes emits no HTML, SVG, CSS or JavaScript.
 
 ```yaml
 story_metadata:
@@ -113,9 +113,9 @@ Archived records retain their IDs and article routes. Exclude them from current 
 
 ## Editorial and source boundaries
 
-V2 permits one to eight full stories and an optional group of one to six briefs. Normal editions aim for 10 to 14 distinct items; quiet days may be shorter. Soft word targets are 140 to 200 for the lead, 70 to 120 for supporting stories and 25 to 45 for briefs. Hard limits remain 220 and 85. Legacy and v1 rules remain unchanged.
+V2 permits one to 11 full stories and an optional group of one to 8 briefs. Normal editions aim for 10 to 14 distinct items in the main selection, plus 3 to 5 in the verification, review and security section; quiet days may be shorter. The section's full stories sit together after the main supporting stories, and its briefs come last in `In brief`. Soft word targets are 140 to 200 for the lead, 70 to 120 for supporting stories and 25 to 45 for briefs. Hard limits remain 220 and 85. Legacy and v1 rules remain unchanged.
 
-Discovery covers official releases, repositories, builder reports and research. Compare the last seven published accepted editions and label any seven-day catch-up with its actual event date. Keep collection, selection and source evidence private. Keep concrete headlines, concise evidence, attributed claims, uncertainty, numbers, dates, and source support. Keep the separate mandatory unslop edit and private source comparison.
+Discovery covers official releases, repositories, builder reports, research, and verification, review and security. Compare the last seven published accepted editions and label any seven-day catch-up with its actual event date. Keep collection, selection and source evidence private. Keep concrete headlines, concise evidence, attributed claims, uncertainty, numbers, dates, and source support. Keep the separate mandatory unslop edit and private source comparison.
 
 Preserve each story's actual adjacent source links and attribution. A source in another story does not cover a missing citation. The existing editorial checker owns prose targets and source adjacency. The reader adapter owns Markdown rendering and unsafe-link rejection. Identity parsing does not replace either check.
 

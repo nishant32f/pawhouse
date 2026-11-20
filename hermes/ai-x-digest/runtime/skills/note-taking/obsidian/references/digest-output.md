@@ -11,7 +11,7 @@ Convention for this user:
 - Historical accepted imports preserve exact bytes; see `references/digest-normalization.md`.
 - Daily digest automation is Hermes cron job `ai-x-digest` in the `digest` profile, at 08:00 Asia/Kolkata, using the `bird` MCP tool's JSON plus summarization.
 - The active R2 producer uses `digest_format: editorial-v2` and the `ai-x-digest` plus `unslop` skills. Write a private first draft, edit it, check the sources, and validate before publication. Use concrete story headings, adjacent source links, and optional advice. The historical H1, theme-count, and takeaway rules do not apply to this format.
-- Follow `ai-x-digest` for four discovery categories and private collection/selection records. Normal v2 editions aim for 10 to 14 distinct items, with shorter quiet days. Use dated catch-up and check recent editions for repeats.
+- Follow `ai-x-digest` for five discovery categories and private collection/selection records. Normal v2 editions aim for 10 to 14 distinct items, plus 3 to 5 in the verification, review and security section, with shorter quiet days. Use dated catch-up and check recent editions for repeats.
 - Staged output path pattern: `/outbox/digest-staging/YYYY-MM-DD/files/x-ai-YYYY-MM-DD.md`
 - Digest illustrations use optional `story_metadata` frontmatter under the `ai-x-digest` contract. Hermes supplies inspected media, captions and chart facts. The reader owns their HTML and design. Do not apply general Quartz raw-image or asset-copying advice to this workflow.
 

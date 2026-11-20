@@ -75,7 +75,7 @@ def check_editorial(text: str, expected_date: str, identified: bool = False) -> 
             issues.append(f'use the reserved heading exactly: {reserved[title.casefold()]}')
     stories = [(title, content) for title, content in sections
                if title.casefold() not in reserved]
-    story_limit = 8 if identified else 5
+    story_limit = 11 if identified else 5
     if not 1 <= len(stories) <= story_limit:
         issues.append(f'story count must be 1 to {story_limit}, found {len(stories)}; do not pad quiet days')
     if len({title.lower() for title, _ in stories}) != len(stories):
@@ -111,7 +111,7 @@ def check_editorial(text: str, expected_date: str, identified: bool = False) -> 
     brief_sections = [content for title, content in sections if title.casefold() == 'in brief']
     if len(brief_sections) > 1:
         issues.append('multiple In brief sections')
-    brief_limit = 6 if identified else 3
+    brief_limit = 8 if identified else 3
     for content in brief_sections:
         briefs = list(re.finditer(r'^###\s+(.+?)\s*$', content, re.M))
         if not 1 <= len(briefs) <= brief_limit or content[:briefs[0].start()].strip():
