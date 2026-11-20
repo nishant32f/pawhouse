@@ -25,12 +25,13 @@ Derive the date in `Asia/Kolkata`. Keep daily filenames and existing URLs unchan
 
 ## Collect and select
 
-Discovery must cover four sources before selection. A small X timeline sample alone is insufficient.
+Discovery must cover five sources before selection. A small X timeline sample alone is insufficient.
 
 1. Official releases. Check AI lab announcements, product changelogs and model cards across companies, including smaller labs. Look for releases and changed availability.
 2. Repositories. Check GitHub Trending daily, project releases and builder mentions. Inspect the selected repository's README, latest release, license and supported platforms.
 3. Builder reports. Use X and the current Hacker News front page for launches, technical reports and measured workflow changes. Follow links to original evidence.
 4. Research. Check current papers and research discussions. Read the selected paper's abstract, relevant method and results, or the original research essay.
+5. Verification, review and security. Check GitHub's advisory database at https://github.com/advisories, CISA's Known Exploited Vulnerabilities catalog, the oss-security mailing list, and the advisories and research blogs of major vendors and security teams. Check release notes of code review tools and agents, and current papers in software engineering, programming languages, logic and security (arXiv cs.SE, cs.PL, cs.LO and cs.CR). Read the advisory, release note or paper behind each selected item. This category fills the section described under "Verification, review and security".
 
 Use available web/search tools and the `bird` MCP tool for X. The tool runs outside the sandbox and holds the X login, so no X credential reaches your commands. It has three read calls, each returning structured JSON. Hermes names them `mcp__bird__<call>`.
 
@@ -40,12 +41,15 @@ Use available web/search tools and the `bird` MCP tool for X. The tool runs outs
 | `search`        | `query`, and `count` 1 to 50     | Posts that match the query |
 | `post`          | `post_id`, the post's numeric ID | One post                   |
 
-Take modest samples, with separate searches for releases, repositories, builder reports and research:
+Take modest samples, with separate searches for releases, repositories, builder reports, research, and verification, review and security:
 
 1. `home_timeline` with `count` 50.
 2. `search` with `query` `AI release OR model launch OR inference` and `count` 20.
 3. `search` with `query` `AI github OR open source agent OR reverse engineering` and `count` 20.
 4. `search` with `query` `AI paper OR benchmark OR interpretability` and `count` 20.
+5. `search` with `query` `code review agent OR pull request review OR PR review` and `count` 20.
+6. `search` with `query` `formal verification OR fuzzing OR property-based testing OR Lean proof` and `count` 20.
+7. `search` with `query` `CVE OR vulnerability OR supply chain attack OR prompt injection` and `count` 20.
 
 There is no `bird` command line in the sandbox and no X bookmarks call. The tool refuses an empty query and a query that starts with `-`.
 
@@ -62,12 +66,24 @@ Karakeep is the only saved-bookmark library. Use it for optional background rese
 Select stories for Nishant as a CTO and builder:
 
 1. Lead with the most consequential concrete event, test or release. Rank consequence, novelty, useful evidence and relevance to building software.
-2. Aim for 10 to 14 distinct items on normal days, usually one lead, five to seven supporting stories and four to six briefs. The checker permits up to eight full stories and six briefs.
+2. Aim for 10 to 14 distinct items in the main selection on normal days, usually one lead, five to seven supporting stories and four to six briefs. The verification, review and security section adds 3 to 5 more. The checker permits up to 11 full stories and 8 briefs in all.
 3. Counts are targets. One useful lead remains valid on a quiet day. If fewer than ten items qualify, make a second focused discovery pass across available categories. Record why the shorter selection is sufficient. Never pad the edition.
 4. Include useful repositories and builder tools alongside model releases and research. Engagement helps discovery, but it does not establish quality. A single star count cannot prove growth or that a repository went viral.
 5. Combine posts about one event. A popular reply is not another story. Check named repositories directly and include their links when relevant.
 6. Keep concrete launches eligible even when their announcement uses promotional language. Strip the marketing and verify the product. Reject empty promotion, unsupported forecasts, repeated themes and financial chatter without a useful consequence.
 7. If collection succeeds but nothing merits publication, stage the no-news outcome described under "Validate and stage". Stage no edition or index. Do not invent news to satisfy a count.
+
+## Verification, review and security
+
+Each normal edition carries a separate section on software verification, pull request review and security. Its items come on top of the main selection.
+
+1. Software verification covers formal methods and proof tools such as Lean, Dafny, TLA+, Rocq, Verus and Kani, model checking, fuzzing, property-based and mutation testing, and AI-generated proofs or verified code. Pull request review covers code review tools and agents, their releases and measured results, and studies of how teams review code. Security covers vulnerabilities and advisories in widely used software and developer tooling, supply-chain incidents in package registries and CI, the security of AI agents and coding tools, and new security tools and research.
+2. Aim for 3 to 5 items, usually two or three full stories and one or two briefs. If fewer than three qualify, make a second focused pass with narrower searches. Quiet days may stay short. Omit the section when nothing qualifies. Never pad it.
+3. Give every item in this area `section: Verification, review and security` in `story_metadata`, spelled exactly. Use that label for no other story, and give no story in this area another label.
+4. Put the section's full stories together, as consecutive H2 stories after the main supporting stories. Put its briefs together at the end of `In brief`. The lead may come from this area when it is the day's most consequential event. It keeps the label and counts toward the section.
+5. For a vulnerability, name the affected product and versions, the fixed version, and the CVE or advisory ID. Say whether the vendor or CISA's Known Exploited Vulnerabilities catalog reports exploitation. Give a severity score only with its source. Link the advisory or the vendor's notice, not only a post about it. Do not reproduce exploit code or step-by-step attack instructions.
+6. For a review or verification tool, link its release notes or repository, and say who measured any reported result. A vendor's own benchmark is a first-party claim.
+7. The novelty, catch-up, source, unslop and length rules for the rest of the edition apply here too.
 
 ## Write the first draft
 
@@ -176,6 +192,8 @@ story_metadata:
     section: Engineering
   supporting-event:
     section: Tools
+  security-event:
+    section: Verification, review and security
 ---
 
 ## Concrete lead headline naming the event
@@ -191,6 +209,13 @@ Source: [Named primary source](https://example.com/original). First-party claim.
 Summary and necessary detail.
 
 Source: [Named source](https://example.com/another). Community report.
+
+## Concrete headline naming a verification, review or security event
+<!-- story-id: security-event -->
+
+Summary and necessary detail, with versions, fix and advisory ID where they apply.
+
+Source: [Named advisory](https://example.com/advisory). Vendor advisory.
 
 ## In brief
 
@@ -213,7 +238,7 @@ Source: [Named source](https://example.com/brief).
 - [[digests/x-ai-YYYY-MM|X-AI-YYYY-MM]]
 ```
 
-The first H2 is the lead. Further story H2s are supporting stories. Omit `In brief` entirely when there are no briefs. It may contain 1 to 6 H3 items. If needed, put `Archived stories` after `In brief` and before the final sections. Its H3 records require IDs and corrections. The final two H2 sections must be `Navigation`, then `Backlinks`. Add relevant existing note backlinks only when the relationship is useful; do not invent topic notes or indexes.
+The first H2 is the lead. Further story H2s are supporting stories. Omit `In brief` entirely when there are no briefs. It may contain 1 to 8 H3 items. If needed, put `Archived stories` after `In brief` and before the final sections. Its H3 records require IDs and corrections. The final two H2 sections must be `Navigation`, then `Backlinks`. Add relevant existing note backlinks only when the relationship is useful; do not invent topic notes or indexes.
 
 ## Validate and stage
 

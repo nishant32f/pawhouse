@@ -85,12 +85,12 @@ class EditorialFormatTest(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("story count", result.stdout)
 
-    def test_v2_accepts_eight_stories_and_six_briefs(self):
-        result = self.verify(self.identified_edition(8, 6))
+    def test_v2_accepts_eleven_stories_and_eight_briefs(self):
+        result = self.verify(self.identified_edition(11, 8))
         self.assertEqual(result.returncode, 0, result.stdout)
 
-    def test_v2_rejects_ninth_story_and_seventh_brief(self):
-        for count, briefs, message in ((9, 0, "story count"), (1, 7, "1 to 6")):
+    def test_v2_rejects_twelfth_story_and_ninth_brief(self):
+        for count, briefs, message in ((12, 0, "story count"), (1, 9, "1 to 8")):
             with self.subTest(stories=count, briefs=briefs):
                 result = self.verify(self.identified_edition(count, briefs))
                 self.assertNotEqual(result.returncode, 0)
