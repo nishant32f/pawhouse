@@ -44,7 +44,11 @@ test("the producer's complete edition example passes the publication parser", ()
   if (edition.kind !== "identified") return assert.fail("expected identified edition")
   assert.deepEqual(
     edition.activeStories.map((story) => story.id),
-    ["concrete-lead-event", "supporting-event", "brief-event"],
+    ["concrete-lead-event", "supporting-event", "security-event", "brief-event"],
   )
   assert.equal(edition.lead.editorial?.section, "Engineering")
+  assert.equal(
+    edition.activeStories.find((story) => story.id === "security-event")?.editorial?.section,
+    "Verification, review and security",
+  )
 })
