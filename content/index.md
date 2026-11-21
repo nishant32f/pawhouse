@@ -11,9 +11,13 @@ author: "Nishant Khurana"
 description: "Nishant's public localhost: a curated digital garden of identity, principles, quotes, wisdom, and working notes."
 ---
 
+<div class="media">
+
 <img src="ascii-art.png" alt="Nishant Khurana ASCII portrait" width="200" />
 
 I spend my days architecting systems and building products. When I'm not writing code, I keep returning to the intersection of technology, human psychology, startups, health, and timeless wisdom.
+
+</div>
 
 ## About me
 I am Co-founder and CTO at [Spectrum](https://getspectrum.ai), formerly Tectonic.
